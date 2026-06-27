@@ -1,0 +1,38 @@
+services:
+  # Backend API
+  - type: web
+    name: lmap-academy-api
+    runtime: python
+    rootDir: backend
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn main:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: SECRET_KEY
+        generateValue: true
+      - key: DATABASE_URL
+        value: sqlite:///./lmap.db
+      - key: RAZORPAY_KEY_ID
+        value: ""
+      - key: RAZORPAY_KEY_SECRET
+        value: ""
+      - key: UPLOAD_DIR
+        value: uploads
+    disk:
+      name: lmap-uploads
+      mountPath: /opt/render/project/src/uploads
+      sizeGB: 10
+
+  # Frontend Static Site
+  - type: web
+    name: lmap-academy-web
+    runtime: static
+    rootDir: frontend
+    buildCommand: npm install && npm run build
+    staticPublishPath: dist
+    envVars:
+      - key: VITE_API_URL
+        value: https://lmap-academy-api.onrender.com
+    routes:
+      - type: rewrite
+        source: /*
+        destination: /index.html
