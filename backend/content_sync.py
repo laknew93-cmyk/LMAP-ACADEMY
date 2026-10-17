@@ -7,11 +7,22 @@ re-running the sync updates rows in place and keeps learners' progress and enrol
 import json
 import os
 
+from config import settings
+
 from sqlalchemy.orm import Session
 
 from models import Course, CourseLevel, Module, Video, VideoProgress
 
 CONTENT_DIR = os.path.join(os.path.dirname(__file__), "content", "courses")
+
+
+def lesson_video_name(course_slug: str, lesson_file: str) -> str:
+    """Video path relative to UPLOAD_DIR/videos for a lesson, e.g. 'my-course/01-02-intro.mp4'."""
+    return f"{course_slug}/{os.path.splitext(lesson_file)[0]}.mp4"
+
+
+def lesson_video_path(course_slug: str, lesson_file: str) -> str:
+    return os.path.join(settings.UPLOAD_DIR, "videos", lesson_video_name(course_slug, lesson_file))
 DETAIL_KEYS = ("audience", "outcomes", "prerequisites", "tools", "projects", "faqs", "seo")
 # Placeholder courses from the original seed script, replaced by the content folder.
 LEGACY_SLUGS = (
@@ -95,6 +106,11 @@ def sync_content(db: Session) -> int:
                 lesson.duration_seconds = int(l_data.get("minutes", 0) * 60)
                 lesson.is_preview = bool(l_data.get("preview", False))
                 lesson.order = l_idx
+                lesson.source_file = l_data["file"]
+                # Videos live on disk under a name derived from the lesson file, so the link
+                # survives a database reset.
+                if os.path.isfile(lesson_video_path(data["slug"], l_data["file"])):
+                    lesson.filename = lesson_video_name(data["slug"], l_data["file"])
             _delete_lessons(db, lessons[len(m_data.get("lessons", [])):])
 
         for module in modules[len(data.get("modules", [])):]:

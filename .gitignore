@@ -15,3 +15,9 @@ backend/.env
 
 # OS
 .DS_Store
+
+# Lesson videos (large files and secrets stay local)
+video/.env
+video/output/
+video/state.json
+video/state.json.tmp

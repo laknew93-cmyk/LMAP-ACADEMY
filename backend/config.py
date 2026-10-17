@@ -28,6 +28,9 @@ class Settings(BaseSettings):
 
     CORS_ORIGINS: str = "*"
 
+    # Shared secret for scripts that upload lesson videos (header X-Upload-Token). Disabled if empty.
+    VIDEO_UPLOAD_TOKEN: str = ""
+
     class Config:
         env_file = ".env"
 

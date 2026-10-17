@@ -82,6 +82,7 @@ class Video(Base):
     description = Column(Text)
     filename = Column(String(500))
     summary = Column(String(500))
+    source_file = Column(String(300))  # lesson markdown filename in backend/content
     content = Column(Text)  # markdown lesson body; shown when there is no video file
     duration_seconds = Column(Integer, default=0)
     order = Column(Integer, default=0)

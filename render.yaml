@@ -15,7 +15,17 @@ services:
     buildCommand: pip install --upgrade pip && pip install -r requirements.txt
     startCommand: uvicorn main:app --host 0.0.0.0 --port $PORT
     healthCheckPath: /health
+    plan: starter
+    # Persistent disk for lesson videos (and the SQLite database if not using Postgres).
+    disk:
+      name: lmap-data
+      mountPath: /var/data
+      sizeGB: 25
     envVars:
+      - key: UPLOAD_DIR
+        value: /var/data/uploads
+      - key: VIDEO_UPLOAD_TOKEN
+        sync: false
       - key: PYTHON_VERSION
         value: 3.11.9
       - key: DATABASE_URL

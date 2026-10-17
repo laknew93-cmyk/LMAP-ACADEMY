@@ -55,3 +55,19 @@ and `scripts/prerender.mjs`, which writes a real HTML page for every course, blo
 with title/description/canonical/Open Graph tags and JSON-LD (Course, FAQPage, BlogPosting,
 BreadcrumbList, Organization), plus `sitemap.xml` and `robots.txt`.
 Set `VITE_GA_ID` (Google Analytics 4) and `VITE_GSC_VERIFICATION` (Search Console) on the static site.
+
+## Lesson videos (HeyGen)
+Narration scripts live in `video/scripts/<course>/<lesson>.txt` (rules in `video/SCRIPT_SPEC.md`).
+`video/pipeline.py` sends them to HeyGen, downloads the MP4s to `video/output/` and uploads them to the
+site, where they are stored on the API's persistent disk and linked to lessons by file name.
+
+```bash
+cp video/.env.example video/.env     # add HEYGEN_API_KEY, avatar, voice, VIDEO_UPLOAD_TOKEN
+backend/.venv/bin/python video/pipeline.py avatars
+backend/.venv/bin/python video/pipeline.py voices english
+backend/.venv/bin/python video/pipeline.py test
+backend/.venv/bin/python video/pipeline.py generate --course ai-in-60-minutes
+backend/.venv/bin/python video/pipeline.py upload
+```
+The API needs a disk mounted at `/var/data`, `UPLOAD_DIR=/var/data/uploads`, and the same
+`VIDEO_UPLOAD_TOKEN` as `video/.env`.
