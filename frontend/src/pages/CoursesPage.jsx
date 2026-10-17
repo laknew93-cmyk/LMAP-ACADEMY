@@ -1,66 +1,59 @@
-import React, { useEffect, useState } from 'react'
-import { Search } from 'lucide-react'
-import api from '../api/client'
+import React, { useMemo, useState } from 'react'
+import { Link } from 'react-router-dom'
+import { Search, ArrowRight } from 'lucide-react'
 import CourseCard from '../components/CourseCard'
+import { COURSES, formatINR } from '../lib/content'
+import { useSeo } from '../lib/seo'
+import { SITE } from '../site'
 
 export default function CoursesPage() {
-  const [courses, setCourses] = useState([])
-  const [filtered, setFiltered] = useState([])
+  useSeo({
+    title: 'All AI Courses — ChatGPT, Prompt Engineering, Automation & GenAI',
+    description: 'Browse practical AI courses for Indian learners: ChatGPT, prompt engineering, AI freelancing, content, data analysis, no-code agents and Python GenAI.',
+    path: '/courses',
+  })
   const [search, setSearch] = useState('')
   const [level, setLevel] = useState('all')
-  const [loading, setLoading] = useState(true)
 
-  useEffect(() => {
-    api.get('/courses/').then(r => { setCourses(r.data); setFiltered(r.data) }).finally(() => setLoading(false))
-  }, [])
-
-  useEffect(() => {
-    let result = courses
-    if (search) result = result.filter(c => c.title.toLowerCase().includes(search.toLowerCase()))
-    if (level !== 'all') result = result.filter(c => c.level === level)
-    setFiltered(result)
-  }, [search, level, courses])
+  const filtered = useMemo(() => COURSES.filter(c =>
+    (level === 'all' || c.level === level) &&
+    (!search || `${c.title} ${c.subtitle} ${c.category} ${(c.tools || []).join(' ')}`.toLowerCase().includes(search.toLowerCase()))
+  ), [search, level])
 
   return (
     <div>
-      <div style={{ background: 'linear-gradient(135deg, #0F0F1A 0%, #1A1A2E 100%)', color: '#fff', padding: '60px 0' }}>
+      <div className="hero-dark" style={{ padding: '56px 0' }}>
         <div className="container" style={{ textAlign: 'center' }}>
-          <h1 style={{ fontSize: 44, fontWeight: 800, marginBottom: 12 }}>All Courses</h1>
-          <p style={{ fontSize: 18, color: '#9CA3AF' }}>Master AI tools and build the career you deserve</p>
+          <h1 style={{ fontSize: 'clamp(32px, 5vw, 44px)', fontWeight: 800, marginBottom: 12 }}>AI courses</h1>
+          <p style={{ fontSize: 18, color: '#9CA3AF' }}>Practical, self-paced and built for Indian learners</p>
         </div>
       </div>
 
-      <div className="section">
+      <div className="section" style={{ paddingTop: 40 }}>
         <div className="container">
-          {/* Filters */}
-          <div style={{ display: 'flex', gap: 16, marginBottom: 40, flexWrap: 'wrap', alignItems: 'center' }}>
-            <div style={{ position: 'relative', flex: 1, minWidth: 240 }}>
+          <div className="row" style={{ gap: 14, marginBottom: 32 }}>
+            <div style={{ position: 'relative', flex: 1, minWidth: 220 }}>
               <Search size={16} style={{ position: 'absolute', left: 14, top: '50%', transform: 'translateY(-50%)', color: 'var(--text-muted)' }} />
-              <input className="form-input" style={{ paddingLeft: 42, width: '100%' }}
-                placeholder="Search courses..." value={search} onChange={e => setSearch(e.target.value)} />
+              <input className="form-input" style={{ paddingLeft: 42, width: '100%' }} aria-label="Search courses"
+                placeholder="Search courses or tools, e.g. Excel, n8n" value={search} onChange={e => setSearch(e.target.value)} />
             </div>
-            <div style={{ display: 'flex', gap: 8 }}>
+            <div className="tabs">
               {['all', 'beginner', 'intermediate', 'advanced'].map(l => (
-                <button key={l} onClick={() => setLevel(l)}
-                  className={`btn btn-sm ${level === l ? 'btn-primary' : 'btn-outline'}`}
-                  style={{ textTransform: 'capitalize' }}>
-                  {l === 'all' ? 'All Levels' : l}
+                <button key={l} onClick={() => setLevel(l)} className={`btn btn-sm ${level === l ? 'btn-primary' : 'btn-outline'}`} style={{ textTransform: 'capitalize' }}>
+                  {l === 'all' ? 'All levels' : l}
                 </button>
               ))}
             </div>
           </div>
 
-          {loading ? (
-            <div style={{ display: 'flex', justifyContent: 'center', padding: 80 }}><div className="spinner" /></div>
-          ) : filtered.length === 0 ? (
-            <div style={{ textAlign: 'center', padding: 80, color: 'var(--text-muted)' }}>
-              <p style={{ fontSize: 18 }}>No courses found. Check back soon!</p>
-            </div>
-          ) : (
-            <div className="grid-3">
-              {filtered.map(c => <CourseCard key={c.id} course={c} />)}
-            </div>
-          )}
+          <Link to="/all-access" className="card row" style={{ padding: '16px 20px', marginBottom: 28, justifyContent: 'space-between', background: 'var(--primary-light)', borderColor: '#DDD6FE', boxShadow: 'none' }}>
+            <span><strong>All-Access Pass:</strong> every paid course for {formatINR(SITE.bundle.price)}</span>
+            <span className="row" style={{ gap: 4, color: 'var(--primary)', fontWeight: 600 }}>See what's included <ArrowRight size={16} /></span>
+          </Link>
+
+          {filtered.length === 0
+            ? <p className="muted" style={{ textAlign: 'center', padding: 60, fontSize: 18 }}>No courses match that search.</p>
+            : <div className="grid-3">{filtered.map(c => <CourseCard key={c.slug} course={c} />)}</div>}
         </div>
       </div>
     </div>

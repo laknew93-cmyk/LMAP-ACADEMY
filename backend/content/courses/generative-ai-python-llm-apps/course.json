@@ -1,0 +1,268 @@
+{
+  "slug": "generative-ai-python-llm-apps",
+  "title": "Generative AI Mastery: Build LLM Apps, RAG & Agents with Python",
+  "subtitle": "Go from basic Python to deployed GenAI apps: LLM APIs, structured output, RAG with citations, safe agents, evals and a portfolio for GenAI roles.",
+  "category": "Generative AI Engineering",
+  "level": "advanced",
+  "price": 4999,
+  "mrp": 14999,
+  "duration_hours": 13,
+  "sort_order": 8,
+  "description": "This is a hands-on engineering course for people who already write basic Python and want to build real applications on top of large language models. You will not just chat with an AI tool; you will call LLM APIs from code, get validated structured data out of them, connect them to your own documents and tools, and deploy the result.\n\nYou start with how LLMs work from an engineer's point of view: tokens, context windows, sampling and embeddings. Then you build steadily: a streaming CLI chatbot, a Streamlit web app, a GST invoice extraction API with Pydantic validation, a document Q&A system with retrieval and citations, and a tool-using agent that analyses CSV data with a safe calculator. Along the way you learn evaluation with test sets, prompt caching and cost control, prompt-injection and PII defences, retries, Docker and cloud deployment.\n\nExamples use Python and the Anthropic Claude API, with notes on how the same patterns apply to OpenAI, Gemini and open-source models via Ollama. Every lesson is written for Indian learners, with local examples such as GST invoices, UPI, HR policies and Naukri job hunting, and ends with a 10-20 minute exercise.\n\nThe final module turns your work into a deployed portfolio project with a strong README and prepares you for GenAI interviews in India: concept questions, coding rounds and system design.",
+  "audience": [
+    "Software developers who want to move into GenAI engineering roles",
+    "CS/IT students and recent graduates building a job-ready AI portfolio",
+    "Engineers in Indian IT services companies joining GenAI projects or practices",
+    "Data analysts comfortable with Python who want to build LLM-powered tools",
+    "Freelancers who want to offer RAG, chatbot and document automation projects"
+  ],
+  "outcomes": [
+    "Explain tokens, context windows, sampling and embeddings clearly in interviews and design reviews",
+    "Call LLM APIs from Python with system prompts, multi-turn history, streaming and error handling",
+    "Extract validated JSON from text, PDFs and images using structured output and Pydantic",
+    "Build tool-calling apps and agents with step limits, approval gates and safe tools",
+    "Build a RAG pipeline with chunking, vector search, grounded answers and page-level citations",
+    "Evaluate RAG and prompts with test sets, retrieval hit rate and LLM-as-judge grading",
+    "Reduce cost with prompt caching, effort settings and model routing, and defend against prompt injection",
+    "Deploy LLM apps with Docker and environment variables, and present them as a portfolio project"
+  ],
+  "prerequisites": [
+    "Basic Python: functions, lists and dictionaries, loops, and reading files",
+    "Comfort installing packages with pip and using virtual environments",
+    "A laptop that can run Python 3.10+ and an LLM API account (usage is billed by the provider)"
+  ],
+  "tools": [
+    "Python",
+    "Anthropic Claude API",
+    "Pydantic",
+    "FastAPI",
+    "Streamlit",
+    "sentence-transformers",
+    "Chroma",
+    "NumPy and pandas",
+    "Docker",
+    "Render or Railway"
+  ],
+  "projects": [
+    "A document Q&A (RAG) app that answers only from your PDFs and cites the file and page for every claim.",
+    "A GST invoice extraction API that turns PDFs and photos into validated JSON and flags invoices needing review.",
+    "A data analyst agent that answers questions over a sales CSV using safe aggregation tools and a calculator.",
+    "A deployed portfolio demo with Docker, a public URL, evaluation results and a recruiter-ready README."
+  ],
+  "seo": {
+    "title": "Generative AI Course in India: LLM Apps, RAG & Agents",
+    "description": "Advanced generative AI course with Python: build LLM apps, RAG with citations and AI agents, then deploy a portfolio project for GenAI jobs in India.",
+    "keywords": [
+      "generative ai course in india",
+      "generative ai course with python",
+      "llm course for developers",
+      "rag course online",
+      "ai agents course",
+      "genai engineer course",
+      "rag tutorial python",
+      "build chatbot with python and llm",
+      "claude api python course",
+      "genai jobs in india preparation",
+      "vector database tutorial",
+      "llm app development course"
+    ]
+  },
+  "faqs": [
+    {
+      "q": "How much Python do I need before starting?",
+      "a": "You should be comfortable writing functions, working with lists and dictionaries, installing packages with pip and using a virtual environment. You do not need prior machine learning experience; the course explains the LLM concepts you need from scratch."
+    },
+    {
+      "q": "Will I have to pay for an LLM API?",
+      "a": "Yes, the examples call a paid API, which the provider bills by usage. For the exercises in this course the usage is typically modest, and the course teaches you to measure tokens and control cost. Check the provider's current pricing before you start."
+    },
+    {
+      "q": "Is this course only about Claude, or will it help with OpenAI and Gemini too?",
+      "a": "Code examples use the Anthropic Claude API so that everything is consistent and runnable. The patterns (messages, structured output, tool calling, streaming, RAG, evaluation) are the same across providers, and lessons point out how they map to OpenAI, Gemini and open-source models via Ollama."
+    },
+    {
+      "q": "Will this course guarantee me a GenAI job?",
+      "a": "No course can guarantee a job. What it gives you is practical skills, four portfolio projects including a deployed one, and structured interview preparation, which together make you a much stronger candidate for GenAI and AI engineer roles."
+    },
+    {
+      "q": "Do I get a certificate?",
+      "a": "Yes. A certificate of completion is issued once you mark every lesson in the course as complete."
+    },
+    {
+      "q": "What is the refund policy?",
+      "a": "You can get a full refund within 7 days of purchase, as long as you have completed less than 30% of the course."
+    }
+  ],
+  "modules": [
+    {
+      "title": "LLM Foundations for Engineers",
+      "lessons": [
+        {
+          "title": "How LLMs Work: Tokens, Context, Sampling and Embeddings",
+          "file": "01-01-how-llms-work.md",
+          "minutes": 20,
+          "preview": true,
+          "summary": "Build an engineer's mental model of LLMs: next-token prediction, tokens, context windows, randomness, reasoning and embeddings."
+        },
+        {
+          "title": "Project Setup and Your First API Call",
+          "file": "01-02-first-api-call.md",
+          "minutes": 30,
+          "preview": true,
+          "summary": "Set up a Python project, store your API key safely, make your first call and understand every field of the response."
+        },
+        {
+          "title": "System Prompts and Multi-Turn Conversations",
+          "file": "01-03-system-prompts-and-conversations.md",
+          "minutes": 30,
+          "preview": false,
+          "summary": "Write testable system prompts and manage conversation history with a reusable Python class."
+        },
+        {
+          "title": "Streaming Responses and a CLI Chatbot",
+          "file": "01-04-streaming-cli-chatbot.md",
+          "minutes": 35,
+          "preview": false,
+          "summary": "Stream answers token by token, build a command-line chatbot and measure time to first token."
+        }
+      ]
+    },
+    {
+      "title": "Structured Output, Tools and Web Apps",
+      "lessons": [
+        {
+          "title": "Structured Output and JSON Extraction with Pydantic",
+          "file": "02-01-structured-output-pydantic.md",
+          "minutes": 35,
+          "preview": false,
+          "summary": "Get schema-constrained JSON from the model, validate it with Pydantic and add business-rule checks."
+        },
+        {
+          "title": "Project: GST Invoice Extraction Service",
+          "file": "02-02-invoice-extraction-service.md",
+          "minutes": 50,
+          "preview": false,
+          "summary": "Build a FastAPI service that reads invoice PDFs and photos, returns validated JSON and flags GST inconsistencies."
+        },
+        {
+          "title": "Tool Use and Function Calling",
+          "file": "02-03-tool-use-function-calling.md",
+          "minutes": 35,
+          "preview": false,
+          "summary": "Let the model call your Python functions, handle results and errors correctly, and keep tools secure."
+        },
+        {
+          "title": "Building a Streaming Web App with Streamlit",
+          "file": "02-04-streamlit-web-app.md",
+          "minutes": 40,
+          "preview": false,
+          "summary": "Turn your chatbot into a streaming web app with session state, document upload and demo-friendly touches."
+        }
+      ]
+    },
+    {
+      "title": "Embeddings and Retrieval-Augmented Generation",
+      "lessons": [
+        {
+          "title": "Embeddings and Vector Search from Scratch",
+          "file": "03-01-embeddings-vector-search.md",
+          "minutes": 35,
+          "preview": false,
+          "summary": "Generate embeddings locally with sentence-transformers and build semantic search with NumPy cosine similarity."
+        },
+        {
+          "title": "Chunking Documents and Storing Them in Chroma",
+          "file": "03-02-chunking-and-chroma.md",
+          "minutes": 45,
+          "preview": false,
+          "summary": "Load PDFs, chunk them with overlap, and store embeddings with source and page metadata in a Chroma vector store."
+        },
+        {
+          "title": "Project: Document Q&A with Grounded Answers and Citations",
+          "file": "03-03-rag-with-citations.md",
+          "minutes": 50,
+          "preview": false,
+          "summary": "Build an end-to-end RAG app that answers only from your documents, cites pages and abstains when unsure."
+        },
+        {
+          "title": "Evaluating RAG Pipelines and Prompts",
+          "file": "03-04-evaluating-rag-and-prompts.md",
+          "minutes": 45,
+          "preview": false,
+          "summary": "Create a test set, measure retrieval hit rate and grade answers with an LLM judge to compare changes objectively."
+        }
+      ]
+    },
+    {
+      "title": "AI Agents That Use Tools Safely",
+      "lessons": [
+        {
+          "title": "The Agent Loop: Tools, Steps and Limits",
+          "file": "04-01-agent-loop.md",
+          "minutes": 40,
+          "preview": false,
+          "summary": "Write a reusable tool-use loop with step limits, error recovery and output caps, and understand what makes an agent."
+        },
+        {
+          "title": "Project: CSV Data Analyst Agent with a Calculator",
+          "file": "04-02-csv-calculator-agent.md",
+          "minutes": 50,
+          "preview": false,
+          "summary": "Build an agent that answers questions over a sales CSV using safe, read-only pandas tools and an exact calculator."
+        },
+        {
+          "title": "Planning, Guardrails and When Not to Use Agents",
+          "file": "04-03-agent-planning-guardrails.md",
+          "minutes": 40,
+          "preview": false,
+          "summary": "Add plans, approval gates and spend limits, defend against injection, and learn when a simple workflow is better."
+        }
+      ]
+    },
+    {
+      "title": "Production: Cost, Safety and Deployment",
+      "lessons": [
+        {
+          "title": "Prompt Caching and Cost Control",
+          "file": "05-01-prompt-caching-cost-control.md",
+          "minutes": 35,
+          "preview": false,
+          "summary": "Measure tokens, use prompt caching correctly, right-size model and effort, and apply batching and other savings."
+        },
+        {
+          "title": "Safety: Prompt Injection, PII, Rate Limits and Retries",
+          "file": "05-02-safety-injection-pii-retries.md",
+          "minutes": 40,
+          "preview": false,
+          "summary": "Defend against prompt injection, redact Indian PII, rate-limit users and handle retries, timeouts and refusals."
+        },
+        {
+          "title": "Deploying with Docker, Environment Variables and Cloud Hosting",
+          "file": "05-03-deployment-docker-hosting.md",
+          "minutes": 50,
+          "preview": false,
+          "summary": "Containerise your app, manage secrets with environment variables and deploy to Render or Railway."
+        }
+      ]
+    },
+    {
+      "title": "Portfolio and GenAI Career Prep",
+      "lessons": [
+        {
+          "title": "Building Your Deployed Portfolio Project and README",
+          "file": "06-01-portfolio-deployed-demo.md",
+          "minutes": 40,
+          "preview": false,
+          "summary": "Polish a flagship project, write a recruiter-ready README with real evaluation results and record a short demo."
+        },
+        {
+          "title": "Interview Prep for GenAI Roles in India",
+          "file": "06-02-genai-interview-prep-india.md",
+          "minutes": 30,
+          "preview": false,
+          "summary": "Prepare for concept, coding, system design and behavioural rounds, with a 30-day plan for your job search."
+        }
+      ]
+    }
+  ]
+}

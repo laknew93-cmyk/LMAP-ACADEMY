@@ -1,11 +1,15 @@
-from fastapi import APIRouter, Depends, HTTPException
-from sqlalchemy.orm import Session, joinedload
-from pydantic import BaseModel
-from typing import Optional
-from database import get_db
-from models import Course, Module, Video, Enrollment, PaymentStatus, CourseLevel, User
-from auth import get_current_user, require_admin
+import json
 import re
+from typing import Optional
+
+from fastapi import APIRouter, Depends, HTTPException
+from pydantic import BaseModel, field_validator
+from sqlalchemy.orm import Session, joinedload
+
+from access import is_enrolled
+from auth import get_current_user, require_admin
+from database import get_db
+from models import Course, CourseLevel, Module, User, VideoProgress
 
 router = APIRouter(prefix="/courses", tags=["courses"])
 
@@ -17,10 +21,11 @@ def slugify(text: str) -> str:
 class VideoOut(BaseModel):
     id: int
     title: str
-    description: Optional[str]
+    summary: Optional[str] = None
     duration_seconds: int
     order: int
     is_preview: bool
+    has_video: bool = False
 
     class Config:
         from_attributes = True
@@ -43,14 +48,31 @@ class CourseOut(BaseModel):
     description: Optional[str]
     short_description: Optional[str]
     price: float
+    mrp: Optional[float] = None
+    category: Optional[str] = None
     level: str
     thumbnail: Optional[str]
     duration_hours: float
     is_published: bool
+    sort_order: Optional[int] = 0
+    details: dict = {}
     modules: list[ModuleOut] = []
 
     class Config:
         from_attributes = True
+
+    @field_validator("details", mode="before")
+    @classmethod
+    def _parse_details(cls, v):
+        return json.loads(v) if isinstance(v, str) and v else (v or {})
+
+
+def course_out(course: Course) -> CourseOut:
+    out = CourseOut.model_validate(course)
+    for module, mod_out in zip(course.modules, out.modules):
+        for video, vid_out in zip(module.videos, mod_out.videos):
+            vid_out.has_video = bool(video.filename)
+    return out
 
 
 class CourseCreate(BaseModel):
@@ -67,20 +89,7 @@ class ModuleCreate(BaseModel):
     order: int = 0
 
 
-@router.get("/")
-def list_courses(db: Session = Depends(get_db)):
-    courses = db.query(Course).filter(Course.is_published == True).all()
-    return [CourseOut.model_validate(c) for c in courses]
-
-
-@router.get("/all")
-def list_all_courses(db: Session = Depends(get_db), _admin: User = Depends(require_admin)):
-    courses = db.query(Course).all()
-    return [CourseOut.model_validate(c) for c in courses]
-
-
-@router.get("/{slug}")
-def get_course(slug: str, db: Session = Depends(get_db)):
+def _published(db: Session, slug: str) -> Course:
     course = (
         db.query(Course)
         .options(joinedload(Course.modules).joinedload(Module.videos))
@@ -89,7 +98,23 @@ def get_course(slug: str, db: Session = Depends(get_db)):
     )
     if not course:
         raise HTTPException(status_code=404, detail="Course not found")
-    return CourseOut.model_validate(course)
+    return course
+
+
+@router.get("/")
+def list_courses(db: Session = Depends(get_db)):
+    courses = db.query(Course).filter(Course.is_published == True).order_by(Course.sort_order, Course.id).all()
+    return [course_out(c) for c in courses]
+
+
+@router.get("/all")
+def list_all_courses(db: Session = Depends(get_db), _admin: User = Depends(require_admin)):
+    return [course_out(c) for c in db.query(Course).order_by(Course.sort_order, Course.id).all()]
+
+
+@router.get("/{slug}")
+def get_course(slug: str, db: Session = Depends(get_db)):
+    return course_out(_published(db, slug))
 
 
 @router.post("/")
@@ -104,7 +129,7 @@ def create_course(data: CourseCreate, db: Session = Depends(get_db), _admin: Use
     db.add(course)
     db.commit()
     db.refresh(course)
-    return CourseOut.model_validate(course)
+    return course_out(course)
 
 
 @router.put("/{course_id}/publish")
@@ -134,9 +159,24 @@ def check_enrollment(slug: str, db: Session = Depends(get_db), current_user: Use
     course = db.query(Course).filter(Course.slug == slug).first()
     if not course:
         raise HTTPException(status_code=404, detail="Course not found")
-    enrollment = (
-        db.query(Enrollment)
-        .filter(Enrollment.user_id == current_user.id, Enrollment.course_id == course.id, Enrollment.payment_status == PaymentStatus.paid)
-        .first()
-    )
-    return {"enrolled": enrollment is not None}
+    enrolled = is_enrolled(db, current_user, course.id) or current_user.role.value == "admin"
+    return {"enrolled": enrolled}
+
+
+@router.get("/{slug}/progress")
+def course_progress(slug: str, db: Session = Depends(get_db), current_user: User = Depends(get_current_user)):
+    course = _published(db, slug)
+    lesson_ids = [v.id for m in course.modules for v in m.videos]
+    done = [
+        p.video_id for p in db.query(VideoProgress).filter(
+            VideoProgress.user_id == current_user.id,
+            VideoProgress.video_id.in_(lesson_ids),
+            VideoProgress.completed == True,
+        )
+    ]
+    total = len(lesson_ids)
+    return {
+        "completed": done,
+        "total": total,
+        "percent": round(100 * len(done) / total) if total else 0,
+    }

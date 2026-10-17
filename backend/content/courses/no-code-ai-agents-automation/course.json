@@ -1,0 +1,241 @@
+{
+  "slug": "no-code-ai-agents-automation",
+  "title": "Build AI Agents & Automations Without Code",
+  "subtitle": "Automate repetitive work and build AI assistants, chatbots and agents with Zapier, Make and n8n – no coding needed.",
+  "category": "AI Automation",
+  "level": "intermediate",
+  "price": 3499,
+  "mrp": 9999,
+  "duration_hours": 9,
+  "sort_order": 7,
+  "description": "This course is for operations people, founders, freelancers, marketers and consultants who spend too many hours copying data between apps, answering the same questions and chasing follow-ups. You will learn to build AI-powered automations and simple AI agents using no-code tools like Zapier, Make and n8n, without writing code.\n\nYou start by learning the difference between a plain automation, an AI-powered workflow and a true AI agent, and how to map a process and estimate the time it will save. Then you master the building blocks: triggers, actions, data mapping, filters, routers, error handling and AI steps that summarise, classify, extract and draft. You will also learn to handle API keys safely and keep AI costs and rate limits under control.\n\nAcross the course you build four practical projects: a lead-qualification flow with CRM and WhatsApp or email follow-up, an AI inbox triage assistant, a customer FAQ bot grounded in your own documents, and a weekly report agent that waits for human approval before sending anything.\n\nThe final module covers what turns a demo into dependable client work: testing, monitoring and failure handling, plus how to find, scope, price and maintain automation projects for Indian small and medium businesses. Every lesson is text-based, practical and ends with a hands-on exercise.",
+  "audience": [
+    "Operations and admin professionals buried in repetitive copy-paste work",
+    "Founders and small business owners who want leads and enquiries handled faster",
+    "Freelancers and consultants who want to offer automation services",
+    "Marketers who want lead follow-up and reporting to run on their own",
+    "Non-coders curious about building real AI agents and chatbots"
+  ],
+  "outcomes": [
+    "Explain the difference between an automation, an AI workflow and an AI agent",
+    "Map a business process and estimate the hours automation will save",
+    "Build workflows in Zapier, Make or n8n with triggers, filters, routers and error handling",
+    "Add AI steps that classify, extract, summarise and draft with reliable structured output",
+    "Build a lead-qualification flow with Google Sheets or CRM and WhatsApp or email follow-up",
+    "Create a customer FAQ bot that answers only from your own documents",
+    "Build tool-using agents with human approval before anything important is sent",
+    "Handle API keys, costs, rate limits, testing and monitoring like a professional"
+  ],
+  "prerequisites": [
+    "Comfortable using Gmail, Google Sheets and a chat assistant like ChatGPT or Claude",
+    "A laptop and free or trial accounts on at least one automation tool",
+    "No coding experience required"
+  ],
+  "tools": [
+    "Zapier",
+    "Make",
+    "n8n",
+    "ChatGPT / OpenAI API",
+    "Claude / Anthropic API",
+    "Google Gemini",
+    "Google Sheets and Gmail",
+    "WhatsApp Business Platform",
+    "CRMs such as Zoho, HubSpot or Pipedrive"
+  ],
+  "projects": [
+    "A lead-qualification automation that scores enquiries with AI, logs them to a sheet or CRM and follows up on WhatsApp or email.",
+    "An AI inbox triage assistant that labels, prioritises and summarises email and saves draft replies for review.",
+    "A document-grounded FAQ bot that answers customer questions from your own policies and hands off to a human when unsure.",
+    "A weekly report agent that gathers data with tools, drafts a report and sends it only after human approval."
+  ],
+  "seo": {
+    "title": "No-Code AI Agents & Automation Course",
+    "description": "Learn to build AI agents, chatbots and automations with Zapier, Make and n8n – no coding. 4 real projects for Indian businesses and freelancers.",
+    "keywords": [
+      "ai automation course in india",
+      "no code ai agents course",
+      "n8n course in india",
+      "zapier course online",
+      "make.com automation course",
+      "ai agent course for beginners",
+      "whatsapp automation course",
+      "build ai chatbot without coding",
+      "business process automation course india",
+      "ai automation freelancing india",
+      "n8n ai agent tutorial",
+      "learn workflow automation online"
+    ]
+  },
+  "faqs": [
+    {
+      "q": "Do I need to know coding to take this course?",
+      "a": "No. Every project is built with no-code tools by connecting steps and mapping fields. A few lessons show optional settings like JSON output, but we explain them in plain English and you never have to write a program."
+    },
+    {
+      "q": "Which tool should I use – Zapier, Make or n8n?",
+      "a": "The course is tool-neutral and explains each step so you can follow along in any of the three. Lesson 3 compares them so you can choose; many learners start with one and add n8n later for heavier AI agent work."
+    },
+    {
+      "q": "Will I have to pay for tools or AI usage?",
+      "a": "You can learn using free plans and trials, though limits change over time. AI provider APIs are usually pay-as-you-go, and for the course projects usage is typically small; we show you how to set spending limits so there are no surprises."
+    },
+    {
+      "q": "Can I use this to earn money as a freelancer?",
+      "a": "The final module covers finding, scoping, pricing and maintaining automation projects for Indian small businesses. We teach the method honestly, but we cannot promise any particular income – that depends on your niche, effort and results."
+    },
+    {
+      "q": "Do I get a certificate?",
+      "a": "Yes. A certificate of completion is issued when you mark every lesson in the course as complete."
+    },
+    {
+      "q": "What is the refund policy?",
+      "a": "You can get a full refund within 7 days of purchase, as long as you have completed less than 30% of the course."
+    }
+  ],
+  "modules": [
+    {
+      "title": "Foundations: Automations, AI Workflows and Agents",
+      "lessons": [
+        {
+          "title": "Automation vs AI Agent: What's the Difference?",
+          "file": "01-01-automation-vs-ai-agent.md",
+          "minutes": 25,
+          "preview": true,
+          "summary": "Understand automations, AI-powered workflows and agents (LLM + tools + memory + goal), and when each one fits."
+        },
+        {
+          "title": "Mapping a Process Worth Automating",
+          "file": "01-02-mapping-a-process-worth-automating.md",
+          "minutes": 30,
+          "preview": false,
+          "summary": "Map any business process step by step, spot automation and AI opportunities, and estimate the time saved honestly."
+        },
+        {
+          "title": "Zapier, Make and n8n Compared",
+          "file": "01-03-zapier-make-n8n-compared.md",
+          "minutes": 30,
+          "preview": false,
+          "summary": "Compare the three leading no-code automation tools, including self-hosted n8n, and choose the right one for each job."
+        }
+      ]
+    },
+    {
+      "title": "Automation Building Blocks",
+      "lessons": [
+        {
+          "title": "Triggers, Actions and Data Mapping",
+          "file": "02-01-triggers-actions-and-data-mapping.md",
+          "minutes": 30,
+          "preview": false,
+          "summary": "Learn how workflows start, what actions do, how webhooks work and how to map and clean data between steps."
+        },
+        {
+          "title": "Filters, Routers and Error Handling",
+          "file": "02-02-filters-routers-and-error-handling.md",
+          "minutes": 30,
+          "preview": false,
+          "summary": "Add decisions and branches to workflows and plan for failures with retries, alerts and a review sheet."
+        },
+        {
+          "title": "Adding an AI Step: Summarise, Classify, Extract, Draft",
+          "file": "02-03-adding-an-llm-step.md",
+          "minutes": 30,
+          "preview": true,
+          "summary": "Put an LLM inside your workflow and write prompts that return reliable labels and structured JSON."
+        },
+        {
+          "title": "API Keys, Costs and Rate Limits",
+          "file": "02-04-api-keys-costs-and-rate-limits.md",
+          "minutes": 25,
+          "preview": false,
+          "summary": "Store API keys safely, estimate and cap AI costs, and handle rate limits before they break your workflows."
+        }
+      ]
+    },
+    {
+      "title": "Real-World AI Workflows",
+      "lessons": [
+        {
+          "title": "Project 1: Lead Capture and AI Qualification",
+          "file": "03-01-lead-capture-and-ai-qualification.md",
+          "minutes": 35,
+          "preview": false,
+          "summary": "Capture leads from your forms, deduplicate them and score each one with AI against your ideal-client criteria."
+        },
+        {
+          "title": "Project 1: CRM, Google Sheets and WhatsApp Follow-Up",
+          "file": "03-02-crm-sheets-and-whatsapp-follow-up.md",
+          "minutes": 35,
+          "preview": false,
+          "summary": "Save leads to a sheet or CRM, route by score, alert your team and follow up on WhatsApp or email the right way."
+        },
+        {
+          "title": "Project 2: AI Email Triage Assistant",
+          "file": "03-03-ai-email-triage-assistant.md",
+          "minutes": 35,
+          "preview": false,
+          "summary": "Build an assistant that labels, prioritises and summarises your inbox and saves draft replies for human review."
+        }
+      ]
+    },
+    {
+      "title": "Knowledge Bots and AI Agents",
+      "lessons": [
+        {
+          "title": "Knowledge Bases and RAG Explained Simply",
+          "file": "04-01-knowledge-bases-and-rag-explained-simply.md",
+          "minutes": 30,
+          "preview": false,
+          "summary": "Understand how chatbots answer from your own documents, what RAG really means and how to prepare a knowledge base."
+        },
+        {
+          "title": "Project 3: A Document-Grounded FAQ Bot",
+          "file": "04-02-building-a-document-grounded-faq-bot.md",
+          "minutes": 40,
+          "preview": false,
+          "summary": "Build a customer FAQ bot that answers only from your documents, hands off to humans and learns from its logs."
+        },
+        {
+          "title": "Agent Workflows with Tool Use",
+          "file": "04-03-agent-workflows-with-tool-use.md",
+          "minutes": 35,
+          "preview": false,
+          "summary": "Give an AI agent tools and a goal, write clear tool descriptions, and set guardrails that keep it safe."
+        },
+        {
+          "title": "Project 4: Weekly Report Agent with Human Approval",
+          "file": "04-04-weekly-report-agent-with-human-approval.md",
+          "minutes": 40,
+          "preview": false,
+          "summary": "Build an agent that drafts a weekly business report from your data and sends it only after a human approves."
+        }
+      ]
+    },
+    {
+      "title": "Running and Selling Automations",
+      "lessons": [
+        {
+          "title": "Testing, Monitoring and Failure Handling",
+          "file": "05-01-testing-monitoring-and-failure-handling.md",
+          "minutes": 30,
+          "preview": false,
+          "summary": "Test with real-world inputs, launch in stages, catch silent failures and recover cleanly when things break."
+        },
+        {
+          "title": "Finding Automation Clients in Indian SMBs",
+          "file": "05-02-finding-automation-clients-in-indian-smbs.md",
+          "minutes": 30,
+          "preview": false,
+          "summary": "Pick a niche, build proof and find your first automation clients among India's small and medium businesses."
+        },
+        {
+          "title": "Scoping, Pricing and Maintaining Client Work",
+          "file": "05-03-scoping-pricing-and-maintaining-client-work.md",
+          "minutes": 30,
+          "preview": false,
+          "summary": "Write tight scopes, choose a pricing model, hand over properly and earn recurring income from maintenance."
+        }
+      ]
+    }
+  ]
+}

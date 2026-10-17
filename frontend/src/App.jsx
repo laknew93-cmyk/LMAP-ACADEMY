@@ -1,5 +1,5 @@
 import React, { createContext, useContext, useState, useEffect } from 'react'
-import { Routes, Route, Navigate } from 'react-router-dom'
+import { Routes, Route, Navigate, useLocation } from 'react-router-dom'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import HomePage from './pages/HomePage'
@@ -10,6 +10,12 @@ import LoginPage from './pages/LoginPage'
 import RegisterPage from './pages/RegisterPage'
 import DashboardPage from './pages/DashboardPage'
 import AdminPage from './pages/AdminPage'
+import AllAccessPage from './pages/AllAccessPage'
+import BlogPage from './pages/BlogPage'
+import BlogPostPage from './pages/BlogPostPage'
+import StaticPage from './pages/StaticPage'
+import CertificatePage from './pages/CertificatePage'
+import VerifyPage from './pages/VerifyPage'
 
 export const AuthContext = createContext(null)
 
@@ -17,7 +23,8 @@ export function useAuth() { return useContext(AuthContext) }
 
 function RequireAuth({ children }) {
   const { user } = useAuth()
-  return user ? children : <Navigate to="/login" replace />
+  const { pathname, search } = useLocation()
+  return user ? children : <Navigate to={`/login?next=${encodeURIComponent(pathname + search)}`} replace />
 }
 
 function RequireAdmin({ children }) {
@@ -25,6 +32,12 @@ function RequireAdmin({ children }) {
   if (!user) return <Navigate to="/login" replace />
   if (user.role !== 'admin') return <Navigate to="/" replace />
   return children
+}
+
+function ScrollToTop() {
+  const { pathname } = useLocation()
+  useEffect(() => { window.scrollTo(0, 0) }, [pathname])
+  return null
 }
 
 export default function App() {
@@ -46,6 +59,7 @@ export default function App() {
 
   return (
     <AuthContext.Provider value={{ user, login, logout }}>
+      <ScrollToTop />
       <Navbar />
       <Routes>
         <Route path="/" element={<HomePage />} />
@@ -54,7 +68,15 @@ export default function App() {
         <Route path="/login" element={<LoginPage />} />
         <Route path="/register" element={<RegisterPage />} />
         <Route path="/dashboard" element={<RequireAuth><DashboardPage /></RequireAuth>} />
-        <Route path="/learn/:slug" element={<RequireAuth><LearnPage /></RequireAuth>} />
+        <Route path="/learn/:slug" element={<LearnPage />} />
+        <Route path="/all-access" element={<AllAccessPage />} />
+        <Route path="/blog" element={<BlogPage />} />
+        <Route path="/blog/:slug" element={<BlogPostPage />} />
+        <Route path="/certificate/:slug" element={<RequireAuth><CertificatePage /></RequireAuth>} />
+        <Route path="/verify/:code" element={<VerifyPage />} />
+        {['about', 'contact', 'terms', 'privacy-policy', 'refund-policy'].map(p => (
+          <Route key={p} path={`/${p}`} element={<StaticPage name={p} />} />
+        ))}
         <Route path="/admin" element={<RequireAdmin><AdminPage /></RequireAdmin>} />
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>

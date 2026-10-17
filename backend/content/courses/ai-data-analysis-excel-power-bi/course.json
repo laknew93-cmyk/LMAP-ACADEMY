@@ -1,0 +1,248 @@
+{
+  "slug": "ai-data-analysis-excel-power-bi",
+  "title": "AI for Data Analysis: Excel, Google Sheets & Power BI",
+  "subtitle": "Use ChatGPT, Claude, Copilot and Gemini to write formulas, clean data, build MIS reports and Power BI dashboards — and verify every number.",
+  "category": "AI for Data",
+  "level": "intermediate",
+  "price": 2999,
+  "mrp": 7999,
+  "duration_hours": 11,
+  "sort_order": 6,
+  "description": "This course is for MIS executives, accountants, operations and sales analysts, MBA students and anyone in India whose work runs on spreadsheets. If you spend evenings fighting VLOOKUPs, rebuilding the same monthly report, or wondering whether you can trust an AI-generated total, this course is built for you.\n\nYou will learn to use AI assistants as a spreadsheet co-pilot: describing your sheet so you get correct XLOOKUP, SUMIFS, INDEX-MATCH, IF, text and date formulas the first time; understanding and repairing inherited formulas; cleaning messy data with duplicates, name variants and text dates; and summarising it with pivot tables. You will then upload data to ChatGPT or Claude for analysis, use Copilot in Excel and Gemini in Sheets, and move into Power BI with DAX measures explained in plain English.\n\nEvery example uses realistic Indian data — a Jaipur retailer's GST-inclusive sales, a Bengaluru startup's leads sheet, a Nagpur distributor's branch MIS — and every lesson ends with a hands-on exercise. A strong thread runs throughout: data privacy (never uploading PAN or Aadhaar, masking customer data) and verification, so the numbers you present are numbers you can defend.\n\nBy the end you will have four portfolio projects: a cleaned and analysed 1,000-row sales dataset, a refreshable pivot-based monthly MIS report, a one-page dashboard in Power BI or Google Sheets, and a five-insight executive summary.",
+  "audience": [
+    "MIS executives and analysts who build monthly reports in Excel or Google Sheets",
+    "Accountants and CA-firm staff working with sales registers and expense data",
+    "Operations and sales analysts who want to become the team's go-to data person",
+    "MBA and commerce students preparing for analyst and business roles",
+    "Anyone who uses spreadsheets daily and wants to work faster with AI"
+  ],
+  "outcomes": [
+    "Get correct XLOOKUP, SUMIFS, INDEX-MATCH, IF, text and date formulas from AI, and understand them",
+    "Explain, audit and fix complex inherited formulas using AI and Excel's auditing tools",
+    "Clean messy data: duplicates, inconsistent names, text dates, currency text and outliers",
+    "Build pivot tables with MoM growth, shares and slicers for fast business summaries",
+    "Analyse CSV files with ChatGPT or Claude and verify every result with control checks",
+    "Build an automated monthly MIS report with Power Query, pivots and a single month cell",
+    "Create Power BI models with a date table and DAX measures for Indian financial years",
+    "Design a one-page dashboard and write a five-insight executive summary"
+  ],
+  "prerequisites": [
+    "Basic comfort with Excel or Google Sheets (entering data, simple SUM formulas)",
+    "A laptop with Excel or a Google account; Windows needed for Power BI Desktop",
+    "Access to any AI chat assistant such as ChatGPT, Claude or Gemini (free versions work for most lessons)"
+  ],
+  "tools": [
+    "Microsoft Excel",
+    "Google Sheets",
+    "Power BI Desktop",
+    "Power Query",
+    "ChatGPT",
+    "Claude",
+    "Gemini",
+    "Microsoft Copilot",
+    "Google Colab (Python and pandas)"
+  ],
+  "projects": [
+    "Clean and analyse a messy 1,000-row Jaipur retailer sales dataset and answer five business questions.",
+    "Build a refreshable, pivot-based monthly MIS report for a three-branch distributor using Power Query.",
+    "Design and build a one-page sales dashboard in Power BI or Google Sheets.",
+    "Write a one-page, five-insight executive summary backed by verified numbers."
+  ],
+  "seo": {
+    "title": "AI for Data Analysis: Excel, Sheets & Power BI Course",
+    "description": "Learn AI for data analysis in Excel, Google Sheets & Power BI: formulas, data cleaning, pivots, MIS reports, DAX & dashboards with Indian examples.",
+    "keywords": [
+      "ai for data analysis course in india",
+      "excel with chatgpt course",
+      "power bi course with ai",
+      "mis executive course online",
+      "excel formulas using ai",
+      "copilot in excel training",
+      "data analysis course for accountants",
+      "google sheets ai course",
+      "dax measures for beginners",
+      "mis report in excel course",
+      "chatgpt data analysis excel",
+      "data analytics course for beginners india"
+    ]
+  },
+  "faqs": [
+    {
+      "q": "Do I need to know advanced Excel or coding before joining?",
+      "a": "No. You should be comfortable entering data and writing a simple SUM formula. The course builds up lookups, SUMIFS, pivots and Power BI step by step, and the Python lesson is optional and written for people who have never coded."
+    },
+    {
+      "q": "Do I need paid versions of ChatGPT, Claude, Copilot or Power BI?",
+      "a": "Free versions of chat assistants are enough for formula help and most exercises. File-upload analysis, Copilot in Excel and Gemini in Sheets depend on your plan and your organisation's settings, so we teach the skills in a way you can apply with whatever you have. Power BI Desktop is free on Windows; Mac users can do the dashboard project in Google Sheets."
+    },
+    {
+      "q": "Is it safe to put my company's data into AI tools?",
+      "a": "Only if your organisation allows it. A full lesson covers checking your company's policy, never uploading PAN, Aadhaar or bank details, and masking customer data — and the projects use realistic practice datasets so you never need real customer data to learn."
+    },
+    {
+      "q": "Will this course get me a data analyst job?",
+      "a": "No course can promise a job. What you will have is practical skills employers ask for in MIS and analyst roles, plus four portfolio projects you can describe in interviews and show in a sanitised form."
+    },
+    {
+      "q": "Do I get a certificate?",
+      "a": "Yes. A certificate of completion is issued once you mark every lesson in the course as complete."
+    },
+    {
+      "q": "What is the refund policy?",
+      "a": "You can get a full refund within 7 days of purchase, as long as you have completed less than 30% of the course. Just contact support from your registered email."
+    }
+  ],
+  "modules": [
+    {
+      "title": "AI as Your Spreadsheet Co-pilot",
+      "lessons": [
+        {
+          "title": "Becoming the Data Person with AI",
+          "file": "01-01-becoming-the-data-person.md",
+          "minutes": 15,
+          "preview": true,
+          "summary": "What the office 'data person' really does, where AI helps and where it doesn't, and the Indian datasets we'll use."
+        },
+        {
+          "title": "Describing Your Sheet So AI Gets Formulas Right",
+          "file": "01-02-describing-your-sheet-to-ai.md",
+          "minutes": 20,
+          "preview": false,
+          "summary": "A simple context template, sample rows and Excel Tables that make AI-written formulas work first time."
+        },
+        {
+          "title": "Data Privacy: Masking Data and What Never to Upload",
+          "file": "01-03-data-privacy-and-masking.md",
+          "minutes": 20,
+          "preview": false,
+          "summary": "Company policy checks, the never-upload list (PAN, Aadhaar, bank data), masking formulas and synthetic data."
+        }
+      ]
+    },
+    {
+      "title": "Formulas with AI: Lookups, Conditions, Text and Dates",
+      "lessons": [
+        {
+          "title": "Lookups: XLOOKUP, INDEX-MATCH and VLOOKUP",
+          "file": "02-01-lookups-xlookup-index-match.md",
+          "minutes": 25,
+          "preview": true,
+          "summary": "Join tables with XLOOKUP or INDEX-MATCH, handle missing values, and fix the usual causes of #N/A."
+        },
+        {
+          "title": "SUMIFS, COUNTIFS and Conditional Totals",
+          "file": "02-02-sumifs-countifs-conditional-totals.md",
+          "minutes": 25,
+          "preview": false,
+          "summary": "Build month, FY and multi-condition totals with SUMIFS and COUNTIFS, and catch ratio mistakes."
+        },
+        {
+          "title": "IF Logic, Text and Date Functions",
+          "file": "02-03-if-logic-text-and-date-functions.md",
+          "minutes": 25,
+          "preview": false,
+          "summary": "IF/IFS bands, GST splits, text cleanup and Indian financial-year date formulas, explained by AI."
+        },
+        {
+          "title": "Explaining and Debugging Inherited Formulas",
+          "file": "02-04-explaining-and-debugging-formulas.md",
+          "minutes": 20,
+          "preview": false,
+          "summary": "Use AI to explain legacy formulas, find silent failures, rewrite them robustly and document them."
+        }
+      ]
+    },
+    {
+      "title": "Cleaning, Pivots and the Monthly MIS Report",
+      "lessons": [
+        {
+          "title": "Cleaning Messy Data: Duplicates, Names and Dates",
+          "file": "03-01-cleaning-messy-data.md",
+          "minutes": 30,
+          "preview": false,
+          "summary": "A repeatable routine to profile data, remove true duplicates, standardise names and fix DD/MM dates."
+        },
+        {
+          "title": "Pivot Tables and Summaries",
+          "file": "03-02-pivot-tables-and-summaries.md",
+          "minutes": 30,
+          "preview": false,
+          "summary": "Build pivots with month grouping, MoM growth, shares, distinct counts and slicers — with AI designing the layout."
+        },
+        {
+          "title": "Project: Clean and Analyse a 1,000-Row Sales Dataset",
+          "file": "03-03-project-clean-and-analyse-sales-data.md",
+          "minutes": 90,
+          "preview": false,
+          "summary": "Take a messy Jaipur retailer export to a clean table and answer five real business questions."
+        },
+        {
+          "title": "Project: Build an Automated Monthly MIS Report",
+          "file": "03-04-project-automated-monthly-mis-report.md",
+          "minutes": 90,
+          "preview": false,
+          "summary": "Combine branch files with Power Query and build a pivot-based MIS report that refreshes from one month cell."
+        }
+      ]
+    },
+    {
+      "title": "AI Analysis Tools: Uploads, Copilot, Gemini and Python",
+      "lessons": [
+        {
+          "title": "Analysing CSV Files with ChatGPT and Claude",
+          "file": "04-01-analysing-csv-files-with-chatgpt-and-claude.md",
+          "minutes": 25,
+          "preview": false,
+          "summary": "Prepare files, start with an orientation prompt, ask sharp business questions and get usable outputs."
+        },
+        {
+          "title": "Verifying AI Analysis Before You Share It",
+          "file": "04-02-verifying-ai-analysis.md",
+          "minutes": 20,
+          "preview": false,
+          "summary": "A five-check routine — control totals, spot-checks, parts-to-whole, sense checks, re-asks — plus an audit trail."
+        },
+        {
+          "title": "Copilot in Excel and Gemini in Google Sheets",
+          "file": "04-03-copilot-in-excel-and-gemini-in-sheets.md",
+          "minutes": 20,
+          "preview": false,
+          "summary": "What built-in spreadsheet AI can do, how to prepare your sheet, and where it still needs your judgement."
+        },
+        {
+          "title": "Optional: Python and pandas for People Who Never Coded",
+          "file": "04-04-python-pandas-for-non-coders.md",
+          "minutes": 30,
+          "preview": false,
+          "summary": "Run AI-written pandas code in Google Colab to clean, combine and summarise files — and verify the output."
+        }
+      ]
+    },
+    {
+      "title": "Power BI, Dashboards and Data Storytelling",
+      "lessons": [
+        {
+          "title": "Power BI Basics and DAX Measures with AI",
+          "file": "05-01-power-bi-basics-and-dax-with-ai.md",
+          "minutes": 35,
+          "preview": false,
+          "summary": "Load data, build an Indian-FY date table, create relationships and write DAX measures with AI explanations."
+        },
+        {
+          "title": "Project: Build a One-Page Dashboard",
+          "file": "05-02-project-one-page-dashboard.md",
+          "minutes": 90,
+          "preview": false,
+          "summary": "Choose the right charts and build a clean one-page sales dashboard in Power BI or Google Sheets."
+        },
+        {
+          "title": "Capstone: Write a Five-Insight Executive Summary",
+          "file": "05-03-capstone-five-insight-executive-summary.md",
+          "minutes": 60,
+          "preview": false,
+          "summary": "Ask better analytical questions, filter insights that matter, and turn verified data into a one-page story."
+        }
+      ]
+    }
+  ]
+}

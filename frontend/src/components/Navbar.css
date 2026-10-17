@@ -39,3 +39,13 @@
   }
   .navbar-links.open { display: flex; }
 }
+
+.mobile-only { display: none !important; }
+@media (max-width: 768px) {
+  .navbar-inner { gap: 12px; }
+  .navbar-user-name, .desktop-only { display: none !important; }
+  .navbar-links.open .mobile-only { display: inline-flex !important; }
+}
+@media (max-width: 380px) {
+  .navbar-brand { font-size: 17px; }
+}

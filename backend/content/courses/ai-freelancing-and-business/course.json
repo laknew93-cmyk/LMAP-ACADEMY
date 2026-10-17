@@ -1,0 +1,249 @@
+{
+  "slug": "ai-freelancing-and-business",
+  "title": "Make Money with AI: Freelancing & Small Business Playbook",
+  "subtitle": "Offer AI-powered services clients pay for, find and win clients honestly, get paid properly, and run your small business smarter.",
+  "category": "AI for Business",
+  "level": "beginner",
+  "price": 2499,
+  "mrp": 6999,
+  "duration_hours": 8,
+  "sort_order": 4,
+  "description": "This course is for anyone in India who wants to earn with AI-powered services or run a small business more efficiently: students, career returners, side-hustlers and shop, clinic or home-business owners. You do not need to code. You need a laptop or smartphone, an internet connection and a few focused hours each week.\n\nYou will learn which AI-assisted services clients actually pay for, how to choose a niche, build a portfolio quickly and honestly, price your work in rupees and dollars, and find clients on LinkedIn, Upwork, Fiverr, Instagram, WhatsApp and through your local network. You will also learn the business side that most courses skip: contracts, invoicing, GST and tax basics, international payments, and how to avoid scams.\n\nThe course is built around four practical projects: a niche and offer one-pager, a three-piece portfolio, a proposal template with ten personalised outreach messages, and a delivery SOP for one service. By the end you will have a working toolkit, not just notes.\n\nWe are honest throughout: AI speeds up first drafts, but quality, trust and communication are still your job. No course can guarantee income, and this one does not. Any prices shown are illustrative examples to help you build your own rate card.",
+  "audience": [
+    "Students who want to earn and build real work experience before placements",
+    "Career returners looking for flexible, home-based work",
+    "Working professionals building a side income on weekends",
+    "Small business owners who want to save time on customers, catalogues and admin",
+    "Beginner freelancers who want a clear, ethical system for using AI"
+  ],
+  "outcomes": [
+    "Choose a profitable niche and package a clear offer clients can say yes to",
+    "Build a three-piece portfolio quickly with AI while labelling samples honestly",
+    "Set prices in ₹ and $ using a floor-rate method and tiered packages",
+    "Write tailored proposals and respectful outreach messages that get conversations started",
+    "Deliver AI-assisted work with a review, fact-check and originality process clients trust",
+    "Use simple contracts, proper invoices and understand GST and tax basics to discuss with a CA",
+    "Set up WhatsApp Business, catalogue descriptions and simple AI-assisted bookkeeping",
+    "Spot common freelancing scams and avoid over-promising results"
+  ],
+  "prerequisites": [
+    "Basic comfort using a computer or smartphone and the internet",
+    "Ability to read and write simple English (regional language skills are a bonus)",
+    "No coding or prior freelancing experience needed"
+  ],
+  "tools": [
+    "ChatGPT",
+    "Claude",
+    "Gemini",
+    "Canva",
+    "Google Docs and Sheets",
+    "WhatsApp Business",
+    "LinkedIn",
+    "Upwork",
+    "Fiverr",
+    "Zapier or Make"
+  ],
+  "projects": [
+    "A one-page niche and offer document defining your ideal client, core package and pricing.",
+    "A three-piece portfolio with short case studies that honestly describe how you used AI.",
+    "A reusable proposal template plus ten researched, personalised outreach messages ready to send.",
+    "A step-by-step delivery SOP for one service, including prompts, checklists and message templates."
+  ],
+  "seo": {
+    "title": "AI Freelancing Course in India: Earn with AI Skills",
+    "description": "Learn AI freelancing in India: pick a niche, build a portfolio, price in ₹ and $, find clients, handle GST and invoices, and avoid scams. Beginner-friendly",
+    "keywords": [
+      "ai freelancing course in india",
+      "how to make money with ai in india",
+      "freelancing course for beginners india",
+      "chatgpt freelancing course",
+      "ai side hustle india",
+      "how to start freelancing in india",
+      "upwork fiverr course india",
+      "ai for small business india",
+      "whatsapp business for small business",
+      "gst for freelancers india",
+      "work from home ai skills course",
+      "freelancing with chatgpt for students"
+    ]
+  },
+  "faqs": [
+    {
+      "q": "Will this course guarantee that I earn money?",
+      "a": "No. No honest course can guarantee income, because results depend on your skills, effort, niche and market. What the course gives you is a practical system and four finished projects that make it much easier to find and serve clients. Any prices shown are illustrative examples, not promises."
+    },
+    {
+      "q": "Do I need any technical or coding skills?",
+      "a": "No. The course is designed for beginners. If you can use a browser, a chat app and a basic document or spreadsheet, you can follow every lesson. Optional automation topics use no-code tools."
+    },
+    {
+      "q": "I run a shop or small business, not a freelance practice. Is this useful for me?",
+      "a": "Yes. Module 5 focuses on using AI for customer replies, WhatsApp Business, catalogues, bookkeeping help and SOPs for your team. The pricing, contracts and scam-awareness lessons are also useful for any small business."
+    },
+    {
+      "q": "Does the course cover GST and income tax for freelancers?",
+      "a": "It covers the basics in plain language: invoicing, GST registration thresholds, export of services, TDS and advance tax, plus a list of questions to ask your CA. It is general information, not tax advice, and we recommend consulting a Chartered Accountant for your situation."
+    },
+    {
+      "q": "Do I get a certificate?",
+      "a": "Yes. A certificate of completion is issued automatically when you mark every lesson in the course as complete. You can add it to your LinkedIn profile."
+    },
+    {
+      "q": "What is the refund policy?",
+      "a": "You can get a full refund within 7 days of purchase, as long as you have completed less than 30% of the course. Just contact support with your order details."
+    }
+  ],
+  "modules": [
+    {
+      "title": "The AI Earning Opportunity, Honestly",
+      "lessons": [
+        {
+          "title": "What AI Really Changes for Freelancers and Small Businesses",
+          "file": "01-01-what-ai-changes.md",
+          "minutes": 25,
+          "preview": true,
+          "summary": "An honest look at what AI speeds up, what it doesn't change, and how to approach earning with it without the hype."
+        },
+        {
+          "title": "AI-Powered Services Clients Actually Pay For",
+          "file": "01-02-services-clients-pay-for.md",
+          "minutes": 25,
+          "preview": true,
+          "summary": "Seven practical services, from content writing to basic automation, and where AI helps versus where you must add value."
+        },
+        {
+          "title": "Choosing Your Niche and Shaping Your Offer",
+          "file": "01-03-niche-and-offer.md",
+          "minutes": 30,
+          "preview": false,
+          "summary": "Pick a niche you can reach and enjoy, package a clear offer, and start your niche and offer one-pager."
+        }
+      ]
+    },
+    {
+      "title": "Skills, Portfolio, Pricing and Profiles",
+      "lessons": [
+        {
+          "title": "Your Lean AI Toolkit and Quality Workflow",
+          "file": "02-01-ai-toolkit-and-quality.md",
+          "minutes": 25,
+          "preview": false,
+          "summary": "Set up a minimal toolkit, write better prompts, and adopt a draft-review-verify-own process for every deliverable."
+        },
+        {
+          "title": "Building a Three-Piece Portfolio Fast (and Ethically)",
+          "file": "02-02-portfolio-fast.md",
+          "minutes": 35,
+          "preview": false,
+          "summary": "Create spec, improvement and real-client samples with AI, write mini case studies, and label everything honestly."
+        },
+        {
+          "title": "Pricing Your Services in ₹ and $",
+          "file": "02-03-pricing.md",
+          "minutes": 25,
+          "preview": false,
+          "summary": "Calculate a floor rate, research the market, and build tiered packages using clearly illustrative example ranges."
+        },
+        {
+          "title": "Profiles That Convert: LinkedIn, Upwork, Fiverr and Instagram",
+          "file": "02-04-profiles-that-convert.md",
+          "minutes": 25,
+          "preview": false,
+          "summary": "Write client-focused headlines, overviews, gigs and bios with AI, then make them genuinely yours."
+        }
+      ]
+    },
+    {
+      "title": "Finding and Winning Clients",
+      "lessons": [
+        {
+          "title": "Where to Find Clients: Platforms, Social and Local Networks",
+          "file": "03-01-where-to-find-clients.md",
+          "minutes": 25,
+          "preview": false,
+          "summary": "Map warm, lukewarm and cold channels, choose two to focus on, and set up a weekly routine and tracker."
+        },
+        {
+          "title": "Writing Winning Proposals with AI",
+          "file": "03-02-proposals-with-ai.md",
+          "minutes": 30,
+          "preview": false,
+          "summary": "Use a five-part structure and AI-assisted brief analysis to create a reusable, personalised proposal template."
+        },
+        {
+          "title": "Cold Outreach That Respects People",
+          "file": "03-03-cold-outreach.md",
+          "minutes": 30,
+          "preview": false,
+          "summary": "Research prospects, draft ten personalised outreach messages with AI, and follow up without spamming."
+        }
+      ]
+    },
+    {
+      "title": "Delivering Work and Getting Paid",
+      "lessons": [
+        {
+          "title": "Delivering Quality Work Clients Trust",
+          "file": "04-01-delivering-quality.md",
+          "minutes": 25,
+          "preview": false,
+          "summary": "Run projects from kickoff to close with written confirmations, quality checklists and calm revision handling."
+        },
+        {
+          "title": "Contracts, Scope and Revisions",
+          "file": "04-02-contracts-and-scope.md",
+          "minutes": 25,
+          "preview": false,
+          "summary": "Draft a simple service agreement with AI covering scope, advance, revisions, IP and AI use, and manage scope creep."
+        },
+        {
+          "title": "Invoicing, GST and Tax Basics for Indian Freelancers",
+          "file": "04-03-invoicing-gst-tax.md",
+          "minutes": 25,
+          "preview": false,
+          "summary": "Create proper invoices, understand GST and income tax basics, and prepare the right questions for your CA."
+        },
+        {
+          "title": "Receiving International Payments",
+          "file": "04-04-international-payments.md",
+          "minutes": 20,
+          "preview": false,
+          "summary": "Compare platform withdrawals, bank wires and payment services, keep remittance proof, and avoid payment scams."
+        }
+      ]
+    },
+    {
+      "title": "Run and Scale Your Business with AI",
+      "lessons": [
+        {
+          "title": "AI for Customer Replies, Catalogues and WhatsApp Business",
+          "file": "05-01-ai-for-customer-communication.md",
+          "minutes": 25,
+          "preview": false,
+          "summary": "Answer frequent questions faster, set up WhatsApp Business features, and write accurate catalogue descriptions."
+        },
+        {
+          "title": "Simple Bookkeeping and Admin with AI",
+          "file": "05-02-bookkeeping-and-admin.md",
+          "minutes": 25,
+          "preview": false,
+          "summary": "Organise transactions, categorise expenses, build spreadsheet formulas and run a monthly review safely."
+        },
+        {
+          "title": "Scaling with Templates and SOPs",
+          "file": "05-03-scaling-with-sops.md",
+          "minutes": 30,
+          "preview": false,
+          "summary": "Turn your delivery kit into a written SOP for one service and build a reusable template and prompt library."
+        },
+        {
+          "title": "Avoiding Scams, Over-Promising and Burnout",
+          "file": "05-04-scams-and-sustainable-growth.md",
+          "minutes": 25,
+          "preview": false,
+          "summary": "Recognise common freelancing scams, promise only what you control, and leave with a 90-day action plan."
+        }
+      ]
+    }
+  ]
+}

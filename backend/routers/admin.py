@@ -43,7 +43,7 @@ async def upload_thumbnail(course_id: int, file: UploadFile = File(...), db: Ses
     if not course:
         raise HTTPException(status_code=404, detail="Course not found")
 
-    safe_name = f"course_{course_id}_{file.filename.replace(' ', '_')}"
+    safe_name = f"course_{course_id}_{os.path.basename(file.filename).replace(' ', '_')}"
     file_path = os.path.join(THUMB_PATH, safe_name)
 
     async with aiofiles.open(file_path, "wb") as out:

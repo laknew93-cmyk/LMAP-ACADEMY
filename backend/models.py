@@ -47,6 +47,11 @@ class Course(Base):
     description = Column(Text)
     short_description = Column(String(500))
     price = Column(Float, nullable=False)
+    mrp = Column(Float)
+    category = Column(String(100))
+    sort_order = Column(Integer, default=0)
+    # JSON: audience, outcomes, prerequisites, tools, projects, faqs, seo
+    details = Column(Text)
     level = Column(Enum(CourseLevel), default=CourseLevel.beginner)
     thumbnail = Column(String(500))
     duration_hours = Column(Float, default=0)
@@ -76,6 +81,8 @@ class Video(Base):
     title = Column(String(300), nullable=False)
     description = Column(Text)
     filename = Column(String(500))
+    summary = Column(String(500))
+    content = Column(Text)  # markdown lesson body; shown when there is no video file
     duration_seconds = Column(Integer, default=0)
     order = Column(Integer, default=0)
     is_preview = Column(Boolean, default=False)
@@ -95,6 +102,7 @@ class Enrollment(Base):
     razorpay_order_id = Column(String(200))
     razorpay_payment_id = Column(String(200))
     amount_paid = Column(Float)
+    source = Column(String(20))  # course | bundle | free
 
     user = relationship("User", back_populates="enrollments")
     course = relationship("Course", back_populates="enrollments")
@@ -111,3 +119,15 @@ class VideoProgress(Base):
 
     user = relationship("User", back_populates="progress")
     video = relationship("Video", back_populates="progress")
+
+
+class Certificate(Base):
+    __tablename__ = "certificates"
+    id = Column(Integer, primary_key=True, index=True)
+    code = Column(String(20), unique=True, index=True, nullable=False)
+    user_id = Column(Integer, ForeignKey("users.id"), nullable=False)
+    course_id = Column(Integer, ForeignKey("courses.id"), nullable=False)
+    issued_at = Column(DateTime, default=datetime.utcnow)
+
+    user = relationship("User")
+    course = relationship("Course")

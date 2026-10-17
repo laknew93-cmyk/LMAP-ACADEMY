@@ -1,0 +1,241 @@
+{
+  "slug": "ai-content-creation-personal-branding",
+  "title": "AI for Content Creation & Personal Branding",
+  "subtitle": "Use AI to find your voice, plan a month of content and create LinkedIn posts, reels and newsletters that sound like you, not a robot.",
+  "category": "AI for Marketing",
+  "level": "beginner",
+  "price": 2499,
+  "mrp": 6999,
+  "duration_hours": 6.5,
+  "sort_order": 5,
+  "description": "This course is for anyone in India who wants to show up online consistently without spending every evening staring at a blank screen: professionals building a LinkedIn presence, aspiring creators, coaches, small brands and social media managers handling multiple accounts.\n\nYou will learn to use AI as a fast, practical assistant across the whole content process: defining your brand voice and content pillars, planning a realistic content calendar, writing LinkedIn posts and carousels, scripting reels and shorts with strong hooks, writing newsletters and blogs with SEO basics, repurposing one idea into ten pieces, and creating images, voice-overs and edited videos. Throughout, the focus is on keeping your own experience and opinions at the centre so your content never sounds generic.\n\nYou will also learn the rules that protect your reputation: copyright, AI disclosure, ASCI influencer guidelines, consent for voice cloning and platform policies. The final module covers measuring what works, running simple experiments and honest, hype-free paths to earning from your brand.\n\nThe course is text-based with ready-to-use prompts and templates. Every lesson ends with a short hands-on exercise, and by the end you will have four finished assets: a brand voice guide, a 30-day content calendar, a LinkedIn carousel with three posts, and a short-video script with hook variants.",
+  "audience": [
+    "Working professionals building a LinkedIn presence for jobs, clients or credibility",
+    "Aspiring creators starting on Instagram, YouTube Shorts or newsletters",
+    "Coaches, consultants and freelancers who want inbound enquiries",
+    "Small brands and home businesses managing their own social media",
+    "Social media managers who want faster, better workflows for clients"
+  ],
+  "outcomes": [
+    "Create a brand voice guide that makes any AI tool write closer to how you speak",
+    "Define content pillars and build an idea bank of 30+ specific post ideas",
+    "Plan a realistic 30-day content calendar around your time and Indian dates",
+    "Write LinkedIn posts and carousels with strong hooks and no generic AI filler",
+    "Script reels and YouTube Shorts with multiple hook variants to test",
+    "Turn one article or talk into ten pieces of content across platforms",
+    "Use AI image, voice and video tools ethically, with proper consent and disclosure",
+    "Track the metrics that matter and choose a realistic monetisation path"
+  ],
+  "prerequisites": [
+    "Access to any AI chat assistant such as ChatGPT, Claude or Gemini (free versions are fine)",
+    "A smartphone and a free account on at least one social platform",
+    "No design, video or marketing experience needed"
+  ],
+  "tools": [
+    "ChatGPT",
+    "Claude",
+    "Gemini",
+    "Canva and its AI features",
+    "AI image generators",
+    "AI captioning, audio cleanup and video editing tools",
+    "LinkedIn, Instagram and YouTube analytics",
+    "Google Search Console",
+    "Email newsletter platforms"
+  ],
+  "projects": [
+    "A one-page brand voice guide you can paste into any AI tool so drafts sound like you.",
+    "A 30-day content calendar built on your content pillars, posting capacity and audience dates.",
+    "A ready-to-publish LinkedIn carousel plus three LinkedIn posts in different styles.",
+    "A 45-second reel or YouTube Short script with three hook variants and an A/B testing plan."
+  ],
+  "seo": {
+    "title": "AI Content Creation & Personal Branding Course",
+    "description": "Learn AI content creation and personal branding: LinkedIn posts, carousels, reels scripts and newsletters that sound like you. Practical course for India.",
+    "keywords": [
+      "ai content creation course in india",
+      "personal branding course online",
+      "linkedin personal branding course",
+      "chatgpt for content creation",
+      "ai for social media content",
+      "how to write linkedin posts with ai",
+      "instagram reels script writing course",
+      "content creator course in india",
+      "ai tools for content creators",
+      "content calendar using chatgpt",
+      "personal branding for professionals india",
+      "hinglish content writing with ai"
+    ]
+  },
+  "faqs": [
+    {
+      "q": "I am not a creator and have never posted regularly. Is this course for me?",
+      "a": "Yes. The course is designed for beginners and starts with defining your voice and audience before any posting. Many learners are working professionals who simply want a credible LinkedIn presence, not a career as an influencer."
+    },
+    {
+      "q": "Will the content I create with AI sound robotic?",
+      "a": "Not if you follow the workflow taught here. A full lesson is dedicated to spotting and removing AI-sounding writing, and every method starts from your own stories, opinions and voice samples rather than a blank prompt."
+    },
+    {
+      "q": "Which AI tools do I need to buy?",
+      "a": "None are required. Free versions of a chat assistant and a design tool such as Canva are enough to complete every project. The course explains tool categories so you can choose paid tools later only if you need them."
+    },
+    {
+      "q": "Will this course guarantee that I earn money or go viral?",
+      "a": "No, and we would be wary of any course that promises that. You will learn honest monetisation paths such as services, brand deals and digital products, and what each one realistically requires."
+    },
+    {
+      "q": "Do I get a certificate?",
+      "a": "Yes. A certificate of completion is issued once you mark every lesson in the course as complete."
+    },
+    {
+      "q": "What is the refund policy?",
+      "a": "You can get a full refund within 7 days of purchase as long as you have completed less than 30% of the course. Just contact support with your order details."
+    }
+  ],
+  "modules": [
+    {
+      "title": "Module 1: Your Brand Foundations",
+      "lessons": [
+        {
+          "title": "How AI Changes Personal Branding (and What It Doesn't)",
+          "file": "01-01-ai-and-personal-branding.md",
+          "minutes": 20,
+          "preview": true,
+          "summary": "What a personal brand really is, where AI helps, where it hurts, and the working loop used throughout the course."
+        },
+        {
+          "title": "Build Your Brand Voice Guide with AI",
+          "file": "01-02-brand-voice-guide.md",
+          "minutes": 25,
+          "preview": false,
+          "summary": "Analyse your real writing and speech with AI and turn it into a one-page voice guide that makes drafts sound like you."
+        },
+        {
+          "title": "Define Your Audience and Content Pillars",
+          "file": "01-03-content-pillars-audience.md",
+          "minutes": 20,
+          "preview": false,
+          "summary": "Pin down one specific reader, choose three or four content pillars and generate an idea bank of 30+ posts."
+        },
+        {
+          "title": "Plan a Realistic 30-Day Content Calendar",
+          "file": "01-04-30-day-content-calendar.md",
+          "minutes": 25,
+          "preview": false,
+          "summary": "Use AI to build a 30-day calendar around your capacity, weekly rhythm and the dates that matter to your audience."
+        }
+      ]
+    },
+    {
+      "title": "Module 2: Writing for LinkedIn and Short Video",
+      "lessons": [
+        {
+          "title": "LinkedIn Posts That Sound Like You",
+          "file": "02-01-linkedin-posts.md",
+          "minutes": 20,
+          "preview": false,
+          "summary": "A repeatable post structure, five post types and an AI drafting workflow that starts from your own notes."
+        },
+        {
+          "title": "LinkedIn Carousels: Plan, Write and Design",
+          "file": "02-02-linkedin-carousels.md",
+          "minutes": 25,
+          "preview": false,
+          "summary": "Write and design a swipeable PDF carousel with AI and complete your carousel plus three posts project."
+        },
+        {
+          "title": "Reels and Shorts Scripts with Scroll-Stopping Hooks",
+          "file": "02-03-short-video-scripts-hooks.md",
+          "minutes": 25,
+          "preview": false,
+          "summary": "Structure short videos, write spoken scripts with on-screen text and create hook variants to test."
+        },
+        {
+          "title": "How to Avoid AI-Sounding Content",
+          "file": "02-04-avoid-ai-sounding-writing.md",
+          "minutes": 20,
+          "preview": true,
+          "summary": "Spot the tell-tale signs of generic AI writing and fix them with better inputs and a five-pass human edit."
+        }
+      ]
+    },
+    {
+      "title": "Module 3: Long-Form, SEO, Repurposing and Language",
+      "lessons": [
+        {
+          "title": "Writing Blogs and Newsletters with AI",
+          "file": "03-01-blogs-newsletters.md",
+          "minutes": 25,
+          "preview": false,
+          "summary": "Use AI to interview you, outline and draft long-form pieces, and run a newsletter people actually open."
+        },
+        {
+          "title": "SEO Basics for Creators and Small Brands",
+          "file": "03-02-seo-basics.md",
+          "minutes": 25,
+          "preview": false,
+          "summary": "Find what your audience searches for, match search intent and optimise articles without keyword stuffing."
+        },
+        {
+          "title": "Repurpose One Idea into Ten Pieces",
+          "file": "03-03-repurpose-one-idea-ten-ways.md",
+          "minutes": 20,
+          "preview": false,
+          "summary": "Break a pillar piece into idea atoms and adapt them into posts, carousels, reels and emails for each platform."
+        },
+        {
+          "title": "Hinglish, Hindi and Regional-Language Content",
+          "file": "03-04-hinglish-bilingual-content.md",
+          "minutes": 20,
+          "preview": false,
+          "summary": "Choose the right language mix for your audience and prompt AI for natural Hinglish and regional content."
+        }
+      ]
+    },
+    {
+      "title": "Module 4: Visuals, Voice, Video and the Rules",
+      "lessons": [
+        {
+          "title": "AI Images for Thumbnails and Social Posts",
+          "file": "04-01-ai-images-thumbnails.md",
+          "minutes": 25,
+          "preview": false,
+          "summary": "Understand AI image tool categories, write strong image prompts and create honest thumbnails and post graphics."
+        },
+        {
+          "title": "AI Voice-Over and Video Editing, Ethically",
+          "file": "04-02-ai-voice-video-editing.md",
+          "minutes": 25,
+          "preview": false,
+          "summary": "Use AI for captions, audio cleanup, editing and voice-over, with clear rules on consent for voice cloning."
+        },
+        {
+          "title": "Copyright, AI Disclosure and Platform Rules",
+          "file": "04-03-copyright-disclosure-platform-rules.md",
+          "minutes": 20,
+          "preview": false,
+          "summary": "The copyright, labelling, ASCI influencer and platform rules every creator in India should follow."
+        }
+      ]
+    },
+    {
+      "title": "Module 5: Measure, Improve and Monetise",
+      "lessons": [
+        {
+          "title": "Measure What Works and Iterate",
+          "file": "05-01-measure-and-iterate.md",
+          "minutes": 20,
+          "preview": false,
+          "summary": "Track the metrics that match your goal, use AI to spot patterns and run simple monthly experiments."
+        },
+        {
+          "title": "Honest Monetisation Paths for Your Brand",
+          "file": "05-02-monetisation-paths.md",
+          "minutes": 20,
+          "preview": false,
+          "summary": "A hype-free look at services, brand deals, digital products and indirect career returns, and how to pick your first."
+        }
+      ]
+    }
+  ]
+}

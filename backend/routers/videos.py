@@ -4,11 +4,11 @@ from fastapi import APIRouter, Depends, HTTPException, UploadFile, File, Request
 from fastapi.responses import StreamingResponse
 from sqlalchemy.orm import Session
 from pydantic import BaseModel
-from typing import Optional
 from database import get_db
 from models import Video, Module, Enrollment, PaymentStatus, VideoProgress, Course, User
 from auth import get_current_user, require_admin
 from config import settings
+from access import can_access_lesson, optional_user
 
 router = APIRouter(prefix="/videos", tags=["videos"])
 
@@ -23,24 +23,6 @@ class VideoCreate(BaseModel):
     is_preview: bool = False
 
 
-def _user_can_watch(video: Video, user: Optional[User], db: Session) -> bool:
-    if video.is_preview:
-        return True
-    if user is None:
-        return False
-    if user.role.value == "admin":
-        return True
-    course = db.query(Course).join(Module).filter(Module.id == video.module_id).first()
-    if not course:
-        return False
-    enrollment = (
-        db.query(Enrollment)
-        .filter(Enrollment.user_id == user.id, Enrollment.course_id == course.id, Enrollment.payment_status == PaymentStatus.paid)
-        .first()
-    )
-    return enrollment is not None
-
-
 @router.post("/module/{module_id}/upload")
 async def upload_video(
     module_id: int,
@@ -52,7 +34,7 @@ async def upload_video(
     if not module:
         raise HTTPException(status_code=404, detail="Module not found")
 
-    safe_name = f"{module_id}_{file.filename.replace(' ', '_')}"
+    safe_name = f"{module_id}_{os.path.basename(file.filename).replace(' ', '_')}"
     file_path = os.path.join(UPLOAD_PATH, safe_name)
 
     async with aiofiles.open(file_path, "wb") as out:
@@ -86,20 +68,10 @@ async def stream_video(video_id: int, request: Request, db: Session = Depends(ge
     if not video:
         raise HTTPException(status_code=404, detail="Video not found")
 
-    # Try to get current user from optional auth header
-    user = None
-    auth = request.headers.get("Authorization")
-    if auth and auth.startswith("Bearer "):
-        from auth import get_current_user as _gcu
-        from fastapi.security import HTTPAuthorizationCredentials
-        try:
-            creds = HTTPAuthorizationCredentials(scheme="Bearer", credentials=auth[7:])
-            user = _gcu(credentials=creds, db=db)
-        except Exception:
-            pass
-
-    if not _user_can_watch(video, user, db):
+    if not can_access_lesson(db, video, optional_user(request, db)):
         raise HTTPException(status_code=403, detail="Purchase the course to watch this video")
+    if not video.filename:
+        raise HTTPException(status_code=404, detail="This lesson has no video")
 
     file_path = os.path.join(UPLOAD_PATH, video.filename)
     if not os.path.exists(file_path):

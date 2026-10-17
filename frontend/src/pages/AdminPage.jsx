@@ -21,7 +21,7 @@ export default function AdminPage() {
   const [courses, setCourses] = useState([])
   const [users, setUsers] = useState([])
   const [tab, setTab] = useState('overview')
-  const [newCourse, setNewCourse] = useState({ title: '', short_description: '', description: '', price: 10000, level: 'beginner', duration_hours: 10 })
+  const [newCourse, setNewCourse] = useState({ title: '', short_description: '', description: '', price: 2499, level: 'beginner', duration_hours: 10 })
   const [creating, setCreating] = useState(false)
   const [toast, setToast] = useState(null)
 
@@ -39,7 +39,7 @@ export default function AdminPage() {
     try {
       await api.post('/courses/', newCourse)
       showToast('Course created successfully!')
-      setNewCourse({ title: '', short_description: '', description: '', price: 10000, level: 'beginner', duration_hours: 10 })
+      setNewCourse({ title: '', short_description: '', description: '', price: 2499, level: 'beginner', duration_hours: 10 })
       load()
     } catch (e) {
       showToast(e.response?.data?.detail || 'Error', 'error')

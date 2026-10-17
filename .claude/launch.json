@@ -2,6 +2,13 @@
   "version": "0.0.1",
   "configurations": [
     {
+      "name": "LMAP API",
+      "runtimeExecutable": "/Users/blockoville/Claude/LMAP-Academy/backend/.venv/bin/uvicorn",
+      "runtimeArgs": ["main:app", "--port", "8001", "--reload"],
+      "port": 8001,
+      "cwd": "backend"
+    },
+    {
       "name": "LMAP Academy",
       "runtimeExecutable": "npm",
       "runtimeArgs": ["run", "dev"],

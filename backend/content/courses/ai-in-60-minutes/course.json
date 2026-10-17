@@ -1,0 +1,136 @@
+{
+  "slug": "ai-in-60-minutes",
+  "title": "AI in 60 Minutes: Free Starter Course",
+  "subtitle": "Go from 'I've heard of ChatGPT' to using AI confidently for emails, summaries and planning in about an hour. Free.",
+  "category": "AI Fundamentals",
+  "level": "beginner",
+  "price": 0,
+  "mrp": 999,
+  "duration_hours": 1,
+  "sort_order": 1,
+  "description": "You have heard people talk about ChatGPT, Gemini and Claude, maybe even opened one once, but you are not sure what to type or whether you can trust the answers. This free course is built for exactly that moment. In about an hour you will set up a free AI assistant safely and use it for real tasks from your own life.\n\nIt is made for students, working professionals, homemakers and career returners, and small business owners across India. No technical background is needed. If you can send a WhatsApp message, you can do this course.\n\nThe course has six short lessons, each 8-12 minutes, with a small hands-on exercise in every one. You will write your first useful prompts, learn a simple four-part formula that makes answers far better, and understand what you should never paste into an AI tool.\n\nYou finish with a 7-day habit plan so AI becomes part of your routine, and a free certificate of completion once you mark every lesson complete.",
+  "audience": [
+    "Students who want help with studying, notes and applications",
+    "Working professionals who want to save time on emails and documents",
+    "Homemakers and career returners building confidence with new tools",
+    "Small business owners who want quick help with messages and planning",
+    "Anyone who has heard of ChatGPT but barely uses it"
+  ],
+  "outcomes": [
+    "Explain in plain words what an AI chat assistant can and cannot do",
+    "Set up a free ChatGPT, Gemini or Claude account safely",
+    "Use AI to draft an email, summarise a long text and explain a tough topic",
+    "Write better prompts with the role, task, context, format formula",
+    "Spot hallucinations and fact-check AI answers before you rely on them",
+    "Know what personal and business information never to paste into AI",
+    "Follow a simple 7-day plan to make AI a daily habit"
+  ],
+  "prerequisites": [
+    "A smartphone or computer with internet access",
+    "An email address to sign up for a free AI account",
+    "No technical or coding knowledge needed"
+  ],
+  "tools": [
+    "ChatGPT",
+    "Google Gemini",
+    "Claude"
+  ],
+  "projects": [
+    "Set up a free AI assistant account with safe privacy settings",
+    "Use five starter prompts on real tasks from your own week",
+    "Rewrite a weak prompt into a strong one using the four-part formula",
+    "Build your personal 7-day AI habit plan"
+  ],
+  "seo": {
+    "title": "Free AI Course for Beginners in India",
+    "description": "Learn ChatGPT, Gemini and Claude from scratch in about an hour. Free beginner AI course with practical prompts, safety tips and a certificate.",
+    "keywords": [
+      "free ai course for beginners",
+      "free ai course in india",
+      "chatgpt course for beginners free",
+      "how to use chatgpt for beginners",
+      "ai course with free certificate",
+      "gemini ai tutorial for beginners",
+      "how to write prompts for chatgpt",
+      "ai for working professionals india",
+      "ai course for homemakers",
+      "free online ai certificate course india"
+    ]
+  },
+  "faqs": [
+    {
+      "q": "Is this course really free?",
+      "a": "Yes. The full course is free. You only need to enrol with your email, and all six lessons unlock immediately."
+    },
+    {
+      "q": "Do I get a certificate?",
+      "a": "Yes. A free certificate of completion is issued once you mark every lesson in the course as complete. You can download it and add it to your LinkedIn profile or resume."
+    },
+    {
+      "q": "Do I need to pay for ChatGPT, Gemini or Claude?",
+      "a": "No. Everything in this course works on the free versions of these tools. Paid plans exist and offer extra features, but you do not need one to follow along."
+    },
+    {
+      "q": "I am not technical at all. Will I be able to follow?",
+      "a": "Yes. The course assumes no technical background. If you can type a message on your phone, you can complete every exercise."
+    },
+    {
+      "q": "What is the refund policy?",
+      "a": "Refunds are not applicable because this course is free. If you later buy one of our paid courses, those come with a 7-day refund policy."
+    }
+  ],
+  "modules": [
+    {
+      "title": "Getting Started with AI Assistants",
+      "lessons": [
+        {
+          "title": "What AI Chat Assistants Actually Are (and Aren't)",
+          "file": "01-01-what-ai-assistants-are.md",
+          "minutes": 9,
+          "preview": true,
+          "summary": "A plain-English picture of how ChatGPT, Gemini and Claude work, what they are good at, and where they go wrong."
+        },
+        {
+          "title": "Setting Up Your Free AI Account Safely",
+          "file": "01-02-setting-up-safely.md",
+          "minutes": 10,
+          "preview": false,
+          "summary": "Create a free account on ChatGPT, Gemini or Claude and check the settings that protect your privacy."
+        },
+        {
+          "title": "Your First 5 Useful Prompts",
+          "file": "01-03-first-five-prompts.md",
+          "minutes": 12,
+          "preview": false,
+          "summary": "Use AI to write an email, summarise, explain, plan and rewrite, with ready-to-copy prompts."
+        }
+      ]
+    },
+    {
+      "title": "Using AI Well, Safely and Every Day",
+      "lessons": [
+        {
+          "title": "The Simple Prompt Formula: Role, Task, Context, Format",
+          "file": "02-01-prompt-formula.md",
+          "minutes": 11,
+          "preview": false,
+          "summary": "A four-part formula that turns vague questions into prompts that get useful answers the first time."
+        },
+        {
+          "title": "What Never to Paste into AI (and How to Fact-Check)",
+          "file": "02-02-privacy-and-fact-checking.md",
+          "minutes": 10,
+          "preview": false,
+          "summary": "Protect your personal and business data, recognise hallucinations and check facts before you rely on them."
+        },
+        {
+          "title": "Your 7-Day AI Habit Plan and Where to Go Next",
+          "file": "02-03-seven-day-habit-plan.md",
+          "minutes": 9,
+          "preview": false,
+          "summary": "A day-by-day plan to make AI part of your routine, plus the best next steps for going further."
+        }
+      ]
+    }
+  ]
+}

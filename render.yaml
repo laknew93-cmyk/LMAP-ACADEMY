@@ -1,28 +1,45 @@
+# Render Blueprint for LMAP Academy.
+# Secrets marked `sync: false` are entered in the Render dashboard, never committed.
+databases:
+  - name: lmap-academy-db
+    plan: basic-256mb
+    databaseName: lmap
+    user: lmap
+
 services:
-  # Backend API
+  # Backend API — https://lmap-academy.onrender.com
   - type: web
-    name: lmap-academy-api
+    name: lmap-academy
     runtime: python
     rootDir: backend
     buildCommand: pip install --upgrade pip && pip install -r requirements.txt
     startCommand: uvicorn main:app --host 0.0.0.0 --port $PORT
+    healthCheckPath: /health
     envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.9
+      - key: DATABASE_URL
+        fromDatabase:
+          name: lmap-academy-db
+          property: connectionString
       - key: SECRET_KEY
         generateValue: true
-      - key: DATABASE_URL
-        value: sqlite:///./lmap.db
+      - key: CORS_ORIGINS
+        value: https://lmapacademy.org,https://www.lmapacademy.org
+      - key: ADMIN_EMAIL
+        value: admin@lmapacademy.org
+      - key: ADMIN_PASSWORD
+        sync: false
       - key: RAZORPAY_KEY_ID
-        value: ""
+        sync: false
       - key: RAZORPAY_KEY_SECRET
-        value: ""
-      - key: UPLOAD_DIR
-        value: uploads
-    disk:
-      name: lmap-uploads
-      mountPath: /opt/render/project/src/uploads
-      sizeGB: 10
+        sync: false
+      - key: RAZORPAY_WEBHOOK_SECRET
+        sync: false
+      - key: BUNDLE_PRICE
+        value: "6999"
 
-  # Frontend Static Site
+  # Frontend static site — https://lmapacademy.org
   - type: web
     name: lmap-academy-web
     runtime: static
@@ -31,8 +48,17 @@ services:
     staticPublishPath: dist
     envVars:
       - key: VITE_API_URL
-        value: https://lmap-academy-api.onrender.com
+        value: https://lmap-academy.onrender.com
+      - key: VITE_GA_ID
+        sync: false
+      - key: VITE_GSC_VERIFICATION
+        sync: false
+    headers:
+      - path: /assets/*
+        name: Cache-Control
+        value: public, max-age=31536000, immutable
     routes:
+      # Pre-rendered pages are real files and are served first; everything else is the SPA.
       - type: rewrite
         source: /*
-        destination: /index.html
+        destination: /200.html

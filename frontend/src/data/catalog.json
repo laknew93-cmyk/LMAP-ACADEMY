@@ -1,0 +1,1744 @@
+[
+ {
+  "slug": "ai-in-60-minutes",
+  "title": "AI in 60 Minutes: Free Starter Course",
+  "subtitle": "Go from 'I've heard of ChatGPT' to using AI confidently for emails, summaries and planning in about an hour. Free.",
+  "category": "AI Fundamentals",
+  "level": "beginner",
+  "price": 0,
+  "mrp": 999,
+  "duration_hours": 1,
+  "sort_order": 1,
+  "description": "You have heard people talk about ChatGPT, Gemini and Claude, maybe even opened one once, but you are not sure what to type or whether you can trust the answers. This free course is built for exactly that moment. In about an hour you will set up a free AI assistant safely and use it for real tasks from your own life.\n\nIt is made for students, working professionals, homemakers and career returners, and small business owners across India. No technical background is needed. If you can send a WhatsApp message, you can do this course.\n\nThe course has six short lessons, each 8-12 minutes, with a small hands-on exercise in every one. You will write your first useful prompts, learn a simple four-part formula that makes answers far better, and understand what you should never paste into an AI tool.\n\nYou finish with a 7-day habit plan so AI becomes part of your routine, and a free certificate of completion once you mark every lesson complete.",
+  "audience": [
+   "Students who want help with studying, notes and applications",
+   "Working professionals who want to save time on emails and documents",
+   "Homemakers and career returners building confidence with new tools",
+   "Small business owners who want quick help with messages and planning",
+   "Anyone who has heard of ChatGPT but barely uses it"
+  ],
+  "outcomes": [
+   "Explain in plain words what an AI chat assistant can and cannot do",
+   "Set up a free ChatGPT, Gemini or Claude account safely",
+   "Use AI to draft an email, summarise a long text and explain a tough topic",
+   "Write better prompts with the role, task, context, format formula",
+   "Spot hallucinations and fact-check AI answers before you rely on them",
+   "Know what personal and business information never to paste into AI",
+   "Follow a simple 7-day plan to make AI a daily habit"
+  ],
+  "prerequisites": [
+   "A smartphone or computer with internet access",
+   "An email address to sign up for a free AI account",
+   "No technical or coding knowledge needed"
+  ],
+  "tools": [
+   "ChatGPT",
+   "Google Gemini",
+   "Claude"
+  ],
+  "projects": [
+   "Set up a free AI assistant account with safe privacy settings",
+   "Use five starter prompts on real tasks from your own week",
+   "Rewrite a weak prompt into a strong one using the four-part formula",
+   "Build your personal 7-day AI habit plan"
+  ],
+  "seo": {
+   "title": "Free AI Course for Beginners in India",
+   "description": "Learn ChatGPT, Gemini and Claude from scratch in about an hour. Free beginner AI course with practical prompts, safety tips and a certificate.",
+   "keywords": [
+    "free ai course for beginners",
+    "free ai course in india",
+    "chatgpt course for beginners free",
+    "how to use chatgpt for beginners",
+    "ai course with free certificate",
+    "gemini ai tutorial for beginners",
+    "how to write prompts for chatgpt",
+    "ai for working professionals india",
+    "ai course for homemakers",
+    "free online ai certificate course india"
+   ]
+  },
+  "faqs": [
+   {
+    "q": "Is this course really free?",
+    "a": "Yes. The full course is free. You only need to enrol with your email, and all six lessons unlock immediately."
+   },
+   {
+    "q": "Do I get a certificate?",
+    "a": "Yes. A free certificate of completion is issued once you mark every lesson in the course as complete. You can download it and add it to your LinkedIn profile or resume."
+   },
+   {
+    "q": "Do I need to pay for ChatGPT, Gemini or Claude?",
+    "a": "No. Everything in this course works on the free versions of these tools. Paid plans exist and offer extra features, but you do not need one to follow along."
+   },
+   {
+    "q": "I am not technical at all. Will I be able to follow?",
+    "a": "Yes. The course assumes no technical background. If you can type a message on your phone, you can complete every exercise."
+   },
+   {
+    "q": "What is the refund policy?",
+    "a": "Refunds are not applicable because this course is free. If you later buy one of our paid courses, those come with a 7-day refund policy."
+   }
+  ],
+  "modules": [
+   {
+    "title": "Getting Started with AI Assistants",
+    "lessons": [
+     {
+      "title": "What AI Chat Assistants Actually Are (and Aren't)",
+      "minutes": 9,
+      "preview": true,
+      "summary": "A plain-English picture of how ChatGPT, Gemini and Claude work, what they are good at, and where they go wrong."
+     },
+     {
+      "title": "Setting Up Your Free AI Account Safely",
+      "minutes": 10,
+      "preview": false,
+      "summary": "Create a free account on ChatGPT, Gemini or Claude and check the settings that protect your privacy."
+     },
+     {
+      "title": "Your First 5 Useful Prompts",
+      "minutes": 12,
+      "preview": false,
+      "summary": "Use AI to write an email, summarise, explain, plan and rewrite, with ready-to-copy prompts."
+     }
+    ]
+   },
+   {
+    "title": "Using AI Well, Safely and Every Day",
+    "lessons": [
+     {
+      "title": "The Simple Prompt Formula: Role, Task, Context, Format",
+      "minutes": 11,
+      "preview": false,
+      "summary": "A four-part formula that turns vague questions into prompts that get useful answers the first time."
+     },
+     {
+      "title": "What Never to Paste into AI (and How to Fact-Check)",
+      "minutes": 10,
+      "preview": false,
+      "summary": "Protect your personal and business data, recognise hallucinations and check facts before you rely on them."
+     },
+     {
+      "title": "Your 7-Day AI Habit Plan and Where to Go Next",
+      "minutes": 9,
+      "preview": false,
+      "summary": "A day-by-day plan to make AI part of your routine, plus the best next steps for going further."
+     }
+    ]
+   }
+  ],
+  "lesson_count": 6
+ },
+ {
+  "slug": "ai-essentials-chatgpt-gemini-copilot",
+  "title": "AI Essentials: ChatGPT, Gemini & Copilot for Everyday Work",
+  "subtitle": "Use ChatGPT, Gemini, Claude and Copilot with confidence to save hours on email, documents, research, spreadsheets, meetings and job hunting.",
+  "category": "AI Fundamentals",
+  "level": "beginner",
+  "price": 1499,
+  "mrp": 4999,
+  "duration_hours": 7,
+  "sort_order": 2,
+  "description": "This is a practical, beginner-friendly course for anyone who wants to use AI assistants in real daily work, without any technical background. If you are a working professional, a fresher, a career returner, someone moving from government-exam preparation to a private job, or a small business owner, this course is built for you.\n\nYou will learn how AI assistants like ChatGPT, Claude, Gemini and Microsoft Copilot actually work, where they make mistakes, and how to choose the right one for each task. Then you will apply them to everyday work: drafting emails and messages in English, Hindi and regional languages, writing reports, researching and summarising long PDFs with proper fact-checking, working with spreadsheets, and turning meetings into clear action items.\n\nThe final module focuses on your career and habits: tailoring your resume and cover letter to real job posts, improving your LinkedIn profile, practising Indian-style interviews, and using AI safely within workplace privacy rules. You finish by building a personal library of 20 tested prompts and a weekly AI workflow plan.\n\nEvery lesson is short, written in plain English with Indian examples, and ends with a hands-on exercise you can complete in 10 to 20 minutes using free versions of the tools.",
+  "audience": [
+   "Working professionals who want to save time on email, documents and reports",
+   "Freshers and graduates preparing for their first private-sector job",
+   "Career returners, including women restarting after a career break",
+   "Government-exam aspirants moving into private jobs",
+   "Small business owners and freelancers handling their own communication and admin"
+  ],
+  "outcomes": [
+   "Explain in plain words how AI assistants work and where they are likely to be wrong",
+   "Choose between ChatGPT, Claude, Gemini and Copilot based on the task and your tools",
+   "Write clear prompts that produce usable emails, reports and messages on the first or second try",
+   "Draft and translate messages in Hindi and regional languages with the right tone and register",
+   "Research a topic and summarise long PDFs while checking facts against original sources",
+   "Use AI for spreadsheet formulas, meeting minutes and action items",
+   "Tailor your resume, LinkedIn profile and interview answers to real job openings",
+   "Follow privacy and workplace AI rules and run a repeatable daily AI workflow"
+  ],
+  "prerequisites": [
+   "Basic comfort with a computer or smartphone, email and web browsing",
+   "A free account on at least one AI assistant such as ChatGPT, Gemini, Claude or Copilot",
+   "No coding or technical background needed"
+  ],
+  "tools": [
+   "ChatGPT",
+   "Claude",
+   "Google Gemini",
+   "Microsoft Copilot",
+   "Microsoft 365 (Word, Excel, Outlook, Teams)",
+   "Google Workspace (Gmail, Docs, Sheets, Drive, Meet)",
+   "LinkedIn"
+  ],
+  "projects": [
+   "Build a personal prompt library of 20 tested, reusable prompts for your own work.",
+   "Create an AI-tailored resume and cover letter for a real job post you want to apply for.",
+   "Write a one-page research brief from three verified sources on a topic that matters to you.",
+   "Design a weekly AI workflow plan with anchor tasks, daily routines and a two-week tracker."
+  ],
+  "seo": {
+   "title": "AI Essentials Course: ChatGPT, Gemini & Copilot",
+   "description": "Beginner AI course in India: use ChatGPT, Gemini, Claude and Copilot for email, reports, Excel, meetings and job hunting. Practical, hands-on, no coding.",
+   "keywords": [
+    "chatgpt course in india",
+    "ai course for beginners",
+    "how to use chatgpt for office work",
+    "microsoft copilot training",
+    "google gemini course",
+    "ai tools for working professionals",
+    "ai course for career returners",
+    "ai for resume and job search",
+    "online ai course with certificate india",
+    "chatgpt for excel and email"
+   ]
+  },
+  "faqs": [
+   {
+    "q": "Do I need any technical or coding knowledge?",
+    "a": "No. The course is written for non-technical learners. If you can use email and a web browser, you can follow every lesson and exercise."
+   },
+   {
+    "q": "Do I need to pay for ChatGPT, Gemini or Copilot?",
+    "a": "No. You can complete every exercise with the free versions of these assistants. Some features inside Microsoft 365 and Google Workspace depend on your employer's or your own plan, and the lessons show you what to do if you don't have them."
+   },
+   {
+    "q": "Will I get a certificate?",
+    "a": "Yes. A certificate of completion is issued once you have marked every lesson in the course as complete."
+   },
+   {
+    "q": "What is the refund policy?",
+    "a": "You can get a full refund within 7 days of purchase, as long as you have completed less than 30% of the course."
+   },
+   {
+    "q": "Is this course useful if I am returning to work after a career break?",
+    "a": "Yes. The course was designed with career returners in mind. Module 5 specifically covers presenting a career break honestly on your resume, updating your LinkedIn profile and practising interview answers, and the earlier modules help you get comfortable with the AI tools many workplaces now use."
+   },
+   {
+    "q": "How long will it take to finish?",
+    "a": "The course has 18 short lessons totalling about 7 hours, including exercises. Most learners finish comfortably in two to three weeks by doing one lesson a day, and you keep access to revisit lessons later."
+   }
+  ],
+  "modules": [
+   {
+    "title": "How AI Assistants Work (and When Not to Trust Them)",
+    "lessons": [
+     {
+      "title": "What an AI Assistant Really Is",
+      "minutes": 15,
+      "preview": true,
+      "summary": "A plain-language explanation of large language models, what they are good at, and what they are not."
+     },
+     {
+      "title": "Hallucinations and Other Limits You Must Know",
+      "minutes": 20,
+      "preview": false,
+      "summary": "Learn the predictable ways AI gets things wrong and a traffic-light rule for how much to check."
+     },
+     {
+      "title": "ChatGPT, Claude, Gemini and Copilot Compared",
+      "minutes": 20,
+      "preview": false,
+      "summary": "Understand each assistant's strengths and use four questions to choose the right one for the task."
+     },
+     {
+      "title": "Prompting Basics: The RTCFT Formula",
+      "minutes": 20,
+      "preview": true,
+      "summary": "Write prompts with Role, Task, Context, Format and Tone, and refine answers with smart follow-ups."
+     }
+    ]
+   },
+   {
+    "title": "Writing Emails, Messages and Documents",
+    "lessons": [
+     {
+      "title": "Emails and Messages with Perfect Tone",
+      "minutes": 20,
+      "preview": false,
+      "summary": "Turn rough notes into clear emails and WhatsApp messages, and control tone from warm to firm."
+     },
+     {
+      "title": "Drafting in Hindi and Regional Languages",
+      "minutes": 20,
+      "preview": false,
+      "summary": "Write natural messages in Hindi, Hinglish and other Indian languages, with back-translation checks."
+     },
+     {
+      "title": "Reports, Proposals and SOPs Without the Blank Page",
+      "minutes": 25,
+      "preview": false,
+      "summary": "Use the outline-first method to brief, draft, edit and summarise professional documents."
+     }
+    ]
+   },
+   {
+    "title": "Research, Long Documents and Spreadsheets",
+    "lessons": [
+     {
+      "title": "Research with AI and Fact-Checking",
+      "minutes": 30,
+      "preview": false,
+      "summary": "Follow an Explore, Gather, Verify, Synthesise workflow and produce a one-page brief from three sources."
+     },
+     {
+      "title": "Summarising Long PDFs Accurately",
+      "minutes": 25,
+      "preview": false,
+      "summary": "Get purpose-driven summaries and answers from long documents, with page numbers and exact quotes."
+     },
+     {
+      "title": "Spreadsheets with AI: Formulas, Cleaning and Analysis",
+      "minutes": 25,
+      "preview": false,
+      "summary": "Get Excel and Sheets formulas in plain English, understand inherited sheets and analyse data safely."
+     }
+    ]
+   },
+   {
+    "title": "AI Inside Your Office Tools and Meetings",
+    "lessons": [
+     {
+      "title": "Microsoft Copilot in Word, Excel, Outlook and Teams",
+      "minutes": 20,
+      "preview": false,
+      "summary": "What Copilot can typically do in each Microsoft 365 app and how to prompt it well."
+     },
+     {
+      "title": "Gemini in Gmail, Docs, Sheets and Drive",
+      "minutes": 20,
+      "preview": false,
+      "summary": "Use Gemini inside Google Workspace and the Gemini app, and keep work and personal accounts separate."
+     },
+     {
+      "title": "Meeting Notes and Action Items",
+      "minutes": 20,
+      "preview": false,
+      "summary": "Turn rough notes or transcripts into minutes, owners, deadlines and a follow-up email."
+     }
+    ]
+   },
+   {
+    "title": "AI for Your Career and Your Daily Workflow",
+    "lessons": [
+     {
+      "title": "Tailoring Your Resume and Cover Letter",
+      "minutes": 30,
+      "preview": false,
+      "summary": "Decode a real job post and tailor your resume and cover letter honestly, including for career breaks."
+     },
+     {
+      "title": "LinkedIn and Mock Interviews",
+      "minutes": 30,
+      "preview": false,
+      "summary": "Improve your LinkedIn profile and practise Indian interview rounds with AI as your interviewer."
+     },
+     {
+      "title": "Privacy and Workplace AI Policy",
+      "minutes": 20,
+      "preview": false,
+      "summary": "Know what never goes into AI tools, how to anonymise prompts, and how to follow company AI rules."
+     },
+     {
+      "title": "Building Your Personal Prompt Library",
+      "minutes": 25,
+      "preview": false,
+      "summary": "Organise, test and rate 20 reusable prompts so every common task starts from a proven template."
+     },
+     {
+      "title": "Your Daily and Weekly AI Workflow",
+      "minutes": 25,
+      "preview": false,
+      "summary": "Audit your week, choose anchor tasks and design a daily and weekly AI routine you will actually keep."
+     }
+    ]
+   }
+  ],
+  "lesson_count": 18
+ },
+ {
+  "slug": "prompt-engineering-masterclass",
+  "title": "Prompt Engineering Masterclass: Get Expert Results from Any AI",
+  "subtitle": "Go beyond casual chatting. Write, test and reuse prompts that get reliable, professional-grade results from ChatGPT, Claude and Gemini.",
+  "category": "Prompt Engineering",
+  "level": "intermediate",
+  "price": 1999,
+  "mrp": 5999,
+  "duration_hours": 7,
+  "sort_order": 3,
+  "description": "You already use ChatGPT, Claude or Gemini, but the results are hit and miss. Some answers are brilliant; others are generic, too long, or quietly wrong. This course turns casual prompting into a dependable professional skill you can use every working day and show on your CV.\n\nYou will learn the anatomy of a great prompt, when to use examples, how to ask for step-by-step reasoning, and how to get clean tables, JSON and checklists. You will then move to reliability: reducing hallucinations by grounding answers in your own documents, chaining prompts for multi-step work, and testing prompts against real cases so you know they work before you share them.\n\nThe second half is about real work and scale: prompts for writing, analysis, data extraction, coding help and image generation, configuring custom assistants for a job role, building a tested prompt library for your team, and using AI safely, including awareness of prompt injection and data privacy.\n\nEvery lesson is short, practical and written with Indian workplaces in mind, and ends with a hands-on exercise. By the end you will have four portfolio projects: a 25-prompt professional library, a meeting-notes-to-client-report chain, a tested data-extraction prompt, and a custom assistant for a specific role.",
+  "audience": [
+   "Regular ChatGPT, Claude or Gemini users who want consistent, professional-quality output",
+   "Marketers, analysts and consultants who use AI for client and business work",
+   "Teachers and trainers who want reliable lesson, assessment and communication prompts",
+   "Aspiring developers and technical learners who want to use AI for coding help",
+   "Job seekers who want genuine, demonstrable prompt engineering skills on their CV"
+  ],
+  "outcomes": [
+   "Write structured prompts using role, task, context, constraints, format and examples",
+   "Use few-shot examples and templates to get consistent output in your house style",
+   "Get clean tables, JSON and checklists you can paste straight into Sheets or other tools",
+   "Reduce hallucinations by grounding answers in your documents and allowing 'I don't know'",
+   "Chain prompts to turn raw meeting notes into a polished client-ready report",
+   "Test prompts against realistic cases and improve them with a version log",
+   "Configure a custom assistant for a specific job role with clear rules and boundaries",
+   "Build a tested 25-prompt library and use AI safely, aware of prompt injection risks"
+  ],
+  "prerequisites": [
+   "You have used ChatGPT, Claude, Gemini or a similar assistant at least a few times",
+   "Access to at least one AI chat assistant (a free plan is enough for most exercises)",
+   "Basic comfort with documents and spreadsheets such as Google Docs and Sheets"
+  ],
+  "tools": [
+   "ChatGPT",
+   "Claude",
+   "Gemini",
+   "Microsoft Copilot",
+   "Custom GPTs, Claude Projects and Gemini Gems",
+   "AI image generators",
+   "Google Sheets / Excel"
+  ],
+  "projects": [
+   "Build a 25-prompt professional library organised by category, with test results, owners and version notes.",
+   "Create a four-step prompt chain that turns raw meeting notes into a client-ready report and cover email.",
+   "Design a structured data-extraction prompt and test it field by field on 10 varied real-world samples.",
+   "Configure and test a custom AI assistant for a specific job role, including edge-case rules and safety boundaries."
+  ],
+  "seo": {
+   "title": "Prompt Engineering Course Online for Professionals",
+   "description": "Prompt engineering course in India for ChatGPT, Claude and Gemini users. Get reliable, expert AI output and build 4 portfolio projects. Start today.",
+   "keywords": [
+    "prompt engineering course in india",
+    "prompt engineering course online",
+    "chatgpt prompt engineering course",
+    "learn prompt engineering",
+    "prompt engineering certification india",
+    "chatgpt course for professionals",
+    "how to write better chatgpt prompts",
+    "prompt engineering for beginners to advanced",
+    "ai prompt writing course",
+    "claude and gemini prompts course",
+    "best prompt engineering course for jobs"
+   ]
+  },
+  "faqs": [
+   {
+    "q": "I already use ChatGPT. Will this course actually teach me something new?",
+    "a": "Yes, it is designed for people who already use AI casually. The focus is on reliability and professional use: structured prompts, grounding to reduce hallucinations, prompt chaining, testing prompts with real cases, custom assistants and team prompt libraries."
+   },
+   {
+    "q": "Do I need a paid ChatGPT, Claude or Gemini plan?",
+    "a": "No. Most exercises work on free plans. Some features, such as creating custom assistants or uploading many files, may need a paid plan depending on the tool, and the lessons show a workaround when a feature isn't available to you."
+   },
+   {
+    "q": "Do I need to know coding?",
+    "a": "No. There is one lesson on using AI for coding help, and it is written so non-programmers can follow it for spreadsheet formulas and small scripts. Everything else needs no technical background."
+   },
+   {
+    "q": "Will this course get me a prompt engineering job?",
+    "a": "We can't promise a job or a salary. What you will have is a genuine, practical skill and four portfolio projects you can show to employers or clients, which makes your AI experience concrete and credible on your CV and LinkedIn."
+   },
+   {
+    "q": "Do I get a certificate?",
+    "a": "Yes. A certificate of completion is issued when you mark every lesson in the course as complete. You can add it to your LinkedIn profile and CV."
+   },
+   {
+    "q": "What is the refund policy?",
+    "a": "You can get a full refund within 7 days of purchase as long as you have completed less than 30% of the course. Just contact support with your order details."
+   }
+  ],
+  "modules": [
+   {
+    "title": "Foundations of Professional Prompting",
+    "lessons": [
+     {
+      "title": "Why Your Prompts Get Average Answers",
+      "minutes": 20,
+      "preview": true,
+      "summary": "Understand why vague prompts produce generic output and what expert-level results really look like."
+     },
+     {
+      "title": "The Anatomy of a Great Prompt",
+      "minutes": 25,
+      "preview": true,
+      "summary": "Learn the six building blocks of a strong prompt and a 60-second checklist you can use on any task."
+     },
+     {
+      "title": "Zero-Shot vs Few-Shot: Teaching by Example",
+      "minutes": 25,
+      "preview": false,
+      "summary": "Use well-chosen examples to make AI follow your labels, format and brand voice consistently."
+     },
+     {
+      "title": "Delimiters and Reusable Templates",
+      "minutes": 20,
+      "preview": false,
+      "summary": "Separate instructions from pasted content and turn good prompts into reusable templates with variables."
+     }
+    ]
+   },
+   {
+    "title": "Controlling the Output",
+    "lessons": [
+     {
+      "title": "Step-by-Step Reasoning: When It Helps",
+      "minutes": 25,
+      "preview": false,
+      "summary": "Ask for visible reasoning on calculations, logic and decisions, and know when it adds nothing."
+     },
+     {
+      "title": "Structured Output: Tables, JSON and Checklists",
+      "minutes": 25,
+      "preview": false,
+      "summary": "Get output in exactly the structure your spreadsheet, document or tool needs."
+     },
+     {
+      "title": "Iterative Refinement and Self-Critique",
+      "minutes": 20,
+      "preview": false,
+      "summary": "Improve drafts in focused rounds and make the model critique its own work against a rubric."
+     }
+    ]
+   },
+   {
+    "title": "Reliability: Accuracy, Chains and Testing",
+    "lessons": [
+     {
+      "title": "Reducing Hallucinations",
+      "minutes": 25,
+      "preview": false,
+      "summary": "Ground answers in your own documents, allow 'I don't know', and handle sources safely."
+     },
+     {
+      "title": "Prompt Chaining for Multi-Step Work",
+      "minutes": 30,
+      "preview": false,
+      "summary": "Build a four-step chain that turns raw meeting notes into a client-ready report."
+     },
+     {
+      "title": "Evaluating Prompts with Test Cases",
+      "minutes": 30,
+      "preview": false,
+      "summary": "Test prompts against realistic and adversarial inputs, score them and improve with a version log."
+     }
+    ]
+   },
+   {
+    "title": "Prompts for Real Work",
+    "lessons": [
+     {
+      "title": "Prompts for Writing That Sounds Like You",
+      "minutes": 20,
+      "preview": false,
+      "summary": "Write emails, posts and long-form content with a clear reader, purpose and your own voice."
+     },
+     {
+      "title": "Analysis and Structured Data Extraction",
+      "minutes": 30,
+      "preview": false,
+      "summary": "Turn messy text into decisions and clean data, and test an extraction prompt on 10 samples."
+     },
+     {
+      "title": "Prompts for Coding Help",
+      "minutes": 25,
+      "preview": false,
+      "summary": "Get working formulas, scripts and SQL, debug errors, and use AI as a coding tutor safely."
+     },
+     {
+      "title": "Image Generation Prompting Basics",
+      "minutes": 20,
+      "preview": false,
+      "summary": "Describe images with subject, style, composition and lighting, and use AI images responsibly."
+     }
+    ]
+   },
+   {
+    "title": "Scaling Up: Assistants, Libraries and Safe Use",
+    "lessons": [
+     {
+      "title": "Custom Instructions and Custom Assistants",
+      "minutes": 30,
+      "preview": false,
+      "summary": "Configure custom instructions and build a tested assistant for a specific job role."
+     },
+     {
+      "title": "Building a Team Prompt Library",
+      "minutes": 30,
+      "preview": false,
+      "summary": "Assemble, test and organise a 25-prompt professional library your whole team can use."
+     },
+     {
+      "title": "Prompt Injection Awareness and Safe Use",
+      "minutes": 20,
+      "preview": false,
+      "summary": "Recognise prompt injection, protect data privacy and follow a safe-use checklist for professional AI work."
+     }
+    ]
+   }
+  ],
+  "lesson_count": 17
+ },
+ {
+  "slug": "ai-freelancing-and-business",
+  "title": "Make Money with AI: Freelancing & Small Business Playbook",
+  "subtitle": "Offer AI-powered services clients pay for, find and win clients honestly, get paid properly, and run your small business smarter.",
+  "category": "AI for Business",
+  "level": "beginner",
+  "price": 2499,
+  "mrp": 6999,
+  "duration_hours": 8,
+  "sort_order": 4,
+  "description": "This course is for anyone in India who wants to earn with AI-powered services or run a small business more efficiently: students, career returners, side-hustlers and shop, clinic or home-business owners. You do not need to code. You need a laptop or smartphone, an internet connection and a few focused hours each week.\n\nYou will learn which AI-assisted services clients actually pay for, how to choose a niche, build a portfolio quickly and honestly, price your work in rupees and dollars, and find clients on LinkedIn, Upwork, Fiverr, Instagram, WhatsApp and through your local network. You will also learn the business side that most courses skip: contracts, invoicing, GST and tax basics, international payments, and how to avoid scams.\n\nThe course is built around four practical projects: a niche and offer one-pager, a three-piece portfolio, a proposal template with ten personalised outreach messages, and a delivery SOP for one service. By the end you will have a working toolkit, not just notes.\n\nWe are honest throughout: AI speeds up first drafts, but quality, trust and communication are still your job. No course can guarantee income, and this one does not. Any prices shown are illustrative examples to help you build your own rate card.",
+  "audience": [
+   "Students who want to earn and build real work experience before placements",
+   "Career returners looking for flexible, home-based work",
+   "Working professionals building a side income on weekends",
+   "Small business owners who want to save time on customers, catalogues and admin",
+   "Beginner freelancers who want a clear, ethical system for using AI"
+  ],
+  "outcomes": [
+   "Choose a profitable niche and package a clear offer clients can say yes to",
+   "Build a three-piece portfolio quickly with AI while labelling samples honestly",
+   "Set prices in ₹ and $ using a floor-rate method and tiered packages",
+   "Write tailored proposals and respectful outreach messages that get conversations started",
+   "Deliver AI-assisted work with a review, fact-check and originality process clients trust",
+   "Use simple contracts, proper invoices and understand GST and tax basics to discuss with a CA",
+   "Set up WhatsApp Business, catalogue descriptions and simple AI-assisted bookkeeping",
+   "Spot common freelancing scams and avoid over-promising results"
+  ],
+  "prerequisites": [
+   "Basic comfort using a computer or smartphone and the internet",
+   "Ability to read and write simple English (regional language skills are a bonus)",
+   "No coding or prior freelancing experience needed"
+  ],
+  "tools": [
+   "ChatGPT",
+   "Claude",
+   "Gemini",
+   "Canva",
+   "Google Docs and Sheets",
+   "WhatsApp Business",
+   "LinkedIn",
+   "Upwork",
+   "Fiverr",
+   "Zapier or Make"
+  ],
+  "projects": [
+   "A one-page niche and offer document defining your ideal client, core package and pricing.",
+   "A three-piece portfolio with short case studies that honestly describe how you used AI.",
+   "A reusable proposal template plus ten researched, personalised outreach messages ready to send.",
+   "A step-by-step delivery SOP for one service, including prompts, checklists and message templates."
+  ],
+  "seo": {
+   "title": "AI Freelancing Course in India: Earn with AI Skills",
+   "description": "Learn AI freelancing in India: pick a niche, build a portfolio, price in ₹ and $, find clients, handle GST and invoices, and avoid scams. Beginner-friendly",
+   "keywords": [
+    "ai freelancing course in india",
+    "how to make money with ai in india",
+    "freelancing course for beginners india",
+    "chatgpt freelancing course",
+    "ai side hustle india",
+    "how to start freelancing in india",
+    "upwork fiverr course india",
+    "ai for small business india",
+    "whatsapp business for small business",
+    "gst for freelancers india",
+    "work from home ai skills course",
+    "freelancing with chatgpt for students"
+   ]
+  },
+  "faqs": [
+   {
+    "q": "Will this course guarantee that I earn money?",
+    "a": "No. No honest course can guarantee income, because results depend on your skills, effort, niche and market. What the course gives you is a practical system and four finished projects that make it much easier to find and serve clients. Any prices shown are illustrative examples, not promises."
+   },
+   {
+    "q": "Do I need any technical or coding skills?",
+    "a": "No. The course is designed for beginners. If you can use a browser, a chat app and a basic document or spreadsheet, you can follow every lesson. Optional automation topics use no-code tools."
+   },
+   {
+    "q": "I run a shop or small business, not a freelance practice. Is this useful for me?",
+    "a": "Yes. Module 5 focuses on using AI for customer replies, WhatsApp Business, catalogues, bookkeeping help and SOPs for your team. The pricing, contracts and scam-awareness lessons are also useful for any small business."
+   },
+   {
+    "q": "Does the course cover GST and income tax for freelancers?",
+    "a": "It covers the basics in plain language: invoicing, GST registration thresholds, export of services, TDS and advance tax, plus a list of questions to ask your CA. It is general information, not tax advice, and we recommend consulting a Chartered Accountant for your situation."
+   },
+   {
+    "q": "Do I get a certificate?",
+    "a": "Yes. A certificate of completion is issued automatically when you mark every lesson in the course as complete. You can add it to your LinkedIn profile."
+   },
+   {
+    "q": "What is the refund policy?",
+    "a": "You can get a full refund within 7 days of purchase, as long as you have completed less than 30% of the course. Just contact support with your order details."
+   }
+  ],
+  "modules": [
+   {
+    "title": "The AI Earning Opportunity, Honestly",
+    "lessons": [
+     {
+      "title": "What AI Really Changes for Freelancers and Small Businesses",
+      "minutes": 25,
+      "preview": true,
+      "summary": "An honest look at what AI speeds up, what it doesn't change, and how to approach earning with it without the hype."
+     },
+     {
+      "title": "AI-Powered Services Clients Actually Pay For",
+      "minutes": 25,
+      "preview": true,
+      "summary": "Seven practical services, from content writing to basic automation, and where AI helps versus where you must add value."
+     },
+     {
+      "title": "Choosing Your Niche and Shaping Your Offer",
+      "minutes": 30,
+      "preview": false,
+      "summary": "Pick a niche you can reach and enjoy, package a clear offer, and start your niche and offer one-pager."
+     }
+    ]
+   },
+   {
+    "title": "Skills, Portfolio, Pricing and Profiles",
+    "lessons": [
+     {
+      "title": "Your Lean AI Toolkit and Quality Workflow",
+      "minutes": 25,
+      "preview": false,
+      "summary": "Set up a minimal toolkit, write better prompts, and adopt a draft-review-verify-own process for every deliverable."
+     },
+     {
+      "title": "Building a Three-Piece Portfolio Fast (and Ethically)",
+      "minutes": 35,
+      "preview": false,
+      "summary": "Create spec, improvement and real-client samples with AI, write mini case studies, and label everything honestly."
+     },
+     {
+      "title": "Pricing Your Services in ₹ and $",
+      "minutes": 25,
+      "preview": false,
+      "summary": "Calculate a floor rate, research the market, and build tiered packages using clearly illustrative example ranges."
+     },
+     {
+      "title": "Profiles That Convert: LinkedIn, Upwork, Fiverr and Instagram",
+      "minutes": 25,
+      "preview": false,
+      "summary": "Write client-focused headlines, overviews, gigs and bios with AI, then make them genuinely yours."
+     }
+    ]
+   },
+   {
+    "title": "Finding and Winning Clients",
+    "lessons": [
+     {
+      "title": "Where to Find Clients: Platforms, Social and Local Networks",
+      "minutes": 25,
+      "preview": false,
+      "summary": "Map warm, lukewarm and cold channels, choose two to focus on, and set up a weekly routine and tracker."
+     },
+     {
+      "title": "Writing Winning Proposals with AI",
+      "minutes": 30,
+      "preview": false,
+      "summary": "Use a five-part structure and AI-assisted brief analysis to create a reusable, personalised proposal template."
+     },
+     {
+      "title": "Cold Outreach That Respects People",
+      "minutes": 30,
+      "preview": false,
+      "summary": "Research prospects, draft ten personalised outreach messages with AI, and follow up without spamming."
+     }
+    ]
+   },
+   {
+    "title": "Delivering Work and Getting Paid",
+    "lessons": [
+     {
+      "title": "Delivering Quality Work Clients Trust",
+      "minutes": 25,
+      "preview": false,
+      "summary": "Run projects from kickoff to close with written confirmations, quality checklists and calm revision handling."
+     },
+     {
+      "title": "Contracts, Scope and Revisions",
+      "minutes": 25,
+      "preview": false,
+      "summary": "Draft a simple service agreement with AI covering scope, advance, revisions, IP and AI use, and manage scope creep."
+     },
+     {
+      "title": "Invoicing, GST and Tax Basics for Indian Freelancers",
+      "minutes": 25,
+      "preview": false,
+      "summary": "Create proper invoices, understand GST and income tax basics, and prepare the right questions for your CA."
+     },
+     {
+      "title": "Receiving International Payments",
+      "minutes": 20,
+      "preview": false,
+      "summary": "Compare platform withdrawals, bank wires and payment services, keep remittance proof, and avoid payment scams."
+     }
+    ]
+   },
+   {
+    "title": "Run and Scale Your Business with AI",
+    "lessons": [
+     {
+      "title": "AI for Customer Replies, Catalogues and WhatsApp Business",
+      "minutes": 25,
+      "preview": false,
+      "summary": "Answer frequent questions faster, set up WhatsApp Business features, and write accurate catalogue descriptions."
+     },
+     {
+      "title": "Simple Bookkeeping and Admin with AI",
+      "minutes": 25,
+      "preview": false,
+      "summary": "Organise transactions, categorise expenses, build spreadsheet formulas and run a monthly review safely."
+     },
+     {
+      "title": "Scaling with Templates and SOPs",
+      "minutes": 30,
+      "preview": false,
+      "summary": "Turn your delivery kit into a written SOP for one service and build a reusable template and prompt library."
+     },
+     {
+      "title": "Avoiding Scams, Over-Promising and Burnout",
+      "minutes": 25,
+      "preview": false,
+      "summary": "Recognise common freelancing scams, promise only what you control, and leave with a 90-day action plan."
+     }
+    ]
+   }
+  ],
+  "lesson_count": 18
+ },
+ {
+  "slug": "ai-content-creation-personal-branding",
+  "title": "AI for Content Creation & Personal Branding",
+  "subtitle": "Use AI to find your voice, plan a month of content and create LinkedIn posts, reels and newsletters that sound like you, not a robot.",
+  "category": "AI for Marketing",
+  "level": "beginner",
+  "price": 2499,
+  "mrp": 6999,
+  "duration_hours": 6.5,
+  "sort_order": 5,
+  "description": "This course is for anyone in India who wants to show up online consistently without spending every evening staring at a blank screen: professionals building a LinkedIn presence, aspiring creators, coaches, small brands and social media managers handling multiple accounts.\n\nYou will learn to use AI as a fast, practical assistant across the whole content process: defining your brand voice and content pillars, planning a realistic content calendar, writing LinkedIn posts and carousels, scripting reels and shorts with strong hooks, writing newsletters and blogs with SEO basics, repurposing one idea into ten pieces, and creating images, voice-overs and edited videos. Throughout, the focus is on keeping your own experience and opinions at the centre so your content never sounds generic.\n\nYou will also learn the rules that protect your reputation: copyright, AI disclosure, ASCI influencer guidelines, consent for voice cloning and platform policies. The final module covers measuring what works, running simple experiments and honest, hype-free paths to earning from your brand.\n\nThe course is text-based with ready-to-use prompts and templates. Every lesson ends with a short hands-on exercise, and by the end you will have four finished assets: a brand voice guide, a 30-day content calendar, a LinkedIn carousel with three posts, and a short-video script with hook variants.",
+  "audience": [
+   "Working professionals building a LinkedIn presence for jobs, clients or credibility",
+   "Aspiring creators starting on Instagram, YouTube Shorts or newsletters",
+   "Coaches, consultants and freelancers who want inbound enquiries",
+   "Small brands and home businesses managing their own social media",
+   "Social media managers who want faster, better workflows for clients"
+  ],
+  "outcomes": [
+   "Create a brand voice guide that makes any AI tool write closer to how you speak",
+   "Define content pillars and build an idea bank of 30+ specific post ideas",
+   "Plan a realistic 30-day content calendar around your time and Indian dates",
+   "Write LinkedIn posts and carousels with strong hooks and no generic AI filler",
+   "Script reels and YouTube Shorts with multiple hook variants to test",
+   "Turn one article or talk into ten pieces of content across platforms",
+   "Use AI image, voice and video tools ethically, with proper consent and disclosure",
+   "Track the metrics that matter and choose a realistic monetisation path"
+  ],
+  "prerequisites": [
+   "Access to any AI chat assistant such as ChatGPT, Claude or Gemini (free versions are fine)",
+   "A smartphone and a free account on at least one social platform",
+   "No design, video or marketing experience needed"
+  ],
+  "tools": [
+   "ChatGPT",
+   "Claude",
+   "Gemini",
+   "Canva and its AI features",
+   "AI image generators",
+   "AI captioning, audio cleanup and video editing tools",
+   "LinkedIn, Instagram and YouTube analytics",
+   "Google Search Console",
+   "Email newsletter platforms"
+  ],
+  "projects": [
+   "A one-page brand voice guide you can paste into any AI tool so drafts sound like you.",
+   "A 30-day content calendar built on your content pillars, posting capacity and audience dates.",
+   "A ready-to-publish LinkedIn carousel plus three LinkedIn posts in different styles.",
+   "A 45-second reel or YouTube Short script with three hook variants and an A/B testing plan."
+  ],
+  "seo": {
+   "title": "AI Content Creation & Personal Branding Course",
+   "description": "Learn AI content creation and personal branding: LinkedIn posts, carousels, reels scripts and newsletters that sound like you. Practical course for India.",
+   "keywords": [
+    "ai content creation course in india",
+    "personal branding course online",
+    "linkedin personal branding course",
+    "chatgpt for content creation",
+    "ai for social media content",
+    "how to write linkedin posts with ai",
+    "instagram reels script writing course",
+    "content creator course in india",
+    "ai tools for content creators",
+    "content calendar using chatgpt",
+    "personal branding for professionals india",
+    "hinglish content writing with ai"
+   ]
+  },
+  "faqs": [
+   {
+    "q": "I am not a creator and have never posted regularly. Is this course for me?",
+    "a": "Yes. The course is designed for beginners and starts with defining your voice and audience before any posting. Many learners are working professionals who simply want a credible LinkedIn presence, not a career as an influencer."
+   },
+   {
+    "q": "Will the content I create with AI sound robotic?",
+    "a": "Not if you follow the workflow taught here. A full lesson is dedicated to spotting and removing AI-sounding writing, and every method starts from your own stories, opinions and voice samples rather than a blank prompt."
+   },
+   {
+    "q": "Which AI tools do I need to buy?",
+    "a": "None are required. Free versions of a chat assistant and a design tool such as Canva are enough to complete every project. The course explains tool categories so you can choose paid tools later only if you need them."
+   },
+   {
+    "q": "Will this course guarantee that I earn money or go viral?",
+    "a": "No, and we would be wary of any course that promises that. You will learn honest monetisation paths such as services, brand deals and digital products, and what each one realistically requires."
+   },
+   {
+    "q": "Do I get a certificate?",
+    "a": "Yes. A certificate of completion is issued once you mark every lesson in the course as complete."
+   },
+   {
+    "q": "What is the refund policy?",
+    "a": "You can get a full refund within 7 days of purchase as long as you have completed less than 30% of the course. Just contact support with your order details."
+   }
+  ],
+  "modules": [
+   {
+    "title": "Module 1: Your Brand Foundations",
+    "lessons": [
+     {
+      "title": "How AI Changes Personal Branding (and What It Doesn't)",
+      "minutes": 20,
+      "preview": true,
+      "summary": "What a personal brand really is, where AI helps, where it hurts, and the working loop used throughout the course."
+     },
+     {
+      "title": "Build Your Brand Voice Guide with AI",
+      "minutes": 25,
+      "preview": false,
+      "summary": "Analyse your real writing and speech with AI and turn it into a one-page voice guide that makes drafts sound like you."
+     },
+     {
+      "title": "Define Your Audience and Content Pillars",
+      "minutes": 20,
+      "preview": false,
+      "summary": "Pin down one specific reader, choose three or four content pillars and generate an idea bank of 30+ posts."
+     },
+     {
+      "title": "Plan a Realistic 30-Day Content Calendar",
+      "minutes": 25,
+      "preview": false,
+      "summary": "Use AI to build a 30-day calendar around your capacity, weekly rhythm and the dates that matter to your audience."
+     }
+    ]
+   },
+   {
+    "title": "Module 2: Writing for LinkedIn and Short Video",
+    "lessons": [
+     {
+      "title": "LinkedIn Posts That Sound Like You",
+      "minutes": 20,
+      "preview": false,
+      "summary": "A repeatable post structure, five post types and an AI drafting workflow that starts from your own notes."
+     },
+     {
+      "title": "LinkedIn Carousels: Plan, Write and Design",
+      "minutes": 25,
+      "preview": false,
+      "summary": "Write and design a swipeable PDF carousel with AI and complete your carousel plus three posts project."
+     },
+     {
+      "title": "Reels and Shorts Scripts with Scroll-Stopping Hooks",
+      "minutes": 25,
+      "preview": false,
+      "summary": "Structure short videos, write spoken scripts with on-screen text and create hook variants to test."
+     },
+     {
+      "title": "How to Avoid AI-Sounding Content",
+      "minutes": 20,
+      "preview": true,
+      "summary": "Spot the tell-tale signs of generic AI writing and fix them with better inputs and a five-pass human edit."
+     }
+    ]
+   },
+   {
+    "title": "Module 3: Long-Form, SEO, Repurposing and Language",
+    "lessons": [
+     {
+      "title": "Writing Blogs and Newsletters with AI",
+      "minutes": 25,
+      "preview": false,
+      "summary": "Use AI to interview you, outline and draft long-form pieces, and run a newsletter people actually open."
+     },
+     {
+      "title": "SEO Basics for Creators and Small Brands",
+      "minutes": 25,
+      "preview": false,
+      "summary": "Find what your audience searches for, match search intent and optimise articles without keyword stuffing."
+     },
+     {
+      "title": "Repurpose One Idea into Ten Pieces",
+      "minutes": 20,
+      "preview": false,
+      "summary": "Break a pillar piece into idea atoms and adapt them into posts, carousels, reels and emails for each platform."
+     },
+     {
+      "title": "Hinglish, Hindi and Regional-Language Content",
+      "minutes": 20,
+      "preview": false,
+      "summary": "Choose the right language mix for your audience and prompt AI for natural Hinglish and regional content."
+     }
+    ]
+   },
+   {
+    "title": "Module 4: Visuals, Voice, Video and the Rules",
+    "lessons": [
+     {
+      "title": "AI Images for Thumbnails and Social Posts",
+      "minutes": 25,
+      "preview": false,
+      "summary": "Understand AI image tool categories, write strong image prompts and create honest thumbnails and post graphics."
+     },
+     {
+      "title": "AI Voice-Over and Video Editing, Ethically",
+      "minutes": 25,
+      "preview": false,
+      "summary": "Use AI for captions, audio cleanup, editing and voice-over, with clear rules on consent for voice cloning."
+     },
+     {
+      "title": "Copyright, AI Disclosure and Platform Rules",
+      "minutes": 20,
+      "preview": false,
+      "summary": "The copyright, labelling, ASCI influencer and platform rules every creator in India should follow."
+     }
+    ]
+   },
+   {
+    "title": "Module 5: Measure, Improve and Monetise",
+    "lessons": [
+     {
+      "title": "Measure What Works and Iterate",
+      "minutes": 20,
+      "preview": false,
+      "summary": "Track the metrics that match your goal, use AI to spot patterns and run simple monthly experiments."
+     },
+     {
+      "title": "Honest Monetisation Paths for Your Brand",
+      "minutes": 20,
+      "preview": false,
+      "summary": "A hype-free look at services, brand deals, digital products and indirect career returns, and how to pick your first."
+     }
+    ]
+   }
+  ],
+  "lesson_count": 17
+ },
+ {
+  "slug": "ai-data-analysis-excel-power-bi",
+  "title": "AI for Data Analysis: Excel, Google Sheets & Power BI",
+  "subtitle": "Use ChatGPT, Claude, Copilot and Gemini to write formulas, clean data, build MIS reports and Power BI dashboards — and verify every number.",
+  "category": "AI for Data",
+  "level": "intermediate",
+  "price": 2999,
+  "mrp": 7999,
+  "duration_hours": 11,
+  "sort_order": 6,
+  "description": "This course is for MIS executives, accountants, operations and sales analysts, MBA students and anyone in India whose work runs on spreadsheets. If you spend evenings fighting VLOOKUPs, rebuilding the same monthly report, or wondering whether you can trust an AI-generated total, this course is built for you.\n\nYou will learn to use AI assistants as a spreadsheet co-pilot: describing your sheet so you get correct XLOOKUP, SUMIFS, INDEX-MATCH, IF, text and date formulas the first time; understanding and repairing inherited formulas; cleaning messy data with duplicates, name variants and text dates; and summarising it with pivot tables. You will then upload data to ChatGPT or Claude for analysis, use Copilot in Excel and Gemini in Sheets, and move into Power BI with DAX measures explained in plain English.\n\nEvery example uses realistic Indian data — a Jaipur retailer's GST-inclusive sales, a Bengaluru startup's leads sheet, a Nagpur distributor's branch MIS — and every lesson ends with a hands-on exercise. A strong thread runs throughout: data privacy (never uploading PAN or Aadhaar, masking customer data) and verification, so the numbers you present are numbers you can defend.\n\nBy the end you will have four portfolio projects: a cleaned and analysed 1,000-row sales dataset, a refreshable pivot-based monthly MIS report, a one-page dashboard in Power BI or Google Sheets, and a five-insight executive summary.",
+  "audience": [
+   "MIS executives and analysts who build monthly reports in Excel or Google Sheets",
+   "Accountants and CA-firm staff working with sales registers and expense data",
+   "Operations and sales analysts who want to become the team's go-to data person",
+   "MBA and commerce students preparing for analyst and business roles",
+   "Anyone who uses spreadsheets daily and wants to work faster with AI"
+  ],
+  "outcomes": [
+   "Get correct XLOOKUP, SUMIFS, INDEX-MATCH, IF, text and date formulas from AI, and understand them",
+   "Explain, audit and fix complex inherited formulas using AI and Excel's auditing tools",
+   "Clean messy data: duplicates, inconsistent names, text dates, currency text and outliers",
+   "Build pivot tables with MoM growth, shares and slicers for fast business summaries",
+   "Analyse CSV files with ChatGPT or Claude and verify every result with control checks",
+   "Build an automated monthly MIS report with Power Query, pivots and a single month cell",
+   "Create Power BI models with a date table and DAX measures for Indian financial years",
+   "Design a one-page dashboard and write a five-insight executive summary"
+  ],
+  "prerequisites": [
+   "Basic comfort with Excel or Google Sheets (entering data, simple SUM formulas)",
+   "A laptop with Excel or a Google account; Windows needed for Power BI Desktop",
+   "Access to any AI chat assistant such as ChatGPT, Claude or Gemini (free versions work for most lessons)"
+  ],
+  "tools": [
+   "Microsoft Excel",
+   "Google Sheets",
+   "Power BI Desktop",
+   "Power Query",
+   "ChatGPT",
+   "Claude",
+   "Gemini",
+   "Microsoft Copilot",
+   "Google Colab (Python and pandas)"
+  ],
+  "projects": [
+   "Clean and analyse a messy 1,000-row Jaipur retailer sales dataset and answer five business questions.",
+   "Build a refreshable, pivot-based monthly MIS report for a three-branch distributor using Power Query.",
+   "Design and build a one-page sales dashboard in Power BI or Google Sheets.",
+   "Write a one-page, five-insight executive summary backed by verified numbers."
+  ],
+  "seo": {
+   "title": "AI for Data Analysis: Excel, Sheets & Power BI Course",
+   "description": "Learn AI for data analysis in Excel, Google Sheets & Power BI: formulas, data cleaning, pivots, MIS reports, DAX & dashboards with Indian examples.",
+   "keywords": [
+    "ai for data analysis course in india",
+    "excel with chatgpt course",
+    "power bi course with ai",
+    "mis executive course online",
+    "excel formulas using ai",
+    "copilot in excel training",
+    "data analysis course for accountants",
+    "google sheets ai course",
+    "dax measures for beginners",
+    "mis report in excel course",
+    "chatgpt data analysis excel",
+    "data analytics course for beginners india"
+   ]
+  },
+  "faqs": [
+   {
+    "q": "Do I need to know advanced Excel or coding before joining?",
+    "a": "No. You should be comfortable entering data and writing a simple SUM formula. The course builds up lookups, SUMIFS, pivots and Power BI step by step, and the Python lesson is optional and written for people who have never coded."
+   },
+   {
+    "q": "Do I need paid versions of ChatGPT, Claude, Copilot or Power BI?",
+    "a": "Free versions of chat assistants are enough for formula help and most exercises. File-upload analysis, Copilot in Excel and Gemini in Sheets depend on your plan and your organisation's settings, so we teach the skills in a way you can apply with whatever you have. Power BI Desktop is free on Windows; Mac users can do the dashboard project in Google Sheets."
+   },
+   {
+    "q": "Is it safe to put my company's data into AI tools?",
+    "a": "Only if your organisation allows it. A full lesson covers checking your company's policy, never uploading PAN, Aadhaar or bank details, and masking customer data — and the projects use realistic practice datasets so you never need real customer data to learn."
+   },
+   {
+    "q": "Will this course get me a data analyst job?",
+    "a": "No course can promise a job. What you will have is practical skills employers ask for in MIS and analyst roles, plus four portfolio projects you can describe in interviews and show in a sanitised form."
+   },
+   {
+    "q": "Do I get a certificate?",
+    "a": "Yes. A certificate of completion is issued once you mark every lesson in the course as complete."
+   },
+   {
+    "q": "What is the refund policy?",
+    "a": "You can get a full refund within 7 days of purchase, as long as you have completed less than 30% of the course. Just contact support from your registered email."
+   }
+  ],
+  "modules": [
+   {
+    "title": "AI as Your Spreadsheet Co-pilot",
+    "lessons": [
+     {
+      "title": "Becoming the Data Person with AI",
+      "minutes": 15,
+      "preview": true,
+      "summary": "What the office 'data person' really does, where AI helps and where it doesn't, and the Indian datasets we'll use."
+     },
+     {
+      "title": "Describing Your Sheet So AI Gets Formulas Right",
+      "minutes": 20,
+      "preview": false,
+      "summary": "A simple context template, sample rows and Excel Tables that make AI-written formulas work first time."
+     },
+     {
+      "title": "Data Privacy: Masking Data and What Never to Upload",
+      "minutes": 20,
+      "preview": false,
+      "summary": "Company policy checks, the never-upload list (PAN, Aadhaar, bank data), masking formulas and synthetic data."
+     }
+    ]
+   },
+   {
+    "title": "Formulas with AI: Lookups, Conditions, Text and Dates",
+    "lessons": [
+     {
+      "title": "Lookups: XLOOKUP, INDEX-MATCH and VLOOKUP",
+      "minutes": 25,
+      "preview": true,
+      "summary": "Join tables with XLOOKUP or INDEX-MATCH, handle missing values, and fix the usual causes of #N/A."
+     },
+     {
+      "title": "SUMIFS, COUNTIFS and Conditional Totals",
+      "minutes": 25,
+      "preview": false,
+      "summary": "Build month, FY and multi-condition totals with SUMIFS and COUNTIFS, and catch ratio mistakes."
+     },
+     {
+      "title": "IF Logic, Text and Date Functions",
+      "minutes": 25,
+      "preview": false,
+      "summary": "IF/IFS bands, GST splits, text cleanup and Indian financial-year date formulas, explained by AI."
+     },
+     {
+      "title": "Explaining and Debugging Inherited Formulas",
+      "minutes": 20,
+      "preview": false,
+      "summary": "Use AI to explain legacy formulas, find silent failures, rewrite them robustly and document them."
+     }
+    ]
+   },
+   {
+    "title": "Cleaning, Pivots and the Monthly MIS Report",
+    "lessons": [
+     {
+      "title": "Cleaning Messy Data: Duplicates, Names and Dates",
+      "minutes": 30,
+      "preview": false,
+      "summary": "A repeatable routine to profile data, remove true duplicates, standardise names and fix DD/MM dates."
+     },
+     {
+      "title": "Pivot Tables and Summaries",
+      "minutes": 30,
+      "preview": false,
+      "summary": "Build pivots with month grouping, MoM growth, shares, distinct counts and slicers — with AI designing the layout."
+     },
+     {
+      "title": "Project: Clean and Analyse a 1,000-Row Sales Dataset",
+      "minutes": 90,
+      "preview": false,
+      "summary": "Take a messy Jaipur retailer export to a clean table and answer five real business questions."
+     },
+     {
+      "title": "Project: Build an Automated Monthly MIS Report",
+      "minutes": 90,
+      "preview": false,
+      "summary": "Combine branch files with Power Query and build a pivot-based MIS report that refreshes from one month cell."
+     }
+    ]
+   },
+   {
+    "title": "AI Analysis Tools: Uploads, Copilot, Gemini and Python",
+    "lessons": [
+     {
+      "title": "Analysing CSV Files with ChatGPT and Claude",
+      "minutes": 25,
+      "preview": false,
+      "summary": "Prepare files, start with an orientation prompt, ask sharp business questions and get usable outputs."
+     },
+     {
+      "title": "Verifying AI Analysis Before You Share It",
+      "minutes": 20,
+      "preview": false,
+      "summary": "A five-check routine — control totals, spot-checks, parts-to-whole, sense checks, re-asks — plus an audit trail."
+     },
+     {
+      "title": "Copilot in Excel and Gemini in Google Sheets",
+      "minutes": 20,
+      "preview": false,
+      "summary": "What built-in spreadsheet AI can do, how to prepare your sheet, and where it still needs your judgement."
+     },
+     {
+      "title": "Optional: Python and pandas for People Who Never Coded",
+      "minutes": 30,
+      "preview": false,
+      "summary": "Run AI-written pandas code in Google Colab to clean, combine and summarise files — and verify the output."
+     }
+    ]
+   },
+   {
+    "title": "Power BI, Dashboards and Data Storytelling",
+    "lessons": [
+     {
+      "title": "Power BI Basics and DAX Measures with AI",
+      "minutes": 35,
+      "preview": false,
+      "summary": "Load data, build an Indian-FY date table, create relationships and write DAX measures with AI explanations."
+     },
+     {
+      "title": "Project: Build a One-Page Dashboard",
+      "minutes": 90,
+      "preview": false,
+      "summary": "Choose the right charts and build a clean one-page sales dashboard in Power BI or Google Sheets."
+     },
+     {
+      "title": "Capstone: Write a Five-Insight Executive Summary",
+      "minutes": 60,
+      "preview": false,
+      "summary": "Ask better analytical questions, filter insights that matter, and turn verified data into a one-page story."
+     }
+    ]
+   }
+  ],
+  "lesson_count": 18
+ },
+ {
+  "slug": "no-code-ai-agents-automation",
+  "title": "Build AI Agents & Automations Without Code",
+  "subtitle": "Automate repetitive work and build AI assistants, chatbots and agents with Zapier, Make and n8n – no coding needed.",
+  "category": "AI Automation",
+  "level": "intermediate",
+  "price": 3499,
+  "mrp": 9999,
+  "duration_hours": 9,
+  "sort_order": 7,
+  "description": "This course is for operations people, founders, freelancers, marketers and consultants who spend too many hours copying data between apps, answering the same questions and chasing follow-ups. You will learn to build AI-powered automations and simple AI agents using no-code tools like Zapier, Make and n8n, without writing code.\n\nYou start by learning the difference between a plain automation, an AI-powered workflow and a true AI agent, and how to map a process and estimate the time it will save. Then you master the building blocks: triggers, actions, data mapping, filters, routers, error handling and AI steps that summarise, classify, extract and draft. You will also learn to handle API keys safely and keep AI costs and rate limits under control.\n\nAcross the course you build four practical projects: a lead-qualification flow with CRM and WhatsApp or email follow-up, an AI inbox triage assistant, a customer FAQ bot grounded in your own documents, and a weekly report agent that waits for human approval before sending anything.\n\nThe final module covers what turns a demo into dependable client work: testing, monitoring and failure handling, plus how to find, scope, price and maintain automation projects for Indian small and medium businesses. Every lesson is text-based, practical and ends with a hands-on exercise.",
+  "audience": [
+   "Operations and admin professionals buried in repetitive copy-paste work",
+   "Founders and small business owners who want leads and enquiries handled faster",
+   "Freelancers and consultants who want to offer automation services",
+   "Marketers who want lead follow-up and reporting to run on their own",
+   "Non-coders curious about building real AI agents and chatbots"
+  ],
+  "outcomes": [
+   "Explain the difference between an automation, an AI workflow and an AI agent",
+   "Map a business process and estimate the hours automation will save",
+   "Build workflows in Zapier, Make or n8n with triggers, filters, routers and error handling",
+   "Add AI steps that classify, extract, summarise and draft with reliable structured output",
+   "Build a lead-qualification flow with Google Sheets or CRM and WhatsApp or email follow-up",
+   "Create a customer FAQ bot that answers only from your own documents",
+   "Build tool-using agents with human approval before anything important is sent",
+   "Handle API keys, costs, rate limits, testing and monitoring like a professional"
+  ],
+  "prerequisites": [
+   "Comfortable using Gmail, Google Sheets and a chat assistant like ChatGPT or Claude",
+   "A laptop and free or trial accounts on at least one automation tool",
+   "No coding experience required"
+  ],
+  "tools": [
+   "Zapier",
+   "Make",
+   "n8n",
+   "ChatGPT / OpenAI API",
+   "Claude / Anthropic API",
+   "Google Gemini",
+   "Google Sheets and Gmail",
+   "WhatsApp Business Platform",
+   "CRMs such as Zoho, HubSpot or Pipedrive"
+  ],
+  "projects": [
+   "A lead-qualification automation that scores enquiries with AI, logs them to a sheet or CRM and follows up on WhatsApp or email.",
+   "An AI inbox triage assistant that labels, prioritises and summarises email and saves draft replies for review.",
+   "A document-grounded FAQ bot that answers customer questions from your own policies and hands off to a human when unsure.",
+   "A weekly report agent that gathers data with tools, drafts a report and sends it only after human approval."
+  ],
+  "seo": {
+   "title": "No-Code AI Agents & Automation Course",
+   "description": "Learn to build AI agents, chatbots and automations with Zapier, Make and n8n – no coding. 4 real projects for Indian businesses and freelancers.",
+   "keywords": [
+    "ai automation course in india",
+    "no code ai agents course",
+    "n8n course in india",
+    "zapier course online",
+    "make.com automation course",
+    "ai agent course for beginners",
+    "whatsapp automation course",
+    "build ai chatbot without coding",
+    "business process automation course india",
+    "ai automation freelancing india",
+    "n8n ai agent tutorial",
+    "learn workflow automation online"
+   ]
+  },
+  "faqs": [
+   {
+    "q": "Do I need to know coding to take this course?",
+    "a": "No. Every project is built with no-code tools by connecting steps and mapping fields. A few lessons show optional settings like JSON output, but we explain them in plain English and you never have to write a program."
+   },
+   {
+    "q": "Which tool should I use – Zapier, Make or n8n?",
+    "a": "The course is tool-neutral and explains each step so you can follow along in any of the three. Lesson 3 compares them so you can choose; many learners start with one and add n8n later for heavier AI agent work."
+   },
+   {
+    "q": "Will I have to pay for tools or AI usage?",
+    "a": "You can learn using free plans and trials, though limits change over time. AI provider APIs are usually pay-as-you-go, and for the course projects usage is typically small; we show you how to set spending limits so there are no surprises."
+   },
+   {
+    "q": "Can I use this to earn money as a freelancer?",
+    "a": "The final module covers finding, scoping, pricing and maintaining automation projects for Indian small businesses. We teach the method honestly, but we cannot promise any particular income – that depends on your niche, effort and results."
+   },
+   {
+    "q": "Do I get a certificate?",
+    "a": "Yes. A certificate of completion is issued when you mark every lesson in the course as complete."
+   },
+   {
+    "q": "What is the refund policy?",
+    "a": "You can get a full refund within 7 days of purchase, as long as you have completed less than 30% of the course."
+   }
+  ],
+  "modules": [
+   {
+    "title": "Foundations: Automations, AI Workflows and Agents",
+    "lessons": [
+     {
+      "title": "Automation vs AI Agent: What's the Difference?",
+      "minutes": 25,
+      "preview": true,
+      "summary": "Understand automations, AI-powered workflows and agents (LLM + tools + memory + goal), and when each one fits."
+     },
+     {
+      "title": "Mapping a Process Worth Automating",
+      "minutes": 30,
+      "preview": false,
+      "summary": "Map any business process step by step, spot automation and AI opportunities, and estimate the time saved honestly."
+     },
+     {
+      "title": "Zapier, Make and n8n Compared",
+      "minutes": 30,
+      "preview": false,
+      "summary": "Compare the three leading no-code automation tools, including self-hosted n8n, and choose the right one for each job."
+     }
+    ]
+   },
+   {
+    "title": "Automation Building Blocks",
+    "lessons": [
+     {
+      "title": "Triggers, Actions and Data Mapping",
+      "minutes": 30,
+      "preview": false,
+      "summary": "Learn how workflows start, what actions do, how webhooks work and how to map and clean data between steps."
+     },
+     {
+      "title": "Filters, Routers and Error Handling",
+      "minutes": 30,
+      "preview": false,
+      "summary": "Add decisions and branches to workflows and plan for failures with retries, alerts and a review sheet."
+     },
+     {
+      "title": "Adding an AI Step: Summarise, Classify, Extract, Draft",
+      "minutes": 30,
+      "preview": true,
+      "summary": "Put an LLM inside your workflow and write prompts that return reliable labels and structured JSON."
+     },
+     {
+      "title": "API Keys, Costs and Rate Limits",
+      "minutes": 25,
+      "preview": false,
+      "summary": "Store API keys safely, estimate and cap AI costs, and handle rate limits before they break your workflows."
+     }
+    ]
+   },
+   {
+    "title": "Real-World AI Workflows",
+    "lessons": [
+     {
+      "title": "Project 1: Lead Capture and AI Qualification",
+      "minutes": 35,
+      "preview": false,
+      "summary": "Capture leads from your forms, deduplicate them and score each one with AI against your ideal-client criteria."
+     },
+     {
+      "title": "Project 1: CRM, Google Sheets and WhatsApp Follow-Up",
+      "minutes": 35,
+      "preview": false,
+      "summary": "Save leads to a sheet or CRM, route by score, alert your team and follow up on WhatsApp or email the right way."
+     },
+     {
+      "title": "Project 2: AI Email Triage Assistant",
+      "minutes": 35,
+      "preview": false,
+      "summary": "Build an assistant that labels, prioritises and summarises your inbox and saves draft replies for human review."
+     }
+    ]
+   },
+   {
+    "title": "Knowledge Bots and AI Agents",
+    "lessons": [
+     {
+      "title": "Knowledge Bases and RAG Explained Simply",
+      "minutes": 30,
+      "preview": false,
+      "summary": "Understand how chatbots answer from your own documents, what RAG really means and how to prepare a knowledge base."
+     },
+     {
+      "title": "Project 3: A Document-Grounded FAQ Bot",
+      "minutes": 40,
+      "preview": false,
+      "summary": "Build a customer FAQ bot that answers only from your documents, hands off to humans and learns from its logs."
+     },
+     {
+      "title": "Agent Workflows with Tool Use",
+      "minutes": 35,
+      "preview": false,
+      "summary": "Give an AI agent tools and a goal, write clear tool descriptions, and set guardrails that keep it safe."
+     },
+     {
+      "title": "Project 4: Weekly Report Agent with Human Approval",
+      "minutes": 40,
+      "preview": false,
+      "summary": "Build an agent that drafts a weekly business report from your data and sends it only after a human approves."
+     }
+    ]
+   },
+   {
+    "title": "Running and Selling Automations",
+    "lessons": [
+     {
+      "title": "Testing, Monitoring and Failure Handling",
+      "minutes": 30,
+      "preview": false,
+      "summary": "Test with real-world inputs, launch in stages, catch silent failures and recover cleanly when things break."
+     },
+     {
+      "title": "Finding Automation Clients in Indian SMBs",
+      "minutes": 30,
+      "preview": false,
+      "summary": "Pick a niche, build proof and find your first automation clients among India's small and medium businesses."
+     },
+     {
+      "title": "Scoping, Pricing and Maintaining Client Work",
+      "minutes": 30,
+      "preview": false,
+      "summary": "Write tight scopes, choose a pricing model, hand over properly and earn recurring income from maintenance."
+     }
+    ]
+   }
+  ],
+  "lesson_count": 17
+ },
+ {
+  "slug": "generative-ai-python-llm-apps",
+  "title": "Generative AI Mastery: Build LLM Apps, RAG & Agents with Python",
+  "subtitle": "Go from basic Python to deployed GenAI apps: LLM APIs, structured output, RAG with citations, safe agents, evals and a portfolio for GenAI roles.",
+  "category": "Generative AI Engineering",
+  "level": "advanced",
+  "price": 4999,
+  "mrp": 14999,
+  "duration_hours": 13,
+  "sort_order": 8,
+  "description": "This is a hands-on engineering course for people who already write basic Python and want to build real applications on top of large language models. You will not just chat with an AI tool; you will call LLM APIs from code, get validated structured data out of them, connect them to your own documents and tools, and deploy the result.\n\nYou start with how LLMs work from an engineer's point of view: tokens, context windows, sampling and embeddings. Then you build steadily: a streaming CLI chatbot, a Streamlit web app, a GST invoice extraction API with Pydantic validation, a document Q&A system with retrieval and citations, and a tool-using agent that analyses CSV data with a safe calculator. Along the way you learn evaluation with test sets, prompt caching and cost control, prompt-injection and PII defences, retries, Docker and cloud deployment.\n\nExamples use Python and the Anthropic Claude API, with notes on how the same patterns apply to OpenAI, Gemini and open-source models via Ollama. Every lesson is written for Indian learners, with local examples such as GST invoices, UPI, HR policies and Naukri job hunting, and ends with a 10-20 minute exercise.\n\nThe final module turns your work into a deployed portfolio project with a strong README and prepares you for GenAI interviews in India: concept questions, coding rounds and system design.",
+  "audience": [
+   "Software developers who want to move into GenAI engineering roles",
+   "CS/IT students and recent graduates building a job-ready AI portfolio",
+   "Engineers in Indian IT services companies joining GenAI projects or practices",
+   "Data analysts comfortable with Python who want to build LLM-powered tools",
+   "Freelancers who want to offer RAG, chatbot and document automation projects"
+  ],
+  "outcomes": [
+   "Explain tokens, context windows, sampling and embeddings clearly in interviews and design reviews",
+   "Call LLM APIs from Python with system prompts, multi-turn history, streaming and error handling",
+   "Extract validated JSON from text, PDFs and images using structured output and Pydantic",
+   "Build tool-calling apps and agents with step limits, approval gates and safe tools",
+   "Build a RAG pipeline with chunking, vector search, grounded answers and page-level citations",
+   "Evaluate RAG and prompts with test sets, retrieval hit rate and LLM-as-judge grading",
+   "Reduce cost with prompt caching, effort settings and model routing, and defend against prompt injection",
+   "Deploy LLM apps with Docker and environment variables, and present them as a portfolio project"
+  ],
+  "prerequisites": [
+   "Basic Python: functions, lists and dictionaries, loops, and reading files",
+   "Comfort installing packages with pip and using virtual environments",
+   "A laptop that can run Python 3.10+ and an LLM API account (usage is billed by the provider)"
+  ],
+  "tools": [
+   "Python",
+   "Anthropic Claude API",
+   "Pydantic",
+   "FastAPI",
+   "Streamlit",
+   "sentence-transformers",
+   "Chroma",
+   "NumPy and pandas",
+   "Docker",
+   "Render or Railway"
+  ],
+  "projects": [
+   "A document Q&A (RAG) app that answers only from your PDFs and cites the file and page for every claim.",
+   "A GST invoice extraction API that turns PDFs and photos into validated JSON and flags invoices needing review.",
+   "A data analyst agent that answers questions over a sales CSV using safe aggregation tools and a calculator.",
+   "A deployed portfolio demo with Docker, a public URL, evaluation results and a recruiter-ready README."
+  ],
+  "seo": {
+   "title": "Generative AI Course in India: LLM Apps, RAG & Agents",
+   "description": "Advanced generative AI course with Python: build LLM apps, RAG with citations and AI agents, then deploy a portfolio project for GenAI jobs in India.",
+   "keywords": [
+    "generative ai course in india",
+    "generative ai course with python",
+    "llm course for developers",
+    "rag course online",
+    "ai agents course",
+    "genai engineer course",
+    "rag tutorial python",
+    "build chatbot with python and llm",
+    "claude api python course",
+    "genai jobs in india preparation",
+    "vector database tutorial",
+    "llm app development course"
+   ]
+  },
+  "faqs": [
+   {
+    "q": "How much Python do I need before starting?",
+    "a": "You should be comfortable writing functions, working with lists and dictionaries, installing packages with pip and using a virtual environment. You do not need prior machine learning experience; the course explains the LLM concepts you need from scratch."
+   },
+   {
+    "q": "Will I have to pay for an LLM API?",
+    "a": "Yes, the examples call a paid API, which the provider bills by usage. For the exercises in this course the usage is typically modest, and the course teaches you to measure tokens and control cost. Check the provider's current pricing before you start."
+   },
+   {
+    "q": "Is this course only about Claude, or will it help with OpenAI and Gemini too?",
+    "a": "Code examples use the Anthropic Claude API so that everything is consistent and runnable. The patterns (messages, structured output, tool calling, streaming, RAG, evaluation) are the same across providers, and lessons point out how they map to OpenAI, Gemini and open-source models via Ollama."
+   },
+   {
+    "q": "Will this course guarantee me a GenAI job?",
+    "a": "No course can guarantee a job. What it gives you is practical skills, four portfolio projects including a deployed one, and structured interview preparation, which together make you a much stronger candidate for GenAI and AI engineer roles."
+   },
+   {
+    "q": "Do I get a certificate?",
+    "a": "Yes. A certificate of completion is issued once you mark every lesson in the course as complete."
+   },
+   {
+    "q": "What is the refund policy?",
+    "a": "You can get a full refund within 7 days of purchase, as long as you have completed less than 30% of the course."
+   }
+  ],
+  "modules": [
+   {
+    "title": "LLM Foundations for Engineers",
+    "lessons": [
+     {
+      "title": "How LLMs Work: Tokens, Context, Sampling and Embeddings",
+      "minutes": 20,
+      "preview": true,
+      "summary": "Build an engineer's mental model of LLMs: next-token prediction, tokens, context windows, randomness, reasoning and embeddings."
+     },
+     {
+      "title": "Project Setup and Your First API Call",
+      "minutes": 30,
+      "preview": true,
+      "summary": "Set up a Python project, store your API key safely, make your first call and understand every field of the response."
+     },
+     {
+      "title": "System Prompts and Multi-Turn Conversations",
+      "minutes": 30,
+      "preview": false,
+      "summary": "Write testable system prompts and manage conversation history with a reusable Python class."
+     },
+     {
+      "title": "Streaming Responses and a CLI Chatbot",
+      "minutes": 35,
+      "preview": false,
+      "summary": "Stream answers token by token, build a command-line chatbot and measure time to first token."
+     }
+    ]
+   },
+   {
+    "title": "Structured Output, Tools and Web Apps",
+    "lessons": [
+     {
+      "title": "Structured Output and JSON Extraction with Pydantic",
+      "minutes": 35,
+      "preview": false,
+      "summary": "Get schema-constrained JSON from the model, validate it with Pydantic and add business-rule checks."
+     },
+     {
+      "title": "Project: GST Invoice Extraction Service",
+      "minutes": 50,
+      "preview": false,
+      "summary": "Build a FastAPI service that reads invoice PDFs and photos, returns validated JSON and flags GST inconsistencies."
+     },
+     {
+      "title": "Tool Use and Function Calling",
+      "minutes": 35,
+      "preview": false,
+      "summary": "Let the model call your Python functions, handle results and errors correctly, and keep tools secure."
+     },
+     {
+      "title": "Building a Streaming Web App with Streamlit",
+      "minutes": 40,
+      "preview": false,
+      "summary": "Turn your chatbot into a streaming web app with session state, document upload and demo-friendly touches."
+     }
+    ]
+   },
+   {
+    "title": "Embeddings and Retrieval-Augmented Generation",
+    "lessons": [
+     {
+      "title": "Embeddings and Vector Search from Scratch",
+      "minutes": 35,
+      "preview": false,
+      "summary": "Generate embeddings locally with sentence-transformers and build semantic search with NumPy cosine similarity."
+     },
+     {
+      "title": "Chunking Documents and Storing Them in Chroma",
+      "minutes": 45,
+      "preview": false,
+      "summary": "Load PDFs, chunk them with overlap, and store embeddings with source and page metadata in a Chroma vector store."
+     },
+     {
+      "title": "Project: Document Q&A with Grounded Answers and Citations",
+      "minutes": 50,
+      "preview": false,
+      "summary": "Build an end-to-end RAG app that answers only from your documents, cites pages and abstains when unsure."
+     },
+     {
+      "title": "Evaluating RAG Pipelines and Prompts",
+      "minutes": 45,
+      "preview": false,
+      "summary": "Create a test set, measure retrieval hit rate and grade answers with an LLM judge to compare changes objectively."
+     }
+    ]
+   },
+   {
+    "title": "AI Agents That Use Tools Safely",
+    "lessons": [
+     {
+      "title": "The Agent Loop: Tools, Steps and Limits",
+      "minutes": 40,
+      "preview": false,
+      "summary": "Write a reusable tool-use loop with step limits, error recovery and output caps, and understand what makes an agent."
+     },
+     {
+      "title": "Project: CSV Data Analyst Agent with a Calculator",
+      "minutes": 50,
+      "preview": false,
+      "summary": "Build an agent that answers questions over a sales CSV using safe, read-only pandas tools and an exact calculator."
+     },
+     {
+      "title": "Planning, Guardrails and When Not to Use Agents",
+      "minutes": 40,
+      "preview": false,
+      "summary": "Add plans, approval gates and spend limits, defend against injection, and learn when a simple workflow is better."
+     }
+    ]
+   },
+   {
+    "title": "Production: Cost, Safety and Deployment",
+    "lessons": [
+     {
+      "title": "Prompt Caching and Cost Control",
+      "minutes": 35,
+      "preview": false,
+      "summary": "Measure tokens, use prompt caching correctly, right-size model and effort, and apply batching and other savings."
+     },
+     {
+      "title": "Safety: Prompt Injection, PII, Rate Limits and Retries",
+      "minutes": 40,
+      "preview": false,
+      "summary": "Defend against prompt injection, redact Indian PII, rate-limit users and handle retries, timeouts and refusals."
+     },
+     {
+      "title": "Deploying with Docker, Environment Variables and Cloud Hosting",
+      "minutes": 50,
+      "preview": false,
+      "summary": "Containerise your app, manage secrets with environment variables and deploy to Render or Railway."
+     }
+    ]
+   },
+   {
+    "title": "Portfolio and GenAI Career Prep",
+    "lessons": [
+     {
+      "title": "Building Your Deployed Portfolio Project and README",
+      "minutes": 40,
+      "preview": false,
+      "summary": "Polish a flagship project, write a recruiter-ready README with real evaluation results and record a short demo."
+     },
+     {
+      "title": "Interview Prep for GenAI Roles in India",
+      "minutes": 30,
+      "preview": false,
+      "summary": "Prepare for concept, coding, system design and behavioural rounds, with a 30-day plan for your job search."
+     }
+    ]
+   }
+  ],
+  "lesson_count": 20
+ }
+]

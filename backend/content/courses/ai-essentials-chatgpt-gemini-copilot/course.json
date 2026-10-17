@@ -1,0 +1,244 @@
+{
+  "slug": "ai-essentials-chatgpt-gemini-copilot",
+  "title": "AI Essentials: ChatGPT, Gemini & Copilot for Everyday Work",
+  "subtitle": "Use ChatGPT, Gemini, Claude and Copilot with confidence to save hours on email, documents, research, spreadsheets, meetings and job hunting.",
+  "category": "AI Fundamentals",
+  "level": "beginner",
+  "price": 1499,
+  "mrp": 4999,
+  "duration_hours": 7,
+  "sort_order": 2,
+  "description": "This is a practical, beginner-friendly course for anyone who wants to use AI assistants in real daily work, without any technical background. If you are a working professional, a fresher, a career returner, someone moving from government-exam preparation to a private job, or a small business owner, this course is built for you.\n\nYou will learn how AI assistants like ChatGPT, Claude, Gemini and Microsoft Copilot actually work, where they make mistakes, and how to choose the right one for each task. Then you will apply them to everyday work: drafting emails and messages in English, Hindi and regional languages, writing reports, researching and summarising long PDFs with proper fact-checking, working with spreadsheets, and turning meetings into clear action items.\n\nThe final module focuses on your career and habits: tailoring your resume and cover letter to real job posts, improving your LinkedIn profile, practising Indian-style interviews, and using AI safely within workplace privacy rules. You finish by building a personal library of 20 tested prompts and a weekly AI workflow plan.\n\nEvery lesson is short, written in plain English with Indian examples, and ends with a hands-on exercise you can complete in 10 to 20 minutes using free versions of the tools.",
+  "audience": [
+    "Working professionals who want to save time on email, documents and reports",
+    "Freshers and graduates preparing for their first private-sector job",
+    "Career returners, including women restarting after a career break",
+    "Government-exam aspirants moving into private jobs",
+    "Small business owners and freelancers handling their own communication and admin"
+  ],
+  "outcomes": [
+    "Explain in plain words how AI assistants work and where they are likely to be wrong",
+    "Choose between ChatGPT, Claude, Gemini and Copilot based on the task and your tools",
+    "Write clear prompts that produce usable emails, reports and messages on the first or second try",
+    "Draft and translate messages in Hindi and regional languages with the right tone and register",
+    "Research a topic and summarise long PDFs while checking facts against original sources",
+    "Use AI for spreadsheet formulas, meeting minutes and action items",
+    "Tailor your resume, LinkedIn profile and interview answers to real job openings",
+    "Follow privacy and workplace AI rules and run a repeatable daily AI workflow"
+  ],
+  "prerequisites": [
+    "Basic comfort with a computer or smartphone, email and web browsing",
+    "A free account on at least one AI assistant such as ChatGPT, Gemini, Claude or Copilot",
+    "No coding or technical background needed"
+  ],
+  "tools": [
+    "ChatGPT",
+    "Claude",
+    "Google Gemini",
+    "Microsoft Copilot",
+    "Microsoft 365 (Word, Excel, Outlook, Teams)",
+    "Google Workspace (Gmail, Docs, Sheets, Drive, Meet)",
+    "LinkedIn"
+  ],
+  "projects": [
+    "Build a personal prompt library of 20 tested, reusable prompts for your own work.",
+    "Create an AI-tailored resume and cover letter for a real job post you want to apply for.",
+    "Write a one-page research brief from three verified sources on a topic that matters to you.",
+    "Design a weekly AI workflow plan with anchor tasks, daily routines and a two-week tracker."
+  ],
+  "seo": {
+    "title": "AI Essentials Course: ChatGPT, Gemini & Copilot",
+    "description": "Beginner AI course in India: use ChatGPT, Gemini, Claude and Copilot for email, reports, Excel, meetings and job hunting. Practical, hands-on, no coding.",
+    "keywords": [
+      "chatgpt course in india",
+      "ai course for beginners",
+      "how to use chatgpt for office work",
+      "microsoft copilot training",
+      "google gemini course",
+      "ai tools for working professionals",
+      "ai course for career returners",
+      "ai for resume and job search",
+      "online ai course with certificate india",
+      "chatgpt for excel and email"
+    ]
+  },
+  "faqs": [
+    {
+      "q": "Do I need any technical or coding knowledge?",
+      "a": "No. The course is written for non-technical learners. If you can use email and a web browser, you can follow every lesson and exercise."
+    },
+    {
+      "q": "Do I need to pay for ChatGPT, Gemini or Copilot?",
+      "a": "No. You can complete every exercise with the free versions of these assistants. Some features inside Microsoft 365 and Google Workspace depend on your employer's or your own plan, and the lessons show you what to do if you don't have them."
+    },
+    {
+      "q": "Will I get a certificate?",
+      "a": "Yes. A certificate of completion is issued once you have marked every lesson in the course as complete."
+    },
+    {
+      "q": "What is the refund policy?",
+      "a": "You can get a full refund within 7 days of purchase, as long as you have completed less than 30% of the course."
+    },
+    {
+      "q": "Is this course useful if I am returning to work after a career break?",
+      "a": "Yes. The course was designed with career returners in mind. Module 5 specifically covers presenting a career break honestly on your resume, updating your LinkedIn profile and practising interview answers, and the earlier modules help you get comfortable with the AI tools many workplaces now use."
+    },
+    {
+      "q": "How long will it take to finish?",
+      "a": "The course has 18 short lessons totalling about 7 hours, including exercises. Most learners finish comfortably in two to three weeks by doing one lesson a day, and you keep access to revisit lessons later."
+    }
+  ],
+  "modules": [
+    {
+      "title": "How AI Assistants Work (and When Not to Trust Them)",
+      "lessons": [
+        {
+          "title": "What an AI Assistant Really Is",
+          "file": "01-01-how-ai-assistants-work.md",
+          "minutes": 15,
+          "preview": true,
+          "summary": "A plain-language explanation of large language models, what they are good at, and what they are not."
+        },
+        {
+          "title": "Hallucinations and Other Limits You Must Know",
+          "file": "01-02-limits-and-hallucinations.md",
+          "minutes": 20,
+          "preview": false,
+          "summary": "Learn the predictable ways AI gets things wrong and a traffic-light rule for how much to check."
+        },
+        {
+          "title": "ChatGPT, Claude, Gemini and Copilot Compared",
+          "file": "01-03-chatgpt-claude-gemini-compared.md",
+          "minutes": 20,
+          "preview": false,
+          "summary": "Understand each assistant's strengths and use four questions to choose the right one for the task."
+        },
+        {
+          "title": "Prompting Basics: The RTCFT Formula",
+          "file": "01-04-prompting-basics.md",
+          "minutes": 20,
+          "preview": true,
+          "summary": "Write prompts with Role, Task, Context, Format and Tone, and refine answers with smart follow-ups."
+        }
+      ]
+    },
+    {
+      "title": "Writing Emails, Messages and Documents",
+      "lessons": [
+        {
+          "title": "Emails and Messages with Perfect Tone",
+          "file": "02-01-emails-and-messages.md",
+          "minutes": 20,
+          "preview": false,
+          "summary": "Turn rough notes into clear emails and WhatsApp messages, and control tone from warm to firm."
+        },
+        {
+          "title": "Drafting in Hindi and Regional Languages",
+          "file": "02-02-hindi-and-regional-languages.md",
+          "minutes": 20,
+          "preview": false,
+          "summary": "Write natural messages in Hindi, Hinglish and other Indian languages, with back-translation checks."
+        },
+        {
+          "title": "Reports, Proposals and SOPs Without the Blank Page",
+          "file": "02-03-reports-and-documents.md",
+          "minutes": 25,
+          "preview": false,
+          "summary": "Use the outline-first method to brief, draft, edit and summarise professional documents."
+        }
+      ]
+    },
+    {
+      "title": "Research, Long Documents and Spreadsheets",
+      "lessons": [
+        {
+          "title": "Research with AI and Fact-Checking",
+          "file": "03-01-research-and-fact-checking.md",
+          "minutes": 30,
+          "preview": false,
+          "summary": "Follow an Explore, Gather, Verify, Synthesise workflow and produce a one-page brief from three sources."
+        },
+        {
+          "title": "Summarising Long PDFs Accurately",
+          "file": "03-02-summarising-long-pdfs.md",
+          "minutes": 25,
+          "preview": false,
+          "summary": "Get purpose-driven summaries and answers from long documents, with page numbers and exact quotes."
+        },
+        {
+          "title": "Spreadsheets with AI: Formulas, Cleaning and Analysis",
+          "file": "03-03-spreadsheets-with-ai.md",
+          "minutes": 25,
+          "preview": false,
+          "summary": "Get Excel and Sheets formulas in plain English, understand inherited sheets and analyse data safely."
+        }
+      ]
+    },
+    {
+      "title": "AI Inside Your Office Tools and Meetings",
+      "lessons": [
+        {
+          "title": "Microsoft Copilot in Word, Excel, Outlook and Teams",
+          "file": "04-01-copilot-in-microsoft-365.md",
+          "minutes": 20,
+          "preview": false,
+          "summary": "What Copilot can typically do in each Microsoft 365 app and how to prompt it well."
+        },
+        {
+          "title": "Gemini in Gmail, Docs, Sheets and Drive",
+          "file": "04-02-gemini-in-google-workspace.md",
+          "minutes": 20,
+          "preview": false,
+          "summary": "Use Gemini inside Google Workspace and the Gemini app, and keep work and personal accounts separate."
+        },
+        {
+          "title": "Meeting Notes and Action Items",
+          "file": "04-03-meeting-notes-and-action-items.md",
+          "minutes": 20,
+          "preview": false,
+          "summary": "Turn rough notes or transcripts into minutes, owners, deadlines and a follow-up email."
+        }
+      ]
+    },
+    {
+      "title": "AI for Your Career and Your Daily Workflow",
+      "lessons": [
+        {
+          "title": "Tailoring Your Resume and Cover Letter",
+          "file": "05-01-resume-and-cover-letter.md",
+          "minutes": 30,
+          "preview": false,
+          "summary": "Decode a real job post and tailor your resume and cover letter honestly, including for career breaks."
+        },
+        {
+          "title": "LinkedIn and Mock Interviews",
+          "file": "05-02-linkedin-and-mock-interviews.md",
+          "minutes": 30,
+          "preview": false,
+          "summary": "Improve your LinkedIn profile and practise Indian interview rounds with AI as your interviewer."
+        },
+        {
+          "title": "Privacy and Workplace AI Policy",
+          "file": "05-03-privacy-and-workplace-ai-policy.md",
+          "minutes": 20,
+          "preview": false,
+          "summary": "Know what never goes into AI tools, how to anonymise prompts, and how to follow company AI rules."
+        },
+        {
+          "title": "Building Your Personal Prompt Library",
+          "file": "05-04-personal-prompt-library.md",
+          "minutes": 25,
+          "preview": false,
+          "summary": "Organise, test and rate 20 reusable prompts so every common task starts from a proven template."
+        },
+        {
+          "title": "Your Daily and Weekly AI Workflow",
+          "file": "05-05-daily-ai-workflow.md",
+          "minutes": 25,
+          "preview": false,
+          "summary": "Audit your week, choose anchor tasks and design a daily and weekly AI routine you will actually keep."
+        }
+      ]
+    }
+  ]
+}

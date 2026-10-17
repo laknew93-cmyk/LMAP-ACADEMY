@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
-import { Link, useNavigate } from 'react-router-dom'
+import { Link, useNavigate, useSearchParams } from 'react-router-dom'
+import { useSeo } from '../lib/seo'
 import { GraduationCap } from 'lucide-react'
 import api from '../api/client'
 import { useAuth } from '../App'
@@ -7,6 +8,9 @@ import { useAuth } from '../App'
 export default function RegisterPage() {
   const { login } = useAuth()
   const navigate = useNavigate()
+  const [params] = useSearchParams()
+  useSeo({ title: 'Create your free account', noindex: true })
+  const next = /^\/(?!\/)/.test(params.get('next') || '') ? params.get('next') : ''
   const [form, setForm] = useState({ name: '', email: '', password: '', phone: '' })
   const [error, setError] = useState('')
   const [loading, setLoading] = useState(false)
@@ -17,7 +21,7 @@ export default function RegisterPage() {
     try {
       const { data } = await api.post('/auth/register', form)
       login(data.user, data.token)
-      navigate('/courses')
+      navigate(next || '/courses')
     } catch (e) {
       setError(e.response?.data?.detail || 'Registration failed')
     } finally {
@@ -58,7 +62,7 @@ export default function RegisterPage() {
           </button>
         </form>
         <p style={{ textAlign: 'center', marginTop: 20, fontSize: 14, color: 'var(--text-muted)' }}>
-          Already have an account? <Link to="/login" style={{ color: 'var(--primary)', fontWeight: 600 }}>Sign In</Link>
+          Already have an account? <Link to={`/login${next ? `?next=${encodeURIComponent(next)}` : ''}`} style={{ color: 'var(--primary)', fontWeight: 600 }}>Sign In</Link>
         </p>
       </div>
     </div>

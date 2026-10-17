@@ -1,0 +1,238 @@
+{
+  "slug": "prompt-engineering-masterclass",
+  "title": "Prompt Engineering Masterclass: Get Expert Results from Any AI",
+  "subtitle": "Go beyond casual chatting. Write, test and reuse prompts that get reliable, professional-grade results from ChatGPT, Claude and Gemini.",
+  "category": "Prompt Engineering",
+  "level": "intermediate",
+  "price": 1999,
+  "mrp": 5999,
+  "duration_hours": 7,
+  "sort_order": 3,
+  "description": "You already use ChatGPT, Claude or Gemini, but the results are hit and miss. Some answers are brilliant; others are generic, too long, or quietly wrong. This course turns casual prompting into a dependable professional skill you can use every working day and show on your CV.\n\nYou will learn the anatomy of a great prompt, when to use examples, how to ask for step-by-step reasoning, and how to get clean tables, JSON and checklists. You will then move to reliability: reducing hallucinations by grounding answers in your own documents, chaining prompts for multi-step work, and testing prompts against real cases so you know they work before you share them.\n\nThe second half is about real work and scale: prompts for writing, analysis, data extraction, coding help and image generation, configuring custom assistants for a job role, building a tested prompt library for your team, and using AI safely, including awareness of prompt injection and data privacy.\n\nEvery lesson is short, practical and written with Indian workplaces in mind, and ends with a hands-on exercise. By the end you will have four portfolio projects: a 25-prompt professional library, a meeting-notes-to-client-report chain, a tested data-extraction prompt, and a custom assistant for a specific role.",
+  "audience": [
+    "Regular ChatGPT, Claude or Gemini users who want consistent, professional-quality output",
+    "Marketers, analysts and consultants who use AI for client and business work",
+    "Teachers and trainers who want reliable lesson, assessment and communication prompts",
+    "Aspiring developers and technical learners who want to use AI for coding help",
+    "Job seekers who want genuine, demonstrable prompt engineering skills on their CV"
+  ],
+  "outcomes": [
+    "Write structured prompts using role, task, context, constraints, format and examples",
+    "Use few-shot examples and templates to get consistent output in your house style",
+    "Get clean tables, JSON and checklists you can paste straight into Sheets or other tools",
+    "Reduce hallucinations by grounding answers in your documents and allowing 'I don't know'",
+    "Chain prompts to turn raw meeting notes into a polished client-ready report",
+    "Test prompts against realistic cases and improve them with a version log",
+    "Configure a custom assistant for a specific job role with clear rules and boundaries",
+    "Build a tested 25-prompt library and use AI safely, aware of prompt injection risks"
+  ],
+  "prerequisites": [
+    "You have used ChatGPT, Claude, Gemini or a similar assistant at least a few times",
+    "Access to at least one AI chat assistant (a free plan is enough for most exercises)",
+    "Basic comfort with documents and spreadsheets such as Google Docs and Sheets"
+  ],
+  "tools": [
+    "ChatGPT",
+    "Claude",
+    "Gemini",
+    "Microsoft Copilot",
+    "Custom GPTs, Claude Projects and Gemini Gems",
+    "AI image generators",
+    "Google Sheets / Excel"
+  ],
+  "projects": [
+    "Build a 25-prompt professional library organised by category, with test results, owners and version notes.",
+    "Create a four-step prompt chain that turns raw meeting notes into a client-ready report and cover email.",
+    "Design a structured data-extraction prompt and test it field by field on 10 varied real-world samples.",
+    "Configure and test a custom AI assistant for a specific job role, including edge-case rules and safety boundaries."
+  ],
+  "seo": {
+    "title": "Prompt Engineering Course Online for Professionals",
+    "description": "Prompt engineering course in India for ChatGPT, Claude and Gemini users. Get reliable, expert AI output and build 4 portfolio projects. Start today.",
+    "keywords": [
+      "prompt engineering course in india",
+      "prompt engineering course online",
+      "chatgpt prompt engineering course",
+      "learn prompt engineering",
+      "prompt engineering certification india",
+      "chatgpt course for professionals",
+      "how to write better chatgpt prompts",
+      "prompt engineering for beginners to advanced",
+      "ai prompt writing course",
+      "claude and gemini prompts course",
+      "best prompt engineering course for jobs"
+    ]
+  },
+  "faqs": [
+    {
+      "q": "I already use ChatGPT. Will this course actually teach me something new?",
+      "a": "Yes, it is designed for people who already use AI casually. The focus is on reliability and professional use: structured prompts, grounding to reduce hallucinations, prompt chaining, testing prompts with real cases, custom assistants and team prompt libraries."
+    },
+    {
+      "q": "Do I need a paid ChatGPT, Claude or Gemini plan?",
+      "a": "No. Most exercises work on free plans. Some features, such as creating custom assistants or uploading many files, may need a paid plan depending on the tool, and the lessons show a workaround when a feature isn't available to you."
+    },
+    {
+      "q": "Do I need to know coding?",
+      "a": "No. There is one lesson on using AI for coding help, and it is written so non-programmers can follow it for spreadsheet formulas and small scripts. Everything else needs no technical background."
+    },
+    {
+      "q": "Will this course get me a prompt engineering job?",
+      "a": "We can't promise a job or a salary. What you will have is a genuine, practical skill and four portfolio projects you can show to employers or clients, which makes your AI experience concrete and credible on your CV and LinkedIn."
+    },
+    {
+      "q": "Do I get a certificate?",
+      "a": "Yes. A certificate of completion is issued when you mark every lesson in the course as complete. You can add it to your LinkedIn profile and CV."
+    },
+    {
+      "q": "What is the refund policy?",
+      "a": "You can get a full refund within 7 days of purchase as long as you have completed less than 30% of the course. Just contact support with your order details."
+    }
+  ],
+  "modules": [
+    {
+      "title": "Foundations of Professional Prompting",
+      "lessons": [
+        {
+          "title": "Why Your Prompts Get Average Answers",
+          "file": "01-01-why-prompts-fail.md",
+          "minutes": 20,
+          "preview": true,
+          "summary": "Understand why vague prompts produce generic output and what expert-level results really look like."
+        },
+        {
+          "title": "The Anatomy of a Great Prompt",
+          "file": "01-02-anatomy-of-a-great-prompt.md",
+          "minutes": 25,
+          "preview": true,
+          "summary": "Learn the six building blocks of a strong prompt and a 60-second checklist you can use on any task."
+        },
+        {
+          "title": "Zero-Shot vs Few-Shot: Teaching by Example",
+          "file": "01-03-zero-shot-vs-few-shot.md",
+          "minutes": 25,
+          "preview": false,
+          "summary": "Use well-chosen examples to make AI follow your labels, format and brand voice consistently."
+        },
+        {
+          "title": "Delimiters and Reusable Templates",
+          "file": "01-04-delimiters-and-templates.md",
+          "minutes": 20,
+          "preview": false,
+          "summary": "Separate instructions from pasted content and turn good prompts into reusable templates with variables."
+        }
+      ]
+    },
+    {
+      "title": "Controlling the Output",
+      "lessons": [
+        {
+          "title": "Step-by-Step Reasoning: When It Helps",
+          "file": "02-01-step-by-step-reasoning.md",
+          "minutes": 25,
+          "preview": false,
+          "summary": "Ask for visible reasoning on calculations, logic and decisions, and know when it adds nothing."
+        },
+        {
+          "title": "Structured Output: Tables, JSON and Checklists",
+          "file": "02-02-structured-output.md",
+          "minutes": 25,
+          "preview": false,
+          "summary": "Get output in exactly the structure your spreadsheet, document or tool needs."
+        },
+        {
+          "title": "Iterative Refinement and Self-Critique",
+          "file": "02-03-iterative-refinement-self-critique.md",
+          "minutes": 20,
+          "preview": false,
+          "summary": "Improve drafts in focused rounds and make the model critique its own work against a rubric."
+        }
+      ]
+    },
+    {
+      "title": "Reliability: Accuracy, Chains and Testing",
+      "lessons": [
+        {
+          "title": "Reducing Hallucinations",
+          "file": "03-01-reducing-hallucinations.md",
+          "minutes": 25,
+          "preview": false,
+          "summary": "Ground answers in your own documents, allow 'I don't know', and handle sources safely."
+        },
+        {
+          "title": "Prompt Chaining for Multi-Step Work",
+          "file": "03-02-prompt-chaining.md",
+          "minutes": 30,
+          "preview": false,
+          "summary": "Build a four-step chain that turns raw meeting notes into a client-ready report."
+        },
+        {
+          "title": "Evaluating Prompts with Test Cases",
+          "file": "03-03-evaluating-prompts-test-cases.md",
+          "minutes": 30,
+          "preview": false,
+          "summary": "Test prompts against realistic and adversarial inputs, score them and improve with a version log."
+        }
+      ]
+    },
+    {
+      "title": "Prompts for Real Work",
+      "lessons": [
+        {
+          "title": "Prompts for Writing That Sounds Like You",
+          "file": "04-01-prompts-for-writing.md",
+          "minutes": 20,
+          "preview": false,
+          "summary": "Write emails, posts and long-form content with a clear reader, purpose and your own voice."
+        },
+        {
+          "title": "Analysis and Structured Data Extraction",
+          "file": "04-02-analysis-and-data-extraction.md",
+          "minutes": 30,
+          "preview": false,
+          "summary": "Turn messy text into decisions and clean data, and test an extraction prompt on 10 samples."
+        },
+        {
+          "title": "Prompts for Coding Help",
+          "file": "04-03-prompts-for-coding-help.md",
+          "minutes": 25,
+          "preview": false,
+          "summary": "Get working formulas, scripts and SQL, debug errors, and use AI as a coding tutor safely."
+        },
+        {
+          "title": "Image Generation Prompting Basics",
+          "file": "04-04-image-generation-basics.md",
+          "minutes": 20,
+          "preview": false,
+          "summary": "Describe images with subject, style, composition and lighting, and use AI images responsibly."
+        }
+      ]
+    },
+    {
+      "title": "Scaling Up: Assistants, Libraries and Safe Use",
+      "lessons": [
+        {
+          "title": "Custom Instructions and Custom Assistants",
+          "file": "05-01-custom-assistants.md",
+          "minutes": 30,
+          "preview": false,
+          "summary": "Configure custom instructions and build a tested assistant for a specific job role."
+        },
+        {
+          "title": "Building a Team Prompt Library",
+          "file": "05-02-building-a-team-prompt-library.md",
+          "minutes": 30,
+          "preview": false,
+          "summary": "Assemble, test and organise a 25-prompt professional library your whole team can use."
+        },
+        {
+          "title": "Prompt Injection Awareness and Safe Use",
+          "file": "05-03-prompt-injection-and-safe-use.md",
+          "minutes": 20,
+          "preview": false,
+          "summary": "Recognise prompt injection, protect data privacy and follow a safe-use checklist for professional AI work."
+        }
+      ]
+    }
+  ]
+}

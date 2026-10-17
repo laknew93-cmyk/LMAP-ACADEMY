@@ -11,10 +11,10 @@ class RazorpayClient:
         self.auth = HTTPBasicAuth(key_id, key_secret)
         self.key_secret = key_secret
 
-    def create_order(self, amount: int, currency: str = "INR", receipt: str = "") -> dict:
+    def create_order(self, amount: int, currency: str = "INR", receipt: str = "", notes: dict | None = None) -> dict:
         r = requests.post(
             f"{RAZORPAY_BASE}/orders",
-            json={"amount": amount, "currency": currency, "receipt": receipt},
+            json={"amount": amount, "currency": currency, "receipt": receipt, "notes": notes or {}},
             auth=self.auth,
             timeout=10,
         )

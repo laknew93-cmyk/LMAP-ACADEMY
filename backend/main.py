@@ -1,18 +1,24 @@
+import logging
+import os
+
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
-import os
-from database import init_db
-from config import settings
-from routers import auth, courses, videos, payments, admin
-from models import User, UserRole
-from auth import hash_password
 
-app = FastAPI(title="LMAP Academy API", version="1.0.0")
+from auth import hash_password
+from config import settings
+from content_sync import sync_content
+from database import SessionLocal, init_db
+from models import User, UserRole
+from routers import admin, auth, certificates, courses, lessons, payments, videos
+
+log = logging.getLogger("lmap")
+
+app = FastAPI(title="LMAP Academy API", version="2.0.0")
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=[o.strip() for o in settings.CORS_ORIGINS.split(",")],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
@@ -21,7 +27,9 @@ app.add_middleware(
 app.include_router(auth.router)
 app.include_router(courses.router)
 app.include_router(videos.router)
+app.include_router(lessons.router)
 app.include_router(payments.router)
+app.include_router(certificates.router)
 app.include_router(admin.router)
 
 os.makedirs(os.path.join(settings.UPLOAD_DIR, "videos"), exist_ok=True)
@@ -33,26 +41,29 @@ app.mount("/thumbnails", StaticFiles(directory=os.path.join(settings.UPLOAD_DIR,
 @app.on_event("startup")
 def startup():
     init_db()
-    _seed_admin()
-
-
-def _seed_admin():
-    from database import SessionLocal
     db = SessionLocal()
     try:
-        admin_email = "admin@lmapacademy.com"
-        if not db.query(User).filter(User.email == admin_email).first():
-            admin = User(
-                name="LMAP Admin",
-                email=admin_email,
-                hashed_password=hash_password("Admin@LMAP2024"),
-                role=UserRole.admin,
-            )
-            db.add(admin)
-            db.commit()
-            print(f"[LMAP] Admin created: {admin_email} / Admin@LMAP2024")
+        _seed_admin(db)
+        if settings.SYNC_CONTENT:
+            count = sync_content(db)
+            log.warning("[LMAP] Synced %d courses from content folder", count)
     finally:
         db.close()
+
+
+def _seed_admin(db):
+    if not settings.ADMIN_PASSWORD:
+        return
+    if db.query(User).filter(User.email == settings.ADMIN_EMAIL).first():
+        return
+    db.add(User(
+        name="LMAP Admin",
+        email=settings.ADMIN_EMAIL,
+        hashed_password=hash_password(settings.ADMIN_PASSWORD),
+        role=UserRole.admin,
+    ))
+    db.commit()
+    log.warning("[LMAP] Admin account created for %s", settings.ADMIN_EMAIL)
 
 
 @app.get("/health")
