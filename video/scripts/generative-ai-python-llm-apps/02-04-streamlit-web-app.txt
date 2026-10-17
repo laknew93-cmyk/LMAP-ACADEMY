@@ -1,0 +1,41 @@
+Welcome to Generative AI Mastery, module 2, lesson 4: Building a Streaming Web App with Streamlit.
+
+A command line bot proves you can code. But a web app is what a recruiter, a client or your manager will actually click. In this lesson, you'll turn your chatbot into a streaming web app with Streamlit, a Python library that builds interfaces without any HTML or JavaScript.
+
+First, why Streamlit, and when should you choose FastAPI instead? You now know two ways to put an L L M behind a web interface. Streamlit is best for demos, internal tools, data apps and portfolio projects. It's one Python file, with the interface included. FastAPI is best for A P Is that other software calls, like mobile apps, a React front end, or other services. You built one in the invoice project. The comparison table is in the lesson notes. Many real teams use both: FastAPI for the production A P I, and Streamlit for internal dashboards and quick prototypes. For your portfolio, a Streamlit front end on top of solid Python logic is perfectly respectable.
+
+To get started, install Streamlit, the Anthropic library and python dotenv. The command is in the lesson notes.
+
+Next, how Streamlit thinks. This is the one idea you must get. Streamlit reruns your entire script from top to bottom every time the user interacts, whether they type a message or click a button. That has one big consequence: normal variables are reset on every rerun. So to keep the chat history, you store it in Streamlit's session state. That's a dictionary that survives reruns, separately for each browser session.
+
+Now let's build the chat app. You create a file called app. Let's walk through what it does, step by step.
+
+It loads the environment and picks the model. Then it defines a system prompt for a persona called CareerSathi, a career guide for Indian students moving into tech and GenAI roles. The prompt asks for practical, honest advice in under two hundred words, mentioning specific skills and free resources where useful.
+
+Next, there's a small function that creates the Anthropic client, wrapped in Streamlit's cache resource decorator. Then the page gets a title, "CareerSathi, GenAI career guide". If there's no message history in session state yet, it starts an empty list. In the sidebar, there's a New chat button that clears the history and reruns the app, plus a caption showing the model name.
+
+After that, a loop redraws every message in the history, each in its own chat bubble. Then there's a streaming function. It opens a streaming call to Claude with the system prompt and the messages, and yields each piece of text as it arrives.
+
+Finally, the main part. When the user types into the chat input box, the message is added to history and shown in a user bubble. Then, inside an assistant bubble, the app streams the answer live. If an A P I error happens, it removes the unanswered user message, shows a friendly error, and stops. Otherwise, it saves the full reply to history. The code is in the lesson notes below the video.
+
+Run it with Streamlit's run command, pointing at your app file. A browser tab opens with a chat interface.
+
+Let's walk through the important parts. First, the cache resource decorator creates the A P I client once and reuses it across reruns and users, instead of creating a new client on every keystroke. Second, the messages in session state are the same history list you used in the command line version, now stored per browser session. Third, the loop over messages redraws the whole conversation on each rerun. That looks wasteful, but it's how Streamlit works, and it's fast. Fourth, the chat input returns the user's text when they press Enter, and nothing otherwise. The walrus operator lets you assign and check that value in one line. Fifth, the streaming function is a generator. It yields text pieces as they arrive from the A P I. Sixth, Streamlit's write stream function displays those pieces live, and returns the full text when it's done, which we store in history. And seventh, on error, we remove the unanswered user message, show a friendly message, and stop this rerun, so the history stays clean.
+
+Now, a common upgrade: adding a document upload. Let users upload a resume and ask questions about it. Inside the existing sidebar block, you add a file uploader that accepts plain text or markdown files. When a file is uploaded, the app reads it, decodes it as text, saves it into session state, and shows a "Resume loaded" message.
+
+Then you build the system prompt dynamically. A small function checks whether a resume is in session state. If not, it returns the normal system prompt. If there is one, it appends a line telling the model the user's resume is below and to refer to it when relevant, followed by the resume wrapped in resume tags. You then pass this function's result as the system prompt in the streaming function. The code is in the lesson notes below the video.
+
+Wrapping the document in tags like that clearly separates your instructions from user provided content. It's a habit that pays off in the security lesson. And for PDF resumes, you can send the PDF as a document block, exactly as in the invoice project, instead of extracting the text yourself.
+
+Next, making it feel professional. There are four small touches that make a demo look like a product. First, a short description under the title explaining what the app does and its limits. Second, three example questions as buttons, so first time visitors know what to try. Third, a footer note, such as: "AI generated advice. Verify important decisions with a mentor." And fourth, a sensible cap on history length. You can reuse the trimming logic from module 1.
+
+Let's look at the example question buttons. The code defines three example questions: which skills you need for a GenAI engineer role, a review of project ideas for a fresher portfolio, and how to prepare for an L L M interview at a product startup. It creates one column per question, puts a button in each, and when a button is clicked, it stores that question in session state as a pending message. Then you treat that pending value as an alternative source for the prompt. In other words, the prompt is whatever the user typed in the chat box, or, if nothing was typed, the pending question, which is removed from session state as it's used. The code is in the lesson notes below the video. Wiring this up is part of your exercise.
+
+A note on secrets in Streamlit. Never use a text input to ask visitors for your A P I key, and never display the key anywhere. The key stays on the server in an environment variable. And if you deploy publicly, anyone can use your app and spend your credits. So add basic limits, which you'll learn in module 5, before sharing the link widely.
+
+Time to try it yourself. It takes about twenty minutes, so pause the video and work through these steps. First, build and run the app. Second, change the persona to something specific: a U P S C prep study buddy, a guide for first time G S T filers, or a recipe assistant for a Kolkata cloud kitchen. Third, add the three example question buttons, and make clicking one send it as a message. Fourth, add the resume upload, or a menu or syllabus upload to match your persona, and confirm the bot uses it in its answers. And fifth, open the app in two different browsers and confirm each one has its own separate history.
+
+Let's recap. Streamlit reruns the script on every interaction, so keep state in session state. Write stream, plus a generator over the streamed text, gives you live streaming in a few lines. Cache the A P I client with the cache resource decorator. Wrap user documents in clear tags to separate them from your instructions. And keep A P I keys on the server, and plan usage limits before sharing a public link.
+
+That's it for this lesson. Mark it complete, and I'll see you in the next one.

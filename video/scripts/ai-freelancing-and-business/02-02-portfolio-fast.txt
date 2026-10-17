@@ -1,0 +1,55 @@
+Welcome to Make Money with AI, module 2, lesson 2: Building a Three-Piece Portfolio Fast, and Ethically.
+
+"You need experience to get clients, and clients to get experience." Every beginner meets this loop. A small, focused portfolio breaks it. In this lesson, you'll build Project 2: a three-piece portfolio, created quickly with AI's help, but honestly presented.
+
+First, what does a portfolio really need to do? A client looking at your portfolio is asking three questions. First, can this person do the kind of work I need? Second, do they understand businesses like mine? And third, will working with them be easy? Three well-chosen pieces that answer these questions beat thirty random samples.
+
+So where does portfolio material come from? There are three ways to get it.
+
+The first is spec work, which means self-initiated samples. You create work for a realistic, imagined brief. For example, "A one-month Instagram plan for a fictional organic grocery store in Coimbatore." Label it clearly as a sample project. And don't use a real company's logo or name as if they hired you.
+
+The second is redesign or improvement samples. Pick a public example, like a cluttered restaurant menu, a confusing F A Q page, or a dull company profile, and show your improved version. Again, label it as an independent sample, avoid reproducing their full copyrighted text, and don't present it as client work. A "before and after" structure is powerful, because it shows your thinking.
+
+The third is real work for real people. Offer a small, clearly defined project to someone in your network. Your uncle's hardware shop, a friend's home tuition class, an N G O you volunteer with. You can do it at a reduced rate, or free in exchange for a testimonial and permission to show the work. Keep the scope small so it doesn't drag on.
+
+A mix works well. One or two spec samples, plus one real project.
+
+Now let's build each piece with AI, step by step. Let's say your niche is social media for home bakers.
+
+Step one: write a realistic brief. Use AI to help you create one, then edit it. Here's the prompt: "Create a realistic client brief for a home baker in Pune who sells custom cakes and cookies through Instagram and WhatsApp. Include: business background, target customers, current problems, goals for next month, brand tone, and constraints, like budget, time and photos available. Keep it under two hundred and fifty words."
+
+Step two: plan before producing. Ask for a content calendar outline, then decide the final plan yourself. Choose festivals and local moments that make sense. Ganesh Chaturthi modak-flavoured cookies, for instance.
+
+Step three: produce the work. Draft captions with AI, design posts in a design tool using free-for-commercial-use elements, and edit everything through the quality workflow from the previous lesson.
+
+Step four: write a short case study. This is the part most beginners skip, and it's what makes clients trust you.
+
+Let's look at the mini case-study format. For each piece, write a hundred and fifty to two hundred and fifty words. The template in the lesson notes has six parts. The project name, and whether it's a sample or a client project. The client type, like a home bakery in Pune. The challenge, meaning what problem the work addresses. What you did, in three to five points. How you used AI, for example, idea generation and first-draft captions, with all copy edited and designs created by you. And the result. For real projects, that's an honest outcome or client feedback. For samples, it's what the client would receive and why it works.
+
+Notice the result section. For spec work, don't invent numbers like "increased engagement by forty percent". It didn't happen, and a client who discovers this will never trust you again. Explain your reasoning instead.
+
+Now, choosing your three pieces. Your three pieces should show range within your niche, not across random services. The lesson notes have a table with examples, and here are a couple. If your niche is content for C A firms, you might do a blog post on a tax-filing topic, five LinkedIn posts for a partner, and a client newsletter. If it's chatbot setup for clinics, you might do an F A Q document, a WhatsApp quick-reply set, and a test log showing bot responses. There are also examples for data cleaning and for subtitles in the notes.
+
+For data work, always use dummy or fully anonymised data. Never show a real client's customer list.
+
+Where should you host your portfolio? You don't need a website on day one. Here are some options. A neat Google Drive or Notion page with a short intro and links to each piece. A PDF portfolio of five to eight pages, which is easy to share on WhatsApp and email. The LinkedIn Featured section, where you can pin your best pieces. Platform portfolios on Upwork or Fiverr, which we cover in the next lessons. Or an Instagram profile, if your niche is visual.
+
+Make sure your links open without permission requests. Test them from a different account or an incognito window.
+
+Before publishing, run through an ethics checklist. Confirm five things. Every sample is clearly labelled as a sample if it wasn't paid client work. No real brand logos or trademarks are used to imply a relationship. There are no invented metrics, testimonials or client names. Any real client has given permission to show the work. And your AI use is described honestly.
+
+Now, try it yourself. This is a larger project, so do it in parts. The first part takes about twenty minutes. Pause the video whenever you need to.
+
+Step one. Decide your three portfolio pieces, using the table in the notes as a guide.
+
+Step two. For the first piece, use AI to generate a realistic brief, and edit it until it feels true to life.
+
+Step three. Write the case-study skeleton, meaning the project, client type and challenge, before producing the work. This keeps you focused.
+
+Step four. Block two or three sessions in your calendar this week to complete all three pieces.
+
+Step five. Message one person in your network, offering a small, clearly scoped project in exchange for a testimonial.
+
+Let's recap. Three focused pieces within your niche are enough to start winning work. Mix spec samples, improvement samples, and at least one real project if possible. A short case study for each piece shows your thinking and builds trust. And label samples honestly, never invent results, and anonymise any data.
+
+That's it for this lesson. Mark it complete, and I'll see you in the next one.

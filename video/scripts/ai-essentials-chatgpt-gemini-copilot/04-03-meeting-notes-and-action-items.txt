@@ -1,0 +1,61 @@
+Welcome to AI Essentials, module 4, lesson 3: Meeting Notes and Action Items.
+
+Meetings often end with everyone nodding, and nobody sure who's doing what by when. AI can turn messy discussions into clear notes, decisions and action items in minutes. This lesson shows you how, with or without built-in meeting AI.
+
+Let's start with three ways to capture a meeting. Depending on your tools and your company's rules, you can do one of three things.
+
+First, use built-in meeting AI. Tools like Copilot in Teams, Gemini in Google Meet, or Zoom's AI features can transcribe and summarise meetings, if your plan and organisation allow it.
+
+Second, use a transcript. Many meeting tools can generate a transcript you can paste into an approved assistant.
+
+And third, use your own rough notes. Type quick notes during the meeting, and let AI structure them afterwards.
+
+Option three works everywhere, needs no special licence, and is often the most privacy-friendly. Don't underestimate it.
+
+Now, consent and etiquette. Before recording or transcribing any meeting, inform participants and, where needed, get their agreement. Most tools show a notice, but say it out loud too. Follow your company's policy, because some meetings, like H R, legal or client negotiations, shouldn't be recorded or fed into AI tools. And for client calls, check the client is comfortable with recording.
+
+It's both courteous and, in many situations, a legal and contractual matter.
+
+Next, turning rough notes into clean minutes. Let's look at an example. The lesson notes show what real notes often look like. They're from a meeting with Sharma ji and Anita on fourteenth October. The website relaunch is delayed, and the developer says two more weeks. Anita says the product photos aren't done, and the photographer is available on the twentieth. There's a question about whether the budget is okay up to one and a half lakh extra, and Sharma ji will confirm. The launch is maybe tenth November, not final. Someone needs to do a Hindi version of the homepage, but it's not clear who. And you need to send a revised timeline by Friday.
+
+Now you paste those notes with a prompt. The prompt asks the assistant to convert the rough notes into clean minutes with five sections. One, meeting details, the date and attendees. Two, a three-line summary. Three, decisions made. Four, action items, as a table with the task, owner and due date. And five, open questions and items needing confirmation. Then it adds some rules. Don't invent anything. If an owner or date is unclear, write "T B D". And mark tentative items as tentative. You'll find the full prompt in the lesson notes below this video.
+
+Here's the thing. Those rules at the end matter. Without them, AI may confidently assign the Hindi homepage task to someone, or turn "launch maybe tenth November" into a firm commitment.
+
+Next, working with a transcript. Transcripts are long and full of "umm", cross-talk and tangents. Good prompts focus the AI. The example in the lesson notes is for a forty-five-minute project review. It asks the assistant to extract the key decisions with who made them. Action items, with the task, owner and deadline, but only if stated. Risks or concerns raised. And any disagreements that weren't resolved. It asks for under three hundred words, and to quote the exact words for any decision about budget or dates. The full prompt is in the lesson notes below this video.
+
+Then check. Did the summary capture what you remember as important? Transcription tools can mishear names, numbers and Indian-English terms, so verify anything critical.
+
+Now, the follow-up email. The minutes are only useful if people receive them. So ask the AI to turn them into an email. Here's the prompt: "Turn these minutes into a short follow-up email to all attendees. Start with a thank-you line, list action items with owners and dates in bullets, and ask everyone to reply by tomorrow if anything is incorrect. Friendly, professional, under 150 words."
+
+That last request, "reply if anything is incorrect", is a simple safety net. It catches AI mistakes and misunderstandings early.
+
+AI helps before meetings too. There are four ways. For an agenda, ask: "Create a 30-minute agenda for a meeting to finalise our Diwali sale plan, with time for each item and the decision needed." For a briefing, paste the previous minutes and ask, "What is still pending from last time?" For talking points, try: "I need to ask my manager for an extra team member. Give me 5 concise talking points and likely objections with responses." And for questions, ask: "What smart questions should I ask in a vendor demo for an inventory software?"
+
+Let's look at an example. Pooja is a team lead at a Hyderabad I T services company. She spends five minutes before every client call asking an assistant to turn the last meeting's minutes into a checklist of pending items. Her calls are shorter, and nothing gets forgotten.
+
+Next, tracking action items over time. For recurring meetings, keep a running action tracker. Here's the prompt: "Here are last week's action items and today's meeting notes. Update the action item list: mark items completed, carry forward pending ones, add new ones, and highlight anything overdue."
+
+Put the result in a shared sheet or task tool your team already uses.
+
+Now, when AI summaries go wrong. Watch for four typical errors. First, the wrong owner, where a task is assigned to the person who mentioned it rather than the one who agreed to do it. Second, upgraded certainty, where "we might" becomes "we will". Third, missed nuance, where a polite objection is summarised as agreement. And fourth, misheard names or numbers in transcripts.
+
+Always skim the summary before sending. You attended the meeting. The AI only processed the words.
+
+Time to try it yourself. Allow fifteen minutes. Pause the video and work through these steps.
+
+Step one. Take notes from a real recent meeting, a call, or even a family planning discussion. If you have none, use the sample notes in this lesson.
+
+Step two. Paste them into an assistant your company allows, after removing anything confidential, with the clean-minutes prompt, including the "do not invent" rules.
+
+Step three. Check every action item. Is the owner right? Is the date actually agreed?
+
+Step four. Generate the follow-up email, and edit it to sound like you.
+
+Step five. Write a thirty-minute agenda for your next meeting using AI.
+
+And step six. Save your minutes prompt as Prompt number 10 in your library.
+
+Let's recap. You can capture meetings with built-in AI, transcripts, or simply your own rough notes. Always inform participants and follow company policy before recording or transcribing. Tell the AI not to invent owners or dates, and to mark tentative items clearly. Send a follow-up email that asks people to flag errors. And use AI before meetings too, for agendas, briefings and talking points.
+
+That's it for this lesson. Mark it complete, and I'll see you in the next one.

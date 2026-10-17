@@ -1,0 +1,49 @@
+Welcome to Prompt Engineering Masterclass, module 1, lesson 1: Why Your Prompts Get Average Answers.
+
+You already use ChatGPT, Claude or Gemini. Sometimes the answer is brilliant. And sometimes it's generic, too long, or quietly wrong. In this lesson, we'll look at why that happens, and we'll set up the mindset you'll use for the rest of the course.
+
+Let's start with the real reason AI answers disappoint. A chat assistant is a prediction engine. It reads everything you give it and produces the most likely helpful continuation. So when your prompt is short and vague, the model fills the gaps with the most average answer it can think of. And here's the thing: average is rarely what a client, a manager or an examiner wants.
+
+Let's look at an example. Priya is a marketing executive at a Pune bakery chain. She types a simple request. Here's the prompt: "Write an Instagram post about our new cake."
+
+She gets three cheerful paragraphs, five emojis and eleven hashtags. It's not wrong. It's just not hers. The AI didn't know the cake is a jaggery and millet cake for health-conscious customers. It didn't know the brand voice is warm but never cheesy, that posts must be under sixty words, or that the offer ends Sunday.
+
+Now compare that with her second attempt. This time, Priya tells the AI it's the social media writer for Crumb and Co., a Pune bakery known for warm, understated writing, with no exclamation marks and a maximum of two emojis. She asks for an Instagram caption launching the Jaggery Millet Cake. She names the audience, health-conscious families in Pune aged twenty-eight to forty-five. She lists the key facts: no refined sugar, made with ragi and jowar, four hundred and fifty rupees for five hundred grams. She gives the offer, ten percent off till Sunday with the code MILLET10. She sets the length, under sixty words, then five relevant hashtags on a new line. And she asks for three options with different opening lines. You'll find the full prompt in the lesson notes below this video.
+
+Same model, same day, very different result. Nothing magical happened. Priya simply stopped making the model guess.
+
+That brings us to an important idea. Prompt engineering is specification, not trickery. Lots of online "prompt hacks" promise secret phrases. In practice, professional prompt engineering is much less mysterious. It's the skill of writing a clear brief, the way a good manager briefs a new team member. Here's a useful test. If a smart intern who'd never met you would need to ask five questions before starting, your prompt is missing five pieces of information.
+
+There are four common failure patterns, and the lesson notes have them in a table. First, missing context. That gives you a generic, could-be-anyone answer, and the fix is to say who, for whom, and why. Second, missing constraints. The answer is too long, in the wrong tone, or the wrong format, so you state the length, the tone, and what it must and must not do. Third, missing format. You get a wall of text you have to reformat, so you ask for a table, bullets, or JSON. And fourth, too much at once. A big task gets a shallow answer, so you break it into steps. You'll learn a fix for each of these in the coming lessons.
+
+So what do "expert results" actually mean? By the end of this course, you should be able to get output with five qualities. First, it's relevant. It addresses your exact situation, not a textbook version of it. Second, it's reliable. Run the prompt ten times and you get ten usable answers, not three. Third, it's ready to use, with the correct format, the correct length, and minimal editing. Fourth, it's honest. The model tells you when it doesn't know, instead of inventing facts. And fifth, it's reusable. The prompt can be saved, shared with a colleague, and it still works.
+
+Reliability is the one most casual users never think about. A prompt that works once in a lucky chat is a toy. A prompt that works every Monday for your whole team is a tool.
+
+Next, let's talk about model-agnostic thinking. This course works across ChatGPT, Claude, Gemini, Copilot and most other chat assistants. Each tool has its own strengths, and their features change often, so we focus on principles that transfer. When a feature is tool-specific, like Custom GPTs or Claude Projects, we describe it generally, so you can find the equivalent in whichever tool your company uses.
+
+Here's one practical habit. Keep two assistants open while you learn, and run the same prompt in both. You'll quickly see that a well-structured prompt produces good results everywhere, while a vague prompt produces vague results everywhere.
+
+Now, here's how this course works. There are five modules. Module one is Foundations: the anatomy of a prompt, examples, delimiters and templates. Module two is about controlling output: reasoning, structured formats, and refinement. Module three is about reliability: reducing hallucinations, chaining, and testing prompts. Module four covers prompts for real work: writing, analysis, data extraction, coding, and images. And module five is about scaling up: custom assistants, a team prompt library, and safe use.
+
+Every lesson ends with a short exercise. Do them. Prompting is a hands-on skill, like driving. Reading about it only helps a little. Along the way, you'll build four portfolio projects you can show on LinkedIn or in an interview. A twenty-five prompt professional library. A chain that turns meeting notes into a report. A tested data-extraction prompt. And a custom assistant for a job role.
+
+Before we get to the exercise, start a prompt journal. Create a simple document or spreadsheet called "Prompt Journal", with six columns: the date, the task, the prompt itself copied and pasted, the tool you used, a result quality score from one to five, and what you'd change. The exact layout is in the lesson notes. Every time a prompt works really well or fails badly, log it. Within a few weeks, this becomes the raw material for your personal prompt library in module five.
+
+Now it's your turn. Try it yourself. Spend about fifteen minutes on this, and feel free to pause the video while you work.
+
+Step one. Pick a real task from your work or studies this week. An email, a summary, a lesson plan, or a LinkedIn post.
+
+Step two. Write the prompt the way you normally would. Run it, and save the output.
+
+Step three. Now rewrite the prompt, answering these questions inside it. Who is this for? What exactly do I want? What facts must be included? How long? What tone? And what format?
+
+Step four. Run the new prompt in the same tool. Then run it in a second tool.
+
+Step five. Compare all three outputs and score each one from one to five in your new Prompt Journal. Note the single change that made the biggest difference.
+
+Go ahead and pause now if you'd like to do that.
+
+Let's recap. Vague prompts get average answers, because the model fills every gap with the most typical guess. Prompt engineering is clear specification, like briefing a smart new colleague, not secret phrases. Aim for answers that are relevant, reliable, ready to use, honest and reusable. Good prompting principles transfer across ChatGPT, Claude, Gemini and other assistants. And start your Prompt Journal today, because it becomes your professional prompt library later.
+
+That's it for this lesson. Mark it complete, and I'll see you in the next one.

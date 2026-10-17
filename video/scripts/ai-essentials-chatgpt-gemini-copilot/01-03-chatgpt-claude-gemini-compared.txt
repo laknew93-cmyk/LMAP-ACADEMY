@@ -1,0 +1,57 @@
+Welcome to AI Essentials, module 1, lesson 3: ChatGPT, Claude, Gemini and Copilot Compared.
+
+There are several big AI assistants, and people often ask, "Which one is the best?" The honest answer is: it depends on the task and the tools you already use. This lesson gives you a practical way to choose.
+
+Let's look at the main assistants at a glance. Four assistants cover most everyday work. All of them can write, summarise, explain and brainstorm. The differences are in their strengths, where they live, and what they connect to.
+
+ChatGPT is made by OpenAI. It's an all-rounder with a huge range of features, and it's very popular, so there are lots of tutorials and shared prompts. Claude is made by Anthropic. It's strong with long documents, careful reasoning and natural-sounding writing. Gemini is made by Google. It works closely with Google Search and Google Workspace, meaning Gmail, Docs, Sheets and Drive. And Microsoft Copilot is made by Microsoft. It works inside Microsoft 365, meaning Word, Excel, Outlook and Teams, and inside Windows. There's a comparison table in the lesson notes below the video.
+
+All four have free versions you can use with a personal account, and paid plans with more usage and features. Plans and limits change often, so check each product's own website for current details rather than relying on any list, including this one.
+
+Now let's look at what each one tends to do well.
+
+First, ChatGPT. ChatGPT is the assistant most people try first. It's a strong all-rounder for drafting, explaining, brainstorming and analysing files. It usually offers features like file uploads, image understanding, web search, voice conversations and saved custom instructions. Because it's so widely used, you'll find countless example prompts shared online. It's a good first choice for general daily use, brainstorming, quick drafts and learning new topics.
+
+Next, Claude. Claude is known for handling long documents well, and for writing that sounds natural rather than robotic. Many professionals like it for reading long reports, contracts or policy documents. They also like it for careful, structured thinking, where they want the assistant to point out problems rather than just agree. It's a good first choice for summarising long P D Fs, rewriting documents, nuanced writing, and reviewing your work critically.
+
+Then there's Gemini. Gemini's big advantage is its connection to Google. It can draw on Google Search for current information. And in Google Workspace accounts, it can work inside Gmail, Docs, Sheets and Drive, depending on your plan and your organisation's settings. If your life already runs on Gmail and Google Drive, Gemini fits in naturally. It's a good first choice for research that needs current information, for Gmail and Google Docs users, and for Android phone users.
+
+And finally, Microsoft Copilot. The free version works like a general chat assistant. In organisations with the right Microsoft 365 licence, Copilot can work inside Word, Excel, PowerPoint, Outlook and Teams. It can summarise email threads, draft documents from your files, and recap meetings. It's a good first choice for people whose office runs on Microsoft 365, especially Outlook and Teams users.
+
+We'll go deeper into Copilot and Gemini inside office apps in module four.
+
+So how do you choose? Rather than looking for "the best", ask yourself four practical questions.
+
+First, where does my work already live? If your company uses Outlook and Teams, learn Copilot. If you live in Gmail and Google Docs, learn Gemini. Assistants built into your tools save copy-paste effort.
+
+Second, what does my company allow? Many companies approve one specific tool for work data. Use that one for anything confidential. There's more on this in module five.
+
+Third, what's the task? For long documents, try Claude or a tool with a large document capacity. For current facts, use an assistant that searches the web and shows sources.
+
+And fourth, which one do I enjoy using? Seriously. The tool you open every day beats the "best" tool you rarely use.
+
+Here's a smart habit used by many professionals. I call it the second opinion habit. For important work, run the same prompt in two different assistants. For example, Arjun, a sales manager in Chennai, drafts his quarterly proposal in ChatGPT. Then he pastes it into Claude and asks it to "point out anything unclear or unconvincing in this proposal." Different assistants catch different issues.
+
+This is especially useful in three situations. Important emails to senior leaders or clients. Fact-heavy research, because if two assistants disagree, you know to check the source. And interview answers and cover letters.
+
+Let's look at a sample comparison you can run. Use the same prompt in two assistants and compare. Here's the prompt: "I run a small home-baking business in Pune called 'Sugar and Saffron'. Write 3 short Instagram captions for our new eggless chocolate cake, each under 30 words, friendly tone, with 3 relevant hashtags each."
+
+Notice the differences in tone, creativity, length, and how closely each one followed your instructions. There's no single right winner. You're learning each tool's personality.
+
+Now, free versus paid. Here's a sensible approach. You can complete this entire course using free versions. Start with free versions of two assistants for a month. Notice which one you open most, and where you hit limits. Only then consider a paid plan for that one tool, if the time saved justifies the cost for you. And if your employer provides an approved AI tool, use that for work, and keep personal accounts for personal tasks.
+
+Time to try it yourself. Spend about twenty minutes on this side-by-side test. Pause the video now if you'd like to work along.
+
+Step one. Open two different assistants in two browser tabs. For example, ChatGPT and Gemini, or Claude and Copilot.
+
+Step two. Paste the same three prompts into each. The first prompt is: "Write a polite email to my landlord asking to fix a leaking bathroom tap this week." The second is: "Explain what a mutual fund S I P is in 5 simple bullet points for a college student." And the third is: "What are the three most important things to check before signing a rental agreement in India?"
+
+Step three. For each prompt, note which answer was clearer, which followed instructions better, and which you'd actually use.
+
+Step four. For the third prompt, check whether either assistant showed sources.
+
+And step five. Write down your default assistant for now, and one backup.
+
+Let's recap. ChatGPT, Claude, Gemini and Copilot can all handle everyday writing and research tasks. Choose based on where your work lives, what your company allows, and the task at hand. Gemini fits Google users. Copilot fits Microsoft 365 users. Claude is strong with long documents. And ChatGPT is a versatile all-rounder. For important work, get a second opinion from a different assistant. And free versions are enough to learn. Decide on paid plans only after real use.
+
+That's it for this lesson. Mark it complete, and I'll see you in the next one.

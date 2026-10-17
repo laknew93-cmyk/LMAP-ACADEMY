@@ -1,0 +1,39 @@
+Welcome to No-Code AI Agents and Automation, module 5, lesson 2: Finding Automation Clients in Indian S M Bs.
+
+You now have four working projects. This lesson is about turning those skills into paid work. Which Indian small and medium businesses need automation most, how to find them, and how to start conversations that don't feel like cold selling.
+
+So why are small and medium businesses a good market? India has a very large number of them. Clinics, C A firms, coaching institutes, real estate brokers, D to C brands, travel agencies, manufacturers, interior designers. Many of them run on WhatsApp, Google Sheets, Tally, email, and a lot of manual copy-paste. They usually can't justify a full-time developer. But a few hours saved every week, or leads answered in minutes instead of days, is easy for them to understand.
+
+Large enterprises have I T teams and long procurement cycles. Small business owners make decisions themselves, often in a single meeting. That makes them ideal first clients for an independent automation builder.
+
+Next, pick a niche. "I do AI automation for businesses" is hard to remember and hard to trust. But "I help real estate brokers in Pune reply to property-portal leads within five minutes" is memorable, specific, and much easier to sell.
+
+Choose your niche using three questions. First, do they have a repeated, painful process? Think leads, enquiries, documents, scheduling or reporting. Second, can you reach them? Through family connections, past jobs, your city's business associations, or LinkedIn. And third, can they pay? A process tied to revenue, like leads, sales or collections, is easier to justify than a nice-to-have.
+
+The lesson notes have a table of niches with common, automatable pain points, matched to the projects from this course. Here are the highlights. Real estate brokers, whose portal leads go cold, need lead qualification and WhatsApp follow-up. Clinics and diagnostic centres, flooded with appointment and FAQ messages, need an FAQ bot with hand-off. C A and C S firms, chasing documents with a crowded inbox, need email triage and reminders. Coaching institutes, with admission enquiries and parent queries, need a lead flow and an FAQ bot. D to C brands, with support questions and weekly reporting, need an FAQ bot and a report agent. Travel agencies, with itinerary enquiries and quote follow-ups, need lead qualification and drafted quotes. And B to B manufacturers and traders, with enquiry routing and quotation follow-up, need a router, a CRM and reminders.
+
+You don't have to stay in one niche forever. But one niche makes your first ten clients much easier.
+
+Now, build proof before you pitch. Clients buy outcomes they can picture. So create three things. First, a demo video of two to three minutes for each project. Show a lead submitting a form, the sheet filling up, the WhatsApp or email arriving, and the alert pinging. Use test data, never real customer data. Second, a one-page case study for each project. That covers the problem, a workflow diagram, what it does, the estimated time saved using the method from module one, and what the business still controls. And third, a free mini-audit offer. Thirty minutes to map one process and show where automation fits.
+
+If you've done work for a real business, even a relative's shop or a friend's startup, ask permission to describe it. Use real results only. Never invent testimonials or numbers.
+
+So where do you find clients? Start with your warm network. Your first clients will most likely come from people who already know you. Former employers, family businesses, friends who run startups, your C A, your doctor's clinic. Send a short, personal message. The lesson has an example addressed to "Sunil uncle". It explains that you've been learning to build AI automations for small businesses, like instantly replying to enquiries and keeping leads organised in a sheet. It says you're looking for two or three businesses to help this month, and asks for a thirty-minute chat about how enquiries come in at his showroom, with no obligation. You'll find the full message in the lesson notes below this video.
+
+Next, content on LinkedIn and Instagram. Post what you build. A short screen recording showing how a coaching institute's enquiries now get a reply in under a minute, with permission or using a mock example, attracts owners who have the same problem. Write in plain language about outcomes, not tools. Owners care about "no lead missed", not "webhooks".
+
+Then there are local business groups. Chambers of commerce, trade associations, B N I style networking chapters, co-working spaces, and startup meetups in your city. Offer a twenty-minute talk, something like "Five tasks small businesses can automate this month". And bring a live demo.
+
+There are also partnerships. C A firms, web designers, digital marketing agencies, and software resellers, like Tally and Zoho partners, already serve small businesses, and often get asked about automation. Offer to be their automation partner, with a referral fee or a white-label arrangement.
+
+And finally, freelance platforms. Upwork, Fiverr, LinkedIn services, and Indian platforms can help, though competition is high. Specific gig titles, like "Lead automation for real estate brokers using Make and WhatsApp", do better than generic ones.
+
+Now, the discovery call. The first call isn't a pitch. It's the process-mapping exercise from module one. There are five steps. One, ask how work flows today, and where it hurts. Let them talk. Two, map one process together, out loud. Three, identify one quick win you could deliver in one to two weeks. Four, explain it in their language. Something like, "Every enquiry gets a WhatsApp reply in a minute, and your team sees the serious ones first." And five, agree on a next step, which is a short proposal within forty-eight hours.
+
+Avoid overpromising. Don't say "AI will run your business." Say what the workflow does, what it doesn't do, and where humans stay in control. Honest scoping wins repeat business.
+
+Now, try it yourself. Spend about twenty minutes on this. Pause the video and get started. Step one, choose one niche from the table, or your own, and write a one-line positioning statement. It follows the pattern: I help a certain kind of business achieve a certain outcome, using a certain automation. Step two, record a two-minute screen demo of Project one or Project three, using test data. Step three, list fifteen businesses in your network or your city that fit the niche. And step four, personalise the warm-network message from this lesson for three of them, and send it if you're ready.
+
+Let's recap. Indian small and medium businesses run on manual, repetitive processes, and they make fast decisions. That's a strong market for automation builders. A specific niche and clear, outcome-based positioning beat generic "AI automation" offers. Show demos and honest case studies, and never invent results or testimonials. Start with your warm network, then move to content, local groups, partnerships and platforms. And treat the first call as process discovery, and propose one quick win.
+
+That's it for this lesson. Mark it complete, and I'll see you in the next one.

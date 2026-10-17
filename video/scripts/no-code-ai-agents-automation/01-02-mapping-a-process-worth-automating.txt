@@ -1,0 +1,39 @@
+Welcome to No-Code AI Agents and Automation, module 1, lesson 2: Mapping a Process Worth Automating.
+
+The most common mistake beginners make is opening an automation tool first and thinking about the process second. In this lesson, you'll learn to map a process on paper, spot the steps worth automating, and estimate the time saved, all before you build anything.
+
+So why does mapping come first? Because if you automate a messy process, you get a fast mess. Here's a story. A textile exporter in Jaipur once asked a freelancer to "automate our order follow-ups". After an hour of questions, it turned out there were three different order sources, two people who each kept their own spreadsheet, and no agreed definition of when an order was actually "confirmed". The automation wasn't the problem. The process was.
+
+Mapping forces you to answer the questions an automation tool will ask you anyway. What starts this? What data do we have? What decisions get made? And where does the result go?
+
+Let's talk about the five-column process map. You don't need fancy software. A Google Sheet or a notebook page works fine. For each step, you fill in five columns: the step number, the step itself, who or what does it, the input and output, and the type.
+
+Let's look at an example. In the lesson notes, there's a map of a sales lead process. Step one, a new enquiry arrives on the website form, and it becomes an email to sales. That's the trigger. Step two, Ravi, the sales exec, copies the details into the Leads sheet. That's a copy step. Step three, Ravi reads the message and decides if it's HOT, WARM or COLD. That's judgement. Step four, Ravi sends the portfolio on WhatsApp. That's a send. And step five, Ravi follows up after three days if there's no reply, except he often forgets. That's a wait plus a send.
+
+The type column is where the insight comes from. There are seven labels to use. Trigger is the event that starts everything. Copy means moving data from one place to another, and that's perfect for plain automation. Transform means reformatting data, like dates, phone numbers or names, which is also easy to automate. Judgement means reading something and deciding, and that's a candidate for an AI step. Write means composing a message or document. That's also a candidate for an AI step, often with a human check. Send means delivering a message. It's automatable, but think about approval. And wait covers delays and follow-ups. Automation tools handle these really well. Humans forget them.
+
+Now, how do you spot good candidates? A process is worth automating when most of these are true. It happens often, daily or many times a week. It's rule-based or judgement-light, meaning a smart intern could do it with a one-page instruction sheet. The inputs are digital, like emails, forms, sheets and chats, not handwritten registers. Mistakes are cheap to catch. A wrong label is fine. A wrong bank transfer is not. And people dislike doing it, so it gets delayed or skipped.
+
+On the other hand, be wary of processes that happen twice a year, that need deep context living in someone's head, or that involve money moving without review.
+
+Next, estimating time saved. Clients and bosses will ask, "Is this worth it?" So give them a simple, honest calculation. Time saved per month equals the minutes per occurrence, times the occurrences per month, times the share that's automated.
+
+Let's do it for Ravi's lead process. Steps two to five take about six minutes per lead. About two hundred leads arrive each month. And the automation handles roughly eighty percent of the work, because Ravi still reviews the HOT leads. So that's six, times two hundred, times point eight, which is nine hundred and sixty minutes. That's about sixteen hours a month.
+
+Then add the benefits that are harder to measure but often matter more. Leads get contacted within minutes instead of the next day. No more forgotten follow-ups. Cleaner data for reports. Write these down as qualitative benefits, rather than inventing numbers.
+
+And don't forget the costs. Be just as honest here. There are three to think about. First, build time, which is your hours to design, build and test. Second, running costs, meaning the automation tool's subscription and the AI usage. Check the current pricing pages, because they change often. And third, maintenance. Forms change, A P Is change, someone renames a sheet column. Budget a little time each month for that.
+
+If the time saved is small and the process changes every few weeks, it may not be worth automating yet. And that's a perfectly good answer to give a client. It actually builds trust.
+
+So what should you ask the process owner? When you sit down with a founder or an ops lead, seven questions surface most of what you need. One, what event starts this process, and how do you find out about it? Two, where does the information live at each step, in an app, a sheet, email or WhatsApp? Three, which step takes the longest, and which one gets forgotten? Four, when you decide something in this process, what rules do you follow? Five, what does a mistake look like, and how bad is it? Six, who needs to know when it's done? And seven, how many times a week does this happen?
+
+Question four is gold. The answer becomes the instructions for your AI step later. If the owner says, "It depends, I just know," spend more time there. Vague rules lead to vague AI output.
+
+You can also use AI to help you map. Any chat assistant can turn a rambling voice note into a clean map. Record the owner explaining their process, get a transcript, and then use a prompt. The prompt asks the model to turn the transcript into a table with the columns step, who does it, input and output, and type, using those seven labels, and then to list any unclear points as questions at the end. You'll find the full prompt in the lesson notes below this video. Just remember to always check the result with the owner, because the model may fill gaps with guesses.
+
+Now, try it yourself. Take the task you circled in the previous lesson, or pick a new one, and spend fifteen to twenty minutes on this. Pause the video if you need to. Step one, create a sheet with five columns: step, who or what, input and output, type, and notes. Step two, map every step, including the boring copy steps and the wait steps people forget. Step three, mark each step as automate, AI step, human, or human approval. Step four, estimate the minutes per occurrence and the occurrences per month, and calculate the time saved. And step five, write two or three qualitative benefits and one honest risk. Once you're done, you've got a one-page brief you could show a client.
+
+Let's recap. Map the process before you open any tool, because automating a messy process just makes a faster mess. Label each step as trigger, copy, transform, judgement, write, send or wait, to find your automation and AI opportunities. Good candidates are frequent, digital, rule-based, and low-risk when they go wrong. And estimate time saved with a simple formula, list the qualitative benefits, and be honest about build and running costs.
+
+That's it for this lesson. Mark it complete, and I'll see you in the next one.

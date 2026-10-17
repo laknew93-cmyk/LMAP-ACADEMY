@@ -1,0 +1,49 @@
+Welcome to Make Money with AI, module 4, lesson 2: Contracts, Scope and Revisions.
+
+A contract isn't about distrust. It's about clarity. Even a simple one-page agreement prevents most freelancing disputes. Unpaid invoices, endless revisions, and arguments about who owns the work. This lesson covers what to include and how to use AI to draft one, with a clear reminder of where professional advice is needed.
+
+A quick note first. This lesson gives general information, not legal advice. For contracts involving large amounts, international clients, or unusual terms, consult a qualified lawyer.
+
+So when do you need a contract? For any paid work, have something in writing. Depending on the size of the project, there are three options. For very small jobs, like a two-thousand-rupee one-off task, a confirmation message or email works. It lists the deliverables, price, deadline and payment terms, and the client replies "agreed". For larger projects or monthly retainers, use a one to two page service agreement. And on Upwork or Fiverr, the platform's own terms govern work done through them. Keeping work and payment on the platform gives you its protections.
+
+Now, what does a simple service agreement include? There's a table in the lesson notes listing every section, so here's a quick tour. It names the parties, meaning you and the client's business. It sets out the scope of work, with quantities, and the exclusions, meaning what's not included. It covers the timeline, the client's responsibilities for inputs, and the fees and payment terms, including the advance. Then it covers revisions, intellectual property, confidentiality, AI use, portfolio rights, termination, and finally signatures. Digital signatures are fine.
+
+Let's look at the key clauses in more detail.
+
+First, advance payment. Asking for an advance is common and reasonable, especially with new clients. Many freelancers ask for thirty to fifty percent upfront for projects, and the first month in advance for retainers. This reduces the risk of doing work that never gets paid for.
+
+Second, revisions. Define a number. For example, "Two rounds of revisions are included. Additional revisions are charged at a set hourly rate." And define what counts as a revision, meaning changes to the delivered work, versus new work, like a different topic or extra pages.
+
+Third, intellectual property. A common approach is that the client owns the final deliverables once full payment is received, and you keep ownership of your general templates, processes and know-how. Make this explicit so there's no confusion.
+
+Fourth, the AI use clause. Here's a simple, transparent one: "The Freelancer may use AI tools to assist with research, drafting and production. All deliverables are reviewed, edited and quality-checked by the Freelancer. The Freelancer will not input the Client's confidential information into third-party tools without the Client's consent."
+
+Some clients may restrict AI use. Respect that, and adjust your pricing if it means more manual work.
+
+And fifth, late payment. State the due date, for example "within seven days of invoice", and what happens if payment is late. For example, pausing work until dues are cleared.
+
+Now, drafting with AI. AI can produce a solid first draft, which you then review carefully. The prompt in the lesson notes asks for a simple freelance service agreement in an Indian context. You fill in your name and city, the client's business and city, the service and quantities, and the fee, with a fifty percent advance and the balance due within seven days of invoice. It includes two revision rounds, I P transferring on full payment, and your right to show the work in your portfolio. It also asks for clauses on confidentiality, AI use with human review, and termination with seven days' notice and payment for work completed. It asks for plain English, numbered clauses, under nine hundred words, with a note at the top recommending review by a lawyer. You'll find the full prompt in the lesson notes below this video.
+
+Then read every clause. Ask yourself three questions. Do I understand this? Is it fair to both sides? Can I actually keep this promise? Remove anything you can't explain. For significant contracts, have a lawyer review your template once. Then you can reuse it.
+
+Next, managing scope creep. Scope creep is when a project gradually grows beyond what was agreed. "Can you also just do a quick logo?" Here are three strategies. Refer back to the agreement politely. Offer a quote for the extra work as a separate item. And for good long-term clients, sometimes doing a small extra is a goodwill gesture. But choose it consciously, and mention it: "Happy to include this one at no charge."
+
+Here's a reply you can use when something's out of scope: "Great idea! That's outside our current scope, so I've added it as an optional extra below. Let me know if you'd like me to go ahead."
+
+Finally, signing and storing. Use a PDF with typed or drawn signatures, or a simple e-signature tool. Store signed copies in an organised folder, with a folder for each client and the contract inside it. And keep all important agreements in writing. Email or a WhatsApp message both create a record. Avoid relying on phone calls alone for changes.
+
+Now, try it yourself. This takes about twenty minutes, so pause the video here.
+
+Step one. Run the drafting prompt with the details for your core offer.
+
+Step two. Read the draft and highlight every clause you don't fully understand. Look each one up, or simplify it.
+
+Step three. Add a scope section that matches your one-pager's inclusions and exclusions.
+
+Step four. Write a short "small job confirmation" template for tiny projects that don't need a full agreement.
+
+Step five. Save both as templates in your "Delivery kit" folder, and note any clauses you want a lawyer to review.
+
+Let's recap. Put every paid project in writing, from a confirmation message to a full agreement. Cover scope, exclusions, timeline, fees, advance, revisions, I P, confidentiality, AI use and termination. AI can draft a contract, but you must understand every clause, and a lawyer should review important templates. And handle scope creep by referring to the agreement and quoting extras separately.
+
+That's it for this lesson. Mark it complete, and I'll see you in the next one.

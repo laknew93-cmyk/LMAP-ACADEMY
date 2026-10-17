@@ -1,0 +1,55 @@
+Welcome to AI Essentials, module 3, lesson 3: Spreadsheets with AI: Formulas, Cleaning and Analysis.
+
+Spreadsheets scare a lot of people. Formulas, pivot tables, messy data. Here's the good news. An AI assistant can act as a patient Excel tutor and helper who never gets tired of your questions. This lesson shows you how.
+
+There are three ways AI helps with spreadsheets. First, writing formulas. Describe what you want in plain English, and get the formula. Second, explaining. Paste a formula or a confusing sheet, and get it explained. And third, analysing data. Upload a file and ask questions, and get summaries and charts.
+
+You don't need to be an Excel expert. You do need to describe your data clearly.
+
+Let's start with getting formulas in plain English. The trick is to tell the assistant your exact columns. Let's look at an example. In the lesson notes, there's a prompt describing a sheet of sales invoices, in rows two to five hundred. Column A is the invoice date, column B the customer name, column C the city, column D the invoice amount before G S T, and column E the G S T rate, like five, twelve or eighteen percent. Then it asks for four formulas. The G S T amount in column F. The total invoice value in column G. Total sales for customers in Nagpur. And the number of invoices above fifty thousand rupees. It also asks the assistant to explain each formula in one line. You'll find the full prompt in the lesson notes below this video.
+
+You'll typically get formulas like equals D2 times E2, for the G S T amount. Or equals SUMIF, then the city column, then "Nagpur", then the total column, for Nagpur sales. Each comes with an explanation. Copy one, test it on a few rows, and check the result manually for at least one row.
+
+Here are some common requests that save hours. Looking up a value from another sheet, with VLOOKUP or XLOOKUP. Combining first and last names, or splitting full names. Extracting the month from a date. Flagging overdue payments, for example, "if the due date is before today and the status is not Paid". Removing duplicates or finding duplicates. And counting or summing by category.
+
+If a formula gives an error, paste the error and the formula back to the assistant. For example: "This shows the N A error. Here's my data layout. What's wrong?"
+
+Next, understanding someone else's spreadsheet. Inherited a sheet from a colleague who left? Paste a complicated formula and ask the assistant to "explain this Excel formula step by step in simple language, and tell me what would make it break." The example in the lesson notes is a long lookup formula that uses INDEX and MATCH to find a rate on another sheet that matches two conditions, and shows "Not found" if there's no match. The formula is in the lesson notes below the video.
+
+This is a quick way to learn Excel without a formal course. Every confusing formula becomes a mini-lesson.
+
+Now, analysing data with file uploads. Many assistants can analyse uploaded spreadsheets or C S V files directly. Totals, averages, trends, comparisons and charts. Some run actual calculations behind the scenes, which makes them more reliable for numbers than plain text answers.
+
+Here are some example prompts after uploading a sales file. "Which 5 customers gave us the most revenue this year?" "Show monthly sales as a table and a line chart. Which months were weakest?" "Are there any rows with missing or suspicious values?" And, "Compare sales across cities. Which city grew the most from Q1 to Q2?"
+
+Let's look at an example. Amit manages a distribution business in Surat. He uploads his monthly sales export and asks for "top customers, slow-moving products and unpaid invoices older than 45 days". What used to take an afternoon now takes fifteen minutes, plus time to double-check the key numbers.
+
+And that brings us to verifying the numbers. Numbers are red-zone output, from lesson one point two. So always do three things. Spot-check two or three results by calculating them yourself in Excel. Check that the totals match your original file's totals. And make sure the assistant read the right columns. Just ask, "Which columns did you use for this calculation?"
+
+Next, cleaning messy data. Real data is messy. You might have "Mumbai", lowercase "mumbai", "Bombay", and "MUMBAI" with a trailing space, all in one column. AI can help. Here's the prompt: "My City column has inconsistent spellings like 'Bengaluru', 'Bangalore', 'B'lore', 'bangalore'. Suggest an approach to standardise them in Excel, and give me the formulas or steps."
+
+For small datasets, you can paste the list and ask for a cleaned version. For large ones, ask for the method, so you can apply it in Excel yourself.
+
+Now, spreadsheet structure and templates. AI is also good at designing sheets from scratch. Here's the prompt: "Design a simple Excel template for a home-tuition teacher to track 20 students: name, class, monthly fee, payment date, payment mode, cash or U P I, pending amount. Suggest column headings, formulas for pending fees, and conditional formatting to highlight unpaid students in red."
+
+Similar templates work for expense trackers, inventory lists, attendance registers and simple G S T invoice registers.
+
+A quick privacy reminder. Spreadsheets often contain customer names, phone numbers, salaries or financial details. Before uploading, check your company's AI policy. Remove or mask personal data, for example by replacing names with "Customer 1, Customer 2". And remember, often you can describe the structure and ask for formulas without sharing real data at all.
+
+Time to try it yourself. Spend fifteen to twenty minutes with a real or sample spreadsheet. Pause the video and follow along.
+
+Step one. Open any spreadsheet you use, or create a small one with ten to fifteen rows: date, item, category and amount.
+
+Step two. Describe the columns to an assistant, and ask for three formulas you'd find useful. For example, total by category, monthly totals, and a flag for amounts above a limit.
+
+Step three. Apply the formulas in Excel or Google Sheets, and manually check one result for each.
+
+Step four. If you have a non-confidential file, upload it and ask for the top three insights and one chart.
+
+Step five. Paste one formula you don't understand, and ask for a step-by-step explanation.
+
+And step six. Save your best formula prompt as Prompt number 7 in your library.
+
+Let's recap. Describe your columns and row ranges precisely to get correct formulas. Use AI as an Excel tutor: paste any confusing formula or error and ask for an explanation. File uploads allow quick analysis, but always spot-check the numbers against your original data. AI can help clean messy data and design useful templates from scratch. And mask personal and financial details before uploading spreadsheets.
+
+That's it for this lesson. Mark it complete, and I'll see you in the next one.

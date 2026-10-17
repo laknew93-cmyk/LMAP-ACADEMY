@@ -1,0 +1,49 @@
+Welcome to Prompt Engineering Masterclass, module 3, lesson 1: Reducing Hallucinations.
+
+AI models sometimes state things that are simply false, with complete confidence. This is called hallucination. You can't eliminate it entirely. But the right prompting habits reduce it sharply, and they make the remaining errors much easier to catch.
+
+So why do models hallucinate? A model generates text that sounds right, based on patterns. It doesn't look facts up unless it's connected to search or documents. And it has no built-in sense of "I'm not sure". So if you ask for a court judgment citation, a statistic, or a quote, it may produce something plausible-looking that doesn't actually exist.
+
+Hallucinations are most common in five areas. First, specific numbers, dates and statistics. Second, citations, case laws, research papers and U R Ls. Third, niche or local facts, like details about a small company or a recent rule change. Fourth, recent events beyond the model's training data. And fifth, questions with a false assumption built in, such as "Why did R B I ban U P I in 2025?"
+
+Let's go through six techniques to reduce hallucinations.
+
+Technique one: ground the model in your text. This is the most powerful fix. Give the model the source, and tell it to use only that source.
+
+Here's a before prompt: What is the notice period in our company's leave policy? The problem is, the model has never seen your policy. So it'll guess something typical.
+
+Now here's the after version. It tells the model to answer using only the policy text inside policy tags. If the answer isn't in the policy, it must reply exactly: "Not specified in the policy." It must also quote the sentence its answer is based on. Then your H R policy is pasted in, followed by the question: What is the notice period for employees on probation? You'll find the full prompt in the lesson notes below this video.
+
+This prompt does three things. It restricts the source. It gives the model a defined way to say "I don't know". And it requires a supporting quote that you can check in seconds.
+
+Most chat assistants also let you upload P D Fs and documents. The same principle applies. Tell the model to answer from the uploaded file only, and to cite the page or section.
+
+Technique two: give permission to say "I don't know". Models are trained to be helpful, and that can push them to answer even when they shouldn't. Explicitly allowing uncertainty helps. Here's the prompt: If you are not confident about any fact, say "I'm not sure" rather than guessing. It is better to leave a gap than to give a wrong answer.
+
+You can go further and ask for confidence labels. Here's the prompt: After each claim, add High, Medium or Low confidence. For anything Medium or Low, tell me what source I should check.
+
+Confidence labels aren't precise measurements. But they reliably point you towards the claims that need checking.
+
+Technique three: ask for sources carefully. Simply saying "give me sources" can backfire. A model without search access may invent realistic-looking references. So here's how to handle it. If your tool has web search or browsing, ask it to search and link sources, and then click the links yourself. If it doesn't have search, ask "Which types of official sources would confirm this?" rather than asking for specific U R Ls. For example, it might point you to the C B I C website for G S T, or the R B I website for banking rules. And never paste a citation into a report, assignment, or legal document without opening it first.
+
+Technique four: challenge false assumptions. You can build a check right into the prompt. Here's the prompt: Before answering, check whether my question contains any incorrect assumptions. If it does, point them out first. Question: Since freelancers in India don't need to file income tax below ten lakh rupees, how should I invest my savings?
+
+A good response will flag that the premise is wrong before going any further.
+
+Technique five: separate facts from generation. When you're writing content that includes facts, split the job into two steps. First, gather the facts yourself, or get them from a grounded prompt using your documents. Second, paste those verified facts into a writing prompt with this instruction: "Use only these facts. Do not add any numbers, names or claims not listed."
+
+This is how careful marketers and analysts work. The creativity happens in the wording, never in the facts.
+
+Technique six: verify with a second pass. After you get a factual answer, ask a follow-up. Here's the prompt: List every factual claim in your previous answer as a numbered list. For each, state whether it came from the provided document, quote it, or from your general knowledge.
+
+The claims that come from general knowledge are the ones to check. This takes about a minute, and it catches a lot of problems.
+
+Now, here's a grounding template for your library, called Grounded Q and A. It sets the model up as a careful research assistant that answers only from the content inside source tags. It has four rules. Quote the exact supporting text for each point. If the source doesn't contain the answer, say "Not found in source." Don't use outside knowledge, even if you think you know the answer. And if the question is ambiguous, list the possible interpretations. Then you paste in your document and your question. You'll find the full template in the lesson notes below this video, ready to copy.
+
+Finally, know where the risk is highest. For legal, medical, tax, and financial matters, AI output should be a starting point for a qualified professional, not a final answer. For example, a Chennai C A firm might use AI to draft a client explanation of a notice. But the C A still checks every section number and date before it goes out.
+
+Now it's time to try it yourself. Spend fifteen to twenty minutes on this, and feel free to pause the video as you go. Step one: take a real document you know well, like your company's leave policy, a rental agreement, a product manual, or a syllabus. Step two: write five questions. Three that can be answered from the document, and two that can't. Step three: ask all five with no document, and note any confident wrong answers. Step four: ask again using the Grounded Q and A template, with the document pasted in. Step five: check the results. Did it quote correctly? And did it say "Not found in source" for the two unanswerable questions? And step six: save the template, with any tweaks, to your library.
+
+Let's recap. Hallucinations are most likely with numbers, citations, niche facts, and recent events. Grounding the model in provided text, with a quote requirement, is the strongest fix. Explicitly allow "I don't know", and define the exact wording for it. Never trust a citation or U R L you haven't opened yourself. And keep facts and creative wording separate, and have a professional verify any high-stakes output.
+
+That's it for this lesson. Mark it complete, and I'll see you in the next one.

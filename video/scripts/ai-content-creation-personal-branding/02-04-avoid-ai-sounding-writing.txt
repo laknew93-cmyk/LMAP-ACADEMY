@@ -1,0 +1,49 @@
+Welcome to AI for Content Creation and Personal Branding, module 2, lesson 4: How to Avoid AI-Sounding Content.
+
+Readers have become very good at spotting AI-generated content, and many scroll past it the moment they notice. In this lesson, you'll learn the common signs of AI-sounding writing, and a practical editing process to make AI-assisted drafts sound unmistakably human, and unmistakably you.
+
+So why do AI drafts sound generic? Language models are trained to produce likely text. Left to themselves, they choose safe, familiar phrases and balanced, polished structures. The result is writing that's grammatically perfect but forgettable. And the fix isn't some special tool that claims to make text "undetectable". The fix is better inputs and honest editing.
+
+Let's go through the tell-tale signs. There are four groups to watch for.
+
+First, phrases and vocabulary. Grand openers, like "In today's fast-paced digital landscape". Overused words, like delve, unlock, elevate, seamless, robust, game-changer, testament, tapestry, and navigate when it's used metaphorically. And empty intensifiers, like truly, incredibly, and absolutely essential.
+
+Second, structure. Every paragraph the same length. Constant groups of three, like "clarity, consistency and confidence". "It's not just this, it's that" constructions. Lists where prose would be more natural. And a neat moral at the end of every post.
+
+Third, tone. Relentless positivity with no edge or opinion. Hedging everything, like "it may be worth considering". And generic engagement bait, like "Agree? Let me know your thoughts below!"
+
+And fourth, content. No specific names, places, numbers or dates. Claims nobody could disagree with. And made-up statistics, or vague references to "studies show".
+
+None of these is wrong once. The problem is when they pile up.
+
+So let's fix it upstream, with better inputs. Most generic output comes from generic input. Before you edit, improve what you feed the AI. There are five ways. First, paste your voice guide, with its banned word list. Second, start from your own brain dump, not just a topic. Third, include specifics. The client's industry, the city, the exact objection someone raised, the number you saw on your dashboard. Fourth, give it a real example of your writing to imitate. And fifth, ask for a rough draft, not a polished one. Saying "Write this as a rough first draft, plainly, without trying to impress" often produces more natural text.
+
+Now let's fix it downstream, with the human edit. Use this five-pass edit on every piece. It takes five to ten minutes for a LinkedIn post.
+
+Pass one is to delete the throat-clearing. Remove the first sentence if it's a general statement about the world. Remove the last line if it's generic engagement bait. Most drafts improve instantly.
+
+Pass two is to add one thing only you could write. A specific detail is the strongest signal that a human with real experience wrote the post. For example, the generic version is, "Many small businesses struggle with cash flow." The specific version is, "Last March, a Ludhiana hosiery client had eighteen lakh rupees stuck with two distributors and couldn't pay salaries on time." And if you use client stories, anonymise them, and make sure you've got permission where needed.
+
+Pass three is to take a position. Find the sentence where the draft sits on the fence, and decide what you actually think. "There are pros and cons to hiring freelancers" becomes "For most early-stage startups, a good freelancer beats a mediocre full-time hire."
+
+Pass four is to fix the rhythm. Read the post out loud. Break up long sentences. Vary paragraph lengths. Allow a one-word sentence if it fits. And replace any phrase you wouldn't say to a colleague over chai.
+
+Pass five is to check every fact. Verify numbers, dates, names, laws and quotes. Delete any statistic you can't trace to a reliable source. And if the AI added a claim you didn't give it, remove it.
+
+Here's something useful. You can use AI to critique, not just write. AI is surprisingly good as an editor of its own drafts when you ask it to be harsh. The blunt editor prompt asks the AI to act as an editor who dislikes generic content, and review your post against your voice guide. It lists four things. Every phrase that sounds generic, cliched or AI-generated. Every claim that's vague or unsupported. Places where you should add a specific example from your experience. And sentences that hedge instead of taking a position. Crucially, it tells the AI not to rewrite the post, just to give you the list. You'll find the full prompt in the lesson notes below this video.
+
+Asking it not to rewrite keeps you in control. You make the changes in your own words.
+
+Let's look at a before and after. Here's the raw AI draft: "In today's competitive job market, networking is more important than ever. Building genuine connections can unlock incredible opportunities and elevate your career to new heights. Remember, your network is your net worth! What are your top networking tips? Share below!"
+
+And here's the human edit: "I got my last two jobs without applying. Both came from people I'd helped years earlier. Once by reviewing a friend's pitch deck, once by answering a stranger's question about moving from Infosys to a startup. Networking isn't collecting contacts. It's being useful before you need anything."
+
+The edited version has a specific claim, real details and a clear opinion. It's shorter, and far more believable.
+
+A quick note on AI detectors. Some people run their content through AI detectors before posting. These tools are unreliable. They can flag human writing as AI, and miss edited AI text. So don't build your workflow around passing detectors. Build it around being specific, accurate and genuinely useful.
+
+Now it's time to try it yourself. Spend fifteen minutes on this editing drill, so pause the video now. Step one. Take one of the LinkedIn posts you drafted for Project 3. Step two. Run the blunt editor prompt and read the list it returns. Step three. Apply the five passes yourself. Delete throat-clearing, add one unique detail, take a position, fix the rhythm, and check the facts. Step four. Compare word counts before and after. Most good edits make the post shorter. And step five. Add any new banned phrases you noticed to your brand voice guide.
+
+Let's recap. AI drafts sound generic because models default to safe, likely phrasing. Learn the signs. Grand openers, overused words, rigid structure, no specifics, and no opinion. Improve your inputs with your voice guide, brain dumps and real details. Edit in five passes. Cut, add specifics, take a position, fix rhythm, and check facts. And use AI as a harsh critic, while ignoring unreliable AI detectors.
+
+That's it for this lesson. Mark it complete, and I'll see you in the next one.

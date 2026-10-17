@@ -1,0 +1,55 @@
+Welcome to Make Money with AI, module 1, lesson 3: Choosing Your Niche and Shaping Your Offer.
+
+"I do content writing, social media, Excel, and presentations." That sounds flexible. But to a busy client, it sounds like "I'm not sure what I'm good at." In this lesson, you'll choose a niche, shape a clear offer, and start your first project: a one-page niche and offer document.
+
+Let's begin with why a niche makes selling easier. A niche is a combination of who you serve and what you solve for them. It doesn't lock you in forever. It simply makes your message sharp enough to be remembered.
+
+Compare these two introductions. The first one is: "Hi, I'm Priya, a freelance content writer." The second is: "Hi, I'm Priya. I write monthly blog posts and LinkedIn content for chartered accountancy firms, so partners can share tax updates without spending their weekends writing."
+
+The second one tells a C A in Chennai immediately that Priya understands their world. It's also easier for friends to refer. "Oh, you should talk to Priya, she does content for C A firms."
+
+So how do you find your niche? There are three ways.
+
+First, start from what you know. Your background is an advantage. A former school teacher understands schools and coaching centres. Someone who worked at a hospital front desk understands what patients ask. A commerce graduate can talk confidently with small traders about invoices and stock.
+
+Second, start from who you can reach. If your family runs a textile shop in Surat, you probably know many traders. If you're active in a parents' WhatsApp group in Bengaluru, you know local businesses that parents use. Easy access to a group of people is a strong reason to serve them.
+
+And third, start from a problem you enjoy solving. Some people love turning chaos into tidy spreadsheets. Others love finding the right words. Enjoyment matters, because you'll repeat this work many times.
+
+The best niche usually sits where at least two of these overlap.
+
+Here's a simple niche formula you can use. I help, a specific type of client, achieve a specific outcome, by doing your service, so they can enjoy a benefit they care about.
+
+Let's look at some examples. I help home bakers in Pune get more orders from Instagram by planning and writing a month of posts, so they can focus on baking. Or, I help small clinics answer patient questions faster by setting up WhatsApp Business quick replies and an F A Q, so the front desk is less overloaded. Or, I help YouTube educators teaching in Hindi reach more viewers by creating accurate English subtitles, so their videos are accessible to wider audiences.
+
+Next, let's turn a niche into an offer. An offer is a specific package a client can say yes to. Vague offers, like "I'll help with your social media", lead to endless back-and-forth. Clear offers have several elements, and there's an example table in the lesson notes. Let me walk you through it.
+
+The offer has a name, like "Instagram Starter Month". It says what's included, for example, twelve posts with designs and captions, one content calendar, and a hashtag set. It says what's not included, like paid ads, reels shooting, or replying to D Ms. It has a timeline, say, the calendar in three working days and posts delivered weekly. It sets revisions, for example, one round of changes per batch. It has a price, which we'll cover in Module 2. And it lists what you need from the client, like their logo, brand colours, ten product photos, and a twenty-minute call.
+
+Notice the "not included" line. It prevents scope creep, which is one of the most common causes of freelancer stress.
+
+Before you commit, validate. Spend a few days checking if anyone wants your offer. There are three ways to do this. First, search LinkedIn, Upwork or Fiverr for similar services. If others offer it, that's usually a good sign. It means demand exists. Second, talk to three to five people in your target group. Ask about their problem, not your service. Something like, "How do you handle Instagram right now? What's frustrating about it?" And third, look at the businesses in your niche. Are their websites outdated? Are posts irregular? Are customers asking the same questions repeatedly in comments?
+
+Now, using AI to sharpen your offer. AI is useful for brainstorming and pressure-testing, as long as you make the final call. There's a prompt in the lesson notes for this. It asks the AI to list the top seven problems your type of client faces, suggest three package names with what each should include and exclude, and write three versions of a one-line pitch, each under twenty-five words, in simple English. It also tells the AI to avoid hype and not promise specific results, like sales or followers. You'll find the full prompt in the lesson notes below this video.
+
+Read the output, delete anything that doesn't sound like you, and check that you can actually deliver every item.
+
+Now for Project 1: your niche and offer one-pager. This is the first of your four course projects. Create a one-page document. Google Docs, Word or Notion is fine. It has seven sections.
+
+First, your niche statement, one sentence using the formula. Second, your ideal client. Who they are, where they are, how big their business is, and where they spend time online. Third, their top three problems, in their words, from your conversations or research. Fourth, your core offer. Name, inclusions, exclusions, timeline, revisions, and what you need from them. Fifth, why you. Two or three honest reasons, like relevant background, language skills, local knowledge, or availability. Sixth, a draft price. Leave a placeholder for now. You'll fill it in after the pricing lesson. And seventh, how you use AI. One or two lines on how AI fits into your work and how you review it. Being upfront builds trust.
+
+Now, try it yourself. Set a twenty-minute timer, and pause the video while you work.
+
+Step one. Write three possible niche statements using the formula.
+
+Step two. For each one, answer three questions. Can I reach these people easily? Do I understand their world? Would I enjoy this work? Score each from one to three.
+
+Step three. Pick the highest-scoring one. Don't overthink it. You can adjust later.
+
+Step four. Run the AI prompt from the lesson notes for your chosen niche.
+
+Step five. Draft sections one, two, three and four of your one-pager. Leave the rest for later lessons.
+
+Let's recap. A niche combines a specific client type with a specific problem. It makes you memorable and referable. Find your niche where your background, your network and your interests overlap. A clear offer lists inclusions, exclusions, timeline, revisions and what you need from the client. Validate demand by talking to real people before investing heavily. And use AI to brainstorm and stress-test, but only promise what you can personally deliver.
+
+That's it for this lesson. Mark it complete, and I'll see you in the next one.

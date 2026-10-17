@@ -1,0 +1,41 @@
+Welcome to Prompt Engineering Masterclass, module 2, lesson 1: Step-by-Step Reasoning: When It Helps.
+
+Asking a model to "think step by step" is one of the best-known prompting techniques. Here's the thing, though. It genuinely helps on some tasks, and it's pointless on others. In this lesson, I'll show you how to use reasoning prompts deliberately, not out of habit.
+
+Let's start with why reasoning helps. A language model produces its answer one piece at a time. If you ask for the final answer straight away, it has to jump to a conclusion. But if you ask it to lay out the steps first, each step becomes context for the next one. That often makes multi-step problems more accurate. And there's a second benefit. It gives you something to check. You can see exactly where the logic went wrong.
+
+Many current assistants now include a "thinking" or "reasoning" mode that does some of this automatically before answering. Even then, explicitly asking for the working is useful whenever you need to verify the logic yourself.
+
+So when should you ask for step-by-step reasoning? It helps most in five situations. First, calculations with several steps, like pricing, G S T, E M I comparisons, or margin analysis. Second, logic and rules, for example, "Is this employee eligible for leave encashment under our policy?" Third, decisions with trade-offs, like choosing between two vendors or two job offers. Fourth, diagnosis, such as working out why a formula breaks, or why sales dropped in a region. And fifth, planning, where you break a project into ordered tasks.
+
+On the other hand, it adds very little for simple lookups, rewriting, translation, or creative writing. In those cases, it just makes the answers longer.
+
+Let's look at a before and after example. Sneha is a freelance accountant in Indore. She asks: A client sold goods worth two lakh forty thousand rupees plus eighteen percent G S T, gave a five percent discount on the base price, and paid fifteen thousand rupees freight, which is taxable at eighteen percent. What is the total invoice value?
+
+A quick answer might mix up whether the discount applies before tax. So here's her better prompt. It asks the model to calculate the total invoice value, working through it step by step. First, state any assumption, for example that the discount is shown on the invoice and so reduces the taxable value. Then compute the taxable value of goods, then the G S T on goods, then the freight and the G S T on freight, and finally add everything up. It asks the model to show the arithmetic for each step, then put the final total on its own line, labelled "TOTAL". The scenario itself is pasted at the bottom inside quotation marks. You'll find the full prompt in the lesson notes below this video.
+
+Two things improved here. The model must state its assumptions, which is where most errors hide. And the final answer sits on a separate line, so Sneha can find it instantly. She should still verify the numbers herself. Language models can make arithmetic slips, and that's exactly why visible working is so valuable.
+
+Now let's go through some useful reasoning patterns you can borrow.
+
+The first is "plan, then do." Here's the prompt: Before writing the proposal, list the sections you plan to include and one line on what each will cover. Then write the proposal following that plan.
+
+The second is "consider alternatives." Here's the prompt: Give three possible explanations for the twenty percent drop in repeat orders in Nagpur last quarter, using the data below. For each, say what evidence supports it and what evidence would rule it out. Then say which is most likely and why.
+
+The third is "pros, cons, recommendation." Here's the prompt: I have two offers: nine lakh per annum at a Hyderabad startup, hybrid, and eight lakh per annum at a large M N C in Pune, office five days. Compare them on growth, stability, commute cost and learning. Show your reasoning in a table, then give a recommendation with the two factors that matter most for someone in their first job.
+
+And the fourth is "check your work." Here's the prompt: After giving your answer, re-check each step and state "Verified" or correct any mistake you find.
+
+Now, this is not a guarantee. A model can confidently "verify" a wrong answer. But it does catch a useful share of slips, and you'll learn stronger self-critique methods in Lesson 2.3.
+
+Next, separating reasoning from the answer. When the output goes to someone else, you rarely want the scratch work included. So ask for both, clearly separated. Here's the prompt: First, inside thinking tags, reason through the problem. Then, inside answer tags, give only the final client-ready reply in under one hundred words.
+
+You read the thinking to check it, and you copy only the answer. If your tool has a built-in reasoning mode, you can often skip the tags and simply ask for a short "how I got here" note after the answer.
+
+Let's talk about common traps. There are three. First, using it everywhere. Asking it to "think step by step" on a tweet request just gives you a longer tweet. Second, trusting the steps blindly. Reasoning that sounds logical can still contain a wrong number or a misread fact, so spot-check it. And third, not giving the rules. If eligibility depends on your company policy, paste the policy in. Reasoning without the right inputs only produces confident guesses.
+
+Now it's time to try it yourself. Spend fifteen to twenty minutes on this, and feel free to pause the video while you work. Step one: pick a real multi-step problem, like a pricing calculation, a "which option should we choose" decision, or a policy eligibility question. Step two: ask it directly, with no reasoning instructions, and save the answer. Step three: rewrite the prompt to require stated assumptions, numbered steps, and a clearly labelled final answer. Step four: check both answers yourself, using a calculator, the policy document, or a colleague. Step five: try the thinking and answer tags pattern, and see whether the final answer becomes cleaner. And step six: note in your Prompt Journal which tasks benefited and which didn't.
+
+Let's recap. Step-by-step reasoning improves multi-step maths, logic, diagnosis and decisions. It adds little to simple rewriting or creative tasks, so don't use it everywhere. Ask the model to state its assumptions, because that's where many errors hide. Separate the reasoning from the final answer when the output goes to others. And remember, visible reasoning helps you verify, but you still need to check the numbers yourself.
+
+That's it for this lesson. Mark it complete, and I'll see you in the next one.

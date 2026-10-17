@@ -1,0 +1,63 @@
+Welcome to AI Essentials, module 5, lesson 3: Privacy and Workplace AI Policy.
+
+AI assistants are powerful, but what you type into them matters. One careless paste of client data can create serious trouble for you and your employer. This lesson gives you simple, practical rules for using AI safely at work and at home.
+
+Let's start with why privacy matters with AI. When you type into an AI assistant, your text is sent to the company that runs it. Depending on the product, your account type and your settings, conversations may be stored, reviewed for safety, or used to improve the service. Business and enterprise versions generally come with stronger data protections, set by agreements between the vendor and your employer.
+
+You don't need to be fearful. You need to be deliberate. Know what you're sharing, with which tool, under which account.
+
+So what never goes into an unapproved AI tool? Treat these six things as off-limits unless your company has explicitly approved a tool for them. First, personal identifiers, like Aadhaar numbers, PAN, passport numbers, and bank account and card details. Second, passwords, O T Ps and A P I keys. Never, in any tool. Third, customer and employee data, like names with phone numbers, addresses, salaries and health information. Fourth, confidential business information, like unreleased financials, pricing strategy, mergers and acquisitions plans, and legal disputes. Fifth, client documents covered by confidentiality agreements. And sixth, source code or internal systems information, where your company restricts it.
+
+India's data protection law, the Digital Personal Data Protection Act of 2023, places responsibilities on organisations handling personal data. Your company's policy is how it meets those duties. So following the policy protects both you and your employer.
+
+Now here's a technique you'll use constantly: anonymise, then ask. Most tasks don't actually need the sensitive details. So replace them before pasting. Instead of a client's real name and phone number, write "Client A". Instead of a real company name, write "Company X". Instead of an exact contract value, say "a contract worth several crores", or a rounded figure if needed. And instead of a specific employee's name in an H R issue, write "Employee 1". There's a table of these swaps in the lesson notes.
+
+Let's look at an example. Here's the prompt: "A long-standing client, Company X, is unhappy that our deliverable was 2 weeks late due to an internal resourcing issue. Draft an apology email that takes responsibility, explains the new timeline, and offers a goodwill gesture. Don't make any financial promise."
+
+You get the same quality of help without exposing anyone. Then add the real names back in your email client.
+
+Next, understanding your company's AI policy. Many organisations now have an AI policy, sometimes called an "acceptable use" or "generative AI" policy. If yours does, read it. Look for answers to five questions.
+
+One, which tools are approved? Often it's one specific enterprise tool, for example Copilot or Gemini under the company account.
+
+Two, what data can go in? Some policies allow internal data in approved tools, but not client data.
+
+Three, do I need to disclose AI use? Some teams require you to mention when content was AI-assisted, especially for client deliverables.
+
+Four, who reviews AI output? Many policies require human review before anything goes to customers.
+
+And five, what's forbidden? For example, using AI for hiring decisions, legal advice or customer-facing chatbots without approval.
+
+If your company has no policy, ask your manager or I T team before using AI with work data. A two-line email protects you. Something like, "Is it okay if I use this tool to summarise internal documents without client names?"
+
+Now, personal account settings to check. For your personal AI accounts, spend ten minutes in the settings. Check five things. Chat history or activity: understand whether conversations are saved and how to delete them. Training on your data: many assistants offer a setting to stop your conversations being used to improve their models, so decide what you're comfortable with. Memory features: some assistants remember facts about you across chats, so review what's saved and delete anything you don't want kept. Connected apps: if you've connected email, drive or calendar, check what access you've granted. And shared links: if you share a chat via a link, anyone with the link may see it.
+
+Settings names and locations change, so look in each product's privacy or data-controls section.
+
+Beyond privacy, there are other workplace risks too. Let's go through four.
+
+First, accuracy and accountability. If AI-assisted work contains an error, you're accountable, not the tool. Lessons one point two and three point one covered verification. Apply them strictly to anything going to clients, management or the public.
+
+Second, copyright and originality. Don't ask AI to copy someone else's content. And don't present heavily AI-generated work as entirely your own, where your organisation or client expects otherwise. For marketing content, check that images and text don't imitate a competitor or a real person.
+
+Third, scams using AI. AI also helps scammers write convincing messages. Be extra careful with emails, WhatsApp messages or calls claiming to be your bank, a government office, or your boss, asking for urgent payments or O T Ps. Verify through an official channel. And never share O T Ps.
+
+And fourth, bias and fairness. AI can reflect biases from its training data. Be careful using it for decisions about people, like hiring, performance reviews or loans, and always apply human judgement.
+
+Finally, write a simple personal AI policy. Write your own three-line policy and keep it near your desk. Here's the template. One: I use my approved tool for work and my personal tool for personal tasks, never mixing them. Two: I never paste passwords, ID numbers, financial details or client names, and I anonymise first. Three: I verify facts, numbers and names before anything AI-assisted leaves my hands.
+
+Time to try it yourself. Allow about fifteen minutes. Pause the video and follow along.
+
+Step one. Find out whether your workplace, or a past one, has an AI policy. If yes, read it and note the approved tools and data rules. If not, draft the two-line email to your manager or I T team.
+
+Step two. Open the settings of your personal AI assistant. Check chat history, training preferences, memory and connected apps. Adjust anything you're not comfortable with.
+
+Step three. Take a real work task that involves sensitive details. Rewrite the prompt using the anonymise-then-ask technique.
+
+Step four. Write your own three-line personal AI policy.
+
+And step five. Save your anonymised prompt as Prompt number 14 in your library.
+
+Let's recap. What you type is sent to the AI provider, and how it's stored and used depends on the product, account and settings. Never paste passwords, O T Ps, ID numbers, financial details or confidential client data into unapproved tools. Anonymise first, because most tasks don't need real names or figures. Read your company's AI policy, and if none exists, ask before using AI with work data. And remember, you remain accountable for the accuracy, originality and fairness of AI-assisted work.
+
+That's it for this lesson. Mark it complete, and I'll see you in the next one.

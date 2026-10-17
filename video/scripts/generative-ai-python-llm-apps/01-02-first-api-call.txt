@@ -1,0 +1,45 @@
+Welcome to Generative AI Mastery, module 1, lesson 2: Project Setup and Your First A P I Call.
+
+In this lesson, you'll set up a clean Python project, store your A P I key safely, and make your first call to an L L M. By the end, you'll understand every field in the request and the response. That's the foundation for everything else in this course.
+
+Let's start by setting up the project. You create a folder for the course, then create a virtual environment inside it, activate it, and install two packages. Keeping each project in its own environment avoids the classic problem of, it works on my laptop, when you deploy later. The first package is anthropic, which is the official S D K. The second is python dotenv, which lets you keep secrets in a local environment file, called a dot env file, while you're developing. The exact terminal commands, including the slightly different activation command for Windows, are in the lesson notes below the video.
+
+Next, let's store the A P I key safely. You create an A P I key from the Anthropic Console. The link is in the lesson notes. Treat that key like your net banking password. Anyone who has it can run up charges on your account.
+
+In your project folder, you create the dot env file with two lines. One holds your A P I key, and the other holds the name of the model you want to use. Then, straight away, you create a git ignore file. It lists your virtual environment folder, the dot env file, and Python's cache folder, so your key never reaches GitHub. Both files are shown in the lesson notes.
+
+This step really matters. Students lose money every year by pushing keys to public repositories, where bots scan for them within minutes. If you ever leak a key, revoke it in the console right away and create a new one.
+
+You'll notice we also keep the model name in an environment variable. Here's why. Model versions change over time. If you read the name from configuration, you can switch models, for example to a cheaper, faster one for simple tasks, without editing any code. Check the provider's models page for the current list.
+
+Now for your first call. You create a small Python file for it, and the full code is in the lesson notes below the video. Let me walk you through what it does, step by step.
+
+First, it loads the dot env file. That copies the values from the file into your environment variables. Later, in Module 5, you'll set real environment variables in production instead, and this line simply does nothing.
+
+Second, it reads the model name from the environment, with a sensible default if it's missing.
+
+Third, it creates a client. The client reads your A P I key from the environment automatically, so the key never appears in your code.
+
+Fourth, it sends one request using the messages create call. Everything in this course goes through this Messages A P I: plain chat, tools, structured output and rag. The request has three important parts. The model setting picks which model answers. The max tokens setting is the ceiling on output tokens for this response. If the model hits that ceiling, the answer is cut off mid-sentence. Current models also spend some output tokens on internal reasoning, so don't set this too low. A few thousand is a sensible floor for general answers. And the messages setting is the conversation itself, a list where each entry has a role, either user or assistant, and some content. In this example, the user asks the model to explain G S T input tax credit in three bullet points.
+
+Finally, the script loops over the pieces of the response, prints any text it finds, and then prints the stop reason and the input and output token counts. You run it from the terminal with Python.
+
+Let's look more closely at the response. It's a Python object, not a plain string, and it has four fields worth knowing. There's a table in the lesson notes, but here's the summary. The content field is a list of content blocks. Text answers are blocks whose type is text, and later you'll also see tool use blocks and thinking blocks. The stop reason field tells you why the model stopped. End turn means it finished normally. Max tokens means it was cut off. Tool use means it wants to call a tool. And refusal means it declined for safety reasons. The usage field gives you token counts for billing and monitoring. And the model field tells you which model actually produced the answer.
+
+That's exactly why the code loops over the content and checks each block's type, instead of assuming the first block is text. Code that just grabs the text of the first block works in a demo, and then breaks the day you add tools.
+
+Always check the stop reason in real applications. If it says max tokens, you've shown the user a truncated answer. Log it, and either raise the limit or ask the model for a shorter answer.
+
+Next, controlling effort. Current Claude models think before they answer, and you can tell the model how hard to think using an effort setting inside the output config option. The levels go low, medium, high, extra high, and max. In the example in the lesson notes, effort is set to low, and the question is a quick yes or no check: is one lakh eighteen thousand rupees, including eighteen percent G S T, consistent with a base of one lakh rupees? Low effort is faster and cheaper, which suits simple classification or extraction. Higher effort is worth it for complex reasoning and agents. A good engineering habit is to start low, and only raise effort when your tests show the quality needs it.
+
+Now let's handle errors. Networks fail and keys get revoked. The S D K raises typed exceptions, so you can respond sensibly to each one. The example in the lesson notes wraps the call in a try block and catches four cases. First, an authentication error, where you tell the user to check that the A P I key is present and valid. Second, a rate limit error, where you say there were too many requests and to wait a little. Third, a connection error, where you point to a network problem. And fourth, a general status error, where you print the status code and the message.
+
+Order matters here. The specific exceptions come first, and the general status error comes last. Also, the S D K already retries temporary failures, such as rate limits and server errors, a couple of times before it raises an exception. You'll tune that behaviour in Module 5.
+
+What about other providers? OpenAI, Gemini and Ollama all have Python S D Ks with the same shape. You create a client from an environment variable, send a list of messages, and read the text and token usage from the response. Once you understand this call, switching providers is mostly a matter of reading their quick start page.
+
+Now it's time to try it yourself. Take about fifteen minutes, and pause the video whenever you need to. First, set up the project exactly as shown and run your first call script. Second, change the question to something from your own work. For example, write a polite WhatsApp reminder to a client in Indore whose invoice is fifteen days overdue. Third, set max tokens to fifty and run it again. Print the stop reason and confirm it says max tokens. Then restore a sensible value. Fourth, run the same prompt with effort set to low, and then to high. Compare the output tokens and the quality of the answer. And fifth, temporarily put a wrong key in your dot env file, and confirm your authentication error message appears. Then fix it.
+
+Let's recap. Keep your keys in environment variables and a dot env file, and add that file to git ignore before your first commit. Every request is a messages create call with a model, a max tokens ceiling, and a list of messages. Read text by looping over the content blocks and checking their type. Never assume the first block is text. Always check the stop reason and log your token usage. And use the effort setting to trade reasoning depth for speed and cost.
+
+That's it for this lesson. Mark it complete, and I'll see you in the next one.

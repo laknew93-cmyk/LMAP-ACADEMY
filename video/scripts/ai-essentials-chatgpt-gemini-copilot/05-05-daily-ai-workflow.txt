@@ -1,0 +1,49 @@
+Welcome to AI Essentials, module 5, lesson 5: Your Daily and Weekly AI Workflow.
+
+Knowing how to use AI is one thing. Actually using it every day is another. In this final lesson, you'll design a realistic daily and weekly AI workflow that fits your job, and plan how to keep improving after the course ends.
+
+Let's start with moving from occasional use to a daily habit. Most people try AI tools enthusiastically for a week, then drift back to old habits. The reason is simple. AI wasn't attached to any specific moment in their day. The fix is to link AI to tasks you already do, like your morning inbox, your weekly report, and your meetings, so it becomes automatic.
+
+Step one is to audit your week. Start by listing where your time actually goes. Be honest and specific. The prompt in the lesson notes has you paste a rough list of what you do in a typical work week, with approximate hours. For example, emails six hours, weekly sales report three hours, team meetings four hours, vendor calls three hours, data entry five hours, and customer queries eight hours. You add your role, industry and city. Then, for each activity, the assistant tells you whether AI could help, how specifically, roughly what share of the time it might save as a rough range, and any risk to watch. It presents all this as a table, sorted by the biggest potential saving. You'll find the full prompt in the lesson notes below this video.
+
+Treat any time-saving estimates as guesses to test, not promises. The value is in spotting where to start.
+
+Step two is to pick your three anchor tasks. Don't try to change everything at once. Pick three tasks that are frequent, time-consuming and low-risk. Usually that's writing, summarising or organising. Here are some examples. Ravi, a sales coordinator in Lucknow, picked daily customer email replies, a weekly sales summary, and meeting minutes. Fatima, a home-baker in Hyderabad, picked Instagram captions, WhatsApp order confirmations, and monthly expense tracking. And Sneha, a career returner in Pune, picked tailored job applications, daily LinkedIn activity, and interview practice.
+
+For each anchor task, link a prompt from your library and a specific time in your day.
+
+Step three is to design your daily rhythm. Here's a sample daily workflow for an office professional. Adapt the times and tasks to your own day. The full table is in the lesson notes.
+
+At nine thirty a m, plan the day. AI turns your to-do list into a prioritised plan, using the daily planner prompt. At nine forty-five, tackle your inbox. AI summarises long threads and drafts replies, using the notes-to-email and three-tone rewrite prompts. Before meetings, prepare, with an agenda, talking points and pending items. After meetings, follow up, with minutes, action items and a follow-up email, using the clean minutes prompt. In the afternoon, work on documents: outline, draft and edit, using the report brief and "cut 20 percent" editor. And at five thirty p m, wrap up. Summarise the day and plan tomorrow, with the daily planner again.
+
+Here's a simple end-of-day prompt many people like: "Here is what I did today and what's pending." Then paste your notes, and continue: "Give me, one, a 3-line summary I can send my manager if needed, and two, my top 3 priorities for tomorrow morning."
+
+Step four is to add weekly routines. Some AI tasks fit better once a week. On Monday, plan the week. Paste your calendar and deadlines, and ask for a realistic schedule with buffers. On Wednesday, have a research slot. Use the Explore, Gather, Verify, Synthesise workflow on one topic that matters. On Friday, do your weekly report. Paste your notes and generate a status update, and review your action tracker. And also on Friday, have library time. Spend ten minutes improving one prompt and adding one new one.
+
+Step five is to measure what changes. To know whether AI is genuinely helping, track it simply for two weeks. In a notebook or sheet, note three things for each anchor task. The time taken before. The time taken with AI, including checking. And the quality: did anyone need to correct it? Some tasks will speed up dramatically. Some won't. Drop what doesn't help, and double down on what does.
+
+Now, keeping your skills current. AI tools change quickly. New features appear, interfaces change, and product names shift. To stay current without getting overwhelmed, here are four ideas. Spend fifteen minutes a month exploring one new feature in the tool you use most. Follow official product blogs or release notes for your main assistant. Swap prompts with a colleague or friend who also uses AI. And revisit the principles from this course, clear context, verification and privacy, because they stay true even as tools change.
+
+Here's your safety checklist, one last time. Before relying on any AI workflow, check it against the core rules from this course. One, am I using an approved tool for work data? Two, did I anonymise sensitive details? Three, have I verified facts, numbers, names and dates? And four, does the final output sound like me, and say only what I mean?
+
+Time to try it yourself. This is the final course project: your weekly AI workflow plan. Allow twenty minutes. Pause the video and work through each step.
+
+Step one. Run the weekly audit prompt from step one of this lesson, with your real activities and hours.
+
+Step two. Choose your three anchor tasks, and link each to a prompt from your library.
+
+Step three. Build your own version of the daily rhythm table, with real times from your schedule.
+
+Step four. Add at least two weekly routines, for example Monday planning and Friday reporting.
+
+Step five. Create a simple two-week tracking sheet, with the task, time before, time with AI, and quality notes.
+
+Step six. Put the plan somewhere you'll see it daily, like your desk, your phone wallpaper, or calendar reminders.
+
+And step seven. Review it after two weeks, and adjust.
+
+Congratulations on completing AI Essentials. You now have a prompt library, a tailored resume, a research brief and a workflow plan. That's practical evidence of your skills that you can talk about confidently in interviews and at work.
+
+Let's recap. AI becomes a habit when it's attached to tasks you already do at fixed times. Audit your week, then start with three frequent, low-risk anchor tasks. Combine a daily rhythm with weekly routines for planning, research, reporting and prompt improvement. Measure time and quality for two weeks, and keep only what genuinely helps. And remember, tools will change, but the core principles, context, verification and privacy, stay the same.
+
+And that's the end of the course. Congratulations, you've completed AI Essentials! You've built real skills and real projects along the way. Mark this lesson complete, then head to your dashboard to claim your certificate. You've earned it. Well done, and keep practising every day.

@@ -1,0 +1,59 @@
+Welcome to Make Money with AI, module 5, lesson 2: Simple Bookkeeping and Admin with AI.
+
+Bills, receipts, U P I notifications, stock notes and pending payments pile up quickly in any small business or freelance practice. AI won't replace your C A or your accounting software, but it can help you organise, categorise and understand your numbers. This lesson shows how, safely.
+
+A quick note first. AI can make calculation and categorisation mistakes. Always check totals against your bank statement, and rely on your C A for tax filings and compliance.
+
+So what's the goal? To know your numbers every month. Many small business owners only look at their finances at year end. But a monthly ten-minute review answers simple, important questions. How much came in? How much went out? Which products, services or clients brought the most income? Which expenses grew? And who still owes me money?
+
+There are five steps to get there.
+
+Step one: get your data in one place. Create a simple Google Sheet or Excel file with seven columns. Date, description, category, income in rupees, expense in rupees, payment mode, and notes. The layout is in the lesson notes below this video.
+
+Then pull in data from four sources. Your bank and U P I statements, since most banks let you download a statement as Excel or C S V. Your cash memo books. The invoices you've sent. And the receipts for your purchases.
+
+If you're a freelancer, keep this separate from personal spending. The separate bank account from Lesson 4.3 makes this far easier.
+
+Step two: categorise with AI's help. Bank statement descriptions are often cryptic. You'll see a long string with U P I, a reference number, and a name like "Raju Traders" buried in the middle. AI can suggest categories, but you need to verify them.
+
+Before pasting anything, remove or mask account numbers and any personal details you don't need.
+
+The prompt in the lesson notes gives the AI thirty transactions with account numbers removed, tells it your type of business, and asks it to suggest a category for each from a fixed list. The list includes raw material, packaging, rent, electricity, internet and phone, software, travel, marketing, salary, owner drawings, sales income, and other. If it's unsure, it marks the row CHECK, and it returns everything as a table. You'll find the full prompt in the lesson notes below this video.
+
+Go through the CHECK rows yourself. Over time, you'll notice patterns. For example, that Raju Traders is always packaging. And then you can categorise quickly.
+
+Step three: let formulas do the totals. Ask AI to help you build formulas, instead of doing the maths itself. Spreadsheet formulas are reliable and reusable, while AI arithmetic on pasted data can be wrong.
+
+The prompt in the notes describes your sheet layout, with date in column A, category in column C, income in column D and expense in column E. It asks for formulas to calculate total income and total expenses for a given month, total expense by category for that month, and net profit for the month, with each formula explained in one line. You'll find the full prompt in the lesson notes.
+
+Then test each formula on a few rows where you already know the answer.
+
+Step four: track who owes you. Unpaid invoices are a major cash-flow problem for freelancers and small businesses. So add a "Receivables" tab, with columns for invoice number, client, amount, invoice date, due date, status, and last reminder.
+
+A formula or conditional formatting can highlight overdue rows in red. And you can use the reminder messages from Lesson 4.3 for follow-ups.
+
+Step five: the monthly review with AI. Once your sheet has a summary, AI can help you think it through. The prompt in the notes pastes in your summary for two months, say September and August, with no personal data. That's income, expenses by category, and your top five clients or products. It asks three things. What changed most between the two months? Which three questions should I ask myself about these changes? And can you suggest two practical, low-cost ideas to improve cash flow? It also tells the AI not to make assumptions beyond the data. You'll find the full prompt in the lesson notes below this video.
+
+Treat its answers as prompts for thinking, not financial advice. You know context the AI doesn't. Maybe September was low because of Shraddh, or because a big client paid late.
+
+AI can help with other admin tasks, too. Here are six. Stock lists, turning a messy handwritten stock count, once typed in, into a clean table with reorder flags. Supplier comparisons, organising quotes from three suppliers into a comparison table. Staff rosters, drafting weekly schedules based on availability. Price lists, formatting a clean, printable rate card. Meeting notes, summarising a call with a supplier or client into action points. And policy documents, like drafting a simple refund or cancellation policy for your shop. Then check it's fair, and something you'll actually follow.
+
+Now, what not to do. There are three things. Don't upload complete bank statements with account numbers, or customers' personal data, to AI tools without understanding the tool's privacy settings. Don't rely on AI for G S T computations, return filing or tax advice. Use proper accounting software and a C A. And don't let AI-generated summaries replace looking at the actual numbers.
+
+Now, try it yourself. This takes about twenty minutes, so pause the video and follow along.
+
+Step one. Download last month's bank or U P I statement, or use a sample set of twenty transactions you write yourself.
+
+Step two. Mask account numbers and personal details.
+
+Step three. Create the transaction sheet with the columns we covered.
+
+Step four. Use the categorisation prompt, and verify every CHECK row.
+
+Step five. Use the formula prompt to add monthly totals and a category breakdown. Test that the totals match your statement.
+
+Step six. Add a Receivables tab, and enter any pending invoices.
+
+Let's recap. A simple monthly review of income, expenses and receivables keeps a small business healthy. Use AI to categorise transactions and write spreadsheet formulas, not to do final arithmetic. Mask sensitive data before using AI tools, and verify all outputs against your statements. And use AI as a thinking partner for monthly reviews, but rely on a C A for tax and compliance.
+
+That's it for this lesson. Mark it complete, and I'll see you in the next one.

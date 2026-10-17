@@ -1,0 +1,69 @@
+Welcome to AI Essentials, module 4, lesson 1: Microsoft Copilot in Word, Excel, Outlook and Teams.
+
+If your office runs on Word, Excel, Outlook and Teams, Microsoft Copilot can bring AI directly into the tools you already use. No copy-pasting into a separate chat window. This lesson explains what Copilot can typically do in each app, and how to prompt it well.
+
+First, which Copilot? "Copilot" is a name Microsoft uses for several products, and that confuses many people. There are two main kinds.
+
+The first is the free, consumer Copilot. It's a general chat assistant available on the web, in Windows and in the mobile app. It works like other chat assistants.
+
+The second is Copilot in Microsoft 365 apps. That's AI built into Word, Excel, PowerPoint, Outlook and Teams. For work and school accounts, this usually depends on licences your organisation has bought and features it has switched on. Some personal Microsoft 365 plans also include Copilot features in the apps.
+
+Features, names and availability change often, and vary by plan, country and organisation settings. If you don't see a Copilot button in your work apps, ask your I T team what's enabled. Everything in this lesson describes common capabilities. Your exact screens may differ.
+
+Here's the big advantage of Copilot at work. When it's enabled by your organisation, it can work with your work files, emails and meetings, within your organisation's security and permission settings. It can only access content you already have permission to see.
+
+Let's start with Copilot in Word. In Word, Copilot typically helps you draft, rewrite and summarise documents. Common uses include drafting a first version from a prompt, and in many setups, from other files you reference. Rewriting a selected paragraph to be shorter, more formal or clearer. Summarising a long document into key points. Asking questions about the document, like "What does this say about payment terms?" And turning text into a table.
+
+Here's an example prompt: "Draft a one-page project update for our client, Sahyadri Foods, based on the notes in this document. Sections: progress this month, issues, next steps, decisions needed. Professional tone, under 400 words."
+
+The same prompting principles from module one apply. Role, task, context, format and tone still make a big difference.
+
+Next, Copilot in Excel. In Excel, Copilot can help you understand and work with data. It usually works best when your data is formatted as a table. To do that, select the data and press Control T.
+
+Common uses include suggesting formulas for new columns, like "Add a column calculating G S T at 18 percent of the Amount column." Highlighting, sorting and filtering data, like "Highlight invoices overdue by more than 30 days." Summarising trends and creating charts or PivotTables. And answering questions about the data, like "Which region had the highest sales in August?"
+
+Here's an example prompt: "Show total sales by region and month as a PivotTable, and tell me which region declined compared to last month."
+
+As always with numbers, check the key results yourself.
+
+Now, Copilot in Outlook. Email is where many people feel the time savings first. Common uses include summarising a long email thread to see what's been decided and what's being asked of you. Drafting a reply from a short instruction, like "Accept the meeting, but ask to move it to 3 p m." Adjusting the tone and length of your draft. And getting coaching on a draft, covering clarity, tone, and how the reader might react.
+
+Here's an example prompt for a draft: "Reply to Rajesh thanking him for the revised quotation. Say we can accept the price if delivery is guaranteed before 20 November, and ask him to confirm in writing. Keep it short and friendly."
+
+Next, Copilot in Teams. In Teams, Copilot typically works with meetings and chats. Meeting features usually depend on the meeting being recorded or transcribed, and on your organisation's settings.
+
+Common uses include asking "What have I missed?" during a meeting if you join late. Getting a summary after a meeting, with key decisions and action items with owners. Asking questions, like "What did Priya say about the launch date?" And summarising long chat threads.
+
+We'll go deeper into meeting notes and action items in lesson four point three.
+
+Briefly, Copilot in PowerPoint. It can often create a draft presentation from a prompt or an existing document, add slides, and summarise a deck. Expect to edit the design and content. Treat the result as a first draft.
+
+Now let's look at five tips for prompting Copilot well.
+
+First, reference the right files. Where your setup allows, point Copilot to the specific document or email you mean, rather than hoping it guesses.
+
+Second, be specific about output. "Five bullets for my manager" beats "summarise".
+
+Third, ask it to cite. Copilot answers in Microsoft 365 often show references to the files or emails they used. Click through to check.
+
+Fourth, iterate. Use follow-ups, just as you would in any chat assistant.
+
+And fifth, remember permissions. If Copilot can't find something, you may not have access to it. That's working as intended.
+
+What if Copilot isn't available? If your organisation hasn't enabled Copilot, you can still apply everything in this lesson using a general assistant your company allows. Copy the text, without confidential details, use the same prompts, and paste the result back. It's less seamless, but the skills are identical.
+
+Time to try it yourself. Allow about fifteen minutes. Pause the video and work along.
+
+Step one. Open Word, Excel, Outlook or Teams at work, or with your personal Microsoft account, and check whether you see a Copilot button. Note which apps have it.
+
+Step two. If you have it in Outlook, open a long email thread and ask Copilot to summarise it and list what's being asked of you.
+
+Step three. If you have it in Word, open a document and ask for a five-bullet summary, plus three suggestions to improve clarity.
+
+Step four. If you don't have Copilot in your apps, open the free Copilot chat, paste a non-confidential email thread or document, and run the same two prompts.
+
+And step five. Check one summary point against the original. Then save your best Copilot prompt as Prompt number 8 in your library.
+
+Let's recap. "Copilot" covers both a free chat assistant and AI built into Microsoft 365 apps, and availability depends on your plan and organisation. In Word, it drafts and rewrites. In Excel, it analyses data. In Outlook, it summarises and drafts email. And in Teams, it recaps meetings. Good prompting principles still apply, so be specific about the task, audience and format. Copilot works within your existing permissions, and often shows references you can check. And if Copilot isn't enabled, use the same prompts in an approved chat assistant.
+
+That's it for this lesson. Mark it complete, and I'll see you in the next one.

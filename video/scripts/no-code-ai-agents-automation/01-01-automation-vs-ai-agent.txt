@@ -1,0 +1,41 @@
+Welcome to No-Code AI Agents and Automation, module 1, lesson 1: Automation versus AI Agent, What's the Difference?
+
+Everyone's talking about AI agents right now. But here's the thing. Most people who use that word mean very different things. So in this first lesson, we'll pin down exactly what an automation is, what an AI agent is, and how you decide which one a task actually needs.
+
+Let's start with a real example. Meet Priya. She runs operations for a twelve-person interior design studio in Pune. Every day, she does the same things. First, she copies new enquiries from the website form into a Google Sheet. Second, she reads each enquiry and decides whether it's a serious project or just a "checking prices" message. Third, she sends a WhatsApp message to the serious leads with the studio's portfolio link. And fourth, every Friday, she puts together a short report for the founder: how many leads came in, how many were serious, and which ones converted.
+
+Some of this work is pure copying. Some of it needs judgement. And that split is the whole story of this course.
+
+So, what's a simple automation? An automation is a fixed recipe. When this happens, do these steps, in this order, every time. Here's the recipe: when a new form submission arrives, then add a row to the Leads Google Sheet, and send an email to Priya at the studio.
+
+Automations are predictable. The same input always gives you the same output. They're cheap, they're fast, and they're easy to test. Tools like Zapier, Make and n eight n were built for exactly this, and they've been doing it reliably for years.
+
+But there's a limitation. An automation can't understand anything. It can check whether the budget field says more than five lakh rupees. But it can't read a message like, "We're redoing our three B H K in Baner, budget flexible, want to start after Diwali," and decide that this is a hot lead.
+
+Now let's add an AI step. The moment you put a large language model, an L L M, like ChatGPT, Claude or Gemini, into the middle of an automation, it gains a new ability. It can read and write language. So now one step in the recipe can be this. Here's the prompt: "Read this enquiry. Classify it as HOT, WARM or COLD. Return the category and a one-line reason."
+
+Notice that the workflow is still a fixed recipe. The AI step is just a very smart function sitting inside it. And this is what most businesses actually need. It's the bulk of this course. We'll call these AI-powered workflows.
+
+So what makes something an agent? An AI agent is different in one important way. The AI decides what steps to take, not you. Here's a useful working definition: an agent equals an L L M, plus tools, plus memory, plus a goal.
+
+Let's unpack those four ingredients using Priya's example. The L L M is the brain that reads, reasons and writes, so that's a chat model. The tools are the actions it's allowed to take, like searching the Leads sheet, looking up the calendar, or drafting an email. Memory is the context it can refer back to, like past conversations and notes on each client. And the goal is what it's trying to achieve, for example, "Prepare this week's lead report for the founder." There's a table summing this up in the lesson notes below the video.
+
+Given that goal, an agent might think: "First I'll read the Leads sheet. Hmm, three leads have no status. Let me check the email inbox for replies from them. Now I'll write the summary." You didn't hard-code those steps. The model chose them, one at a time, by calling tools and looking at the results.
+
+Now, it helps to think of this as a spectrum, not a yes or no choice. There are four levels. Level one is a plain automation. Fixed steps, no AI. Like, copy the form to a sheet. Level two is an AI-powered workflow. Fixed steps, with one or more AI steps inside. Like, copy the form to the sheet, have AI score the lead, and send a WhatsApp if it's HOT. Level three is an agentic workflow. There's a fixed outer structure, but inside one step, an agent chooses which tools to use. For example, every Friday an agent gathers data from three tools and drafts a report, and then a human approves it. And level four is a fully autonomous agent, where the AI runs open-ended tasks with very little supervision.
+
+For small and medium businesses, levels two and three deliver most of the value. Level four looks exciting in demos, but it's risky in production. It's harder to test, its costs are less predictable, and its mistakes are harder to spot. So throughout this course, we'll lean towards the simplest level that does the job.
+
+So how do you choose? Ask three questions about any task. First, are the steps always the same? If yes, use an automation, maybe with an AI step. Second, does it need reading or writing language? If yes, add an L L M step. And third, do the steps change depending on what's found along the way? Only then should you consider an agent.
+
+Let's look at an example. A Chennai C A firm that forwards G S T invoices from email to a Drive folder needs level one. Tagging each invoice by vendor type needs level two. But answering a client's question like, "Did we file my G S T R three B for August, and was there any late fee?" by looking across email, a tracker sheet and a portal export, that's closer to level three.
+
+So what will you build in this course? By the end, you'll have four working projects. First, a lead-qualification automation, where a form goes to AI scoring, then to a Google Sheet or CRM, and then to a WhatsApp or email follow-up. Second, an inbox triage assistant that labels, summarises and drafts replies. Third, a document-grounded FAQ bot that answers only from your own documents. And fourth, a weekly report agent that gathers data with tools and waits for human approval before sending.
+
+You'll also learn the unglamorous parts that separate hobby projects from paid client work. That's A P I key safety, cost control, error handling, monitoring, and how to sell all this as a service to Indian small and medium businesses.
+
+Now it's time to try it yourself. Spend about fifteen minutes on this, and feel free to pause the video. Step one. Write down five repetitive tasks that you, or a client, do every week. Be specific. Say "copy Razorpay payment emails into the accounts sheet", not just "accounts work". Step two. For each task, place it on the spectrum: plain automation, AI-powered workflow, agentic workflow, or autonomous agent. Step three. Next to each one, write a single sentence that justifies the level. For example, "Level two, because the steps are fixed, but someone has to read the message to classify it." Step four. Circle the task that's the most frequent and also the lowest level. That's probably your first build. Keep this list, because we'll use it in the next lesson.
+
+Let's recap. An automation follows fixed steps, while an AI agent decides its own steps using tools. A useful definition is that an agent equals an L L M, plus tools, plus memory, plus a goal. Most business value comes from AI-powered workflows, which are fixed steps with an AI step inside, not from fully autonomous agents. And always pick the simplest level on the spectrum that solves the problem.
+
+That's it for this lesson. Mark it complete, and I'll see you in the next one.

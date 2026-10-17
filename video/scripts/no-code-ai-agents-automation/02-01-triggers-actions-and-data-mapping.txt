@@ -1,0 +1,35 @@
+Welcome to No-Code AI Agents and Automation, module 2, lesson 1: Triggers, Actions and Data Mapping.
+
+Every workflow you'll ever build is made of the same three ingredients. Something that starts it, steps that do things, and data that flows between them. Get comfortable with these, and every tool becomes easy to learn.
+
+Let's begin with triggers, which are what start a workflow. A trigger is the event that kicks off a run. Most triggers fall into four families. First, app events, where the tool watches an app for something new, like a new row in Google Sheets, a new email in Gmail, or a new Typeform response. Second, webhooks, where another system sends data to a unique U R L your workflow listens on. That could be your website form, Razorpay payment events, or a WhatsApp provider's incoming message. Third, schedules, which run at fixed times, like every Monday at nine a m, or every hour. And fourth, manual triggers, where you click a button or submit a form inside the tool. That's handy for testing, or for an on-demand "generate report" button. There's a table with all four in the lesson notes.
+
+Now, polling versus instant. Some app triggers poll, which means the tool checks the app every few minutes for new items. Others are instant, usually powered by webhooks behind the scenes. Polling intervals depend on the tool and your plan. For a lead form, a delay of a few minutes may be fine. For an O T P style alert, it's not. So check the trigger's description to see which kind it is.
+
+Let's explain webhooks in plain English. A webhook is like giving someone your phone number and saying, "Call me when something happens." Your workflow tool gives you a unique U R L. You paste that U R L into the other system's settings, for example your website form plugin or your payment gateway dashboard. Whenever the event happens, that system sends the data to your U R L, and your workflow starts.
+
+Treat webhook U R Ls like semi-private addresses. Anyone who has the U R L can send data to it. So don't publish it, and in serious setups, add a secret check. Many tools support a header or a token for this.
+
+Next up, actions, which are what the workflow does. An action is a step that does something. Create a row, send an email, post a Slack message, call an AI model, update a CRM contact. There are five kinds. Create adds a new record, like a row, contact, task or message. Update changes an existing record, and it needs a way to identify which one, usually an I D. Search, or find, looks up a record, for example, "find the row where the phone equals this number". Send covers email, WhatsApp, S M S and chat messages. And finally, HTTP Request, the universal adapter. When no ready-made connector exists, you call the app's A P I directly by entering the U R L, the method, like GET or POST, the headers and the body. Most A P Is document these.
+
+Here's a good habit: search before you create. If the same customer submits a form twice, a "find or create" pattern prevents duplicate rows.
+
+Now for data mapping, the part that confuses everyone. Each step outputs data, and later steps can use it. Mapping is simply saying, "Put this field from an earlier step into that box in this step."
+
+Let's look at an example. Imagine a website form sends a small bundle of data: a full name, Anjali Deshmukh, a phone number, an email, the city, Nagpur, and a message asking for a quote for office interiors, two thousand square feet. The exact data is in the lesson notes below the video.
+
+In an "add row to Google Sheet" step, you'd click into the Name column box and pick the full name field from the previous step's data. Every tool shows earlier step outputs in a picker panel, and inserts a reference. In some tools that's a coloured pill, and in n eight n it's a short expression in double curly brackets. When the workflow runs for real, that reference gets replaced with the actual value.
+
+And always run a test first. You can't map fields the tool has never seen. So before mapping, send one real test submission through the trigger so the tool can capture sample data. Use realistic test data, not random letters, so you notice formatting problems.
+
+Next, transforming data along the way. Raw data is rarely in the format the next app wants. Here are the common transformations. Phone numbers: a number with spaces needs the spaces removed and the country code, nine one, added in front for WhatsApp A P Is. Names: splitting "Anjali Deshmukh" into a first and last name. Dates: the Indian format, day, month, year, versus year, month, day, which is what most A P Is expect. Mixing up day-month and month-day is a classic bug. Currency: turning "one lakh fifty thousand rupees", written with commas and the rupee symbol, into a plain number. And text cleanup, like trimming spaces and lowercasing emails.
+
+Each tool has formatter functions, or a Formatter, Set, or Edit Fields style step. For really messy cases, an AI step can also clean data. But plain functions are cheaper, faster and more predictable, so use them first.
+
+Finally, reading a run history. Every tool keeps a history, sometimes called executions or runs, of each time the workflow ran. Open a run, and you can see exactly what data entered and left every step. When something goes wrong, this is the first place to look. Make it a habit to check the history after your first few real runs, even when nothing seems broken.
+
+Now, try it yourself. Build this in your chosen tool in about twenty minutes. Pause the video now if you like. Step one, create a free Google Form, or a Tally or Typeform form, with fields for name, phone, city and message. Step two, create a Google Sheet called "Leads Test", with columns for timestamp, name, clean phone, city and message. Step three, build a workflow. Trigger on a new form response, then add a formatting step that removes spaces from the phone number and adds nine one in front, then add a row to the sheet, mapping each field. Step four, submit three test responses with realistic Indian names, and phone numbers written in different formats. One with plus nine one and a dash, one with just ten digits, and one with a leading zero and a space. And step five, check the sheet and the run history. Did all three phone numbers come out identical? If not, fix your formatting step until they do.
+
+Let's recap. Triggers can be app events, webhooks, schedules or manual, and you should know whether yours polls or is instant. Actions create, update, find or send data, and the HTTP Request step connects to almost any A P I. Mapping means inserting fields from earlier steps, so always run a realistic test first so the fields appear. Clean and transform data, like phones, dates and currency, with plain functions before reaching for AI. And the run history is your best debugging tool.
+
+That's it for this lesson. Mark it complete, and I'll see you in the next one.

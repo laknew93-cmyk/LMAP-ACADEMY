@@ -1,0 +1,37 @@
+Welcome to Prompt Engineering Masterclass, module 2, lesson 2: Structured Output: Tables, JSON and Checklists.
+
+Most professional work doesn't end in a chat window. It ends in Excel, a slide, a form, a checklist, or another piece of software. In this lesson, you'll learn to get output in exactly the structure you need: tables, JSON, checklists, and fixed templates.
+
+First, why does structure matter? Unstructured output costs you time twice. Once to read it, and once to reformat it. Structured output can be pasted directly into Google Sheets, a C R M, a Notion database, or a script. It's also easier to check, because missing pieces stand out.
+
+Let's start with tables. Tables are the easiest win. The key is to name the columns and their order.
+
+Here's a typical before prompt: Compare Zoho Books, Tally and QuickBooks for my business.
+
+And here's the after version. It gives real context: a six-person interior design firm in Kochi that issues about forty G S T invoices a month. It asks for a markdown table with exactly four columns: Feature, then Zoho Books, Tally, and QuickBooks. It lists the rows: cloud access, G S T e-invoicing support, learning curve for a new accountant, mobile app, and best suited for. It keeps each cell under twelve words. If the model is unsure about a feature, it should write "Verify" instead of guessing. And after the table, it adds two sentences of recommendation. You'll find the full prompt in the lesson notes below this video.
+
+Notice that "Verify" instruction. Product features change often, so you want the model to flag uncertainty rather than invent details. You'll go deeper on this in Module 3.
+
+Here's a quick tip. If you plan to paste into Excel or Sheets, ask for tab-separated values, or C S V, inside a code block. That pastes cleanly into cells.
+
+Next up, JSON. JSON stands for JavaScript Object Notation, and it's the standard format for passing data between software. Even if you don't code, it's useful when you work with developers, with automation tools like Zapier or Make, or whenever you need guaranteed fields.
+
+Let's look at an example. This prompt asks the model to extract details from a job posting and return only valid JSON, with no explanation, using an exact schema. The schema lists seven fields: job title, company, location, work mode, minimum years of experience, salary range in rupees, and key skills. Work mode is limited to four allowed values: onsite, hybrid, remote, or not stated. Then there are two rules. Use null when a field isn't mentioned, and never guess. And list a maximum of six key skills, as written in the posting. The posting itself goes inside posting tags at the end. The full prompt and schema are in the lesson notes below the video.
+
+Three things make this reliable. The exact schema, the allowed values for work mode, and the rule for missing data. Many assistants, and most AI A P Is, also offer a dedicated "structured output" or "JSON mode" setting. If you're building something with an A P I, use it, because it enforces valid JSON more strictly than a prompt alone.
+
+Now let's talk about checklists. Checklists turn advice into action. Here's an example prompt. It asks for a pre-launch checklist for a Diwali sale on a Shopify store. The items are grouped under five headings: Inventory, Website, Payments covering U P I and cards, Marketing, and Customer support. Each item starts with an empty checkbox, written as a pair of square brackets with a space inside, followed by a verb. There's a maximum of six items per heading. And anything that must be done at least seven days before launch gets marked with "T minus seven". You'll find the full prompt in the lesson notes below this video.
+
+That square bracket checkbox format pastes neatly into Notion, Google Docs, or a WhatsApp message to your team.
+
+Then there are fixed templates. Sometimes you need a specific document layout, like a daily standup update or a site visit report. In this example, the prompt says: convert my rough notes into this exact format, and don't add sections. The format has headings for date, site, work completed, issues, materials needed, and next visit. Then the rough notes are pasted in, things like "went to Wakad site today 14th, tiling done 2nd floor, plumbing leak in flat 204 need plumber, need 30 bags cement by thurs, next visit monday." The model turns that scrappy note into a clean, consistent report. The full template is in the lesson notes below the video.
+
+So how do you get structure right every time? There are six habits. First, show the skeleton. An empty template or schema beats a description of one. Second, say "only". "Return only the table" stops chatty introductions. Third, define empty values. Decide in advance whether it should say null, N A, Not stated, or leave it blank. Fourth, limit cell length, because long cells break tables. Fifth, specify sorting, for example "sort by priority, High first" or "alphabetical by city". And sixth, validate. For JSON, paste the output into any free JSON validator, or ask a developer colleague. For tables, check that the row count matches the input.
+
+And what if the structure breaks? If the output drifts, don't rewrite from scratch. Reply with a targeted correction. Here's the prompt: Row 3 is missing the "Mobile app" value and you added an extra column. Regenerate the full table with exactly 4 columns and 5 rows.
+
+Now it's your turn to try it yourself. Spend fifteen to twenty minutes on this, and pause the video whenever you need to. Step one: find a messy piece of real text, like a long email thread, a product page, or a WhatsApp group discussion about an event. Step two: decide the structure you actually need, whether that's a table, JSON, a checklist, or a fixed template. Step three: write a prompt that shows the exact skeleton, defines empty values, and says "return only". Step four: run it, then paste the result where it will really live, such as Sheets, Notion, or a JSON validator. And step five: if anything breaks, send one targeted correction and note the fix in your Prompt Journal.
+
+Let's recap. Structured output saves reformatting time and makes errors easy to spot. Name your table columns, show JSON schemas, and give templates as empty skeletons. Always define what to write when information is missing, so the model doesn't guess. For A P I or automation work, use the tool's structured output feature where it's available. And fix drifting structure with specific corrections, rather than starting over.
+
+That's it for this lesson. Mark it complete, and I'll see you in the next one.

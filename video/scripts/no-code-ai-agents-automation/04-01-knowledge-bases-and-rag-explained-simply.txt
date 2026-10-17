@@ -1,0 +1,37 @@
+Welcome to No-Code AI Agents and Automation, module 4, lesson 1: Knowledge Bases and rag Explained Simply.
+
+A chatbot that answers customer questions is only useful if it answers from your information. Your prices, your policies, your product details. Not from whatever the AI happens to have learned. This lesson explains how that works, without the jargon overload.
+
+Let's start with the problem with a plain chatbot. Ask a general AI model, "What's the cancellation policy of Green Leaf Homestay in Coorg?" and one of two things happens. Either it says it doesn't know, or, worse, it invents a plausible-sounding policy. Models are trained on public internet data up to a certain date. They know nothing about your private documents, your latest price list, or the policy you changed last month.
+
+So how do businesses build bots that answer correctly about their own products? There are three broad approaches.
+
+Approach one is to put everything in the prompt. If your information is short, like a one-page FAQ, a price list or opening hours, you can simply include it in the bot's instructions. The lesson shows an example for Green Leaf Homestay. It tells the assistant to answer only using the information provided, and if the answer isn't there, to say it'll check with the owner and ask for the guest's phone number. Then it lists the facts. Check-in at one p m and check-out at eleven a m. A full refund up to seven days before arrival, and fifty percent within seven days. Pets allowed with prior approval. And so on. You'll find the full prompt in the lesson notes below this video.
+
+This works well, and it's surprisingly common. But it has limits. Long documents make every message more expensive and slower. And models can lose track of details buried in very long instructions.
+
+Approach two is retrieval-augmented generation, or rag. When you have lots of material, like a two-hundred-page product manual, fifty policy documents, or years of support tickets, you use rag. The name sounds complicated, but the idea is simple. Before answering, look up the few most relevant pieces of your documents, and then give only those to the AI along with the question.
+
+Think of it like an open-book exam. The student, which is the AI, doesn't memorise the textbook. For each question, they flip to the right pages and answer from them.
+
+Let's go through how rag works, step by step. There's a preparation phase, which you do once, and again whenever the documents change. Step one, collect your documents, like P D Fs, Google Docs, web pages and FAQs. Step two, split them into chunks, a few paragraphs each. Step three, embed each chunk. An embedding model turns the text into a list of numbers that represents its meaning. Chunks about similar topics get similar numbers. And step four, store the chunks and their numbers in a vector store, which is a database designed to find the closest meaning.
+
+Then there's question time. Step five, the user's question is also turned into numbers. Step six, the vector store finds the chunks whose meaning is closest to the question. Step seven, those chunks, plus the question, go to the AI, with instructions to answer only from them. And step eight, the AI writes the answer, ideally mentioning which document it came from.
+
+Here's the key insight. It searches by meaning, not by keywords. So a question like, "Can I bring my dog?" finds the chunk that says, "Pets allowed with prior approval," even though the word "dog" isn't in it.
+
+Now, rag reduces errors, but it doesn't eliminate them. Giving the model the right source text makes accurate answers much more likely. But it can still go wrong in three ways. First, retrieval misses, where the right chunk wasn't found. That could be poorly written documents, bad chunking, or the answer just isn't there. Second, outdated sources. Two versions of the price list exist, and the bot found the old one. And third, over-confident answers, where the model fills gaps instead of saying "I don't know."
+
+Most of the quality in a rag bot comes from clean, current, well-structured documents. Not from clever technology.
+
+Approach three is fine-tuning, and it's usually not what you need. Fine-tuning means further training a model on your own examples. People often assume they need it for a company chatbot. Usually, they don't. Fine-tuning is better for teaching a style or format than for teaching facts, and facts change. For business FAQ bots, the prompt approach or rag is the normal answer.
+
+So where will you meet rag in no-code tools? You'll rarely build it from scratch. It's built into many tools under friendlier names. First, custom assistants in chat apps. ChatGPT's custom GPTs, Claude Projects, Gemini Gems and similar features let you upload files as knowledge. Behind the scenes, the tool decides whether to include files directly or retrieve the relevant parts. These are great for internal team assistants. Second, chatbot builders. Many website and WhatsApp chatbot platforms let you upload documents, or point to your website's U R L, and they handle the retrieval for you. And third, automation tools. n eight n has vector store, embeddings and document loader nodes you can wire together, and Make and Zapier increasingly offer knowledge or AI chatbot features. These give you the most control.
+
+Now, preparing documents for a knowledge base. Whatever tool you use, the same five rules apply. One, keep one source of truth. Delete or archive old versions. Two price lists means wrong answers. Two, write in a question-friendly form. Clear headings, like "Cancellation policy" or "Delivery to Tier-two cities", help retrieval. Three, spell out the obvious. Things everyone in the office "just knows" are often written down nowhere. Four, turn tables and scanned images into clean text where you can. Scanned P D Fs often extract badly. And five, date your documents. Something like "Price list, updated October twenty twenty-six", so humans can spot stale content.
+
+Now, try it yourself. Spend fifteen to twenty minutes on this. Pause the video and give it a go. Step one, pick a small business you know, maybe yours, a family shop, or a client, and write a one-page FAQ. Ten to fifteen questions with clear answers about timings, prices, delivery, refunds and contact details. Step two, create a custom assistant in any chat tool that supports knowledge files, like a custom GPT or a Claude Project, and upload the FAQ. Step three, add an instruction: answer only from the document, and if the answer isn't found, say so and suggest contacting the business. Step four, ask it ten questions. Five that are answered in the FAQ, three that are phrased differently from the FAQ's wording, and two that aren't covered at all. And step five, note any wrong or invented answers. Is the cause the document, the instruction, or the retrieval?
+
+Let's recap. General AI models don't know your private business information, and they may invent answers. Short information can go directly in the prompt, while large document sets need rag. Rag means finding the most relevant chunks by meaning, and then answering only from them. Document quality, meaning one current source of truth and clear headings, drives most of a bot's accuracy. And fine-tuning is rarely the right tool for teaching a bot business facts.
+
+That's it for this lesson. Mark it complete, and I'll see you in the next one.

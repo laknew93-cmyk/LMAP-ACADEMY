@@ -1,0 +1,55 @@
+Welcome to AI in 60 Minutes, module 2, lesson 2: What Never to Paste into AI (and How to Fact-Check).
+
+AI assistants are useful. But they're not a locked diary, and they're not always right. This lesson covers the two habits that keep you safe. First, protecting what you share. And second, checking what you get back.
+
+Let's start with part one: what never to paste into AI.
+
+Anything you type into an AI chat is sent to the company's servers. Depending on your settings, it may be stored, reviewed for safety, or used to improve their models. So here's a simple rule to remember. If you wouldn't post it on a public notice board, don't paste it into a free AI chat.
+
+There are six types of information you should never share. The lesson notes have them in a table, but let's go through them. First, passwords and codes, like your email, banking or U P I passwords, your U P I PIN, and OTPs. Second, financial details, such as card numbers, CVV, bank account numbers and net banking IDs. Third, government IDs, like your Aadhaar number, PAN, passport number or voter ID. Fourth, health records, such as lab reports or prescriptions with your name on them. Fifth, other people's private data, for example a customer list with phone numbers, or an employee's salary slip. And sixth, confidential work material, like client contracts, unreleased plans and internal financials.
+
+Now, does that mean you can't get help with sensitive documents? Not at all. You can still get help with sensitive tasks. You just need to anonymise the document first, by removing or replacing identifying details before you paste it. There are three simple ways to do this. First, replace names with something like "Client A" or "Employee 1". Second, remove phone numbers, addresses, account numbers and ID numbers. And third, round or change exact figures if the precise number doesn't matter.
+
+Let's look at an example. Imagine an article assistant at a CA firm in Chennai who wants help rewording a reply to a notice. They can replace the client's name, PAN and G S T I N with placeholders, get the improved wording from the AI, and then put the real details back in afterwards.
+
+And if you're using AI at work, check your company's policy. Many companies have rules about which AI tools staff may use, and what data can go into them. Some even provide an approved business version. If you're unsure, ask before pasting anything work-related.
+
+Now let's move to part two: hallucinations, and how to catch them.
+
+In lesson one, you learned that AI can produce confident answers that are simply wrong. These are called hallucinations. They happen because the AI predicts likely-sounding text. It doesn't check facts the way a person would.
+
+So where are hallucinations most common? There are four areas to watch. First, specific numbers, like statistics, dates, prices, tax rates and interest rates. Second, names and sources, such as book titles, research papers, court judgments and website links. Third, recent events, like news, new rules, or changes that happened after the model's training. And fourth, niche local details, like a small shop's timings or a specific college's cut-off.
+
+There are also some warning signs to look out for. Be careful when you see very precise figures with no source. Watch out for a reference or link that you can't find when you search for it. Notice if an answer changes when you ask the same question again. And be wary of anything that sounds too neat, or too good to be true.
+
+That brings us to part three: a simple fact-check routine. Use this whenever an answer matters, especially for money, health, law, exams, or anything you'll share publicly. There are five steps.
+
+Step one. Ask for sources. You might say, "What are your sources for this? Which official website should I check?" Then visit those sources yourself.
+
+Step two. Verify on official sites. For tax rules, check the official income tax or G S T portals. For exam dates, check the board or university website. And for health, ask a qualified doctor.
+
+Step three. Cross-check with a second assistant. Ask Gemini what ChatGPT told you, or the other way around. Agreement isn't proof, but disagreement is a red flag.
+
+Step four. Ask the AI to doubt itself. Try asking, "Which parts of your answer are you least sure about?" It will often point out its weaker claims.
+
+And step five. Use a human expert for big decisions. AI can help you prepare better questions for your CA, doctor or lawyer, but it shouldn't replace them.
+
+Here's a handy prompt you can use after any answer. Here's the prompt: "Review your previous answer. List any facts, numbers or claims I should verify before relying on them, and suggest where I could check each one."
+
+Now it's time to try it yourself. This takes about ten to fifteen minutes, so pause the video whenever you need to.
+
+Step one. Open your AI assistant and check your privacy settings again. Have you decided on your chat history and model-improvement options?
+
+Step two. Take a real document or message you might want help with. Make an anonymised copy by replacing names, numbers and IDs with placeholders.
+
+Step three. Ask the AI a factual question in an area you know well, such as your city, your job, or your subject.
+
+Step four. Look for any errors in the answer. Then paste the review prompt from this lesson, and see what the AI flags.
+
+And step five. Verify one fact from the answer on an official website.
+
+Go ahead and pause the video now, and give it a try.
+
+Let's recap. Never paste passwords, OTPs, financial details, government IDs, or other people's private data. Anonymise documents by replacing names and numbers with placeholders before asking for help. Hallucinations are most common with numbers, sources, recent events and local details. For anything important, verify on official sites and consult a qualified person. And asking the AI which parts it's unsure about is a quick, useful check.
+
+That's it for this lesson. Mark it complete, and I'll see you in the next one.

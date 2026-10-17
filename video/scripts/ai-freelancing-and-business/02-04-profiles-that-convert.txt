@@ -1,0 +1,55 @@
+Welcome to Make Money with AI, module 2, lesson 4: Profiles That Convert: LinkedIn, Upwork, Fiverr and Instagram.
+
+Clients will look you up before they reply. Your LinkedIn, Upwork, Fiverr or Instagram profile is often their first impression. In this lesson, you'll build profiles that clearly say who you help and how, using AI to draft and yourself to make them genuine.
+
+Let's start with the one rule for every profile. Write for the client, not about yourself. "Passionate, hardworking, detail-oriented individual" says nothing a client can use. But "I help clinics answer patient WhatsApp queries faster with ready-made replies and F A Qs" tells them exactly why to keep reading.
+
+Every profile should answer four questions within a few seconds. First, who do you help? Second, what problem do you solve? Third, what proof do you have? And fourth, what should I do next?
+
+Let's go platform by platform, starting with LinkedIn. LinkedIn works well for reaching founders, managers, consultants, C A firms, H R teams and B to B businesses, both in India and abroad.
+
+Your headline appears next to your name everywhere. Use your niche statement, shortened. For example: "Content writer for C A and tax firms. Blogs, LinkedIn posts and newsletters."
+
+Structure your About section in short paragraphs. In the first line or two, say who you help and the problem you solve. In the middle, explain what you offer, how you work, including a line on AI plus human review, and your relevant background. And at the end, give a clear call to action, like "Message me here or email me for a sample."
+
+In your Featured section, pin your three portfolio pieces with short descriptions.
+
+And for activity, posting two or three times a week about your niche helps people remember you. Share practical tips, small lessons from projects, and before and after examples, with permission.
+
+Next, Upwork. Upwork is a marketplace where clients post jobs and freelancers send proposals. It suits writing, data, presentations, automation and transcription work for international clients.
+
+There are five key profile elements. Your title should be specific, like "Data Cleaning and Google Sheets Automation for Small Businesses". Your overview matters, because the first two lines show in search results, so make them count and speak to the client's problem. Your portfolio is where you upload your three pieces with case-study descriptions. If the platform offers specialised profiles, use one per niche rather than mixing everything. And set your rate based on the pricing lesson. You can adjust it per proposal.
+
+Upwork uses a credit system for submitting proposals, and charges service fees. These change, so check the current terms before you start.
+
+Now Fiverr. Fiverr flips the model. You create fixed-price "gigs", and buyers come to you. It suits clearly packaged services.
+
+A strong gig has five things. A specific title, like "I will write ten S E O-friendly product descriptions for your online store". Three packages matching your Basic, Standard and Premium tiers. Clear requirements, meaning what the buyer must provide before you start. Honest F A Qs, covering turnaround, revisions, how you use AI, and what's not included. And gig images, which are clean, readable thumbnails made in a design tool.
+
+Visibility on new accounts can be slow. Many freelancers use Fiverr alongside direct outreach rather than relying on it alone.
+
+Next, Instagram. Instagram matters most for visual services, like social media management, design and reels scripting, and for reaching local businesses. Your bio should have your niche statement, your location and a call to action, like "D M the word MENU for a free sample post". Your highlights can cover Services, Portfolio, Testimonials and F A Q. And your posts should show your work, explain your thinking, and share tips for your niche.
+
+What about WhatsApp? If clients contact you on WhatsApp, set up a WhatsApp Business profile with a business description, email, hours, and a catalogue of your service packages. We cover WhatsApp Business in depth in Module 5.
+
+Now, drafting profiles with AI. Feed the assistant your one-pager and portfolio, and then use the prompt in the lesson notes. It asks for five things: a LinkedIn headline under two hundred characters, a LinkedIn About section under two hundred and fifty words, an Upwork title with the first two lines of an overview, a Fiverr gig title starting with "I will", and an Instagram bio under a hundred and fifty characters. It asks for a friendly, clear, specific tone, with no buzzwords like "passionate", "synergy" or "results-driven", and tells the AI not to invent experience, numbers or clients. You'll find the full prompt in the lesson notes below this video.
+
+Then edit hard. Add a personal detail only you could write. For example: "I spent four years at the front desk of a Nashik clinic, so I know which questions patients ask most."
+
+A few words on your photo and basic credibility. Use a clear, friendly photo with good light. A phone camera is enough. Keep your name consistent across platforms. Add a professional email address, even a simple Gmail with your name. And don't buy followers, fake reviews or endorsements. Platforms detect them, and clients notice.
+
+Now, try it yourself. This takes about twenty minutes, so go ahead and pause the video.
+
+Step one. Choose the two platforms most relevant to your niche. For example, LinkedIn and Upwork for B to B writing, or Instagram and WhatsApp for local social media.
+
+Step two. Run the AI prompt with your one-pager.
+
+Step three. Edit the drafts. Remove buzzwords, add one specific personal detail, and check every claim is true.
+
+Step four. Update your headline or bio, and your About section or overview, on both platforms.
+
+Step five. Ask a friend to look at your profile for ten seconds and tell you what you do. If they can't, simplify.
+
+Let's recap. Every profile should quickly answer who you help, what you solve, what your proof is, and what the next step is. LinkedIn and Upwork suit B to B and international clients, Fiverr suits packaged services, and Instagram suits visual and local work. Use AI for first drafts, then add genuine personal detail and remove buzzwords. And never fake followers, reviews or experience.
+
+That's it for this lesson. Mark it complete, and I'll see you in the next one.

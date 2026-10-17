@@ -1,0 +1,41 @@
+Welcome to AI in 60 Minutes, module 1, lesson 1: What AI Chat Assistants Actually Are (and Aren't).
+
+Before you type your first prompt, it helps to know what's actually on the other side of the chat box. In this lesson, you'll get a simple, honest picture of AI chat assistants. What they're brilliant at, and where they can trip you up.
+
+So, what is ChatGPT, really? ChatGPT, Google Gemini and Claude are all AI chat assistants. You type a message in ordinary language, and they reply in ordinary language. Under the hood, each one runs on something called a large language model. That's a computer program trained on an enormous amount of text, like books, websites and articles.
+
+From all that reading, the model has learned patterns in how words, sentences and ideas fit together. When you ask a question, it predicts a helpful response, one piece at a time, based on those patterns. Here's the thing. It isn't looking up a single correct answer in a database. And it isn't a person thinking about your problem. It's a very capable pattern-matcher with a huge vocabulary.
+
+Here's a useful way to think of it. An AI assistant is like a fast, well-read assistant who has never met you, and who sometimes speaks too confidently.
+
+Now, let's look at what AI assistants are genuinely good at. Here's where they shine for everyday life in India. There are six big areas. First, drafting. For example, a leave application to your manager, or a polite reminder to a client about a pending payment. Second, summarising. Like turning a long circular from your child's school into five bullet points. Third, explaining. You could ask, "Explain GST input tax credit like I run a small kirana shop." Fourth, planning. Say, a weekly meal plan for a family of four on a budget. Fifth, rewriting. Making a rough WhatsApp message to a customer sound professional. And sixth, brainstorming. For example, ten Instagram caption ideas for a Pune home bakery's Diwali hampers. You'll find all of these laid out in a table in the lesson notes below this video.
+
+Notice something. None of these need the AI to be perfectly accurate about facts. They're all about words and structure. And that's exactly where these tools are strongest.
+
+So now, let's talk about what they are not.
+
+First, an AI assistant is not a search engine. Some assistants can search the web, but their core job is generating text, not finding verified facts. So if you ask for the current repo rate, or last week's train timings, double-check with an official source.
+
+Second, it's not always right. AI can produce answers that sound confident but are simply wrong. This is called a hallucination. It might invent a book title, a court case, or a statistic. We'll cover how to catch this in Module 2.
+
+Third, it's not a mind reader. The AI only knows what you tell it in the chat. If you ask it to "write an email to my boss," it doesn't know your boss's name, your company, or why you're writing. More context gives better answers. And you'll learn a simple formula for this soon.
+
+And fourth, it's not a replacement for your judgement. Think of AI as a first draft, not a final answer. Take Priya, a teacher in Nagpur. She uses AI to draft parent notices, and then she reads every line before sending. That habit is exactly right.
+
+So, ChatGPT, Gemini or Claude. Which one should you use? All three are capable, and all three have free versions. The differences change often, as the companies keep updating their tools. So don't worry about picking the best one. Here's a quick overview. ChatGPT, made by OpenAI, is the most widely known. Gemini, made by Google, works neatly if you already use Gmail and an Android phone. And Claude, made by Anthropic, is known for clear, careful writing.
+
+Pick one to start. The skills in this course work across all of them.
+
+Now it's time to try it yourself. This takes about ten minutes, and you don't even need an account yet. Feel free to pause the video and do this now.
+
+Step one. Think of three tasks from your last week that involved writing, reading or planning. For example, a message to your landlord, reading a long PDF, or planning a trip to Jaipur.
+
+Step two. Write them down, on paper or in your phone's notes app.
+
+Step three. Next to each one, mark whether it's mainly about words and structure, which is a good fit for AI, or about exact, current facts, which need checking.
+
+And step four. Keep this list. You'll use these real tasks in Lesson 3.
+
+Let's recap. AI chat assistants generate text by predicting patterns. They don't "know" things the way people do. They're excellent at drafting, summarising, explaining, planning and rewriting. They can sound confident and still be wrong, so always check important facts. The AI only knows what you tell it, so context matters. And finally, ChatGPT, Gemini and Claude all work for this course. Just pick one and start.
+
+That's it for this lesson. Mark it complete, and I'll see you in the next one.

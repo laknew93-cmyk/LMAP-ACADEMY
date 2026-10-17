@@ -1,0 +1,57 @@
+Welcome to AI Essentials, module 5, lesson 1: Tailoring Your Resume and Cover Letter.
+
+Sending the same resume to fifty jobs on Naukri and LinkedIn rarely works. Recruiters and screening software look for a match with the specific role. In this lesson, you'll use AI to tailor your resume and write a cover letter for a real job post, honestly and effectively.
+
+Let's start with the golden rule: AI tailors, it doesn't invent. AI can rephrase, reorganise and highlight your real experience. It must never add skills, degrees, job titles or achievements you don't have. Recruiters check, background verification is common in Indian companies, and interviewers will ask about anything on your resume. An invented line can cost you the job, even after an offer.
+
+So use this instruction in every resume prompt. Here's the prompt: "Do not add any skill, qualification, tool, employer or achievement that is not in my original resume. If something important for the job is missing, list it separately as a gap instead of adding it."
+
+Step one is to decode the job description. Before touching your resume, understand what the employer wants. Copy the full job post and ask the assistant to analyse it. The prompt asks for four things. One, the five most important skills or experiences they want, in order of priority. Two, keywords you should naturally include in your resume. Three, what the day-to-day work probably looks like. And four, any hidden expectations, like client handling, travel or shift timings. Then you paste the job description. This takes two minutes, and tells you exactly where to focus.
+
+Step two is to match your experience. Now paste your current resume along with the job description. Here's the prompt: "Compare my resume with this job description. Create a table with: requirement, evidence from my resume, quote it, and strength of match, strong, partial or missing. Then suggest which of my experiences I should highlight more."
+
+The "missing" rows are useful. Some gaps you can genuinely address. Perhaps you used Excel extensively but never mentioned it. Others you should acknowledge and, if relevant, plan to learn.
+
+Step three is to rewrite bullet points with impact. Most Indian resumes list duties, like "Responsible for handling customer queries." Strong resumes show results. So ask the AI to help. The prompt in the lesson notes asks the assistant to rewrite your resume bullet points to show impact, using strong action verbs, and including numbers only where you've provided them. Where a number would help but you haven't given one, it should add the placeholder "add number" in square brackets, so you can fill it in honestly. The example bullets are: responsible for handling customer queries, prepared monthly M I S reports, and coordinated with vendors for office supplies. The full prompt is in the lesson notes below this video.
+
+A possible result might be: "Resolved, add number, customer queries per day across phone and email." And then you fill in the real figure.
+
+Step four is to tailor the summary and skills. The top of your resume matters most. So ask for a tailored professional summary. Here's the prompt: "Write a 3-line professional summary for my resume, targeted at this Operations Executive role. Base it only on my real experience. Avoid cliches like 'hardworking team player' and 'result-oriented professional'."
+
+Then reorder your skills section so the most relevant ones come first. Use the employer's own wording where it truthfully applies to you. For example, "M I S reporting" instead of "making reports".
+
+Now let's look at some special situations.
+
+First, career returners. If you've taken a career break, for caregiving, health, relocation or family, you don't need to hide it. Ask AI to help you present it confidently. The example prompt in the lesson notes describes a four-year career break, from 2021 to 2025, for childcare, after six years as an accounts executive. During the break, the person managed household finances, completed an online G S T certification, and helped a brother's shop with bookkeeping part-time. It then asks how to present the break on the resume in two or three honest lines. You'll find the full prompt in the lesson notes below this video.
+
+Anjali, returning to work in Bengaluru after five years, used this approach. Instead of an unexplained gap, her resume showed a short, confident line about the break and the skills she'd kept up.
+
+Second, freshers. With little work experience, focus on projects, internships, college roles and certifications. Ask AI to help turn a final-year project or an internship into clear, specific bullet points.
+
+And third, government-exam aspirants moving to private jobs. Years of exam preparation build real skills. Discipline, structured study, current affairs, reasoning, and often subject knowledge in economics, polity or accounting. Ask AI to help translate these into private-sector language, honestly and without overselling, and to identify roles where they're relevant.
+
+Step five is the cover letter. Many Indian applications don't require a cover letter. But a short, specific one helps for roles you really want, for emails to H R, and for startups. The prompt in the lesson notes asks for a cover letter using your resume, with five rules. Under two hundred and fifty words. A first line about why this company and role specifically, using details from the job post. A middle with two specific examples from your experience that match their top requirements. A confident, polite closing. And no generic phrases like "I am writing to express my interest". Then you paste the job post and your resume. You'll find the full prompt in the lesson notes below this video.
+
+Then personalise it. Add one genuine sentence about why you want to work there, in your own words.
+
+A quick word on formatting and screening software. Many companies use applicant tracking systems that scan resumes. So keep the format simple. Clear headings, standard fonts, no tables or graphics for key information, and save as a P D F unless asked otherwise. AI is useful for checking keywords, not for designing fancy layouts.
+
+Time to try it yourself. This is a course project: a tailored resume and cover letter. Allow twenty minutes, or more for polishing. Pause the video and work through each step.
+
+Step one. Find a real job post on Naukri, LinkedIn, Indeed or a company careers page that you'd genuinely apply for.
+
+Step two. Run the job-description analysis prompt from step one of this lesson.
+
+Step three. Run the match table from step two with your current resume. Remove your phone number and address before pasting.
+
+Step four. Rewrite at least five bullet points with the impact prompt, filling in the "add number" placeholders with real figures.
+
+Step five. Write a tailored summary and reorder your skills.
+
+Step six. Generate a cover letter and add one personal sentence.
+
+And step seven. Read the final resume line by line. Is every word true? Save both documents, and save your best prompts as Prompts number 11 and 12 in your library.
+
+Let's recap. AI should tailor and sharpen your real experience, and never invent anything. Start by decoding the job description, then map your experience to it. Turn duties into impact statements, using real numbers only. Career breaks, fresher profiles and exam-prep years can all be presented honestly and confidently. And keep formatting simple for screening software, and personalise every cover letter.
+
+That's it for this lesson. Mark it complete, and I'll see you in the next one.

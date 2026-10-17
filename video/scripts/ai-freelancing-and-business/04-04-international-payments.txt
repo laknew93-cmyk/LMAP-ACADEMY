@@ -1,0 +1,49 @@
+Welcome to Make Money with AI, module 4, lesson 4: Receiving International Payments.
+
+Working with clients in the U S, U K, U A E, Australia or Europe opens up a bigger market. But getting paid across borders brings new questions. Which platform should you use? How much will you lose in fees? And what paperwork matters? This lesson explains the main options in plain terms.
+
+A quick note. Fees, limits and features of payment services change frequently, so always check each provider's current terms. And for tax and compliance questions, consult a C A.
+
+Let's start with how international payments generally work. When a foreign client pays you, money moves from their currency, say U S dollars, into Indian rupees in your bank account. Along the way, there are usually three costs. First, transfer or platform fees, charged by the payment service. Second, currency conversion. The rate you receive may differ from the rate you see on Google, and the difference is effectively a cost. And third, bank charges. Some banks charge for receiving foreign inward remittances.
+
+So compare the final rupee amount you receive, not just the headline fee.
+
+Now, the main ways to receive payment. There are three.
+
+The first is through freelance platforms. If you work on Upwork or Fiverr, clients pay the platform, and you withdraw your earnings to your Indian bank account or another supported method. The benefits are payment protection rules, and no need to chase invoices. The costs are platform service fees, plus withdrawal or conversion charges.
+
+The second is a direct bank transfer, also called a wire or SWIFT transfer. The client sends money directly to your Indian bank account using your bank details and SWIFT code. This is straightforward for larger amounts, but intermediary and receiving charges can apply, and it can take a few days.
+
+The third is payment and collection services. Several services let you receive international payments through local account details in the client's country, or via invoices they can pay by card or bank transfer. Commonly used options among Indian freelancers include PayPal, Payoneer, Wise, and India-focused export payment services such as Skydo. Each has different fee structures, speeds and documentation.
+
+There's a comparison table in the lesson notes, but here's what to check. The fees, meaning any fixed fee, percentage, and conversion margin. The speed, meaning how long until rupees reach your account. Client convenience, meaning whether the client can pay easily by their preferred method. Documentation, meaning whether you receive proper proof of inward remittance. Limits, meaning any per-transaction or monthly caps. And support, meaning how easy it is to resolve issues.
+
+You don't need all of them. Start with one or two that suit your clients.
+
+Next, proof of payment, and why it matters. For foreign income, keep proper documentation showing money came into India from abroad for services. Banks and payment services typically provide documents such as a F I R C, which is a Foreign Inward Remittance Certificate, or an equivalent advice. These can be important for three reasons. They show that your service qualifies as an export, which is relevant for G S T, as we saw in the previous lesson. They support your income tax records. And they help you answer any bank queries.
+
+Your bank may ask for the purpose of remittance when money arrives. Choose the purpose that accurately describes your service. If you're unsure, ask your bank or C A.
+
+Now, invoicing international clients. Quote and invoice in the client's currency, commonly U S dollars, pounds, euros, Australian dollars or dirhams. Include your full name and address, and the client's full details. Describe the services clearly. State the payment method and terms. And if you're G S T-registered and exporting under an L U T, your C A can tell you what wording the invoice needs.
+
+Next, protecting yourself with international clients. International work has its own risks, so here are six safeguards. Take an advance for direct, off-platform clients, especially new ones. Use milestones for longer projects, so you're paid per stage completed. Be wary of overpayment scams. That's where a "client" sends more than the invoice amount and asks you to refund the difference. The original payment often turns out to be fraudulent, and gets reversed. Never share the login credentials of your bank or payment accounts. Avoid unusual payment methods, like gift cards or crypto, from unknown clients. And keep platform clients on the platform until there's a clear, legitimate reason to move. Check platform rules first, because many platforms prohibit taking clients off-platform for a period.
+
+Payment is also easier when the relationship is smooth, so let's talk about time zones and communication. State your working hours in the client's time zone. Use shared calendars for calls. Send short end-of-day updates when you're working on active projects. And use AI to polish important messages, but keep them natural. Here's the prompt: "Rewrite this message to a U S client in clear, friendly, professional English. Keep it short and keep my meaning exactly the same." Then you paste in your message.
+
+You can also use AI to compare your payment options. The prompt in the lesson notes tells the AI roughly how much you receive each month and which countries your clients are in. It asks it to explain the factors to compare between platform withdrawals, bank wires and payment services, and to give you a checklist of questions to ask each provider. Importantly, it tells the AI not to quote specific fees, because you'll check current fees yourself. You'll find the full prompt in the lesson notes below this video.
+
+Now, try it yourself. This takes about fifteen minutes, so pause the video and get going.
+
+Step one. Check whether your bank account can receive international payments, and what documents it provides for inward remittances. Most bank websites have an F A Q on this.
+
+Step two. Choose two payment services, and note their current fees, speed and documentation from their official websites.
+
+Step three. Calculate how many rupees you'd actually receive for an example two-hundred-dollar payment through each option.
+
+Step four. Update your invoice template with a version for international clients.
+
+Step five. Write a short "payment terms" paragraph for international proposals, covering the advance, milestones and payment method.
+
+Let's recap. Compare final rupee amounts, accounting for fees and conversion margins. The main options are platform withdrawals, bank wires, and international payment services. Keep proof of inward remittance, such as a F I R C, for G S T and income tax purposes. And protect yourself with advances, milestones, and awareness of overpayment scams.
+
+That's it for this lesson. Mark it complete, and I'll see you in the next one.

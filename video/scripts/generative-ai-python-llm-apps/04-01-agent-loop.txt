@@ -1,0 +1,41 @@
+Welcome to Generative AI Mastery, module 4, lesson 1: The Agent Loop: Tools, Steps and Limits.
+
+In module 2 you handled one round of tool use. An agent is simply that round in a loop. The model calls a tool, sees the result, decides what to do next, and keeps going until the task is done. In this lesson, you'll write that loop yourself, with the safety limits every production agent needs.
+
+So what makes something an agent? There's a lot of hype around the word. Here's a practical definition. An agent is an L L M that decides, step by step, which tools to call and when it has finished, based on the results it has seen so far.
+
+Compare that with a workflow, where your code fixes the steps in advance. For example, retrieve, then answer. Or extract, then validate. Workflows are predictable and cheap. Agents are flexible, but they cost more, take longer and are harder to test. You'll learn how to choose between them in lesson four point three.
+
+Let's look at the loop itself, in plain words. Start with the user's question in a message list. Then, up to some maximum number of times, send the messages and tools to the model. If it doesn't ask for tools, return its answer. Otherwise, run each requested tool, add the assistant turn and the tool results to the messages, and go around again. If you hit the maximum, stop and report that the step limit was reached. The outline is in the lesson notes below the video.
+
+Now let's build a reusable agent function in its own agent file. It takes a question, a system prompt, the tool definitions, and a dictionary mapping each tool name to a real Python function, plus a maximum step count that defaults to eight and a verbose switch. Because tools and functions are passed in, you can reuse it for any project.
+
+Here's what happens inside. On each step, it calls the model and appends the full assistant response to the messages. If the stop reason is anything other than tool use, the model is done, so the function joins the text into the final answer, notes if it was truncated for running out of tokens, and returns it.
+
+If the model did ask for tools, the function handles each request. With verbose on, it prints the step, tool name and inputs. It looks up the matching Python function and calls it. If the tool is unknown or throws an exception, the error becomes a message rather than a crash. Each result is cut to at most twenty thousand characters, flagged as an error or not, and sent back to the model as the next turn. If steps run out, it returns a message saying the step limit was reached. The full code is in the lesson notes below the video.
+
+Let's go through the details that matter. First, the step limit is your circuit breaker. Without it, a confused agent can loop for dozens of calls and burn your budget, so every agent you ship needs one.
+
+Second, the stop reason check is the exit condition. When the model stops asking for tools, its text is the final answer, and we flag truncation rather than silently returning half an answer.
+
+Third, the assistant turn is appended in full, including tool requests and reasoning blocks, exactly as in module 2.
+
+Fourth, exceptions become tool results with the error flag set. The model often recovers on its own, for example by fixing a wrong column name and trying again. That self correction is one of the main benefits of agents.
+
+Fifth, the twenty thousand character cap is a safety net. A tool returning a two megabyte C S V would blow up your context and cost, so design tools to return small, summarised results.
+
+And sixth, verbose prints each step. Watching the trace is how you debug agents. In production, log it instead.
+
+Now let's try it with two simple tools. One counts the days from today until a given date. The other calculates G S T from an amount in rupees and a rate in percent, returning the tax and the total. A list of tool definitions describes each one's name, purpose and inputs to the model. Then the agent gets this question: a laptop costs sixty two thousand rupees before eighteen percent G S T. What's the total, and how many days are left until December thirty first, twenty twenty six, when the offer ends? The system prompt says, "You are a precise assistant. Use tools for all date and money maths." The code is in the lesson notes below the video.
+
+You should see two tool calls, possibly in the same step, since the model can request several tools at once, followed by a final answer combining both results. Notice the system prompt says to use tools for all maths. L L Ms can do arithmetic, but tools make it exact and auditable.
+
+Next, the S D K tool runner. Writing the loop yourself is the best way to understand agents and gives you full control. But the Anthropic Python S D K also has a beta tool runner that runs the loop for you. You decorate plain functions, their type hints and docstrings become the schema, and you call the runner. It's a good choice once you understand what it automates. Frameworks such as LangGraph, LlamaIndex and the OpenAI Agents S D K offer similar loops with more features. Still, in interviews, explaining the raw loop impresses more than naming frameworks.
+
+Let's talk about the cost and latency of agents. Each step is a full A P I call that resends the growing conversation, so a six step agent might use several times the tokens of a single rag answer. The notes list practical controls. The step limit caps calls per task. Small tool outputs mean fewer input tokens on every later step. Lower effort for simple agents means less reasoning per step. Prompt caching, from module 5, makes the repeated system prompt and tool definitions cheaper. And clear tool descriptions mean fewer wasted or wrong calls.
+
+Now it's time to try it yourself. This takes about twenty minutes, so pause the video and work through it. First, save your agent file and run the laptop example. Read the step trace. Second, ask a question that needs several tool calls, such as: "What's the G S T at twelve percent on forty five hundred rupees, and how many days until Republic Day, January twenty sixth, twenty twenty seven?" Third, put an invalid date format in your question, with the day first, and watch the agent handle the error and retry. Fourth, set the maximum steps to one and observe what happens, then restore it. And fifth, add a third tool that writes an amount in Indian words, using lakh and crore, and ask for an invoice total in words.
+
+Let's recap. An agent is a tool use round in a loop, where the model decides the next step and when to stop. Always set a step limit and cap the tool output size. Turn exceptions into error tool results so the agent can self correct. Log every step, because traces are how you debug agents. And agents multiply tokens and latency, so control them deliberately.
+
+That's it for this lesson. Mark it complete, and I'll see you in the next one.

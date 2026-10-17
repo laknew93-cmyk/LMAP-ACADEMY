@@ -1,0 +1,37 @@
+Welcome to AI for Content Creation and Personal Branding, module 2, lesson 1: LinkedIn Posts That Sound Like You.
+
+LinkedIn is where Indian professionals get noticed by recruiters, clients and collaborators. Its posts reward clear thinking and real experience. In this lesson, you'll learn a repeatable structure for LinkedIn posts, and a workflow to draft them with AI without sounding like everyone else.
+
+Let's start with how LinkedIn posts are actually read. Most people see your post in a feed, on a phone, in between other things. Only the first two or three lines show before the "see more" cut-off. That means four things. First, the opening lines decide whether anyone reads the rest. Second, short paragraphs and white space make it readable on mobile. Third, the post should deliver one clear idea, not five. And fourth, comments and saves from relevant people matter more than likes from strangers.
+
+LinkedIn changes how its feed works from time to time. So avoid chasing tricks like "never post links" or "post at exactly eight forty-seven a m". Focus on what consistently works. Useful, specific, readable posts for a defined audience.
+
+Now here's a simple post structure. Most strong LinkedIn posts follow a pattern with five parts. First, the hook. One or two lines that create curiosity or state a strong point. Second, context. The situation, problem or story. Third, insight. What you learned or what you recommend. Fourth, specifics. Steps, examples, numbers or a short list. And fifth, the close. A takeaway line, a question, or an invitation.
+
+Let's look at an example from Arjun, an HR manager in Gurugram. His post opens with, "I rejected a candidate with a perfect resume last week." Then he explains it wasn't about skills. Every answer sounded memorised. When he asked about a project that went wrong, she said she was a perfectionist and moved on. Then he shares three things he wishes more freshers knew. Interviewers trust you more when you admit a real mistake. The story matters less than what you changed afterwards. And "I don't know, but here's how I'd find out" is a good answer. He closes with, "Your resume gets you the interview. Your honesty gets you the offer." You'll find the full post in the lesson notes below this video.
+
+Notice what makes it work. A real situation, a clear opinion, practical points, and no filler.
+
+There are five post types you can rotate. A story post builds trust and memorability. For example, "My first client in Surat paid me in sarees. Here's what that taught me." A how-to post shows expertise, like "How I prepare for a client pitch in thirty minutes." An opinion post sets you apart, like "Most personal branding advice is bad for introverts." A lessons list is easy to save and share, like "Seven things I learnt after ten years in pharma sales." And a celebration with substance shares wins without bragging. For example, "We just finished our hundredth G S T audit. The most common error surprised me." The table is in the lesson notes.
+
+Now let's get into the AI drafting workflow. Don't ask AI to "write a viral LinkedIn post about leadership". Instead, give it your raw material and your constraints. There are four steps.
+
+Step one is the brain dump. Write or voice-type everything you know about the idea. The story, what happened, what you think. It can be messy. Two hundred words of rough notes are enough.
+
+Step two is the structured draft. Paste your voice guide, then use the drafting prompt. It asks the AI to turn your notes into a LinkedIn post of one hundred and twenty to two hundred words. It should follow the hook, context, insight, specifics, close structure. Keep your real details and phrasing wherever possible. Use short paragraphs of one to two lines for mobile reading. No hashtags in the body, and a maximum of one emoji, or none. And it must not add any facts, numbers or claims that aren't in your notes. You'll find the full prompt in the lesson notes below this video.
+
+That last instruction, don't add any facts not in my notes, stops the AI from inventing statistics to sound convincing.
+
+Step three is hook options. Ask for ten alternative opening lines in different styles. A surprising statement. A specific number from the notes. A short story opener. A contrarian opinion. A question. Then pick one, or combine two.
+
+Step four is the human edit. Read the draft out loud. Cut anything you wouldn't say in conversation. Add one detail only you would know. The name of the town, what the client said, how you felt. And delete the final line if it's a generic question.
+
+Let's talk about hashtags, tags and timing. Use a few relevant hashtags at the end if you like, but they're not a growth strategy. Tag people only when they're genuinely part of the story and would be happy to be tagged. And post when your audience is likely to be on LinkedIn. For many Indian professional audiences, that's working-day mornings or lunch breaks. But test this against your own analytics, rather than relying on general advice.
+
+Here's the thing. Engagement is part of the post. Spend fifteen minutes after posting replying thoughtfully to comments. Also leave useful comments on posts by others in your niche. A considered comment on a respected person's post can introduce you to more of the right people than your own post. You can ask AI to help you think of a useful angle for a comment. But write the comment yourself. Templated AI comments are easy to spot.
+
+Now it's time to try it yourself. In fifteen to twenty minutes, you'll draft the first of the three posts for Project 3. Pause the video and work through these steps. One. Choose a story or experience idea from your content calendar. Two. Write a brain dump of one hundred and fifty to two hundred and fifty words in your own words. Three. Run the drafting prompt with your voice guide. Four. Generate ten hook options, and choose or combine the best. Five. Edit by reading out loud. Add one specific detail and remove anything generic. And six. Save the final draft in your calendar spreadsheet with the status "drafted". You'll write two more posts in the next lesson's exercise.
+
+Let's recap. The first two lines decide whether your LinkedIn post is read, so write them last and with care. Use the hook, context, insight, specifics, close structure for clarity. Rotate story, how-to, opinion, lessons and celebration posts. Give AI your raw notes, and forbid it from adding facts you didn't supply. And remember, replying to comments and commenting on others' posts is part of building your presence.
+
+That's it for this lesson. Mark it complete, and I'll see you in the next one.

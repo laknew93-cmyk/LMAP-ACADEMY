@@ -1,0 +1,41 @@
+Welcome to No-Code AI Agents and Automation, module 5, lesson 1: Testing, Monitoring and Failure Handling.
+
+A workflow that works in your demo isn't the same as one a business can depend on. This lesson gives you a practical routine for testing before launch, monitoring after launch, and handling the failures that will inevitably happen.
+
+So why do AI workflows need extra care? Traditional automations are predictable. Same input, same output. But once you add AI steps, outputs can vary slightly between runs. And a model update by the provider can subtly change behaviour. Add in third-party A P Is, expiring logins, and humans renaming sheet columns, and you've got lots of ways for things to quietly go wrong. The goal isn't perfection. It's finding out fast, and recovering cleanly.
+
+Let's start with testing before launch. There are four parts to this.
+
+Part one, build a test set. You started this in Projects one to three. A good test set is a sheet with columns for the input, the expected result, the actual result, whether it passed, and notes. The lesson notes show a few example rows. A message like "Need S E O for my Nashik clinic, thirty thousand rupees a month" should come out as hot. "Internship available?" should be not a lead. And an empty message with a valid phone should go to review.
+
+Your test set should include four kinds of input. Happy paths, meaning typical, clean inputs. Edge cases, like empty fields, very long messages, Hindi, Hinglish or Tamil text, emojis, and unusual number formats. Adversarial inputs, like prompt-injection attempts, spam, and abusive messages. And volume, meaning thirty to fifty items at once, to reveal rate limits and duplicates.
+
+Part two, test each step, then the whole flow. Most tools let you run a single step with sample data. So test the steps in isolation first, and then run end-to-end. For AI steps, run each test input two or three times. If results flip between runs, tighten the prompt or lower the temperature.
+
+Part three, use a sandbox for outbound actions. During testing, send emails and WhatsApp messages to yourself, not to customers. Here's a common trick. Put a "TEST MODE" variable at the top of the workflow. When it's on, all outbound messages go to your own address or number. Turn it off only at launch.
+
+Part four, re-test after every change. Changed the prompt? Switched to a cheaper model? Re-run the test set. This is the habit that separates professionals from hobbyists. A five-minute regression check prevents a week of wrong labels.
+
+Next, launch gradually. Don't flip everything on at once. There are three stages. First, shadow mode, for a few days. The workflow runs and logs what it would do, but humans keep working as before, and you compare. Second, assisted mode. The workflow acts, but outbound messages are drafts, or need approval. And third, automatic mode, only for steps that have proved reliable, and only for low-risk actions.
+
+Many workflows should stay in assisted mode permanently for anything customer-facing. And that's fine.
+
+Now, monitoring after launch. First, you need to know when it fails. Every workflow should alert someone on failure, by email, Slack, Telegram or WhatsApp, including the workflow name, the failed step, and the error message. And set up a central error workflow. In n eight n, you can set a single error workflow for many workflows, and Make and Zapier have their own error notification settings. That gives you one place to receive all your alerts.
+
+But you also need to know when it silently stops. Here's the thing. The most dangerous failure is no failure at all. The trigger stops firing because a login expired, or a form got replaced, and nothing alerts you, because nothing ran. There are two defences. First, a heartbeat check. That's a daily scheduled workflow that asks, "Did the lead workflow log at least one row in the last twenty-four hours?" If not, it alerts you. Adjust the window to the normal volume. And second, a daily summary. A short message like, "Yesterday: forty-two leads processed, three to review, zero errors." That way, a missing summary is itself a signal.
+
+And watch quality, not just uptime. A workflow can run "successfully" while producing bad results. So track four things. One, the review rate. How many items fell into review or hand-off? A sudden jump means something changed. Two, human corrections. Add a "Correct?" column that staff can tick for a sample of items each week. Three, the category distribution. If hot leads go from fifteen percent to sixty percent overnight, either the prompt or the input changed. And four, costs. Check your AI provider usage weekly. Spikes usually mean loops, or unexpected volume.
+
+Now, handling failures. Start with a failure playbook. Write a short playbook for each client workflow. The lesson has an example for Kavya Digital's lead qualification workflow, and you'll find it in the lesson notes below the video. It says that when an error alert arrives, first, open the run history, find the failed run, and note the failed step. Second, if it's a temporary error, like a timeout, a four two nine, or a five hundred series error, just re-run it. Third, if it's an authentication error, like a four oh one or four oh three, or "token expired", reconnect the account in credentials, then re-run. Fourth, if it's a data error, fix the data in the review sheet, then re-run. And fifth, if it's unknown, pause the workflow, tell Kavya that leads will be handled manually today, and investigate. And because leads are always saved to the sheet before the AI steps, nothing is lost.
+
+Let's decode the common errors. There's a table in the lesson notes. A four oh one or four oh three usually means a login or key is invalid, expired, or lacking permission, so reconnect or check the key's permissions. A four oh four means an item, sheet or endpoint wasn't found, because it was renamed or deleted, so update the reference. A four two nine is a rate limit, so retry with a delay, and batch. A five hundred series error is a problem on the provider's side, so retry later. And a parse or JSON error means the AI returned malformed output, so use structured output mode and a fallback branch.
+
+Then there's recovery and replay. Most tools let you re-run failed executions. And because you designed your steps to be safe to repeat, with find-or-create patterns and "sent" flags, replaying is safe. Keep the review, or dead-letter, sheet as your safety net for anything that can't be replayed automatically.
+
+Finally, documentation and handover. For every workflow you build for a client, keep a one-page document. It covers the purpose, the trigger, the steps, the credentials used, by name only and never the keys themselves, where the logs are, who gets alerts, the failure playbook, and the date of the last test. Future you will be grateful, and so will the client's next hire.
+
+Now, try it yourself. Harden one of your projects in about twenty minutes. Pause the video and work through these. Step one, expand its test set to twenty rows, including edge cases and two adversarial inputs, and run it. Step two, add a TEST MODE switch that redirects outbound messages to you. Step three, set up error notifications and a daily heartbeat check. Step four, write a one-page failure playbook for the workflow. And step five, deliberately break something. Rename a sheet column, or revoke a connection, and confirm that you get alerted.
+
+Let's recap. Build a test set with happy paths, edge cases and adversarial inputs, and re-run it after every change. Launch in stages: shadow, then assisted, then automatic for low-risk steps only. Monitor for errors, for silent stops using heartbeat checks, for quality drift, and for cost spikes. Keep a written failure playbook, and design for safe replay. And document every client workflow on one page, without ever writing down secrets.
+
+That's it for this lesson. Mark it complete, and I'll see you in the next one.

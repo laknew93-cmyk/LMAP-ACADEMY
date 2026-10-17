@@ -1,0 +1,69 @@
+Welcome to Make Money with AI, module 3, lesson 3: Cold Outreach That Respects People.
+
+Cold outreach means contacting people who haven't asked to hear from you. Done badly, it's spam. Done well, it's a helpful, respectful note that starts a conversation. In this lesson, you'll write ten genuinely personalised outreach messages. That's the second half of Project 3.
+
+Let's start with the principles of respectful outreach. There are six.
+
+First, research first. Spend a few minutes understanding the business before you write.
+
+Second, lead with something useful. An observation, a small idea, or a free tip. Not a sales pitch.
+
+Third, keep it short. Three to six sentences. Busy people skim.
+
+Fourth, make one small ask. "Would it help if I sent two sample captions?" is easier to accept than "Shall we get on a call to discuss a retainer?"
+
+Fifth, respect "no" and silence. Follow up once or twice at most, then stop.
+
+And sixth, use appropriate channels. LinkedIn messages, business email addresses, and Instagram D Ms to business accounts are generally acceptable. Bulk WhatsApp messages to strangers are not.
+
+Now, the anatomy of a good outreach message. It has five parts. A personal observation, like "I noticed" something specific about their business. Relevance, meaning "I help" your niche with your service. Value, which is one specific, useful idea. A small ask, like "Would you like me to" make a small, low-risk offer. And an easy exit, such as "No worries if the timing isn't right."
+
+Let's look at some examples.
+
+First, a LinkedIn message to a C A firm in Chennai. Here's the message: "Hi Ramesh, I read your post on new T D S changes. It was clear and practical. I write blogs and LinkedIn content for C A firms. One idea: your website F A Q could answer the three questions you mentioned clients keep asking, which may save your team calls. Would a short sample F A Q draft be useful? Happy either way."
+
+Second, an Instagram D M to a cafe in Indore. Here's the message: "Hi! Love the new cold coffee menu. The photos look great. I noticed the last few posts don't mention your timings or location, which customers often look for. I manage Instagram for local cafes. Would you like two free sample captions for your next posts? No obligation."
+
+And third, an email to an international e-commerce store, with the subject line "Quick idea for your product pages". Here's the email: "Hi Sarah, I was browsing your handmade candle store. Lovely range. A few product pages have one-line descriptions, which may leave buyers unsure about burn time and scent strength. I write product descriptions for small online stores. Would you like me to rewrite one page as a free sample? Best, Arjun."
+
+Notice what these do. They mention something real, offer a concrete idea, and ask for something small.
+
+Now, using AI for research and personalisation. AI can help you go from research notes to a first draft quickly. But the research itself, like visiting their profile and reading their posts, you must do. AI can't reliably know the current state of a specific business. There are three steps.
+
+Step one: collect notes. For each prospect, write three to five bullet points. What they sell, something you liked, a gap or opportunity you noticed, and their likely priority.
+
+Step two: draft. The prompt in the lesson notes asks the AI to write a cold outreach message for your chosen channel, using your notes. It follows the structure we just covered: personal observation, relevance, one useful idea, small ask, and easy exit. It sets a limit of eighty words in warm, plain English, with no fake-sounding flattery, no "I hope this finds you well", and no claims about results you can't guarantee. You add your one-line niche statement and your prospect notes. You'll find the full prompt in the lesson notes below this video.
+
+Step three: edit. Make sure the observation is accurate and in your voice. Shorten it further if you can.
+
+Never send AI drafts without reading them. One message referencing the wrong product or business name ruins your credibility.
+
+Next, follow-ups. Many replies come after a follow-up, because people are busy, not uninterested. Here's a simple sequence. On day zero, send your first message. On day four or five, send a short follow-up that adds one new piece of value. And on day ten to fourteen, send a final, gracious note.
+
+Here's an example of the first follow-up: "Hi Ramesh, just following up in case this got buried. I've drafted a sample F A Q answer on the T D S question. Happy to share if useful."
+
+And here's the final note: "Hi Ramesh, I won't keep messaging. If content support is ever useful for your firm, I'm here. Wishing you a smooth filing season!"
+
+Then stop. Mark them "closed" in your tracker and move on.
+
+So what should you expect? Reply rates vary a lot with niche, channel and message quality. Many messages will go unanswered, and that's normal. Track your numbers so you can improve. If nobody replies, rework your observation and offer. If people reply but don't buy, revisit your pricing or proposal.
+
+Now, try it yourself. Allow about twenty minutes for the first five messages, then repeat for the next five. Pause the video and follow along.
+
+Step one. From your tracker sheet from Lesson 3.1, pick ten prospects that fit your niche.
+
+Step two. For each one, spend two to three minutes researching, and write three to five bullet points of notes.
+
+Step three. Use the AI prompt to create first drafts.
+
+Step four. Edit each one by hand. Check the business name, the observation and the offer.
+
+Step five. Read all ten side by side. If any two are nearly identical apart from the name, personalise them more.
+
+Step six. Save them in a document titled "Outreach batch 1". Together with your proposal template, this completes Project 3.
+
+Step seven. Send them over the coming week as part of your routine, and log each one in your tracker.
+
+Let's recap. Respectful outreach is researched, short and useful, and it makes one small ask. Do the research yourself, then use AI to turn your notes into a draft, and edit it carefully. Follow up at most twice, then stop gracefully. And track replies and outcomes so you can improve your message over time.
+
+That's it for this lesson. Mark it complete, and I'll see you in the next one.

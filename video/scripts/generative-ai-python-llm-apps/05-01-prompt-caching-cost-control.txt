@@ -1,0 +1,37 @@
+Welcome to Generative AI Mastery, module 5, lesson 1: Prompt Caching and Cost Control.
+
+A prototype that costs a few rupees a day can cost lakhs a month at scale. Companies hiring Gen AI engineers care deeply about this. And "I cut our L L M bill significantly without hurting quality" is one of the strongest lines you can put on a resume. Let's go through the main levers.
+
+Step zero is to measure. You can't optimise what you don't measure. So log token usage for every request, with a label for the feature.
+
+The code is in the lesson notes below the video. A small helper takes a feature name and a model response, and writes one log line. That line records the feature, the model, the input and output tokens, and two caching numbers: tokens written to the cache, and tokens read from it.
+
+After a day of traffic, you can answer two questions. Which feature uses the most tokens? And is it input, like long prompts and big documents, or output, like long answers and heavy reasoning? The answer decides which lever to pull.
+
+You can also count tokens before sending, to check whether a document fits or to estimate cost. The second code block counts the tokens in a system prompt plus a full policy file, and prints the total. Different models can use different tokenizers, so count with the model you'll actually call. Multiply by the per-token price on the provider's pricing page to estimate cost. Prices change, so check the current page.
+
+Now, prompt caching. Many apps send the same large prefix over and over: a long system prompt, tool definitions, a policy document, or few-shot examples. Prompt caching lets the provider store that processed prefix for a short time. Later requests that start with the identical prefix are billed at a much lower rate for those tokens, and usually respond faster.
+
+In the example in the notes, the system prompt has two parts: a short instruction to answer questions about an H R policy and cite section numbers, then the long policy itself, carrying a cache control marker. An ask function sends each question and logs the usage. The first question, about casual leaves, writes the cache. A second question a few minutes later, about a work-from-home allowance, reads it.
+
+How does it work? First, the cache control marker sets the end of the prefix to cache. Everything before and including that block is cached, in the order tools, then system, then messages. Second, the first request pays a little extra to write the cache. Later requests with the same prefix show cache read tokens instead, billed at a fraction of the normal input price. Third, the default cache lifetime is a few minutes, refreshed each time it's used, so a busy app keeps it warm. A longer lifetime option exists for less frequent traffic. And fourth, for simple cases, you can pass cache control as a top-level argument instead, and the S D K caches up to the last cacheable block automatically.
+
+Now, the rules that make or break caching. Caching is an exact prefix match. One changed character early in the prompt invalidates everything after it. The table in the notes lists common mistakes. Putting today's date or time in the system prompt? Move volatile information into the user message, after the cached part. The user's name at the top of the system prompt? Move personalisation to the end. Tool lists built in a different order each time? Keep tool definitions in a fixed order. J S O N serialised with unsorted keys? Sort the keys. And a prefix that's too short, below a model-specific minimum, means caching silently does nothing.
+
+Always verify. If the cache read count stays at zero on repeated requests, something in your prefix is changing. In multi-turn chat, the history is a growing prefix, so each new turn can reuse cached earlier turns.
+
+Next, right-size the model and the effort. For classification, routing and simple extraction, start with a smaller, faster model and low effort. For rag answers over clean documents, try a mid-tier model at low or medium effort. For complex agents, tricky reasoning and code generation, use the most capable model at higher effort.
+
+Because the model name comes from an environment variable, you can run your evaluation set from module 3 against a cheaper model or lower effort and compare. Only downgrade where the eval scores hold. And judge cost per completed task, not per request. A cheaper setting that needs more retries or agent steps may not be cheaper overall.
+
+A common architecture is routing. A fast, cheap call classifies the request, say simple F A Q versus complex analysis, then sends it to the appropriate model.
+
+There are other levers too. Cap output by asking for concise answers in the prompt, like "max 120 words", rather than relying on a tiny max tokens setting, which just truncates. Retrieve less: in rag, fewer and smaller chunks cut input tokens on every question, so use your hit-rate eval to find the smallest number of chunks that works. Trim old conversation history. Use batch processing for non-urgent bulk jobs, like classifying fifty thousand support tickets overnight. The Message Batches A P I processes requests asynchronously, typically within hours, at a discount. And cache your own results. If many users ask identical questions, like "What are the office hours?", store answers in Redis or a database, keyed by a normalised question.
+
+Here's a worked example. Your H R bot sends a twenty thousand token policy with every question, and gets two thousand questions a day. Without caching, that's forty million input tokens a day just for the policy. With caching and steady traffic, most of those become cache reads at a fraction of the price. Add a smaller model for greetings, and the bill can fall substantially. The exact saving depends on your traffic and current prices, which is why you measure before and after.
+
+Now it's your turn. This takes about twenty minutes, so pause the video. One: add the usage logger to your rag or H R bot, run ten questions, and note average input and output tokens. Two: count tokens on your largest document. Three: put a long, stable document in the system prompt with cache control, ask three questions within a couple of minutes, and confirm cache reads are above zero from the second call. Four: deliberately add the current date and time to the start of the system prompt, rerun, and watch cache reads drop to zero. Then remove it. Five: run your evaluation set at two effort levels, and record score, average tokens and average latency in a small table.
+
+Let's recap. Log tokens per feature first, because it tells you which lever to pull. Prompt caching cuts the cost of repeated prefixes, but only with an exactly identical prefix. Keep stable content first and volatile content last, and verify with the cache read count. Match model and effort to the task, and prove downgrades with your eval set. And use batching, smaller retrieval, trimmed history and result caching for further savings.
+
+That's it for this lesson. Mark it complete, and I'll see you in the next one.

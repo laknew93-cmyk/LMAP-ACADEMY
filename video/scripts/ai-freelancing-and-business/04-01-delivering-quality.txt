@@ -1,0 +1,45 @@
+Welcome to Make Money with AI, module 4, lesson 1: Delivering Quality Work Clients Trust.
+
+Winning a client is the start, not the finish. Repeat work, referrals and testimonials all come from how you deliver. This lesson covers the delivery process from kickoff to handover, with AI helping at each stage and you staying firmly in charge of quality.
+
+Let's start with the delivery lifecycle. Every project, big or small, follows roughly the same path, in seven stages. First, kickoff, where you understand the brief and collect inputs. Second, plan, where you agree on what will be delivered and when. Third, produce, where you create the work. Fourth, quality check, where you review, verify and polish. Fifth, deliver, where you hand over clearly. Sixth, revise, where you handle feedback within agreed limits. And seventh, close, with final files, the invoice, and a testimonial request.
+
+Let's go through them, starting with kickoff, and asking better questions. Most project problems start with a misunderstood brief. A short kickoff call or questionnaire prevents this, and AI can help you prepare. Here's the prompt: "I'm starting a, your service, project for, your client type. Create a kickoff questionnaire of ten to twelve questions covering goals, audience, tone, examples they like and dislike, must-include facts, deadlines, approval process, and who gives final sign-off."
+
+Edit the list, then send it via Google Form or go through it on a call. Record the answers in a single brief document that you can both see.
+
+And always confirm three things. Who gives final approval? In family businesses, it may be someone other than the person you speak to. What does "done" look like? And what facts must be exactly right? Things like prices, addresses, dates and product specs.
+
+Next, plan, and confirm in writing. After kickoff, send a short summary. Here's an example: "Hi Meena, summarising today's call. Deliverables: twelve Instagram posts for November. Inputs from you: product photos by the third of November. First batch of six posts by the seventh, second batch by the fourteenth. One round of revisions per batch. Approval: you and Rajesh ji. Please reply confirmed, or let me know any changes."
+
+This message protects both of you, and becomes a reference if confusion arises later.
+
+Now, produce. AI-assisted, but human-led. Use the prompts and templates you've built. Here are a few service-specific tips. For writing, give the AI the client's own words from the kickoff, the phrases they use and the stories they shared. This reduces generic output. For social media, design in batches, and keep a brand kit, meaning colours, fonts and logo, consistent. For data cleaning, always work on a copy, and document each change, like removed duplicates or standardised phone formats, in a change log sheet. For transcription and translation, review with the original audio playing, and flag unclear sections rather than guessing. For chatbots and F A Qs, test every answer against the owner's confirmed information, and try confusing or unexpected questions to see how it responds. And for automation, test with sample data, including edge cases like blank fields.
+
+Then comes the quality check, using your pre-delivery checklist. Create a checklist for your service and use it every time. The lesson notes have an example for written content. It checks that the work matches the brief for audience, tone, length and format. That all facts, numbers and names are verified against a source or the client. That there are no invented quotes, statistics or references. That brand-specific details are included, so it isn't generic. That spelling and grammar are checked, with Indian or U S English as requested. That an originality check is done for long-form pieces. That links work and images are licensed for commercial use. And that you've read it once fully, aloud if possible.
+
+AI can act as a second reviewer, too. Here's the prompt: "Review this draft against the brief below. List: one, anything in the brief that is missing, two, any statements that sound like they need fact-checking, and three, generic phrases that could be more specific. Do not rewrite. Just list issues."
+
+You still make the final judgement. The AI may miss issues, or flag non-issues.
+
+Next, deliver, and make it easy to approve. Send files in the format agreed, with clear names. Something like "Meena Boutique, November posts, batch 1", not "final final 2". Include a short note on what's included and what you need from them. And for data or automation work, add a simple "how to use this" guide.
+
+Then come revisions. Stay calm and clear. Feedback is normal, so handle it professionally. Thank them and confirm your understanding of each change. If feedback is vague, like "make it pop", ask for an example. And if requests go beyond scope, say so politely and offer a quote. For example: "Happy to make these two caption changes. Adding reels scripts would be outside this month's package. I can add four scripts for an extra fee if you'd like."
+
+Finally, close, and finish strongly. Deliver the final files and any source files agreed in the contract. Send the invoice, which we cover in Lesson 4.3. And ask for feedback and a testimonial while the project is fresh. Here's a message you can use: "It was a pleasure working with you. If you were happy with the work, would you mind writing two or three lines I could share as a testimonial? And if you know anyone who might need similar help, I'd be grateful for an introduction."
+
+One more thing throughout all of this: communicate proactively. Clients rarely mind small delays if you tell them early. They mind silence. If you'll miss a deadline, inform them before it passes, explain briefly, and give a new date. Set expectations about your working hours and response time, too. For example, "I reply within one working day."
+
+Now, try it yourself. This takes about fifteen to twenty minutes, so pause the video and work through it.
+
+Step one. Use the AI prompt to create a kickoff questionnaire for your service. Edit it down to ten questions.
+
+Step two. Write a pre-delivery quality checklist for your service with at least eight items.
+
+Step three. Draft your "plan confirmation" message template and your "close and testimonial" message template.
+
+Step four. Save all of these in one folder named "Delivery kit". You'll turn them into a full S O P in Module 5.
+
+Let's recap. Follow a clear lifecycle: kickoff, plan, produce, quality check, deliver, revise, and close. Confirm scope, timelines and approvers in writing. Use a service-specific checklist every time. AI can be a second reviewer, but not the final one. And handle revisions calmly, quote for out-of-scope work, and ask for testimonials at the close.
+
+That's it for this lesson. Mark it complete, and I'll see you in the next one.

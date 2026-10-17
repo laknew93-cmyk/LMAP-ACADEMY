@@ -1,0 +1,63 @@
+Welcome to AI Essentials, module 1, lesson 2: Hallucinations and Other Limits You Must Know.
+
+AI assistants are impressive, but they make mistakes in very specific, predictable ways. Once you know these patterns, you can catch errors before they reach your boss, your client or your customer.
+
+Let's start with the biggest risk: hallucinations. A hallucination is when an AI assistant states something false with complete confidence. It isn't lying on purpose. It's generating text that sounds right based on patterns, even when the facts are wrong.
+
+Here are some common examples professionals run into. A circular number, a section of the Income Tax Act, or a court case that doesn't exist. A book, research paper or website link that looks real but isn't. A company's head office address that's slightly off. A quote attributed to a famous person who never said it. And a wrong total when adding a long column of numbers.
+
+Let's look at an example. Kavya, an H R executive in Hyderabad, asked an assistant to list the notice-period rules "under Indian labour law" for a policy document. The answer looked authoritative, but it mixed up rules from different state laws and company practice. She caught it because she checked with her company's legal advisor before circulating it. That check saved her a lot of embarrassment.
+
+So why do hallucinations happen? Remember from the last lesson: the assistant predicts likely words. If it has seen many documents that say "As per Section something of the Act", it may fill in a plausible section number even when it doesn't actually know the right one. The more specific and niche the fact, the higher the risk.
+
+Now let's go through six other limits you should know.
+
+Number one: knowledge has a cut-off date. Each model is trained on data up to a certain point. Unless the assistant searches the web, it may not know about a new R B I rule, a recent budget announcement, or last week's news. If something is time-sensitive, ask it to search, or check an official source yourself.
+
+Number two: it can misread your intent. If you write "summarise this", it guesses how long and how detailed you want it. Vague prompts get generic answers. You'll fix this with better prompts in lesson one point four.
+
+Number three: it agrees with you too easily. Ask, "Isn't this a great plan?" and it'll often find reasons to say yes. If you want honest feedback, ask for it directly. For example: "List the three weakest points in this plan."
+
+Number four: maths and counting can slip. Assistants are much better at maths than they used to be, especially when they use a built-in calculation tool. Still, for invoices, G S T calculations or salary figures, always verify in Excel, Google Sheets or a calculator.
+
+Number five: it doesn't know your private context. It doesn't know your company's internal policies, your client's preferences, or the decision taken in yesterday's meeting, unless you paste that information in.
+
+And number six: long documents can lose detail. When you upload a very long P D F, the assistant may miss or blur details in the middle. You'll learn techniques to handle this in module three.
+
+Here's a simple system to decide how much checking a piece of AI output needs. I call it the traffic-light rule.
+
+Green is for drafting, rewording, brainstorming and tone changes. Read it once, edit to taste, and use it.
+
+Yellow is for summaries, explanations and general advice. Spot-check these against the original source.
+
+And red is for numbers, laws, medical, financial, names, dates and citations. Verify every fact with an official or original source.
+
+For example, "rewrite this email to sound more polite" is green. "Summarise this thirty-page vendor contract" is yellow, so check that the key clauses match. And "What is the current G S T rate on restaurant services?" is red. Confirm that on an official government source, or with your C A. The full traffic-light table is in the lesson notes below.
+
+Now, you can't eliminate hallucinations, but you can reduce them with how you ask. Here are three prompts that help.
+
+Here's the first prompt: "Answer only using the document I have pasted below. If the answer is not in the document, say 'Not found in the document' instead of guessing."
+
+Here's the second: "If you are not sure about any fact in your answer, clearly mark it as unsure so I can verify it."
+
+And here's the third: "For each factual claim, tell me what kind of source I should check to confirm it. For example, an official government website, the company's annual report, or the original contract."
+
+These work because they give the assistant permission to say "I don't know". That's something it otherwise rarely volunteers.
+
+Now, when should you not use AI at all? There are situations where an AI assistant is the wrong tool, or should only be a starting point. First, final legal, medical, tax or investment decisions. Use a qualified professional. Second, anything involving confidential client data your company hasn't approved for AI tools. We cover this in module five. Third, emotionally sensitive conversations, like condolence messages to a close colleague, where your own words matter more than polish. And fourth, situations where you can't check the output and a mistake would be costly.
+
+Time to try it yourself. This fifteen-minute exercise will show you hallucinations first-hand, so you recognise them later. Feel free to pause the video and work along.
+
+Step one. Open your AI assistant and ask: "List 5 well-known books about time management by Indian authors, with the author name and year of publication."
+
+Step two. Pick two of the books from the answer. Search for them yourself on Google, Amazon India or a library catalogue. Are the title, author and year all correct?
+
+Step three. Now ask the same question with this addition: "If you are not certain a book exists, say so clearly." Compare the two answers.
+
+Step four. Next, ask a question about your own field where you already know the answer. For example, a process at your workplace or a concept from your degree. Note whether anything is wrong or oversimplified.
+
+And step five. Write one line in your notebook: "I must always verify blank when using AI", and fill in the blank.
+
+Let's recap. Hallucinations are confident-sounding false statements. They're most likely with specific facts, numbers, laws and citations. Assistants may not know recent events unless they search the web, and they tend to agree with you. Use the traffic-light rule: green for drafting, yellow for summaries, and red for facts that must be verified. Prompts that allow "I don't know", or ask the assistant to flag uncertainty, reduce errors. And remember, you remain responsible for anything you send, sign or submit.
+
+That's it for this lesson. Mark it complete, and I'll see you in the next one.

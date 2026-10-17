@@ -1,0 +1,37 @@
+Welcome to AI for Content Creation and Personal Branding, module 1, lesson 2: Build Your Brand Voice Guide with AI.
+
+Your brand voice is how you sound. The words you choose, the rhythm of your sentences, the things you'd never say. In this lesson, you'll use AI to analyse your existing writing and turn it into a one-page brand voice guide. It's the first project of this course.
+
+So why does a voice guide matter even more with AI? When you ask an AI to "write a LinkedIn post about time management", it falls back on the most average version of a LinkedIn post. That's why so much AI content sounds the same. A voice guide fixes this. It's a short document you paste at the start of any AI conversation, so the drafts start closer to how you actually speak.
+
+It also helps when other people write for you. Say you're a social media manager handling a dentist's clinic in Nagpur and a cafe in Kochi. A voice guide for each client stops their posts from blending into one another.
+
+Step one is to collect your voice samples. AI can't invent your voice from nothing. So gather five to ten pieces of writing or speech that feel most like you. These could be WhatsApp messages where you explained something to a friend or client. Emails you were proud of. Past posts that got good responses. Or a transcript of a voice note or a talk. In fact, you can record yourself explaining your work for three minutes and run it through any transcription tool.
+
+Here's the thing. Spoken samples are often better than written ones. Many people write stiffly but speak naturally. So if your writing feels formal, record yourself answering "What do you do and why does it matter?" and use the transcript.
+
+And one important rule. Remove names, phone numbers and client details before you paste anything into an AI tool.
+
+Step two is to ask AI to analyse, not imitate. Your first prompt should ask for analysis, not new content. The prompt gives the AI your samples and asks it to analyse your voice on six points. Your sentence length and rhythm. Your vocabulary, meaning the words and phrases you use often and your level of formality. Your tone, for example warm, blunt, playful or calm. How you open and close messages. Your use of humour, stories, data, or Hindi and regional words. And anything distinctive a copywriter should preserve. It also asks the AI to quote short examples from your samples to back up each point, and not to write any new content yet. You'll find the full prompt in the lesson notes below this video.
+
+Read the analysis carefully. AI will sometimes flatter you, or describe a voice you don't recognise. So push back. You could say, "You said my tone is inspirational, but I think it's practical and a bit sarcastic. Re-check the samples."
+
+Step three is to define your "this, not that" pairs. This is the most useful part of any voice guide. It's a list of contrasts. They're clearer for both humans and AI than vague adjectives like "authentic" or "engaging". For example, you might be direct and practical, not preachy or motivational-poster. Friendly, like a senior colleague, not over-familiar or full of slang. Confident about what you know, not arrogant or dismissive. And simple English with an occasional Hindi phrase, not jargon-heavy corporate speak. The example table is in the lesson notes. Ask the AI to propose six pairs based on its analysis. Then rewrite them so each one feels true to you.
+
+Step four is to build your banned and preferred word lists. Every voice has words it avoids. The lesson gives you a starter banned list that removes a lot of the generic AI flavour. It includes words like delve, unlock, unleash, game-changer, elevate and seamless. Phrases like "in today's fast-paced world", "Let's dive in" and "Here's the thing". The word journey, unless it's literal. Leverage used as a verb. Plus excessive emojis, and rhetorical questions as openers. The full list is in the lesson notes.
+
+Then add your own. Phrases you dislike, competitor cliches, words that feel wrong for your audience. And add a preferred list too. A home baker in Pune might prefer "fresh out of the oven" and "made to order", and avoid "artisanal" and "gourmet".
+
+Step five is to assemble the one-page guide. Your finished guide should fit on one page, so you can paste it anywhere. The template in the lesson notes walks you through it. It starts with who you are in one line, your brand promise, and your audience, meaning who reads this, what they care about and what they already know. Then your voice in three words, like practical, warm, candid. Then your "this, not that" pairs. Then your writing rules. Things like sentence length, point of view, language, how many emojis you allow, and what you always include, such as one specific example or number from real work. Then your banned and preferred words. And finally, a sample paragraph that sounds exactly like you.
+
+That sample paragraph is crucial. AI imitates examples far better than it follows descriptions.
+
+Step six is to test the guide. A voice guide is only useful if it changes the output. So run a quick blind test. First, in a new chat, ask for a one hundred and fifty word post on a topic in your field, without the guide. Second, in another new chat, paste the guide first, then ask for the same post. And third, compare them. Read both out loud. Which one sounds more like you?
+
+If the guided version still feels off, find the specific lines that sound wrong, and add a rule that would have prevented them. Your guide should get a little sharper every few weeks.
+
+Now it's time to try it yourself. You'll create Project 1, your brand voice guide, in about twenty minutes. Pause the video and work through these steps. One. Collect at least five voice samples, and make sure one is a transcript of you speaking. Two. Run the analysis prompt and correct anything that feels inaccurate. Three. Write six "this, not that" pairs, plus your banned and preferred word lists. Four. Fill in the one-page template, including a real sample paragraph and your brand promise from Lesson 1. Five. Run the blind test and add at least one new rule based on what you notice. And six. Save it as Brand Voice Guide version one, somewhere you can copy it from quickly, like a notes app on your phone.
+
+Let's recap. A voice guide is a short, pasteable document that stops AI drafts from sounding generic. Start from real samples, especially spoken ones, and ask AI to analyse before it imitates. Concrete "this, not that" pairs and word lists beat vague adjectives. Always include a real paragraph you wrote, because examples guide AI more than descriptions. And test the guide with a blind comparison, then keep improving it.
+
+That's it for this lesson. Mark it complete, and I'll see you in the next one.

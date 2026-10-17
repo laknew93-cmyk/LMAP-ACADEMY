@@ -1,0 +1,37 @@
+Welcome to Generative AI Mastery, module 1, lesson 1: How L L Ms Work: Tokens, Context, Sampling and Embeddings.
+
+Before you write a single line of code, you need a working mental model of what a large language model, or L L M, actually does. This lesson gives you the engineer's version. You don't need a maths degree, but it's precise enough that you can reason about cost, speed and the ways things go wrong.
+
+Let's start with what an L L M really does. An L L M is a function that takes a sequence of text and predicts what text should come next. It does this one small piece at a time. It adds each new piece to the input, then predicts again, and it keeps going until it decides to stop or hits a limit you've set.
+
+That one idea explains a lot of the behaviour you'll see in this course. Here are three examples. First, the model has no memory between A P I calls. If you want it to remember the earlier part of a chat, you send the whole conversation again, every single time. Second, the model doesn't look things up unless you give it tools or documents. When it doesn't know something, it can still produce fluent text that sounds right. That's what people call a hallucination. And third, the output is generated piece by piece, which is why you can stream the answer to a user while it's still being written.
+
+Now let's talk about tokens, the unit of everything. Models don't read characters or words. They read tokens, which are chunks of text produced by something called a tokenizer. A common English word is often one token. A long or rare word might be split into several. Hindi, Tamil and other Indic scripts usually take more tokens per word than English, and that matters if you're building for Indian language users.
+
+So why do engineers care so much about tokens? There are four reasons, and the lesson notes have them in a small table. First, cost. A P I providers bill you per input token and per output token, and output tokens usually cost more. Second, speed. Each output token takes time to generate, so long answers are slow answers. Third, limits. Every request has a maximum number of output tokens you allow, a setting called max tokens. And fourth, context. The total input you can send is measured in tokens, not pages.
+
+Here's a useful habit. For every feature you build, estimate the tokens going in and coming out per request, then multiply by the number of requests per day. That simple sum catches most billing surprises early.
+
+Next up is the context window. The context window is the maximum number of tokens the model can consider in one request. That includes your system prompt, the conversation history, any documents you paste in, the tool definitions, and the answer the model writes. Modern models have large context windows, big enough to hold long reports or a sizeable codebase.
+
+But here's the thing. Large doesn't mean free. Every token you send is billed on every request, and stuffing in irrelevant text can actually distract the model. That's the main reason retrieval augmented generation, or rag, exists. Instead of sending all four hundred pages of a company's H R policy, you search for the five most relevant paragraphs and send only those. You'll build exactly this in Module 3.
+
+Let's move on to temperature and randomness. At each step, the model produces a probability for every possible next token. Something has to pick one. Sampling settings, such as temperature, control how adventurous that pick is. With low randomness, the model mostly picks the most likely token. That's good for extraction, classification and code. With high randomness, the model picks less likely tokens more often. That's good for creative work, like brainstorming taglines for a Pune bakery's Instagram.
+
+You'll see temperature in lots of tutorials and in other providers' A P Is. But be aware that the newest Claude models manage sampling themselves and reject a custom temperature value. So in this course, we control output quality with clear prompts, examples and structured output, rather than by turning a randomness knob. The concept is still worth knowing, both for interviews and for working with other models.
+
+The practical lesson is the same either way. The same prompt can give different answers on different runs. Your application has to be designed for that, which is why we'll validate outputs and build test sets throughout the course.
+
+Now, reasoning, or thinking. Many current models reason internally before they answer. In the Claude A P I this is called adaptive thinking, and on the latest models it's switched on by default. Reasoning tokens are billed as output. There's also an effort setting, with levels like low, medium, high and above, that trades depth for cost. You'd use low for simple classification, and higher levels for multi-step agent tasks.
+
+Next, embeddings, which turn meaning into numbers. An embedding is a list of numbers, called a vector, that represents the meaning of a piece of text. Texts with similar meaning get vectors that point in similar directions. Let's look at an example from the lesson notes. Take the question, how do I reset my U P I PIN? And then another one, I forgot my U P I PIN, how to change? Those two get vectors that are very close to each other. But a sentence like, best biryani in Hyderabad, gets a vector that's far away from both. You can see the sample numbers in the lesson notes below the video.
+
+Embeddings are produced by a separate, smaller kind of model. They power semantic search. You embed your documents once, then embed the user's question at query time, and find the documents whose vectors are closest. That's the retrieval part of rag. Module 3 covers this hands-on, including running an embedding model on your own laptop.
+
+So where does the A P I fit in? In this course we use the official Anthropic Python S D K. The same ideas exist in OpenAI, Gemini, and open-source models served through Ollama, so what you learn here transfers directly.
+
+Now it's your turn. Try it yourself. Spend about fifteen minutes building intuition. You don't need any code yet, so feel free to pause the video. First, open any chat assistant you have access to. Second, ask the same question three times, each in a fresh chat: suggest a name for a chai stall near a Bengaluru tech park. Notice how the answers differ. Third, ask a factual question it can't possibly know, such as, what did my manager say in yesterday's stand-up? See whether it admits it doesn't know. Fourth, paste a three hundred word paragraph and ask it to summarise it in one line. Then paste just one sentence of it and ask the same thing. Notice how the answer depends entirely on what's in the context. And fifth, write three sentences in your notes explaining tokens, the context window and embeddings in your own words, as if you were explaining them to a junior colleague. You'll reuse this in interview prep in Module 6.
+
+Let's recap. An L L M predicts the next token over and over. It has no memory between calls and no knowledge beyond its training and your input. Tokens drive cost, speed and limits, so estimate tokens in and out for every feature you design. The context window is large but not free, and rag exists so you send only what's relevant. Outputs vary between runs, so production apps need validation and test sets. And embeddings turn meaning into vectors, which makes semantic search possible.
+
+That's it for this lesson. Mark it complete, and I'll see you in the next one.

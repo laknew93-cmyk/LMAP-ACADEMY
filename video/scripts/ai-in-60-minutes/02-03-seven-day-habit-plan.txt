@@ -1,0 +1,55 @@
+Welcome to AI in 60 Minutes, module 2, lesson 3: Your 7-Day AI Habit Plan and Where to Go Next.
+
+Knowing how to use AI is one thing. Actually using it is another. In this final lesson, you'll get a simple seven-day plan so that AI becomes a natural part of your routine. And we'll finish with some ideas for where to go next.
+
+Let's start with why a habit matters. Most people try ChatGPT once, get an average answer, and forget about it. The people who really benefit are the ones who use it a little every day, until reaching for it feels as natural as opening Google Maps. Here's the thing. Small, regular practice beats one long session.
+
+The plan takes just ten to fifteen minutes a day. Each day focuses on one skill from this course, applied to your real life. The full plan is in a table in the lesson notes, but let's walk through it day by day.
+
+Day one is about writing. Use AI to draft one real email or message you need to send today. Then edit it in your own voice before you send it.
+
+Day two is about summarising. Paste in a long article, notice or email thread, anonymised of course, and ask for five bullet points plus action items.
+
+Day three is about explaining. Pick one topic that has always confused you, such as a work term, a tax concept or a school subject. Then ask AI to explain it simply, with an example.
+
+Day four is about planning. Plan something real. That could be your week, a study timetable, a family function, or a sales push for your business. Ask for the plan as a table.
+
+Day five is about rewriting. Take something you wrote recently, like your resume summary or a product description, and improve it using the role, task, context, format formula.
+
+Day six is about fact-checking. Ask a factual question in your field, then use the fact-check routine from lesson five to verify it.
+
+And day seven is about reviewing. Look back at the week. Which use saved you the most time? Save your three best prompts as templates in your notes app.
+
+Now, the best uses depend on who you are, so here are some ideas. If you're a student, use AI to explain tough chapters, create practice questions, plan your revision before exams, and improve college application essays. If you're a working professional, use it to draft emails, summarise meeting notes, prepare for presentations, and rewrite reports more clearly. If you're a homemaker or returning to your career, use it to plan meals and budgets, prepare for interviews, refresh your resume, and learn a new skill step by step. And if you're a small business owner, use it to write WhatsApp replies to customers, create Instagram captions, draft simple policies, and plan a festive season offer.
+
+Let's look at some tips to make the habit stick. There are five.
+
+First, attach it to something you already do. For example, open your AI assistant with your morning chai, or right after you check your email.
+
+Second, keep a prompt notebook. Every time a prompt works well, save it. In a month, you'll have your own personal toolkit.
+
+Third, use voice. Most assistant apps let you speak your prompt. That's handy when you're busy, or if you're more comfortable speaking than typing.
+
+Fourth, try your own language. If you think more clearly in Hindi, Bengali, Kannada or another language, write your prompts in it. And ask for answers in whichever language you need.
+
+And fifth, stay safe. Keep following the privacy and fact-check habits from lesson five, every single time.
+
+So, where do you go next? Once AI is part of your day, you'll start noticing bigger opportunities. Things like automating repetitive work, using AI inside Gmail, Word and Excel, and writing prompts that produce consistently excellent results. If you want to go deeper, the natural next step is our course, AI Essentials: ChatGPT, Gemini and Copilot for Everyday Work. It covers using AI across documents, spreadsheets, presentations and email. After that, the Prompt Engineering Masterclass teaches advanced techniques for getting reliable, high-quality output for complex tasks. Both build directly on what you've learned here.
+
+Now it's time to try it yourself. This takes about ten minutes, so pause the video and work along.
+
+Step one. Copy the seven-day plan into your phone's notes app or a notebook.
+
+Step two. Next to each day, write the specific real task you'll do. For example, for day one, you might write, "Email to school about my son's fee receipt."
+
+Step three. Choose your daily trigger, such as your morning chai, your lunch break, or after the kids are asleep. Then set a phone reminder for the next seven days.
+
+Step four. Do day one right now.
+
+And step five. Mark all the lessons in this course as complete to receive your free certificate.
+
+Go ahead and pause the video now to set up your plan.
+
+Let's recap. Short daily practice is the fastest way to get comfortable with AI. The seven-day plan covers writing, summarising, explaining, planning, rewriting and fact-checking. Save the prompts that work well, to build your own reusable toolkit. Keep your privacy and fact-checking habits every time you use AI. And when you're ready to go further, build on these skills with more advanced, structured learning.
+
+And that brings us to the end of AI in 60 Minutes. Congratulations! You've gone from your very first prompt to a clear formula, safe habits, and a plan to make AI part of your everyday life. That's a real achievement. Make sure you mark this lesson complete, and then claim your free certificate. You've earned it. Thank you for learning with us, and I hope to see you in your next course.

@@ -1,0 +1,51 @@
+Welcome to AI Essentials, module 2, lesson 1: Emails and Messages with Perfect Tone.
+
+Email and messaging probably eat more of your working day than you realise. In this lesson, you'll learn to draft, reply to and polish emails and WhatsApp-style messages with AI. And most importantly, you'll learn to control the tone.
+
+Let's start with where AI saves the most time in communication. Most people don't struggle with what to say. They struggle with how to say it. Too blunt, too long, too apologetic, too casual. AI assistants are excellent at that "how". Here are the typical wins. Turning three rough bullet points into a clear email. Replying to a long, confusing email thread. Saying "no" politely to a client or a senior. Following up without sounding pushy. Writing to someone senior, or in a formal setting, when you're nervous. And shortening a rambling message to something people will actually read.
+
+First up, drafting from bullet points. This is the fastest method. Write what you want to say in rough notes, then let AI shape it.
+
+Let's look at an example. In the lesson notes, there's a prompt that asks the assistant to turn rough notes into a clear, polite email to a vendor called Shree Ganesh Packaging. The notes say the last two deliveries were four to five days late, that this is affecting the Diwali dispatch to retailers, that you need confirmation the fifteenth October order will arrive on time, and that if not, you may look at another supplier this season. The prompt asks for a tone that's firm but respectful, because you want to keep working with them, and a length under a hundred and fifty words with a clear subject line. You'll find the full prompt in the lesson notes below this video.
+
+Here's the thing. Your notes carry the facts. The AI handles the structure and politeness. You stay in control of the content.
+
+Next, replying to long threads. When an email thread has twelve replies and you've been added at the end, paste it in and ask. Here's the prompt: "Below is an email thread. First, summarise in 4 bullet points what has been discussed and what is being asked of me. Then draft a short reply that answers the open question about the revised delivery date, which is 22 October." And then you paste the thread.
+
+Before pasting, remove anything confidential your company doesn't allow in AI tools. We'll cover the rules in module five.
+
+Now let's talk about mastering tone control. Tone is where AI really shines. You can take the same message and dial it up or down.
+
+Think of it as a tone dial. Warm and friendly works for colleagues you know and long-term clients. Professional and neutral works for most business email. Formal is for government offices, banks, senior leadership and legal matters. Firm is for overdue payments, repeated delays and boundary-setting. Apologetic is for when you or your company made a mistake. And concise is for busy readers and mobile messages. The full tone table is in the lesson notes.
+
+Here's a useful prompt: "Here is my draft message. Rewrite it in three versions: one, warm and friendly, two, professional and neutral, three, firm. Keep each under 80 words." Then paste your draft.
+
+Next, saying no without burning bridges. Neha, a freelance graphic designer in Jaipur, often gets asked for "small extra changes" outside the agreed scope. Here's the prompt she uses: "A client has asked for 3 additional poster designs that were not part of our agreed scope. I want to say these will cost fifteen hundred rupees per design extra, without sounding rude or greedy. We have a good relationship and I want to keep it. Write a short, friendly WhatsApp message."
+
+Then there are payment follow-ups. Chasing payments is awkward for many small business owners. AI helps you write a sequence that gets firmer step by step. The prompt in the lesson notes asks for three payment reminders for an unpaid invoice of forty-two thousand rupees, due thirtieth September. The first is a gentle reminder, three days after the due date. The second is polite but clearer, ten days after. And the third is firm, twenty days after, mentioning that you may pause further work. Each one is under seventy words and mentions that payment can be made by bank transfer or U P I. You'll find the full prompt in the lesson notes below this video.
+
+Now, messages beyond email. The same techniques work for WhatsApp business messages, like order confirmations, festive greetings and delivery updates. They work for Teams or Slack messages, like status updates and quick requests to colleagues. They work for LinkedIn messages, like networking notes to people you don't know, and there's more on that in module five. And they work for notices, like society notices, office circulars and school communication.
+
+Just tell the assistant the platform. For example: "This is a WhatsApp message, so keep it short with no subject line."
+
+Next, keep your own voice. AI-written messages can sound generic or overly polished, and people notice. Here are four ways to keep them sounding like you. First, paste two or three emails you've written before and say, "Match my writing style." Second, ask it to avoid stock phrases. For example, "Do not use 'I hope this email finds you well' or 'Please do the needful'." Third, always read the final version out loud in your head. If it doesn't sound like you, edit it. And fourth, add one personal line yourself, like a reference to your last conversation.
+
+Finally, review before you send. Every AI-drafted message needs a thirty-second check. Ask yourself four questions. One, are all names, dates, amounts and invoice numbers correct? Two, did it add any promise you didn't intend, like "We will refund in full"? Three, is the tone right for this specific person? And four, is it short enough for the reader?
+
+Time to try it yourself. Set aside fifteen minutes and use real messages from your own week. Go ahead and pause the video while you work.
+
+Step one. Find one email or message you need to send, or recently sent. A request, follow-up, complaint or update.
+
+Step two. Write your rough notes in three to five bullet points.
+
+Step three. Use the "Turn these notes into" prompt from this lesson, specifying audience, tone and length.
+
+Step four. Ask for the same message in three tones: warm, neutral and firm. Pick the one that fits best.
+
+Step five. Run the four-point review checklist and fix anything wrong.
+
+And step six. Save the prompt that worked best as Prompt number 2 in your prompt library.
+
+Let's recap. Write the facts yourself in rough notes, and let AI handle structure, clarity and politeness. Paste long threads and ask for a summary of what's being asked before drafting a reply. Specify tone, platform and word limit, and ask for multiple tone versions when you're unsure. Remove stock phrases and add a personal line, so messages still sound like you. And always check names, numbers and promises before you hit send.
+
+That's it for this lesson. Mark it complete, and I'll see you in the next one.

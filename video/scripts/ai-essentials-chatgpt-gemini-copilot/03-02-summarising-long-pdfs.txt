@@ -1,0 +1,63 @@
+Welcome to AI Essentials, module 3, lesson 2: Summarising Long P D Fs Accurately.
+
+Tender documents, annual reports, policy circulars, contracts, research papers. Long P D Fs are part of almost every job. In this lesson, you'll learn to get accurate summaries and answers from long documents, and how to catch the details AI sometimes misses.
+
+Let's start with getting your document into the assistant. Most AI assistants let you upload a P D F, a Word file or another document directly. Look for a paperclip or plus icon next to the message box. You can also paste text if the document is short.
+
+Here are a few practical points. First, scanned P D Fs, which are photos of pages, are harder. Many assistants can read them, but accuracy drops with poor scans, handwriting or tables. If possible, use a text-based P D F. Second, very long documents may exceed what the assistant can handle well in one go. If answers become vague, split the document into parts. And third, confidential documents. Check your company's AI policy before uploading anything sensitive. We'll cover that in module five.
+
+Here's the thing: don't just say "summarise this". "Summarise this" leaves the assistant guessing what you care about. A better prompt states your purpose.
+
+Let's look at an example. In the lesson notes, there's a prompt from a purchase manager evaluating a tender document for a company that supplies office furniture. It asks for a summary in six parts. One, what's being procured, in two lines. Two, the eligibility criteria, as bullets. Three, key dates and deadlines, as a table. Four, the documents you must submit, as a checklist. Five, the penalty and payment terms. And six, anything unusual or risky that you should read in full. It also asks the assistant to mention page numbers wherever possible. You'll find the full prompt in the lesson notes below this video.
+
+The purpose, "supplies office furniture", lets the assistant focus on what matters to you. And asking for page numbers makes checking much easier.
+
+Next, layered summaries. For big documents, work in layers. First, get an overview: "In 5 bullets, what is this document about and who is it for?" Second, a section map: "List the main sections with one line on each." Third, a deep dive: "Now explain section 4 on payment terms in detail." And fourth, questions, where you ask specific things you need to know.
+
+This mirrors how an expert reads. Skim, map, then focus.
+
+Now, asking questions of the document. Often you don't need a summary at all. You need answers. Here are some examples. "What is the notice period for termination in this contract, and which clause says so?" "Does this policy cover pre-existing conditions? Quote the exact sentence." "List every date mentioned in this document, with what happens on each." And, "Compare what this document says about late payments with the clause on interest."
+
+The phrase "quote the exact sentence" is one of the most useful in this course. It forces the assistant to point to real text, which you can then find and confirm.
+
+Next, fact-checking a document summary. AI summaries of long documents can go wrong in quiet ways. There are five problems to watch for.
+
+First, a missed detail, like skipping a penalty clause on page thirty-seven. Catch it by asking, "What penalties or fines are mentioned anywhere?"
+
+Second, blended facts, like mixing up two different deadlines. Catch it by asking for a table of all dates with page numbers.
+
+Third, invented content, where it states a clause that isn't there. Catch it by asking for exact quotes, and searching the P D F yourself with Control F.
+
+Fourth, lost nuance, where "must" becomes "should". Catch it by reading the original wording for critical clauses.
+
+And fifth, number errors, where two and a half lakh rupees becomes twenty-five lakh. Catch it by verifying every amount in the source.
+
+The full table is in the lesson notes. And here's a practical rule. Anything you'll act on, sign, or repeat to someone else, find in the original P D F yourself. Use Control F, or Command F on a Mac, to jump to the right place.
+
+Now, summaries for different audiences. The same document can be summarised differently for different readers. Here's the prompt: "Using this R B I circular, write three summaries. A: 3 lines for our C E O, what changes and what it means for us. B: a checklist for our compliance team. C: a simple explanation for our branch staff, in plain language."
+
+Ritu, an associate at a Chennai C A firm, uses this approach when new notifications come out. One version for partners, one checklist for the audit team, and one client-friendly explanation she can adapt for emails.
+
+Next, comparing two documents. Need to see what changed between an old and new version of a policy, or compare two vendor quotations? Upload both and ask. Here's the prompt: "Compare these two versions of our leave policy. List every difference in a table: topic, old version, new version. Do not include anything that is the same in both."
+
+Then verify the important differences in the actual documents.
+
+Finally, turning a document into action. After you understand a document, ask the assistant to help you act on it. For example: "Create a checklist of everything we need to do to comply with this, with suggested owners." Or, "Draft an email to my team explaining the 3 most important changes in this policy." Or, "What questions should I ask the vendor before signing this agreement?"
+
+Time to try it yourself. Spend about twenty minutes on a real document. Pause the video and work along.
+
+Step one. Find a long P D F you actually need to understand. An annual report, a policy, an insurance document, a government scheme guideline or a contract. Avoid confidential work documents unless your company allows it.
+
+Step two. Upload it to an assistant and use a purpose-driven summary prompt, with a clear structure and page numbers.
+
+Step three. Ask three specific questions, each with "quote the exact sentence".
+
+Step four. Verify all three answers in the P D F yourself using Control F. Note whether any were wrong or incomplete.
+
+Step five. Ask for a summary for a different audience, for example a family member or a junior colleague.
+
+And step six. Save your best summary prompt as Prompt number 6 in your library.
+
+Let's recap. Upload documents directly, but be careful with scanned files, very long files and confidential material. State your purpose and the structure you want, instead of just "summarise this". Work in layers: overview, section map, deep dive, then specific questions. Ask for page numbers and exact quotes, then verify anything important in the original. And tailor summaries to different audiences, turning understanding into checklists and actions.
+
+That's it for this lesson. Mark it complete, and I'll see you in the next one.

@@ -1,0 +1,59 @@
+Welcome to Make Money with AI, module 5, lesson 1: AI for Customer Replies, Catalogues and WhatsApp Business.
+
+If you run a small business, like a boutique, a clinic, a tuition centre or a home food business, a large part of your day goes into answering customers. This lesson shows how to use AI and WhatsApp Business to reply faster, present your products better, and stay personal. And if you're a freelancer, you can use the same ideas as a service for your clients.
+
+Let's start with your most common questions. Before touching any tool, list the questions customers ask most. For a Hyderabad home-tiffin service, it might be: What's today's menu? Do you deliver to Kondapur? What's the monthly plan price? Can I pause for a week? And do you have Jain food options?
+
+Most businesses find that a small number of questions make up a large share of messages. Answering those well, quickly and consistently, saves a lot of time.
+
+You can use AI to help you organise them. Here's the prompt: "Here are forty customer messages from the last two weeks, with names removed. Group them into categories, count how many fall in each, and list the top ten questions in plain words." Then you paste in your anonymised messages.
+
+Remember to remove customer names and phone numbers before pasting.
+
+Next, write great answers once, and reuse them always. Draft answers for your top questions with AI, then check every fact yourself. The prompt in the lesson notes tells the AI about your business and city, and asks for short, friendly WhatsApp replies in simple English, with a Hindi version for each, at most fifty words each. You give it the facts, like timings, prices, delivery areas and policies, plus the list of questions. And here's the key instruction. It tells the AI to use only the facts you give, and if something's missing, to write the word CHECK in square brackets instead of guessing. You'll find the full prompt in the lesson notes below this video.
+
+That CHECK instruction is important. It stops the AI from inventing a delivery charge or a refund policy you don't have.
+
+Now, setting up WhatsApp Business. The WhatsApp Business app is free to download, and it has features designed for small businesses. Feature names and menus can change with updates, but these six core tools have been available for a long time.
+
+First, your business profile. Add your business name, category, description, address, hours, email and website. Customers see this when they tap your name.
+
+Second, a greeting message. This is an automatic message sent when someone messages you for the first time, or after a period of no contact. Here's an example: "Namaste! Thank you for contacting Annapurna Tiffins. Our menu for the week and plan prices are in our catalogue. Reply with your area name and we'll confirm delivery. We reply between 9 am and 8 pm."
+
+Third, an away message. This is sent outside business hours, so customers know when to expect a reply.
+
+Fourth, quick replies. These are saved answers you insert with a shortcut. In most versions, you type a forward slash in the chat. Save your top ten answers here.
+
+Fifth, labels. Tag chats with labels like "New enquiry", "Order placed", "Payment pending" and "Repeat customer". This acts as a mini C R M.
+
+And sixth, the catalogue. Showcase your products or services with photos, prices and descriptions, so customers can browse without asking.
+
+Let's talk about writing catalogue descriptions with AI. Good descriptions answer questions before they're asked. The example prompt in the lesson notes asks for a WhatsApp catalogue description of sixty words at most, for a handloom cotton Pochampally ikat saree, six point three metres with a blouse piece. It includes the price, the care instructions, which are hand wash separately the first time, and the audience, working women aged twenty-eight to fifty. The tone is warm and honest, with no claims like "best quality in India". You'll find the full prompt in the lesson notes below this video.
+
+Then check colour names, dimensions, and care instructions against the actual product.
+
+Now, here's the thing. Keep it human. Automation should support personal service, not replace it. Use quick replies as a starting point, then personalise them with the customer's name and context. Handle complaints personally. AI can help you draft a calm, apologetic reply, but you decide what to offer. And never let an automated system make commitments, like refunds, delivery promises or medical advice, that a person hasn't approved.
+
+Let's look at an example. Here's the prompt: "A customer is upset that their cake arrived forty-five minutes late for a birthday. Draft a sincere apology in under seventy words. Do not offer any compensation. I'll decide that. Tone: genuine, not corporate."
+
+AI helps beyond WhatsApp, too. There are four other places. On your Google Business Profile, draft replies to reviews, always personalised and never fake, and write posts about offers and updates. For Instagram D Ms, create saved replies for common questions. For email, draft quotations, order confirmations and polite follow-ups. And for festive campaigns, plan Diwali or Eid offers and draft the messages. But only send promotional messages to customers who've chosen to hear from you.
+
+Which brings us to respecting customer privacy and consent. Only send broadcast or promotional messages to customers who've agreed to receive them, and make it easy to opt out. Don't paste customers' personal details into AI tools unnecessarily. And follow WhatsApp's business policies, because misuse can get numbers restricted.
+
+If you're a freelancer, everything in this lesson can be packaged as a service. For example: "WhatsApp Business setup. Profile, greeting and away messages, fifteen quick replies, labels, and a twenty-item catalogue, in English and one regional language." Many small businesses use WhatsApp daily, but never set these features up.
+
+Now, try it yourself. This takes about twenty minutes. Use your own business, or an imagined one in your niche. Pause the video and work through these steps.
+
+Step one. List the top ten customer questions, from real messages or your best guess.
+
+Step two. Use the CHECK prompt to draft answers. Fill in or verify every fact.
+
+Step three. Write a greeting message and an away message.
+
+Step four. Write catalogue descriptions for three products or service packages.
+
+Step five. If you have WhatsApp Business, set up the greeting message, away message and five quick replies. If not, save everything in a document as a ready-to-use kit.
+
+Let's recap. Identify your most frequent customer questions first, because answering them well saves the most time. Use AI to draft answers and descriptions, with an instruction not to guess missing facts. WhatsApp Business features, meaning the profile, greeting and away messages, quick replies, labels and catalogue, help small businesses respond faster. And keep complaints and commitments human, and send promotions only to customers who've opted in.
+
+That's it for this lesson. Mark it complete, and I'll see you in the next one.

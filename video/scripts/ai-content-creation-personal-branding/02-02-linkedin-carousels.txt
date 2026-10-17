@@ -1,0 +1,35 @@
+Welcome to AI for Content Creation and Personal Branding, module 2, lesson 2: LinkedIn Carousels: Plan, Write and Design.
+
+A carousel is a swipeable set of slides, usually uploaded to LinkedIn as a P D F document. Carousels are excellent for frameworks, checklists and step-by-step guides that people want to save. In this lesson, you'll plan, write and design a carousel with AI. And you'll finish Project 3, which is one carousel plus three LinkedIn posts.
+
+So when is a carousel the right format? Choose one when your idea has a natural sequence or several parts. That could be a process, like "How to file your first freelance G S T invoice in six steps". A comparison, like "Old tax regime versus new regime: who should choose which". A checklist, like "Eight things to check before you accept a job offer". A framework you use with clients. Or common mistakes and their fixes.
+
+If the idea is a single opinion or story, a text post will usually work better.
+
+Now let's look at the anatomy of a good carousel. Most effective carousels run between six and ten slides. Slide one is the cover. Its job is to stop the scroll and promise value, so use a big, clear title of under ten words, with a specific benefit. Slide two covers the problem or context, meaning why this matters, in one relatable sentence or situation. Slides three to eight are your content, with one point per slide. Each has a short headline plus one or two supporting lines. Slide nine is a summary, a compact recap people can screenshot. And slide ten is the close. Who you are and what to do next. Your name, a one-line promise, and a gentle call to action. The full table is in the lesson notes below this video.
+
+The golden rule is one idea per slide. If a slide needs more than about thirty words, split it. People read carousels on phones, so text must be large and the spacing generous.
+
+Let's write the carousel with AI. Start with your raw material. A process you actually follow, a checklist you give clients, or a list of mistakes you've seen. Then use the carousel prompt. It asks the AI, using your voice guide, to turn your notes into an eight-slide carousel. For each slide, it gives a slide number, a headline of up to eight words, body text of up to twenty-five words, and a simple visual suggestion, like an icon, a diagram or a layout idea. Slide one is a cover with a specific, benefit-led title. Slide eight is a recap plus a soft call to action to follow you for more on your topic. And it tells the AI to use only the information in your notes, with no invented numbers or claims. You'll find the full prompt in the lesson notes below this video.
+
+Then ask for five alternative cover titles. The cover decides whether people swipe, so test options. For example, "Six G S T mistakes I see in every freelancer's first year". Or "Your first G S T invoice, explained in six slides". Or "Freelancers: check these six things before you raise an invoice".
+
+Edit the slide text yourself. Cut words ruthlessly. And make sure every claim is correct. If you're writing about tax, law or health, double-check against official sources, because errors in a saveable carousel spread.
+
+Now let's design it. You don't need to be a designer. Most people use a design tool like Canva. It has LinkedIn carousel templates, a document format sized for slides, and AI features that help with layouts, text suggestions and image generation. Many presentation tools work too. Just set the slide size, design, then export as a P D F.
+
+A few design principles matter more than any tool. First, a consistent template. Same fonts, colours and layout on every slide. This becomes part of your brand. Second, large text. If you can't read it comfortably on your phone held at arm's length, it's too small. Third, high contrast. Dark text on a light background, or the reverse. Avoid text over busy photos. Fourth, slide numbers or a progress cue, so readers know how far along they are. Fifth, your name or handle, small, on every slide, in case slides get screenshotted and shared. And sixth, two brand colours and one or two fonts at most.
+
+You can ask a chat assistant to suggest a simple colour palette and font pairing that fits your voice guide. Then build it once as a reusable template.
+
+A carousel still needs a text post above it. Keep it short. A hook that matches the cover, two or three lines on why you made it, and an invitation to save it. Here's an example: "Most freelancers learn G S T the hard way: through a notice. I made this six-slide guide from the mistakes I've fixed for clients over the last few years. Save it for the next time you raise an invoice."
+
+Now let's complete Project 3. It asks for one carousel and three LinkedIn posts. Aim for variety, so you can learn what your audience prefers. First, the carousel, which is a process, checklist or framework. Second, a story post, the one you drafted in the previous lesson. Third, an opinion post. A view you hold that some people in your field disagree with, explained respectfully. And fourth, a how-to or lessons post. Practical, list-based, and easy to save.
+
+Use your content calendar to schedule them across two weeks, rather than all at once.
+
+Now it's time to try it yourself. Spend about twenty minutes finishing the drafts for Project 3. Pause the video here and work through it. Step one. Choose a process or checklist idea and write your raw notes. Step two. Run the carousel prompt and get five cover title options. Edit the text down to eight slides. Step three. Build the slides in Canva or a presentation tool using a consistent template, then export as a P D F. Step four. Write the short accompanying post. Step five. Use the drafting workflow from Lesson 2.1 to write your opinion post and your how-to or lessons post. And step six. Add all four items to your calendar with publishing dates, and change their status to "ready".
+
+Let's recap. Use carousels for processes, checklists, comparisons and frameworks that people want to save. Keep to one idea per slide, around six to ten slides, with large, high-contrast text. Let AI structure the slides and suggest covers, but write and fact-check the final text yourself. Build one reusable template so your carousels become recognisably yours. And pair each carousel with a short post, then vary formats across the week to learn what works.
+
+That's it for this lesson. Mark it complete, and I'll see you in the next one.

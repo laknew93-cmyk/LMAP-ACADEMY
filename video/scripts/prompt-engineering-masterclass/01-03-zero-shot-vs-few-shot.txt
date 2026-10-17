@@ -1,0 +1,49 @@
+Welcome to Prompt Engineering Masterclass, module 1, lesson 3: Zero-Shot versus Few-Shot: Teaching by Example.
+
+Sometimes describing what you want is harder than showing it. In this lesson, we'll cover zero-shot prompting, which means instructions only, and few-shot prompting, which means instructions plus examples. And we'll look at when to use each.
+
+Let's start with zero-shot. A zero-shot prompt gives the task with no examples. Here's the prompt: "Classify this customer review as Positive, Negative or Mixed. Review: Delivery was quick but the kurta colour is nothing like the photo."
+
+Modern models handle many tasks well zero-shot, especially common ones like summarising, translating, or answering general questions. Zero-shot is fast to write, and it works when the task is well understood and the right answer is fairly obvious.
+
+Now for few-shot. The idea here is: show, don't just tell. A few-shot prompt includes two to five worked examples before the real input. The model picks up the pattern: the labels, the tone, the length, and the edge cases.
+
+Let's look at an example. Meera runs customer support for a Chennai electronics e-commerce store. She wants tickets tagged with her team's own categories, which don't match any textbook. Her prompt asks the model to tag each support message with exactly one category: Delivery, Refund, Warranty, Installation, or Other, and to reply with the category only. Then she gives four examples. A message saying the technician hasn't come to fix the AC stand after three days is tagged Installation. A message asking when the money for a returned mixer will reach their U P I is tagged Refund. A message about a line on the screen after eight months, asking if it's covered, is tagged Warranty. And a message saying the courier couldn't find the address is tagged Delivery. Finally, she adds the real message, asking whether the customer can change the colour of a fridge ordered yesterday, and leaves the category blank for the model to fill in. You'll find the full prompt in the lesson notes below this video.
+
+Without the examples, the model might answer "Order modification", or write a full sentence. With them, it reliably follows the format and Meera's definitions.
+
+So when is few-shot worth it? There are five situations. First, when you have a house style, like a brand voice, a report format, or a specific way of writing LinkedIn posts. Second, when the labels are custom, like your own categories, priorities, or scoring scale. Third, when the format must be exact, because the output will be pasted into Excel or another system. Fourth, when the task is subtle. "Rewrite in a friendlier tone" means different things to different people. And fifth, when zero-shot keeps drifting. If you correct the same issue twice, add an example instead.
+
+On the other hand, skip examples when the task is generic, when you don't yet know what good looks like, or when examples might box in creativity, for instance when you're brainstorming.
+
+Next, let's talk about choosing good examples. Bad examples teach bad habits. Here are five rules. One, make them representative. Use realistic inputs, not toy ones. Two, cover the variety. If messages can be in Hinglish, include one Hinglish example. Three, include a tricky case. Show how to handle the edge case you care about, such as a message that fits two categories. Four, keep them consistent. Same labels, same format, and same length in every example, because models copy inconsistencies too. And five, don't let them be too similar to each other. Three examples that all start "Dear Sir" will make every output start "Dear Sir".
+
+Let's see a before and after for brand voice. Here's the before prompt: "Write a product description for our handloom cotton saree. Make it elegant."
+
+The after prompt asks for a description in the brand voice, and says to match the style, length and structure of two examples exactly. The first example is an indigo dabu print dupatta, described as hand-block printed in Bagru, in soft mul cotton that softens with every wash, and a quiet indigo for everyday wear. The second is a mustard Kanchi cotton saree, woven on pit looms near Kanchipuram, with a contrast temple border, and light enough for a full working day in May. Then the prompt gives the new product, a sage green handloom cotton saree with a zari border from Chanderi, and leaves the description blank. You'll find the full prompt in the lesson notes below this video.
+
+The examples quietly communicate a lot. A three-sentence length. The origin first. A tactile detail. And a practical use-case ending. Writing all of that as instructions would be longer and less effective.
+
+Now, the strongest pattern is describing plus showing. You combine both: a short instruction explaining the rule, then examples demonstrating it. But here's the thing. If your instruction and your examples ever conflict, the model usually follows the examples. So check them carefully.
+
+You can also use negative examples, as long as they're clearly labelled. Here's the prompt: "Good subject line: Your March G S T summary is ready, two items need action. Bad subject line: URGENT, Important G S T Update Inside. Write subject lines like the good one, never like the bad one."
+
+So, how many examples should you use? There's no magic number. Two or three are usually enough for format and style. Classification tasks with many labels may need one per label. Beyond five or six, you often get diminishing returns, and a longer, costlier prompt. Start small, and add an example only when you see a specific failure.
+
+Now it's your turn. Try it yourself. Spend fifteen to twenty minutes on this, and pause the video while you work.
+
+Step one. Pick a classification or rewriting task from your work. For example, tagging emails, rating leads as Hot, Warm or Cold, or rewriting notices for parents in simple English.
+
+Step two. Collect eight real inputs, or realistic, anonymised ones.
+
+Step three. Write a zero-shot prompt and run it on all eight. Note how many outputs are exactly right.
+
+Step four. Now add three examples, including one tricky case, and run the same eight inputs again.
+
+Step five. Compare the scores, and record both prompts and their results in your Prompt Journal.
+
+Go ahead and pause now if you'd like to try it.
+
+Let's recap. Zero-shot means instructions only, and it works for common, well-defined tasks. Few-shot adds examples, so the model copies your format, labels and style. Choose realistic, varied, consistent examples, and include at least one edge case. Combine a short rule with examples, and remember, if they conflict, models tend to follow the examples. And add examples in response to specific failures, rather than by default.
+
+That's it for this lesson. Mark it complete, and I'll see you in the next one.

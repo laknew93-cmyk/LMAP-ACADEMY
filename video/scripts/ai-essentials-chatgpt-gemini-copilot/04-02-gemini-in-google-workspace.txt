@@ -1,0 +1,59 @@
+Welcome to AI Essentials, module 4, lesson 2: Gemini in Gmail, Docs, Sheets and Drive.
+
+Many startups, schools, small businesses and freelancers across India run on Gmail, Google Docs, Sheets and Drive. Gemini brings AI into these tools. This lesson covers what Gemini can typically do inside Google Workspace, and how to use it well.
+
+Let's start with the Gemini app versus Gemini in Workspace. As with Copilot, there are two ways to meet Gemini.
+
+The first is the Gemini app. It's a chat assistant on the web and on phones, and on many Android phones it can act as the built-in assistant. It works like other chat assistants, and it can draw on Google Search.
+
+The second is Gemini in Google Workspace. These are AI features inside Gmail, Docs, Sheets, Slides, Drive and Meet, usually shown as a Gemini icon or a side panel.
+
+Which features you see depends on your account type, personal or work, your plan, and what your organisation's admin has enabled. Google changes features and plan names regularly, so treat this lesson as a guide to capabilities, rather than an exact map of buttons.
+
+Here's a useful feature to know about. In many setups, the Gemini app can connect to your Gmail, Drive and other Google apps, with your permission. So you can ask questions like, "Find the email from the C A about the G S T filing date."
+
+Let's look at Gemini in Gmail. Common uses include summarising a long email thread. Drafting a new email from a short instruction, using "Help me write". Refining a draft to make it more formal, shorter or more detailed. Suggesting replies based on the conversation. And finding information across your inbox, like "What did the courier company say about the refund?"
+
+Here's an example prompt: "Write an email to the parents of my Class 6 tuition batch informing them that classes on 2 and 3 November are cancelled for Diwali, and that a make-up class will be held on Sunday, 9 November, 10 am to 12 pm. Warm and clear."
+
+Next, Gemini in Google Docs. Common uses include drafting a document from a prompt. Rewriting selected text, whether that's shortening, elaborating, changing tone or converting to bullets. Summarising the document. And in many setups, referencing other files from your Drive while drafting.
+
+Here's an example prompt for the side panel: "Using the notes in this document, create a one-page proposal for a corporate Diwali gifting order of 200 hampers. Include: options, timeline, what we need from the client, and next steps. Leave prices as a placeholder that says PRICE."
+
+Now, Gemini in Google Sheets. Common uses include creating tables and templates from a description, like "Create an expense tracker for a small cafe." Suggesting formulas. Summarising and analysing data, and suggesting charts. And helping organise and categorise entries.
+
+Here's an example prompt: "Create a tracker for our Instagram orders with columns: order date, customer name, product, quantity, amount, payment mode, U P I, cash or card, and delivery status. Add sample rows I can delete later."
+
+As always, verify formulas and totals before relying on them.
+
+Next, Gemini in Drive. In many setups, Gemini in Drive can summarise files and folders, and answer questions across your documents. For example: "Summarise the three vendor quotations in this folder and compare their delivery timelines." This saves you from opening each file. But open the original before making a decision.
+
+Then there's Gemini in Google Meet. Depending on your plan, Gemini can help with meetings in Google Meet. For example, taking notes automatically and creating a summary document after the call, often shared with the organiser. Settings and availability vary, so check what your account offers. We cover meeting workflows in detail in the next lesson.
+
+Outside Workspace, the Gemini app is useful for research, because it can draw on Google Search. Some versions offer a deep research style mode that reads many web pages and builds a report. The verification habits from lesson three point one still apply. Open the sources, and check the numbers.
+
+Now, here's a distinction that matters a lot for privacy: personal account versus work account. With a personal Google account, you control the settings. Data use is governed by Google's consumer terms and your activity settings. It's best for personal tasks, learning and side projects. With a work or school Workspace account, your organisation's admin controls the settings. Data use is governed by your organisation's agreement with Google. And it's best for company work, as approved by your employer. The comparison table is in the lesson notes.
+
+Don't move work documents into a personal account to use AI features your company hasn't approved. And review your activity and privacy settings in your personal Gemini account, so you understand what's saved.
+
+So how do you choose between Gemini and Copilot? You don't have to pick a side. Here's the practical rule: use the AI built into the suite your work already uses. If your company uses Google Workspace, Gemini is the natural fit. If it uses Microsoft 365, Copilot is. For personal tasks, use whichever you prefer.
+
+Let's look at an example. Deepa is an operations executive at a Gurugram startup that uses Google Workspace. She relies on Gemini in Gmail to summarise vendor threads each morning, and on Gemini in Sheets to set up trackers. At home, she uses a different assistant for her personal planning. Both are fine. The skill is the same.
+
+Time to try it yourself. Spend about fifteen minutes exploring. Pause the video and follow these steps.
+
+Step one. Open Gmail, personal or work, and look for the Gemini icon or "Help me write". Note which features you have.
+
+Step two. In Gmail, draft a real email using a one-line instruction, then refine it with "shorter" or "more formal".
+
+Step three. In Google Docs, open or create a document and ask Gemini to summarise it, or to draft a one-page plan from your notes.
+
+Step four. In Google Sheets, ask Gemini to create a simple tracker for something in your life, like expenses, job applications or orders.
+
+Step five. If you don't have Workspace features, use the Gemini app with the same prompts, and copy the results across.
+
+And step six. Save your best Gemini prompt as Prompt number 9 in your library.
+
+Let's recap. Gemini exists as a standalone app, and as features inside Gmail, Docs, Sheets, Drive and Meet. Availability varies by account and plan. Gmail and Docs features help you draft, refine and summarise. Sheets features help build trackers and analyse data. The Gemini app's connection to Google Search makes it handy for research, but still verify sources. Keep work and personal accounts separate, and follow your employer's rules. And use the AI built into whichever suite your work already runs on.
+
+That's it for this lesson. Mark it complete, and I'll see you in the next one.

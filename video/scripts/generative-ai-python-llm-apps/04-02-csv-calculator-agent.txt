@@ -1,0 +1,43 @@
+Welcome to Generative AI Mastery, module 4, lesson 2: Project: C S V Data Analyst Agent with a Calculator.
+
+Your second portfolio project is a data analyst agent. You upload a sales C S V, ask questions in plain English, and the agent explores the data with safe tools and does exact maths with a calculator. Business teams everywhere want "ChatGPT for our Excel sheets." Building it safely shows you understand both agents and risk.
+
+Let's start with the design. The tempting shortcut is to let the model write and run any pandas code it likes. That's powerful, and it's dangerous. Generated code could read files, call the network, or loop forever. So instead, we give the agent narrow, safe tools.
+
+There are three of them. First, describe data, which returns the column names, their types, the row count and a few sample rows. Second, aggregate, which applies an optional filter and an optional group by, and then takes the sum, mean, count, minimum or maximum of a column. And third, a calculator, which evaluates arithmetic safely, with no code execution. The table is in the lesson notes below the video.
+
+Here's the thing: narrow tools make the agent more reliable too. There are fewer ways for it to go wrong, and every step is easy to log and explain.
+
+For sample data, we use a sales C S V for a fictional Surat textile wholesaler, with a date, city, product, units sold and revenue in rupees on each row. For example, forty cotton sarees sold in Mumbai in July twenty twenty six for fifty two thousand rupees. The sample rows are in the lesson notes. Add twenty to thirty more rows of your own so the answers are interesting.
+
+Now the tools, which go in a data tools file. Let's walk through what the code does.
+
+When the file loads, it reads the sales C S V with pandas, parses the dates, and adds a month column in year dash month format so monthly questions are easy. It also lists the allowed aggregations: sum, mean, count, min and max.
+
+The describe data function returns the row count, each column with its type, and the first five rows as a text table.
+
+The aggregate function takes a column, an aggregation, and optionally a group by column plus a filter column and value. First it checks every column name against the real columns, raising an error that lists the valid ones if any is unknown, and checks the aggregation is allowed. Then it applies the filter, ignoring case, and says so if no rows match. With a group by, it returns at most fifty rows sorted from largest to smallest. Otherwise it returns a single number.
+
+The calculator parses the expression into a syntax tree and walks it, accepting only plain numbers and basic operators: add, subtract, multiply, divide, remainder, and plus or minus signs. Anything else raises an error. The result is rounded to four decimals. The full code is in the lesson notes below the video.
+
+So how does it stay safe? First, aggregate checks every column name and the aggregation against a whitelist, so the model can only ask questions, never modify data. Second, errors list the valid options, so if the model guesses a wrong column, say revenue instead of revenue in rupees, it can correct itself next step. Third, results are capped at fifty rows. And fourth, the calculator evaluates only numbers and basic operators. Never use Python's built in eval on model output, because it would execute any code.
+
+Next, the tool definitions and the agent, in an analyst file that reuses the run agent function from the previous lesson. Describe data is described as showing columns, types, row count and sample rows, and the model is told to call it first. Aggregate is described as aggregating one numeric column, optionally filtered by an exact match and grouped by another column, with a hint to use the month column for monthly questions. Its inputs are the column, one of the five allowed aggregations, and the optional group and filter settings. The calculator takes an arithmetic expression, with a percentage change example, and is to be used for all maths.
+
+The system prompt says you're a data analyst for a textile wholesaler, answering questions about the sales file using only the tools. It sets four rules. Start by calling describe data if you haven't seen the columns. Never estimate numbers. Get them from aggregate and do maths with the calculator. Format money as Indian rupees with lakh style commas, for example one lakh fifty two thousand rupees. And end with a one line summary of how you computed the answer.
+
+Finally, a small loop keeps asking for questions and runs the agent with up to ten steps, until you enter a blank line. The code is in the lesson notes below the video.
+
+Let's try some questions. First: "Which city had the highest total revenue?" Second: "What is the average revenue per unit for Silk Saree?" And third: "By what percentage did total revenue change from July to August twenty twenty six?"
+
+For the percentage question, watch the trace. The agent should describe the data, aggregate revenue by month, then call the calculator with the two totals. That multi step chain, decided by the model, is exactly what makes this an agent rather than a fixed workflow.
+
+Now, why does this design interview well? When you present this project, highlight the decisions, not just the demo. There are five to mention. First, safe tools instead of code execution, and why. Second, self correction. Show a trace where a wrong column name gets fixed after an error message. Third, exact maths through a calculator, rather than trusting the model's arithmetic. Fourth, limits: a step cap, an output cap, and read only data access. And fifth, evaluation: a list of ten questions with known answers, computed by you in pandas, and the agent's score.
+
+If you later need more flexible analysis, hosted options exist. One example is Anthropic's server side code execution tool, which runs model written code in a sandbox managed by the provider. Choose based on how much flexibility you need versus how much risk you can accept.
+
+Now it's time to try it yourself. This takes about twenty minutes, so pause the video and follow along. First, create your sales C S V with at least twenty five rows, across three or four cities, three products and three months. Second, run the analyst and ask the three questions from earlier. Verify each answer with your own pandas code. Third, ask a question that needs a filter and a group by together, such as "Monthly units of Kurti Fabric in Pune." Fourth, ask "Delete all Mumbai rows," and confirm the agent explains that it can't. And fifth, write eight test questions with correct answers and score the agent. Note any failure and its cause.
+
+Let's recap. Give agents narrow, validated, read only tools instead of arbitrary code execution. Helpful error messages, like listing the valid columns, let agents self correct. Use a safe calculator for maths, and never eval model output. Instruct the agent to start by inspecting the data and to explain how it computed its answers. And when you present, show your design decisions and evaluation results, not just a demo.
+
+That's it for this lesson. Mark it complete, and I'll see you in the next one.

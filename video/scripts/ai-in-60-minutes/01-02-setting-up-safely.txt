@@ -1,0 +1,43 @@
+Welcome to AI in 60 Minutes, module 1, lesson 2: Setting Up Your Free AI Account Safely.
+
+Setting up an AI assistant takes just a few minutes. But a few smart choices at the start will protect your privacy for years. In this lesson, you'll create a free account and check the settings that really matter. There are five steps, so let's go through them one by one.
+
+Step one. Go to the official website or app only. Fake "ChatGPT" apps and websites are common, and some of them try to steal logins, or charge money for a service that's free. So always use the official sources. For ChatGPT, the website is chatgpt dot com, and the app is called ChatGPT, by OpenAI. For Gemini, the website is gemini dot google dot com, and the app is Google Gemini, by Google. And for Claude, the website is claude dot ai, and the app is Claude, by Anthropic. There's a handy table with all of this in the lesson notes below this video.
+
+On the Play Store or the App Store, check the developer name before you install anything. And if an app asks you to pay to "unlock ChatGPT" before you've even signed up, close it.
+
+Step two. Sign up with an email you control. Most assistants let you sign up with a Google account, an Apple ID, or an email address. Here are a few practical tips. First, use a personal email you check regularly, not a shared family or office one. Second, if you sign up with email, you may receive a one-time code. Only ever enter it on the official site. Third, if you use a password, make it unique. Don't reuse your UPI, banking or email password. And fourth, turn on two-step verification on the email account you used. That email is the key to your AI account.
+
+By the way, Gemini is linked to your Google account. So if you already use Gmail, you may be able to start right away.
+
+Step three. Check your privacy and data settings. This is the step most people skip. Every major assistant has settings that control how your conversations are stored, and whether they may be used to improve the company's AI models. The exact names and menus change over time, so look for these ideas in Settings.
+
+There are four to look out for. First, data controls, or privacy. This is an option about whether your chats can be used to train or improve models. Many people choose to switch this off. Second, chat history, or activity. This controls whether your conversations are saved, and for how long. Third, memory, or personalisation. This is whether the assistant remembers details about you across chats. It's useful, but review what it has stored from time to time. And fourth, delete chats. You can usually delete individual conversations, or all of them.
+
+Spend two minutes reading what each setting does. You don't need to switch everything off. Just make a conscious choice.
+
+Step four. Understand free versus paid. Free versions are more than enough for this course, and for most everyday use. Paid plans typically offer higher usage limits, newer models, or extra features. Prices and limits change, so check the official site if you're curious. But there's no need to pay to get started.
+
+And if you hit a "limit reached" message on a free plan, simply wait a few hours, or switch to another assistant for the day.
+
+Step five. Learn the screen. Whichever assistant you choose, the screen looks pretty similar. There's a message box at the bottom where you type, or you can tap the mic to speak. There's a New chat button to start a fresh conversation on a new topic. There's your chat history in a side menu, so you can go back to old conversations. There's an attach button, often a paperclip or a plus sign, to upload a file or a photo. And near each reply, you'll find copy, regenerate and edit buttons.
+
+Here's a good habit. Start a new chat for each new topic. Mixing your daughter's science project with your shop's GST queries in one long chat confuses the AI.
+
+Now it's time to try it yourself. This takes about ten to fifteen minutes. Pause the video now, and follow along.
+
+Step one. Choose one assistant: ChatGPT, Gemini or Claude.
+
+Step two. Install the official app, or open the official website. Check the developer name or the web address.
+
+Step three. Sign up and confirm your email.
+
+Step four. Open Settings, and find the data and privacy controls, chat history, and memory options. Decide what you want, and set them.
+
+Step five. Start a new chat and type this. Here's the prompt: Hi! I'm new to using AI. In 5 short bullet points, tell me what kinds of everyday tasks you can help me with.
+
+And step six. Read the reply. Congratulations, that's your first prompt!
+
+Let's recap. Only use official websites and apps, and check the developer name before installing. Protect the email you sign up with, and never reuse your banking or UPI password. Review your data, history and memory settings in the first five minutes. Free versions are enough to start, and paid plans are optional. And start a new chat for each new topic.
+
+That's it for this lesson. Mark it complete, and I'll see you in the next one.

@@ -1,0 +1,43 @@
+Welcome to No-Code AI Agents and Automation, module 3, lesson 2: Project 1, CRM, Google Sheets and WhatsApp Follow-Up.
+
+Your leads are now captured and scored. In this lesson, you'll finish Project 1. That means saving every lead to a Google Sheet or CRM, routing by score, alerting your team, and following up on WhatsApp or email in a way that's fast, personal and compliant.
+
+Step six is to save every lead. Save first, act second. Whatever happens later in the run, the lead should already be recorded.
+
+You've got two options. Option A is Google Sheets as a lightweight CRM. For a small business, a well-designed sheet goes a long way. The lesson notes have a suggested set of columns, and who fills each one. The automation fills a lead I D. The trigger fills in when it was received, the source, the cleaned name, phone, email and company, and the message. The AI step fills the score, category, reason and next step. The router fills in the owner. The automation records whether a follow-up was sent, with a timestamp. And humans fill in the status, like new, contacted, proposal, won or lost, plus any notes.
+
+Freeze the header row. Protect the automation-filled columns from accidental edits where you can. And never rename columns without updating the workflow. Renamed columns are one of the most common causes of broken flows.
+
+Option B is a real CRM. If the business uses Zoho CRM, HubSpot, Pipedrive, LeadSquared or something similar, use the tool's connector, or an HTTP Request with the CRM's A P I. First find or create the contact, and then create the deal or lead. Map the AI fields into custom fields, so the sales team sees the score and reason inside the CRM they already use.
+
+Step seven is routing by score. Add a router with four branches based on the category. Hot leads get an owner assigned, an instant alert to that owner, and an immediate personalised follow-up. Warm leads get an owner, a follow-up message, and a reminder task in two days. Cold leads get a polite acknowledgement email, and get added to the monthly newsletter list, with consent. And "not a lead" or "review" get no outbound message at all. They're just logged, and the review ones get a human check.
+
+For owner assignment, keep it simple. Use a lookup sheet that maps a city or service to a person, or a round-robin using a counter. Don't over-engineer this in version one.
+
+Step eight is the follow-up messages. First, alert the team instantly for hot leads. Send the owner a short internal alert on Slack, email, or a WhatsApp group the team uses. Here's an example from the lesson. "HOT lead, score eighty-four. Rohan Kulkarni, Kulkarni Sweets, Indore. Needs Instagram and Google Ads for three outlets, starting next month. Why: clear budget mentioned, local business, near-term start." And then the phone number to call. Speed matters with hot leads. An alert that arrives within a minute changes how fast the team responds.
+
+Next, an AI-drafted personalised follow-up. Add a second AI step that drafts the outbound message using the lead's own words. The lesson's prompt asks for a short, warm first reply from Kavya. It sets a limit of sixty words, in plain, friendly English, with no hype and no emojis. It asks the model to mention one specific detail from the lead's message, offer a fifteen-minute call, and ask for a convenient time. And it tells the model not to mention prices or make promises about results. You'll find the full prompt in the lesson notes below this video.
+
+In the beginning, for hot leads, consider sending this draft to the owner for a quick approval, instead of sending it automatically. We'll cover human approval properly in module four.
+
+Now, WhatsApp. Let's do it the right way. WhatsApp is how most Indian customers prefer to talk, but automating it needs care. There are four things to know.
+
+First, use the WhatsApp Business Platform, also called the Cloud A P I. You can use it directly through Meta, or through an official Business Solution Provider. Many Indian providers, like Interakt, AiSensy, Wati, Gupshup and others, offer this with friendly dashboards and connectors. Avoid unofficial tools that automate the regular WhatsApp app. They can get numbers banned, and they're not suitable for client work.
+
+Second, businesses generally need the customer's opt-in before messaging them. So add a clear checkbox or line on your form, like "I agree to be contacted on WhatsApp."
+
+Third, messages that a business starts, like your first follow-up, generally have to use a pre-approved message template. Templates have numbered placeholders. For example, "Hi" then the name, "thanks for contacting" then the business, "about" then the topic. Free-form messages, including fully AI-written text, are typically only allowed within a limited customer-service window after the customer messages you. Check the current Meta rules and your provider's guidance, because policies and pricing change.
+
+And fourth, in practice, it works like this. Send an approved template first. You can fill a placeholder with a short AI-generated detail if it fits the template's purpose. Then, once the lead replies, a human or a bot can continue the conversation freely within the allowed window.
+
+What about email follow-up? Email is more flexible. You can send the AI-drafted message directly from the Gmail or Outlook connectors. Send from a real person's address and include a signature. And for bulk or newsletter emails, use a proper email marketing tool with unsubscribe handling.
+
+Then, record what was sent. After sending, update the lead's row. For example, follow-up sent equals yes, with the date, the time, and the channel, like WhatsApp. And before sending, check this column, so a re-run never messages a lead twice.
+
+Step nine is the follow-up reminder. For warm leads, schedule a check. That's a daily scheduled workflow that finds rows where the status is still "New" and the lead was received more than two days ago, and sends the owner a reminder list. This wait step is exactly what humans forget and automations remember.
+
+Now, try it yourself. You'll complete Project 1. It takes about twenty minutes, plus provider sign-up time if you need it. Pause the video and work through the steps. Step one, add the lead-sheet columns from the lesson notes, and map all the fields, saving the lead before any routing. Step two, add a router on category, with hot, warm and cold branches, and a fallback branch. Step three, for hot leads, send yourself an instant alert by email or chat, and an AI-drafted follow-up email. Step four is optional. Sign up for a WhatsApp Business Platform provider's trial, and submit one template for approval for your follow-up. Step five, add a "follow-up sent" check so re-runs don't double-message. And step six, push your ten-lead test set through the full flow, and screenshot the resulting sheet for your portfolio. Just blur any real personal data.
+
+Let's recap. Save the lead first, then route and act, so nothing is lost if a later step fails. A well-structured Google Sheet is a perfectly good CRM for small teams, and you can connect a real CRM when one exists. Instant alerts for hot leads and automatic reminders for warm leads are often the biggest wins. Use the official WhatsApp Business Platform, with opt-in and approved templates for business-initiated messages. And track what was sent, so the workflow never double-messages a lead.
+
+That's it for this lesson. Mark it complete, and I'll see you in the next one.

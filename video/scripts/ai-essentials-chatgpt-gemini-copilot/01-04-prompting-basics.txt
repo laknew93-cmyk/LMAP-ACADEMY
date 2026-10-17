@@ -1,0 +1,69 @@
+Welcome to AI Essentials, module 1, lesson 4: Prompting Basics: The R T C F T Formula.
+
+The difference between a useless AI answer and a brilliant one is usually the prompt. In this lesson, you'll learn a simple five-part formula that works in every assistant, plus the art of follow-up messages.
+
+Let's start with why most prompts disappoint. Here's a typical first prompt: "Write an email to my client."
+
+The assistant has no idea who the client is, what the email is about, what tone you want, or how long it should be. So it produces a generic template that you'll spend more time fixing than writing yourself.
+
+Now compare that with a better prompt. It asks the assistant to act as an experienced account manager at a digital marketing agency in Mumbai. It asks for an email to Mr. Deshmukh, owner of a chain of four sweet shops, explaining that his Diwali ad campaign will launch three days late because the festive creatives need his approval. It asks him to approve the attached designs by Thursday, five p m. And it says to keep it under a hundred and twenty words, polite but firm, ending with a clear next step. You'll find the full prompt in the lesson notes below this video.
+
+Same assistant, completely different result. The second prompt took forty seconds longer to write, and saved ten minutes of editing.
+
+So here's the formula. Good prompts usually have five parts. Remember them as R T C F T: Role, Task, Context, Format, Tone.
+
+First, Role. Who should the AI act as? For example, "You are a senior H R manager."
+
+Second, Task. What exactly should it do? For example, "Write a job description for..." and then the job.
+
+Third, Context. What background does it need? For example, "We are a thirty-person C A firm in Chennai."
+
+Fourth, Format. What should the output look like? For example, "Bullet points, under two hundred words, with a table."
+
+And fifth, Tone. How should it sound? For example, "Warm, professional, no jargon."
+
+You don't need all five every time. A quick question needs only the task. But when the output matters, run through the checklist. The full table is in the lesson notes.
+
+Now, if you remember only one thing from this lesson, make it this: context beats clever wording. Tell the assistant who the audience is, why you're writing, what has already happened, and any constraints, like word limits, deadlines, or things to avoid. The assistant can't read your mind, but it uses every detail you give it.
+
+Next, give examples when style matters. If you want output in a particular style, show it an example. This is often called "few-shot" prompting.
+
+Let's look at an example. Imagine you run an online saree store. You paste in two product descriptions customers liked. One is: "Soft Chanderi silk in morning-sky blue, with a delicate zari border. Light enough for office, elegant enough for a sangeet." The other describes hand-block printed Jaipur cotton in terracotta, breathable and easy to drape. Then you ask the assistant to write descriptions in the same style and length for a maroon Kanjivaram silk with a gold temple border, and a pastel green linen saree with a simple woven stripe. The full prompt is in the lesson notes below this video.
+
+The assistant picks up length, rhythm and vocabulary from the examples far better than from a description like "elegant and short".
+
+Now, here's where the magic happens: follow-ups. Your first prompt rarely gives the perfect answer, and that's fine. The real skill is iterating. Here are some useful follow-ups. "Make it shorter, under 80 words." "More formal, this is going to a government department." "Too salesy. Make it sound like a helpful friend." "Give me 3 different versions so I can choose." "Keep everything but rewrite the first line to be more attention-grabbing." "Turn this into a table." And, "What questions should you ask me to make this better?"
+
+That last one is powerful. When you're not sure what context to give, let the assistant interview you. Here's the prompt: "I need to write a proposal for a corporate client for our office catering service. Before you write anything, ask me the 5 most important questions you need answered to write a strong proposal."
+
+Next, five prompting habits that save time.
+
+First, start a new chat for a new topic. Old conversation details can confuse unrelated tasks.
+
+Second, paste the actual material. Instead of "summarise the meeting", paste the notes.
+
+Third, specify length in numbers. "Under 100 words" or "5 bullet points" works far better than "short".
+
+Fourth, say what to avoid. For example, "No cliches like 'in today's fast-paced world'", or "Don't use the word 'delve'".
+
+And fifth, ask for options. Three versions to choose from is often faster than refining one.
+
+Finally, here's a reusable prompt template. Copy it into your notes, because you'll use it all through the course. It has six lines. Act as, and then the role. I need you to, and then the task. Background, where you say who it's for, what's happened, why it matters, and any constraints. Format, meaning the length and structure, like bullets, a table or an email. Tone, for example warm and professional, simple and direct, or formal. And Avoid, for anything you don't want. The template is in the lesson notes below the video.
+
+Time to try it yourself. Take about fifteen minutes to feel the difference that structure makes. Pause the video and work through these steps.
+
+Step one. Pick a real writing task from your week. Maybe a message to a colleague, a note to your child's school, a product post for your business, or a follow-up to a recruiter.
+
+Step two. First, write a lazy one-line prompt and send it. Save the result.
+
+Step three. Next, open a new chat and rewrite the prompt using the R T C F T template. Include at least three lines of context.
+
+Step four. Compare the two outputs. Which would you actually send?
+
+Step five. Improve the better one with two follow-up messages, for example, "shorter" and "warmer".
+
+And step six. Save your final R T C F T prompt in your notebook under the heading "Prompt Library, Prompt number 1".
+
+Let's recap. Vague prompts produce generic answers. Specific prompts produce usable drafts. Use R T C F T, that's Role, Task, Context, Format, Tone, for anything important. Context is the most valuable ingredient, and examples are the best way to teach style. Treat prompting as a conversation, and refine with short follow-ups. And when you're unsure, ask the assistant to question you first.
+
+That's it for this lesson. Mark it complete, and I'll see you in the next one.

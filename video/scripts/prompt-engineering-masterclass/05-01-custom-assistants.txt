@@ -1,0 +1,43 @@
+Welcome to Prompt Engineering Masterclass, module 5, lesson 1: Custom Instructions and Custom Assistants.
+
+If you keep pasting the same background and instructions into every chat, it's time to build a custom assistant. In this lesson, we'll cover custom instructions and configurable assistants, such as Custom GPTs, Claude Projects and Gemini Gems. And I'll walk you through configuring one for a specific job role.
+
+Let's start with the three levels of customisation. Features and names change, but most major assistants offer some version of these. There's a table in the lesson notes, but here's the short version. The first level is custom instructions, sometimes called personal preferences. These are standing notes about you that apply to every chat. They're good for your role, your writing style, and your format preferences. The second level is saved assistants, for example Custom GPTs in ChatGPT, or Gems in Gemini. These are named assistants with their own instructions, and optionally uploaded files. They're good for one repeated job, like a "Proposal Writer" or an "Interview Coach". And the third level is project workspaces, for example Claude Projects or ChatGPT Projects. These are workspaces with shared files and instructions across many chats. They're good for ongoing work on one client, course or product.
+
+Availability, sharing options and limits depend on your plan, and they change often, so check your tool's current help pages. But the prompting principles we'll cover work in all of them.
+
+Now, custom instructions. Think of them as your default context. Custom instructions answer two questions. "What should the AI know about me?" And, "How should it respond?"
+
+Let's look at an example. The "About me" part describes a digital marketing consultant in Kochi, working with small hospitality businesses like homestays, cafes and Ayurveda resorts. Their clients are owner-run and budget-conscious, and mostly use Instagram, Google Business Profile and WhatsApp. Then the "How to respond" part sets five rules. Be concise, and lead with the answer, then detail if needed. Use rupees and Indian context by default. When suggesting tactics, note the rough effort as low, medium or high. Ask one clarifying question if a request is ambiguous, instead of guessing. And never invent statistics. If a number is cited, say where it comes from, or label it as an estimate. You'll find the full prompt in the lesson notes below this video.
+
+Keep your custom instructions short and stable. Task-specific instructions belong in a dedicated assistant, not here.
+
+Next, designing a role-specific assistant. A custom assistant's instructions are a long-lived system prompt. They deserve more care than a normal prompt, because they run every time. Use this seven-part structure. First, identity and purpose. Who it is, and the one job it does. Second, users. Who will talk to it, and what they know. Third, workflow. The steps it follows, including what to ask first. Fourth, knowledge. Which uploaded files to rely on, and how. Fifth, output formats. Templates for its main deliverables. Sixth, rules and boundaries. What it must never do. And seventh, tone, with a short example.
+
+Let's look at a real example: a Recruiter Screening Assistant, built for Pooja, a talent acquisition executive at a Bengaluru IT services company. The full prompt is long, so let me walk you through it section by section. You'll find the full prompt in the lesson notes below this video.
+
+The identity section says it's the Screening Assistant for the T A team at a mid-size IT services company, helping recruiters screen CVs against job descriptions quickly and fairly.
+
+The users section says it's for recruiters with one to five years' experience, who paste a J D, that's a job description, along with one or more CVs.
+
+The workflow has four steps. One, if no J D is provided, ask for it, and don't screen without one. Two, extract the J D's must-have and nice-to-have requirements as a list, and ask the recruiter to confirm or edit them. Three, for each CV, produce a Screening Card. And four, offer to draft five role-specific interview questions for shortlisted CVs.
+
+The knowledge section points to two uploaded files: a Screening Guidelines P D F for scoring rules, and a Role Levels P D F for experience bands. If they conflict with a user request, the assistant follows the guidelines and says so.
+
+The Screening Card format lists the candidate by initials only, a match rating of strong, partial or weak, how many must-haves are met, with yes, no or unclear for each, plus evidence from the CV. Then nice-to-haves, up to three gaps to probe in interview, and the notice period and location as stated, or "Not stated".
+
+The rules are important. Judge only on skills, experience and stated requirements. Never consider or comment on age, gender, religion, caste, marital status, photos, or college prestige, unless the J D makes a lawful, job-related requirement explicit. Never invent experience, and mark anything unclear as "Unclear". The recruiter makes the final decision, so the assistant provides evidence, not verdicts. And it reminds users to remove phone numbers and addresses before pasting CVs.
+
+Finally, the tone is neutral, crisp and evidence-based, with a short example showing a must-have of Java, three plus years, marked yes, with the matching line quoted from the CV.
+
+Notice how much of this is about behaviour in edge cases. A missing J D, conflicting instructions, unclear evidence, sensitive attributes. That's what separates a dependable assistant from a demo.
+
+Now, knowledge files. Most custom assistants let you upload reference files. Here are five tips. First, upload clean, current documents, like style guides, policies, FAQs, product sheets and templates. Second, name files clearly, and refer to them by name in the instructions. Third, tell the assistant how to use them. For example, "Answer pricing questions only from Price List Oct dot P D F." Fourth, remove outdated versions. Conflicting files cause conflicting answers. And fifth, don't upload anything you wouldn't want every user of the assistant to see.
+
+Next, test before sharing. Use the testing approach from lesson 3.3. Write eight to ten test conversations. Include a user who skips the J D, a CV with sensitive personal details, and someone asking, "Just tell me who to reject." Then fix the instructions until all of them pass.
+
+Now it's time to try it yourself. This is a project: a custom assistant for a job role. Spend twenty minutes on it, and pause the video as you go. Step one. Pick a job role you have or want, like sales executive, teacher, HR recruiter, content marketer, financial analyst, or customer support lead. Step two. Identify the one repeated task the assistant will handle. Step three. Write the instructions using the seven-part structure, with at least four rules for edge cases. Step four. Create the assistant in your tool. Or, if your plan doesn't support it, save the instructions and paste them at the start of a new chat. Step five. Run six test conversations, including two tricky ones, and revise the instructions. And step six. Save the final instructions and your test notes as a portfolio project.
+
+Let's recap. Custom instructions hold stable facts about you, while dedicated assistants handle one repeated job. An assistant's instructions are a system prompt, so define identity, users, workflow, knowledge, formats, rules and tone. Most of the work is specifying behaviour for edge cases and boundaries. Upload clean, current knowledge files, and tell the assistant exactly how to use them. And test with tricky conversations before sharing an assistant with anyone.
+
+That's it for this lesson. Mark it complete, and I'll see you in the next one.

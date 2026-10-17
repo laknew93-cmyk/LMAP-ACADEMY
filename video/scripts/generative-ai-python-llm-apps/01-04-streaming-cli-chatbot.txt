@@ -1,0 +1,39 @@
+Welcome to Generative AI Mastery, module 1, lesson 4: Streaming Responses and a C L I Chatbot.
+
+Waiting ten seconds for a full answer feels broken. But watching the answer appear word by word feels fast, even when the total time is exactly the same. In this lesson, you'll add streaming, and then turn everything you've built so far into a proper command line chatbot that you can show in your portfolio.
+
+Let's start with why streaming matters. Without streaming, the A P I returns nothing until the whole response has been generated. With streaming, the server sends small pieces, called events, as soon as they're produced. There are three benefits. First, perceived speed. The first words appear quickly, and that's what users judge you on. Second, long outputs are safer. Very long requests can hit H T T P timeouts if you wait for the full answer, but streaming keeps the connection active. And third, you can cancel early. A user can stop a rambling answer, and you stop paying for further tokens.
+
+Now let's look at the simplest stream. The S D K offers a stream helper that handles all the low-level events for you. The code is in the lesson notes below the video. It sets up the client as usual, then asks the model for a hundred and fifty word story about a Jaipur auto driver who learns Python. Let's walk through it.
+
+First, the stream helper is opened inside a with block. That opens the connection, and the with block makes sure it's closed properly, even if your code raises an error. Second, you loop over the stream's text stream. That gives you only the text pieces, and skips other event types you don't need yet. Third, each piece is printed without a newline, and the output is flushed, which forces the terminal to show it immediately. That's what creates the typing effect. And fourth, once streaming finishes, you ask the stream for the final message. That gives you the complete response object, with the content, the stop reason and the usage, so you don't have to rebuild it yourself. The script then prints the stop reason and the output token count.
+
+You might notice a short pause before the first words appear. That's because current models reason before answering, and by default that reasoning isn't shown. For a chat app, this is usually fine. For slower, harder tasks, show a thinking indicator, so users know something is happening.
+
+Now let's build the C L I chatbot. You combine streaming with the conversation history from the last lesson, in a new chat script. The full code is in the lesson notes below the video, so here's what it does in plain words.
+
+It starts with a short system prompt. The assistant is a friendly Python tutor for Indian engineering students. It explains things with short code examples, and keeps answers under two hundred words unless asked for more.
+
+Then there's a function that streams one reply. It takes the list of messages, opens a stream with the system prompt and the history, prints each text piece as it arrives, and also collects the pieces in a list. When the stream ends, it gets the final message. If the stop reason says max tokens, it prints a note that the answer was cut off and the user can ask it to continue. Finally, it joins the pieces into one string and returns the full reply.
+
+Then there's the main function, which runs the user interface. It starts with an empty history and prints a welcome line explaining that you can type exit to quit, or reset to start over. Then it loops forever. Each time round, it reads what the user types. If the user presses Control D or Control C, the loop ends quietly. Empty input is skipped. Typing exit ends the loop, and typing reset clears the history and prints a short confirmation.
+
+Otherwise, it adds the user's message to the history, prints the tutor label, and calls the streaming function. If the A P I call fails, it removes the user message it just added, prints the error, and lets the user try again. If it works, it adds the assistant's reply to the history.
+
+So what's worth noticing here? There are four things. First, separation of concerns. The streaming function knows how to talk to the A P I, and the main function handles the user interface. When you build the web version, you'll reuse the first part and replace the second. Second, commands. Exit and reset are handled locally, and they're never sent to the model. Real products have many commands like these, such as help or export. Third, graceful failure. If the A P I call fails, we remove the unanswered user message, so the history stays a clean alternation of user and assistant turns. Then the user can try again, instead of the app crashing. And fourth, pressing Control C exits cleanly, rather than printing a stack trace.
+
+Run the script with Python and have a conversation with your tutor.
+
+Next, let's measure latency. Engineers in Gen AI roles are often asked, how fast is it? Two numbers matter, and there's a table in the lesson notes. The first is time to first token, which is how long until the first text appears. That drives perceived speed. The second is total time, which is how long until the answer is complete. That drives throughput and cost per user.
+
+You can measure time to first token with just a few lines. The code is in the lesson notes below the video. It records the start time, opens a stream asking for five Indian startups in fintech, and the moment the first piece of text arrives, it records how much time has passed. When the stream ends, it prints both the time to first token and the total time, in seconds.
+
+Try it with the effort setting at low, and then at high, and note the difference. Lower effort usually means less reasoning, and a faster first token.
+
+What about other providers? OpenAI, Gemini and Ollama all support streaming with the same idea. You loop over chunks and print the text in each one. The event names are different, so check their documentation, but the structure of your C L I doesn't change.
+
+Now, try it yourself. This takes about twenty minutes, so go ahead and pause the video. First, build and run the chat script. Second, change the system prompt to a domain you care about. For example, an interview coach for T C S or Infosys freshers, or a travel planner for weekend trips from Bengaluru. Third, add a save command that writes the conversation to a J S O N file. Fourth, add a tokens command that prints the input and output tokens of the last reply. Here's a hint: have the streaming function return the usage from the final message as well. And fifth, measure the time to first token for three different prompts, and write down the numbers. Keep them, because you'll compare them after adding caching in Module 5.
+
+Let's recap. Streaming improves perceived speed and avoids timeouts on long outputs. The stream helper, with its text stream and its final message, covers most of your needs. Keep your A P I logic separate from your interface code, so you can swap a C L I for a web interface. Handle errors without corrupting the conversation history. And track time to first token and total time, because those are the latency numbers interviewers ask about.
+
+That's it for this lesson. Mark it complete, and I'll see you in the next one.

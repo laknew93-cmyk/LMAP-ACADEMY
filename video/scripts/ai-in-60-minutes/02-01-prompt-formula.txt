@@ -1,0 +1,57 @@
+Welcome to AI in 60 Minutes, module 2, lesson 1: The Simple Prompt Formula: Role, Task, Context, Format.
+
+You've already seen that detailed prompts get better answers. In this lesson, you'll learn a simple four-part formula that makes this automatic. That way, you'll never have to wonder what to type.
+
+Let's start with why vague prompts disappoint. Compare two prompts. Here's the first one: "Write a post about my shop." That's it. Now here's the second prompt: "You are a social media writer for small Indian businesses. Write an Instagram caption for my home bakery in Pune announcing our new eggless Diwali hampers, priced from seven hundred and ninety-nine rupees. Our customers are mostly young families. Keep it under 60 words, warm and festive, and end with 3 relevant hashtags."
+
+So what happens? The first prompt gets a generic paragraph that could be about any shop, anywhere. The second gets something you could post almost as is. And here's the thing. The difference isn't magic. It's four ingredients.
+
+The formula is Role, Task, Context, Format. Let's take them one at a time.
+
+First, role. Who should the AI act as? Giving the AI a role sets the tone and the level of expertise. For example, you might say, "You are an experienced HR manager." Or, "You are a patient maths tutor for a Class 9 student." Or, "You are a friendly customer support executive."
+
+Second, task. What exactly do you want? Use a clear action word, like write, summarise, explain, list, compare, plan, rewrite or suggest. For example, "Write a cover letter." Or, "Compare these two phone plans." Or, "List 10 interview questions."
+
+Third, context. What does the AI need to know? This is the ingredient beginners skip most often. Think about who it's for, why you need it, and any constraints. Ask yourself a few questions. Who is the audience? What's the background or situation? What should be avoided? And is there any budget, deadline or word limit?
+
+And fourth, format. How should the answer look? Tell the AI the shape you want. That could be bullet points, a table, a short paragraph, a WhatsApp-length message, a step-by-step list, or a fixed word count.
+
+Now, here's a template you can reuse. It has four lines. The first line says, "You are a," followed by the role. The second line is your task, starting with an action word. The third line starts with "Context," and covers who it's for, the background, and any constraints. And the fourth line starts with "Format," and covers whether you want bullets, a table or a paragraph, plus the length and tone. You'll find the template in the lesson notes below this video.
+
+You don't need to use these exact labels. Once you're comfortable, you'll write it all as natural sentences. But in the beginning, the labels make a helpful checklist.
+
+Let's see the formula in action with three examples.
+
+First, meet Rohit, a job seeker in Indore. His prompt asks the AI to act as a career coach who understands the Indian job market, and to rewrite his LinkedIn About section so it attracts recruiters for operations manager roles. For context, he explains that he has six years of experience in warehouse operations at a logistics company, that he led a team of twenty-five, that he reduced dispatch delays significantly, and that he's open to roles in Pune or Bengaluru. For format, he asks for first person, under 200 words, confident but not boastful. You'll find the full prompt in the lesson notes below this video.
+
+Next, there's Meena, who's returning to work after a career break. Her prompt asks the AI to be a supportive career counsellor and help her explain a four-year career break in a job interview. For context, she shares that she took the break to care for her young children, that she was an accounts executive before that, and that during the break she completed an online Tally and G S T course. For format, she asks for a short, honest answer she can say aloud in about thirty seconds, plus two tips for delivering it. Again, the full prompt is in the lesson notes.
+
+And finally, Arjun, a Class 12 student. Here's the prompt: "You are a patient chemistry teacher. Explain the difference between ionic and covalent bonds. Context: I am preparing for my board exams and find this topic confusing. Format: A simple comparison table, then 3 practice questions with answers at the end."
+
+Notice how each of these prompts uses all four parts. Role, task, context and format.
+
+Now for two bonus tips.
+
+The first tip is, give an example. If you want a particular style, paste a sample. You could say, "Here is a message I liked. Write in a similar style." AI is very good at matching examples.
+
+The second tip is, ask it to ask you. If you're not sure what context to give, add this line: "Before you answer, ask me any questions you need to do this well." The AI will interview you, and the final answer will be much better.
+
+Now it's time to try it yourself. This takes about 15 minutes, so feel free to pause the video and work along.
+
+Step one. Pick one weak prompt you used in lesson three, or write a vague one, like "help me with my resume."
+
+Step two. Rewrite it using all four parts: role, task, context and format.
+
+Step three. Send the original vague prompt in one new chat, and your improved prompt in another.
+
+Step four. Compare the two answers side by side. Which one would you actually use?
+
+Step five. Try once more with the bonus tip. Add, "Before you answer, ask me any questions you need." Answer its questions and see the result.
+
+And step six. Save your best prompt in your phone's notes app as a reusable template.
+
+Go ahead and pause the video now if you'd like to do the exercise.
+
+Let's recap. Strong prompts have four parts: role, task, context and format. Context is the part people skip most often, and it often makes the biggest difference. Telling the AI the format you want saves editing time later. Pasting an example helps the AI match the style you like. And when you're unsure, ask the AI to ask you questions first.
+
+That's it for this lesson. Mark it complete, and I'll see you in the next one.

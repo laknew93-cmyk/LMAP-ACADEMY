@@ -1,0 +1,37 @@
+Welcome to Generative AI Mastery, module 5, lesson 3: Deploying with Docker, Environment Variables and Cloud Hosting.
+
+An app on localhost is invisible to recruiters. In this lesson, you'll package your invoice extraction service in Docker and deploy it to a platform-as-a-service host, such as Render or Railway, with secrets handled properly. The same steps work for your rag app and Streamlit demos.
+
+Let's start with configuration. Production code should read every setting that differs between your laptop and the server from environment variables. You've done this since lesson 1.2. Now, collect them in one place.
+
+The config file is in the lesson notes below the video. Here's what it does. First, it loads your local dot env file, which is harmless in production because there's no such file there. Next, it defines a helper that looks up a variable by name and raises a clear error if it's missing. It uses that helper for your Anthropic A P I key, so the check happens at startup. Then it reads three optional settings with defaults: the model name, the maximum upload size of ten megabytes, and a rate limit of ten per minute.
+
+Import this config module at the top of your main file. Failing fast matters. If the key is missing, the app should crash at startup with a clear message, not return confusing errors to the first user an hour later. The S D K client still reads the key from the environment itself. The config module just checks it's there.
+
+Next, pin your dependencies. Use pip's freeze command to write a requirements file with exact versions, so the server installs exactly what you tested. Then open the file and delete packages you don't use, like Jupyter. Smaller images build faster and have fewer security issues.
+
+Now, the Dockerfile. Docker packages your code, Python version and dependencies into an image that runs the same everywhere. The full file is in the notes, so let's walk through what each part does and why.
+
+It starts from the official slim Python 3.12 image, which is small. It sets two Python settings: one stops Python writing bytecode files, and the other turns off output buffering, so logs appear immediately in the host's log viewer. It sets the working folder to app. Then it copies only the requirements file and installs packages, before copying the rest of your code. That order lets Docker cache the slow install step, so changing a Python file doesn't reinstall everything. Next, it creates a regular user and switches to it, so the app runs as a non-root user, a basic security practice. Finally, it declares port eight thousand and starts the Uvicorn server.
+
+Two details in that last line matter. The server binds to zero dot zero dot zero dot zero, which makes it reachable from outside the container. The default, one two seven dot zero dot zero dot one, is a classic "works locally, fails in Docker" bug. And the port comes from the PORT variable that Render and Railway provide, falling back to eight thousand locally.
+
+Also create a docker ignore file, so secrets and junk never enter the image. It lists your env file, virtual environment, Python cache folders, the git folder, your local Chroma database, and P D F files.
+
+Now build and run locally. The two commands are in the notes. The first builds the image and names it invoice extractor. The second runs it, maps port eight thousand, removes the container when it stops, and passes in your env file. That passes your local secrets as environment variables at run time. They're never baked into the image. Open localhost, port eight thousand, slash docs, and test an upload. If it works in Docker locally, it'll almost certainly work on the host.
+
+Now let's deploy to Render or Railway. Both follow the same broad flow, but dashboards change, so follow their current docs for exact clicks. One: push your project to GitHub, and double-check your env file isn't in the repository. Two: create a new web service and connect the repository. Three: choose Docker as the build method. Both platforms detect a Dockerfile. Four: in the environment variables settings, add your A P I key, model name and other settings. These are stored encrypted and injected at run time. Five: set the health check path to slash health if asked. And six: deploy, watch the build logs, and open the public U R L plus slash docs.
+
+Free and low-cost tiers often sleep when idle, so the first request after a pause can be slow. Mention this in your README so a recruiter doesn't think your app is broken. And check each platform's current pricing and limits before choosing.
+
+For Streamlit apps, you only change the last line of the Dockerfile, so it runs Streamlit on the platform's port, falling back to eighty-five oh one, and again binds to zero dot zero dot zero dot zero.
+
+For rag apps with local embeddings, note two things. First, the sentence transformers library pulls in PyTorch, which makes images large and may exceed small free tiers. An embeddings A P I is a lighter option in production. Second, container disks on these platforms are usually ephemeral, so a local Chroma database folder is wiped on redeploy. For a demo, run ingestion at startup from documents in the repository. For real use, attach a persistent disk or use a hosted vector store, such as PostgreSQL with pgvector.
+
+Before sharing, go through the production checklist in the notes. Secrets live only in platform environment variables, never in Git or the image. The app fails fast if a required variable is missing. There's a health endpoint. Rate limiting and upload size limits are on. Logs include token usage, with P I I redacted. A spend alert or limit is set in the provider console. Stop reasons and A P I errors get friendly messages. And the README explains what the app does, its limits, and cold starts.
+
+Now it's your turn. This takes about twenty minutes, longer if Docker is new to you, so pause the video. One: install Docker Desktop, and add the config file, requirements file, Dockerfile and docker ignore file to your invoice project. Two: build and run the container locally with your env file, and test the docs page. Three: run it again without the env file, and confirm the app fails fast with your clear error message. Four: deploy to Render or Railway, setting environment variables in the dashboard. Five: open the public U R L on your phone using mobile data, and note the cold-start time.
+
+Let's recap. Read all configuration from environment variables, and fail fast when required ones are missing. Pin dependencies and keep images small, and install requirements before copying code for faster builds. Bind to zero dot zero dot zero dot zero and the platform's port, and run as a non-root user. Keep secrets out of Git and images with your git ignore file, docker ignore file and the platform's secret settings. And plan for ephemeral disks and cold starts when deploying rag and demo apps.
+
+That's it for this lesson. Mark it complete, and I'll see you in the next one.

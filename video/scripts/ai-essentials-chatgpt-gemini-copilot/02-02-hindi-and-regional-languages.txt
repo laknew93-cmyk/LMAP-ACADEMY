@@ -1,0 +1,49 @@
+Welcome to AI Essentials, module 2, lesson 2: Drafting in Hindi and Regional Languages.
+
+Much of India's work happens in more than one language. A shop owner might write to suppliers in Hindi, to customers in Marathi, and to the bank in English. This lesson shows you how to use AI assistants for drafting, translating and switching tone across Indian languages.
+
+Let's start with what AI can do with Indian languages. The major assistants can read and write in Hindi and many other Indian languages, including Bengali, Marathi, Tamil, Telugu, Gujarati, Kannada, Malayalam and Punjabi. Quality varies by language and by tool. Results in Hindi are generally stronger than in languages with less online text. But for everyday drafting, they're often very useful.
+
+Here are some common uses. Drafting a customer message in Hindi or a regional language. Translating an English circular for staff who prefer their own language. Writing in Hinglish, or casual mixed language, for WhatsApp. Understanding a letter or notice written in a language you read slowly. And creating bilingual content, like an English-and-Tamil poster text.
+
+Next, translation versus rewriting. A literal translation often sounds stiff. So ask for natural, local phrasing instead. Here's the prompt: "Translate this message into simple, natural Hindi as a shopkeeper would speak to regular customers. Do not translate word for word. Keep the meaning and make it sound friendly." And the message is: "Dear customers, our shop will remain closed on Sunday for stock-taking. We will reopen on Monday at 10 am. Thank you for your support."
+
+Compare that to just saying "Translate into Hindi". The first prompt gives you something your customers would actually say. The second may give you textbook-style Hindi.
+
+Now, choosing the right register. Hindi and most Indian languages have different levels of formality, so be specific. For formal or official writing, ask for "formal Hindi suitable for a government office letter". For polite everyday writing, ask for "polite, simple Hindi using aap". For casual writing, ask for "casual Hindi, like a message between friends". For Hinglish, ask for "Hinglish in Roman script, the way young professionals text". And when you need something simple for all readers, ask for "very simple words, suitable for readers with basic schooling". You'll find this table in the lesson notes.
+
+Here's the thing: script matters too. Tell the assistant which script you want. Use Devanagari for Hindi or Marathi written traditionally. Just say, "Write in Hindi using Devanagari script." Use Roman script if the reader types on an English keyboard. Say, "Write in Hindi but using English letters, Roman script." And for other languages, ask for the native script, whether that's Tamil, Bengali, Gujarati and so on.
+
+For WhatsApp messages to customers, Roman-script Hinglish is often more familiar. For printed notices, posters or official letters, the native script usually looks more professional.
+
+Next, bilingual drafting. Small businesses often need the same message in two languages, so ask for both together. Here's the prompt: "Write a short notice for our clinic in Coimbatore, in both English and Tamil, informing patients that Dr. Lakshmi will not be available from 10 to 14 November and that Dr. Arun will see patients instead. Keep each version under 50 words. Show the English first, then the Tamil."
+
+Now, understanding documents in another language. Received a notice in Marathi, or a letter in Bengali that you read slowly? Paste it in, or upload a clear photo, and ask. Here's the prompt: "Explain this notice in simple English. Then list any dates, amounts or actions I need to take."
+
+This is very helpful for society notices, school circulars and local government communication. For anything legal or official, confirm the key details with someone fluent, or with the issuing office.
+
+Let's talk about accuracy checks for Indian languages. AI translation in Indian languages can go wrong in five specific ways. First, unnatural word choices, which are technically correct but nobody talks like that. Second, wrong gender agreement in Hindi verbs and adjectives. Third, mixed-up honorifics, like using "tum" where "aap" is needed. Fourth, rare words that your audience won't understand. And fifth, numbers and dates that get shifted during translation.
+
+Here's a good habit. Ask the assistant to translate its output back into English. If the back-translation says something different from what you meant, the translation needs fixing. Here's the prompt: "Now translate your Hindi version back into English, word for word, so I can check the meaning is correct."
+
+And if the message is going to many people, like a poster, a printed notice or an official letter, have a fluent speaker read it once before publishing.
+
+Finally, voice input. You can speak in your own language. Most assistant mobile apps let you speak instead of type. You can speak in Hindi or another language and ask the assistant to respond in English, or the reverse. This is useful for people who think faster in their mother tongue. For example, Sunita runs a tailoring unit in Lucknow. She dictates her notes in Hindi and asks the assistant to convert them into a neat English email to her fabric supplier.
+
+Time to try it yourself. Spend fifteen to twenty minutes on a real multilingual task. Pause the video and follow along.
+
+Step one. Choose an Indian language you read well, other than English.
+
+Step two. Write a short English message you might really send. A festival greeting to customers, a notice to your housing society, or a reminder to a team.
+
+Step three. Ask an assistant to write it in that language in two registers, formal and casual, using the prompts from this lesson.
+
+Step four. Ask for a back-translation into English and check the meaning.
+
+Step five. Mark any words that sound unnatural to you, and ask the assistant to replace them with more common words.
+
+And step six. Save your best prompt as Prompt number 3 in your library, noting which language and register worked.
+
+Let's recap. AI assistants can draft and translate in Hindi and many Indian languages, with quality varying by language and tool. Ask for natural, local phrasing rather than word-for-word translation, and specify the register and the script. Bilingual messages can be produced together in one prompt. Use back-translation to check meaning, and have a fluent speaker review anything public or official. And voice input lets you think in your own language and get polished output in another.
+
+That's it for this lesson. Mark it complete, and I'll see you in the next one.

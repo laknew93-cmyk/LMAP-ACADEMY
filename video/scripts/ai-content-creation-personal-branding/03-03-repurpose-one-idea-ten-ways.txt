@@ -1,0 +1,39 @@
+Welcome to AI for Content Creation and Personal Branding, module 3, lesson 3: Repurpose One Idea into Ten Pieces.
+
+Most creators burn out because they treat every post as a brand new project. Repurposing flips this. You invest in one strong idea, and turn it into many pieces across platforms. AI makes the adaptation fast. In this lesson, you'll build a repurposing system that turns one idea into ten pieces of content.
+
+So why does repurposing work? There are four reasons. First, most of your audience didn't see it the first time. Only a fraction of your followers sees any single post. Second, different people prefer different formats. Some read newsletters, some watch reels, some save carousels. Third, repetition builds association. Saying the same core idea in different ways helps people remember what you stand for. And fourth, it saves time. The hardest part of content is thinking. Repurposing reuses the thinking.
+
+But here's the thing. Repurposing isn't copy-pasting the same text everywhere. Each platform has its own norms, and each piece should feel native to where it appears.
+
+Start with a pillar piece. The best source for repurposing is a substantial piece of content that's rich with ideas. That could be a long-form article or newsletter, from Lesson 3.1. A recorded talk, webinar or workshop. A podcast episode or a long YouTube video. A detailed client case study. Or even a fifteen-minute voice note where you explain your thinking.
+
+If you're recording, a transcript is your raw material. Most transcription tools and many video platforms generate transcripts automatically. Just correct the errors, especially names and Indian terms.
+
+Now let's look at the one-to-ten map. Here's an example. Shalini is a career coach based in Lucknow. She writes a newsletter titled "Why your Naukri profile gets views but no calls." From it, she creates ten pieces. Number one is the original newsletter, with the full argument, sent by email. Two is a LinkedIn story post about the client whose profile got two hundred views but no calls. Three is a LinkedIn carousel with six profile fixes, one per slide. Four is a LinkedIn opinion post, saying keyword stuffing your profile is backfiring. Five is a thirty-second Reel or Short on the single biggest mistake. Six is another Reel or Short, showing a before and after headline rewrite. Seven is an Instagram quote graphic with one memorable line from the newsletter. Eight is a LinkedIn poll asking which part of your profile you update least. Nine is a checklist P D F, a profile audit used as a lead magnet for newsletter sign-ups. And ten is a blog article on her website, an S E O version targeting "naukri profile not getting calls". The full table is in the lesson notes below this video.
+
+That's ten pieces, one core idea, published over two to three weeks.
+
+Now let's use AI to repurpose. There are three steps.
+
+Step one is to extract the atoms. First, ask AI to break your pillar piece into its individual ideas. Here's the prompt: "Below is my article or transcript. Extract every distinct idea, story, tip, opinion, statistic and memorable line as a numbered list. For each, note whether it is a story, tip, opinion, data point or quote. Use only what is in the text." Then paste your content.
+
+These atoms are the building blocks for everything else.
+
+Step two is to map atoms to formats. Here's the prompt: "Using these atoms and my content calendar's platforms, and then you list them, propose ten repurposed pieces. For each give: format, platform, which atoms it uses, a working hook, and why this format suits that idea. Avoid making two pieces that say the same thing in the same way."
+
+Step three is to adapt with platform-specific prompts. Write each piece in a fresh prompt that includes your voice guide and the platform's norms. For example, here's the prompt: "Using my voice guide, turn atoms three, five and seven into a thirty-second Instagram Reel script. Spoken, casual, with on-screen text for each line. Hook in the first three seconds. Use only the information in these atoms."
+
+Reuse the prompts from earlier lessons too. The LinkedIn drafting prompt, the carousel prompt, and the short-video script prompt. Repurposing is where your library of prompts really pays off. All of these prompts are in the lesson notes below this video.
+
+Next, here's a platform adaptation checklist. On LinkedIn, adapt with professional framing, short paragraphs and a clear takeaway. On Instagram, go visual first, with a short, conversational caption and relevant hashtags. On YouTube Shorts, use a strong hook, a fast pace and a searchable title. In email, use a personal tone, one idea, and a reason to reply. On a blog, use a searchable title, headings, a complete answer and links. And on a WhatsApp Channel or community, keep it very short, useful and not spammy. The checklist is in the lesson notes.
+
+Now, spacing and freshness. Don't publish all ten pieces in one day. Spread them over two to four weeks, mixed in with other content. Revisit your best-performing pieces every few months, and repurpose them again with a new angle or updated examples. Your newer followers won't have seen them.
+
+Keep a simple repurposing tracker column in your calendar, so you know which pillar piece each post came from. Later, this helps you see which core ideas perform best across platforms.
+
+Now it's time to try it yourself. In about twenty minutes, you'll turn one idea into ten. Pause the video and work along. Step one. Choose a pillar piece. That could be your article draft from Lesson 3.1, a past talk, or a ten-minute voice note you record right now. Step two. Run the atom extraction prompt. Step three. Run the mapping prompt to get ten repurposed pieces. Step four. Draft two of them in full, using platform-specific prompts and your voice guide. And step five. Add all ten to your thirty-day content calendar, spread across at least two weeks, with a note linking them to the pillar piece.
+
+Let's recap. Repurposing reuses your thinking, which is the hardest part of content creation. Start from a rich pillar piece, like an article, talk or transcript. Extract idea atoms first, then map them to formats and platforms. Adapt each piece to its platform's norms, rather than copy-pasting. And spread repurposed pieces over weeks, then revisit your top performers later.
+
+That's it for this lesson. Mark it complete, and I'll see you in the next one.

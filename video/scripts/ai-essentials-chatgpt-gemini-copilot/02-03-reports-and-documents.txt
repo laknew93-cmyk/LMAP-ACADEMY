@@ -1,0 +1,59 @@
+Welcome to AI Essentials, module 2, lesson 3: Reports, Proposals and S O Ps Without the Blank Page.
+
+Reports, proposals, policies and S O Ps take hours, because of the blank page and the endless restructuring. In this lesson, you'll learn a step-by-step method to produce clear documents with AI, while keeping your own thinking at the centre.
+
+Let's start with the outline-first method. The most common mistake is asking an AI to "write a report on" something in one go. You get something long, generic and hard to fix. Instead, work in five stages.
+
+First, the brief. Tell the assistant the purpose, the reader and the key facts. Second, the outline. Ask for a structure only, and fix it. Third, draft section by section. Write one section at a time, feeding in your data. Fourth, edit. Tighten, check facts and adjust the tone. And fifth, polish. Add the summary, headings and formatting.
+
+This keeps you in control of the argument, while the AI does the heavy lifting on wording.
+
+Let's look at steps one and two together, the brief and the outline. In the lesson notes, there's an example prompt for a two-page internal report to a regional manager. The topic is why customer complaints at a Nagpur branch rose last quarter, and what you propose to do. It describes the reader as busy, wanting facts and clear recommendations. Then it lists the key facts. Complaints rose from thirty-eight to sixty-one between the first and second quarter. The main reasons were delayed home deliveries, twenty-seven of them, billing errors, eighteen, staff behaviour, nine, and others, seven. Two delivery staff left in May, and replacements joined in July. And a billing software update in June caused errors for three weeks. Finally, the prompt says: before writing, give me an outline with section headings and one-line notes on what each covers. You'll find the full prompt in the lesson notes below this video.
+
+Review the outline. Move sections, remove what doesn't matter, and add what's missing. Only then move on.
+
+Step three is drafting section by section. Here's the prompt: "Good. Now write only the 'Root causes' section, about 200 words, using the facts I gave. Use a short table for the complaint categories. Plain business English."
+
+Drafting one section at a time gives better quality and makes it easier to spot errors. If the AI invents a number you didn't give it, delete it immediately. Never let made-up figures into a report.
+
+Step four is editing with AI. Once you have a full draft, whether written by you or the AI, the assistant is a superb editor. Here's the prompt: "Edit this report for clarity and brevity. Cut at least 20 percent of the words without losing any facts. Fix grammar. Keep Indian English spelling. Show me the edited version only."
+
+There are other useful editing prompts too. "Rewrite the opening paragraph so the main finding is in the first sentence." "Point out any claims in this report that are not supported by data." "Which sections would a busy manager skip? How can I make them sharper?" And "Convert this paragraph into 4 bullet points."
+
+Step five is the executive summary. Busy readers often only read the top. So ask for a summary last, once the content is final. Here's the prompt: "Write a 5-line executive summary of this report: the problem, the main cause, the 3 recommendations, and what decision I need from the reader."
+
+Now let's look at templates for common documents. There are three in the lesson notes.
+
+First, a standard operating procedure, or S O P. Here's the prompt: "Write an S O P for how our front-desk staff should handle walk-in customer complaints at our salon in Kochi. Include: purpose, who it applies to, step-by-step process, numbered, what to record, when to escalate to the manager, and a short do's and don'ts list. Language: simple English that new staff can follow."
+
+Second, a business proposal. This prompt asks for a one-page proposal from a company called BrightNest Interiors in Ahmedabad to a corporate client, for redesigning their three-thousand-square-foot office reception and meeting rooms. The sections are: understanding of the need, our approach, a six-week timeline, what's included, and next steps. It says not to include prices, because you'll add them yourself. And it asks for a tone that's professional and confident, not salesy.
+
+Third, a policy document. Here's the prompt: "Draft a simple work-from-home policy for a 25-person accounting firm. Cover eligibility, days allowed, availability hours, data security, and approval process. Use clear headings and short paragraphs. Mark any points where I need to make a company decision with the word DECIDE in square brackets."
+
+That decide trick is useful. It stops the AI from silently inventing rules your company never agreed to.
+
+Next, rewriting and simplifying existing documents. Often you're not writing from scratch, but improving something old. There are four moves here. To simplify, say, "Rewrite this policy so a new employee can understand it in one read." To restructure, say, "Reorganise this document into: background, problem, options, recommendation." To change the audience, say, "Rewrite this technical note for a non-technical client." And to shorten, say, "Turn this 4-page document into a 1-page brief."
+
+A few formatting tips. Ask for headings and bullet points, because they paste cleanly into Word or Google Docs. Ask for tables when comparing options, since most assistants format them well. And if you plan to paste into Word, ask for "plain text with headings, no markdown symbols", to avoid stray asterisks.
+
+Here's the most important point. Your role stays central. AI can produce a well-organised document quickly, but the judgement is yours. Which facts matter, what you recommend, and what your organisation can actually commit to. Read every sentence before your name goes on it.
+
+Time to try it yourself. Take twenty minutes to produce a real one-page document. Pause the video and work through these steps.
+
+Step one. Pick a document you need. A status report, a proposal, a simple S O P, or a summary of a project you've done.
+
+Step two. Write a brief using the step one example: the purpose, the reader, and at least four key facts.
+
+Step three. Ask for an outline only. Make at least one change to it.
+
+Step four. Draft two sections, one at a time.
+
+Step five. Run the "cut 20 percent" editing prompt on the result.
+
+Step six. Ask for a five-line executive summary.
+
+And step seven. Check every number and claim against your own facts, then save your brief prompt as Prompt number 4 in your library.
+
+Let's recap. Don't ask for a whole report in one go. Brief, outline, draft by section, edit, then summarise. Feed in your real facts, and delete any figures the AI invents. AI is an excellent editor, so ask it to cut words, sharpen openings and flag unsupported claims. Use markers like decide, in square brackets, so the AI doesn't invent policies or commitments. And the judgement and final responsibility for the document remain yours.
+
+That's it for this lesson. Mark it complete, and I'll see you in the next one.

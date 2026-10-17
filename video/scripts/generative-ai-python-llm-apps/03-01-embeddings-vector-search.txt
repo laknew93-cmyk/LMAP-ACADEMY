@@ -1,0 +1,41 @@
+Welcome to Generative AI Mastery, module 3, lesson 1: Embeddings and Vector Search from Scratch.
+
+Keyword search fails when users and documents use different words for the same idea. Think of "leave encashment" versus "getting paid for unused holidays". Embeddings solve this by searching on meaning. In this lesson, you'll generate embeddings on your own laptop and build semantic search from scratch with NumPy. That way, nothing about vector databases will feel like magic later.
+
+Let's start with a quick recap of embeddings. An embedding model turns text into a fixed length list of numbers, called a vector. Texts with similar meaning produce vectors that point in similar directions. To compare two vectors, we usually use cosine similarity. A score of one means the same direction, so very similar meaning. A score around zero means unrelated.
+
+There are three important facts for engineers. First, embedding models are different from chat models. They're smaller, faster and much cheaper per token. Second, you must use the same embedding model for your documents and your queries. Vectors from different models are not comparable. And third, each model has a fixed dimension, for example three hundred eighty four or one thousand twenty four numbers per text, and a maximum input length. Longer text gets truncated, which is one reason we chunk documents, and that's the next lesson.
+
+Anthropic doesn't provide its own embeddings endpoint. Claude apps typically pair with a dedicated embeddings provider, and Anthropic's documentation points to Voyage AI, or with an open source model. OpenAI and Google also offer embeddings A P Is. In this course we use an open source model that runs locally. It's free, it's private, and it's good enough for learning and for many real projects.
+
+Now, install and embed. You install sentence transformers and NumPy. The command is in the lesson notes. The first run downloads the model, roughly a hundred megabytes, and after that it works offline.
+
+Let's look at the first example. The code loads a small, fast English embedding model called MiniLM. It defines three sentences: "How do I reset my U P I PIN?", "I forgot my U P I PIN and need to change it", and "Best biryani places in Hyderabad". It encodes all three into vectors, with normalisation turned on. Then it prints the shape of the result, which is three sentences with three hundred eighty four numbers each, and prints the similarity of every pair. The code is in the lesson notes below the video.
+
+So what's happening here? First, the sentence transformer call loads a pretrained embedding model. Second, the encode step returns a NumPy array and scales every vector to a length of one. With normalised vectors, cosine similarity is just the dot product, which is fast to compute. And third, multiplying the matrix of vectors by its own transpose computes all the pairwise similarities at once. You should see the two U P I sentences scoring much higher with each other than with the biryani sentence.
+
+For Hindi, Tamil or mixed Hinglish text, try a multilingual model, such as the multilingual paraphrase version of MiniLM. The exact name is in the lesson notes. Always test on your real data, because models vary a lot across languages.
+
+Next, semantic search from scratch. Let's build a mini F A Q search for a fictional coworking space in Pune. The code defines seven F A Q answers. Day passes cost four hundred ninety nine rupees and include Wi Fi, tea and coffee. Monthly dedicated desks are available from six thousand nine hundred ninety nine rupees per month plus G S T. The space is open eight A M to ten P M, Monday to Saturday, and closed on Sunday. Meeting rooms can be booked hourly through the app. G S T invoices are provided for all memberships on request. Two wheeler parking is free, while car parking is paid and limited. And pets aren't allowed inside the workspace.
+
+The code encodes all the F A Qs once. Then it defines a search function. It takes a query and a number, k, which defaults to three. It embeds the query, scores it against every F A Q, sorts the scores from highest to lowest, and returns the top k results with their scores. Finally it runs a search for "Can I bring my scooter?" and prints each score and answer. The code is in the lesson notes below the video.
+
+Let's go through it. First, we embed all the F A Qs once, up front. In a real system you'd store these vectors so you never recompute them. Second, for each query, we embed only the query, and then one matrix vector product scores every F A Q. And third, the sorting step orders the indices by score, highest first, and keeps the top k.
+
+Notice something. The word "scooter" never appears in the F A Qs. Yet the parking answer should rank first, because the model knows scooters are two wheelers. That's the power of semantic search.
+
+So when is NumPy enough, and when isn't it? This brute force approach compares the query with every vector. That sounds slow, but NumPy handles tens of thousands of vectors comfortably on a laptop. Many internal tools, like an H R policy bot, a product F A Q, or a course notes assistant, never need more.
+
+You need a vector database in four situations, and the table is in the lesson notes. First, when you have hundreds of thousands to millions of chunks, because approximate nearest neighbour indexes keep search fast. Second, when you need metadata filters, like "only 2026 policies" or "only the Maharashtra branch", because vector databases offer built in filtering alongside similarity. Third, when you need persistence and updates, so you can add, update and delete documents without rebuilding everything. And fourth, when multiple services read the same data, because a shared server beats a NumPy file per app.
+
+Popular options include Chroma, which is simple and runs locally, pgvector, which adds vector search to PostgreSQL and is a favourite in Indian product companies already on Postgres, and managed services. The next lesson uses Chroma.
+
+Now, semantic search isn't perfect. Embeddings capture meaning, but they're weak at exact matches: invoice numbers, product codes, names and specific numbers. A search for a particular invoice number might return a different invoice that just looks similar. So production systems often use hybrid search. They combine keyword search, such as B M twenty five, with vector search, and merge the results. Keep this in mind, because it's a common interview discussion point.
+
+Also remember that similarity scores are relative. A score of zero point four five might be a strong match for one model and a weak one for another. So don't hard code thresholds without looking at real examples.
+
+Time to try it yourself. It takes about twenty minutes, so pause the video and work through these steps. First, run the F A Q search and try five queries, including "is it open on Sunday", "do you give tax invoice", and "can my dog come". Second, find one query where the search gets it wrong, and write down why you think it failed. Third, add five F A Qs for a business you know, like a gym in Lucknow or a coaching centre in Kota, and test again. Fourth, try the multilingual model with a Hinglish query like "scooty parking free hai kya?", and compare the results with the English only model. And fifth, save the F A Q vectors to a file with NumPy, load them back, and confirm search still works without encoding everything again. The exact commands are in the lesson notes.
+
+Let's recap. Embeddings map text to vectors, and similar meaning gives high cosine similarity. Use the same embedding model for documents and queries, and normalise vectors so similarity is just a dot product. Brute force NumPy search is enough for many apps, while vector databases add scale, filters and persistence. Semantic search is weak on exact codes and names, so consider hybrid search. And test embedding models on your real language mix, especially for Indian languages.
+
+That's it for this lesson. Mark it complete, and I'll see you in the next one.

@@ -1,0 +1,61 @@
+Welcome to Make Money with AI, module 4, lesson 3: Invoicing, G S T and Tax Basics for Indian Freelancers.
+
+Getting paid on time and staying on the right side of tax rules are part of running a real freelance business. This lesson covers professional invoicing, G S T basics, and income tax awareness for freelancers in India, all in plain language.
+
+An important note before we start. This is general information to help you ask the right questions. Tax rules, thresholds and rates change, and your situation depends on many factors. Please consult a Chartered Accountant, or C A, before making tax or G S T decisions, and check the official G S T and Income Tax portals for current rules.
+
+Let's begin with professional invoicing. Every payment should have an invoice. It makes you look professional, helps clients with their own accounting, and gives you clean records for tax filing.
+
+So what should an invoice include? First, your name or business name, address and contact details. Second, your PAN, and your G S T I N if you're registered. Third, the client's name or business name and address, and their G S T I N if they have one and you're registered. Fourth, a unique invoice number, like "I N V 2026 014", and the invoice date. Fifth, a description of the services, with quantity, rate and amount. Sixth, tax details, if applicable. Seventh, the total amount due, the due date, and your payment details, like your bank account and U P I I D. And for international clients, the amount in the agreed currency.
+
+You can create invoices in Google Docs or Sheets, or use invoicing software. Many accounting apps used by Indian small businesses can generate G S T-compliant invoices.
+
+AI can help here too, with your template and your payment reminders. The first prompt in the lesson notes asks the AI to create an invoice template layout for an Indian freelancer, with fields for PAN, an optional G S T I N, invoice number, client details, line items, subtotal, tax, total, due date, bank and U P I details, and a polite payment note.
+
+The second prompt asks for three polite payment reminder messages for an overdue invoice. One gentle, at three days late. One firmer, at ten days late. And one final, at twenty days late, mentioning a work pause as per your agreement. Each one under sixty words. You'll find both prompts in the lesson notes below this video.
+
+One caution. Never paste your full bank details or PAN into tools carelessly. Add them to the template yourself.
+
+Now, G S T basics for freelancers. G S T, or Goods and Services Tax, applies to the supply of services, including freelance work. Here are the key ideas to discuss with your C A.
+
+First, the registration threshold. Service providers generally need to register for G S T once their aggregate annual turnover crosses a threshold. That's commonly twenty lakh rupees for most states, and lower, ten lakh rupees, for certain special category states. There are situations where registration may be required regardless of turnover, so confirm with a C A how the rules apply to you. For example, if you sell through certain e-commerce operators or have specific types of clients.
+
+Second, voluntary registration. Some freelancers register voluntarily below the threshold, for instance because certain business clients prefer G S T-registered vendors. But registration brings compliance work, like regular returns and record-keeping, so weigh the pros and cons with your C A.
+
+Third, the G S T rate. Many professional and freelance services fall under an eighteen percent G S T rate, but classification matters. Confirm the right rate for your service.
+
+And fourth, export of services. Services provided to clients outside India, paid in foreign currency, may qualify as an "export of services". Exports are generally treated as zero-rated, and registered exporters commonly file a Letter of Undertaking, or L U T, to export without paying I G S T upfront. The conditions are specific, so get professional guidance.
+
+Next, income tax basics. Freelance earnings are taxable income. Here are six points to understand and discuss with your C A.
+
+One, records. Keep track of all income received and business expenses. That includes your laptop, internet, software subscriptions, and a portion of phone bills where justified.
+
+Two, the I T R form. Freelancers typically file under income from business or profession, which uses a different I T R form than salaried individuals.
+
+Three, presumptive taxation. The Income Tax Act has presumptive schemes, such as Section forty-four A D A for certain professions and forty-four A D for businesses, that simplify computation for eligible taxpayers. Whether they apply depends on your type of work and turnover, so ask your C A.
+
+Four, T D S. Indian business clients may deduct T D S, which is tax deducted at source, before paying you. This shows up in your Form twenty-six A S, or your A I S, and you can claim credit for it when filing.
+
+Five, advance tax. If your tax liability for the year crosses a certain amount, you may need to pay advance tax in instalments, rather than all at year end.
+
+And six, side income alongside a job. Freelance income is added to your salary income for the year. Your employer's T D S won't cover it automatically.
+
+Now, some simple money habits from day one. There are five. First, open a separate bank account for freelance income and expenses. This makes records much easier. Second, set aside a percentage of every payment for taxes, in a separate savings account. Your C A can help you choose a suitable percentage. Third, keep a simple income and expense sheet with the date, client, invoice number, amount, tax, and payment status. Fourth, save invoices and receipts in monthly folders. And fifth, book a C A consultation once you start earning regularly. It's a worthwhile cost that can prevent expensive mistakes.
+
+So what should you ask your C A? The lesson notes have a list of seven questions. Do I need to register for G S T now, and should I register voluntarily? What G S T rate applies to my service? Do my international clients count as export of services, and should I file an L U T? Which I T R form should I use, and does a presumptive scheme apply to me? Do I need to pay advance tax? Which expenses can I legitimately claim? And what records should I maintain?
+
+Now, try it yourself. This takes about fifteen minutes. Pause the video and work through these steps.
+
+Step one. Create an invoice template using the prompt in the notes. Fill in your details by hand.
+
+Step two. Create a simple income and expense tracker sheet with the columns we listed.
+
+Step three. Generate your three payment reminder messages and save them in your "Delivery kit".
+
+Step four. Write down your own list of questions for a C A, based on your situation.
+
+Step five. If you don't have a C A, ask friends or family for a recommendation in your city.
+
+Let's recap. Issue a proper invoice for every payment, and keep organised records. G S T registration depends on turnover thresholds and other conditions, and export of services has special treatment. Freelance income is taxable, so understand I T R forms, T D S, advance tax and presumptive schemes with a C A. And keep business money separate, and set aside money for taxes from every payment.
+
+That's it for this lesson. Mark it complete, and I'll see you in the next one.

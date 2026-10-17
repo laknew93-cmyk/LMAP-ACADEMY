@@ -1,0 +1,63 @@
+Welcome to AI Essentials, module 5, lesson 4: Building Your Personal Prompt Library.
+
+Throughout this course, you've been saving prompts. Now it's time to turn them into a proper personal prompt library: twenty tested prompts you can reuse in seconds. This single habit is what separates occasional AI users from people who save hours every week.
+
+Let's start with why a prompt library matters. Without a library, every task starts from a blank chat box, and you reinvent the same instructions again and again. With a library, four good things happen. First, you get consistent, high-quality results, because your prompts are already tested. Second, you save time. Copy, fill in the blanks, send. Third, you can share prompts with colleagues and build team standards. And fourth, you keep improving prompts over time, instead of starting over.
+
+Think of it like a kitchen's masala dabba. The right ingredients, ready to hand, every day.
+
+So where should you keep your library? Pick whatever you'll actually open. A Google Docs or Word document is simple, searchable and easy to share. A notes app, on your phone or desktop, gives quick access on the go. A spreadsheet is good for sorting by category and tracking ratings. Notion or similar tools are good for tagging, databases and team sharing. And many assistants have built-in features, like custom instructions, saved prompts, or custom assistants and projects you can set up once. The comparison table is in the lesson notes.
+
+A spreadsheet works well for beginners. Use these columns: number, name, category, prompt, when to use, the tool that works best, a rating from one to five, and last updated.
+
+Now let's look at the anatomy of a reusable prompt. A good library prompt has placeholders in square brackets, so you can fill in the specifics each time. The example in the lesson notes is called "Vendor follow-up email", in the Email category. It asks the assistant to act as a professional procurement executive, and write a follow-up email to a vendor about an order or issue. It has placeholders for the vendor name, the background like dates and order numbers, the specific action and deadline you need, the tone, whether polite, firm or urgent, and a word limit, with a clear subject line. It also says not to make any promises about payments or penalties unless you mention them. And it ends with a note on when to use it: delayed deliveries, missing documents and pending quotations. You'll find the full prompt in the lesson notes below this video.
+
+Notice how it bakes in the lessons from this course. Role, context, format, tone, and a guardrail against unwanted promises.
+
+Next, organising twenty prompts by category. Aim for a spread that matches your real week. Here's a suggested structure, and you can adjust it to your job. The full list is in the lesson notes.
+
+First, writing and communication, with five prompts. A notes-to-email converter. A three-tone rewrite, warm, neutral and firm. A polite "no" or scope-change message. A regional-language or Hinglish message with back-translation. And a payment or task follow-up sequence.
+
+Second, documents and research, with five prompts. A report brief and outline. The "cut 20 percent" editor. A purpose-driven P D F summary with page numbers. A document question-and-answer prompt with exact quotes. And a research synthesis "using only these sources".
+
+Third, data and meetings, with four prompts. An Excel formula from a column description. A formula or error explainer. Rough notes to clean minutes with action items. And a meeting agenda with talking points.
+
+Fourth, career, with three prompts. A job description decoder. A resume bullet impact rewriter, with the "add number" placeholder. And a mock interview, one question at a time.
+
+And fifth, thinking and productivity, with three prompts. An "ask me 5 questions first" starter. A critical reviewer: "List the 3 weakest points in this." And a daily planner, which turns a messy to-do list into a prioritised plan.
+
+If you run a business, swap some for business prompts, like Instagram captions, product descriptions, customer replies, and G S T invoice reminders. If you're a fresher, add prompts for learning new topics and preparing for assessments.
+
+Now, two powerful "meta" prompts. These two belong in every library.
+
+The first is the prompt improver. Here's the prompt: "Here is a prompt I use often." Then paste the prompt, and continue: "Improve it so it gives more consistent, useful results. Add placeholders in brackets for anything that changes each time. Explain what you changed and why."
+
+The second is the prompt maker. Here's the prompt: "I regularly need to," and then describe the task. "Ask me questions about this task one at a time, then write a reusable prompt template with placeholders that I can save in my prompt library."
+
+These let your library grow on its own.
+
+Next, testing and rating prompts. A prompt earns its place by working repeatedly. So for each new prompt, do four things. One, test it on at least two real tasks. Two, rate the output from one to five. Three, if it's below four, use the prompt improver and test again. And four, note which assistant worked best for it.
+
+Let's look at an example. Kiran is an admin officer at a Nashik engineering college. She built a library of twenty-five prompts for circulars, parent emails and event reports. She shared the best ten with her team in a shared Google Doc. Now new staff get up to speed much faster.
+
+Finally, using built-in features. Most assistants let you save standing instructions, so you don't repeat yourself. These are often called custom instructions, personalisation, or projects. Here's an example of what to put there: "I work as an operations executive at a logistics company in Pune. I write mostly to vendors and internal teams. Prefer simple, clear Indian English. Keep answers concise unless I ask for detail. Use the rupee symbol for currency and Indian number formats, lakh and crore."
+
+This improves every answer without any extra effort.
+
+Time to try it yourself. This is a course project: your twenty-prompt library. Allow twenty minutes now, and come back to finish it during the week. Pause the video and get started.
+
+Step one. Create your library file, a document or a spreadsheet, with the columns suggested in this lesson.
+
+Step two. Copy in the prompts you saved during this course, Prompts number 1 to 14.
+
+Step three. Add six more, using the category list as a guide, and the "prompt maker" meta-prompt for tasks specific to your work.
+
+Step four. Make sure every prompt has placeholders in square brackets, and a "when to use" note.
+
+Step five. Test at least five of them on real tasks this week, and rate them.
+
+And step six. Set up custom instructions in your main assistant, with a short description of your role and preferences.
+
+Let's recap. A prompt library turns one-off experiments into reusable, reliable tools. Store prompts where you'll actually open them, with placeholders, categories and "when to use" notes. Aim for twenty prompts spread across writing, documents, data, meetings, career and productivity. Use the prompt improver and the prompt maker to grow and refine your library. And save standing instructions about your role and preferences in your assistant's settings.
+
+That's it for this lesson. Mark it complete, and I'll see you in the next one.

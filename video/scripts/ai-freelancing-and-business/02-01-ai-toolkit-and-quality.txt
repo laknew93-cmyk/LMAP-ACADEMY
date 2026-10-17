@@ -1,0 +1,51 @@
+Welcome to Make Money with AI, module 2, lesson 1: Your Lean AI Toolkit and Quality Workflow.
+
+You don't need twenty subscriptions to start. In this lesson, you'll set up a lean AI toolkit and, more importantly, a quality workflow. These are the habits that separate professionals from people who just paste chatbot output.
+
+Let's start with the lean starter toolkit. Tools change quickly, so think in categories rather than brand names. Most have free tiers that are enough to begin with. Upgrade only when a paid feature saves you real time on paid work.
+
+There's a table in the lesson notes, but here are the categories. A chat assistant, like ChatGPT, Claude or Gemini, for drafting, summarising, brainstorming and explaining. A design tool, like Canva or Google Slides, for social posts, presentations and simple graphics. Docs and sheets, like Google Workspace or Microsoft 365, for writing, data cleaning and client reports. Transcription, which is built into many meeting and video tools, for converting audio and video to text. Automation, like Zapier, Make or Google Apps Script, for connecting apps and running routine workflows. And communication tools, like email, WhatsApp Business and Google Meet, for talking to clients.
+
+Pick one chat assistant to learn deeply first. Knowing one tool well beats knowing five superficially.
+
+Now, let's talk about writing prompts that produce usable work. A good prompt gives the assistant the same context you'd give a new team member. Use a six-part structure. First, the role. For example, "You are helping me, a freelance service provider, with a client task." Second, the context. Who's the client, where are they, and who's their audience? Third, the task. Exactly what you need. Fourth, the constraints. Length, tone, language, words to avoid, and format. Fifth, the input. Paste in your notes, brief or data. And sixth, the output. Do you want a table, a bullet list, three options?
+
+Let's look at an example for a Jaipur handicrafts store. The prompt sets the role as a freelance social media writer. The context is a family-run blue pottery store in Jaipur selling online across India, to women aged twenty-five to forty-five who like handmade home decor. The task is five Instagram captions for new tea-cup sets. The constraints are warm, simple English, sixty words max each, one emoji at most, no claims like "best in India", and a soft call to action at the end. The input gives the facts: sets of six cups, hand-painted, microwave-unsafe, dispatched in three days. And the output is a numbered list. You'll find the full prompt in the lesson notes below this video.
+
+Notice the detail "microwave-unsafe". If you leave out facts, the AI may invent them. For example, it might claim the cups are dishwasher safe. Always give it the real facts.
+
+Now for the most important part of this lesson: the quality workflow. Draft, review, verify, own. Whatever service you offer, run every AI-assisted deliverable through these four steps.
+
+Step one is draft. Use AI to create the first version quickly. Treat it as raw material.
+
+Step two is review for fit. Read it as the client's customer would. Does it sound like this brand? Is it too generic? Remove cliches such as "in today's fast-paced world" and "unlock your potential". Add specifics only you or the client know. The shop's actual opening hours, the founder's real story, the local landmark.
+
+Step three is verify facts. AI tools can produce wrong numbers, invented sources, outdated rules and fake quotes, all stated with total confidence. So check four things. Check every number, date, price and statistic against a reliable source or the client. Check every name, law, regulation or government scheme against an official source. Check every quote, and if you can't find where it came from, remove it. And for data work, spot-check rows, compare totals before and after, and keep the original file untouched.
+
+Step four is own it. Before sending, ask yourself: would I put my name on this if the client never knew AI was involved? If not, it isn't ready.
+
+Next, originality and copyright. Clients expect original work, so here are a few practical rules. First, don't ask AI to "rewrite" a competitor's article and pass it off as new. Use sources for understanding, then write from your own structure and the client's insights. Second, don't use images, music or fonts unless the licence allows commercial use. Design tools usually label what's free for commercial use, so read those labels. Third, if a client gives you material, confirm they have the right to use it. And fourth, many writers run important text through a plagiarism checker before delivery. It's a reasonable extra step for long-form content.
+
+What about disclosing AI use? There's no single rule for every situation, but here's a good principle. Disclose where it would matter to the client. Some clients, publications and platforms have explicit policies on AI-generated content, and you should always follow them. A simple line in your proposals works well. Here it is: "I use AI tools to speed up research and first drafts. Every deliverable is reviewed, fact-checked and edited by me before it reaches you."
+
+Most clients appreciate the honesty. It also protects you if questions arise later.
+
+Finally, protecting client data. Be careful what you paste into AI tools. Customer phone numbers, Aadhaar or PAN details, bank information, medical records and confidential business plans shouldn't go into a tool unless the client has agreed and you understand the tool's data settings. Anonymise data where you can. Replace names with "Customer 1", "Customer 2" before asking for help with a spreadsheet.
+
+Now, try it yourself. Take fifteen to twenty minutes, and pause the video as you go.
+
+Step one. Choose one task from your chosen service. For example, five captions, a three-hundred-word blog intro, or cleaning a twenty-row sample sheet.
+
+Step two. Write a prompt using the role, context, task, constraints, input and output structure.
+
+Step three. Generate the draft.
+
+Step four. Run the four-step workflow. Use a highlighter or comments to mark the generic phrases you removed, the facts you verified, and anything you corrected.
+
+Step five. Count your changes. If there were none, look again. First drafts almost always need work.
+
+Step six. Save both the prompt and your final version. Prompts that work well become templates later in the course.
+
+Let's recap. Start with one chat assistant, one design tool and your usual docs and sheets, and add tools only when they pay for themselves. Detailed prompts with real facts reduce errors and generic output. Every deliverable goes through draft, review, verify and own. And respect originality and licences, disclose AI use where it matters, and never paste sensitive client data carelessly.
+
+That's it for this lesson. Mark it complete, and I'll see you in the next one.

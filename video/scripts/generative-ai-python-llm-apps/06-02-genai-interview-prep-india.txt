@@ -1,0 +1,43 @@
+Welcome to Generative AI Mastery, module 6, lesson 2: Interview Prep for Gen AI Roles in India.
+
+You have the skills and the projects. This final lesson helps you turn them into offers: what Gen AI roles in India look like, what interviewers ask, how to handle system design, and a thirty-day plan.
+
+Let's start with the landscape of Gen AI roles. Titles vary, but the table in the notes shows five main groups. First, the Gen AI or AI engineer, at product startups, SaaS companies and G C Cs, or global capability centres, building L L M features end to end: rag, agents, evals and deployment. Second, the Gen AI developer or consultant in I T services firms, focused on client proofs of concept, enterprise integration and documentation. Third, the M L engineer with an L L M focus, at larger tech firms and AI-first startups, going deeper into fine-tuning, model serving, G P Us and evaluation at scale. Fourth, the backend engineer with AI, at almost any product company, needing solid A P Is and data plus the ability to add L L M features safely. And fifth, data and analytics roles at analytics firms, banking and financial services, and retail, applying L L Ms to structured data and reporting automation.
+
+This course prepares you most directly for the first, second and fourth groups. Read job descriptions on Naukri and LinkedIn carefully. Many AI engineer roles are mostly good backend engineering. So your Python, FastAPI, Docker and testing skills matter as much as your prompting.
+
+Interview formats differ, but expect some mix of five things. First, a resume and project deep-dive. For example, "Walk me through your rag project. Why that chunk size? How did you evaluate it?" Second, concept questions on tokens, context windows, embeddings, rag versus fine-tuning, and hallucinations. Third, coding, usually plain Python and data structures, and sometimes an L L M flavoured task. Fourth, system design, where you design an L L M powered feature end to end. And fifth, behavioural questions about teamwork, handling ambiguity, and a time something failed.
+
+Now, the concept questions to prepare. There are twelve in the notes. Practise answering each out loud in under two minutes, using your own projects. They cover what a token is and why it affects cost and latency, explaining embeddings and cosine similarity to a non-technical manager, and question three, rag versus fine-tuning. They also cover reducing hallucinations, evaluating a rag pipeline, defending against prompt injection, the tool-use loop and how to stop an agent looping forever, what breaks prompt caching, guaranteeing valid J S O N, when not to use an agent, handling P I I with a third-party L L M A P I, and what changes from prototype to production. You'll find the full list in the lesson notes below this video.
+
+A strong answer has four parts: the definition, why it matters, how you handled it in your project, and one trade-off. For question three, you might say: rag brings in fresh or private knowledge at query time, while fine-tuning changes the model's behaviour or style. For our H R policy bot, policies change every quarter, so rag was the right choice. Updating means re-ingesting documents, not retraining. Fine-tuning would make sense for a consistent output format at very high volume, but we got that with structured output instead.
+
+Next, coding rounds. Practise implementing six things from scratch, without your notes. Cosine similarity and top k search with NumPy. A text chunker with overlap. A function that calls an L L M and validates the output with Pydantic, retrying when validation fails. The tool-use loop with a step limit. A sliding window rate limiter. And parsing a C S V file and answering a question with pandas. Keep your general D S A skills warm too, because many companies still run a standard coding round.
+
+Now let's work through a system design question. A common prompt is: design a chatbot that answers customer questions from a bank's two thousand policy documents. Structure your answer in six steps.
+
+Step one: clarify requirements. Customers or staff? English, Hindi or regional languages? Latency target and daily volume? Accuracy and compliance needs? And what happens when the bot is unsure?
+
+Step two: high-level architecture. An ingestion pipeline parses, chunks, embeds and stores documents with metadata. A query pipeline redacts P I I, retrieves with filters, generates answers with citations, and validates them. Plus the user interface.
+
+Step three: key choices and trade-offs, like chunk size and overlap, the vector store, perhaps pgvector if they already run Postgres, hybrid search for product codes, model and effort per route, and caching the system prompt.
+
+Step four: safety. That means prompt injection defences, P I I redaction, no side-effecting tools without approval, refusal handling, and audit logs.
+
+Step five: evaluation. A test set from real queries, retrieval hit rate, an L L M judge for correctness with human spot checks, and regression runs before every prompt change.
+
+Step six: operations. Token and latency monitoring, spend alerts, rate limiting, re-ingestion when policies change, and fallbacks when the A P I is down.
+
+Draw boxes and arrows as you talk. Structured thinking and trade-offs matter more than product names.
+
+For behavioural questions, prepare three short STAR stories: Situation, Task, Action and Result. First, a time your app gave wrong results and how you found and fixed it. Your evaluation work is perfect here. Second, a time you chose a simpler solution over a fashionable one, for example a workflow instead of an agent. And third, a time you explained a technical idea to a non-technical person. Be honest about what you did yourself versus what a team or a tutorial did. Interviewers probe.
+
+Now your thirty-day plan. In week one, polish your flagship project, README and demo video, and update your resume and LinkedIn. In week two, practise the twelve concept questions out loud, and record yourself at least once. In week three, do the coding drills and two mock system design sessions with a friend. In week four, apply steadily to matching roles, tailor your resume to each description, and follow up politely.
+
+Tailored applications that link your live demo usually beat mass-applying. Ask alumni and LinkedIn connections in Gen AI teams for referrals, and share your project, not just your resume.
+
+Now it's your turn. This takes about twenty minutes, so pause the video. One: write four-part answers to three concept questions. Two: answer one aloud, timed, in under two minutes. Three: sketch the bank chatbot design on paper using the six steps. Four: write one STAR story about a bug or quality issue you fixed in this course. Five: find three real job descriptions on Naukri or LinkedIn, and match your projects to each requirement.
+
+Let's recap. Many Gen AI roles are mostly solid backend engineering plus L L M specific skills. Answer concept questions with the definition, why it matters, your project, and a trade-off. Practise core implementations, like similarity search, chunking and the tool loop, from memory. Use a clear structure for system design: requirements, architecture, trade-offs, safety, evaluation and operations. And remember, honest, specific evidence, like seventeen of twenty test questions correct, beats vague claims and buzzword lists.
+
+And that's the end of Generative AI Mastery. Congratulations on finishing the course! You've gone from your first A P I call to deployed, tested L L M apps. Mark this lesson complete, then claim your certificate and add it to your LinkedIn profile. Now go land that Gen AI role. All the best!

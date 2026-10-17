@@ -1,0 +1,39 @@
+Welcome to Generative AI Mastery, module 1, lesson 3: System Prompts and Multi-Turn Conversations.
+
+A single question and answer is a demo. Real products need a consistent persona, rules the model always follows, and conversations that run across many turns. In this lesson, we'll cover system prompts and multi-turn conversation state. These are the two building blocks of every chatbot.
+
+Let's start with the system prompt. The system parameter holds instructions that apply to the whole conversation. Users never see it, and it carries more weight than ordinary user messages. There are four things you use it for. First, role and audience: who the assistant is, and who it's talking to. Second, rules: what it must do, and what it must not do. Third, format: length, tone, language and structure. And fourth, context: facts about the business that every answer needs.
+
+Let's look at an example. The lesson notes show a system prompt for a support assistant at a fictional chartered accountancy firm in Chennai, called Iyer and Associates. It says who the assistant works for, and that the audience is shop owners and freelancers who aren't finance experts. Then it sets clear rules. Explain G S T, T D S and I T R topics in simple English, in a hundred and fifty words at most. Never give a final tax figure for a specific client. Instead, say a C A from the firm will confirm it, and suggest booking a call. If a question has nothing to do with tax or accounting, politely say you can only help with those topics. And finally, it gives the office hours, Monday to Saturday, ten A M to six P M Indian time, and says the phone number is shared on request only. You'll find the full prompt in the lesson notes below this video.
+
+The code around it is short. It sets up the client the same way as last lesson, then sends one request with that system prompt and a user question: do I need G S T registration? I sell sarees online. Then it prints the first text block of the reply. The code is in the lesson notes below the video.
+
+Notice the structure here. Role, audience, explicit rules, and concrete facts. Vague prompts like, be helpful and professional, add very little. But specific rules, like a hundred and fifty words maximum, or never give a final tax figure, are testable. And testable rules are exactly what you'll need for evaluation in Module 3.
+
+So how do you write good system prompts? Here are four tips. First, explain why, not only what. For example, never give a final tax figure, because only a C A who has seen the client's books can do that. Giving the reason helps the model handle edge cases you didn't anticipate. Second, prefer positive instructions. Answer in plain English works better than a long list of things not to say. Third, keep it stable. A system prompt that never changes between requests can be cached, which cuts cost. You'll see that in Module 5. So don't put timestamps or user I Ds in it. And fourth, version it. Store your prompts in files or constants under Git, not scattered across your code. When quality changes, you want to know exactly which prompt change caused it.
+
+Now let's move on to multi-turn conversations. Here's the key fact. The A P I is stateless. The model doesn't remember your previous request. To hold a conversation, you keep the history in your own code and send all of it every time, alternating user and assistant messages.
+
+The lesson notes show a small example. The user says, my name is Priya and I run a home bakery in Pune. The assistant replies, nice to meet you, Priya, how can I help with your bakery? Then the user asks, what's my name and city? The model answers Priya, Pune, only because that information is in the list you sent.
+
+Next, we wrap this idea in a small reusable conversation class. You'll use it again for the command line app and the web app. The code is in the lesson notes below the video, so let me explain what each part does.
+
+When you create a conversation, you give it a system prompt and a maximum number of turns, which defaults to twenty. It starts with an empty list of messages. That list is the single source of truth for the whole conversation.
+
+The ask method is where the work happens. It adds the user's new message to the list, sends the entire list to the model along with the system prompt, and collects the reply. It joins all of the text blocks together, instead of only taking the first one. That's safer when a response contains several blocks. Then it adds the assistant's reply to the list, so the next call includes it, trims the history, and returns the reply.
+
+The trim step caps the history. Because the whole history is resent every turn, a hundred turn conversation costs far more per message than a five turn one. Trimming always removes messages from the start, and in pairs, so the list still begins with a user message.
+
+At the bottom of the example, you create a conversation and ask three questions. First, Karthik introduces himself as a freelance designer in Coimbatore. Then he asks whether T D S is deducted on his payments from clients. And finally he asks, remind me, what city did I say I'm in? The model can answer, because the history was sent along.
+
+Trimming is the simplest strategy, but there are others you'll meet in real projects, and the lesson notes compare them in a table. Keeping the last few turns suits casual chat and support bots. Summarising old turns into a short note works for long advisory sessions where early details matter. Storing facts in a database and injecting them suits apps that remember a user's profile across sessions. And retrieving relevant past messages, which is rag over the history, suits very long running assistants.
+
+So where do conversations live in a real app? In a script, a Python list is fine. In a web app with many users, you store each conversation in a database, such as PostgreSQL, Redis, or even SQLite for a prototype, keyed by a session I D. You load it at the start of each request, and save it at the end. Never keep it only in server memory. When your app restarts, or runs on two servers, users lose their history.
+
+Here's a common interview question. Where should instructions go? A clean rule of thumb is this. The system prompt holds anything that's true for every turn: the role, the rules, the format and the business facts. The user message holds the current task and any data for it, like the document or the question. Keeping data in user messages and rules in the system prompt also helps security. It makes it clearer to the model which text is an instruction from you, and which is untrusted content. You'll build on this in the prompt injection lesson.
+
+Now, try it yourself. This takes about fifteen to twenty minutes, so pause the video and work through it. First, write a system prompt for a support assistant for a business you know. It could be a coaching institute in Kota, a two-wheeler service centre in Lucknow, or your own college placement cell. Include the role, the audience, three rules and two facts. Second, plug it into the conversation class. Third, have a five turn conversation. In turn one, give your name, and in turn five, ask for it back. Fourth, ask an off-topic question and check that your rule about scope is respected. And fifth, set the maximum turns to two, repeat the test, and watch the model forget your name. Write one line on when you'd accept that trade-off.
+
+Let's recap. The system prompt holds role, rules, format and fixed context, so make your rules specific and testable. The A P I is stateless, so your code stores the history and resends it every turn. Long histories cost more on every request, so trim or summarise them. In production, store conversations in a database keyed by session, not in memory. And keep instructions in the system prompt and data in user messages.
+
+That's it for this lesson. Mark it complete, and I'll see you in the next one.

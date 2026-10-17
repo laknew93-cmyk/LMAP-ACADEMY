@@ -1,0 +1,35 @@
+Welcome to No-Code AI Agents and Automation, module 2, lesson 3: Adding an AI Step: Summarise, Classify, Extract, Draft.
+
+This is where automations become intelligent. In this lesson, you'll add an AI step that can summarise, classify, extract and draft. And, just as importantly, you'll learn how to make its output reliable enough for the next step to use.
+
+First, there are two ways to add AI. Every major automation tool now offers AI in two forms. The first is built-in AI steps. The tool gives you an "AI" step, sometimes with a model already connected. It's quick to start, but you get less control. The second is direct model connectors. These are steps for OpenAI, Anthropic's Claude, Google Gemini and others, where you connect your own A P I key and pick the model. That gives you more control over model choice and cost.
+
+If there's no connector for a provider, you can always call its A P I with an HTTP Request step. Either way, the step works like this. You send a prompt, which is your instructions plus data from earlier steps. And you get back text that later steps can use.
+
+Now, there are four jobs an L L M step does best. One, summarise. Long text goes in, short text comes out. For example, turning a forty-line customer email into two lines for the sales team. Two, classify. Text goes in, and one label from a fixed list comes out, like sales, support, billing or spam. Three, extract. Unstructured text goes in, and structured fields come out. For example, pulling the name, G S T I N, invoice amount and due date from an email. And four, draft. Context and instructions go in, and a message comes out, like a polite reply confirming a site-visit slot. There's a table of these in the lesson notes. Most useful business workflows combine two or three of these jobs.
+
+Next, writing prompts for automations. A prompt in an automation is different from chatting. Nobody's there to say, "No, shorter please." The output has to be right the first time, and in a shape the next step understands.
+
+Let's look at an example. The lesson uses a prompt for Sharma Dental Clinic in Lucknow. It gives the model a role, as the clinic's assistant. It sets a task, to classify a patient message into exactly one category. It lists four categories with definitions: appointment, billing, clinical, and other. It adds rules. If the message mentions severe pain, bleeding or swelling, choose clinical. And reply with the category word only, no explanation. Then, at the end, there's a placeholder in double curly brackets where you map the message field from the trigger step. You'll find the full prompt in the lesson notes below this video.
+
+Notice what makes it work. A clear role. A fixed list of allowed outputs, each with a definition. Tie-breaking rules. And a strict output format.
+
+Now, getting structured output, using JSON. When you need several fields back, ask for JSON. Many tools and model providers also offer a structured output or JSON mode option. Turn it on when it's available, because it makes valid JSON much more likely.
+
+The lesson's extraction prompt asks the model to return only valid JSON with five keys. A name. A company, or null. A budget in rupees as a number, or null. A timeline, which must be one of urgent, one to three months, later, or unknown. And a summary of no more than twenty-five words. It also tells the model that if a value isn't mentioned, use null or unknown, and don't guess. The full prompt is in the lesson notes.
+
+After the AI step, add a parse JSON step. Some tools do this automatically. That way, each key becomes its own mappable field. Now your router can branch on the timeline, and your sheet can store the budget in its own column.
+
+You also need to guard against bad output. Even good prompts sometimes produce surprises, so protect the workflow in three ways. First, after a classify step, add a filter. Is the output one of the allowed labels? If not, route it to a fallback or review branch. Second, set a low temperature, or the most precise or deterministic setting, for classification and extraction. Use higher creativity only for drafting. And third, tell the model what to do when information is missing. "Use null, don't guess." This reduces made-up values.
+
+Now, choosing a model. Providers usually offer larger, more capable models, and smaller, faster, cheaper ones. Here's a practical rule. For classifying, extracting and short summaries, start with a small, fast model. It's usually good enough, and it costs much less. For drafting customer-facing messages, nuanced reasoning or long documents, try a more capable model.
+
+Test both on ten to twenty real examples and compare. Don't choose based on hype. Choose based on your examples. And model names and prices change frequently, so check the provider's current model list.
+
+Finally, privacy before you paste. Every AI step sends data to a model provider. So before you pipe customer messages through it, think about three things. First, check the provider's data usage terms for A P I traffic. A P I terms are often different from consumer chat apps. Second, avoid sending data you don't need. If you only need the message text, don't send the customer's Aadhaar or PAN number along with it. And third, tell your client, in writing, which provider processes their data. Under India's Digital Personal Data Protection Act, businesses have obligations around personal data. Your client should take their own legal advice, but you should make the data flows transparent.
+
+Now, try it yourself. Add an AI step to your lead workflow. It takes about twenty minutes, so pause the video and build along. Step one, after the validation step, add an AI step, either built-in or from your chosen provider. Step two, use the extraction prompt from this lesson, adapted to your form fields. Step three, turn on JSON or structured output if it's available, then parse the result into fields. Step four, add columns to your sheet for timeline, budget in rupees, and summary, and map them. Step five, submit five test enquiries in different styles. One detailed, one vague, one in Hinglish, something like "bhai three B H K ka interior chahiye, budget eight lakh", one with no budget, and one that's spam. And step six, review the sheet. Did the model invent any values? If so, tighten your rules.
+
+Let's recap. An L L M step is a smart function inside a fixed workflow. Prompt in, text out. Use it to summarise, classify, extract and draft, often in combination. For automations, demand strict output: fixed labels, JSON keys, and explicit "don't guess" rules. Validate the AI's output before acting on it, and route unexpected results to review. And start with smaller models for simple tasks, test on real examples, and be transparent about the data you send to providers.
+
+That's it for this lesson. Mark it complete, and I'll see you in the next one.

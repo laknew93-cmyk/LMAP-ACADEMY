@@ -1,0 +1,37 @@
+Welcome to AI for Content Creation and Personal Branding, module 2, lesson 3: Reels and Shorts Scripts with Scroll-Stopping Hooks.
+
+Instagram Reels and YouTube Shorts are some of the fastest ways to reach new people. But short video is unforgiving. Viewers decide within seconds whether to keep watching. In this lesson, you'll learn how short scripts are structured, use AI to write them, and create Project 4. That's a short-video script with several hook variants to test.
+
+Let's start with why the hook carries so much weight. On short-video platforms, people swipe away almost instantly if the opening doesn't grab them. The hook is the first one to three seconds. It's what you say, what text appears on screen, and what the viewer sees. A good hook makes a clear promise, or creates curiosity that the rest of the video pays off.
+
+Here's a weak hook: "Hi everyone, welcome back to my channel, today I want to talk about saving money."
+
+And here are three stronger ones. "This one habit costs most salaried people in India thousands every year." "Stop paying for food delivery like this." And, "I tracked every rupee I spent for thirty days. Here's what shocked me."
+
+Each one gets straight to the point. But note that the third one must be true. Only say "I tracked every rupee" if you actually did.
+
+Now let's look at a reliable short-video structure. For videos between twenty and sixty seconds, this works well. It has five parts. The hook runs from zero to three seconds, with a promise, a surprise or a problem. The setup runs from three to ten seconds, with why it matters and some quick context. The value section runs from about ten to forty-five seconds. That's where the tips, steps, story or demonstration go. The payoff takes the last five to ten seconds, with the key takeaway or reveal. And the call to action comes in the final seconds. Follow, save, comment a keyword, or nothing at all. The table is in the lesson notes below this video.
+
+Keep the pace brisk. Every sentence should either deliver value or make people want the next sentence.
+
+There are several common hook styles. Ask AI for hooks across different styles, then choose. A problem hook, like "If your reels get under two hundred views, check this first." A mistake hook, like "You're probably storing your rotis wrong." A curiosity hook, like "Nobody told me this before my first job interview." A number hook, like "Three Excel shortcuts that saved me an hour a day." A contrarian hook, like "You don't need a gym membership to get strong." A story hook, like "A customer walked into our Jaipur shop and asked for a refund..." And a visual hook. That's an unusual action on screen, such as pouring batter in slow motion, with a text overlay.
+
+Now let's write the script with AI. Give the AI your topic, your audience, your voice guide and your raw knowledge. And ask for spoken language, not written language. The script prompt asks for a forty-five second Reel or Short on your topic for your audience. It should be written to be spoken aloud, with short sentences and natural rhythm, and roughly one hundred and ten to one hundred and thirty spoken words. It's formatted as a table with four columns. Time, what I say, on-screen text, and visuals or B-roll. It follows the hook, setup, value, payoff, call to action structure, and uses only the facts in your notes. Then it asks for eight alternative hooks in different styles, each under twelve words. You'll find the full prompt in the lesson notes below this video.
+
+That on-screen text column matters, because many people watch with the sound off. Captions and text overlays carry the message even on mute.
+
+Let's look at an example. Karthik is a fitness coach in Coimbatore who coaches busy office workers. His notes say that most clients skip workouts because they think ten minutes is pointless. He recommends a simple routine. And consistency matters more than intensity.
+
+Here's how his edited script plays out. In the first three seconds, he says, "Ten minutes of exercise is not a waste of time," with the on-screen text "ten minutes counts" while he checks his watch. From three to ten seconds, he says most of his clients skip workouts because they can't do a full hour, over a shot of a laptop closing on an office desk. From ten to forty seconds, he walks through the routine, two minutes of squats, two of push-ups and so on, with step labels and a quick demo of each move. And from forty to forty-five seconds, he says, "Do it daily for two weeks. Then tell me it was pointless," with the text "try it for fourteen days" as he smiles and gives a thumbs up. The full table is in the lesson notes.
+
+Next, testing hook variants. You rarely know in advance which hook will work. So plan to test. First, record the video body once, then record three different hooks. Second, publish the versions on different days, or use any built-in testing features a platform offers. And third, compare how many people kept watching past the first few seconds, and how many watched to the end. Most platforms show retention or skip rate in their analytics.
+
+Over time, you'll learn which hook styles your audience responds to. And you can add those patterns to your voice guide.
+
+Here are some recording tips that make AI scripts work. Rehearse out loud, and rewrite any line you trip over. AI scripts often contain phrases nobody actually says. Use natural Hinglish or your regional language if that's how your audience speaks. Lesson 3.4 covers this. Film vertically, in good natural light, with a simple clip-on mic if possible. And add captions with an auto-captioning tool, then correct the errors. They're common with Indian names and mixed languages.
+
+Now it's time to try it yourself. Complete Project 4 in about twenty minutes. Pause the video and work along. Step one. Pick a topic from your calendar that suits a quick demonstration or tip. Step two. Write one hundred to two hundred words of raw notes. Step three. Run the script prompt and get the table plus eight hooks. Step four. Read the script out loud with a timer. Cut or rewrite until it fits forty-five seconds and sounds like you. Step five. Choose your three strongest hooks, and write matching on-screen text for each. And step six. Save the final script and the three hook variants in your calendar, with a note on how you'll test them.
+
+Let's recap. The first few seconds decide whether a short video is watched, so write hooks with care. Use the hook, setup, value, payoff, call to action structure for twenty to sixty second videos. Ask AI for scripts in a table with spoken words, on-screen text and visuals. Generate hooks in several styles, and test variants with the same video body. And read every script out loud, making sure every claim in the hook is true.
+
+That's it for this lesson. Mark it complete, and I'll see you in the next one.

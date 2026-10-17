@@ -1,0 +1,41 @@
+Welcome to Generative AI Mastery, module 6, lesson 1: Building Your Deployed Portfolio Project and README.
+
+Gen AI hiring managers see hundreds of resumes listing LangChain, rag and L L Ms. Yours stands out with a live link to something that works, and a README that shows engineering judgement. In this lesson, you'll turn one of your course projects into a polished, deployed portfolio piece.
+
+Let's start by picking your flagship project. You've built four projects. Choose one as your flagship and polish it properly. The others can be linked as supporting work. The table in the notes matches each to roles. The document Q and A rag app suits enterprise AI, I T services Gen AI practices, and legal or H R tech. The G S T invoice extractor suits fintech, accounting software and back-office automation. The C S V analyst agent fits analytics, B I and data products. And the Streamlit career chatbot suits edtech and consumer apps, though it's weaker alone, so combine it with rag.
+
+A good flagship solves a recognisable problem, has a live demo, and shows at least two of these: structured output, retrieval, tools or agents, evaluation, and safety.
+
+Next, polish the demo. Small details shape how a recruiter sees your project in the first thirty seconds. First, build in sample data. Add a "Try with sample invoice" or "Load demo documents" button, so visitors don't need their own files. Second, a clear empty state. Give one sentence on what the app does and three example questions. Third, make citations or validation visible. That's your differentiator, so make it obvious. Fourth, show friendly errors for rate limits, large files and refusals. Fifth, keep limits on. Rate limiting and upload caps mean a public link can't drain your credits. And sixth, never collect real personal data. Add a note asking visitors to use sample documents only.
+
+Now, write a README that sells. Your README is the project's landing page. Recruiters skim it, and technical interviewers read it closely. The notes have a full template for the invoice extractor. Let's walk through it.
+
+It opens with a two-line summary: upload a G S T invoice, as a P D F or photo, and get validated J S O N with supplier, G S T I N, line items and tax totals, plus checks that flag invoices for review. Below that are links to the live demo, noting it may take about thirty seconds to wake up, and a ninety-second demo video.
+
+A Why section explains that accounts teams re-type invoices by hand, and this service extracts the data and flags inconsistencies, so humans only review exceptions.
+
+How it works has four steps. FastAPI receives the file and checks type and size. Claude reads the document and returns data constrained to a Pydantic schema. Deterministic checks validate the G S T I N format, line-item sums, and the C G S T, S G S T and I G S T rules. Clean invoices are auto-accepted, and the rest are marked for review.
+
+Results shows an evaluation on twenty sample invoices, ten P D Fs and ten phone photos, with exact matches out of twenty for invoice number, G S T I N, and grand total within one rupee.
+
+Design decisions lists structured output with Pydantic instead of parsing free-text J S O N, the model reading while code verifies the arithmetic, and settings coming from environment variables.
+
+Limitations notes that handwritten invoices are less reliable, and the G S T I N check covers format only, not live registration.
+
+Run locally shows how to copy the example env file, add your key, and build and run the container. And a Tech line lists Python, FastAPI, the Claude A P I, Pydantic, Docker and Render.
+
+A few notes. Real numbers from your own evaluation set are the most persuasive section. Never invent them. An honest seventeen out of twenty beats a vague "highly accurate". Design decisions show you thought, not just followed a tutorial, and become interview talking points. Limitations signal maturity. And the env example file is a copy of your env file with placeholder values, committed so others know which variables to set.
+
+Next, record a ninety-second demo video. Many recruiters won't click a live link, but will watch a short video. Use any screen recorder, in three parts. Spend ten seconds on the problem, like "Accounts teams type invoices by hand". Spend fifty seconds on the demo: upload a sample, show the J S O N, then upload a broken invoice and show the flagged issue. And spend thirty seconds on the architecture in one sentence, plus your evaluation result. Upload it as an unlisted YouTube video or to Loom, and link it at the top of your README.
+
+Now let's present it on LinkedIn and Naukri. Start with a resume bullet that's specific, measurable and honest. Here's the example: "Built and deployed a G S T invoice extraction A P I using FastAPI, the Claude A P I, Pydantic and Docker; schema-constrained extraction plus rule-based G S T validation; eighteen out of twenty exact grand-total matches on a self-built test set of P D F and photo invoices."
+
+For LinkedIn, post a short story: the problem, what you built, one surprising lesson, and the demo link. Posts about what went wrong and how you fixed it tend to start better conversations than pure announcements. On GitHub, pin the flagship and two supporting repos, each with a README, a licence, and no committed secrets. And for your Naukri and LinkedIn skills, list concrete skills you can defend in an interview, like rag, embeddings, vector databases, tool calling, L L M evaluation, FastAPI and Docker. Not every buzzword.
+
+Now, common portfolio mistakes from the table in the notes. A demo link that's dead, or asks visitors for an A P I key? Keep it deployed, and keep the key on the server side. A README that's still the default template? Use the structure we just covered. No evaluation, just "it works well"? Add a small test set and real numbers. An env file committed somewhere in your Git history? Revoke the key, then rewrite the history or create a fresh repo. And ten half-finished projects? Replace them with one polished flagship and two supporting projects.
+
+Now it's your turn. This takes about twenty minutes now, plus a few hours over the week. Pause the video. Step one: pick your flagship project, and write down the one-sentence problem it solves. Step two: create your env example file and your README using the template, filling in your real evaluation numbers. Step three: add one demo-friendly feature, like a sample data button or example questions. Step four: script and record a ninety-second video. And step five: write your resume bullet, and ask a friend or a chat assistant to critique it for clarity, without inflating your claims.
+
+Let's recap. One polished, deployed flagship beats many unfinished projects. A strong README covers why, how, results, design decisions and limitations. Real evaluation numbers are your most persuasive evidence, so never invent them. A ninety-second video reaches recruiters who never click live links. And keep secrets out of your repos, and keep your demos safe to share publicly.
+
+That's it for this lesson. Mark it complete, and I'll see you in the next one.

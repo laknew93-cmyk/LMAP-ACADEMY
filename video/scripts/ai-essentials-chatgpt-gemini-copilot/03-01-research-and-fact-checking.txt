@@ -1,0 +1,61 @@
+Welcome to AI Essentials, module 3, lesson 1: Research with AI and Fact-Checking.
+
+AI assistants can turn hours of research into minutes, but only if you know how to check what they tell you. In this lesson, you'll learn a research workflow that combines AI speed with human verification. And you'll produce a one-page research brief from three sources.
+
+Let's start with the two kinds of AI research. When you ask an assistant a research question, it answers in one of two ways.
+
+The first way is from memory. It generates an answer from what it learned in training. That's fast, but it may be outdated or wrong, and it usually can't tell you exactly where the information came from.
+
+The second way is with web search. It searches the internet, reads pages and summarises them, usually with links. That's slower, but more current and checkable.
+
+Most major assistants can search the web, and many show a "searching" indicator plus source links. For anything where accuracy or recency matters, make sure search is being used. You can ask directly. Here's the prompt: "Search the web for this and give me links to your sources for every key point."
+
+Some assistants also offer a "deep research" style mode that reads many sources and produces a longer report. These are useful for bigger questions, but the same verification rules apply.
+
+Now let's walk through the research workflow. It has four steps: Explore, Gather, Verify, and Synthesise.
+
+Step one is Explore, where you understand the landscape. Use the assistant to get oriented quickly. Here's the prompt: "I'm a marketing executive at a mid-sized F M C G company in India. I need to understand the quick-commerce market, 10-minute grocery delivery, for an internal presentation. Give me: the main players, how the business model works, 5 key questions I should research, and the types of sources I should look for."
+
+This gives you a map, not final facts. Treat every specific number in this answer as unconfirmed.
+
+Step two is Gather, where you collect real sources. Good source types in India include official government sites, like ministries, the R B I, SEBI, and census and statistics portals. Company annual reports and investor presentations. Reputed business newspapers and magazines. Industry body reports. And academic papers.
+
+Ask the assistant to help you find them, then open each link yourself. Check that the page exists, that it says what the AI claims, and that it's reasonably recent.
+
+Step three is Verify, where you check the claims. For each important fact, confirm it in the original source. Watch for four things. Broken or fake links, where the page doesn't exist or is unrelated. Misquoted numbers, where the source says twelve thousand crore rupees, but the summary says twelve hundred crore. Old data presented as current, like a 2019 figure described as "today". And opinion presented as fact, like one analyst's prediction stated as certainty.
+
+Here's a useful habit. When two sources disagree, note both figures and the dates, rather than picking one silently.
+
+Step four is Synthesise, where you make sense of it all. Once you have verified material, paste the relevant extracts into the assistant and ask it to combine them. The prompt in the lesson notes says: below are extracts from three sources I have checked. Using only this information, write a one-page research brief. It asks for a three-line summary, key findings as bullets each with its source number in brackets, points where sources disagree, and three open questions. Then you list each source with its title, date and link, and paste the extract. You'll find the full prompt in the lesson notes below this video.
+
+The phrase "using only this information" is crucial. It keeps the assistant grounded in your verified sources, instead of adding its own unverified facts.
+
+Next, asking better research questions. Vague questions get vague answers. Let's compare. A weak question is: "Tell me about electric vehicles in India." A better one is: "What are the main reasons small fleet operators in Tier-2 Indian cities hesitate to switch to electric three-wheelers? Group the reasons into cost, infrastructure and operations, and suggest what sources would have data on each."
+
+Also, ask the assistant to argue the other side. Here's the prompt: "What are the strongest arguments against this conclusion? What evidence would change it?" This protects you from building a one-sided brief.
+
+Now, research for everyday decisions. Research isn't only for work presentations. People use the same workflow for comparing two health insurance policies, where you verify every clause in the actual policy document. For understanding a new government scheme for small businesses, where you confirm on the official portal. For choosing between courses or colleges for a family member. And for checking a potential employer before an interview.
+
+Here's an example. Meera, a career returner in Pune, used this approach to research three companies before her interviews. She asked an assistant for an overview, then checked each company's website, recent news and LinkedIn page herself. The AI saved her time, and her checking made sure she didn't repeat outdated information in the interview.
+
+A quick word on citing AI-assisted research honestly. If you share a brief at work, cite the original sources, not "ChatGPT said". The assistant is your research helper, not your source. And if your company has rules about disclosing AI use, follow them.
+
+Time to try it yourself. This is a course project: a one-page research brief. Allow about twenty minutes, or more if you enjoy it. Pause the video and work through each step.
+
+Step one. Pick a question relevant to your work, business or job search. For example: "What should a small bakery know before selling on food delivery apps?"
+
+Step two, Explore. Ask an assistant for an overview, key questions and source types.
+
+Step three, Gather. Find three real sources. Open and skim each one yourself. Note the title, date and link.
+
+Step four, Verify. Pick the three most important facts and confirm each in its original source.
+
+Step five, Synthesise. Paste extracts from your three sources into the "using only this information" prompt.
+
+Step six. Edit the brief to one page, and add a "Sources" list at the bottom.
+
+And step seven. Save the synthesis prompt as Prompt number 5 in your library, and keep the brief for your portfolio.
+
+Let's recap. Know whether the assistant is answering from memory or from a web search, and use search for facts that matter. Follow the four steps: Explore, Gather, Verify, Synthesise. Open every source yourself, and check that links work and numbers match. Ground the final write-up with "using only this information", and cite original sources. And ask for counter-arguments, so your research isn't one-sided.
+
+That's it for this lesson. Mark it complete, and I'll see you in the next one.

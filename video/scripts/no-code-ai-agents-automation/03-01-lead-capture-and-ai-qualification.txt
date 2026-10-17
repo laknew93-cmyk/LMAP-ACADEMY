@@ -1,0 +1,35 @@
+Welcome to No-Code AI Agents and Automation, module 3, lesson 1: Project 1, Lead Capture and AI Qualification.
+
+This lesson kicks off Project 1, a complete lead-qualification automation. Here, we'll design the flow and build the first half, capturing leads and having AI score them against clear criteria. The next lesson adds the CRM and the follow-up.
+
+Let's start with the business scenario. Kavya runs a digital marketing agency in Indore. Leads come in from her website form and from a Meta lead ad. Today, her team reads each lead the next morning and decides who to call. The problem? Hot leads go cold overnight. And junior staff spend time calling students who are asking about internships.
+
+So here's the goal. Every lead gets scored within a minute. Hot leads trigger an instant alert and message. And everything lands in one sheet or CRM.
+
+Let's walk through the full flow. There are nine steps, and the outline is in the lesson notes. Step one, the trigger, a new lead from the website form webhook or the lead-ad connector. Step two, validate, checking required fields are present and cleaning the phone number. Step three, deduplicate. Have we seen this phone or email before? Step four, AI qualify, getting a score, a category and a reason, as JSON. Step five, parse and check the AI's output. Steps six, seven and eight come in the next lesson. That's saving to a Google Sheet or CRM, routing by score into hot, warm or cold, and following up on WhatsApp or email with alerts. And step nine is error handling, with a review sheet and a notification.
+
+Step one is capturing leads from more than one source. If you have two sources, you've got two options. Option one, two small workflows, one per source, that both send their data to a shared third workflow through a webhook. That's good when the sources differ a lot. Option two, one workflow per source, each doing everything. That's simpler, but every change has to be made twice.
+
+For beginners, start with one source. Once it works, add the second by building a tiny workflow that reformats its data into the same shape and passes it on. It's worth agreeing a consistent internal format early. The lesson suggests one with seven fields: source, name, phone, email, company, message, and the time it was received. You'll find it in the lesson notes.
+
+Steps two and three are validating and deduplicating. Reuse your validation from module two. Then add a search step in your sheet or CRM, looking for an existing row with the same phone or email. If you find one, update that row's "Last enquiry" date and append the new message, instead of creating a duplicate. People often submit the same form twice. And duplicates make the team look disorganised when two people call the same lead.
+
+Step four is the heart of it: defining what "qualified" means. The AI can only qualify leads as well as you define qualification. So sit with Kavya and write down her actual criteria. A simple version of a widely used framework works well: budget, need, timeline and fit.
+
+The lesson includes a full qualification prompt for Kavya Digital. Here's what it does. It describes the agency and who it serves, small and medium businesses in Madhya Pradesh and nearby. It spells out the ideal client. A business, not a student or job seeker. Needing social media, Google Ads or S E O services. With a monthly marketing budget of twenty-five thousand rupees or more, or a clear growth goal. And wanting to start within two months. It asks for a score from zero to a hundred, and a category. Hot is seventy to a hundred, warm is forty to sixty-nine, cold is zero to thirty-nine, and there's a separate category called "not a lead" for job seekers, vendors and spam. It asks for JSON back, with the score, the category, a one-sentence reason, the business type, and a suggested next step for the sales team. And it tells the model not to invent facts, and to say so in the reason if the budget isn't mentioned. You'll find the full prompt in the lesson notes below this video.
+
+There are a few design choices worth noticing. First, the ideal client section is specific to the business. That's what makes the AI useful instead of generic. Second, "not a lead" is its own category, so internship requests don't pollute your conversion numbers. And third, the reason and the suggested next step help humans trust and act on the score. A score with no reason is hard to trust.
+
+Step five is parse and check. After the AI step, do three things. One, parse the JSON into fields. Two, add a filter or If step. Is the category one of the four allowed values, and is the score a number between zero and a hundred? And three, if not, set the category to "REVIEW" and carry on. The lead still gets saved. A human just decides manually.
+
+Here's the rule. Never let a broken AI response make a lead disappear. Losing a lead is worse than not scoring it.
+
+Now, calibrating the scorer. Before you switch it on for real, test it against history. Here's how. First, take twenty to thirty past leads where you know the outcome. Maybe they became a client, maybe they didn't respond, maybe they were junk. Second, run them through the workflow manually, or paste them into the AI step's test panel. Third, compare the AI's categories with what actually happened. Fourth, where it disagrees, ask why. Usually the criteria are missing something. For example, "Leads from Bhopal are fine too", or "Restaurants are a great fit for us." And fifth, update the prompt and re-test.
+
+Keep a small test set of these examples in a sheet. Whenever you change the prompt later, re-run the test set to make sure you didn't break anything.
+
+Now, try it yourself. You'll build the first half of Project 1, in about twenty minutes. Pause the video and work along. Step one, write a qualification prompt for a real or imagined business. Your own freelance service is perfect. Include an ideal-client section and the four categories. Step two, add it as the AI step in your lead workflow, after validation. Step three, add a deduplication search on phone number. Step four, parse the JSON, and add an output check that sets "REVIEW" on bad output. And step five, create a test set of ten enquiries. Three that should be hot, three warm, two cold, and two that are not leads. Run them all, and record whether the AI agreed with you.
+
+Let's recap. Design the whole lead flow first: capture, validate, deduplicate, qualify, save, route and follow up. Qualification quality depends on writing the business's real ideal-client criteria into the prompt. Ask for a score, a category, a reason and a next step, in JSON. Never let a bad AI response lose a lead. Fall back to a REVIEW status instead. And calibrate against past leads, and keep a test set for future prompt changes.
+
+That's it for this lesson. Mark it complete, and I'll see you in the next one.

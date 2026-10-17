@@ -1,0 +1,37 @@
+Welcome to Generative AI Mastery, module 3, lesson 4: Evaluating Rag Pipelines and Prompts.
+
+"It looked good when I tried three questions." That's how most GenAI demos are tested, and it's why most of them disappoint in production. Evaluation is what separates a GenAI engineer from someone who's watched tutorials. In this lesson, you'll build a small test set and an automated evaluation script for your rag app.
+
+So why do evals matter? Every change you make, whether it's a new prompt, a chunk size, a different model, or a lower effort setting, can improve some answers and quietly break others. Without a test set, you're guessing. With one, you can say in a standup: "Chunk size one thousand improved retrieval hit rate from seventy two percent to eighty six percent on our fifty question set, with no drop in correctness." That sentence gets people promoted.
+
+Step one is building a test set. Start small. Twenty to fifty questions is enough to catch most regressions. Store them in a J S O N Lines file, one case per line. Each case has an id, the question, the expected source file and page, and a reference answer. For example, a paternity leave question expects the leave policy, page four, with the reference "ten working days, within three months of birth." A question about the CEO's salary has no expected source, and its reference is a special marker meaning "not in the docs." The examples are in the lesson notes below the video.
+
+Good test sets mix five types of question. Straightforward ones, like "What are office hours?", give a baseline sanity check. Paraphrased ones, like "Do I get paid leave when my baby is born?", test semantic retrieval. Multi part ones, like leave for marriage and relocation together, need several chunks. Questions not in the docs, like the CEO's salary, test abstaining. And tricky wording, with local terms or Hinglish, tests real user language.
+
+Write questions the way real users type them, typos included. And once your app is live, the best source of test cases is real user questions from your logs, with personal data removed.
+
+Step two is measuring retrieval. Here's the nice part: you can check retrieval without any L L M at all. The question is simple. Did the expected page appear in the top k chunks?
+
+Let's walk through the code. One function loads the test cases from the file, one J S O N object per line. Another calculates the hit rate. For each answerable case, it retrieves the top five chunks and counts a hit if any chunk matches both the expected file and page. Otherwise it prints a miss line with the case id and question. It returns hits divided by answerable cases, and the last line prints the hit rate as a percentage. The code is in the lesson notes below the video.
+
+This check is fast and free, so run it on every chunking or embedding change. The miss lines tell you exactly which questions to investigate.
+
+Step three is grading answers with an L L M judge. Checking correctness is harder. "10 working days" and "ten days, excluding weekends" are both right, but they don't match as text. A common technique is L L M as judge, where a second model call compares the answer to your reference using a clear rubric and returns a structured verdict.
+
+Here's what the code does. It defines a verdict model with two fields: reasoning first, then a grade that can only be correct, partially correct, or incorrect. The judge's system prompt says to compare the answer with the reference and judge facts only, not style. Correct means all key facts are present and nothing contradicts the reference. Partially correct means some key facts are present and none are contradicted. Incorrect means key facts are missing or contradicted, or the assistant answers when the reference says "not in the docs," or refuses when an answer exists. The judge function sends the question, reference and answer to the model at low effort and gets back a parsed verdict.
+
+Then a loop runs every case through your answer function, joins the claim sentences into one text, or uses a standard "could not find this" message if nothing was found, and sends it to the judge. It counts each grade, prints the reasoning for anything not correct, and finally prints the totals and overall accuracy. The code is in the lesson notes.
+
+Four tips make judges reliable. First, ask for reasoning before the grade, so the judge thinks before deciding. Second, use clear categories, not one to ten scores, because judges are inconsistent on fine numeric scales. Third, spot check the judge by reading ten to twenty verdicts yourself, and fix the rubric if you often disagree. And fourth, keep the judge fixed while comparing versions of your app, changing one thing at a time.
+
+The same pattern works beyond rag, for prompts and extraction. For the invoice extractor, you don't even need a judge. Store the expected J S O N for fifteen invoices and compare them field by field. Use exact match for the G S T I N and the invoice number, and a one rupee tolerance for amounts. Deterministic checks are cheaper and more trustworthy than L L M judges, so use them wherever the answer is exact.
+
+A table in the notes matches each kind of test with its best check. Extracted fields get exact or tolerance comparison in code. Classification gets accuracy against labels. Retrieval gets hit rate on the expected source and page. Free text answers get an L L M judge with a rubric, plus human spot checks. And format rules, like "under one hundred fifty words," get code checks.
+
+Make it a habit. Save each run's results with the date and the setting you changed. A simple C S V is fine. Before merging any prompt change, run the evals. Teams that do this ship with confidence. Teams that don't end up afraid to touch their prompts. Keep in mind that evals cost money too, since every case is a model call or two. So start small, and use low effort for the judge.
+
+Now it's time to try it yourself. It takes about twenty minutes, so pause the video and follow along. First, write fifteen test cases for your documents: ten answerable, mixing direct and paraphrased questions, and five that aren't in the documents. Second, run the retrieval hit rate at k equals three and k equals eight, and note both numbers. Third, run the full answer evaluation and read every verdict that isn't correct. Fourth, make one change, such as chunk size, k, or a system prompt tweak, rerun, and record before and after in a small table. And fifth, read five judge verdicts yourself and note whether you agree.
+
+Let's recap. Without a test set, every change is a guess, and twenty to fifty well chosen cases catch most regressions. Measure retrieval separately with hit rate, because it's cheap and it causes most rag failures. L L M as judge works with clear rubrics, categorical grades and schemas that put reasoning first. Prefer deterministic code checks whenever the right answer is exact. And record results for every change, because that evidence is gold in interviews.
+
+That's it for this lesson. Mark it complete, and I'll see you in the next one.

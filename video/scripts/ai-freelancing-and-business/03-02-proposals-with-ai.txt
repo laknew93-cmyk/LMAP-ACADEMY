@@ -1,0 +1,51 @@
+Welcome to Make Money with AI, module 3, lesson 2: Writing Winning Proposals with AI.
+
+A good proposal makes the client feel understood within the first two lines. A bad one, usually a generic, AI-generated wall of text, gets ignored. In this lesson, you'll build a reusable proposal template and learn to personalise it quickly with AI, without sounding like a robot.
+
+Let's start with why most proposals fail. Clients on Upwork or LinkedIn often receive many responses, and they skim. Proposals that fail usually do one of four things. They start with "Dear Sir or Madam, I am a hardworking freelancer with excellent skills." They talk only about the freelancer, not the client's problem. They're obviously copy-pasted or obviously AI-written. Long, generic, and full of phrases like "I hope this message finds you well." Or they don't answer the questions in the job post.
+
+So what does a strong proposal look like? Keep it short. Often a hundred and twenty to two hundred words for platform proposals. And use a five-part structure.
+
+Part one is a hook that mirrors their problem. Show you read the brief by referencing a specific detail. For example: "You mentioned your customer list has duplicates from three different sources and inconsistent phone formats. I've cleaned similar lists and can standardise everything to a single format."
+
+Part two is your approach, in two to four steps. Clients want to know how you'll work, not just that you can.
+
+Part three is relevant proof. One or two portfolio links, with a line on why they're relevant.
+
+Part four is logistics. Your timeline, what you need from them, and the price, or a question that leads to it.
+
+And part five is a simple next step. A question or call to action, like "Could you share a twenty-row sample so I can confirm the timeline?"
+
+Now let's look at your reusable proposal template. It's in the lesson notes below this video, ready to copy. It opens with a greeting and a one or two sentence hook referencing a specific detail from their post and the outcome they want. Then it lays out your approach in three steps, with the last one including a review or quality check. It adds a relevant portfolio link with one line on why it's similar, your timeline after you receive the inputs, and your price, including revisions. It includes a line saying you use AI tools for speed and that every deliverable is reviewed and checked by you personally. And it ends with a question or next step, and your name.
+
+Keep a few variations saved. One for platform jobs, one for direct LinkedIn or email leads, and one for local businesses, who may prefer a shorter, WhatsApp-friendly version.
+
+Now, personalising with AI, the right way. AI can save you time by analysing the brief and drafting a tailored version. The key is to feed it real information and keep control. There are three steps.
+
+Step one: analyse the brief. Here's the prompt: "Here is a job post. Summarise in bullet points: the client's main problem, their stated requirements, questions they asked that I must answer, any hidden concerns like budget, timeline or past bad experiences, and red flags, if any." Then you paste in the job post.
+
+Step two: draft using your template. This prompt gives the AI your template and the job post, and sets the rules. Under a hundred and seventy words, plain friendly English, no "I hope this finds you well", no exaggerated claims, and no invented experience or results. It also tells the AI to use only the portfolio pieces you list. You'll find the full prompt in the lesson notes below this video.
+
+Step three: edit by hand. Read it aloud. Rewrite the hook in your own words. Check every claim is true. And remove anything a human wouldn't naturally write.
+
+What about screening questions? Many job posts include questions. Answer each one directly, in the same order. And if a post says something like, "Start your proposal with the word mango so I know you read this," do it. Clients use this to filter out copy-paste proposals.
+
+Now, proposals for local businesses. A Lucknow sweet shop owner won't read a formal proposal. Send a short, friendly WhatsApp message or a printed one-page version instead. The example in the lesson notes starts with "Namaste" and the owner's name with "ji", and thanks them for their time. Then it lists what you'll do for the shop's Instagram. Twelve posts a month, using photos they share plus your designs and captions. A festival calendar, so they never miss Diwali, Raksha Bandhan and so on. And one short monthly update on what's working. It gives a monthly price, offers the first month as a trial with no long commitment, and ends by asking, "Shall I prepare two sample posts so you can see the style?"
+
+Finally, watch for red flags in briefs. Your analysis prompt may surface these, but learn to spot them yourself. There are four to watch for. Requests for "free sample work" that's actually the full project. Clients who want to move off-platform immediately or pay outside the platform's system. Unclear scope with a tiny fixed budget. And requests to pay a "registration" or "training" fee to get the job. We cover scams in detail in Module 5.
+
+Now, try it yourself. This takes about twenty minutes, and it's part one of Project 3. Pause the video and work through these steps.
+
+Step one. Copy the proposal template into a document and customise it for your niche and service. This is your proposal template deliverable.
+
+Step two. Find two real job posts, on Upwork, LinkedIn or elsewhere, that match your niche. You don't have to submit them.
+
+Step three. For each one, run the brief-analysis prompt.
+
+Step four. Draft a proposal using AI with your template, then edit it by hand. Track how many lines you changed.
+
+Step five. Compare your two proposals. Do they sound different and specific to each client? If they look nearly identical, personalise further.
+
+Let's recap. Strong proposals are short, specific, and start with the client's problem. Use a five-part structure: hook, approach, proof, logistics, and next step. Use AI to analyse briefs and draft, but write the hook yourself and verify every claim. And adapt the format to the client. A WhatsApp-friendly version works better for many local businesses.
+
+That's it for this lesson. Mark it complete, and I'll see you in the next one.

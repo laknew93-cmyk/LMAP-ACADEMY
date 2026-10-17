@@ -1,0 +1,51 @@
+Welcome to Prompt Engineering Masterclass, module 1, lesson 2: The Anatomy of a Great Prompt.
+
+Great prompts aren't long for the sake of it. They contain the right ingredients. In this lesson, you'll learn the six building blocks that professional prompts share, and a simple checklist you can run in under a minute.
+
+Let's start with the six building blocks. Think of a prompt as a brief with six optional parts. You won't always need all six, but knowing them means you'll never forget the one that matters. There's a table in the lesson notes with an example for each. The six blocks are role, task, context, constraints, format, and examples. Role answers the question, who should the AI act as? For example, "You are a senior G S T consultant." Task answers, what exactly should it do? Like "Draft a reply to this client query." Context answers, what background does it need? For example, "The client is a small Jaipur textile exporter." Constraints answer, what are the rules and limits? Like "Under a hundred and fifty words, no legal jargon." Format answers, what should the output look like? For example, "Three bullet points, then a one-line next step." And examples answer, what does good look like? Like "Here's a reply we liked last month."
+
+Let's go through each one.
+
+First, role. A role sets vocabulary, depth and perspective. "Explain inflation" produces something different from "You are an economics teacher for Class ten C B S E students. Explain inflation." Roles work best when they're specific. "You are an expert" adds very little. But "You are a recruiter who screens two hundred fresher C Vs a week for IT services firms" adds a lot.
+
+Second, task. Use a clear action verb: draft, summarise, compare, classify, rewrite, extract, critique, or plan. One prompt, one main task. If you find yourself writing "and also" three times, consider splitting it up. You'll learn how to do that with chaining in module three.
+
+Third, context. Context is usually the biggest missing piece. Who's the audience? What happened before? What's the goal behind the task? Remember, the model can't see your inbox, your company or your history unless you tell it.
+
+Fourth, constraints. Constraints narrow the space of acceptable answers. Think length, tone, reading level, words to avoid, things that must be included, deadlines, and budget. Where you can, phrase them positively, like "use short sentences", rather than only negatively, like "don't be wordy".
+
+Fifth, format. Tell the model the shape of the answer. A table with named columns, numbered steps, an email with a subject line, or a three-slide outline. This alone saves most people ten minutes of reformatting per task.
+
+And sixth, examples. Showing one sample of the output you want is often more powerful than three paragraphs describing it. The next lesson is entirely about this.
+
+Now let's see a before and after. Rahul is a business analyst at a Bengaluru fintech. His first attempt is just two words, "Summarise this report", followed by a pasted twelve-page report.
+
+His rebuilt prompt uses every block, with clear labels. The role: a business analyst preparing a briefing for the C F O. The task: summarise the attached quarterly report on U P I merchant payments. The context: the C F O has three minutes before a board meeting, and she cares most about revenue impact, risks, and anything that needs a decision this month. The constraints: use only information in the report, and if something's unclear, say so. No more than a hundred and eighty words. Plain English, with no unexplained acronyms. Then the format: a one-sentence headline, then up to four bullets of key numbers, up to three bullets of risks, and a numbered list of decisions needed, or the word "None" if there aren't any. Finally, the report itself is pasted inside triple quotes. You'll find the full prompt in the lesson notes below this video.
+
+The second prompt takes ninety seconds longer to write, and it saves twenty minutes of editing. That trade is the heart of prompt engineering.
+
+Next, let's talk about order and emphasis. Models handle long prompts well, but a few habits help. First, put instructions before long content. And for very long documents, briefly repeat the key instruction at the end, something like "Remember: under a hundred and eighty words, C F O audience." Second, use headings or labels like "Task" and "Context", so both you and the model can see the structure. And third, be explicit about priorities. If accuracy matters more than length, say so.
+
+Now for the sixty-second checklist. Before you press Enter on any important prompt, scan it with six quick questions. Role: is a specific perspective useful here? Task: is there one clear verb and one main job? Context: have you covered the audience, the purpose, and the background? Constraints: have you set the length, the tone, and what it must and must not do? Format: have you described the exact shape of the output? And examples: would one sample remove the guesswork? The checklist is in the lesson notes so you can copy it.
+
+You won't tick every box every time. A quick factual question needs only a task. But for anything you'll send to a client, a boss or a student, run the checklist.
+
+Finally, here's a reusable skeleton. It's a fill-in-the-blanks version of the six blocks. It starts with "You are", followed by a specific role. Then a task line with an action verb and a deliverable. Then a context section with the audience, the purpose, and the background facts. Then constraints, covering length, tone or reading level, and what to include or avoid. Then the exact format. And optionally, an example of the style you want, wrapped in triple quotes. Copy it into your notes from the lesson notes below this video. You'll reuse it constantly.
+
+Now it's your turn. Try it yourself. Take fifteen to twenty minutes, and pause the video whenever you need to.
+
+Step one. Choose a task you do often. A weekly status email, a product description for a Meesho listing, a parent-teacher note, or a cover letter for a Naukri application.
+
+Step two. Fill in the reusable skeleton for that task. Write at least two bullets under context and under constraints.
+
+Step three. Run it in your preferred assistant.
+
+Step four. Now delete one block at a time, first role, then context, then format, and rerun the prompt each time. Note in your Prompt Journal which deletion hurt the output most.
+
+Step five. Save the full version as the first entry in your future prompt library.
+
+Go ahead and pause now if you'd like to work through it.
+
+Let's recap. Strong prompts combine six blocks: role, task, context, constraints, format and examples. Context is the most commonly missing block, and it's usually the biggest improvement. Specific roles and explicit formats save far more time than they cost to write. Label your sections, and put instructions before long pasted content. And use the sixty-second checklist for any output that will reach another person.
+
+That's it for this lesson. Mark it complete, and I'll see you in the next one.

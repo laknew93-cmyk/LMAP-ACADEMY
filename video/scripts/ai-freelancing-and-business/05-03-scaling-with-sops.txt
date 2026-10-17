@@ -1,0 +1,51 @@
+Welcome to Make Money with AI, module 5, lesson 3: Scaling with Templates and S O Ps.
+
+At first, every project feels new. By the fifth one, you notice you're repeating the same steps, and occasionally forgetting one. Templates and Standard Operating Procedures, or S O Ps, turn your experience into a repeatable system. In this lesson, you'll build Project 4: a delivery S O P for one service.
+
+Let's start with why S O Ps matter, even for a solo freelancer. An S O P is a written, step-by-step process for doing a task the same way every time. It helps you in four ways. First, you deliver consistent quality, because the checklist catches mistakes when you're tired or busy. Second, you work faster, because there's no reinventing the process each time. Third, you price confidently, because you know how long each step takes. And fourth, you can grow. If you later hire an assistant, or partner with another freelancer, you can hand them a clear process instead of explaining everything from scratch.
+
+For small business owners, S O Ps make it easier to train staff and keep service consistent when you're not around.
+
+So what goes into a delivery S O P? There's a table in the lesson notes listing ten sections. The purpose, meaning what the S O P covers and the outcome. The scope, meaning which service or package it applies to. The inputs you need from the client before starting. The tools, meaning software and templates. The steps, numbered from kickoff to close, with time estimates. The tested AI prompts used at each step. Your quality checklist. Your communication templates for kickoff, confirmation, delivery, revision and close. Common problems and how to handle them. And finally, a version and date, so you can improve it over time.
+
+You already have many of these pieces from your "Delivery kit". The kickoff questionnaire, quality checklist, message templates, contract and invoice. The S O P pulls them together.
+
+Let's look at an example. The lesson notes include a full S O P outline for the "Instagram Starter Month" package of twelve posts. Here's how it works. The purpose is to deliver twelve on-brand Instagram posts with captions, on time, with consistent quality. The inputs needed are the logo, brand colours, ten or more product photos, the kickoff form, a signed agreement, and a fifty percent advance.
+
+Then come ten steps, each with a time estimate. One, kickoff, about thirty minutes. Send the questionnaire, hold a twenty-minute call, and create the brief document. Two, confirm the plan, sending the confirmation message and waiting for "confirmed". Three, the content calendar, about forty-five minutes, using a saved prompt for ideas, picking twelve, adding local dates and festivals, and sharing it for approval. Four, captions, about an hour, using a second saved prompt with the brief and facts, and editing every caption. Five, designs, about ninety minutes, using the brand kit template and licensed elements only. Six, a thirty-minute quality check, running the checklist on all posts. Seven, delivering batch one with a P D F preview and delivery note. Eight, revisions, with one round per batch, and a quote for anything out of scope. Nine, repeating steps four to eight for batch two. And ten, close, with final files, the invoice balance, and a testimonial request.
+
+The outline also has slots for the full prompts, the checklist and template links, plus a list of common problems. For example, if photos arrive late, pause the timeline, send the reminder template and set new dates. And if the client wants reels, offer the reels add-on at the listed price.
+
+The times are estimates, which you'll refine by tracking real projects.
+
+Now, using AI to draft your S O P. Give the AI your rough notes and existing templates, and ask it to structure them. The prompt in the lesson notes asks the AI to turn your notes into a clear S O P using the ten sections we just covered. It tells the AI to keep your steps and wording where possible, and not to add steps you didn't mention, but to list any suggestions separately at the end. You'll find the full prompt in the lesson notes below this video.
+
+That instruction to list suggestions separately keeps you in control of your own process.
+
+Next, build a template library. Alongside your S O Ps, organise reusable templates in a clear folder structure. The lesson notes suggest a "Business" folder with six numbered subfolders. Sales, for your one-pager, proposal templates and outreach templates. Contracts, for your service agreement and small job confirmation. Delivery, for S O Ps, kickoff forms, checklists and brand kit templates. Prompts, for tested prompts by service. Finance, for invoice templates, your income tracker and reminders. And Clients, with one folder per client.
+
+Inside that, keep a prompt library. Store prompts that consistently give good results, with notes. For each one, record the prompt name, like "Caption drafts, local food business". What it's used for, like Instagram captions in batches of six. The inputs it needs, like brand tone, product facts, and the festival or occasion. Any notes, like "Works better when I paste two past captions the client liked." And when it was last updated.
+
+Now, ways to grow once your system works. There are six. First, productise. Turn your S O P-backed service into fixed packages with clear prices. Second, retainers. Convert one-time clients into monthly clients where it makes sense. Third, raise prices as your proof and demand grow. Fourth, collaborate. Partner with freelancers offering complementary services. A writer and a designer can offer a joint package. Fifth, delegate. Once you have S O Ps, you can bring in help for specific steps, while you handle client relationships and final quality checks. If you hire, pay fairly and agree terms in writing. And sixth, teach and share. Posts about your process build your reputation and attract clients.
+
+Growth brings more responsibility. Keep quality checks with someone you trust, and don't take on more clients than your process can handle.
+
+Finally, improve your S O P over time. After each project, spend five minutes answering four questions. What went well? What took longer than expected? What did the client ask that I didn't anticipate? And what should I add to the S O P or checklist? Then update the version number. Small improvements compound.
+
+Now, try it yourself. This is Project 4. Allow about twenty minutes to draft it, and refine it later. Pause the video and work through these steps.
+
+Step one. Choose one service you offer. That's your core offer from Project 1.
+
+Step two. Write rough notes of every step you take, from first contact to final invoice.
+
+Step three. Gather your kickoff questionnaire, quality checklist, message templates and best prompts.
+
+Step four. Use the S O P prompt to structure everything.
+
+Step five. Edit the result. Add realistic time estimates, and at least three common problems with fixes.
+
+Step six. Save it as "S O P, your service name, version 1.0" in your Delivery folder.
+
+Let's recap. S O Ps turn experience into a repeatable, high-quality process, and they're useful even when you work alone. A good delivery S O P covers inputs, numbered steps, prompts, checklists, templates and common problems. A tidy template and prompt library saves time on every project. And you can grow by productising, retaining, collaborating and delegating, while keeping quality control.
+
+That's it for this lesson. Mark it complete, and I'll see you in the next one.

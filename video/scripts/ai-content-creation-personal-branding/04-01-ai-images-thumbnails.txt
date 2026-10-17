@@ -1,0 +1,37 @@
+Welcome to AI for Content Creation and Personal Branding, module 4, lesson 1: AI Images for Thumbnails and Social Posts.
+
+Visuals decide whether people stop scrolling. AI image tools can now produce illustrations, backgrounds and design elements in seconds. In this lesson, you'll learn the main categories of AI image tools, how to write good image prompts, and how to create thumbnails and post graphics that look professional, and honest.
+
+Let's start with the main categories of AI image tools. Tools change quickly, so focus on categories rather than specific versions. There are four. First, image generation inside chat assistants, like ChatGPT's image generation, Gemini and similar. These are best for quick concepts, illustrations, and editing by conversation. Second, design tools with AI features, like Canva's AI features, Adobe Express and similar. These are best for templates, layouts, background removal, resizing, and text with images. Third, dedicated image generators, like Midjourney-style tools, Adobe Firefly and others. These are best for highly stylised art, detailed illustrations and consistent aesthetics. And fourth, photo editing AI, meaning background removal, object removal, upscaling and lighting fixes in phone and desktop apps. These are best for improving real photos of you or your products. The table is in the lesson notes below this video.
+
+For most creators, a design tool with templates plus one image generator is plenty. Many have free tiers with limits, so check each tool's current plans and usage terms.
+
+So when should you use AI images, and when shouldn't you? AI images work well for four things. Illustrations of concepts, like "a tangled set of wires turning into a straight line" for a post on simplifying processes. Backgrounds and textures for carousels and quote cards. Thumbnail elements, like icons, props or stylised scenes. And mood boards and ideas before a real photoshoot.
+
+But use real photos instead in four situations. First, when you're showing your actual product. A Pune bakery should never post an AI-generated cake as if it were theirs. That misleads customers. Second, when you're showing yourself. Your face builds trust, and an AI-generated version of you can feel uncanny or deceptive. Third, when you're showing results, events or testimonials. These must be genuine. And fourth, when you're showing real places or people in a way that could mislead.
+
+Here's the test. Would a reasonable viewer feel deceived if they learned the image was AI-generated? If yes, use a real photo, or clearly label it.
+
+Now let's write good image prompts. A useful image prompt has five parts. First, the subject, meaning what's in the image. Second, the setting, meaning where it is. Third, the style. Photo, flat illustration, 3D, watercolour, or minimal line art. Fourth, the composition. Close-up, wide, centred, or empty space on one side for text. And fifth, mood and colour. Warm, calm or energetic, plus your brand colours.
+
+Here's the prompt: "Flat vector illustration of a young Indian woman working on a laptop at a small desk with a cup of chai, plants in the background. Calm, warm mood. Colour palette: deep teal, mustard yellow, off-white. Plenty of empty space on the right side for headline text. Square format. No text in the image."
+
+Asking for no text in the image is useful, because many generators still produce garbled lettering. Add your text in a design tool instead.
+
+You can also ask a chat assistant to write image prompts for you. For example, "Suggest five image prompts for a carousel cover about saving tax as a freelancer, in a flat illustration style using my brand colours."
+
+Next, designing YouTube thumbnails. Thumbnails are small on phones, so simplicity wins. Keep these five things in mind. One focal point, like a face with a clear expression, or a single object. Three to five words of text at most, large and high-contrast. Complement the title, don't repeat it. Keep a consistent style across your channel so people recognise you. And be honest. The thumbnail must reflect what the video delivers. Misleading thumbnails can increase clicks briefly, but they hurt retention and trust, and they can violate platform policies.
+
+Here's a practical workflow. Take a real photo of yourself with a clear expression. Remove the background with an AI tool. Place it on an AI-generated or simple background. Then add bold text in a design tool. Create two or three variants. Some platforms offer thumbnail testing features you can use to compare them.
+
+Now for Instagram and LinkedIn graphics. For social posts, build a small set of reusable templates in a design tool. A quote card, a tip card, a carousel cover, and a carousel content slide. Then use AI for four things. Generating background illustrations that match your palette. Resizing a design for different formats, like square, portrait or story. Removing backgrounds from product photos. And suggesting layout variations.
+
+Keep your brand consistent. Same fonts, same two or three colours, and a similar illustration style.
+
+Before you publish any AI image, run some quality and ethics checks. First, check hands, faces, text and logos. They're common sources of errors. Second, check cultural accuracy. Clothing, festivals, food and architecture often come out wrong or stereotyped. An "Indian wedding" image may mix traditions from different regions. Third, real people and brands. Don't generate images of real people, whether celebrities, politicians or private individuals, or other companies' logos and trademarks. Fourth, representation. Ask for the diversity that reflects your actual audience. And fifth, platform labelling rules. Some platforms ask you to label realistic AI-generated or edited content. We'll cover this in Lesson 4.3.
+
+Now it's time to try it yourself. Spend about twenty minutes creating visuals for your Project 3 carousel or a post. Pause the video and work through these steps. Step one. Write a five-part image prompt for your carousel cover or a post illustration, using your brand colours and leaving space for text. Step two. Generate at least four variations in any AI image tool you have access to. Step three. Choose the best, check it for errors, and place it in a design tool template. Step four. Add your headline text in the design tool, not in the generator. Step five. If you make videos, create two thumbnail variants using a real photo of yourself plus a background. And step six. Save your prompts in a visual prompts note, so you can reproduce the style.
+
+Let's recap. Know the categories. Chat-based generation, design tools with AI, dedicated generators, and photo editing AI. Use AI for concepts, backgrounds and illustrations, but use real photos for products, yourself and results. Write prompts with subject, setting, style, composition, mood and colour, and add text separately. Keep thumbnails simple, readable on phones, and honest about the content. And check every image for errors, cultural accuracy, real-person issues and labelling requirements.
+
+That's it for this lesson. Mark it complete, and I'll see you in the next one.

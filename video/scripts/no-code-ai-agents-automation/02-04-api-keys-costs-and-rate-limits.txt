@@ -1,0 +1,39 @@
+Welcome to No-Code AI Agents and Automation, module 2, lesson 4: A P I Keys, Costs and Rate Limits.
+
+The moment you connect a real AI provider, you're dealing with A P I keys, usage bills and rate limits. These are boring topics, right up until a leaked key or a runaway loop costs you money. This lesson will make you careful, without making you nervous.
+
+So what is an A P I key? It's a long secret string that identifies you to a service like OpenAI, Anthropic or Google. Anyone who has your key can use the service, and the usage gets billed to your account. Treat it exactly like a debit card PIN. Actually, treat it even more carefully, because keys can be used silently from anywhere in the world.
+
+Let's talk about handling keys safely. First, store keys in the tool's credentials section. Zapier, Make and n eight n all have a dedicated place to store connections or credentials. Paste the key there once, give it a clear name, like "OpenAI, Client: Mehta Traders", and select it in your steps. Never paste a key directly into a prompt, a text field, a Google Sheet, or an HTTP Request body, where it'll show up in the run logs.
+
+Second, use one key per project or client. Most providers let you create multiple keys, and often group them into projects or workspaces. Create a separate key for each client or workflow. If one leaks, or a client leaves, you revoke that key without breaking everything else. You can also see usage per key, which helps when you're billing clients.
+
+Third, think about who owns the account. For client work, the cleanest arrangement is usually this. The client creates the AI provider account, adds their own payment method, and creates a key for you. That gives you three benefits. Usage is billed to them directly, so you don't carry their costs on your card. When the engagement ends, they simply revoke your access. And there's no confusion about who owns the data relationship with the provider. If you do resell usage, put it in your contract with a clear monthly cap.
+
+Fourth, never share keys over chat. Don't ask clients to WhatsApp you their keys. Use the tool's sharing or team features where possible, or a password manager's secure sharing feature. And if a key has been pasted anywhere public, like a screenshot on LinkedIn, a shared Google Doc, or a GitHub repository, revoke it immediately and create a new one. Assume it's already been copied.
+
+Fifth, least privilege. Some services offer keys with restricted permissions, like read-only, or a specific project only. Use the narrowest permission that works. A key that only needs to read a Google Sheet shouldn't be able to delete Drive files.
+
+Now let's understand AI costs. AI A P Is are usually billed by tokens. Tokens are chunks of text, roughly a few characters long. You pay for input tokens, which is your prompt plus the data, and output tokens, which is the response. Output usually costs more per token. Check your provider's pricing page for current rates, and don't rely on numbers from old blog posts.
+
+Estimate before you build. Here's the formula. Monthly cost is roughly the runs per month, times the input plus output tokens per run, times the price per token.
+
+Let's look at an example. For a lead classifier, a short prompt plus a hundred-word enquiry, with a one-word answer, is a small number of tokens per run. Even with a few thousand leads a month, a small model typically costs very little. But if you feed a thirty-page P D F into a large model on every run, costs grow fast.
+
+There are five ways to keep costs down. One, use the smallest model that passes your tests. Classification rarely needs the biggest model. Two, trim the input. Send only the email body, not the entire thread with signatures and disclaimers. Three, limit output length. Set a maximum output length and ask for concise formats. Four, filter before the AI step. Don't send spam, auto-replies or newsletters to the model at all. A simple filter on sender or subject saves money on every run. And five, don't repeat work. If you've already classified an email, store the result, and don't reclassify it on every re-run.
+
+And set spending limits. Most AI providers let you set usage limits, budget alerts or prepaid credits. Set a monthly limit for every key or project, with an email alert well below it. This single setting protects you from the most common disaster, a workflow stuck in a loop, calling the AI thousands of times overnight.
+
+Also remember the automation tool's own costs. That's the task or operation counts, or your server bill if you're self-hosting n eight n.
+
+Next, rate limits. Providers cap how many requests, and how many tokens, you can send per minute. If you go over, you get an error, often HTTP status four two nine, "Too Many Requests". This commonly happens when a sheet with five hundred rows gets processed all at once, or when a bulk email import triggers hundreds of runs.
+
+Here's how to handle it. First, turn on retries with a delay for AI steps. Most rate-limit errors succeed when retried a little later. Second, batch and pace. Process items in small batches, with a short wait between them. Make and n eight n let you control this, and in Zapier you can add delay steps or use built-in throttling options where they're available. And third, spread out your scheduled jobs. Don't run every client's daily workflow at exactly nine a m.
+
+There's a simple security checklist in the lesson notes below the video. It has seven items. Keys stored only in the tool's credentials section. A separate, clearly named key per client or project. A monthly spending limit and alert set at the provider. Retries with delay on all AI and A P I steps. A filter that removes junk before the AI step. No keys in screenshots, docs, sheets or chat messages. And the client knows which provider processes their data.
+
+Now, try it yourself. Spend about fifteen minutes on your own setup. Pause the video and work through these. Step one, log in to your AI provider's dashboard, find where keys are created, and create a new key named for your course project. Step two, find the usage or billing page, and set a low monthly spending limit and alert. Step three, replace any key you pasted directly into steps with a stored credential. Step four, add a filter before your AI step that skips submissions where the message is shorter than ten characters. And step five, estimate your workflow's monthly AI cost using the formula from this lesson and the provider's current pricing page. Write that estimate in your project notes.
+
+Let's recap. An A P I key is like a payment instrument. Store it only in the tool's credentials section, and never share it in chat. Use separate keys per client, ideally on the client's own provider account. Estimate token costs before building, use smaller models, trim inputs and filter out junk. Always set spending limits and alerts at the provider. And handle rate limits with retries, delays and batching.
+
+That's it for this lesson. Mark it complete, and I'll see you in the next one.

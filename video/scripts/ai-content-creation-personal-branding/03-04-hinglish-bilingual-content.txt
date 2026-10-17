@@ -1,0 +1,37 @@
+Welcome to AI for Content Creation and Personal Branding, module 3, lesson 4: Hinglish, Hindi and Regional-Language Content.
+
+India's audiences live across languages. Many people scroll in English, think in Hindi or Tamil, and talk in a comfortable mix of both. Content in the language your audience actually uses can feel far more personal. In this lesson, you'll learn how to use AI for Hinglish, Hindi and regional-language content, and where to be careful.
+
+Let's start with why language choice is a brand decision. The same message lands differently depending on language. "Save twenty percent of your salary every month" sounds like advice from a bank. But "Salary aate hi twenty percent side mein rakh do, phir kharch karo" sounds like advice from a friend.
+
+Neither is better in every case. A C A firm in Chennai writing for startup founders may do best in clear English. A fitness coach in Bhopal targeting homemakers may connect better in Hindi or Hinglish. And a sweet shop in Kolkata might post in Bengali for festive greetings, and English for delivery information.
+
+So decide by asking: what language does my audience use when they talk about this problem? Check the comments on popular posts in your niche, and the language your clients use on WhatsApp.
+
+There are five common language strategies. English only works well for corporate, B2B, global or pan-India professional audiences, like LinkedIn posts on product management. Hinglish works for young urban audiences, reels and casual creator content, like Instagram personal finance reels. Hindi or a regional language works for local businesses, Tier-2 and Tier-3 audiences, and specific communities, like a Madurai textile shop posting in Tamil. Bilingual, meaning both versions, works for brands serving mixed audiences, like English captions with a regional language line. And English text with regional speech works for videos where captions reach wider audiences, like spoken Marathi with English captions. The table is in the lesson notes below this video.
+
+You can also mix by platform. English on LinkedIn, and Hinglish on Instagram.
+
+Now, what does AI do well, and what does it do badly? Modern chat assistants handle Hindi and Hinglish reasonably well, and they support many Indian languages. But quality varies by language, topic and tool. There are five common problems. First, overly formal, shuddh Hindi that nobody speaks casually. Second, literal translation of English idioms that make no sense in the target language. Third, unnatural Hinglish, mixing languages in places a real speaker wouldn't. Fourth, the wrong script, like Devanagari when your audience reads Hinglish in Roman script. And fifth, errors in less widely used languages, which can be hard to spot if you're not fluent.
+
+So here's the rule. Only publish content in a language you, or someone you trust, can read fluently and check.
+
+Let's talk about prompting for natural Hinglish. Be specific about register, script and audience. The Hinglish prompt asks the AI to rewrite your post in natural Hinglish, the way a twenty-five year old in Delhi would talk to a friend on WhatsApp. It says to use Roman script, not Devanagari. Keep technical and money terms in English, like E M I, S I P and credit score. Use simple Hindi for everyday words and emotions. Don't translate word for word, but rewrite so it sounds spoken. And keep it under one hundred and twenty words. You'll find the full prompt in the lesson notes below this video.
+
+For Hindi or regional languages, here's the prompt: "Write this Instagram caption in conversational Tamil as spoken in Coimbatore, not formal literary Tamil. Keep brand names and prices in English. Then give me an English back-translation so I can check the meaning."
+
+That back-translation trick is useful when you're less fluent. It helps you catch meaning errors. But a fluent reviewer is still the best check.
+
+Next, bilingual video scripts. For reels and shorts, a popular approach is to speak in Hinglish or a regional language and add English captions, or the reverse. Ask AI for a two-column script. Here's the prompt: "Write a thirty-second reel script in two columns. Column one: what I say, in natural Hinglish, in Roman script. Column two: on-screen English caption, shorter than the spoken line. Topic, audience, and use my voice guide."
+
+Auto-captioning tools often struggle with mixed-language speech and Indian names. So always review captions before publishing.
+
+Now let's talk about cultural sensitivity. Language comes with culture. When AI generates festive greetings, regional references or humour, keep four things in mind. First, check that festival names, customs and greetings are correct for the region. Pongal, Makar Sankranti, Lohri and Bihu fall around the same time, but they're different festivals with different traditions. Second, avoid stereotypes about regions, communities or accents, even as jokes. Third, be careful with religious references. Keep them respectful, or leave them out. And fourth, don't use a regional language as a gimmick if you can't engage with comments in it.
+
+Finally, add bilingual rules to your voice guide. Update your brand voice guide with a language section. For example, on LinkedIn, English with occasional Hindi phrases in quotes. On Instagram, Hinglish in Roman script, with money and tech terms in English. Never use formal Hindi words like "upyogkarta". Just say "user". And regional festival posts get reviewed by a named person before publishing. The example is in the lesson notes.
+
+Now it's time to try it yourself. Spend fifteen minutes testing language versions. Pause the video and give it a go. Step one. Pick one finished post or script from your calendar. Step two. Decide which language or mix your audience on one platform would find most natural. Step three. Run the Hinglish or regional-language prompt, and request a back-translation if you need it. Step four. Read the output out loud. Mark every word or phrase that sounds unnatural, and fix it yourself, or ask a fluent friend to check. And step five. Add a language section to your brand voice guide with at least three rules.
+
+Let's recap. Choose a language based on how your audience talks about the problem, not on habit. You can mix strategies by platform, whether that's English, Hinglish, regional or bilingual. Prompt AI with clear instructions on register, script, and which terms stay in English. Only publish in languages you or a trusted reviewer can check fluently. Back-translation helps, but it isn't enough. And respect regional and religious context, and add language rules to your voice guide.
+
+That's it for this lesson. Mark it complete, and I'll see you in the next one.

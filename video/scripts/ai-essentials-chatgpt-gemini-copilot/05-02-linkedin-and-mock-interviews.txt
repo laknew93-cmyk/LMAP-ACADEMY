@@ -1,0 +1,53 @@
+Welcome to AI Essentials, module 5, lesson 2: LinkedIn and Mock Interviews.
+
+A good resume gets you noticed. A strong LinkedIn profile and confident interviews get you hired. In this lesson, you'll use AI to improve your LinkedIn presence, write networking messages, and practise interviews in the formats Indian employers actually use.
+
+Part one is LinkedIn with AI. Let's start with your headline. Your headline appears everywhere: search results, comments and connection requests. "Looking for opportunities" wastes it. So ask for better options. The example prompt in the lesson notes asks for five LinkedIn headline options under two hundred and twenty characters. It describes a B Com graduate with three years of experience in accounts payable and G S T filing at a manufacturing company in Ludhiana, now looking for finance operations roles. It asks for relevant keywords recruiters search for, with no emojis and no buzzwords. You'll find the full prompt in the lesson notes below this video.
+
+Pick one, and adjust it to sound like you.
+
+Next, your About section. Here's the prompt: "Write a LinkedIn About section, 150 to 200 words, in first person based on my resume below. Structure: what I do, 2 to 3 specific achievements, what I'm looking for next. Warm, confident, not boastful. Do not add anything not in my resume." Then paste your resume, without contact details.
+
+Now, posts that build visibility. You don't need to become an influencer, but occasional thoughtful posts help recruiters find you. AI can help you turn your experiences into posts. Here's the prompt: "I just completed a course on AI tools for office work. Help me write a short LinkedIn post, under 150 words, sharing 3 practical things I learned and how I'll use them in finance operations. Genuine tone, not salesy, end with a question to invite comments."
+
+Always edit AI drafts so they reflect your real experience and voice. Readers quickly notice posts that sound generic.
+
+Then there are networking messages. Cold messages to strangers work best when they're short and specific. Here's the prompt: "Write a LinkedIn connection note, under 300 characters, to a Finance Manager at a company I'm interested in. Mention that I read her post about automating vendor reconciliation, and ask if she'd be open to a 10-minute chat about her team's work. Polite, no direct request for a job."
+
+Also useful are follow-up messages to recruiters after applying, and thank-you notes after interviews.
+
+Part two is mock interviews with AI. AI assistants make excellent practice partners. They're available any time, patient, and never judgemental. Many apps also support voice, so you can practise speaking your answers aloud, which is closer to the real thing.
+
+Let's look at setting up a mock interview. The prompt in the lesson notes asks the assistant to act as an interviewer for the role of Customer Success Associate at a software-as-a-service company in Bengaluru. It says you're a career returner with five years of prior experience in banking customer service. It tells the assistant to interview you one question at a time, and wait for your answer before asking the next. After each answer, it should give brief feedback: what was good, what to improve, and a stronger sample answer. And it should start with "Tell me about yourself". You'll find the full prompt in the lesson notes below this video.
+
+"One question at a time" is important. Otherwise the assistant may list all the questions at once.
+
+Now, Indian interview formats to practise. Indian hiring processes have their own patterns, so practise the ones relevant to you. The H R screening call covers "Tell me about yourself", current and expected C T C, notice period, reason for job change, and relocation. The technical or functional round has role-specific questions, so ask AI to quiz you on your domain. The managerial round has situational questions about conflicts, deadlines, mistakes and priorities. The group discussion is common in campus and some bulk hiring, so practise structuring points on a topic. For a case or assignment, ask AI for a sample case in your field and walk through your approach. And the final H R or fitment round covers career goals, why this company, and questions you'd ask them. The full table is in the lesson notes.
+
+Next, the tricky questions Indian candidates face. Practise honest, confident answers to these. "Why is there a gap in your resume?", which comes up for career returners. "You spent three years preparing for government exams, why move to the private sector now?" "Why do you want to leave your current company?" "What is your expected C T C?" And, "Are you comfortable with rotational shifts or travel?"
+
+Here's an example prompt: "I took a 3-year break for my father's medical care. Help me prepare a 45-second answer to 'Why is there a gap in your resume?' that is honest, brief, and moves the conversation towards my readiness to work now. Then ask me the question and give feedback on my version."
+
+For salary questions, use AI to help you plan how to discuss it. But research realistic salary ranges yourself, using job portals, salary-survey sites and people in the industry. AI figures for salaries may be outdated or unreliable.
+
+Next, practise with the STAR method. For behavioural questions, like "Tell me about a time when", the STAR structure helps. That's Situation, Task, Action, Result. Here's the prompt: "Here is my rough answer to 'Tell me about a time you handled a difficult customer'." Then add your answer, and continue: "Restructure it using STAR, keep it under 90 seconds when spoken, and keep all facts exactly as I gave them."
+
+Finally, a note on honesty. Using AI to prepare for interviews is smart. Using AI to secretly answer questions during a live interview or online assessment is dishonest. It's often against the employer's rules, and it tends to be noticed. Your goal is to become genuinely confident, and that's exactly what practice gives you.
+
+Time to try it yourself. Allow about twenty minutes. Pause the video and work along.
+
+Step one. Rewrite your LinkedIn headline and About section with the prompts from this lesson. Update your profile if you're happy with them.
+
+Step two. Write one networking message to a real person in a company or role you're interested in. Edit it before sending.
+
+Step three. Run a mock interview for a real role you want. At least five questions, one at a time, with feedback.
+
+Step four. Prepare a STAR answer for one behavioural question, and one answer to a tricky question from the list.
+
+Step five. If your app supports voice, repeat two answers out loud.
+
+And step six. Save your mock-interview prompt as Prompt number 13 in your library.
+
+Let's recap. AI can sharpen your LinkedIn headline, About section, posts and networking messages, but always edit for your real voice. Set up mock interviews with "one question at a time", and ask for feedback after each answer. Practise the rounds Indian employers use: H R screening, functional, managerial, group discussion and fitment. Prepare honest answers for career gaps, job changes and salary questions, and verify salary ranges yourself. And use AI to prepare, never to cheat during live interviews or tests.
+
+That's it for this lesson. Mark it complete, and I'll see you in the next one.

@@ -1,0 +1,37 @@
+Welcome to Prompt Engineering Masterclass, module 4, lesson 3: Prompts for Coding Help.
+
+You don't need to be a developer to get real value from AI coding help. Analysts automate spreadsheets. Marketers write small scripts. And aspiring developers learn faster. In this lesson, I'll show you how to prompt for code that actually runs, and how to stay in control of it.
+
+Let's start with the coding prompt formula. Good coding prompts include five things. First, the environment. That's the language, the version if you know it, and the tool, whether that's Excel, Google Sheets, Python, or a SQL database. Second, the goal. What should the code achieve, in plain words? Third, the inputs. That's the shape of your data, with a small sample. Fourth, the output. What do you expect to see? And fifth, the constraints. Your skill level, which libraries are allowed, whether there's no internet access, and so on.
+
+Let's look at a before and after, using a spreadsheet formula. Here's the before prompt: "Excel formula to find late payments." That's it. Just six words.
+
+Now the after version. It starts by saying the user is in Google Sheets, and then describes each column. Column A has invoice numbers. Column B has invoice dates, in day, month, year format. Column C has payment due days, for example thirty. And column D has the payment date, or is blank if unpaid. Then it spells out four outcomes for column E. "Paid on time" if paid on or before the due date. "Paid late by X days" if paid after. "Overdue by X days" if unpaid and today is past the due date. And "Not yet due" otherwise. Finally, it asks for one formula for cell E2 that can be dragged down, with each part explained in simple words, and it mentions the user is comfortable with IF but not with array formulas. You'll find the full prompt in the lesson notes below this video.
+
+Here's the thing. The sample columns and the four outcomes remove almost all the guesswork.
+
+Next, explaining code. This is useful if you're learning, or if you've inherited a script from a colleague who left. Here's the prompt: "Explain this Python script to me as if I know basic Python, variables and loops, but not pandas. Go block by block. For each block, tell me what it does, why it might be written that way, and one thing that could go wrong." Then you paste the code inside code tags.
+
+Now, debugging. Always include the exact error message and what you expected. The example prompt in the notes says the Python script should read sales dot C S V and print total sales per city, but it crashes. Then it pastes the exact error, which is a KeyError on the word City, with a capital C. Then it shows the first three lines of the C S V file. The header row reads city, amount, date, all in lowercase, followed by two rows of data from Pune and Nagpur. Then it pastes the code, and asks the model to explain the cause in one or two sentences, give the corrected code, and not change anything unrelated to the bug. You'll find the full prompt in the lesson notes below this video.
+
+Notice what made the difference. The C S V sample is what lets the model spot the lowercase city header. Without the data sample, it can only guess.
+
+Let's move on to writing small scripts. For new scripts, ask for a plan first, then the code. The example prompt asks for a Python script that renames all the P D F invoices in a folder, from names like scan underscore zero zero three four, to a name that starts with I N V, followed by the invoice number and the vendor name, both read from the first page. But before writing any code, it asks the model to do three things. First, list the steps the script will take. Second, list the libraries it would use and how to install them. And third, say what could go wrong, like scanned images or missing text. Then it ends with: "Wait for my OK before writing the code." You'll find the full prompt in the lesson notes below this video.
+
+That line, "Wait for my OK", gives you a checkpoint to correct the approach before any code exists. Once you've agreed on the plan, ask for the code with comments. And request that it first runs in a dry run mode, which prints the planned renames without actually changing any files.
+
+Now, SQL for analysts. The example prompt says it's using PostgreSQL, and lists two tables with their columns. An orders table, with order I D, customer I D, order date, amount and city. And a customers table, with customer I D, name and signup date. It then asks for a query showing, for each city, the number of customers who placed their first order within thirty days of signup, in 2026 only. And it asks the model to explain the query line by line, using clear aliases. The full prompt is in the lesson notes below this video.
+
+The lesson here is simple. Always share your table and column names. Without them, the model invents plausible ones, and the query fails.
+
+Next, staying safe and in control. There are five habits. First, read before you run. If you're not sure, ask the model, "What does this code do to my files or data?" Second, test on copies. Run new scripts on a copy of your data, or a test folder, first. Third, never paste secrets. Remove passwords, A P I keys and customer personal data from code before sharing it with any AI tool. Fourth, check licences and company rules before putting AI-written code into production work. And fifth, understand enough to maintain it. If you can't explain what the script does, ask the AI to explain it until you can.
+
+Finally, using AI to learn, not just to copy. If you're building a developer career, AI can be a patient tutor. Here's the prompt: "I'm learning Python. Give me a small exercise on dictionaries using an Indian context, for example, a kirana store's stock. Don't show the solution. When I paste my attempt, review it like a senior developer: what's correct, what could be cleaner, and one concept I should study next."
+
+This builds real skill. And that matters in interviews, where you won't have an assistant.
+
+Now it's time to try it yourself. Spend fifteen to twenty minutes on this, and feel free to pause the video while you work. Step one. Pick a small, real problem. A spreadsheet formula, a data-cleaning step, a file-renaming task, or a SQL question. Step two. Write a prompt with the environment, the goal, a three-row data sample, the expected output and your skill level. Step three. Run it, and test the result on a copy of your data. Step four. If it fails, use the debugging template with the exact error message. Step five. Ask the model to explain the final solution, and then write a one-paragraph explanation in your own words. And step six. Save the prompt structure as a template in your library.
+
+Let's recap. Coding prompts need environment, goal, sample input, expected output and constraints. Always include exact error messages and a data sample when debugging. Ask for a plan before code on anything non-trivial, and add a dry run mode for file changes. Test on copies, never paste secrets, and follow your company's rules. And use AI as a tutor, so your own skills grow, not just your output.
+
+That's it for this lesson. Mark it complete, and I'll see you in the next one.

@@ -1,0 +1,35 @@
+Welcome to AI for Content Creation and Personal Branding, module 3, lesson 2: S E O Basics for Creators and Small Brands.
+
+Search engine optimisation, or S E O, helps the right people find your articles when they search on Google or other search engines. You don't need to become a technical expert. In this lesson, you'll learn the S E O basics that matter for creators and small brands. And you'll learn how to use AI for keyword research and on-page optimisation, without falling into the trap of mass-produced content.
+
+Let's start with how search works, in plain terms. When someone types "how to register a home bakery in Maharashtra", a search engine tries to show the pages that best answer that question. It looks at three things. Whether your page is relevant to the search. Whether it's genuinely helpful and trustworthy. And whether it's easy to read and loads well.
+
+Google has said publicly that it aims to reward helpful, people-first content, regardless of whether AI was used to produce it. And it's said that content produced mainly to manipulate rankings is against its spam policies. In practice, that means mass-producing thin AI articles is a poor strategy. One genuinely useful article beats twenty generic ones.
+
+Step one is to find what your audience searches for. Keywords are simply the words people type into search. Good keywords for small creators usually have four qualities. They're specific, like "G S T registration for freelancers" rather than just "G S T". They're question-shaped, like "is ghee good for weight loss" or "how much does a wedding photographer cost in Jaipur". They're local where relevant, mentioning Pune, or "near me", or a neighbourhood or state. And they match what you offer.
+
+You can find them without paid tools. Type your topic into Google and note the autocomplete suggestions. Look at the "People also ask" questions and related searches. Note the questions clients, students and followers ask you. And use free tools like Google Search Console, once your site is live, to see which searches already bring visitors.
+
+AI can help you brainstorm. But it doesn't have reliable data on actual search volumes. So treat its suggestions as ideas to check, not facts.
+
+The keyword prompt asks the AI to list twenty-five specific questions your audience might type into Google, grouped by intent. Learning questions, like how, what and why. Comparing questions, like this versus that, or the best option for a need. And ready-to-act questions, like cost, near me, hire or buy. It asks for the plain words a non-expert in India would use, including common Hinglish phrasing where it's natural. And it notes that you'll verify them with Google autocomplete. You'll find the full prompt in the lesson notes below this video.
+
+Step two is to match the search intent. Before writing, search your chosen keyword yourself and look at the top results. Are they guides, lists, product pages, or videos? This tells you what searchers want. For example, if every top result for "best laptop for students under fifty thousand" is a comparison list, a personal essay will struggle to rank.
+
+Step three is to optimise the page. A few on-page basics cover most of what a beginner needs. Your title should include the main keyword naturally, and stay clear and under about sixty characters. Your meta description is a one or two sentence summary that encourages clicks, and it should include the keyword. Your U R L should be short and readable. Your headings should be subheadings that reflect the questions people ask. Your opening should answer the main question early, not bury it. Link internally to your other related articles. Link externally to official or reliable sources for facts. Compress your images and add descriptive alt text. And show author info, meaning who wrote it and why they're qualified. The full checklist is in the lesson notes.
+
+You can ask AI to help with the mechanical parts. The on-page prompt gives the AI your draft and your main keyword. It asks for five title options under sixty characters, three meta descriptions of one hundred and forty to one hundred and fifty-five characters, and a short U R L slug. It asks the AI to check whether your headings cover the main questions searchers might have, and suggest any missing ones. And it asks for alt text for your images. Importantly, it tells the AI not to change the body text. The full prompt is in the lesson notes below this video.
+
+Step four is to show experience and trust. Search engines and readers both value content written by someone with real experience. So make yours visible. Mention first-hand experience, like "In the eight years I've been doing G S T filings for small businesses in Chennai..." Include original examples, photos and screenshots, with private data removed. Keep an author bio with your real credentials. And update articles when rules change, showing the updated date.
+
+This is especially important for topics like health, money and law, where wrong information can hurt people.
+
+Step five is to be patient and keep improving. S E O is slow. A new article on a new website may take weeks or months to show up in search results. Once you've set up Google Search Console, check which searches show your pages and which get clicks. If an article appears for a question you didn't answer fully, add a section answering it.
+
+Now, what should you avoid? Five things. Keyword stuffing, which means repeating the keyword awkwardly. Write for humans instead. Mass-produced AI articles, meaning lots of thin pages on similar topics. Copying competitors' articles. Even reworded with AI, this adds no value and can raise copyright issues. Buying backlinks or using link schemes, because these violate search engine guidelines. And chasing every trending keyword that has nothing to do with what you offer.
+
+Now it's time to try it yourself. Spend fifteen to twenty minutes applying S E O basics to the article you started in Lesson 3.1. Pause the video and work through these. Step one. Run the keyword brainstorming prompt for your topic. Step two. Check your three favourite questions in Google autocomplete and "People also ask", and choose one main keyword. Step three. Search that keyword and note the format of the top five results. Step four. Run the on-page optimisation prompt on your draft. Step five. Edit your title, headings and opening so the main question is answered early. And step six. Add one line that shows your first-hand experience, and one link to an official source.
+
+Let's recap. S E O helps the right readers find genuinely helpful content, and thin, mass-produced AI content is a poor bet. Find specific, question-shaped keywords using autocomplete, "People also ask" and real client questions. Check search intent by looking at what already ranks before you write. Cover the on-page basics. Title, meta description, U R L, headings, links and alt text. And show real experience and keep articles updated, especially on money, health and legal topics.
+
+That's it for this lesson. Mark it complete, and I'll see you in the next one.

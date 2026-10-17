@@ -1,0 +1,45 @@
+Welcome to Prompt Engineering Masterclass, module 2, lesson 3: Iterative Refinement and Self-Critique.
+
+Experts rarely get the perfect answer in one shot. They get a good first draft, and then they refine it quickly. In this lesson, you'll learn a structured way to iterate, and how to make the model critique its own work.
+
+Let's start with a mindset shift. The first answer is a draft. Treat every first response as version one. The question isn't "is this perfect?" It's "what's the single most important thing to improve?" Fix that, then fix the next thing. Three focused rounds usually beat one enormous prompt.
+
+Here's the next idea. Specific feedback beats "make it better". Vague follow-ups get vague changes.
+
+A weak follow-up is simply: Make it better.
+
+A strong follow-up looks very different. It says: Good start. Three changes. One, the opening is generic, so start with the customer's problem, late G S T filings, instead of our company history. Two, cut the length by about a third, so it fits on one phone screen. Three, replace "leverage synergies" and "cutting-edge" with plain words. Keep everything else the same.
+
+Notice that last line, "keep everything else the same." Without it, models often rewrite parts you were already happy with.
+
+Now let's put this into a simple refinement loop. It has five steps. First, generate. Run your prompt. Second, diagnose. What's wrong? Is it the content, the structure, the tone, the length, or the accuracy? Third, instruct. Give one to three specific changes. Fourth, compare. Is version two actually better? If not, go back. And fifth, promote. When you find an instruction that fixed something, add it to your original prompt or template, so you don't need the fix next time.
+
+That fifth step is what separates professionals from casual users. Each conversation should improve your template.
+
+Next, let's look at self-critique prompts. You can ask the model to review its own output against criteria before you see the final version. There are a few ways to do this.
+
+The first is "critique, then rewrite." In this example, the prompt asks for a one hundred and fifty word cold email to the H R head of a mid-size Coimbatore textile company, offering a payroll outsourcing service. Then it asks the model to critique its draft against four criteria, scoring each from one to five. Those criteria are relevance to a textile manufacturer's payroll pain points, clarity of the single call to action, a tone that's respectful and not pushy, and length within one hundred and fifty words. Finally, it asks for an improved version that fixes every criterion scoring below four, and shows the draft, the critique table, and the final version. You'll find the full prompt in the lesson notes below this video.
+
+The criteria really matter here. A model asked to "critique" without criteria tends to give polite, shallow feedback. Give it a rubric, and it gives you targeted feedback.
+
+The second approach is a role-switch review, where you ask the model to review as a specific reader. In this example, the prompt asks the model to read a proposal as a sceptical C F O of a fifty crore rupee manufacturing company. It lists the five questions or objections she would raise. Then it revises the proposal to answer the top three, without making it longer than four hundred words. The exact wording is in the lesson notes below the video.
+
+This works brilliantly for pitches, cover letters, lesson plans, and anything with a demanding audience.
+
+The third approach is to red-team your own plan. Here's the prompt: Here is my plan to launch a weekend tiffin service in Lucknow. Act as an experienced food entrepreneur. Identify the 5 most likely reasons this plan fails in the first 3 months, ranked by likelihood. For each, suggest one cheap way to test or reduce the risk. And then you paste your plan below, inside plan tags.
+
+Now let's talk about comparing versions. Ask for options, then let the model, and you, judge. Here's the prompt: Write 3 different opening lines for this LinkedIn post: one story-based, one with a surprising observation, one with a direct question. Then tell me which you'd pick for an audience of H R professionals and why.
+
+Make the final decision yourself. The model's pick is a useful opinion, not a verdict.
+
+It's important to understand the limits of self-critique. Self-critique reliably improves style, structure and completeness. But it's weaker at catching factual errors, because the model checking the facts is the same one that produced them. For facts and numbers, use grounding in source documents and your own verification, which you'll learn in the next module.
+
+Also, watch out for over-editing. After four or five rounds, text can become bland or bloated. If version five is worse than version three, go back to version three. And so that you can, copy good versions into a document as you go.
+
+So when should you start a fresh chat? Long conversations accumulate clutter, like abandoned ideas and contradictory instructions. If the model keeps reverting to something you rejected, start a new chat and paste in a clean, updated prompt that includes everything you've learned. That's often faster than arguing with a confused thread.
+
+Now it's time to try it yourself. Spend fifteen to twenty minutes on this, and go ahead and pause the video while you work through it. Step one: choose a piece of writing that matters, like a cover letter, a client proposal intro, a notice to parents, or a sales email. Step two: generate version one with a solid prompt. Step three: write a four-criterion rubric for this task, and run the "critique, then rewrite" pattern. Step four: do one role-switch review, as the toughest real reader you can imagine. Step five: pick the best version, and identify which instruction made the biggest improvement. And step six: add that instruction to your original prompt, and save it in your library.
+
+Let's recap. Treat the first answer as a draft, and refine it in short, focused rounds. Give one to three specific changes, and say "keep everything else the same". Self-critique works best with an explicit rubric or a specific reviewer role. Self-critique improves style and structure, but it's not a reliable fact-checker. And promote every successful fix back into your template, so it sticks.
+
+That's it for this lesson. Mark it complete, and I'll see you in the next one.

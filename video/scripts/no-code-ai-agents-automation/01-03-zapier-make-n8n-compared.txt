@@ -1,0 +1,37 @@
+Welcome to No-Code AI Agents and Automation, module 1, lesson 3: Zapier, Make and n eight n Compared.
+
+There are dozens of automation tools out there. But three of them dominate the no-code world: Zapier, Make and n eight n. In this lesson, you'll understand how each one thinks, where each one shines, and how to choose, whether it's for yourself or for a client.
+
+Let's start with the shared idea. At heart, all three tools work the same way. A workflow, which Zapier calls a Zap and Make calls a scenario, starts with a trigger and runs a series of steps. Each step receives data from the earlier steps. And you map fields from one step into the next. For example, you take the email field from a form submission and put it into the "To" field of a Gmail step.
+
+Once you understand this in one tool, you can learn the others in an afternoon. So don't get stuck on tool loyalty.
+
+First up, Zapier, the simplest start. It's the most beginner-friendly of the three. It looks like a vertical list of steps, with the trigger at the top and the actions below. Its strengths are a very large library of app integrations, clear setup screens, built-in AI features, and good documentation. If a non-technical client will maintain the workflow themselves, Zapier is often the safest choice.
+
+Its weaknesses? Complex branching and data manipulation can feel cramped. And pricing is generally based on tasks, where each successful action counts, so high-volume workflows can get costly. Check the current pricing page, rather than relying on old blog posts. A good fit for Zapier would be a homestay owner in Kochi who wants new booking emails copied to a sheet, and a WhatsApp alert sent to the caretaker.
+
+Next, Make, which is visual and flexible. Make used to be called Integromat. It shows workflows as a canvas of connected bubbles, with modules connected left to right, and routers that split into branches you can actually see. Its strengths are branching logic, looping over lists, and transforming data. It shows you exactly what data flowed through each module in each run, which makes debugging pleasant. And it's generally more cost-effective than Zapier for medium-volume work.
+
+The weakness is a steeper learning curve. Concepts like bundles, iterators and aggregators confuse beginners at first. A good fit for Make would be an e-commerce brand in Surat that needs to route orders differently by state, payment mode and product category.
+
+And then there's n eight n, which is powerful and self-hostable. It's a workflow tool with a node-based canvas, similar in feel to Make, with nodes on a canvas connected by lines.
+
+Its big strength is that n eight n can be self-hosted. You can run it on your own server or a cloud virtual machine, as well as use their paid cloud offering. Self-hosting means your data doesn't pass through a third-party automation platform, and you're not billed per task by the automation tool. You still pay for the server and any AI A P Is, of course. It also has strong AI features, including an AI Agent node that can call tools, plus nodes for memory and vector stores. And it lets you drop into a small code step when you need to.
+
+The weaknesses? Self-hosting means you're responsible for updates, backups, uptime and security. The interface is more technical. And there are fewer ready-made integrations than Zapier, although its HTTP Request node can talk to almost any A P I. A good fit would be a fintech consultancy in Bengaluru that can't send client data through an extra third-party service, or a freelancer building complex AI agent workflows for several clients.
+
+One caution. Check n eight n's licence terms before you offer a hosted n eight n service to clients. The licence has conditions about commercial use that you should read for yourself.
+
+There's a side-by-side comparison table in the lesson notes below this video. The short version is this. Zapier has the easiest learning curve and the most integrations, and suits non-technical teams. Make is moderate to learn, with excellent visual branching, and suits ops-savvy teams. And n eight n is moderate to steep, also excellent at branching, is the only one you can self-host, and suits technically comfortable teams. All three now have AI steps and agent features. But these tools add AI features constantly, so treat that table as a guide to their character, and check each tool's current features before you commit.
+
+So how do you choose? Ask these five questions, in this order. First, data sensitivity. Is the client uncomfortable with data passing through another cloud service? If yes, consider self-hosted n eight n. Second, who maintains it? If a non-technical person will edit this later, lean towards Zapier. Third, complexity. Lots of branches, loops and data reshaping? Go with Make or n eight n. Fourth, volume. Thousands of runs a month? Compare pricing carefully. Make or self-hosted n eight n often work out cheaper, but do the calculation. And fifth, integrations. Does the tool have a ready connector for the client's apps, like Tally exports, Zoho, Shopify, Razorpay or their WhatsApp provider? If not, can you use an HTTP Request step with the app's A P I?
+
+And here's the thing. There's no shame in using two tools. You might use Zapier for simple client-maintained flows, and n eight n for your heavier AI work.
+
+So what does this course use? The steps are described in tool-neutral language. Things like "add a trigger", "add an HTTP Request step", "map the field from the previous step", or "add a router or branch". Where a feature has a specific name in one tool, we'll mention it. You can follow along in whichever tool you prefer. All three have free tiers or trials that are fine for learning, although the limits change over time.
+
+Now, try it yourself. Spend fifteen to twenty minutes on this, and pause the video whenever you need to. Step one, create free accounts on at least two of the three tools. The n eight n cloud trial is fine. You don't need to self-host yet. Step two, in each tool, build the same tiny workflow. A schedule trigger, set to every day at nine a m, followed by a step that adds a row to a Google Sheet with today's date and the text "Hello from automation". Step three, run it manually once in each tool. And step four, write three lines comparing the experience. Which was quickest to set up? Which showed the run data most clearly? And which would you hand to a non-technical client?
+
+Let's recap. Zapier, Make and n eight n share the same core idea: a trigger, steps, and field mapping. Zapier is the easiest and has the most integrations. Make is visual and great for branching. And n eight n is powerful and can be self-hosted. Choose based on data sensitivity, who maintains it, complexity, volume and available integrations. And remember, tool features and prices change quickly, so always verify on the official site before you recommend anything.
+
+That's it for this lesson. Mark it complete, and I'll see you in the next one.
