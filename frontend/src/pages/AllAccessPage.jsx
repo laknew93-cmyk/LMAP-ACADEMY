@@ -3,7 +3,7 @@ import { Link, useNavigate } from 'react-router-dom'
 import { ShoppingCart, ArrowRight } from 'lucide-react'
 import { useAuth } from '../App'
 import { paidCourses, formatINR } from '../lib/content'
-import { checkout } from '../lib/checkout'
+import { checkout, errorMessage } from '../lib/checkout'
 import { useSeo } from '../lib/seo'
 import { SITE } from '../site'
 
@@ -34,7 +34,7 @@ export default function AllAccessPage() {
         navigate('/dashboard')
       }
     } catch (e) {
-      setToast(e.response?.data?.detail || e.message || 'Something went wrong')
+      setToast(errorMessage(e))
       setTimeout(() => setToast(null), 5000)
     } finally { setPaying(false) }
   }
@@ -69,7 +69,7 @@ export default function AllAccessPage() {
           <h2 className="section-title" style={{ marginBottom: 24 }}>What's included</h2>
           <div className="stack">
             {courses.map(c => (
-              <Link key={c.slug} to={`/courses/${c.slug}`} className="card row" style={{ padding: '16px 20px', justifyContent: 'space-between', boxShadow: 'none' }}>
+              <Link key={c.slug} to={`/courses/${c.slug}/`} className="card row" style={{ padding: '16px 20px', justifyContent: 'space-between', boxShadow: 'none' }}>
                 <span>
                   <strong style={{ display: 'block' }}>{c.title}</strong>
                   <span className="muted" style={{ fontSize: 14 }}>{c.category} · {c.lesson_count} lessons · {c.duration_hours} hours</span>
@@ -86,7 +86,7 @@ export default function AllAccessPage() {
           </div>
           <div style={{ textAlign: 'center', marginTop: 40 }}>{cta}</div>
           <p className="muted" style={{ textAlign: 'center', marginTop: 16, fontSize: 14 }}>
-            Not sure yet? <Link to="/courses/ai-in-60-minutes" style={{ color: 'var(--primary)' }}>Try the free course first <ArrowRight size={12} /></Link>
+            Not sure yet? <Link to="/courses/ai-in-60-minutes/" style={{ color: 'var(--primary)' }}>Try the free course first <ArrowRight size={12} /></Link>
           </p>
         </div>
       </section>

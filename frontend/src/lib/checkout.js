@@ -1,6 +1,15 @@
 import api from '../api/client'
 import { SITE } from '../site'
 
+// Turns any API/network error into a readable sentence (FastAPI validation errors are arrays).
+export function errorMessage(e) {
+  const d = e?.response?.data?.detail
+  if (typeof d === 'string') return d
+  if (Array.isArray(d) && d[0]?.msg) return d[0].msg
+  if (e?.response?.status >= 500) return 'Our server is busy. Please try again in a minute.'
+  return e?.message || 'Something went wrong. Please try again.'
+}
+
 function loadRazorpay() {
   if (window.Razorpay) return Promise.resolve()
   return new Promise((resolve, reject) => {

@@ -5,7 +5,7 @@ import api from '../api/client'
 import { useAuth } from '../App'
 import CourseCard, { CourseThumb } from '../components/CourseCard'
 import { COURSES, findCourse, formatINR, discountPct } from '../lib/content'
-import { checkout } from '../lib/checkout'
+import { checkout, errorMessage } from '../lib/checkout'
 import { useSeo } from '../lib/seo'
 import { SITE } from '../site'
 
@@ -28,7 +28,7 @@ export default function CourseDetailPage() {
     if (user) api.get(`/courses/${slug}/enrolled`).then(r => setEnrolled(r.data.enrolled)).catch(() => {})
   }, [slug, user])
 
-  if (!course) return <Navigate to="/courses" replace />
+  if (!course) return <Navigate to="/courses/" replace />
 
   const showToast = (msg, type = 'success') => { setToast({ msg, type }); setTimeout(() => setToast(null), 5000) }
   const off = discountPct(course)
@@ -46,7 +46,7 @@ export default function CourseDetailPage() {
         showToast(isFree ? 'You are enrolled — start learning!' : 'Payment successful — welcome to the course!')
       }
     } catch (e) {
-      showToast(e.response?.data?.detail || e.message || 'Something went wrong', 'error')
+      showToast(errorMessage(e), 'error')
     } finally {
       setPaying(false)
     }
@@ -79,7 +79,7 @@ export default function CourseDetailPage() {
           {!isFree && <li>{SITE.refundDays}-day refund policy</li>}
         </ul>
         {!isFree && (
-          <Link to="/all-access" style={{ display: 'block', marginTop: 18, fontSize: 14, color: 'var(--primary)', fontWeight: 600 }}>
+          <Link to="/all-access/" style={{ display: 'block', marginTop: 18, fontSize: 14, color: 'var(--primary)', fontWeight: 600 }}>
             Or get all courses for {formatINR(SITE.bundle.price)} →
           </Link>
         )}
@@ -93,7 +93,7 @@ export default function CourseDetailPage() {
         <div className="container split-aside">
           <div>
             <nav className="row" style={{ gap: 6, fontSize: 13, color: '#9CA3AF', marginBottom: 16 }}>
-              <Link to="/courses">Courses</Link> <span>/</span> <span>{course.category}</span>
+              <Link to="/courses/">Courses</Link> <span>/</span> <span>{course.category}</span>
             </nav>
             <h1 style={{ fontSize: 'clamp(30px, 4.5vw, 42px)', fontWeight: 800, lineHeight: 1.2, marginBottom: 16 }}>{course.title}</h1>
             <p style={{ fontSize: 18, color: '#D1D5DB', lineHeight: 1.7, marginBottom: 22 }}>{course.subtitle}</p>
@@ -197,7 +197,7 @@ export default function CourseDetailPage() {
           <div className="container">
             <div className="row" style={{ justifyContent: 'space-between', marginBottom: 28 }}>
               <h2 className="section-title" style={{ fontSize: 28 }}>Learners also take</h2>
-              <Link to="/courses" className="btn btn-outline btn-sm">All courses <ArrowRight size={14} /></Link>
+              <Link to="/courses/" className="btn btn-outline btn-sm">All courses <ArrowRight size={14} /></Link>
             </div>
             <div className="grid-3">{related.map(c => <CourseCard key={c.slug} course={c} />)}</div>
           </div>

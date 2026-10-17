@@ -28,7 +28,7 @@ export default function DashboardPage() {
             <BookOpen size={56} color="var(--border)" />
             <h2 style={{ fontSize: 22, margin: '14px 0 8px' }}>No courses yet</h2>
             <p className="muted" style={{ marginBottom: 24 }}>Start with the free AI in 60 Minutes course.</p>
-            <Link to="/courses" className="btn btn-primary">Browse courses</Link>
+            <Link to="/courses/" className="btn btn-primary">Browse courses</Link>
           </div>
         ) : (
           <div className="grid-3">

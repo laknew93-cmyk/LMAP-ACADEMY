@@ -41,6 +41,7 @@ function readMd(dir) {
 const posts = readMd('content/blog').sort((a, b) => (b.date || '').localeCompare(a.date || ''))
 const pages = readMd('content/pages')
 
+const slash = p => (p === '/' || p.endsWith('/') ? p : p + '/')
 const esc = s => String(s ?? '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;')
 const inr = n => '₹' + Number(n).toLocaleString('en-IN')
 
@@ -63,10 +64,10 @@ const faqLd = faqs => faqs?.length ? {
 
 const crumbs = items => ({
   '@type': 'BreadcrumbList',
-  itemListElement: items.map(([name, p], i) => ({ '@type': 'ListItem', position: i + 1, name, item: SITE.url + p })),
+  itemListElement: items.map(([name, p], i) => ({ '@type': 'ListItem', position: i + 1, name, item: SITE.url + slash(p) })),
 })
 
-const courseLink = c => `<li><a href="/courses/${c.slug}">${esc(c.title)}</a> — ${c.price ? inr(c.price) : 'Free'}. ${esc(c.subtitle)}</li>`
+const courseLink = c => `<li><a href="/courses/${c.slug}/">${esc(c.title)}</a> — ${c.price ? inr(c.price) : 'Free'}. ${esc(c.subtitle)}</li>`
 
 const routes = []
 
@@ -82,8 +83,8 @@ routes.push({
   body: `<h1>Learn the AI skills that get you hired, paid and promoted</h1>
 <p>${esc(SITE.description)}</p>
 <h2>Our AI courses</h2><ul>${courses.map(courseLink).join('')}</ul>
-<p><a href="/all-access">All-Access Pass: every course for ${inr(SITE.bundlePrice)}</a></p>
-<h2>Free AI guides</h2><ul>${posts.map(p => `<li><a href="/blog/${p.slug}">${esc(p.title)}</a></li>`).join('')}</ul>`,
+<p><a href="/all-access/">All-Access Pass: every course for ${inr(SITE.bundlePrice)}</a></p>
+<h2>Free AI guides</h2><ul>${posts.map(p => `<li><a href="/blog/${p.slug}/">${esc(p.title)}</a></li>`).join('')}</ul>`,
 })
 
 routes.push({
@@ -92,7 +93,7 @@ routes.push({
   description: 'Browse practical AI courses for Indian learners: ChatGPT, prompt engineering, AI freelancing, content, data analysis, no-code agents and Python GenAI.',
   ld: [{
     '@type': 'ItemList',
-    itemListElement: courses.map((c, i) => ({ '@type': 'ListItem', position: i + 1, url: `${SITE.url}/courses/${c.slug}` })),
+    itemListElement: courses.map((c, i) => ({ '@type': 'ListItem', position: i + 1, url: `${SITE.url}/courses/${c.slug}/` })),
   }],
   body: `<h1>AI courses</h1><ul>${courses.map(courseLink).join('')}</ul>`,
 })
@@ -109,7 +110,7 @@ for (const c of courses) {
         '@type': 'Course',
         name: c.title,
         description: c.seo?.description || c.subtitle,
-        url: SITE.url + p,
+        url: SITE.url + slash(p),
         provider: { '@id': `${SITE.url}/#org`, '@type': 'EducationalOrganization', name: SITE.name, sameAs: SITE.url },
         educationalLevel: c.level,
         inLanguage: 'en-IN',
@@ -118,7 +119,7 @@ for (const c of courses) {
         isAccessibleForFree: c.price === 0,
         offers: {
           '@type': 'Offer', category: c.price ? 'Paid' : 'Free', price: c.price, priceCurrency: 'INR',
-          availability: 'https://schema.org/InStock', url: SITE.url + p,
+          availability: 'https://schema.org/InStock', url: SITE.url + slash(p),
         },
         hasCourseInstance: {
           '@type': 'CourseInstance', courseMode: 'Online',
@@ -128,7 +129,7 @@ for (const c of courses) {
       crumbs([['Courses', '/courses'], [c.title, p]]),
       faqLd(c.faqs),
     ],
-    body: `<nav><a href="/courses">Courses</a> / ${esc(c.category)}</nav>
+    body: `<nav><a href="/courses/">Courses</a> / ${esc(c.category)}</nav>
 <h1>${esc(c.title)}</h1><p>${esc(c.subtitle)}</p>
 <p>${c.price ? `Price: ${inr(c.price)}${c.mrp ? ` (MRP ${inr(c.mrp)})` : ''}` : 'Free course'} · ${c.level} · ${c.duration_hours} hours · ${c.lesson_count} lessons · certificate included</p>
 <h2>What you'll learn</h2><ul>${(c.outcomes || []).map(o => `<li>${esc(o)}</li>`).join('')}</ul>
@@ -148,7 +149,7 @@ routes.push({
   ld: [{
     '@type': 'Product', name: 'LMAP Academy All-Access Pass', brand: { '@type': 'Brand', name: SITE.name },
     description: `All ${paid.length} paid AI courses with lifetime access.`,
-    offers: { '@type': 'Offer', price: SITE.bundlePrice, priceCurrency: 'INR', availability: 'https://schema.org/InStock', url: `${SITE.url}/all-access` },
+    offers: { '@type': 'Offer', price: SITE.bundlePrice, priceCurrency: 'INR', availability: 'https://schema.org/InStock', url: `${SITE.url}/all-access/` },
   }],
   body: `<h1>All-Access Pass</h1><p>Every paid course for ${inr(SITE.bundlePrice)} (worth ${inr(bundleValue)}).</p><ul>${paid.map(courseLink).join('')}</ul>`,
 })
@@ -158,7 +159,7 @@ routes.push({
   title: `AI Learning Blog — Guides, Roadmaps & Career Tips | ${SITE.name}`,
   description: 'Free practical guides on learning AI in India: prompt engineering, AI skills for jobs, freelancing with AI, AI agents, AI in Excel and more.',
   ld: [],
-  body: `<h1>The LMAP AI blog</h1><ul>${posts.map(p => `<li><a href="/blog/${p.slug}">${esc(p.title)}</a> — ${esc(p.description)}</li>`).join('')}</ul>`,
+  body: `<h1>The LMAP AI blog</h1><ul>${posts.map(p => `<li><a href="/blog/${p.slug}/">${esc(p.title)}</a> — ${esc(p.description)}</li>`).join('')}</ul>`,
 })
 
 for (const p of posts) {
@@ -173,13 +174,13 @@ for (const p of posts) {
     ld: [
       {
         '@type': 'BlogPosting', headline: p.title, description: p.description, datePublished: p.date, dateModified: p.date,
-        mainEntityOfPage: SITE.url + url, author: { '@type': 'Organization', name: SITE.name, url: SITE.url },
+        mainEntityOfPage: SITE.url + slash(url), author: { '@type': 'Organization', name: SITE.name, url: SITE.url },
         publisher: { '@id': `${SITE.url}/#org`, '@type': 'Organization', name: SITE.name, logo: { '@type': 'ImageObject', url: `${SITE.url}/favicon.svg` } },
         image: `${SITE.url}/og-image.png`,
       },
       crumbs([['Blog', '/blog'], [p.title, url]]),
     ],
-    body: `<nav><a href="/blog">Blog</a></nav><article><h1>${esc(p.title)}</h1>${marked.parse(p.body)}</article>`,
+    body: `<nav><a href="/blog/">Blog</a></nav><article><h1>${esc(p.title)}</h1>${marked.parse(p.body).replace(/href="(\/[^"#?]*[^\/"#?])"/g, 'href="$1/"')}</article>`,
   })
 }
 
@@ -198,7 +199,7 @@ for (const p of pages) {
 const template = fs.readFileSync(path.join(dist, 'index.html'), 'utf8')
 
 function head(r) {
-  const url = SITE.url + (r.path === '/' ? '/' : r.path)
+  const url = SITE.url + slash(r.path)
   const ld = r.ld.filter(Boolean)
   return [
     `<title>${esc(r.title)}</title>`,
@@ -234,7 +235,7 @@ fs.writeFileSync(path.join(dist, '200.html'), template)
 
 const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-${routes.map(r => `  <url><loc>${SITE.url}${r.path === '/' ? '/' : r.path}</loc><lastmod>${r.lastmod || TODAY}</lastmod><priority>${r.priority || (r.path === '/' ? '1.0' : r.path.startsWith('/courses') || r.path === '/all-access' ? '0.9' : '0.7')}</priority></url>`).join('\n')}
+${routes.map(r => `  <url><loc>${SITE.url}${slash(r.path)}</loc><lastmod>${r.lastmod || TODAY}</lastmod><priority>${r.priority || (r.path === '/' ? '1.0' : r.path.startsWith('/courses') || r.path === '/all-access' ? '0.9' : '0.7')}</priority></url>`).join('\n')}
 </urlset>
 `
 fs.writeFileSync(path.join(dist, 'sitemap.xml'), sitemap)

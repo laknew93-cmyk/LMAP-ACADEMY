@@ -17,7 +17,7 @@ export default function BlogPage() {
       <div className="section">
         <div className="container grid-3">
           {POSTS.map(p => (
-            <Link key={p.slug} to={`/blog/${p.slug}`} className="card" style={{ padding: 24, display: 'flex', flexDirection: 'column' }}>
+            <Link key={p.slug} to={`/blog/${p.slug}/`} className="card" style={{ padding: 24, display: 'flex', flexDirection: 'column' }}>
               <span className="muted" style={{ fontSize: 13 }}>{readingMinutes(p.body)} min read</span>
               <h2 style={{ fontSize: 19, margin: '8px 0', lineHeight: 1.4 }}>{p.title}</h2>
               <p className="muted" style={{ fontSize: 15, flex: 1 }}>{p.description}</p>

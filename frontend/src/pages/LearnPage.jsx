@@ -81,7 +81,7 @@ export default function LearnPage() {
     <div className="learn">
       <main className="learn-main">
         <div className="container-sm" style={{ padding: '32px 24px 64px' }}>
-          <Link to={`/courses/${slug}`} className="row muted" style={{ gap: 6, fontSize: 14, marginBottom: 16 }}><ArrowLeft size={14} /> {course.title}</Link>
+          <Link to={`/courses/${slug}/`} className="row muted" style={{ gap: 6, fontSize: 14, marginBottom: 16 }}><ArrowLeft size={14} /> {course.title}</Link>
           <p className="muted" style={{ fontSize: 13, fontWeight: 700 }}>MODULE {active.mi + 1} · LESSON {idx + 1} OF {lessons.length}</p>
           <h1 style={{ fontSize: 'clamp(26px, 4vw, 34px)', fontWeight: 800, lineHeight: 1.25, margin: '6px 0 24px' }}>{active.title}</h1>
 
@@ -92,7 +92,7 @@ export default function LearnPage() {
               <Lock size={32} color="var(--primary)" />
               <h2 style={{ fontSize: 22, margin: '12px 0 8px' }}>This lesson is part of the full course</h2>
               <p className="muted" style={{ marginBottom: 20 }}>{active.summary}</p>
-              <Link to={`/courses/${slug}`} className="btn btn-primary">
+              <Link to={`/courses/${slug}/`} className="btn btn-primary">
                 {meta?.price ? `Unlock all ${lessons.length} lessons for ${formatINR(meta.price)}` : 'Enrol for free'}
               </Link>
               {!user && <p className="muted" style={{ fontSize: 14, marginTop: 14 }}>Already enrolled? <Link to={`/login?next=${encodeURIComponent(`/learn/${slug}?lesson=${active.id}`)}`} style={{ color: 'var(--primary)' }}>Log in</Link></p>}
@@ -115,7 +115,7 @@ export default function LearnPage() {
                     {isDone && next && <button className="btn btn-primary" onClick={() => go(next)}>Next lesson <ArrowRight size={16} /></button>}
                   </div>
                 ) : (
-                  <Link to={`/courses/${slug}`} className="btn btn-primary">{meta?.price ? 'Get the full course' : 'Enrol free to continue'} <ArrowRight size={16} /></Link>
+                  <Link to={`/courses/${slug}/`} className="btn btn-primary">{meta?.price ? 'Get the full course' : 'Enrol free to continue'} <ArrowRight size={16} /></Link>
                 )}
               </div>
             </>

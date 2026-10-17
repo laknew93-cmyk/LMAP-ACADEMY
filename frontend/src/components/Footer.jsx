@@ -21,22 +21,22 @@ export default function Footer() {
           </div>
           <div style={col}>
             <p style={head}>Courses</p>
-            {COURSES.slice(0, 7).map(c => <Link key={c.slug} to={`/courses/${c.slug}`}>{c.title.split(':')[0]}</Link>)}
-            <Link to="/all-access">All-Access Pass</Link>
+            {COURSES.slice(0, 7).map(c => <Link key={c.slug} to={`/courses/${c.slug}/`}>{c.title.split(':')[0]}</Link>)}
+            <Link to="/all-access/">All-Access Pass</Link>
           </div>
           <div style={col}>
             <p style={head}>Learn</p>
-            <Link to="/blog">Blog</Link>
-            <Link to="/courses">All courses</Link>
+            <Link to="/blog/">Blog</Link>
+            <Link to="/courses/">All courses</Link>
             <Link to="/dashboard">My learning</Link>
           </div>
           <div style={col}>
             <p style={head}>Company</p>
-            <Link to="/about">About us</Link>
-            <Link to="/contact">Contact us</Link>
-            <Link to="/terms">Terms & conditions</Link>
-            <Link to="/privacy-policy">Privacy policy</Link>
-            <Link to="/refund-policy">Refund & cancellation</Link>
+            <Link to="/about/">About us</Link>
+            <Link to="/contact/">Contact us</Link>
+            <Link to="/terms/">Terms & conditions</Link>
+            <Link to="/privacy-policy/">Privacy policy</Link>
+            <Link to="/refund-policy/">Refund & cancellation</Link>
           </div>
         </div>
         <div style={{ borderTop: '1px solid #374151', paddingTop: 24, textAlign: 'center', fontSize: 13 }}>

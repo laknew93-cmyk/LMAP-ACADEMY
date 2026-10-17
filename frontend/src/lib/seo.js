@@ -17,7 +17,8 @@ export function useSeo({ title, description, path, noindex = false }) {
   useEffect(() => {
     const fullTitle = title ? `${title} | ${SITE.name}` : `${SITE.name} — ${SITE.tagline}`
     const desc = description || SITE.description
-    const url = SITE.url + (path ?? window.location.pathname)
+    const rawPath = path ?? window.location.pathname
+    const url = SITE.url + (rawPath.endsWith('/') ? rawPath : rawPath + '/')
     document.title = fullTitle
     setMeta('name', 'description', desc)
     setMeta('name', 'robots', noindex ? 'noindex, nofollow' : 'index, follow')

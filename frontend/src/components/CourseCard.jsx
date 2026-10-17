@@ -28,7 +28,7 @@ export function CourseThumb({ course, compact = false }) {
 export default function CourseCard({ course }) {
   const off = discountPct(course)
   return (
-    <Link to={`/courses/${course.slug}`} className="card" style={{ display: 'flex', flexDirection: 'column', transition: 'transform .2s, box-shadow .2s' }}
+    <Link to={`/courses/${course.slug}/`} className="card" style={{ display: 'flex', flexDirection: 'column', transition: 'transform .2s, box-shadow .2s' }}
       onMouseEnter={e => { e.currentTarget.style.transform = 'translateY(-4px)'; e.currentTarget.style.boxShadow = 'var(--shadow-lg)' }}
       onMouseLeave={e => { e.currentTarget.style.transform = ''; e.currentTarget.style.boxShadow = '' }}
     >

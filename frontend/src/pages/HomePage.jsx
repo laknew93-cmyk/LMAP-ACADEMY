@@ -50,8 +50,8 @@ export default function HomePage() {
               with hands-on projects and a verifiable certificate. Courses from {formatINR(Math.min(...paid.map(c => c.price)))}.
             </p>
             <div className="row" style={{ gap: 14 }}>
-              <Link to="/courses" className="btn btn-primary btn-lg">Explore courses <ArrowRight size={18} /></Link>
-              {free && <Link to={`/courses/${free.slug}`} className="btn btn-outline btn-lg" style={{ color: '#fff', borderColor: 'rgba(255,255,255,.35)' }}>Start free</Link>}
+              <Link to="/courses/" className="btn btn-primary btn-lg">Explore courses <ArrowRight size={18} /></Link>
+              {free && <Link to={`/courses/${free.slug}/`} className="btn btn-outline btn-lg" style={{ color: '#fff', borderColor: 'rgba(255,255,255,.35)' }}>Start free</Link>}
             </div>
             <div className="row" style={{ gap: 20, marginTop: 32, fontSize: 14, color: '#9CA3AF' }}>
               <span>✓ Lifetime access</span><span>✓ Certificate</span><span>✓ {SITE.refundDays}-day refund</span><span>✓ UPI & cards</span>
@@ -98,7 +98,7 @@ export default function HomePage() {
               <h2 className="section-title">Our AI courses</h2>
               <p className="section-subtitle" style={{ marginTop: 8 }}>From your first prompt to building AI agents</p>
             </div>
-            <Link to="/courses" className="btn btn-outline">All courses <ArrowRight size={16} /></Link>
+            <Link to="/courses/" className="btn btn-outline">All courses <ArrowRight size={16} /></Link>
           </div>
           <div className="grid-3">{COURSES.slice(0, 6).map(c => <CourseCard key={c.slug} course={c} />)}</div>
         </div>
@@ -118,7 +118,7 @@ export default function HomePage() {
               <div style={{ textAlign: 'center' }}>
                 <div style={{ fontSize: 48, fontWeight: 800 }}>{formatINR(SITE.bundle.price)}</div>
                 <div style={{ color: '#9CA3AF', marginBottom: 20 }}>one-time · save {Math.round((1 - SITE.bundle.price / bundleValue) * 100)}%</div>
-                <Link to="/all-access" className="btn btn-accent btn-lg">Get All-Access <ArrowRight size={18} /></Link>
+                <Link to="/all-access/" className="btn btn-accent btn-lg">Get All-Access <ArrowRight size={18} /></Link>
               </div>
             </div>
           </div>
@@ -149,11 +149,11 @@ export default function HomePage() {
           <div className="container">
             <div className="row" style={{ justifyContent: 'space-between', marginBottom: 32 }}>
               <h2 className="section-title">Free AI guides</h2>
-              <Link to="/blog" className="btn btn-outline">Read the blog <ArrowRight size={16} /></Link>
+              <Link to="/blog/" className="btn btn-outline">Read the blog <ArrowRight size={16} /></Link>
             </div>
             <div className="grid-3">
               {POSTS.slice(0, 3).map(p => (
-                <Link key={p.slug} to={`/blog/${p.slug}`} className="card" style={{ padding: 24 }}>
+                <Link key={p.slug} to={`/blog/${p.slug}/`} className="card" style={{ padding: 24 }}>
                   <BookOpen size={20} color="var(--primary)" />
                   <h3 style={{ fontSize: 18, margin: '10px 0 8px', lineHeight: 1.4 }}>{p.title}</h3>
                   <p className="muted" style={{ fontSize: 14 }}>{p.description}</p>
@@ -175,7 +175,7 @@ export default function HomePage() {
         <div className="container">
           <h2 style={{ fontSize: 'clamp(28px, 4vw, 40px)', fontWeight: 800, marginBottom: 14 }}>Start learning AI today — free</h2>
           <p style={{ fontSize: 18, color: 'rgba(255,255,255,.85)', marginBottom: 32 }}>Take the 60-minute starter course, then choose your path.</p>
-          <Link to={free ? `/courses/${free.slug}` : '/courses'} className="btn btn-accent btn-lg">Take the free course <ArrowRight size={18} /></Link>
+          <Link to={free ? `/courses/${free.slug}/` : '/courses/'} className="btn btn-accent btn-lg">Take the free course <ArrowRight size={18} /></Link>
         </div>
       </section>
     </div>

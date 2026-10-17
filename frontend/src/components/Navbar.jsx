@@ -20,9 +20,9 @@ export default function Navbar() {
         </Link>
 
         <div className={`navbar-links ${open ? 'open' : ''}`}>
-          <Link to="/courses" onClick={() => setOpen(false)}>Courses</Link>
-          <Link to="/all-access" onClick={() => setOpen(false)}>All-Access</Link>
-          <Link to="/blog" onClick={() => setOpen(false)}>Blog</Link>
+          <Link to="/courses/" onClick={() => setOpen(false)}>Courses</Link>
+          <Link to="/all-access/" onClick={() => setOpen(false)}>All-Access</Link>
+          <Link to="/blog/" onClick={() => setOpen(false)}>Blog</Link>
           {user && <Link to="/dashboard" onClick={() => setOpen(false)}>My Learning</Link>}
           {user?.role === 'admin' && <Link to="/admin" onClick={() => setOpen(false)}>Admin</Link>}
           {user
@@ -41,7 +41,7 @@ export default function Navbar() {
           ) : (
             <>
               <Link to="/login" className="btn btn-ghost btn-sm desktop-only">Login</Link>
-              <Link to="/courses/ai-in-60-minutes" className="btn btn-primary btn-sm">Start free</Link>
+              <Link to="/courses/ai-in-60-minutes/" className="btn btn-primary btn-sm">Start free</Link>
             </>
           )}
           <button className="navbar-toggle" aria-label="Menu" onClick={() => setOpen(!open)}>

@@ -46,7 +46,7 @@ export default function CoursesPage() {
             </div>
           </div>
 
-          <Link to="/all-access" className="card row" style={{ padding: '16px 20px', marginBottom: 28, justifyContent: 'space-between', background: 'var(--primary-light)', borderColor: '#DDD6FE', boxShadow: 'none' }}>
+          <Link to="/all-access/" className="card row" style={{ padding: '16px 20px', marginBottom: 28, justifyContent: 'space-between', background: 'var(--primary-light)', borderColor: '#DDD6FE', boxShadow: 'none' }}>
             <span><strong>All-Access Pass:</strong> every paid course for {formatINR(SITE.bundle.price)}</span>
             <span className="row" style={{ gap: 4, color: 'var(--primary)', fontWeight: 600 }}>See what's included <ArrowRight size={16} /></span>
           </Link>

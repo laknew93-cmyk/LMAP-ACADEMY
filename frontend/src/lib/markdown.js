@@ -2,8 +2,9 @@ import { marked } from 'marked'
 
 marked.setOptions({ gfm: true })
 
+// Internal links get a trailing slash so they hit the pre-rendered pages directly.
 export function renderMarkdown(md) {
-  return marked.parse(md || '')
+  return marked.parse(md || '').replace(/href="(\/[^"#?]*[^/"#?])"/g, 'href="$1/"')
 }
 
 // Parses the simple `key: value` front matter used in content/*.md files.
