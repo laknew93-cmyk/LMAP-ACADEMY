@@ -109,7 +109,8 @@ button { cursor: pointer; font-family: inherit; }
 :root { --primary: #6D28D9; --primary-dark: #4C1D95; --ink-soft: #374151; }
 h1, h2, h3 { letter-spacing: -0.02em; }
 .muted { color: var(--text-muted); }
-.hero-dark { background: radial-gradient(1200px 500px at 80% -10%, rgba(124,58,237,.45), transparent 60%), linear-gradient(135deg, #0F0F1A 0%, #1A1A2E 60%, #16213E 100%); color: #fff; }
+.hero-dark { background: linear-gradient(90deg, rgba(12,12,24,.82) 0%, rgba(12,12,24,.45) 55%, rgba(12,12,24,.15) 100%), url(/hero-bg.webp) center / cover no-repeat, #1A1A2E; color: #fff; }
+@media (max-width: 640px) { .hero-dark { background-image: linear-gradient(rgba(12,12,24,.7), rgba(12,12,24,.7)), url(/hero-bg-sm.webp); } }
 .eyebrow { display: inline-flex; align-items: center; gap: 6px; font-size: 13px; font-weight: 600; color: #C4B5FD; background: rgba(167,139,250,.12); border: 1px solid rgba(167,139,250,.3); padding: 6px 12px; border-radius: 99px; }
 .split { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: center; }
 .split-aside { display: grid; grid-template-columns: minmax(0,1fr) 360px; gap: 48px; align-items: start; }

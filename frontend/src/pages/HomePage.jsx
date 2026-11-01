@@ -64,7 +64,7 @@ export default function HomePage() {
               [COURSES.reduce((s, c) => s + (c.projects?.length || 0), 0), 'hands-on projects'],
               ['1', 'free starter course'],
             ].map(([v, l]) => (
-              <div key={l} style={{ background: 'rgba(255,255,255,.05)', border: '1px solid rgba(255,255,255,.1)', borderRadius: 16, padding: '26px 18px', textAlign: 'center' }}>
+              <div key={l} style={{ background: 'rgba(20,16,40,.6)', backdropFilter: 'blur(8px)', WebkitBackdropFilter: 'blur(8px)', border: '1px solid rgba(255,255,255,.14)', borderRadius: 16, padding: '26px 18px', textAlign: 'center' }}>
                 <div style={{ fontSize: 34, fontWeight: 800, color: '#C4B5FD' }}>{v}</div>
                 <div style={{ fontSize: 14, color: '#9CA3AF', marginTop: 4 }}>{l}</div>
               </div>

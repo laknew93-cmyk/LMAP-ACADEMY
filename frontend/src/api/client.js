@@ -16,7 +16,7 @@ api.interceptors.response.use(
     if (err.response?.status === 401 && !err.config.url.startsWith('/auth/')) {
       localStorage.removeItem('lmap_token')
       localStorage.removeItem('lmap_user')
-      window.location.href = '/login?next=' + encodeURIComponent(window.location.pathname)
+      window.location.href = '/login?expired=1&next=' + encodeURIComponent(window.location.pathname)
     }
     return Promise.reject(err)
   }

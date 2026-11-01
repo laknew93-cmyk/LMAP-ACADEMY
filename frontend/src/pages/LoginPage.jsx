@@ -46,7 +46,8 @@ export default function LoginPage() {
             <label className="form-label">Password</label>
             <input className="form-input" type="password" placeholder="••••••••" value={form.password} onChange={e => setForm(p => ({ ...p, password: e.target.value }))} required />
           </div>
-          {error && <p className="form-error">{error}</p>}
+          {params.get('expired') && !error && <p className="form-error" style={{ color: 'var(--text-muted)' }}>Your session ended. Please log in again.</p>}
+          {error && <p className="form-error">{error === 'Invalid credentials' ? 'Email or password is incorrect. New here? Create a free account below.' : error}</p>}
           <button type="submit" disabled={loading} className="btn btn-primary" style={{ justifyContent: 'center' }}>
             {loading ? 'Signing in...' : 'Sign In'}
           </button>

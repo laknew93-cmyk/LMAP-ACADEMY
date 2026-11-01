@@ -17,7 +17,9 @@ import tempfile
 
 import edge_tts
 import imageio_ffmpeg
-from PIL import Image, ImageDraw, ImageFont
+import random
+
+from PIL import Image, ImageDraw, ImageFilter, ImageFont
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 FFMPEG = imageio_ffmpeg.get_ffmpeg_exe()
@@ -90,21 +92,75 @@ def gradient(img, top, bottom):
 def chrome(draw, plan, progress):
     """Header label, footer brand and progress bar shared by content slides."""
     draw.text((120, 70), f"{plan['course']}  ·  {plan['lesson']}", font=font("demi", 30), fill=PURPLE)
-    draw.rectangle([0, H - 12, W, H], fill=BORDER)
-    draw.rectangle([0, H - 12, int(W * progress), H], fill=PURPLE)
-    draw.text((120, H - 80), "LMAP Academy", font=font("bold", 28), fill=INK)
-    draw.text((W - 120, H - 80), "lmapacademy.org", font=font("regular", 28), fill=MUTED, anchor="ra")
+    draw.rounded_rectangle([64, H - 30, W - 64, H - 22], radius=4, fill=(255, 255, 255))
+    draw.rounded_rectangle([64, H - 30, 64 + int((W - 128) * progress), H - 22], radius=4, fill=PURPLE)
+    draw.text((120, H - 112), "LMAP Academy", font=font("bold", 28), fill=INK)
+    draw.text((W - 120, H - 112), "lmapacademy.org", font=font("regular", 28), fill=MUTED, anchor="ra")
+
+
+# Course colour themes (match the course cards on the website): (start, end) RGB.
+THEMES = {
+    "AI Fundamentals": ((109, 40, 217), (219, 39, 119)),
+    "Prompt Engineering": ((79, 70, 229), (6, 182, 212)),
+    "AI for Business": ((234, 88, 12), (219, 39, 119)),
+    "AI for Marketing": ((219, 39, 119), (245, 158, 11)),
+    "AI for Data": ((5, 150, 105), (14, 165, 233)),
+    "AI Automation": ((15, 118, 110), (109, 40, 217)),
+    "Generative AI Engineering": ((55, 48, 163), (124, 58, 237)),
+}
+_backgrounds = {}
+
+
+def mix(a, b, t):
+    return tuple(int(a[i] + (b[i] - a[i]) * t) for i in range(3))
+
+
+def background(theme, dark):
+    """Abstract 'AI' backdrop: soft colour glows, a dot grid and a faint neural-network constellation."""
+    key = (theme, dark)
+    if key in _backgrounds:
+        return _backgrounds[key].copy()
+    c1, c2 = THEMES.get(theme, THEMES["AI Fundamentals"])
+    rnd = random.Random(f"{theme}-{dark}")
+    base = mix((12, 12, 24), c1, 0.18) if dark else mix((255, 255, 255), c1, 0.06)
+    img = Image.new("RGB", (W, H), base)
+
+    glow = Image.new("RGB", (W, H), base)
+    g = ImageDraw.Draw(glow)
+    for (cx, cy, r, col) in ((W * 0.85, H * 0.15, 520, c1), (W * 0.1, H * 0.95, 460, c2), (W * 0.55, H * 0.7, 380, mix(c1, c2, 0.5))):
+        strength = 0.85 if dark else 0.30
+        g.ellipse([cx - r, cy - r, cx + r, cy + r], fill=mix(base, col, strength))
+    img = Image.blend(img, glow.filter(ImageFilter.GaussianBlur(160)), 1.0)
+
+    layer = Image.new("RGBA", (W, H), (0, 0, 0, 0))
+    d = ImageDraw.Draw(layer)
+    dot = (255, 255, 255, 26) if dark else (*c1, 22)
+    for x in range(40, W, 48):
+        for y in range(40, H, 48):
+            d.ellipse([x - 2, y - 2, x + 2, y + 2], fill=dot)
+    # Neural-network constellation on the right-hand side.
+    nodes = [(rnd.randint(int(W * 0.58), W - 60), rnd.randint(60, H - 60)) for _ in range(26)]
+    line = (255, 255, 255, 46) if dark else (*c2, 40)
+    node = (255, 255, 255, 120) if dark else (*c1, 70)
+    for i, a in enumerate(nodes):
+        for b in sorted(nodes, key=lambda n: (n[0] - a[0]) ** 2 + (n[1] - a[1]) ** 2)[1:3]:
+            d.line([a, b], fill=line, width=2)
+    for (x, y) in nodes:
+        r = rnd.choice((5, 7, 9))
+        d.ellipse([x - r, y - r, x + r, y + r], fill=node)
+    img = Image.alpha_composite(img.convert("RGBA"), layer).convert("RGB")
+    _backgrounds[key] = img
+    return img.copy()
 
 
 def render_slide(plan, seg, progress, path):
     kind = seg.get("kind", "content")
-    img = Image.new("RGB", (W, H), "white")
-    draw = ImageDraw.Draw(img)
+    theme = plan.get("_category", "AI Fundamentals")
 
     if kind == "title":
-        gradient(img, (15, 15, 26), PURPLE_DARK)
+        img = background(theme, dark=True)
         draw = ImageDraw.Draw(img)
-        draw.rounded_rectangle([120, 120, 200, 200], radius=18, fill=PURPLE)
+        draw.rounded_rectangle([120, 120, 200, 200], radius=18, fill=THEMES.get(theme, THEMES["AI Fundamentals"])[0])
         draw.text((160, 160), "L", font=font("bold", 48), fill="white", anchor="mm")
         draw.text((228, 136), "LMAP Academy", font=font("bold", 44), fill="white")
         draw.text((120, 380), plan["course"].upper(), font=font("demi", 34), fill=(196, 181, 253))
@@ -115,7 +171,17 @@ def render_slide(plan, seg, progress, path):
         return
 
     accent = AMBER if kind == "exercise" else GREEN if kind == "recap" else PURPLE
-    draw.rectangle([0, 0, 16, H], fill=accent)
+    # Content sits on a soft white card over the themed background.
+    img = background(theme, dark=False).convert("RGBA")
+    card = Image.new("RGBA", (W, H), (0, 0, 0, 0))
+    cd = ImageDraw.Draw(card)
+    cd.rounded_rectangle([72, 36, W - 72, H - 44], radius=36, fill=(0, 0, 0, 40))
+    card = card.filter(ImageFilter.GaussianBlur(18))
+    cd = ImageDraw.Draw(card)
+    cd.rounded_rectangle([64, 28, W - 64, H - 52], radius=36, fill=(255, 255, 255, 236))
+    img = Image.alpha_composite(img, card).convert("RGB")
+    draw = ImageDraw.Draw(img)
+    draw.rounded_rectangle([64, 28, 80, H - 52], radius=8, fill=accent)
     chrome(draw, plan, progress)
     y = text_block(draw, (120, 140), seg["title"], font("bold", 72), INK, W - 240, 1.15) + 40
     left, width = 120, W - 240
@@ -157,7 +223,7 @@ def render_slide(plan, seg, progress, path):
         if seg.get(key):
             lines = wrap(draw, clean(seg[key]), font("demi", 40), width - 100)
             box_h = len(lines) * 54 + 56
-            top = max(y + 10, H - 140 - box_h)
+            top = max(y + 10, H - 170 - box_h)
             draw.rounded_rectangle([left, top, left + width, top + box_h], radius=18, fill=fill)
             draw.rectangle([left, top, left + 10, top + box_h], fill=border)
             text_block(draw, (left + 50, top + 28), seg[key], font("demi", 40), INK, width - 100, 1.35)
@@ -177,6 +243,9 @@ def ffmpeg(*args):
 def build(plan_path, out_path=None):
     plan = json.load(open(plan_path, encoding="utf-8"))
     course_slug = os.path.basename(os.path.dirname(plan_path))
+    course_json = os.path.join(os.path.dirname(HERE), "backend", "content", "courses", course_slug, "course.json")
+    if os.path.exists(course_json):
+        plan["_category"] = json.load(open(course_json, encoding="utf-8")).get("category")
     stem = os.path.splitext(os.path.basename(plan_path))[0]
     out_path = out_path or os.path.join(HERE, "output", course_slug, stem + ".mp4")
     os.makedirs(os.path.dirname(out_path), exist_ok=True)

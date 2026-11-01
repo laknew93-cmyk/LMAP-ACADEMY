@@ -91,7 +91,7 @@
       "summary": "A plain-English picture of how ChatGPT, Gemini and Claude work, what they are good at, and where they go wrong.",
       "video": {
        "poster": "/videos/ai-in-60-minutes/01-01-what-ai-assistants-are.jpg",
-       "seconds": 429,
+       "seconds": 430,
        "src": "/videos/ai-in-60-minutes/01-01-what-ai-assistants-are.mp4"
       }
      },
@@ -102,7 +102,7 @@
       "summary": "Create a free account on ChatGPT, Gemini or Claude and check the settings that protect your privacy.",
       "video": {
        "poster": "/videos/ai-in-60-minutes/01-02-setting-up-safely.jpg",
-       "seconds": 426,
+       "seconds": 428,
        "src": "/videos/ai-in-60-minutes/01-02-setting-up-safely.mp4"
       }
      },
@@ -113,7 +113,7 @@
       "summary": "Use AI to write an email, summarise, explain, plan and rewrite, with ready-to-copy prompts.",
       "video": {
        "poster": "/videos/ai-in-60-minutes/01-03-first-five-prompts.jpg",
-       "seconds": 469,
+       "seconds": 470,
        "src": "/videos/ai-in-60-minutes/01-03-first-five-prompts.mp4"
       }
      }
@@ -140,7 +140,7 @@
       "summary": "Protect your personal and business data, recognise hallucinations and check facts before you rely on them.",
       "video": {
        "poster": "/videos/ai-in-60-minutes/02-02-privacy-and-fact-checking.jpg",
-       "seconds": 511,
+       "seconds": 510,
        "src": "/videos/ai-in-60-minutes/02-02-privacy-and-fact-checking.mp4"
       }
      },
@@ -499,7 +499,7 @@
       "summary": "Understand why vague prompts produce generic output and what expert-level results really look like.",
       "video": {
        "poster": "/videos/prompt-engineering-masterclass/01-01-why-prompts-fail.jpg",
-       "seconds": 608,
+       "seconds": 607,
        "src": "/videos/prompt-engineering-masterclass/01-01-why-prompts-fail.mp4"
       }
      },
@@ -510,7 +510,7 @@
       "summary": "Learn the six building blocks of a strong prompt and a 60-second checklist you can use on any task.",
       "video": {
        "poster": "/videos/prompt-engineering-masterclass/01-02-anatomy-of-a-great-prompt.jpg",
-       "seconds": 588,
+       "seconds": 589,
        "src": "/videos/prompt-engineering-masterclass/01-02-anatomy-of-a-great-prompt.mp4"
       }
      },
@@ -735,7 +735,7 @@
       "summary": "An honest look at what AI speeds up, what it doesn't change, and how to approach earning with it without the hype.",
       "video": {
        "poster": "/videos/ai-freelancing-and-business/01-01-what-ai-changes.jpg",
-       "seconds": 564,
+       "seconds": 563,
        "src": "/videos/ai-freelancing-and-business/01-01-what-ai-changes.mp4"
       }
      },
@@ -746,7 +746,7 @@
       "summary": "Seven practical services, from content writing to basic automation, and where AI helps versus where you must add value.",
       "video": {
        "poster": "/videos/ai-freelancing-and-business/01-02-services-clients-pay-for.jpg",
-       "seconds": 587,
+       "seconds": 586,
        "src": "/videos/ai-freelancing-and-business/01-02-services-clients-pay-for.mp4"
       }
      },
@@ -1211,7 +1211,7 @@
       "summary": "What the office 'data person' really does, where AI helps and where it doesn't, and the Indian datasets we'll use.",
       "video": {
        "poster": "/videos/ai-data-analysis-excel-power-bi/01-01-becoming-the-data-person.jpg",
-       "seconds": 609,
+       "seconds": 608,
        "src": "/videos/ai-data-analysis-excel-power-bi/01-01-becoming-the-data-person.mp4"
       }
      },
@@ -1452,7 +1452,7 @@
       "summary": "Understand automations, AI-powered workflows and agents (LLM + tools + memory + goal), and when each one fits.",
       "video": {
        "poster": "/videos/no-code-ai-agents-automation/01-01-automation-vs-ai-agent.jpg",
-       "seconds": 600,
+       "seconds": 598,
        "src": "/videos/no-code-ai-agents-automation/01-01-automation-vs-ai-agent.mp4"
       }
      },
@@ -1492,7 +1492,7 @@
       "summary": "Put an LLM inside your workflow and write prompts that return reliable labels and structured JSON.",
       "video": {
        "poster": "/videos/no-code-ai-agents-automation/02-03-adding-an-llm-step.jpg",
-       "seconds": 582,
+       "seconds": 580,
        "src": "/videos/no-code-ai-agents-automation/02-03-adding-an-llm-step.mp4"
       }
      },
@@ -1688,7 +1688,7 @@
       "summary": "Build an engineer's mental model of LLMs: next-token prediction, tokens, context windows, randomness, reasoning and embeddings.",
       "video": {
        "poster": "/videos/generative-ai-python-llm-apps/01-01-how-llms-work.jpg",
-       "seconds": 599,
+       "seconds": 597,
        "src": "/videos/generative-ai-python-llm-apps/01-01-how-llms-work.mp4"
       }
      },
@@ -1699,7 +1699,7 @@
       "summary": "Set up a Python project, store your API key safely, make your first call and understand every field of the response.",
       "video": {
        "poster": "/videos/generative-ai-python-llm-apps/01-02-first-api-call.jpg",
-       "seconds": 626,
+       "seconds": 623,
        "src": "/videos/generative-ai-python-llm-apps/01-02-first-api-call.mp4"
       }
      },
