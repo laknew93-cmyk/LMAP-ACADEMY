@@ -29,8 +29,9 @@ export default function LearnPage() {
         setCourse(data)
         if (user) {
           const e = await api.get(`/courses/${slug}/enrolled`)
-          setEnrolled(e.data.enrolled)
-          if (e.data.enrolled) {
+          const access = e.data.enrolled || e.data.admin_access
+          setEnrolled(access)
+          if (access) {
             const p = await api.get(`/courses/${slug}/progress`)
             setDone(new Set(p.data.completed))
           }

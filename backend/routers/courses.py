@@ -159,8 +159,9 @@ def check_enrollment(slug: str, db: Session = Depends(get_db), current_user: Use
     course = db.query(Course).filter(Course.slug == slug).first()
     if not course:
         raise HTTPException(status_code=404, detail="Course not found")
-    enrolled = is_enrolled(db, current_user, course.id) or current_user.role.value == "admin"
-    return {"enrolled": enrolled}
+    # Admins can open any course, but that isn't an enrolment: the course page should still
+    # show them what a customer sees.
+    return {"enrolled": is_enrolled(db, current_user, course.id), "admin_access": current_user.role.value == "admin"}
 
 
 @router.get("/{slug}/progress")

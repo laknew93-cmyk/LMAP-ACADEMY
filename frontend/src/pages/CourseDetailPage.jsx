@@ -17,6 +17,7 @@ export default function CourseDetailPage() {
   const navigate = useNavigate()
   const [lessonIds, setLessonIds] = useState([]) // [[id, ...] per module] from the API
   const [enrolled, setEnrolled] = useState(false)
+  const [adminAccess, setAdminAccess] = useState(false)
   const [paying, setPaying] = useState(false)
   const [expanded, setExpanded] = useState({ 0: true })
   const [toast, setToast] = useState(null)
@@ -27,7 +28,7 @@ export default function CourseDetailPage() {
   useEffect(() => {
     if (!course) return
     api.get(`/courses/${slug}`).then(r => setLessonIds(r.data.modules.map(m => m.videos.map(v => v.id)))).catch(() => {})
-    if (user) api.get(`/courses/${slug}/enrolled`).then(r => setEnrolled(r.data.enrolled)).catch(() => {})
+    if (user) api.get(`/courses/${slug}/enrolled`).then(r => { setEnrolled(r.data.enrolled); setAdminAccess(!!r.data.admin_access) }).catch(() => {})
   }, [slug, user])
 
   if (!course) return <Navigate to="/courses/" replace />
@@ -73,6 +74,11 @@ export default function CourseDetailPage() {
           <button onClick={handleBuy} disabled={paying} className="btn btn-primary" style={{ width: '100%', justifyContent: 'center' }}>
             <ShoppingCart size={18} /> {paying ? 'Processing…' : isFree ? 'Enrol for free' : 'Buy now'}
           </button>
+        )}
+        {adminAccess && !enrolled && (
+          <Link to={`/learn/${slug}`} className="btn btn-ghost btn-sm" style={{ width: '100%', justifyContent: 'center', marginTop: 8, border: '1px dashed var(--border)' }}>
+            Admin preview: open course
+          </Link>
         )}
         {!isFree && !enrolled && <CouponBox courseSlug={slug} applied={coupon} onChange={setCoupon} />}
         <ul className="check-list" style={{ marginTop: 18, fontSize: 14 }}>
@@ -149,7 +155,7 @@ export default function CourseDetailPage() {
                       <span className="row muted" style={{ gap: 8, fontSize: 13, flexShrink: 0 }}>{mod.lessons.length} lessons {expanded[mi] ? <ChevronUp size={18} /> : <ChevronDown size={18} />}</span>
                     </button>
                     {expanded[mi] && mod.lessons.map((l, li) => {
-                      const open = l.preview || enrolled
+                      const open = l.preview || enrolled || adminAccess
                       const link = open && lessonLink(mi, li)
                       return (
                         <div key={li} className="lesson-row">
