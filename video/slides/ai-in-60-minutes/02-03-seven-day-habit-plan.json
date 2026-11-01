@@ -1,0 +1,76 @@
+{
+  "course": "AI in 60 Minutes",
+  "lesson": "Module 2 · Lesson 3",
+  "title": "Your 7-Day AI Habit Plan and Where to Go Next",
+  "segments": [
+    {
+      "kind": "title",
+      "say": "Welcome to AI in 60 Minutes, module 2, lesson 3: Your 7-Day AI Habit Plan and Where to Go Next.\n\nKnowing how to use AI is one thing. Actually using it is another. In this final lesson, you'll get a simple seven-day plan so that AI becomes a natural part of your routine. And we'll finish with some ideas for where to go next."
+    },
+    {
+      "title": "Why a habit matters",
+      "bullets": ["Most people try once, get an average answer, forget it", "Real benefit comes from a little use every day", "Until it feels as natural as opening Google Maps"],
+      "quote": "Small, regular practice beats one long session.",
+      "say": "Let's start with why a habit matters. Most people try ChatGPT once, get an average answer, and forget about it. The people who really benefit are the ones who use it a little every day, until reaching for it feels as natural as opening Google Maps. Here's the thing. Small, regular practice beats one long session."
+    },
+    {
+      "title": "The 7-day plan: days 1–2",
+      "grid": [
+        ["Day 1 · Writing", "Draft one real email, then edit in your voice"],
+        ["Day 2 · Summarising", "Anonymised long text – 5 bullets plus actions"]
+      ],
+      "note": "10–15 minutes a day, one skill per day, applied to your real life.",
+      "say": "The plan takes just ten to fifteen minutes a day. Each day focuses on one skill from this course, applied to your real life. The full plan is in a table in the lesson notes, but let's walk through it day by day.\n\nDay one is about writing. Use AI to draft one real email or message you need to send today. Then edit it in your own voice before you send it.\n\nDay two is about summarising. Paste in a long article, notice or email thread, anonymised of course, and ask for five bullet points plus action items."
+    },
+    {
+      "title": "The 7-day plan: days 3–4",
+      "grid": [
+        ["Day 3 · Explaining", "A topic that always confused you, with an example"],
+        ["Day 4 · Planning", "Your week, a timetable or an event – as a table"]
+      ],
+      "say": "Day three is about explaining. Pick one topic that has always confused you, such as a work term, a tax concept or a school subject. Then ask AI to explain it simply, with an example.\n\nDay four is about planning. Plan something real. That could be your week, a study timetable, a family function, or a sales push for your business. Ask for the plan as a table."
+    },
+    {
+      "title": "The 7-day plan: days 5–7",
+      "grid": [
+        ["Day 5 · Rewriting", "Improve your resume or a product description"],
+        ["Day 6 · Fact-checking", "Verify a factual answer from your field"],
+        ["Day 7 · Reviewing", "Find the biggest time-saver, save 3 best prompts"]
+      ],
+      "say": "Day five is about rewriting. Take something you wrote recently, like your resume summary or a product description, and improve it using the role, task, context, format formula.\n\nDay six is about fact-checking. Ask a factual question in your field, then use the fact-check routine from lesson five to verify it.\n\nAnd day seven is about reviewing. Look back at the week. Which use saved you the most time? Save your three best prompts as templates in your notes app."
+    },
+    {
+      "title": "Best uses for you",
+      "grid": [
+        ["Students", "Tough chapters, practice questions, revision plans"],
+        ["Working professionals", "Emails, meeting notes, presentations, reports"],
+        ["Homemakers & returners", "Meals, budgets, interviews, resume, new skills"],
+        ["Small business owners", "WhatsApp replies, captions, policies, offers"]
+      ],
+      "say": "Now, the best uses depend on who you are, so here are some ideas. If you're a student, use AI to explain tough chapters, create practice questions, plan your revision before exams, and improve college application essays. If you're a working professional, use it to draft emails, summarise meeting notes, prepare for presentations, and rewrite reports more clearly. If you're a homemaker or returning to your career, use it to plan meals and budgets, prepare for interviews, refresh your resume, and learn a new skill step by step. And if you're a small business owner, use it to write WhatsApp replies to customers, create Instagram captions, draft simple policies, and plan a festive season offer."
+    },
+    {
+      "title": "Five tips to make the habit stick",
+      "numbered": ["Attach it to something you already do", "Keep a prompt notebook", "Use voice", "Try your own language", "Stay safe – privacy and fact-checks"],
+      "note": "Example: open your AI assistant with your morning chai.",
+      "say": "Let's look at some tips to make the habit stick. There are five.\n\nFirst, attach it to something you already do. For example, open your AI assistant with your morning chai, or right after you check your email.\n\nSecond, keep a prompt notebook. Every time a prompt works well, save it. In a month, you'll have your own personal toolkit.\n\nThird, use voice. Most assistant apps let you speak your prompt. That's handy when you're busy, or if you're more comfortable speaking than typing.\n\nFourth, try your own language. If you think more clearly in Hindi, Bengali, Kannada or another language, write your prompts in it. And ask for answers in whichever language you need.\n\nAnd fifth, stay safe. Keep following the privacy and fact-check habits from lesson five, every single time."
+    },
+    {
+      "title": "Where to go next",
+      "bullets": ["Spot bigger chances: automate repetitive work", "Use AI inside Gmail, Word and Excel", "Next: AI Essentials – ChatGPT, Gemini and Copilot", "Then: Prompt Engineering Masterclass"],
+      "say": "So, where do you go next? Once AI is part of your day, you'll start noticing bigger opportunities. Things like automating repetitive work, using AI inside Gmail, Word and Excel, and writing prompts that produce consistently excellent results. If you want to go deeper, the natural next step is our course, AI Essentials: ChatGPT, Gemini and Copilot for Everyday Work. It covers using AI across documents, spreadsheets, presentations and email. After that, the Prompt Engineering Masterclass teaches advanced techniques for getting reliable, high-quality output for complex tasks. Both build directly on what you've learned here."
+    },
+    {
+      "kind": "exercise",
+      "title": "Try it yourself · 10 minutes",
+      "numbered": ["Copy the 7-day plan into your notes or a notebook", "Write a specific real task next to each day", "Pick a daily trigger and set 7 phone reminders", "Do day one right now", "Mark all lessons complete for your certificate"],
+      "say": "Now it's time to try it yourself. This takes about ten minutes, so pause the video and work along.\n\nStep one. Copy the seven-day plan into your phone's notes app or a notebook.\n\nStep two. Next to each day, write the specific real task you'll do. For example, for day one, you might write, \"Email to school about my son's fee receipt.\"\n\nStep three. Choose your daily trigger, such as your morning chai, your lunch break, or after the kids are asleep. Then set a phone reminder for the next seven days.\n\nStep four. Do day one right now.\n\nAnd step five. Mark all the lessons in this course as complete to receive your free certificate.\n\nGo ahead and pause the video now to set up your plan."
+    },
+    {
+      "kind": "recap",
+      "title": "Key takeaways",
+      "bullets": ["Short daily practice builds comfort fastest", "7 days: write, summarise, explain, plan, rewrite, check", "Save prompts that work – build your own toolkit", "Keep privacy and fact-checking habits every time", "Ready for more? Build on it with structured learning"],
+      "say": "Let's recap. Short daily practice is the fastest way to get comfortable with AI. The seven-day plan covers writing, summarising, explaining, planning, rewriting and fact-checking. Save the prompts that work well, to build your own reusable toolkit. Keep your privacy and fact-checking habits every time you use AI. And when you're ready to go further, build on these skills with more advanced, structured learning.\n\nAnd that brings us to the end of AI in 60 Minutes. Congratulations! You've gone from your very first prompt to a clear formula, safe habits, and a plan to make AI part of your everyday life. That's a real achievement. Make sure you mark this lesson complete, and then claim your free certificate. You've earned it. Thank you for learning with us, and I hope to see you in your next course."
+    }
+  ]
+}

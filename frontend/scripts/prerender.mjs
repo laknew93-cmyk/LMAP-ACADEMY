@@ -128,6 +128,16 @@ for (const c of courses) {
       },
       crumbs([['Courses', '/courses'], [c.title, p]]),
       faqLd(c.faqs),
+      ...c.modules.flatMap(m => m.lessons).filter(l => l.video).map(l => ({
+        '@type': 'VideoObject',
+        name: `${l.title} | ${c.title}`,
+        description: l.summary || c.subtitle,
+        thumbnailUrl: SITE.url + l.video.poster,
+        contentUrl: SITE.url + l.video.src,
+        uploadDate: TODAY,
+        duration: `PT${Math.floor(l.video.seconds / 60)}M${l.video.seconds % 60}S`,
+        inLanguage: 'en-IN',
+      })),
     ],
     body: `<nav><a href="/courses/">Courses</a> / ${esc(c.category)}</nav>
 <h1>${esc(c.title)}</h1><p>${esc(c.subtitle)}</p>

@@ -1,0 +1,97 @@
+{
+  "course": "AI in 60 Minutes",
+  "lesson": "Module 2 · Lesson 2",
+  "title": "What Never to Paste into AI (and How to Fact-Check)",
+  "segments": [
+    {
+      "kind": "title",
+      "say": "Welcome to AI in 60 Minutes, module 2, lesson 2: What Never to Paste into AI (and How to Fact-Check).\n\nAI assistants are useful. But they're not a locked diary, and they're not always right. This lesson covers the two habits that keep you safe. First, protecting what you share. And second, checking what you get back."
+    },
+    {
+      "title": "Part 1: What never to paste into AI",
+      "bullets": ["Everything you type goes to the company's servers", "It may be stored or reviewed for safety", "It may be used to improve their models", "It depends on your settings"],
+      "quote": "If you wouldn't post it on a public notice board, don't paste it into a free AI chat.",
+      "say": "Let's start with part one: what never to paste into AI.\n\nAnything you type into an AI chat is sent to the company's servers. Depending on your settings, it may be stored, reviewed for safety, or used to improve their models. So here's a simple rule to remember. If you wouldn't post it on a public notice board, don't paste it into a free AI chat."
+    },
+    {
+      "title": "Six things never to share",
+      "grid": [
+        ["Passwords & codes", "Email, banking, UPI passwords, PINs, OTPs"],
+        ["Financial details", "Card numbers, CVV, account numbers, net banking IDs"],
+        ["Government IDs", "Aadhaar, PAN, passport, voter ID"],
+        ["Health records", "Lab reports or prescriptions with your name"],
+        ["Other people's data", "Customer phone lists, an employee's salary slip"],
+        ["Confidential work", "Client contracts, unreleased plans, financials"]
+      ],
+      "say": "There are six types of information you should never share. The lesson notes have them in a table, but let's go through them. First, passwords and codes, like your email, banking or U P I passwords, your U P I PIN, and OTPs. Second, financial details, such as card numbers, CVV, bank account numbers and net banking IDs. Third, government IDs, like your Aadhaar number, PAN, passport number or voter ID. Fourth, health records, such as lab reports or prescriptions with your name on them. Fifth, other people's private data, for example a customer list with phone numbers, or an employee's salary slip. And sixth, confidential work material, like client contracts, unreleased plans and internal financials."
+    },
+    {
+      "title": "Anonymise before you paste",
+      "numbered": ["Replace names with \"Client A\" or \"Employee 1\"", "Remove phone numbers, addresses, account and ID numbers", "Round or change exact figures if they don't matter"],
+      "say": "Now, does that mean you can't get help with sensitive documents? Not at all. You can still get help with sensitive tasks. You just need to anonymise the document first, by removing or replacing identifying details before you paste it. There are three simple ways to do this. First, replace names with something like \"Client A\" or \"Employee 1\". Second, remove phone numbers, addresses, account numbers and ID numbers. And third, round or change exact figures if the precise number doesn't matter."
+    },
+    {
+      "title": "Anonymising in practice",
+      "bullets": ["CA firm, Chennai: rewording a reply to a notice", "Swap client name, PAN and GSTIN for placeholders", "Get the improved wording, then add real details back", "At work, check your company's AI policy first"],
+      "note": "Unsure what's allowed at work? Ask before pasting anything work-related.",
+      "say": "Let's look at an example. Imagine an article assistant at a CA firm in Chennai who wants help rewording a reply to a notice. They can replace the client's name, PAN and G S T I N with placeholders, get the improved wording from the AI, and then put the real details back in afterwards.\n\nAnd if you're using AI at work, check your company's policy. Many companies have rules about which AI tools staff may use, and what data can go into them. Some even provide an approved business version. If you're unsure, ask before pasting anything work-related."
+    },
+    {
+      "title": "Part 2: Hallucinations",
+      "bullets": ["Confident answers that are simply wrong", "AI predicts likely-sounding text", "It doesn't check facts like a person would"],
+      "say": "Now let's move to part two: hallucinations, and how to catch them.\n\nIn lesson one, you learned that AI can produce confident answers that are simply wrong. These are called hallucinations. They happen because the AI predicts likely-sounding text. It doesn't check facts the way a person would."
+    },
+    {
+      "title": "Where hallucinations are most common",
+      "grid": [
+        ["Specific numbers", "Statistics, dates, prices, tax and interest rates"],
+        ["Names & sources", "Book titles, papers, court judgments, links"],
+        ["Recent events", "News, new rules, changes after training"],
+        ["Niche local details", "A shop's timings, a college's cut-off"]
+      ],
+      "say": "So where are hallucinations most common? There are four areas to watch. First, specific numbers, like statistics, dates, prices, tax rates and interest rates. Second, names and sources, such as book titles, research papers, court judgments and website links. Third, recent events, like news, new rules, or changes that happened after the model's training. And fourth, niche local details, like a small shop's timings or a specific college's cut-off."
+    },
+    {
+      "title": "Warning signs",
+      "bullets": ["Very precise figures with no source", "References or links you can't find", "Answers that change when you ask again", "Anything too neat or too good to be true"],
+      "say": "There are also some warning signs to look out for. Be careful when you see very precise figures with no source. Watch out for a reference or link that you can't find when you search for it. Notice if an answer changes when you ask the same question again. And be wary of anything that sounds too neat, or too good to be true."
+    },
+    {
+      "title": "Part 3: A simple fact-check routine",
+      "numbered": ["Ask for sources", "Verify on official sites", "Cross-check with a second assistant", "Ask the AI to doubt itself", "Use a human expert for big decisions"],
+      "highlight": 0,
+      "note": "\"What are your sources for this? Which official website should I check?\"",
+      "say": "That brings us to part three: a simple fact-check routine. Use this whenever an answer matters, especially for money, health, law, exams, or anything you'll share publicly. There are five steps.\n\nStep one. Ask for sources. You might say, \"What are your sources for this? Which official website should I check?\" Then visit those sources yourself."
+    },
+    {
+      "title": "Verify and cross-check",
+      "grid": [
+        ["Official sites", "Tax portals, board or university sites, a doctor"],
+        ["Second assistant", "Ask Gemini what ChatGPT said, or vice versa"]
+      ],
+      "quote": "Agreement isn't proof, but disagreement is a red flag.",
+      "say": "Step two. Verify on official sites. For tax rules, check the official income tax or G S T portals. For exam dates, check the board or university website. And for health, ask a qualified doctor.\n\nStep three. Cross-check with a second assistant. Ask Gemini what ChatGPT told you, or the other way around. Agreement isn't proof, but disagreement is a red flag."
+    },
+    {
+      "title": "Doubt it, then ask an expert",
+      "grid": [
+        ["Make AI doubt itself", "\"Which parts are you least sure about?\""],
+        ["Human expert", "AI preps questions for your CA, doctor or lawyer"]
+      ],
+      "note": "\"Review your previous answer. List facts, numbers or claims I should verify, and where to check each.\"",
+      "say": "Step four. Ask the AI to doubt itself. Try asking, \"Which parts of your answer are you least sure about?\" It will often point out its weaker claims.\n\nAnd step five. Use a human expert for big decisions. AI can help you prepare better questions for your CA, doctor or lawyer, but it shouldn't replace them.\n\nHere's a handy prompt you can use after any answer. Here's the prompt: \"Review your previous answer. List any facts, numbers or claims I should verify before relying on them, and suggest where I could check each one.\""
+    },
+    {
+      "kind": "exercise",
+      "title": "Try it yourself · 15 minutes",
+      "numbered": ["Re-check your history and model-improvement settings", "Make an anonymised copy of a real document", "Ask a factual question in an area you know well", "Spot errors, then paste the review prompt", "Verify one fact on an official website"],
+      "say": "Now it's time to try it yourself. This takes about ten to fifteen minutes, so pause the video whenever you need to.\n\nStep one. Open your AI assistant and check your privacy settings again. Have you decided on your chat history and model-improvement options?\n\nStep two. Take a real document or message you might want help with. Make an anonymised copy by replacing names, numbers and IDs with placeholders.\n\nStep three. Ask the AI a factual question in an area you know well, such as your city, your job, or your subject.\n\nStep four. Look for any errors in the answer. Then paste the review prompt from this lesson, and see what the AI flags.\n\nAnd step five. Verify one fact from the answer on an official website.\n\nGo ahead and pause the video now, and give it a try."
+    },
+    {
+      "kind": "recap",
+      "title": "Key takeaways",
+      "bullets": ["Never paste passwords, OTPs, financial details or IDs", "Anonymise with placeholders before asking for help", "Watch numbers, sources, recent events, local details", "Verify important facts on official sites and with experts", "Ask the AI which parts it's unsure about"],
+      "say": "Let's recap. Never paste passwords, OTPs, financial details, government IDs, or other people's private data. Anonymise documents by replacing names and numbers with placeholders before asking for help. Hallucinations are most common with numbers, sources, recent events and local details. For anything important, verify on official sites and consult a qualified person. And asking the AI which parts it's unsure about is a quick, useful check.\n\nThat's it for this lesson. Mark it complete, and I'll see you in the next one."
+    }
+  ]
+}

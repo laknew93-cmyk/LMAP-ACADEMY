@@ -21,3 +21,4 @@ video/.env
 video/output/
 video/state.json
 video/state.json.tmp
+video/.venv/

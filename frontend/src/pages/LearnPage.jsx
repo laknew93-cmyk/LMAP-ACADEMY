@@ -75,6 +75,9 @@ export default function LearnPage() {
   if (!course || !active) return <div style={{ display: 'flex', justifyContent: 'center', padding: 120 }}><div className="spinner" /></div>
 
   const token = localStorage.getItem('lmap_token')
+  // Free/preview lessons have a static video published with the site (catalog), others may stream from the API.
+  const li = course.modules[active.mi].videos.findIndex(v => v.id === active.id)
+  const staticVideo = meta?.modules?.[active.mi]?.lessons?.[li]?.video
   const isDone = done.has(active.id)
 
   return (
@@ -100,7 +103,10 @@ export default function LearnPage() {
           )}
           {lesson?.content !== undefined && (
             <>
-              {lesson.has_video && (
+              {staticVideo ? (
+                <video key={active.id} controls preload="metadata" poster={staticVideo.poster} src={staticVideo.src}
+                  style={{ width: '100%', aspectRatio: '16 / 9', background: '#000', borderRadius: 12, marginBottom: 28 }} />
+              ) : lesson.has_video && (
                 <video key={active.id} controls controlsList="nodownload" style={{ width: '100%', background: '#000', borderRadius: 12, marginBottom: 28 }}
                   src={`${BASE_URL}/videos/${active.id}/stream${token ? `?token=${token}` : ''}`} />
               )}

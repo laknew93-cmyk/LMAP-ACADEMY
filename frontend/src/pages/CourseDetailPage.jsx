@@ -52,6 +52,7 @@ export default function CourseDetailPage() {
     }
   }
 
+  const previewVideo = course.modules.flatMap(m => m.lessons).find(l => l.video)
   const related = COURSES.filter(c => c.slug !== slug && c.price > 0).slice(0, 3)
 
   const buyBox = (
@@ -116,6 +117,15 @@ export default function CourseDetailPage() {
       <div className="section" style={{ paddingTop: 40 }}>
         <div className="container split-aside">
           <div className="stack" style={{ gap: 48, minWidth: 0 }}>
+            {previewVideo && (
+              <section>
+                <h2 style={{ fontSize: 26, marginBottom: 6 }}>Watch a free lesson</h2>
+                <p className="muted" style={{ marginBottom: 16 }}>{previewVideo.title} · {Math.round(previewVideo.video.seconds / 60)} min</p>
+                <video controls preload="metadata" poster={previewVideo.video.poster} src={previewVideo.video.src}
+                  style={{ width: '100%', aspectRatio: '16 / 9', background: '#000', borderRadius: 12 }} />
+              </section>
+            )}
+
             <section>
               <h2 style={{ fontSize: 26, marginBottom: 18 }}>What you'll learn</h2>
               <ul className="check-list outcomes">{course.outcomes?.map(o => <li key={o}>{o}</li>)}</ul>

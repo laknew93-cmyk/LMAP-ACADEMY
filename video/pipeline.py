@@ -120,11 +120,11 @@ def cmd_voices(args):
     print(f"\n{shown} of {len(voices)} voices shown")
 
 
-def submit(slug, stem, text, title):
+def submit(slug, stem, text, title, avatar_id=None, voice_id=None):
     body = {
         "type": "avatar",
-        "avatar_id": need("HEYGEN_AVATAR_ID"),
-        "voice_id": need("HEYGEN_VOICE_ID"),
+        "avatar_id": avatar_id or need("HEYGEN_AVATAR_ID"),
+        "voice_id": voice_id or need("HEYGEN_VOICE_ID"),
         "script": text,
         "title": title,
         "resolution": ENV.get("HEYGEN_RESOLUTION", "1080p"),
@@ -132,8 +132,13 @@ def submit(slug, stem, text, title):
     }
     if ENV.get("HEYGEN_ENGINE"):
         body["engine"] = {"type": ENV["HEYGEN_ENGINE"]}
+    voice_settings = {}
     if ENV.get("HEYGEN_VOICE_SPEED"):
-        body["voice_settings"] = {"speed": float(ENV["HEYGEN_VOICE_SPEED"])}
+        voice_settings["speed"] = float(ENV["HEYGEN_VOICE_SPEED"])
+    if ENV.get("HEYGEN_VOICE_LOCALE"):
+        voice_settings["locale"] = ENV["HEYGEN_VOICE_LOCALE"]  # e.g. en-IN for Indian-English accent
+    if voice_settings:
+        body["voice_settings"] = voice_settings
     if ENV.get("HEYGEN_BACKGROUND_COLOR"):
         body["background"] = {"type": "color", "value": ENV["HEYGEN_BACKGROUND_COLOR"]}
     data = hg("POST", "/v3/videos", json=body)
@@ -213,17 +218,20 @@ def cmd_generate(args):
     cmd_status(args)
 
 
-def cmd_test(_):
+def cmd_test(args):
+    """Short test clip; `test AVATAR_ID VOICE_ID name` to compare presenters before choosing."""
     state = load_state()
-    text = ("Hi, and welcome to LMAP Academy. This is a short test of our lesson video setup. "
-            "If you can see and hear me clearly, we're ready to record the full courses.")
-    vid = submit("_test", "test", text, "LMAP test video")
-    state["_test/test"] = {"video_id": vid, "status": "pending"}
+    text = ("Hi, and welcome to LMAP Academy. In this course, you'll learn how to use AI tools like ChatGPT, "
+            "Gemini and Claude to save hours every week. Let's get started.")
+    name = args.name or "test"
+    vid = submit("_test", name, text, f"LMAP test {name}", args.avatar, args.voice)
+    state[f"_test/{name}"] = {"video_id": vid, "status": "pending"}
     save_state(state)
-    print("Submitted test video, waiting for HeyGen…")
+    print(f"Submitted test video {name}, waiting for HeyGen…")
     while poll(state):
         time.sleep(20)
-    print(f"Saved: {out_path('_test', 'test')}" if os.path.exists(out_path("_test", "test")) else state["_test/test"])
+    path = out_path("_test", name)
+    print(f"Saved: {path}" if os.path.exists(path) else state[f"_test/{name}"])
 
 
 def cmd_status(_):
@@ -269,7 +277,7 @@ def main():
     sub = p.add_subparsers(dest="cmd", required=True)
     sub.add_parser("avatars")
     v = sub.add_parser("voices"); v.add_argument("filter", nargs="?")
-    sub.add_parser("test")
+    t = sub.add_parser("test"); t.add_argument("avatar", nargs="?"); t.add_argument("voice", nargs="?"); t.add_argument("name", nargs="?")
     sub.add_parser("status")
     for name in ("generate", "upload"):
         c = sub.add_parser(name)

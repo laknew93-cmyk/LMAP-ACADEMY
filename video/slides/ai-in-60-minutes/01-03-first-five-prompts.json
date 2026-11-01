@@ -1,0 +1,75 @@
+{
+  "course": "AI in 60 Minutes",
+  "lesson": "Module 1 · Lesson 3",
+  "title": "Your First 5 Useful Prompts",
+  "segments": [
+    {
+      "kind": "title",
+      "say": "Welcome to AI in 60 Minutes, module 1, lesson 3: Your First 5 Useful Prompts.\n\nThis is where AI stops being theory and starts saving you time. You'll learn five prompts that cover most everyday needs, and you'll use each one on a real task from your own life."
+    },
+    {
+      "title": "Five everyday prompts",
+      "numbered": ["Write an email or message", "Summarise something long", "Explain something confusing", "Plan something", "Rewrite or improve"],
+      "highlight": 0,
+      "note": "Write a polite email to my landlord, Mr. Sharma, asking him to fix a leaking tap...",
+      "say": "Prompt number one. Write an email or message. Most of us lose time staring at a blank screen. AI is great at the first draft. Let's look at an example.\n\nHere's the prompt: Write a polite email to my landlord, Mr. Sharma, asking him to fix a leaking bathroom tap. It has been leaking for a week. Keep it short and respectful, and ask if a plumber can come this Saturday.\n\nNotice what makes this work. It says who it's for, what the problem is, the tone, and the ask. And if the reply comes back too formal, just say \"make it a bit friendlier.\" You can keep refining in the same chat."
+    },
+    {
+      "title": "Five everyday prompts",
+      "numbered": ["Write an email or message", "Summarise something long", "Explain something confusing", "Plan something", "Rewrite or improve"],
+      "highlight": 1,
+      "note": "Summarise the text below in 5 bullet points. Then tell me if there is anything I need to do, and by when.",
+      "say": "Prompt number two. Summarise something long. Paste in a long text and ask for the key points. This works for school circulars, society notices, policy documents and long email threads. Just remember to remove private details first. There's more on that in Module 2.\n\nHere's the prompt: Summarise the text below in 5 bullet points. Then tell me if there is anything I need to do, and by when. And then, underneath, you paste in your text.\n\nThat second line is the secret. Asking \"what do I need to do?\" turns a summary into an action list. And many assistants also let you upload a PDF instead of pasting text."
+    },
+    {
+      "title": "Five everyday prompts",
+      "numbered": ["Write an email or message", "Summarise something long", "Explain something confusing", "Plan something", "Rewrite or improve"],
+      "highlight": 2,
+      "note": "Explain what a mutual fund SIP is, as if I am a complete beginner. Use a simple rupee example.",
+      "say": "Prompt number three. Explain something confusing. AI is a patient teacher. You can ask the same question five times, without any embarrassment.\n\nHere's the prompt: Explain what a mutual fund SIP is, as if I am a complete beginner. Use a simple everyday example with rupees. Keep it under 150 words.\n\nIf it still feels complicated, follow up with \"explain that more simply,\" or \"give me another example.\" Students can use this for tough concepts in physics or accounts. Working professionals can use it for unfamiliar jargon they heard in a meeting.\n\nBut remember this. For money, health or legal matters, use AI to understand the basics, and then confirm with a qualified person or an official source."
+    },
+    {
+      "title": "Five everyday prompts",
+      "numbered": ["Write an email or message", "Summarise something long", "Explain something confusing", "Plan something", "Rewrite or improve"],
+      "highlight": 3,
+      "note": "Help me plan a 3-day family trip from Bengaluru to Mysuru and Coorg... day-by-day, in a table.",
+      "say": "Prompt number four. Plan something. AI is excellent at turning a fuzzy goal into a structured plan.\n\nHere's the prompt: Help me plan a 3-day family trip from Bengaluru to Mysuru and Coorg for 2 adults and 2 kids aged 6 and 10. We prefer relaxed mornings and want one nature activity per day. Give a day-by-day plan in a table.\n\nThe same pattern works for a study timetable before exams, a weekly meal plan, or a launch plan for a small business's new product. Just always check timings, prices and opening hours yourself, since the AI may not have current information."
+    },
+    {
+      "title": "Five everyday prompts",
+      "numbered": ["Write an email or message", "Summarise something long", "Explain something confusing", "Plan something", "Rewrite or improve"],
+      "highlight": 4,
+      "note": "Rewrite this message to a customer so it sounds professional but warm. Keep it WhatsApp-short.",
+      "say": "Prompt number five. Rewrite or improve. You write something rough, and AI polishes it.\n\nHere's the prompt: Rewrite this message to a customer so it sounds professional but warm. Keep it short enough for WhatsApp. And then the rough message: \"sorry order late, courier issue, will reach by thursday pakka.\"\n\nYou can also ask it to do a few other things. You can ask it to fix grammar without changing the meaning. You can ask it to make something shorter. You can ask it to translate into Hindi, Tamil, Marathi or another language. And you can ask it to change the tone, making it more formal, more friendly, or more confident."
+    },
+    {
+      "title": "Starting lines for each prompt",
+      "grid": [
+        ["Email", "Write a [tone] email to [person] about..."],
+        ["Summary", "Summarise the text below in [N] bullet points"],
+        ["Explain", "Explain [topic] as if I am a beginner, with an example"],
+        ["Plan", "Help me plan [goal] for [who], with [constraints]"],
+        ["Rewrite", "Rewrite this to sound [tone], keeping it [length]"]
+      ],
+      "say": "Now, there's a quick reference table in the lesson notes below this video. It gives you a starting line for each of the five prompt types. For an email or message, start with \"Write a,\" then the tone, then \"email to,\" then the person, then \"about.\" For a summary, start with \"Summarise the text below in,\" then a number, then \"bullet points.\" For an explanation, try \"Explain,\" then your topic, then \"as if I am a beginner, with an example.\" For a plan, try \"Help me plan,\" then your goal, then who it's for, and your constraints. And for a rewrite, start with \"Rewrite this to sound,\" then the tone, and \"keeping it,\" then the length you want."
+    },
+    {
+      "title": "The magic is in the follow-up",
+      "bullets": ["Beginners often accept the first answer", "Treat it like a conversation instead", "\"Make it shorter\" or \"Add a line thanking them\"", "\"Give me two more options\" or \"Too formal – it's for a friend\""],
+      "quote": "Two or three follow-ups turn a decent answer into a great one.",
+      "say": "Here's where the magic really happens: the follow-up. Beginners often accept the first answer. Instead, treat it like a conversation. You can say things like \"Make it shorter.\" Or, \"Add a line thanking them.\" Or, \"Give me two more options.\" Or even, \"That is too formal, I am writing to a friend.\"\n\nTwo or three follow-ups usually turn a decent answer into a great one."
+    },
+    {
+      "kind": "exercise",
+      "title": "Try it yourself · 15 minutes",
+      "numbered": ["Open your assistant and start a new chat", "Pick the prompt type that fits your first task", "Adapt the example with real, non-personal details", "Send it, then make at least two follow-ups", "Repeat for your other two tasks – note the biggest time-saver"],
+      "say": "Now it's your turn to try it yourself. This takes about fifteen minutes. You'll use the list of three tasks you wrote in Lesson 1. Pause the video whenever you need to.\n\nStep one. Open your AI assistant and start a new chat.\n\nStep two. Pick the prompt type that fits your first task. That's email, summary, explain, plan or rewrite.\n\nStep three. Adapt the example prompt with your real details. But avoid personal information, like phone numbers or account details.\n\nStep four. Send it, and then make at least two follow-up requests to improve the answer.\n\nStep five. Repeat this for your other two tasks, each in a new chat.\n\nAnd step six. Note which result saved you the most time."
+    },
+    {
+      "kind": "recap",
+      "title": "Key takeaways",
+      "bullets": ["Email, summarise, explain, plan, rewrite – most needs covered", "Specific details – who, what, tone, length – get better answers", "\"What do I need to do?\" turns a summary into actions", "Follow up – don't stop at the first reply", "Check facts, prices and timings yourself"],
+      "say": "Let's recap. Five prompt types, email, summarise, explain, plan and rewrite, cover most everyday needs. Specific details, such as who, what, tone and length, produce better answers. Asking \"what do I need to do?\" turns a summary into an action list. Follow-up requests improve answers quickly, so don't stop at the first reply. And check facts, prices and timings yourself, especially for money, health and travel.\n\nThat's it for this lesson. Mark it complete, and I'll see you in the next one."
+    }
+  ]
+}

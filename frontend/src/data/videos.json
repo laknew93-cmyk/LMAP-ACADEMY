@@ -1,0 +1,102 @@
+{
+ "ai-content-creation-personal-branding/01-01-ai-and-personal-branding": {
+  "poster": "/videos/ai-content-creation-personal-branding/01-01-ai-and-personal-branding.jpg",
+  "seconds": 589,
+  "src": "/videos/ai-content-creation-personal-branding/01-01-ai-and-personal-branding.mp4"
+ },
+ "ai-content-creation-personal-branding/02-04-avoid-ai-sounding-writing": {
+  "poster": "/videos/ai-content-creation-personal-branding/02-04-avoid-ai-sounding-writing.jpg",
+  "seconds": 581,
+  "src": "/videos/ai-content-creation-personal-branding/02-04-avoid-ai-sounding-writing.mp4"
+ },
+ "ai-data-analysis-excel-power-bi/01-01-becoming-the-data-person": {
+  "poster": "/videos/ai-data-analysis-excel-power-bi/01-01-becoming-the-data-person.jpg",
+  "seconds": 609,
+  "src": "/videos/ai-data-analysis-excel-power-bi/01-01-becoming-the-data-person.mp4"
+ },
+ "ai-data-analysis-excel-power-bi/02-01-lookups-xlookup-index-match": {
+  "poster": "/videos/ai-data-analysis-excel-power-bi/02-01-lookups-xlookup-index-match.jpg",
+  "seconds": 615,
+  "src": "/videos/ai-data-analysis-excel-power-bi/02-01-lookups-xlookup-index-match.mp4"
+ },
+ "ai-essentials-chatgpt-gemini-copilot/01-01-how-ai-assistants-work": {
+  "poster": "/videos/ai-essentials-chatgpt-gemini-copilot/01-01-how-ai-assistants-work.jpg",
+  "seconds": 527,
+  "src": "/videos/ai-essentials-chatgpt-gemini-copilot/01-01-how-ai-assistants-work.mp4"
+ },
+ "ai-essentials-chatgpt-gemini-copilot/01-04-prompting-basics": {
+  "poster": "/videos/ai-essentials-chatgpt-gemini-copilot/01-04-prompting-basics.jpg",
+  "seconds": 550,
+  "src": "/videos/ai-essentials-chatgpt-gemini-copilot/01-04-prompting-basics.mp4"
+ },
+ "ai-freelancing-and-business/01-01-what-ai-changes": {
+  "poster": "/videos/ai-freelancing-and-business/01-01-what-ai-changes.jpg",
+  "seconds": 564,
+  "src": "/videos/ai-freelancing-and-business/01-01-what-ai-changes.mp4"
+ },
+ "ai-freelancing-and-business/01-02-services-clients-pay-for": {
+  "poster": "/videos/ai-freelancing-and-business/01-02-services-clients-pay-for.jpg",
+  "seconds": 587,
+  "src": "/videos/ai-freelancing-and-business/01-02-services-clients-pay-for.mp4"
+ },
+ "ai-in-60-minutes/01-01-what-ai-assistants-are": {
+  "poster": "/videos/ai-in-60-minutes/01-01-what-ai-assistants-are.jpg",
+  "seconds": 429,
+  "src": "/videos/ai-in-60-minutes/01-01-what-ai-assistants-are.mp4"
+ },
+ "ai-in-60-minutes/01-02-setting-up-safely": {
+  "poster": "/videos/ai-in-60-minutes/01-02-setting-up-safely.jpg",
+  "seconds": 426,
+  "src": "/videos/ai-in-60-minutes/01-02-setting-up-safely.mp4"
+ },
+ "ai-in-60-minutes/01-03-first-five-prompts": {
+  "poster": "/videos/ai-in-60-minutes/01-03-first-five-prompts.jpg",
+  "seconds": 469,
+  "src": "/videos/ai-in-60-minutes/01-03-first-five-prompts.mp4"
+ },
+ "ai-in-60-minutes/02-01-prompt-formula": {
+  "poster": "/videos/ai-in-60-minutes/02-01-prompt-formula.jpg",
+  "seconds": 516,
+  "src": "/videos/ai-in-60-minutes/02-01-prompt-formula.mp4"
+ },
+ "ai-in-60-minutes/02-02-privacy-and-fact-checking": {
+  "poster": "/videos/ai-in-60-minutes/02-02-privacy-and-fact-checking.jpg",
+  "seconds": 511,
+  "src": "/videos/ai-in-60-minutes/02-02-privacy-and-fact-checking.mp4"
+ },
+ "ai-in-60-minutes/02-03-seven-day-habit-plan": {
+  "poster": "/videos/ai-in-60-minutes/02-03-seven-day-habit-plan.jpg",
+  "seconds": 455,
+  "src": "/videos/ai-in-60-minutes/02-03-seven-day-habit-plan.mp4"
+ },
+ "generative-ai-python-llm-apps/01-01-how-llms-work": {
+  "poster": "/videos/generative-ai-python-llm-apps/01-01-how-llms-work.jpg",
+  "seconds": 599,
+  "src": "/videos/generative-ai-python-llm-apps/01-01-how-llms-work.mp4"
+ },
+ "generative-ai-python-llm-apps/01-02-first-api-call": {
+  "poster": "/videos/generative-ai-python-llm-apps/01-02-first-api-call.jpg",
+  "seconds": 626,
+  "src": "/videos/generative-ai-python-llm-apps/01-02-first-api-call.mp4"
+ },
+ "no-code-ai-agents-automation/01-01-automation-vs-ai-agent": {
+  "poster": "/videos/no-code-ai-agents-automation/01-01-automation-vs-ai-agent.jpg",
+  "seconds": 600,
+  "src": "/videos/no-code-ai-agents-automation/01-01-automation-vs-ai-agent.mp4"
+ },
+ "no-code-ai-agents-automation/02-03-adding-an-llm-step": {
+  "poster": "/videos/no-code-ai-agents-automation/02-03-adding-an-llm-step.jpg",
+  "seconds": 582,
+  "src": "/videos/no-code-ai-agents-automation/02-03-adding-an-llm-step.mp4"
+ },
+ "prompt-engineering-masterclass/01-01-why-prompts-fail": {
+  "poster": "/videos/prompt-engineering-masterclass/01-01-why-prompts-fail.jpg",
+  "seconds": 608,
+  "src": "/videos/prompt-engineering-masterclass/01-01-why-prompts-fail.mp4"
+ },
+ "prompt-engineering-masterclass/01-02-anatomy-of-a-great-prompt": {
+  "poster": "/videos/prompt-engineering-masterclass/01-02-anatomy-of-a-great-prompt.jpg",
+  "seconds": 588,
+  "src": "/videos/prompt-engineering-masterclass/01-02-anatomy-of-a-great-prompt.mp4"
+ }
+}

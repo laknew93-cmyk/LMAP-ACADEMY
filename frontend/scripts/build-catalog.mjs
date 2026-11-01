@@ -9,6 +9,8 @@ import { fileURLToPath } from 'node:url'
 const here = path.dirname(fileURLToPath(import.meta.url))
 const contentDir = path.resolve(here, '../../backend/content/courses')
 const outFile = path.resolve(here, '../src/data/catalog.json')
+const videosFile = path.resolve(here, '../src/data/videos.json')
+const videos = fs.existsSync(videosFile) ? JSON.parse(fs.readFileSync(videosFile, 'utf8')) : {}
 
 if (!fs.existsSync(contentDir)) {
   console.log('[catalog] backend content not found, keeping committed catalog.json')
@@ -25,7 +27,10 @@ const courses = fs.readdirSync(contentDir)
       lesson_count: lessons.length,
       modules: course.modules.map(m => ({
         title: m.title,
-        lessons: m.lessons.map(({ title, minutes, preview, summary }) => ({ title, minutes, preview, summary })),
+        lessons: m.lessons.map(({ title, minutes, preview, summary, file }) => {
+          const video = videos[`${slug}/${file.replace(/\.md$/, '')}`]
+          return { title, minutes, preview, summary, ...(video ? { video } : {}) }
+        }),
       })),
     }
   })
