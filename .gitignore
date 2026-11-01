@@ -22,3 +22,11 @@ video/output/
 video/state.json
 video/state.json.tmp
 video/.venv/
+
+# Neon / local secrets
+.env
+.env.local
+.env.*.local
+.neon/
+node_modules/
+node_modules/

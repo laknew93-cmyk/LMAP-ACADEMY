@@ -3,6 +3,9 @@ from pydantic_settings import BaseSettings
 
 class Settings(BaseSettings):
     DATABASE_URL: str = "sqlite:///./lmap.db"
+    # Neon: DATABASE_URL is the pooled (PgBouncer) string for app queries; schema changes
+    # (create tables / add columns) must use the direct string, per Neon's guidance.
+    DATABASE_URL_UNPOOLED: str = ""
     SECRET_KEY: str = "change-this-in-production-use-a-long-random-string"
     ALGORITHM: str = "HS256"
     ACCESS_TOKEN_EXPIRE_MINUTES: int = 60 * 24 * 30  # 30 days
@@ -34,13 +37,20 @@ class Settings(BaseSettings):
     class Config:
         env_file = ".env"
 
-    @property
-    def database_url(self) -> str:
+    @staticmethod
+    def _normalise(url: str) -> str:
         # Render/Heroku hand out postgres:// URLs; SQLAlchemy 2 needs postgresql://
-        url = self.DATABASE_URL
         if url.startswith("postgres://"):
             url = "postgresql://" + url[len("postgres://"):]
         return url
+
+    @property
+    def database_url(self) -> str:
+        return self._normalise(self.DATABASE_URL)
+
+    @property
+    def migration_database_url(self) -> str:
+        return self._normalise(self.DATABASE_URL_UNPOOLED or self.DATABASE_URL)
 
 
 settings = Settings()

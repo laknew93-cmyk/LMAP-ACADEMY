@@ -1,11 +1,5 @@
 # Render Blueprint for LMAP Academy.
 # Secrets marked `sync: false` are entered in the Render dashboard, never committed.
-databases:
-  - name: lmap-academy-db
-    plan: basic-256mb
-    databaseName: lmap
-    user: lmap
-
 services:
   # Backend API — https://lmap-academy.onrender.com
   - type: web
@@ -28,10 +22,11 @@ services:
         sync: false
       - key: PYTHON_VERSION
         value: 3.11.9
+      # Neon Postgres: pooled string for queries, direct string for schema changes
       - key: DATABASE_URL
-        fromDatabase:
-          name: lmap-academy-db
-          property: connectionString
+        sync: false
+      - key: DATABASE_URL_UNPOOLED
+        sync: false
       - key: SECRET_KEY
         generateValue: true
       - key: CORS_ORIGINS
