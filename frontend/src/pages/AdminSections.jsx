@@ -2,19 +2,15 @@ import React, { useEffect, useMemo, useState } from 'react'
 import { Users, IndianRupee, ShoppingBag, PhoneCall, Award, Download, RefreshCw } from 'lucide-react'
 import api from '../api/client'
 import { formatINR } from '../lib/content'
-import { useSeo } from '../lib/seo'
 
-const TABS = ['overview', 'students', 'sales', 'leads', 'courses', 'coupons', 'settings']
 const date = iso => (iso ? new Date(iso + (iso.endsWith('Z') ? '' : 'Z')).toLocaleDateString('en-IN', { day: 'numeric', month: 'short', year: 'numeric' }) : '')
 const errText = e => e.response?.data?.detail || e.message || 'Something went wrong'
 
-function Stat({ icon: Icon, label, value, color = 'var(--primary)' }) {
+function Stat({ icon: Icon, label, value, color }) {
   return (
-    <div className="card" style={{ padding: 20, display: 'flex', alignItems: 'center', gap: 16, boxShadow: 'none' }}>
-      <div style={{ width: 46, height: 46, borderRadius: 12, background: 'var(--primary-light)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
-        <Icon size={22} color={color} />
-      </div>
-      <div><div style={{ fontSize: 24, fontWeight: 800 }}>{value}</div><div className="muted" style={{ fontSize: 13 }}>{label}</div></div>
+    <div className="ac-kpi">
+      <div className="ac-kpi-label">{Icon && <Icon size={14} />} {label}</div>
+      <div className="ac-kpi-value" style={color ? { color } : undefined}>{value}</div>
     </div>
   )
 }
@@ -53,19 +49,19 @@ function Toolbar({ children, exportKind, onRefresh }) {
 
 // ---------------------------------------------------------------- tabs
 
-function Overview() {
+export function Overview() {
   const [d, setD] = useState(null)
   useEffect(() => { api.get('/admin/overview').then(r => setD(r.data)) }, [])
   if (!d) return <div className="spinner" />
   return (
     <div className="stack" style={{ gap: 28 }}>
-      <div className="grid-3" style={{ gap: 16 }}>
+      <div className="ac-kpis">
         <Stat icon={IndianRupee} label="Total revenue" value={formatINR(d.revenue)} />
         <Stat icon={IndianRupee} label="Revenue, last 30 days" value={formatINR(d.revenue_30d)} />
         <Stat icon={ShoppingBag} label="Paid orders" value={d.orders} />
         <Stat icon={Users} label={`Registered users · ${d.paying_students} paying`} value={d.users} />
-        <Stat icon={PhoneCall} label="New leads to call" value={d.new_leads} color="#D97706" />
-        <Stat icon={Award} label="Certificates issued" value={d.certificates} color="#059669" />
+        <Stat icon={PhoneCall} label="New leads to call" value={d.new_leads} />
+        <Stat icon={Award} label="Certificates issued" value={d.certificates} />
       </div>
       <div className="grid-2" style={{ gap: 24 }}>
         <div className="card" style={{ boxShadow: 'none' }}>
@@ -81,7 +77,7 @@ function Overview() {
   )
 }
 
-function Students({ courses, notify }) {
+export function Students({ courses, notify }) {
   const [rows, setRows] = useState(null)
   const [q, setQ] = useState('')
   const [open, setOpen] = useState(null)
@@ -146,7 +142,7 @@ function Students({ courses, notify }) {
   )
 }
 
-function Sales() {
+export function Sales() {
   const [rows, setRows] = useState(null)
   const load = () => api.get('/admin/sales').then(r => setRows(r.data))
   useEffect(() => { load() }, [])
@@ -173,7 +169,7 @@ function Sales() {
 }
 
 const LEAD_STATUSES = ['new', 'contacted', 'converted', 'closed']
-function Leads({ notify }) {
+export function Leads({ notify }) {
   const [rows, setRows] = useState(null)
   const [filter, setFilter] = useState('all')
   const load = () => api.get('/admin/leads').then(r => setRows(r.data))
@@ -214,7 +210,7 @@ function Leads({ notify }) {
   )
 }
 
-function Courses({ notify, reload }) {
+export function Courses({ notify, reload }) {
   const [rows, setRows] = useState(null)
   const [edit, setEdit] = useState({})
   const load = () => api.get('/admin/courses').then(r => setRows(r.data))
@@ -270,7 +266,7 @@ function Courses({ notify, reload }) {
   )
 }
 
-function Coupons({ courses, notify }) {
+export function Coupons({ courses, notify }) {
   const [rows, setRows] = useState(null)
   const blank = { code: '', type: 'percent', value: '', course_slug: '', max_uses: '', expires_at: '' }
   const [f, setF] = useState(blank)
@@ -332,7 +328,7 @@ const SETTING_FIELDS = [
   ['gstin', 'GSTIN'], ['bundle_price', 'All-Access Pass price (₹)', 'number'], ['refund_days', 'Refund window (days)', 'number'],
   ['announcement', 'Announcement bar (leave empty to hide), e.g. "Diwali offer: 30% off with code DIWALI30"', 'textarea'],
 ]
-function Settings({ notify, reload }) {
+export function Settings({ notify, reload }) {
   const [s, setS] = useState(null)
   useEffect(() => { api.get('/admin/settings').then(r => setS(r.data)) }, [])
   const save = async e => {
@@ -357,37 +353,3 @@ function Settings({ notify, reload }) {
   )
 }
 
-// ---------------------------------------------------------------- page
-
-export default function AdminPage() {
-  useSeo({ title: 'Admin', path: '/admin', noindex: true })
-  const [tab, setTab] = useState(() => (TABS.includes(window.location.hash.slice(1)) ? window.location.hash.slice(1) : 'overview'))
-  const [courses, setCourses] = useState([])
-  const [toast, setToast] = useState(null)
-  const notify = (msg, type = 'success') => { setToast({ msg, type }); setTimeout(() => setToast(null), 3500) }
-  const loadCourses = () => api.get('/admin/courses').then(r => setCourses(r.data))
-  useEffect(() => { loadCourses() }, [])
-  const go = t => { setTab(t); window.history.replaceState(null, '', `#${t}`) }
-  const props = { courses, notify, reload: loadCourses }
-
-  return (
-    <div className="section" style={{ paddingTop: 36 }}>
-      <div className="container">
-        <h1 style={{ fontSize: 30, fontWeight: 800, marginBottom: 18 }}>Admin panel</h1>
-        <div className="tabs" style={{ marginBottom: 24, background: 'var(--border)', padding: 4, borderRadius: 10, display: 'inline-flex' }}>
-          {TABS.map(t => (
-            <button key={t} onClick={() => go(t)} style={{ padding: '8px 16px', borderRadius: 8, border: 'none', fontWeight: 600, fontSize: 14, textTransform: 'capitalize', background: tab === t ? '#fff' : 'transparent', color: tab === t ? 'var(--primary)' : 'var(--text-muted)' }}>{t}</button>
-          ))}
-        </div>
-        {tab === 'overview' && <Overview />}
-        {tab === 'students' && <Students {...props} />}
-        {tab === 'sales' && <Sales />}
-        {tab === 'leads' && <Leads {...props} />}
-        {tab === 'courses' && <Courses {...props} />}
-        {tab === 'coupons' && <Coupons {...props} />}
-        {tab === 'settings' && <Settings {...props} />}
-      </div>
-      {toast && <div className={`toast toast-${toast.type}`} role="status">{toast.msg}</div>}
-    </div>
-  )
-}

@@ -3,6 +3,7 @@
 export const SITE = {
   name: 'LMAP Academy',
   url: 'https://lmapacademy.org',
+  adminHost: 'admin.lmapacademy.org', // the admin console's own domain
   tagline: 'Practical AI courses for India',
   description:
     'Learn ChatGPT, prompt engineering, AI automation, data analysis and generative AI with practical, India-focused online courses. Certificate included.',

@@ -30,7 +30,7 @@ services:
       - key: SECRET_KEY
         generateValue: true
       - key: CORS_ORIGINS
-        value: https://lmapacademy.org,https://www.lmapacademy.org
+        value: https://lmapacademy.org,https://www.lmapacademy.org,https://admin.lmapacademy.org
       - key: ADMIN_EMAIL
         value: admin@lmapacademy.org
       - key: ADMIN_PASSWORD

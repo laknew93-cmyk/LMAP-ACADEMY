@@ -21,7 +21,7 @@ export default function LoginPage() {
     try {
       const { data } = await api.post('/auth/login', form)
       login(data.user, data.token)
-      navigate(next || (data.user.role === 'admin' ? '/admin' : '/dashboard'))
+      navigate(next || '/dashboard')
     } catch (e) {
       setError(e.response?.data?.detail || 'Login failed')
     } finally {

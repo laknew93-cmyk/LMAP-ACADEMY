@@ -24,7 +24,7 @@ export default function Navbar() {
           <Link to="/all-access/" onClick={() => setOpen(false)}>All-Access</Link>
           <Link to="/blog/" onClick={() => setOpen(false)}>Blog</Link>
           {user && <Link to="/dashboard" onClick={() => setOpen(false)}>My Learning</Link>}
-          {user?.role === 'admin' && <Link to="/admin" onClick={() => setOpen(false)}>Admin</Link>}
+          {user?.role === 'admin' && <a href={window.location.hostname.endsWith('lmapacademy.org') ? 'https://admin.lmapacademy.org' : '/admin'}>Admin console</a>}
           {user
             ? <button className="mobile-only btn btn-ghost btn-sm" style={{ padding: 0 }} onClick={() => { setOpen(false); handleLogout() }}>Logout</button>
             : <Link className="mobile-only" to="/login" onClick={() => setOpen(false)}>Login</Link>}

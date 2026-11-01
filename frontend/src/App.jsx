@@ -9,7 +9,7 @@ import LearnPage from './pages/LearnPage'
 import LoginPage from './pages/LoginPage'
 import RegisterPage from './pages/RegisterPage'
 import DashboardPage from './pages/DashboardPage'
-import AdminPage from './pages/AdminPage'
+import AdminConsole from './admin/AdminConsole'
 import AllAccessPage from './pages/AllAccessPage'
 import BlogPage from './pages/BlogPage'
 import BlogPostPage from './pages/BlogPostPage'
@@ -30,16 +30,21 @@ function RequireAuth({ children }) {
   return user ? children : <Navigate to={`/login?next=${encodeURIComponent(pathname + search)}`} replace />
 }
 
-function RequireAdmin({ children }) {
-  const { user } = useAuth()
-  if (!user) return <Navigate to="/login" replace />
-  if (user.role !== 'admin') return <Navigate to="/" replace />
-  return children
-}
 
 function ScrollToTop() {
   const { pathname } = useLocation()
   useEffect(() => { window.scrollTo(0, 0) }, [pathname])
+  return null
+}
+
+const host = window.location.hostname
+const IS_ADMIN_HOST = host === SITE.adminHost || host.startsWith('admin.')
+const IS_PUBLIC_PROD = host === new URL(SITE.url).hostname || host === 'www.' + new URL(SITE.url).hostname
+
+// lmapacademy.org/admin → admin.lmapacademy.org (keeps the sub-path, e.g. /admin/leads → /leads)
+function AdminRedirect() {
+  const { pathname } = useLocation()
+  useEffect(() => { window.location.replace(`https://${SITE.adminHost}${pathname.replace(/^\/admin/, '') || '/'}`) }, [])
   return null
 }
 
@@ -69,11 +74,22 @@ export default function App() {
     setUser(null)
   }
 
+  const { pathname } = useLocation()
+  const inConsole = IS_ADMIN_HOST || pathname.startsWith('/admin')
+
+  if (IS_ADMIN_HOST) {
+    return (
+      <AuthContext.Provider value={{ user, login, logout }}>
+        <Routes><Route path="/*" element={<AdminConsole base="" />} /></Routes>
+      </AuthContext.Provider>
+    )
+  }
+
   return (
     <AuthContext.Provider value={{ user, login, logout }}>
       <ScrollToTop />
-      {SITE.announcement && <div style={{ background: 'var(--accent)', color: 'var(--dark)', textAlign: 'center', padding: '8px 16px', fontSize: 14, fontWeight: 600 }}>{SITE.announcement}</div>}
-      <Navbar />
+      {!inConsole && SITE.announcement && <div style={{ background: 'var(--accent)', color: 'var(--dark)', textAlign: 'center', padding: '8px 16px', fontSize: 14, fontWeight: 600 }}>{SITE.announcement}</div>}
+      {!inConsole && <Navbar />}
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/courses" element={<CoursesPage />} />
@@ -90,10 +106,10 @@ export default function App() {
         {['about', 'contact', 'terms', 'privacy-policy', 'refund-policy'].map(p => (
           <Route key={p} path={`/${p}`} element={<StaticPage name={p} />} />
         ))}
-        <Route path="/admin" element={<RequireAdmin><AdminPage /></RequireAdmin>} />
+        <Route path="/admin/*" element={IS_PUBLIC_PROD ? <AdminRedirect /> : <AdminConsole base="/admin" />} />
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
-      <Footer />
+      {!inConsole && <Footer />}
     </AuthContext.Provider>
   )
 }
