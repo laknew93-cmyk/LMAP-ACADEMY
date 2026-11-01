@@ -73,7 +73,7 @@ export default function CourseDetailPage() {
           </button>
         )}
         <ul className="check-list" style={{ marginTop: 18, fontSize: 14 }}>
-          <li>{course.lesson_count} lessons · {course.duration_hours} hours</li>
+          <li>{course.lesson_count} lessons · {course.duration_hours} {course.duration_hours === 1 ? 'hour' : 'hours'}</li>
           <li>{course.projects?.length || 0} hands-on projects</li>
           <li>Certificate of completion</li>
           <li>Lifetime access on any device</li>
@@ -100,7 +100,7 @@ export default function CourseDetailPage() {
             <p style={{ fontSize: 18, color: '#D1D5DB', lineHeight: 1.7, marginBottom: 22 }}>{course.subtitle}</p>
             <div className="row" style={{ gap: 22, color: '#9CA3AF', fontSize: 14 }}>
               <span className="row" style={{ gap: 6, textTransform: 'capitalize' }}><BarChart2 size={16} /> {course.level}</span>
-              <span className="row" style={{ gap: 6 }}><Clock size={16} /> {course.duration_hours} hours</span>
+              <span className="row" style={{ gap: 6 }}><Clock size={16} /> {course.duration_hours} {course.duration_hours === 1 ? 'hour' : 'hours'}</span>
               <span className="row" style={{ gap: 6 }}><BookOpen size={16} /> {course.lesson_count} lessons</span>
               <span className="row" style={{ gap: 6 }}><Award size={16} /> Certificate</span>
             </div>

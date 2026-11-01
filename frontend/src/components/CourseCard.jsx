@@ -13,9 +13,11 @@ const GRADIENTS = {
   'Generative AI Engineering': 'linear-gradient(135deg, #111827 0%, #7C3AED 100%)',
 }
 
+const cardImage = category => (category || 'AI Fundamentals').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '')
+
 export function CourseThumb({ course, compact = false }) {
   return (
-    <div className="thumb" style={{ background: GRADIENTS[course.category] || GRADIENTS['AI Fundamentals'] }}>
+    <div className="thumb" style={{ background: `linear-gradient(180deg, rgba(10,10,20,.05) 30%, rgba(10,10,20,.55) 100%), url(/img/cards/${cardImage(course.category)}.webp) center / cover, ${GRADIENTS[course.category] || GRADIENTS['AI Fundamentals']}` }}>
       <div className="row" style={{ justifyContent: 'space-between' }}>
         <span style={{ fontSize: 12, fontWeight: 700, background: 'rgba(255,255,255,.18)', padding: '4px 10px', borderRadius: 99 }}>{course.category}</span>
         <span style={{ fontSize: 12, fontWeight: 600, textTransform: 'capitalize', opacity: .9 }}>{course.level}</span>
@@ -37,15 +39,15 @@ export default function CourseCard({ course }) {
         <h3 style={{ fontSize: 17, fontWeight: 700, lineHeight: 1.4, marginBottom: 8 }}>{course.title}</h3>
         <p style={{ fontSize: 14, color: 'var(--text-muted)', lineHeight: 1.6, flex: 1 }}>{course.subtitle}</p>
         <div className="row muted" style={{ gap: 16, marginTop: 14, fontSize: 13 }}>
-          <span className="row" style={{ gap: 4 }}><Clock size={14} /> {course.duration_hours} hours</span>
+          <span className="row" style={{ gap: 4 }}><Clock size={14} /> {course.duration_hours} {course.duration_hours === 1 ? 'hour' : 'hours'}</span>
           <span className="row" style={{ gap: 4 }}><BookOpen size={14} /> {course.lesson_count} lessons</span>
         </div>
       </div>
       <div style={{ padding: '14px 20px', borderTop: '1px solid var(--border)', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
         <span className="row" style={{ gap: 8 }}>
           <span className="price" style={{ fontSize: 22 }}>{course.price ? formatINR(course.price) : 'Free'}</span>
-          {off > 0 && <span className="mrp" style={{ fontSize: 14 }}>{formatINR(course.mrp)}</span>}
-          {off > 0 && <span className="off">{off}% off</span>}
+          {off > 0 && course.price > 0 && <span className="mrp" style={{ fontSize: 14 }}>{formatINR(course.mrp)}</span>}
+          {off > 0 && course.price > 0 && <span className="off">{off}% off</span>}
         </span>
         <span className="row" style={{ gap: 4, color: 'var(--primary)', fontWeight: 600, fontSize: 14 }}>View <ArrowRight size={14} /></span>
       </div>

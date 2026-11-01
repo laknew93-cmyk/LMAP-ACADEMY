@@ -90,9 +90,9 @@
       "preview": true,
       "summary": "A plain-English picture of how ChatGPT, Gemini and Claude work, what they are good at, and where they go wrong.",
       "video": {
-       "poster": "/videos/ai-in-60-minutes/01-01-what-ai-assistants-are.jpg",
+       "poster": "/videos/ai-in-60-minutes/01-01-what-ai-assistants-are.jpg?v=a17ba2ed",
        "seconds": 430,
-       "src": "/videos/ai-in-60-minutes/01-01-what-ai-assistants-are.mp4"
+       "src": "/videos/ai-in-60-minutes/01-01-what-ai-assistants-are.mp4?v=a17ba2ed"
       }
      },
      {
@@ -101,9 +101,9 @@
       "preview": false,
       "summary": "Create a free account on ChatGPT, Gemini or Claude and check the settings that protect your privacy.",
       "video": {
-       "poster": "/videos/ai-in-60-minutes/01-02-setting-up-safely.jpg",
+       "poster": "/videos/ai-in-60-minutes/01-02-setting-up-safely.jpg?v=6660dbae",
        "seconds": 428,
-       "src": "/videos/ai-in-60-minutes/01-02-setting-up-safely.mp4"
+       "src": "/videos/ai-in-60-minutes/01-02-setting-up-safely.mp4?v=6660dbae"
       }
      },
      {
@@ -112,9 +112,9 @@
       "preview": false,
       "summary": "Use AI to write an email, summarise, explain, plan and rewrite, with ready-to-copy prompts.",
       "video": {
-       "poster": "/videos/ai-in-60-minutes/01-03-first-five-prompts.jpg",
+       "poster": "/videos/ai-in-60-minutes/01-03-first-five-prompts.jpg?v=26f575d3",
        "seconds": 470,
-       "src": "/videos/ai-in-60-minutes/01-03-first-five-prompts.mp4"
+       "src": "/videos/ai-in-60-minutes/01-03-first-five-prompts.mp4?v=26f575d3"
       }
      }
     ]
@@ -128,9 +128,9 @@
       "preview": false,
       "summary": "A four-part formula that turns vague questions into prompts that get useful answers the first time.",
       "video": {
-       "poster": "/videos/ai-in-60-minutes/02-01-prompt-formula.jpg",
+       "poster": "/videos/ai-in-60-minutes/02-01-prompt-formula.jpg?v=58be214f",
        "seconds": 516,
-       "src": "/videos/ai-in-60-minutes/02-01-prompt-formula.mp4"
+       "src": "/videos/ai-in-60-minutes/02-01-prompt-formula.mp4?v=58be214f"
       }
      },
      {
@@ -139,9 +139,9 @@
       "preview": false,
       "summary": "Protect your personal and business data, recognise hallucinations and check facts before you rely on them.",
       "video": {
-       "poster": "/videos/ai-in-60-minutes/02-02-privacy-and-fact-checking.jpg",
+       "poster": "/videos/ai-in-60-minutes/02-02-privacy-and-fact-checking.jpg?v=aa9b40d8",
        "seconds": 510,
-       "src": "/videos/ai-in-60-minutes/02-02-privacy-and-fact-checking.mp4"
+       "src": "/videos/ai-in-60-minutes/02-02-privacy-and-fact-checking.mp4?v=aa9b40d8"
       }
      },
      {
@@ -150,9 +150,9 @@
       "preview": false,
       "summary": "A day-by-day plan to make AI part of your routine, plus the best next steps for going further.",
       "video": {
-       "poster": "/videos/ai-in-60-minutes/02-03-seven-day-habit-plan.jpg",
+       "poster": "/videos/ai-in-60-minutes/02-03-seven-day-habit-plan.jpg?v=1f4f3f3b",
        "seconds": 455,
-       "src": "/videos/ai-in-60-minutes/02-03-seven-day-habit-plan.mp4"
+       "src": "/videos/ai-in-60-minutes/02-03-seven-day-habit-plan.mp4?v=1f4f3f3b"
       }
      }
     ]
@@ -260,9 +260,9 @@
       "preview": true,
       "summary": "A plain-language explanation of large language models, what they are good at, and what they are not.",
       "video": {
-       "poster": "/videos/ai-essentials-chatgpt-gemini-copilot/01-01-how-ai-assistants-work.jpg",
+       "poster": "/videos/ai-essentials-chatgpt-gemini-copilot/01-01-how-ai-assistants-work.jpg?v=c3d0c0ba",
        "seconds": 527,
-       "src": "/videos/ai-essentials-chatgpt-gemini-copilot/01-01-how-ai-assistants-work.mp4"
+       "src": "/videos/ai-essentials-chatgpt-gemini-copilot/01-01-how-ai-assistants-work.mp4?v=c3d0c0ba"
       }
      },
      {
@@ -283,9 +283,9 @@
       "preview": true,
       "summary": "Write prompts with Role, Task, Context, Format and Tone, and refine answers with smart follow-ups.",
       "video": {
-       "poster": "/videos/ai-essentials-chatgpt-gemini-copilot/01-04-prompting-basics.jpg",
+       "poster": "/videos/ai-essentials-chatgpt-gemini-copilot/01-04-prompting-basics.jpg?v=404e9afe",
        "seconds": 550,
-       "src": "/videos/ai-essentials-chatgpt-gemini-copilot/01-04-prompting-basics.mp4"
+       "src": "/videos/ai-essentials-chatgpt-gemini-copilot/01-04-prompting-basics.mp4?v=404e9afe"
       }
      }
     ]
@@ -498,9 +498,9 @@
       "preview": true,
       "summary": "Understand why vague prompts produce generic output and what expert-level results really look like.",
       "video": {
-       "poster": "/videos/prompt-engineering-masterclass/01-01-why-prompts-fail.jpg",
+       "poster": "/videos/prompt-engineering-masterclass/01-01-why-prompts-fail.jpg?v=43a6dd3c",
        "seconds": 607,
-       "src": "/videos/prompt-engineering-masterclass/01-01-why-prompts-fail.mp4"
+       "src": "/videos/prompt-engineering-masterclass/01-01-why-prompts-fail.mp4?v=43a6dd3c"
       }
      },
      {
@@ -509,9 +509,9 @@
       "preview": true,
       "summary": "Learn the six building blocks of a strong prompt and a 60-second checklist you can use on any task.",
       "video": {
-       "poster": "/videos/prompt-engineering-masterclass/01-02-anatomy-of-a-great-prompt.jpg",
+       "poster": "/videos/prompt-engineering-masterclass/01-02-anatomy-of-a-great-prompt.jpg?v=b26f9341",
        "seconds": 589,
-       "src": "/videos/prompt-engineering-masterclass/01-02-anatomy-of-a-great-prompt.mp4"
+       "src": "/videos/prompt-engineering-masterclass/01-02-anatomy-of-a-great-prompt.mp4?v=b26f9341"
       }
      },
      {
@@ -734,9 +734,9 @@
       "preview": true,
       "summary": "An honest look at what AI speeds up, what it doesn't change, and how to approach earning with it without the hype.",
       "video": {
-       "poster": "/videos/ai-freelancing-and-business/01-01-what-ai-changes.jpg",
+       "poster": "/videos/ai-freelancing-and-business/01-01-what-ai-changes.jpg?v=1b34d907",
        "seconds": 563,
-       "src": "/videos/ai-freelancing-and-business/01-01-what-ai-changes.mp4"
+       "src": "/videos/ai-freelancing-and-business/01-01-what-ai-changes.mp4?v=1b34d907"
       }
      },
      {
@@ -745,9 +745,9 @@
       "preview": true,
       "summary": "Seven practical services, from content writing to basic automation, and where AI helps versus where you must add value.",
       "video": {
-       "poster": "/videos/ai-freelancing-and-business/01-02-services-clients-pay-for.jpg",
+       "poster": "/videos/ai-freelancing-and-business/01-02-services-clients-pay-for.jpg?v=44d0d3fd",
        "seconds": 586,
-       "src": "/videos/ai-freelancing-and-business/01-02-services-clients-pay-for.mp4"
+       "src": "/videos/ai-freelancing-and-business/01-02-services-clients-pay-for.mp4?v=44d0d3fd"
       }
      },
      {
@@ -975,9 +975,9 @@
       "preview": true,
       "summary": "What a personal brand really is, where AI helps, where it hurts, and the working loop used throughout the course.",
       "video": {
-       "poster": "/videos/ai-content-creation-personal-branding/01-01-ai-and-personal-branding.jpg",
+       "poster": "/videos/ai-content-creation-personal-branding/01-01-ai-and-personal-branding.jpg?v=6d164448",
        "seconds": 589,
-       "src": "/videos/ai-content-creation-personal-branding/01-01-ai-and-personal-branding.mp4"
+       "src": "/videos/ai-content-creation-personal-branding/01-01-ai-and-personal-branding.mp4?v=6d164448"
       }
      },
      {
@@ -1027,9 +1027,9 @@
       "preview": true,
       "summary": "Spot the tell-tale signs of generic AI writing and fix them with better inputs and a five-pass human edit.",
       "video": {
-       "poster": "/videos/ai-content-creation-personal-branding/02-04-avoid-ai-sounding-writing.jpg",
+       "poster": "/videos/ai-content-creation-personal-branding/02-04-avoid-ai-sounding-writing.jpg?v=ee0902db",
        "seconds": 581,
-       "src": "/videos/ai-content-creation-personal-branding/02-04-avoid-ai-sounding-writing.mp4"
+       "src": "/videos/ai-content-creation-personal-branding/02-04-avoid-ai-sounding-writing.mp4?v=ee0902db"
       }
      }
     ]
@@ -1210,9 +1210,9 @@
       "preview": true,
       "summary": "What the office 'data person' really does, where AI helps and where it doesn't, and the Indian datasets we'll use.",
       "video": {
-       "poster": "/videos/ai-data-analysis-excel-power-bi/01-01-becoming-the-data-person.jpg",
+       "poster": "/videos/ai-data-analysis-excel-power-bi/01-01-becoming-the-data-person.jpg?v=4cecaf6a",
        "seconds": 608,
-       "src": "/videos/ai-data-analysis-excel-power-bi/01-01-becoming-the-data-person.mp4"
+       "src": "/videos/ai-data-analysis-excel-power-bi/01-01-becoming-the-data-person.mp4?v=4cecaf6a"
       }
      },
      {
@@ -1238,9 +1238,9 @@
       "preview": true,
       "summary": "Join tables with XLOOKUP or INDEX-MATCH, handle missing values, and fix the usual causes of #N/A.",
       "video": {
-       "poster": "/videos/ai-data-analysis-excel-power-bi/02-01-lookups-xlookup-index-match.jpg",
+       "poster": "/videos/ai-data-analysis-excel-power-bi/02-01-lookups-xlookup-index-match.jpg?v=021982ce",
        "seconds": 615,
-       "src": "/videos/ai-data-analysis-excel-power-bi/02-01-lookups-xlookup-index-match.mp4"
+       "src": "/videos/ai-data-analysis-excel-power-bi/02-01-lookups-xlookup-index-match.mp4?v=021982ce"
       }
      },
      {
@@ -1451,9 +1451,9 @@
       "preview": true,
       "summary": "Understand automations, AI-powered workflows and agents (LLM + tools + memory + goal), and when each one fits.",
       "video": {
-       "poster": "/videos/no-code-ai-agents-automation/01-01-automation-vs-ai-agent.jpg",
+       "poster": "/videos/no-code-ai-agents-automation/01-01-automation-vs-ai-agent.jpg?v=2a4c1518",
        "seconds": 598,
-       "src": "/videos/no-code-ai-agents-automation/01-01-automation-vs-ai-agent.mp4"
+       "src": "/videos/no-code-ai-agents-automation/01-01-automation-vs-ai-agent.mp4?v=2a4c1518"
       }
      },
      {
@@ -1491,9 +1491,9 @@
       "preview": true,
       "summary": "Put an LLM inside your workflow and write prompts that return reliable labels and structured JSON.",
       "video": {
-       "poster": "/videos/no-code-ai-agents-automation/02-03-adding-an-llm-step.jpg",
+       "poster": "/videos/no-code-ai-agents-automation/02-03-adding-an-llm-step.jpg?v=e8af63e5",
        "seconds": 580,
-       "src": "/videos/no-code-ai-agents-automation/02-03-adding-an-llm-step.mp4"
+       "src": "/videos/no-code-ai-agents-automation/02-03-adding-an-llm-step.mp4?v=e8af63e5"
       }
      },
      {
@@ -1687,9 +1687,9 @@
       "preview": true,
       "summary": "Build an engineer's mental model of LLMs: next-token prediction, tokens, context windows, randomness, reasoning and embeddings.",
       "video": {
-       "poster": "/videos/generative-ai-python-llm-apps/01-01-how-llms-work.jpg",
+       "poster": "/videos/generative-ai-python-llm-apps/01-01-how-llms-work.jpg?v=fa806de6",
        "seconds": 597,
-       "src": "/videos/generative-ai-python-llm-apps/01-01-how-llms-work.mp4"
+       "src": "/videos/generative-ai-python-llm-apps/01-01-how-llms-work.mp4?v=fa806de6"
       }
      },
      {
@@ -1698,9 +1698,9 @@
       "preview": true,
       "summary": "Set up a Python project, store your API key safely, make your first call and understand every field of the response.",
       "video": {
-       "poster": "/videos/generative-ai-python-llm-apps/01-02-first-api-call.jpg",
+       "poster": "/videos/generative-ai-python-llm-apps/01-02-first-api-call.jpg?v=219c124d",
        "seconds": 623,
-       "src": "/videos/generative-ai-python-llm-apps/01-02-first-api-call.mp4"
+       "src": "/videos/generative-ai-python-llm-apps/01-02-first-api-call.mp4?v=219c124d"
       }
      },
      {

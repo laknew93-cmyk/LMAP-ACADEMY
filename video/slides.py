@@ -301,9 +301,12 @@ def publish():
                         shutil.copy2(src[:-4] + ext, os.path.join(public, slug, stem + ext))
                 probe = subprocess.run([FFMPEG, "-i", src], capture_output=True, text=True).stderr
                 h, m, sec = re.search(r"Duration: (\d+):(\d+):([\d.]+)", probe).groups()
+                # Version tag from the file contents, so browsers and the CDN fetch re-rendered videos.
+                import hashlib
+                ver = hashlib.md5(open(src, "rb").read()).hexdigest()[:8]
                 manifest[f"{slug}/{stem}"] = {
-                    "src": f"/videos/{slug}/{stem}.mp4",
-                    "poster": f"/videos/{slug}/{stem}.jpg",
+                    "src": f"/videos/{slug}/{stem}.mp4?v={ver}",
+                    "poster": f"/videos/{slug}/{stem}.jpg?v={ver}",
                     "seconds": round(int(h) * 3600 + int(m) * 60 + float(sec)),
                 }
     out = os.path.join(root, "frontend", "src", "data", "videos.json")
