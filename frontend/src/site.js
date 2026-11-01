@@ -3,7 +3,10 @@
 export const SITE = {
   name: 'LMAP Academy',
   url: 'https://lmapacademy.org',
-  adminHost: 'admin.lmapacademy.org', // the admin console's own domain
+  // Admin console address. Set useAdminSubdomain to true once admin.lmapacademy.org is added
+  // as a custom domain in Render and DNS; until then the console lives at /admin.
+  adminHost: 'admin.lmapacademy.org',
+  useAdminSubdomain: false,
   tagline: 'Practical AI courses for India',
   description:
     'Learn ChatGPT, prompt engineering, AI automation, data analysis and generative AI with practical, India-focused online courses. Certificate included.',

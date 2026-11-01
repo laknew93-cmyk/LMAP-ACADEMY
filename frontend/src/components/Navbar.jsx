@@ -3,6 +3,7 @@ import { Link, useNavigate } from 'react-router-dom'
 import { useAuth } from '../App'
 import { GraduationCap, Menu, X, LogOut, LayoutDashboard, Shield } from 'lucide-react'
 import './Navbar.css'
+import { SITE } from '../site'
 
 export default function Navbar() {
   const { user, logout } = useAuth()
@@ -24,7 +25,7 @@ export default function Navbar() {
           <Link to="/all-access/" onClick={() => setOpen(false)}>All-Access</Link>
           <Link to="/blog/" onClick={() => setOpen(false)}>Blog</Link>
           {user && <Link to="/dashboard" onClick={() => setOpen(false)}>My Learning</Link>}
-          {user?.role === 'admin' && <a href={window.location.hostname.endsWith('lmapacademy.org') ? 'https://admin.lmapacademy.org' : '/admin'}>Admin console</a>}
+          {user?.role === 'admin' && <a href={SITE.useAdminSubdomain && window.location.hostname.endsWith('lmapacademy.org') ? `https://${SITE.adminHost}` : '/admin'}>Admin console</a>}
           {user
             ? <button className="mobile-only btn btn-ghost btn-sm" style={{ padding: 0 }} onClick={() => { setOpen(false); handleLogout() }}>Logout</button>
             : <Link className="mobile-only" to="/login" onClick={() => setOpen(false)}>Login</Link>}
