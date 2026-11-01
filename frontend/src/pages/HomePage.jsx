@@ -5,6 +5,7 @@ import CourseCard from '../components/CourseCard'
 import { COURSES, POSTS, paidCourses, formatINR } from '../lib/content'
 import { useSeo } from '../lib/seo'
 import { SITE } from '../site'
+import LeadForm from '../components/LeadForm'
 
 export const HOME_FAQS = [
   { q: 'Do I need a technical background?', a: 'No. Six of our seven paid courses are designed for non-technical learners. Only Generative AI Mastery expects basic Python. Start with the free AI in 60 Minutes course if you are new to AI.' },
@@ -163,6 +164,10 @@ export default function HomePage() {
           </div>
         </section>
       )}
+
+      <section className="section">
+        <div className="container-sm"><LeadForm /></div>
+      </section>
 
       <section className="section" style={{ background: '#FAFAFA' }}>
         <div className="container-sm faq">

@@ -1,5 +1,7 @@
 from fastapi import APIRouter, Depends, HTTPException, status
 from sqlalchemy.orm import Session
+from typing import Optional
+
 from pydantic import BaseModel, EmailStr
 from database import get_db
 from models import User, UserRole
@@ -25,7 +27,7 @@ class UserOut(BaseModel):
     name: str
     email: str
     role: str
-    phone: str = ""
+    phone: Optional[str] = ""
 
     class Config:
         from_attributes = True

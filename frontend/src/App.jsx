@@ -16,6 +16,9 @@ import BlogPostPage from './pages/BlogPostPage'
 import StaticPage from './pages/StaticPage'
 import CertificatePage from './pages/CertificatePage'
 import VerifyPage from './pages/VerifyPage'
+import api from './api/client'
+import { applyLive } from './lib/content'
+import { SITE } from './site'
 
 export const AuthContext = createContext(null)
 
@@ -45,6 +48,15 @@ export default function App() {
     try { return JSON.parse(localStorage.getItem('lmap_user')) } catch { return null }
   })
 
+  // Pull live prices and business details set in the admin panel, then re-render once.
+  const [, setLiveVersion] = useState(0)
+  useEffect(() => {
+    Promise.allSettled([api.get('/courses/'), api.get('/site/settings')]).then(([c, s]) => {
+      applyLive(c.value?.data, s.value?.data, SITE)
+      setLiveVersion(v => v + 1)
+    })
+  }, [])
+
   const login = (userData, token) => {
     localStorage.setItem('lmap_token', token)
     localStorage.setItem('lmap_user', JSON.stringify(userData))
@@ -60,6 +72,7 @@ export default function App() {
   return (
     <AuthContext.Provider value={{ user, login, logout }}>
       <ScrollToTop />
+      {SITE.announcement && <div style={{ background: 'var(--accent)', color: 'var(--dark)', textAlign: 'center', padding: '8px 16px', fontSize: 14, fontWeight: 600 }}>{SITE.announcement}</div>}
       <Navbar />
       <Routes>
         <Route path="/" element={<HomePage />} />

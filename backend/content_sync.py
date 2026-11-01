@@ -54,6 +54,16 @@ def load_catalog() -> list[dict]:
     return catalog
 
 
+OVERRIDABLE = {"title": "title", "subtitle": "short_description", "price": "price", "mrp": "mrp", "is_published": "is_published"}
+
+
+def apply_overrides(course: Course):
+    """Admin-panel edits win over the content files, so they survive restarts and redeploys."""
+    for key, value in json.loads(course.overrides or "{}").items():
+        if key in OVERRIDABLE and value is not None:
+            setattr(course, OVERRIDABLE[key], value)
+
+
 def _delete_lessons(db: Session, lessons: list[Video]):
     for lesson in lessons:
         db.query(VideoProgress).filter(VideoProgress.video_id == lesson.id).delete()
@@ -80,6 +90,7 @@ def sync_content(db: Session) -> int:
         course.sort_order = data.get("sort_order", 0)
         course.details = json.dumps({k: data.get(k) for k in DETAIL_KEYS})
         course.is_published = data.get("published", True)
+        apply_overrides(course)
         db.flush()
 
         modules = list(course.modules)

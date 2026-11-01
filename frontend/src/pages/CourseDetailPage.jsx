@@ -6,6 +6,7 @@ import { useAuth } from '../App'
 import CourseCard, { CourseThumb } from '../components/CourseCard'
 import { COURSES, findCourse, formatINR, discountPct } from '../lib/content'
 import { checkout, errorMessage } from '../lib/checkout'
+import CouponBox from '../components/CouponBox'
 import { useSeo } from '../lib/seo'
 import { SITE } from '../site'
 
@@ -19,6 +20,7 @@ export default function CourseDetailPage() {
   const [paying, setPaying] = useState(false)
   const [expanded, setExpanded] = useState({ 0: true })
   const [toast, setToast] = useState(null)
+  const [coupon, setCoupon] = useState(null)
 
   useSeo({ title: course?.seo?.title || course?.title, description: course?.seo?.description || course?.subtitle, path: `/courses/${slug}` })
 
@@ -39,7 +41,7 @@ export default function CourseDetailPage() {
     if (!user) { navigate(`/register?next=${encodeURIComponent(`/courses/${slug}`)}`); return }
     setPaying(true)
     try {
-      const slugs = await checkout({ course_slug: slug })
+      const slugs = await checkout({ course_slug: slug, coupon: coupon?.code })
       if (slugs) {
         setEnrolled(true)
         window.gtag?.('event', isFree ? 'sign_up' : 'purchase', { currency: 'INR', value: course.price, items: [{ item_id: slug, item_name: course.title }] })
@@ -60,9 +62,9 @@ export default function CourseDetailPage() {
       <CourseThumb course={course} compact />
       <div style={{ padding: 24 }}>
         <div className="row" style={{ gap: 10, marginBottom: 4 }}>
-          <span className="price" style={{ fontSize: 34 }}>{isFree ? 'Free' : formatINR(course.price)}</span>
-          {off > 0 && <span className="mrp" style={{ fontSize: 18 }}>{formatINR(course.mrp)}</span>}
-          {off > 0 && <span className="off">{off}% off</span>}
+          <span className="price" style={{ fontSize: 34 }}>{isFree ? 'Free' : formatINR(coupon ? coupon.final : course.price)}</span>
+          {!isFree && (coupon || off > 0) && <span className="mrp" style={{ fontSize: 18 }}>{formatINR(coupon ? course.price : course.mrp)}</span>}
+          {!isFree && !coupon && off > 0 && <span className="off">{off}% off</span>}
         </div>
         <p className="muted" style={{ fontSize: 13, marginBottom: 18 }}>{isFree ? 'Create a free account to start' : 'One-time payment · inclusive of taxes · lifetime access'}</p>
         {enrolled ? (
@@ -72,6 +74,7 @@ export default function CourseDetailPage() {
             <ShoppingCart size={18} /> {paying ? 'Processing…' : isFree ? 'Enrol for free' : 'Buy now'}
           </button>
         )}
+        {!isFree && !enrolled && <CouponBox courseSlug={slug} applied={coupon} onChange={setCoupon} />}
         <ul className="check-list" style={{ marginTop: 18, fontSize: 14 }}>
           <li>{course.lesson_count} lessons · {course.duration_hours} {course.duration_hours === 1 ? 'hour' : 'hours'}</li>
           <li>{course.projects?.length || 0} hands-on projects</li>

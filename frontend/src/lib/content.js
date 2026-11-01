@@ -24,3 +24,27 @@ export const PAGES = Object.fromEntries(
 
 export const formatINR = n => '₹' + Number(n || 0).toLocaleString('en-IN')
 export const discountPct = c => (c.mrp && c.mrp > c.price ? Math.round((1 - c.price / c.mrp) * 100) : 0)
+
+// Admin-panel edits (prices, titles, publish state, business details) live in the database.
+// The catalog above is baked in at build time for speed and SEO; this patches it with live values.
+export function applyLive(liveCourses, settings, SITE) {
+  if (Array.isArray(liveCourses) && liveCourses.length) {
+    const bySlug = Object.fromEntries(liveCourses.map(c => [c.slug, c]))
+    for (let i = COURSES.length - 1; i >= 0; i--) {
+      const live = bySlug[COURSES[i].slug]
+      if (!live) { COURSES.splice(i, 1); continue } // unpublished in the admin panel
+      Object.assign(COURSES[i], { title: live.title, subtitle: live.short_description || COURSES[i].subtitle, price: live.price, mrp: live.mrp })
+    }
+  }
+  if (settings && SITE) {
+    if (settings.bundle_price) SITE.bundle.price = settings.bundle_price
+    if (settings.phone !== undefined) SITE.phone = settings.phone
+    if (settings.support_email) SITE.email = settings.support_email
+    if (settings.legal_name) SITE.legalName = settings.legal_name
+    if (settings.address !== undefined) SITE.address = settings.address
+    if (settings.gstin !== undefined) SITE.gstin = settings.gstin
+    if (settings.refund_days) SITE.refundDays = settings.refund_days
+    SITE.whatsapp = settings.whatsapp || ''
+    SITE.announcement = settings.announcement || ''
+  }
+}

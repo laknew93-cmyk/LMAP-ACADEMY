@@ -4,6 +4,7 @@ import { ShoppingCart, ArrowRight } from 'lucide-react'
 import { useAuth } from '../App'
 import { paidCourses, formatINR } from '../lib/content'
 import { checkout, errorMessage } from '../lib/checkout'
+import CouponBox from '../components/CouponBox'
 import { useSeo } from '../lib/seo'
 import { SITE } from '../site'
 
@@ -12,6 +13,7 @@ export default function AllAccessPage() {
   const navigate = useNavigate()
   const [paying, setPaying] = useState(false)
   const [toast, setToast] = useState(null)
+  const [coupon, setCoupon] = useState(null)
   const courses = paidCourses()
   const value = courses.reduce((s, c) => s + c.price, 0)
   const hours = courses.reduce((s, c) => s + c.duration_hours, 0)
@@ -28,7 +30,7 @@ export default function AllAccessPage() {
     if (!user) { navigate('/register?next=/all-access'); return }
     setPaying(true)
     try {
-      const slugs = await checkout({ bundle: true })
+      const slugs = await checkout({ bundle: true, coupon: coupon?.code })
       if (slugs) {
         window.gtag?.('event', 'purchase', { currency: 'INR', value: SITE.bundle.price, items: [{ item_id: 'all-access', item_name: 'All-Access Pass' }] })
         navigate('/dashboard')
@@ -41,7 +43,7 @@ export default function AllAccessPage() {
 
   const cta = (
     <button className="btn btn-accent btn-lg" onClick={buy} disabled={paying}>
-      <ShoppingCart size={18} /> {paying ? 'Processing…' : `Get All-Access for ${formatINR(SITE.bundle.price)}`}
+      <ShoppingCart size={18} /> {paying ? 'Processing…' : `Get All-Access for ${formatINR(coupon ? coupon.final : SITE.bundle.price)}`}
     </button>
   )
 
@@ -60,6 +62,7 @@ export default function AllAccessPage() {
             <span className="mrp" style={{ fontSize: 22, color: '#9CA3AF' }}>{formatINR(value)}</span>
           </div>
           {cta}
+          <div><CouponBox bundle applied={coupon} onChange={setCoupon} dark /></div>
           <p style={{ color: '#9CA3AF', fontSize: 14, marginTop: 14 }}>One-time payment · inclusive of taxes · lifetime access · {SITE.refundDays}-day refund policy</p>
         </div>
       </section>

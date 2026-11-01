@@ -10,7 +10,7 @@ from config import settings
 from content_sync import sync_content
 from database import SessionLocal, init_db
 from models import User, UserRole
-from routers import admin, auth, certificates, courses, lessons, payments, videos
+from routers import admin, admin_panel, auth, certificates, courses, lessons, payments, site, videos
 
 log = logging.getLogger("lmap")
 
@@ -31,6 +31,8 @@ app.include_router(lessons.router)
 app.include_router(payments.router)
 app.include_router(certificates.router)
 app.include_router(admin.router)
+app.include_router(admin_panel.router)
+app.include_router(site.router)
 
 os.makedirs(os.path.join(settings.UPLOAD_DIR, "videos"), exist_ok=True)
 os.makedirs(os.path.join(settings.UPLOAD_DIR, "thumbnails"), exist_ok=True)

@@ -13,7 +13,10 @@ from auth import get_current_user
 from config import settings
 from database import get_db
 from models import Certificate, Course, Enrollment, PaymentStatus, User, VideoProgress
+from coupons import apply_coupon
+from models import Coupon
 from razorpay_client import RazorpayClient
+from site_settings import get_site_settings
 
 router = APIRouter(prefix="/payments", tags=["payments"])
 log = logging.getLogger("lmap.payments")
@@ -23,6 +26,7 @@ class CreateOrderRequest(BaseModel):
     course_slug: Optional[str] = None
     course_id: Optional[int] = None
     bundle: bool = False
+    coupon: Optional[str] = None
 
 
 class VerifyPaymentRequest(BaseModel):
@@ -39,10 +43,17 @@ def _owned_ids(db: Session, user: User) -> set[int]:
     }
 
 
-def _mark_paid(enrollments: list[Enrollment], payment_id: str) -> list[str]:
+def _mark_paid(db: Session, enrollments: list[Enrollment], payment_id: str) -> list[str]:
+    newly_paid = [e for e in enrollments if e.payment_status != PaymentStatus.paid]
     for e in enrollments:
         e.payment_status = PaymentStatus.paid
         e.razorpay_payment_id = payment_id
+    # Count a coupon once per order, the first time the order is confirmed.
+    code = next((e.coupon_code for e in newly_paid if e.coupon_code), None)
+    if code:
+        coupon = db.query(Coupon).filter(Coupon.code == code).first()
+        if coupon:
+            coupon.used_count = (coupon.used_count or 0) + 1
     return [e.course.slug for e in enrollments]
 
 
@@ -52,7 +63,7 @@ def bundle_info(db: Session = Depends(get_db)):
     return {
         "slug": settings.BUNDLE_SLUG,
         "title": settings.BUNDLE_TITLE,
-        "price": settings.BUNDLE_PRICE,
+        "price": get_site_settings(db)["bundle_price"],
         "value": sum(c.price for c in courses),
         "mrp": sum((c.mrp or c.price) for c in courses),
         "courses": [{"slug": c.slug, "title": c.title, "price": c.price} for c in courses],
@@ -70,9 +81,10 @@ def create_order(data: CreateOrderRequest, db: Session = Depends(get_db), curren
         ]
         if not courses:
             raise HTTPException(status_code=400, detail="You already own every course")
-        total = settings.BUNDLE_PRICE
+        total = get_site_settings(db)["bundle_price"]
         title = settings.BUNDLE_TITLE
         source = "bundle"
+        target = "all-access"
     else:
         q = db.query(Course).filter(Course.is_published == True)
         course = (q.filter(Course.slug == data.course_slug) if data.course_slug else q.filter(Course.id == data.course_id)).first()
@@ -84,19 +96,27 @@ def create_order(data: CreateOrderRequest, db: Session = Depends(get_db), curren
         total = course.price
         title = course.title
         source = "course"
+        target = course.slug
 
-    # Free course: enrol straight away.
+    list_total = sum(c.price for c in courses) or 1
+    total, coupon = apply_coupon(db, data.coupon, target, total)
+    coupon_code = coupon.code if coupon else None
+
+    # Free course, or a 100%-off coupon: enrol straight away.
     if total <= 0:
-        course = courses[0]
-        enrollment = db.query(Enrollment).filter(
-            Enrollment.user_id == current_user.id, Enrollment.course_id == course.id
-        ).first() or Enrollment(user_id=current_user.id, course_id=course.id)
-        enrollment.payment_status = PaymentStatus.paid
-        enrollment.amount_paid = 0
-        enrollment.source = "free"
-        db.add(enrollment)
+        for course in courses:
+            enrollment = db.query(Enrollment).filter(
+                Enrollment.user_id == current_user.id, Enrollment.course_id == course.id
+            ).first() or Enrollment(user_id=current_user.id, course_id=course.id)
+            enrollment.payment_status = PaymentStatus.paid
+            enrollment.amount_paid = 0
+            enrollment.source = "free" if course.price <= 0 else source
+            enrollment.coupon_code = coupon_code
+            db.add(enrollment)
+        if coupon:
+            coupon.used_count = (coupon.used_count or 0) + 1
         db.commit()
-        return {"enrolled": True, "course_slugs": [course.slug]}
+        return {"enrolled": True, "course_slugs": [c.slug for c in courses]}
 
     amount_paise = int(round(total * 100))
     if settings.RAZORPAY_KEY_ID:
@@ -113,7 +133,6 @@ def create_order(data: CreateOrderRequest, db: Session = Depends(get_db), curren
         log.error("Checkout attempted but RAZORPAY_KEY_ID is not configured")
         raise HTTPException(status_code=503, detail="Online payments are being set up. Please try again shortly or contact support.")
 
-    list_total = sum(c.price for c in courses) or 1
     for c in courses:
         enrollment = db.query(Enrollment).filter(
             Enrollment.user_id == current_user.id, Enrollment.course_id == c.id
@@ -125,6 +144,7 @@ def create_order(data: CreateOrderRequest, db: Session = Depends(get_db), curren
         enrollment.payment_status = PaymentStatus.pending
         enrollment.amount_paid = round(total * c.price / list_total, 2)
         enrollment.source = source
+        enrollment.coupon_code = coupon_code
     db.commit()
 
     return {
@@ -159,7 +179,7 @@ def verify_payment(data: VerifyPaymentRequest, db: Session = Depends(get_db), cu
             db.commit()
             raise HTTPException(status_code=400, detail="Payment verification failed")
 
-    slugs = _mark_paid(enrollments, data.razorpay_payment_id)
+    slugs = _mark_paid(db, enrollments, data.razorpay_payment_id)
     db.commit()
     return {"success": True, "course_slugs": slugs}
 
@@ -182,7 +202,7 @@ async def razorpay_webhook(request: Request, db: Session = Depends(get_db)):
     if not order_id:
         return {"ok": True}
     enrollments = db.query(Enrollment).filter(Enrollment.razorpay_order_id == order_id).all()
-    _mark_paid(enrollments, payment.get("id", ""))
+    _mark_paid(db, enrollments, payment.get("id", ""))
     db.commit()
     return {"ok": True}
 
