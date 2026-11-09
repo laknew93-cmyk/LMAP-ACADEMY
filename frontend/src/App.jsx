@@ -103,7 +103,7 @@ export default function App() {
         <Route path="/blog/:slug" element={<BlogPostPage />} />
         <Route path="/certificate/:slug" element={<RequireAuth><CertificatePage /></RequireAuth>} />
         <Route path="/verify/:code" element={<VerifyPage />} />
-        {['about', 'contact', 'terms', 'privacy-policy', 'refund-policy'].map(p => (
+        {['about', 'contact', 'terms', 'privacy-policy', 'refund-policy', 'shipping-policy'].map(p => (
           <Route key={p} path={`/${p}`} element={<StaticPage name={p} />} />
         ))}
         <Route path="/admin/*" element={IS_PUBLIC_PROD && SITE.useAdminSubdomain ? <AdminRedirect /> : <AdminConsole base="/admin" />} />

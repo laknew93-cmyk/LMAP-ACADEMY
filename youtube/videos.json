@@ -1,0 +1,124 @@
+{
+  "playlist": {
+    "title": "AI in 60 Minutes — Free AI Course for Beginners (India)",
+    "description": "A free, beginner-friendly AI course in 6 short lessons. Learn what ChatGPT, Gemini and Claude really are, set them up safely, write useful prompts, protect your data and build a daily AI habit. Practical examples for Indian learners: students, working professionals, homemakers, career returners and small business owners. Take the full course with exercises and a free certificate at https://lmapacademy.org/courses/ai-in-60-minutes/"
+  },
+  "videos": [
+    {
+      "stem": "01-01-what-ai-assistants-are",
+      "title": "What is ChatGPT, Really? AI Explained Simply for Beginners | Lesson 1",
+      "thumb": [
+        "What is",
+        "ChatGPT",
+        "really?"
+      ],
+      "hook": "ChatGPT, Gemini and Claude explained in plain English: how they actually work, what they're brilliant at, and where they confidently get things wrong.",
+      "tags": [
+        "what is chatgpt",
+        "chatgpt explained",
+        "ai for beginners",
+        "chatgpt vs gemini vs claude",
+        "ai hallucination",
+        "free ai course"
+      ]
+    },
+    {
+      "stem": "01-02-setting-up-safely",
+      "title": "How to Create a Free ChatGPT, Gemini or Claude Account Safely | Lesson 2",
+      "thumb": [
+        "Set up AI",
+        "the SAFE",
+        "way"
+      ],
+      "hook": "Sign up for a free AI assistant the right way: official apps only, an email you control, and the privacy settings to check before you type anything personal.",
+      "tags": [
+        "how to use chatgpt",
+        "chatgpt sign up",
+        "gemini ai setup",
+        "claude ai account",
+        "chatgpt privacy settings",
+        "ai safety tips"
+      ]
+    },
+    {
+      "stem": "01-03-first-five-prompts",
+      "title": "5 ChatGPT Prompts That Save Hours Every Week (Copy & Use) | Lesson 3",
+      "thumb": [
+        "5 prompts",
+        "that save",
+        "HOURS"
+      ],
+      "hook": "Five everyday prompts you can copy today: write an email, summarise a long document, explain anything simply, plan your week and rewrite messages professionally.",
+      "tags": [
+        "chatgpt prompts",
+        "best chatgpt prompts",
+        "chatgpt for work",
+        "ai productivity",
+        "chatgpt email writing",
+        "prompts for beginners"
+      ]
+    },
+    {
+      "stem": "02-01-prompt-formula",
+      "title": "Simple Prompt Formula for Better ChatGPT Answers | Lesson 4",
+      "thumb": [
+        "The 4-part",
+        "PROMPT",
+        "formula"
+      ],
+      "hook": "Stop getting generic AI answers. One four-line formula (role, task, context, format) with real examples from a job seeker, a career returner and a Class 12 student.",
+      "tags": [
+        "prompt engineering for beginners",
+        "how to write prompts",
+        "chatgpt prompt formula",
+        "better chatgpt answers",
+        "prompt template",
+        "prompt engineering india"
+      ]
+    },
+    {
+      "stem": "02-02-privacy-and-fact-checking",
+      "title": "Never Paste THIS into ChatGPT + How to Fact-Check AI Answers | Lesson 5",
+      "thumb": [
+        "Never paste",
+        "THIS",
+        "into AI"
+      ],
+      "hook": "Six things you should never share with an AI assistant, how to anonymise before you paste, and a simple routine to catch AI hallucinations before they cost you.",
+      "tags": [
+        "chatgpt privacy",
+        "is chatgpt safe",
+        "ai hallucination",
+        "fact check ai",
+        "data privacy india",
+        "chatgpt mistakes"
+      ]
+    },
+    {
+      "stem": "02-03-seven-day-habit-plan",
+      "title": "Use AI Every Day: A Simple 7-Day Plan for Beginners | Lesson 6",
+      "thumb": [
+        "7-day",
+        "AI habit",
+        "plan"
+      ],
+      "hook": "A day-by-day plan to make AI part of your routine in one week, five tips to make it stick, and where to go next once the basics click.",
+      "tags": [
+        "how to use ai daily",
+        "ai habits",
+        "learn ai in 7 days",
+        "ai for working professionals",
+        "ai roadmap for beginners",
+        "ai skills india"
+      ]
+    }
+  ],
+  "common_tags": [
+    "free ai course",
+    "ai course for beginners",
+    "chatgpt tutorial",
+    "learn ai in india",
+    "ai in 60 minutes",
+    "lmap academy"
+  ]
+}

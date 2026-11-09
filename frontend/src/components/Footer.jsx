@@ -37,6 +37,7 @@ export default function Footer() {
             <Link to="/terms/">Terms & conditions</Link>
             <Link to="/privacy-policy/">Privacy policy</Link>
             <Link to="/refund-policy/">Refund & cancellation</Link>
+            <Link to="/shipping-policy/">Shipping & delivery</Link>
           </div>
         </div>
         <div style={{ borderTop: '1px solid #374151', paddingTop: 24, textAlign: 'center', fontSize: 13 }}>
