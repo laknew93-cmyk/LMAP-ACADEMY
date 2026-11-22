@@ -1,0 +1,200 @@
+[
+  {
+    "q": "How does an AI chat assistant like ChatGPT produce its answers?",
+    "options": [
+      "It looks up a single correct answer in a verified database",
+      "It predicts a helpful response based on patterns learned from huge amounts of text",
+      "A human expert reviews and approves each reply before it appears",
+      "It copies the most popular web page about your question"
+    ],
+    "answer": 1,
+    "explain": "Assistants run on large language models that predict responses from patterns in their training text, not from a verified answer database."
+  },
+  {
+    "q": "Which of these tasks is the strongest fit for an AI assistant without extra checking?",
+    "options": [
+      "Finding today's exact train timings from Mumbai to Pune",
+      "Confirming the current repo rate for a loan decision",
+      "Getting the cut-off marks for a specific college this year",
+      "Turning a long school circular into five clear bullet points"
+    ],
+    "answer": 3,
+    "explain": "Summarising is about words and structure, where AI is strongest; current exact facts like timings, rates and cut-offs need checking."
+  },
+  {
+    "q": "Kavita asks an AI to 'write an email to my boss' and gets a generic reply. What is the most likely reason?",
+    "options": [
+      "The AI only knows what she tells it, and she gave no context",
+      "Free versions of AI assistants cannot write work emails",
+      "She should have used a search engine instead of an assistant",
+      "The AI deliberately keeps first drafts generic to save time"
+    ],
+    "answer": 0,
+    "explain": "The AI is not a mind reader; without details like the boss's name, purpose and tone, it can only produce a generic email."
+  },
+  {
+    "q": "Ramesh wants to install ChatGPT on his phone. What should he check before installing an app?",
+    "options": [
+      "That the app has the highest number of star ratings",
+      "That the app offers a paid unlock for faster answers",
+      "That the developer name matches the official company",
+      "That the app icon looks the same as the website logo"
+    ],
+    "answer": 2,
+    "explain": "Fake AI apps are common, so checking that the developer is the official company (such as OpenAI) protects you."
+  },
+  {
+    "q": "Which password practice does the course recommend for your AI account?",
+    "options": [
+      "Reuse your UPI password so it is easy to remember",
+      "Share one password across the family's AI accounts",
+      "Use the same password as your email for convenience",
+      "Use a unique password not shared with banking or UPI"
+    ],
+    "answer": 3,
+    "explain": "A unique password, plus two-step verification on your email, keeps your AI account and financial accounts separately protected."
+  },
+  {
+    "q": "During setup, what does the course suggest doing with data, history and memory settings?",
+    "options": [
+      "Read what each does and make a conscious choice about it",
+      "Switch every setting off because all of them are risky",
+      "Leave them at the defaults since they cannot be changed",
+      "Ignore them until you upgrade to a paid plan"
+    ],
+    "answer": 0,
+    "explain": "You do not need to switch everything off; the point is to understand each setting and decide deliberately."
+  },
+  {
+    "q": "Anita uses one long chat for her daughter's science project and her shop's GST questions. What should she do instead?",
+    "options": [
+      "Upgrade to a paid plan so the chat can hold more topics",
+      "Delete her chat history after every single question",
+      "Switch to a different assistant for each new question",
+      "Start a new chat for each new topic"
+    ],
+    "answer": 3,
+    "explain": "Mixing unrelated topics in one chat confuses the AI, so a fresh chat per topic gives better answers."
+  },
+  {
+    "q": "Which extra line turns a 'summarise this notice' prompt into a practical action list?",
+    "options": [
+      "Use simple words that a child could understand",
+      "Tell me if there is anything I need to do, and by when",
+      "Make the summary as long and detailed as possible",
+      "Translate the summary into three different languages"
+    ],
+    "answer": 1,
+    "explain": "Asking what you need to do and by when converts a plain summary into concrete action items."
+  },
+  {
+    "q": "Suresh gets a first draft that is too formal for a message to his friend. What is the best next step?",
+    "options": [
+      "Reply in the same chat: that is too formal, I am writing to a friend",
+      "Close the chat and accept that AI cannot write casual messages",
+      "Copy the formal draft and send it anyway to save time",
+      "Start over with a different assistant and the same prompt"
+    ],
+    "answer": 0,
+    "explain": "Follow-up requests in the same chat quickly refine an answer; two or three usually turn a decent draft into a great one."
+  },
+  {
+    "q": "An AI explains how a mutual fund SIP works. What should you do before making a money decision based on it?",
+    "options": [
+      "Ask the same AI the question again to be fully sure",
+      "Trust it, since explanations of basics are never wrong",
+      "Confirm with a qualified person or official source",
+      "Ask it to explain more simply until it feels right"
+    ],
+    "answer": 2,
+    "explain": "For money, health or legal matters, use AI to understand basics, then confirm with a qualified person or official source."
+  },
+  {
+    "q": "In the Role, Task, Context, Format formula, which part do beginners skip most often?",
+    "options": [
+      "Role",
+      "Context",
+      "Task",
+      "Format"
+    ],
+    "answer": 1,
+    "explain": "Context, such as audience, background and constraints, is the most commonly skipped part and often makes the biggest difference."
+  },
+  {
+    "q": "Meena writes: 'Give a 30-second answer I can say aloud, plus 2 delivery tips.' Which part of the formula is this?",
+    "options": [
+      "Role",
+      "Task",
+      "Context",
+      "Format"
+    ],
+    "answer": 3,
+    "explain": "Format describes how the answer should look, including length, structure and style."
+  },
+  {
+    "q": "You are unsure what background details the AI needs for your resume request. What does the course suggest?",
+    "options": [
+      "Paste your entire resume, including phone and address",
+      "Keep the prompt short and accept whatever it produces",
+      "Give it a role only and let it guess everything else",
+      "Add: before you answer, ask me any questions you need"
+    ],
+    "answer": 3,
+    "explain": "Asking the AI to interview you first draws out the context it needs, leading to a much better final answer."
+  },
+  {
+    "q": "A Chennai CA firm assistant wants help rewording a client notice reply. What is the safe approach?",
+    "options": [
+      "Replace the client's name, PAN and GSTIN with placeholders first",
+      "Paste the full notice, since AI chats are private by default",
+      "Paste it only if chat history is switched on in settings",
+      "Avoid AI entirely because notices can never be shared"
+    ],
+    "answer": 0,
+    "explain": "Anonymising with placeholders lets you get help with the wording, then you put the real details back afterwards."
+  },
+  {
+    "q": "Which AI answer is most likely to contain a hallucination?",
+    "options": [
+      "A friendlier rewrite of your own WhatsApp message",
+      "Ten caption ideas for a bakery's Diwali hampers",
+      "A precise statistic with a court judgment you cannot find",
+      "A day-by-day table based on activities you listed"
+    ],
+    "answer": 2,
+    "explain": "Hallucinations are most common with specific numbers and named sources, especially ones you cannot verify when you search."
+  },
+  {
+    "q": "You ask ChatGPT and Gemini the same tax question and they disagree. How should you treat this?",
+    "options": [
+      "As a red flag to verify the answer on the official portal",
+      "As proof that the longer, more detailed answer is correct",
+      "As normal, so pick whichever answer sounds more confident",
+      "As a sign that both assistants need a paid upgrade"
+    ],
+    "answer": 0,
+    "explain": "Agreement is not proof, but disagreement is a red flag that tells you to check an official source."
+  },
+  {
+    "q": "According to the course, what makes people actually benefit from AI over time?",
+    "options": [
+      "One long weekend session learning every feature",
+      "Short, regular daily practice on real tasks",
+      "Waiting until a paid plan offers newer models",
+      "Using AI only when a task feels too hard to do"
+    ],
+    "answer": 1,
+    "explain": "Small, regular practice beats one long session; the 7-day plan uses 10-15 minutes a day on real tasks."
+  },
+  {
+    "q": "Deepak wants his new AI habit to stick. Which tip from the course fits best?",
+    "options": [
+      "Use only English so the answers are always accurate",
+      "Avoid saving prompts so you practise writing fresh ones",
+      "Skip fact-checking once you are comfortable with AI",
+      "Attach it to something he already does, like morning chai"
+    ],
+    "answer": 3,
+    "explain": "Linking AI use to an existing routine, such as morning chai or checking email, makes the habit easier to keep."
+  }
+]

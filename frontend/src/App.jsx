@@ -16,6 +16,7 @@ import BlogPostPage from './pages/BlogPostPage'
 import StaticPage from './pages/StaticPage'
 import CertificatePage from './pages/CertificatePage'
 import VerifyPage from './pages/VerifyPage'
+import QuizPage from './pages/QuizPage'
 import api from './api/client'
 import { applyLive } from './lib/content'
 import { SITE } from './site'
@@ -103,6 +104,7 @@ export default function App() {
         <Route path="/blog/:slug" element={<BlogPostPage />} />
         <Route path="/certificate/:slug" element={<RequireAuth><CertificatePage /></RequireAuth>} />
         <Route path="/verify/:code" element={<VerifyPage />} />
+        <Route path="/quiz/:slug" element={<RequireAuth><QuizPage /></RequireAuth>} />
         {['about', 'contact', 'terms', 'privacy-policy', 'refund-policy', 'shipping-policy'].map(p => (
           <Route key={p} path={`/${p}`} element={<StaticPage name={p} />} />
         ))}

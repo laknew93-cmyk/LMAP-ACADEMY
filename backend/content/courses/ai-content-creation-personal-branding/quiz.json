@@ -1,0 +1,200 @@
+[
+  {
+    "q": "Neha opens a new AI chat to start planning her LinkedIn content. What is the most effective first step, according to the course workflow?",
+    "options": [
+      "Ask the AI to write ten viral posts about her industry right away",
+      "Ask the AI to interview her with questions about her experience and audience",
+      "Ask the AI to pick the opinions she should hold on industry topics",
+      "Ask the AI to copy the style of the top creators in her niche"
+    ],
+    "answer": 1,
+    "explain": "The \"interview me first\" approach makes the AI collect your raw material before writing, so suggestions are specific to you rather than generic."
+  },
+  {
+    "q": "Rahul writes formally but speaks naturally. What is the best voice sample to add when building his brand voice guide?",
+    "options": [
+      "A transcript of him explaining his work aloud for a few minutes",
+      "His most formal annual report summary from last year",
+      "A competitor's popular posts that he admires",
+      "An AI-written sample post about his job title"
+    ],
+    "answer": 0,
+    "explain": "Spoken samples often capture a person's natural voice better than stiff writing, so a transcript is a strong sample."
+  },
+  {
+    "q": "After AI describes Sana's likely core reader based on five client questions, what should she do next?",
+    "options": [
+      "Accept the description, since AI has analysed the market for her",
+      "Treat it as a hypothesis and check it by talking to a few real people",
+      "Widen the description so the content appeals to a larger audience",
+      "Ask a second AI tool and keep whichever description sounds better"
+    ],
+    "answer": 1,
+    "explain": "AI audience descriptions are guesses, so the course says to verify them with two or three people who fit the description."
+  },
+  {
+    "q": "Vikram wants to plan his 30-day content calendar. What should he decide first?",
+    "options": [
+      "How much time he realistically has each week and which platforms matter most",
+      "Which festivals he can post greetings for during the month",
+      "How to post every day on four platforms to grow faster",
+      "Which hashtags are trending this month in his industry"
+    ],
+    "answer": 0,
+    "explain": "The course says to start with capacity, not ambition, because consistency beats volume."
+  },
+  {
+    "q": "Why does the course's calendar prompt include a column called \"raw material I need to supply\"?",
+    "options": [
+      "To list the design assets the AI tool will generate automatically",
+      "To track which posts have been approved by a manager",
+      "To remind you each post needs something only you can provide, like a story or real number",
+      "To record which AI tool was used for each post"
+    ],
+    "answer": 2,
+    "explain": "The column ensures every post contains your own stories, photos or data rather than generic AI content."
+  },
+  {
+    "q": "When drafting a LinkedIn post from her notes, which instruction best stops the AI from inventing statistics?",
+    "options": [
+      "Do not add any facts, numbers or claims that are not in my notes",
+      "Make the post sound as convincing and data-driven as possible",
+      "Include at least three statistics to support the main point",
+      "Write it in the style of a well-known business influencer"
+    ],
+    "answer": 0,
+    "explain": "Explicitly forbidding facts not in the notes prevents the AI from making up numbers to sound persuasive."
+  },
+  {
+    "q": "Priya has an 8-step onboarding checklist she gives clients. Which LinkedIn format suits it best?",
+    "options": [
+      "A single short opinion post with no structure",
+      "A celebration post announcing a recent win",
+      "A carousel with one idea per slide that people can save",
+      "A poll asking followers which step they skip"
+    ],
+    "answer": 2,
+    "explain": "Carousels work best for processes, checklists and frameworks with a natural sequence that people want to save."
+  },
+  {
+    "q": "Karan wants to know which of three hooks works best for the same reel. What does the course recommend?",
+    "options": [
+      "Pick the hook the AI rated highest and use only that one",
+      "Use all three hooks back to back at the start of one video",
+      "Ask followers in a poll which hook they prefer before filming",
+      "Record the body once with three hooks and compare early retention"
+    ],
+    "answer": 3,
+    "explain": "Testing variants with the same body and comparing retention past the first seconds shows which hook works."
+  },
+  {
+    "q": "An AI draft starts \"In today's fast-paced world\" and ends \"Agree? Share below!\" What is the first edit pass?",
+    "options": [
+      "Run it through an AI detector until it scores as human",
+      "Add more emojis and hashtags to make it feel casual",
+      "Ask the AI to make it sound more inspirational",
+      "Delete the generic opening and the engagement-bait closing line"
+    ],
+    "answer": 3,
+    "explain": "Pass 1 of the five-pass edit removes throat-clearing openers and generic engagement bait."
+  },
+  {
+    "q": "Anil wants to write a long-form article with AI that reflects his expertise. What is the recommended starting point?",
+    "options": [
+      "Ask the AI to write the full 1,500-word article in one go",
+      "Choose a broad topic and let the AI pick the angle",
+      "Pick a specific audience question and have the AI interview him",
+      "Paste a competitor's article and ask for a rewrite"
+    ],
+    "answer": 2,
+    "explain": "Starting from a specific question and a self-interview makes the article built on his own expertise."
+  },
+  {
+    "q": "Before writing an article targeting a keyword, why should you search it and look at the top results?",
+    "options": [
+      "To copy the structure and wording of the top-ranking page",
+      "To understand the search intent and the format searchers expect",
+      "To count how many times competitors repeat the keyword",
+      "To find backlinks you can buy from those websites"
+    ],
+    "answer": 1,
+    "explain": "The top results show what searchers want, such as lists, guides or videos, which guides your format."
+  },
+  {
+    "q": "A creator turns one newsletter into ten pieces. What is the right first step with AI?",
+    "options": [
+      "Paste the same newsletter text on every platform the same day",
+      "Ask AI to write ten new unrelated posts on the same topic",
+      "Extract the distinct ideas, stories and lines as atoms, then map them to formats",
+      "Turn the newsletter into a single long video and stop there"
+    ],
+    "answer": 2,
+    "explain": "Extracting idea atoms first lets you map each one to the format and platform that suits it."
+  },
+  {
+    "q": "Meena is not fluent in Tamil but wants to post a Tamil caption written by AI. What is the safest approach?",
+    "options": [
+      "Ask for a back-translation and have a fluent person review before posting",
+      "Ask for formal literary Tamil since it is always more correct",
+      "Post it directly, since AI handles all Indian languages accurately",
+      "Translate it word-for-word from English to keep the meaning exact"
+    ],
+    "answer": 0,
+    "explain": "Back-translation helps catch meaning errors, but only publish in a language you or a trusted reviewer can check fluently."
+  },
+  {
+    "q": "A Pune bakery wants an image for a post about its new cake. Which choice follows the course guidance?",
+    "options": [
+      "Generate a realistic AI cake and post it as their product",
+      "Use a stock photo of a similar cake without labelling it",
+      "Ask AI to recreate a famous bakery's cake photo",
+      "Use a real photo of the actual cake they sell"
+    ],
+    "answer": 3,
+    "explain": "Products must be shown with real photos; an AI-generated cake presented as theirs misleads customers."
+  },
+  {
+    "q": "A social media manager wants to clone a client doctor's voice for Hindi videos. What is required first?",
+    "options": [
+      "A quick WhatsApp \"ok\" from the doctor's assistant",
+      "Explicit written consent stating the use, platforms, duration and withdrawal",
+      "Nothing, as long as the videos are educational",
+      "A disclaimer at the end of each video only"
+    ],
+    "answer": 1,
+    "explain": "Voice cloning needs explicit, informed, written consent for a specific use; a casual message is not enough."
+  },
+  {
+    "q": "Ravi gets free products from a brand and makes a reel about them. How should he disclose this under ASCI guidance?",
+    "options": [
+      "Add #ad at the end of a long list of hashtags in the caption",
+      "No disclosure is needed because he was not paid in cash",
+      "Mention it only if a follower asks in the comments",
+      "Use a clear label like \"Ad\" upfront and show it in the video itself"
+    ],
+    "answer": 3,
+    "explain": "Any material connection, including free products, must be disclosed prominently, and in videos the label should appear in the video."
+  },
+  {
+    "q": "Ishaan's goal is winning consulting clients. Which metric should he prioritise?",
+    "options": [
+      "Total likes on each post",
+      "Follower count growth from any audience",
+      "Number of posts published per week",
+      "Enquiries, DMs about his work and calls booked"
+    ],
+    "answer": 3,
+    "explain": "Metrics should match the goal; for client work, enquiries and booked calls matter more than likes."
+  },
+  {
+    "q": "A consultant with a skill people already pay for asks which monetisation path to start with. What does the course suggest?",
+    "options": [
+      "Platform revenue-sharing programmes",
+      "Services, since content proves expertise and services convert that trust",
+      "Brand sponsorships, regardless of audience size",
+      "A large cohort course before testing demand"
+    ],
+    "answer": 1,
+    "explain": "If you already have a paid skill, services are usually the fastest and most reliable path."
+  }
+]

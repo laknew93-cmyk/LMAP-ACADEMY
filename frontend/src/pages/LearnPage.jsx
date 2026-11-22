@@ -19,6 +19,9 @@ export default function LearnPage() {
   const [lesson, setLesson] = useState(null) // { ...lesson } | { locked: true }
   const [expanded, setExpanded] = useState({})
   const [saving, setSaving] = useState(false)
+  const [unlockAt, setUnlockAt] = useState(0) // ms timestamp when 'Complete' becomes available
+  const [now, setNow] = useState(Date.now())
+  const [completeError, setCompleteError] = useState('')
 
   useSeo({ title: course ? `Learn: ${course.title}` : 'Learn', path: `/learn/${slug}`, noindex: true })
 
@@ -56,11 +59,18 @@ export default function LearnPage() {
     setExpanded(e => ({ ...e, [active.mi]: true }))
     setLesson(null)
     api.get(`/lessons/${active.id}`)
-      .then(r => setLesson(r.data))
+      .then(r => { setLesson(r.data); setUnlockAt(Date.now() + (r.data.unlock_in || 0) * 1000); setCompleteError('') })
       .catch(err => setLesson(err.response?.status === 403 ? { locked: true } : { error: true }))
     document.querySelector('.learn-main')?.scrollTo(0, 0)
     window.scrollTo(0, 0)
   }, [active?.id])
+
+  // Tick once a second while a lesson's minimum study time is counting down.
+  useEffect(() => {
+    if (unlockAt <= Date.now()) return
+    const t = setInterval(() => setNow(Date.now()), 1000)
+    return () => clearInterval(t)
+  }, [unlockAt])
 
   const go = l => setParams({ lesson: String(l.id) })
 
@@ -70,6 +80,8 @@ export default function LearnPage() {
       await api.post(`/lessons/${active.id}/complete`, { completed })
       setDone(d => { const n = new Set(d); completed ? n.add(active.id) : n.delete(active.id); return n })
       if (thenNext && next) go(next)
+    } catch (err) {
+      setCompleteError(err.response?.data?.detail || 'Could not save. Please try again.')
     } finally { setSaving(false) }
   }
 
@@ -80,6 +92,10 @@ export default function LearnPage() {
   const li = course.modules[active.mi].videos.findIndex(v => v.id === active.id)
   const staticVideo = meta?.modules?.[active.mi]?.lessons?.[li]?.video
   const isDone = done.has(active.id)
+  const waitSecs = Math.max(0, Math.ceil((unlockAt - now) / 1000))
+  const isPaidCourse = (meta?.price || 0) > 0
+  // Paid courses: hide the browser's download option and block right-click saving on the player.
+  const protect = isPaidCourse ? { controlsList: 'nodownload', disablePictureInPicture: true, onContextMenu: e => e.preventDefault() } : {}
 
   return (
     <div className="learn">
@@ -105,20 +121,25 @@ export default function LearnPage() {
           {lesson?.content !== undefined && (
             <>
               {staticVideo ? (
-                <video key={active.id} controls preload="metadata" poster={staticVideo.poster} src={staticVideo.src}
+                <video key={active.id} controls preload="metadata" poster={staticVideo.poster} src={staticVideo.src} {...protect}
                   style={{ width: '100%', aspectRatio: '16 / 9', background: '#000', borderRadius: 12, marginBottom: 28 }} />
               ) : lesson.has_video && (
-                <video key={active.id} controls controlsList="nodownload" style={{ width: '100%', background: '#000', borderRadius: 12, marginBottom: 28 }}
+                <video key={active.id} controls controlsList="nodownload" disablePictureInPicture onContextMenu={e => e.preventDefault()} style={{ width: '100%', background: '#000', borderRadius: 12, marginBottom: 28 }}
                   src={`${BASE_URL}/videos/${active.id}/stream${token ? `?token=${token}` : ''}`} />
               )}
               <article className="prose" dangerouslySetInnerHTML={{ __html: renderMarkdown(lesson.content) }} />
+              {completeError && <p className="form-error" style={{ marginTop: 32 }}>{completeError}</p>}
 
               <div className="row" style={{ justifyContent: 'space-between', marginTop: 48, paddingTop: 24, borderTop: '1px solid var(--border)', gap: 12 }}>
                 {prev ? <button className="btn btn-ghost" onClick={() => go(prev)}><ArrowLeft size={16} /> Previous</button> : <span />}
                 {enrolled ? (
                   <div className="row">
                     {isDone && <button className="btn btn-ghost btn-sm" disabled={saving} onClick={() => toggleComplete(false)}>Mark incomplete</button>}
-                    {!isDone && <button className="btn btn-primary" disabled={saving} onClick={() => toggleComplete(true, true)}><CheckCircle size={16} /> {next ? 'Complete & next' : 'Mark complete'}</button>}
+                    {!isDone && (waitSecs > 0
+                      ? <button className="btn btn-primary" disabled title="Take your time with this lesson — it unlocks shortly">
+                          <CheckCircle size={16} /> Complete unlocks in {Math.floor(waitSecs / 60)}:{String(waitSecs % 60).padStart(2, '0')}
+                        </button>
+                      : <button className="btn btn-primary" disabled={saving} onClick={() => toggleComplete(true, true)}><CheckCircle size={16} /> {next ? 'Complete & next' : 'Mark complete'}</button>)}
                     {isDone && next && <button className="btn btn-primary" onClick={() => go(next)}>Next lesson <ArrowRight size={16} /></button>}
                   </div>
                 ) : (
@@ -137,7 +158,7 @@ export default function LearnPage() {
             <>
               <div className="progress"><span style={{ width: `${percent}%` }} /></div>
               <p className="muted" style={{ fontSize: 13, marginTop: 6 }}>{done.size} of {lessons.length} lessons complete · {percent}%</p>
-              {percent === 100 && <Link to={`/certificate/${slug}`} className="btn btn-accent btn-sm" style={{ marginTop: 12 }}><Award size={14} /> Get your certificate</Link>}
+              {percent === 100 && <Link to={`/quiz/${slug}`} className="btn btn-accent btn-sm" style={{ marginTop: 12 }}><Award size={14} /> Take the final test</Link>}
             </>
           ) : <p className="muted" style={{ fontSize: 13 }}>Previewing — free lessons are unlocked</p>}
         </div>

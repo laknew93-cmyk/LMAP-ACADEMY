@@ -7,6 +7,7 @@ from access import is_enrolled
 from auth import get_current_user
 from database import get_db
 from models import Certificate, Course, User, VideoProgress
+from routers.quiz import has_passed, load_bank
 
 router = APIRouter(prefix="/certificates", tags=["certificates"])
 
@@ -44,6 +45,8 @@ def claim_certificate(course_slug: str, db: Session = Depends(get_db), current_u
     }
     if not lesson_ids or done != lesson_ids:
         raise HTTPException(status_code=400, detail=f"Complete all lessons first ({len(done)}/{len(lesson_ids)} done)")
+    if load_bank(course.slug) and not has_passed(db, current_user, course):
+        raise HTTPException(status_code=400, detail="Pass the final test to get your certificate")
 
     cert = Certificate(code="LMAP-" + secrets.token_hex(4).upper(), user_id=current_user.id, course_id=course.id)
     db.add(cert)

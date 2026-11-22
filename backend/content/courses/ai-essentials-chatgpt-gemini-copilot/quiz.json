@@ -1,0 +1,200 @@
+[
+  {
+    "q": "Why does a follow-up like 'make it shorter' work well in an AI chat?",
+    "options": [
+      "The assistant saves every reply to a file it can edit later",
+      "The assistant searches the web again for a shorter version",
+      "The assistant reads the whole conversation so far, not just your last message",
+      "The assistant remembers all your past chats across every account"
+    ],
+    "answer": 2,
+    "explain": "Each reply is generated from the entire conversation in that chat, so short follow-up instructions apply to the earlier draft."
+  },
+  {
+    "q": "Using the traffic-light rule, how should you treat an AI answer giving the GST rate on restaurant services?",
+    "options": [
+      "Red: verify it on an official government source or with your CA",
+      "Yellow: spot-check it against a similar summary you have",
+      "Green: read it once, edit to taste and use it",
+      "Green, if the assistant sounded confident and clear"
+    ],
+    "answer": 0,
+    "explain": "Numbers, laws and rates are red-zone output, so every fact must be verified with an official or original source."
+  },
+  {
+    "q": "Your company runs on Outlook and Teams and has approved one AI tool for work data. Which assistant should you prefer for work?",
+    "options": [
+      "Whichever assistant gave the best caption in a test",
+      "The approved tool, ideally the one built into your Microsoft 365 apps",
+      "Any free assistant, as long as you use your personal account",
+      "The assistant with the most shared prompts online"
+    ],
+    "answer": 1,
+    "explain": "Choose based on where your work lives and what your company allows; the approved, built-in tool fits best for work data."
+  },
+  {
+    "q": "Neha wants AI-written saree descriptions that match the style of two she already likes. What is the most effective approach?",
+    "options": [
+      "Describe the style as elegant and short",
+      "Ask for ten versions and pick the closest one",
+      "Paste the two examples and ask for new ones in the same style and length",
+      "Give the AI a role as a famous fashion writer"
+    ],
+    "answer": 2,
+    "explain": "Few-shot examples teach length, rhythm and vocabulary far better than a description of the style."
+  },
+  {
+    "q": "Shalini needs to chase a vendor about late deliveries but keep the relationship. Which approach does the course recommend?",
+    "options": [
+      "Write the facts as rough notes and ask AI to shape them with a firm but respectful tone",
+      "Ask AI to write the email from scratch using only the vendor's name",
+      "Let AI decide the tone, since it knows what vendors expect",
+      "Ask AI for the most formal tone possible so it sounds serious"
+    ],
+    "answer": 0,
+    "explain": "Your notes carry the facts while the AI handles structure and politeness, with the tone you specify."
+  },
+  {
+    "q": "Kiran's saved prompt for vendor emails scores 3 out of 5 after testing. What should she do next?",
+    "options": [
+      "Delete it and write a new prompt from scratch each time",
+      "Keep using it, since any saved prompt is better than none",
+      "Switch assistants until one rates the output higher",
+      "Run the prompt improver meta-prompt on it and test again"
+    ],
+    "answer": 3,
+    "explain": "Prompts rated below 4 are refined with the prompt improver and retested on real tasks."
+  },
+  {
+    "q": "A shop owner asks AI to translate a closure notice into Hindi but gets stiff textbook Hindi. What should she ask for instead?",
+    "options": [
+      "A word-for-word translation so nothing is lost",
+      "Natural, friendly Hindi as a shopkeeper would speak to regular customers",
+      "The same notice in English with Hindi headings only",
+      "A longer version so the Hindi sounds more complete"
+    ],
+    "answer": 1,
+    "explain": "Asking for natural, local phrasing and a clear register produces wording customers would actually use."
+  },
+  {
+    "q": "Ravi wants AI to become a daily habit at work. Which tasks should he pick as his first three anchor tasks?",
+    "options": [
+      "His most sensitive tasks, where mistakes are most costly",
+      "Rare tasks he does once a quarter, to save the most effort",
+      "Frequent, time-consuming, low-risk tasks like writing and summarising",
+      "Every task in his week at once, to see results faster"
+    ],
+    "answer": 2,
+    "explain": "Starting with frequent, time-consuming, low-risk tasks and linking them to fixed times builds a lasting habit."
+  },
+  {
+    "q": "Vikram needs a 2-page report on rising complaints at his branch. What is the best first step with AI?",
+    "options": [
+      "Ask it to write the whole report in one go, then edit",
+      "Give a brief with purpose, reader and key facts, then ask for an outline only",
+      "Ask for an executive summary first and expand from it",
+      "Ask it to research typical complaint causes online"
+    ],
+    "answer": 1,
+    "explain": "The outline-first method starts with a brief and an outline you fix, keeping you in control of the argument."
+  },
+  {
+    "q": "While drafting a work-from-home policy, how do you stop AI from silently inventing rules your company never agreed?",
+    "options": [
+      "Ask for the policy in plain text with no markdown",
+      "Ask it to keep the policy under one page",
+      "Give it a role as a senior HR manager",
+      "Ask it to mark points needing a company decision with [DECIDE]"
+    ],
+    "answer": 3,
+    "explain": "The [DECIDE] marker flags decisions for you instead of letting the AI make up commitments."
+  },
+  {
+    "q": "In the synthesis step of research, why include the phrase 'using ONLY this information'?",
+    "options": [
+      "It keeps the AI grounded in your verified sources instead of adding unverified facts",
+      "It makes the AI search the web for more current sources",
+      "It tells the AI to shorten the brief to a single page",
+      "It lets the AI pick the most reliable of your sources"
+    ],
+    "answer": 0,
+    "explain": "Restricting the AI to your checked extracts prevents it from mixing in its own unverified claims."
+  },
+  {
+    "q": "You ask an AI about a contract's termination notice period. Which instruction makes the answer easiest to verify?",
+    "options": [
+      "Quote the exact sentence and say which clause it comes from",
+      "Summarise the whole contract in five bullet points first",
+      "Explain the notice period in simple everyday language",
+      "Compare it with typical notice periods in other contracts"
+    ],
+    "answer": 0,
+    "explain": "Exact quotes point to real text you can find with Ctrl+F, which catches invented or blurred details."
+  },
+  {
+    "q": "An assistant analyses your uploaded sales file and reports top customers. What should you do before relying on it?",
+    "options": [
+      "Accept it, because uploaded files are always read accurately",
+      "Ask it to redo the analysis as a chart instead",
+      "Spot-check results yourself and ask which columns it used",
+      "Upload the file to a second assistant and average the results"
+    ],
+    "answer": 2,
+    "explain": "Numbers are red-zone output, so spot-check results, match totals and confirm the AI used the right columns."
+  },
+  {
+    "q": "Copilot in Outlook cannot find a document a colleague mentioned. What is the most likely explanation?",
+    "options": [
+      "Copilot only works with documents created in Word",
+      "The document is too long for Copilot to read",
+      "Copilot needs a personal account to search files",
+      "You may not have permission to access that document"
+    ],
+    "answer": 3,
+    "explain": "Copilot works within your existing permissions, so it cannot surface content you are not allowed to see."
+  },
+  {
+    "q": "Deepa wants to use Gemini on a work document her company has not approved for AI. What does the course advise?",
+    "options": [
+      "Move the file to her personal Google account and use Gemini there",
+      "Copy the text into the Gemini app on her phone instead",
+      "Upload it anyway, since Google protects all Drive files",
+      "Not move work files into a personal account; follow her employer's rules"
+    ],
+    "answer": 3,
+    "explain": "Work and personal accounts are governed differently, so work documents should stay within tools your employer approves."
+  },
+  {
+    "q": "When converting rough meeting notes into minutes, which instruction best prevents AI errors?",
+    "options": [
+      "Ask for the minutes in a more formal tone",
+      "Do not invent anything; write TBD for unclear owners or dates and mark tentative items",
+      "Assign every task to the person who first mentioned it",
+      "Keep the minutes under 100 words so they are easy to read"
+    ],
+    "answer": 1,
+    "explain": "Without these rules, AI may confidently assign owners or turn 'maybe 10 Nov' into a firm commitment."
+  },
+  {
+    "q": "Pooja is tailoring her resume with AI and lacks a skill the job asks for. What should her prompt tell the AI to do?",
+    "options": [
+      "Add the skill briefly, since recruiters rarely check",
+      "Rewrite her job titles to imply the skill",
+      "List the missing skill separately as a gap instead of adding it",
+      "Remove the requirement from the job description"
+    ],
+    "answer": 2,
+    "explain": "AI should tailor real experience, never invent it; missing items are flagged as gaps to address honestly."
+  },
+  {
+    "q": "Arjun needs help with an email about a client's late deliverable. What is the safest way to use a general AI tool?",
+    "options": [
+      "Replace the client's name and figures with placeholders like Company X, then add them back later",
+      "Paste the full email thread, since chats are deleted after a day",
+      "Use his personal account so the company is not involved",
+      "Paste the details but ask the AI to keep them confidential"
+    ],
+    "answer": 0,
+    "explain": "The anonymise-then-ask technique gives the same quality of help without exposing anyone's data."
+  }
+]

@@ -37,7 +37,9 @@ export default function CertificatePage() {
     <div className="section container-sm" style={{ textAlign: 'center' }}>
       <h1 style={{ fontSize: 26, marginBottom: 12 }}>Certificate not ready yet</h1>
       <p className="muted" style={{ marginBottom: 20 }}>{error}</p>
-      <Link to={`/learn/${slug}`} className="btn btn-primary">Back to the course</Link>
+      {error.includes('final test')
+        ? <Link to={`/quiz/${slug}`} className="btn btn-primary">Take the final test</Link>
+        : <Link to={`/learn/${slug}`} className="btn btn-primary">Back to the course</Link>}
     </div>
   )
   if (!cert) return <div style={{ display: 'flex', justifyContent: 'center', padding: 120 }}><div className="spinner" /></div>

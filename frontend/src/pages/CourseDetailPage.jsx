@@ -131,6 +131,7 @@ export default function CourseDetailPage() {
                 <h2 style={{ fontSize: 26, marginBottom: 6 }}>Watch a free lesson</h2>
                 <p className="muted" style={{ marginBottom: 16 }}>{previewVideo.title} · {Math.round(previewVideo.video.seconds / 60)} min</p>
                 <video controls preload="metadata" poster={previewVideo.video.poster} src={previewVideo.video.src}
+                  {...(course.price > 0 ? { controlsList: 'nodownload', disablePictureInPicture: true, onContextMenu: e => e.preventDefault() } : {})}
                   style={{ width: '100%', aspectRatio: '16 / 9', background: '#000', borderRadius: 12 }} />
               </section>
             )}

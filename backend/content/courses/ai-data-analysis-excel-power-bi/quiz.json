@@ -1,0 +1,200 @@
+[
+  {
+    "q": "Ankit asks an AI for a formula and pastes it, but it shows #NAME? on his office laptop. What should he have told the AI upfront?",
+    "options": [
+      "The colour formatting used in his sheet",
+      "The name of his manager and department",
+      "Which Excel or Sheets version he is using",
+      "How many people will open the file"
+    ],
+    "answer": 2,
+    "explain": "Functions like XLOOKUP only exist in newer versions, so always tell the AI your tool and version."
+  },
+  {
+    "q": "Which request is most likely to get a correct, paste-ready SUMIFS formula from an AI on the first try?",
+    "options": [
+      "One that gives the sheet name, column letters, data types, version, sample rows and expected result",
+      "One that simply says \"Give me a formula to total Jaipur sales\"",
+      "One that uploads the full workbook with all customer details included",
+      "One that asks the AI to guess the column layout from the file name"
+    ],
+    "answer": 0,
+    "explain": "The CONTEXT template (layout, output, value types, tool, examples, exceptions) lets the AI write a formula for your actual sheet."
+  },
+  {
+    "q": "Deepa needs to upload sales data to analyse category growth. Her copy has a hidden Customer Mobile column. What should she do?",
+    "options": [
+      "Leave it hidden, since hidden columns are not uploaded",
+      "Mask the numbers to show only the first four digits",
+      "Rename the column header so the AI ignores it",
+      "Delete the column from the copy, because hidden columns still upload"
+    ],
+    "answer": 3,
+    "explain": "Share the minimum: delete unneeded columns from a copy, since hidden columns are still included in the upload."
+  },
+  {
+    "q": "A colleague's file uses =VLOOKUP(C2, Products!A:D, 3, FALSE). Why does the course suggest avoiding this in new work?",
+    "options": [
+      "VLOOKUP cannot return text values, only numbers",
+      "VLOOKUP only works in Google Sheets, not Excel",
+      "VLOOKUP always requires the data to be sorted",
+      "Inserting a column in Products silently makes the 3 point at the wrong data"
+    ],
+    "answer": 3,
+    "explain": "VLOOKUP's fixed column index goes stale when columns are inserted, with no warning."
+  },
+  {
+    "q": "An XLOOKUP returns #N/A for \"SR-102\" even though the code is visible in the master list. What is a likely cause to check first?",
+    "options": [
+      "The master list has too many rows for XLOOKUP",
+      "A hidden trailing space or a number stored as text",
+      "XLOOKUP needs the data sorted in ascending order",
+      "The formula needs to be converted to VLOOKUP"
+    ],
+    "answer": 1,
+    "explain": "Most #N/A errors come from extra spaces or text-versus-number mismatches; LEN and ISNUMBER help confirm them."
+  },
+  {
+    "q": "An AI gives a LinkedIn win-rate formula and the result is exactly 100%. What should you suspect?",
+    "options": [
+      "The denominator is wrong, possibly identical to the numerator",
+      "LinkedIn really is the best-performing lead source",
+      "COUNTIFS cannot calculate percentages correctly",
+      "The cells need to be formatted as percentages"
+    ],
+    "answer": 0,
+    "explain": "A suspicious 100% often means a copy-paste slip in the denominator; win rate should divide Won by Won plus Lost."
+  },
+  {
+    "q": "An inherited SUMPRODUCT formula uses ranges ending at row 5000 and the monthly number now looks low. What is the best next step?",
+    "options": [
+      "Check the last used row with Ctrl + End to see if data now exceeds row 5000",
+      "Wrap the formula in another IFERROR to remove any errors",
+      "Delete the formula and type the number in manually",
+      "Ask the AI to confirm the number and send the report"
+    ],
+    "answer": 0,
+    "explain": "Treat the AI's explanation as hypotheses and test them; a fixed range that misses newer rows is a likely cause."
+  },
+  {
+    "q": "Pink City Fabrics' data has some identical item lines. Before removing duplicates, what should you decide first?",
+    "options": [
+      "Which colour to highlight the duplicates in",
+      "What combination of columns makes a row truly unique",
+      "Whether to delete the oldest or newest rows",
+      "How many duplicates the manager expects to see"
+    ],
+    "answer": 1,
+    "explain": "Not every repeated row is a duplicate, so define the unique key (such as Invoice No + Item Code) first."
+  },
+  {
+    "q": "Rohit adds new rows to his pivot table's source data, but the pivot totals don't change. What most likely went wrong?",
+    "options": [
+      "Pivot tables cannot include more than 1,000 rows",
+      "The new rows need to be typed directly into the pivot",
+      "He did not refresh the pivot, or the source is a fixed range",
+      "He should have used a calculated field instead"
+    ],
+    "answer": 2,
+    "explain": "Pivots need a refresh, and a fixed source range silently ignores rows beyond it; an Excel Table avoids that."
+  },
+  {
+    "q": "The owner asks for average invoice value, but the data has one row per item line. What should you do?",
+    "options": [
+      "Average the Amount column directly across all item lines",
+      "Divide total sales by the number of item lines",
+      "Ask the AI to estimate it from a sample of rows",
+      "Total each invoice first, then average the invoice totals"
+    ],
+    "answer": 3,
+    "explain": "This is a grain issue: line-level data must be aggregated to invoice level before invoice metrics."
+  },
+  {
+    "q": "In a recurring monthly MIS report, what is the main benefit of using Power Query to combine and clean branch files?",
+    "options": [
+      "Cleaning steps are recorded once and replayed on every refresh",
+      "It removes the need to check totals each month",
+      "It lets you type corrections directly into the pivot tables",
+      "It automatically writes the commentary for the report"
+    ],
+    "answer": 0,
+    "explain": "Power Query records each step, so next month you add files and click Refresh All."
+  },
+  {
+    "q": "After uploading a CSV to a chat assistant with data analysis, what should your first prompt do?",
+    "options": [
+      "Ask for five key insights and a summary chart",
+      "Ask it to predict next quarter's sales",
+      "Ask it to describe the data back: rows, columns, types, date range and distinct values",
+      "Ask it to write the executive email for your manager"
+    ],
+    "answer": 2,
+    "explain": "An orientation prompt catches misreads, such as DD/MM parsed as MM/DD, before they affect every answer."
+  },
+  {
+    "q": "An AI's category breakdown sums to ₹48.2 lakh, but total sales are ₹51.0 lakh. What does this most likely indicate?",
+    "options": [
+      "The AI rounded each category to the nearest lakh",
+      "Some rows were dropped, often blanks or an unexpected spelling",
+      "GST was added to the category totals by mistake",
+      "The total sales figure in Excel must be wrong"
+    ],
+    "answer": 1,
+    "explain": "Parts should add up to the whole; a shortfall usually means silent filtering of blanks or variant spellings."
+  },
+  {
+    "q": "A number from AI analysis will be used in a board deck. What does the course recommend?",
+    "options": [
+      "Use it as is if the AI showed its code",
+      "Ask the AI the same question twice and average the results",
+      "Round it to the nearest lakh to reduce the chance of error",
+      "Use AI to find the insight, then rebuild the figure in your own workbook"
+    ],
+    "answer": 3,
+    "explain": "For consequential numbers, rebuild them with formulas or pivots you control and keep an audit note."
+  },
+  {
+    "q": "AI-written pandas code reads Indian DD-MM-YYYY dates. What should you check it includes?",
+    "options": [
+      "A line that deletes rows with any blank values",
+      "dayfirst=True when converting the date column",
+      "A command to sort the file by date first",
+      "A setting that converts dates to text labels"
+    ],
+    "answer": 1,
+    "explain": "dayfirst=True makes pandas read Indian dates correctly; also count values that failed to parse."
+  },
+  {
+    "q": "In Power BI, you want an FYTD sales total for an Indian financial year. What must the TOTALYTD measure include?",
+    "options": [
+      "A filter that removes January to March data",
+      "A calculated column instead of a measure",
+      "A year-end date argument of \"3/31\"",
+      "A separate table for each financial year"
+    ],
+    "answer": 2,
+    "explain": "Without the \"3/31\" year-end argument, TOTALYTD resets every January instead of every April."
+  },
+  {
+    "q": "Which chart choice best follows the course's dashboard guidance for comparing sales across eight categories?",
+    "options": [
+      "A pie chart with eight slices",
+      "A 3D column chart in category name order",
+      "A horizontal bar chart sorted largest first with data labels",
+      "A gauge showing each category separately"
+    ],
+    "answer": 2,
+    "explain": "Category comparisons work best as sorted horizontal bars with direct labels; avoid many-slice pies and 3D charts."
+  },
+  {
+    "q": "An AI-drafted executive summary says sales rose \"because of the influencer campaign\", which you never verified. What should you do?",
+    "options": [
+      "Change it to neutral wording like \"coinciding with\" or remove it",
+      "Keep it, since the AI may have found a pattern you missed",
+      "Add a percentage to make the claim more convincing",
+      "Move it to the headline so the director notices it"
+    ],
+    "answer": 0,
+    "explain": "Unverified causal claims must be softened or removed; give the AI only verified facts and check every claim."
+  }
+]

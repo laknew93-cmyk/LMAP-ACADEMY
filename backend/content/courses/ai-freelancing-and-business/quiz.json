@@ -1,0 +1,200 @@
+[
+  {
+    "q": "A Pune bakery owner hires a freelancer for Instagram captions. According to the course, what is she really paying for?",
+    "options": [
+      "Access to the AI tools the freelancer subscribes to",
+      "The number of hours the freelancer spends writing",
+      "Outcomes: timely, on-brand posts that bring people into the shop",
+      "Captions that are proven to be written without AI"
+    ],
+    "answer": 2,
+    "explain": "Clients do not pay for AI; they pay for outcomes, and AI is simply a tool you use to deliver them."
+  },
+  {
+    "q": "Which introduction best shows a clear niche?",
+    "options": [
+      "I am a freelancer offering writing, social media, Excel and slides",
+      "I write monthly blogs and LinkedIn posts for CA firms so partners save their weekends",
+      "I am a passionate, detail-oriented content creator open to any project",
+      "I use the latest AI tools to deliver any content you need, fast"
+    ],
+    "answer": 1,
+    "explain": "A niche combines a specific client type with a specific problem, making you memorable and easy to refer."
+  },
+  {
+    "q": "Why should an offer like 'Instagram Starter Month' include a 'what's not included' line?",
+    "options": [
+      "It makes the package look bigger than competitors' offers",
+      "Platforms such as Fiverr require it on every listing",
+      "It lets you charge a higher price for the core package",
+      "It prevents scope creep, a common cause of freelancer stress"
+    ],
+    "answer": 3,
+    "explain": "Listing exclusions such as paid ads or reels shooting stops a project from quietly growing beyond what was agreed."
+  },
+  {
+    "q": "You ask AI for captions for hand-painted tea cups but forget to say they are microwave-unsafe. What is the main risk?",
+    "options": [
+      "The AI may invent product facts, such as claiming they are dishwasher safe",
+      "The captions will be too short to post on Instagram",
+      "The AI will refuse to write about handmade products",
+      "The captions will be in the wrong language for the audience"
+    ],
+    "answer": 0,
+    "explain": "If you leave out real facts, AI may make them up, so always give it accurate product details."
+  },
+  {
+    "q": "Ravi is building a spec sample for a fictional grocery store. What should his case study say under 'Result'?",
+    "options": [
+      "An estimated engagement increase, such as 40 percent",
+      "A short testimonial written in a friend's name",
+      "What the client would receive and why the work should be effective",
+      "The logo of a real grocery chain to add credibility"
+    ],
+    "answer": 2,
+    "explain": "For spec work, never invent metrics or testimonials; explain your reasoning and label it clearly as a sample."
+  },
+  {
+    "q": "Why does hourly pricing become less attractive once AI helps you work faster?",
+    "options": [
+      "Clients refuse to pay hourly rates for AI-assisted work",
+      "If you finish faster, you earn less for the same deliverable",
+      "Hourly pricing cannot include revisions or communication",
+      "Freelance platforms no longer allow hourly contracts"
+    ],
+    "answer": 1,
+    "explain": "Project pricing lets you benefit from your own efficiency, while hourly pricing pays you less as you speed up."
+  },
+  {
+    "q": "A local client says your social media package is too expensive. What does the course recommend?",
+    "options": [
+      "Offer a smaller scope at a lower price with the same quality",
+      "Cut the price by half to win the first project",
+      "Keep the same scope and quietly skip the quality checks",
+      "Refuse to negotiate and end the conversation"
+    ],
+    "answer": 0,
+    "explain": "Adjusting scope rather than dropping your rate protects your pricing while still helping the client."
+  },
+  {
+    "q": "Neha is new to freelancing and wants her first one or two clients. Where does the course suggest she start?",
+    "options": [
+      "Cold proposals on international marketplaces only",
+      "Bulk WhatsApp messages to local business numbers",
+      "Paid ads targeting businesses across India",
+      "Her warm and lukewarm networks, where trust already exists"
+    ],
+    "answer": 3,
+    "explain": "First clients often come from people who know you or are one step away, because trust already exists."
+  },
+  {
+    "q": "Which opening line makes an Upwork proposal most likely to be read?",
+    "options": [
+      "Dear Sir/Madam, I am a hardworking freelancer with excellent skills",
+      "I hope this message finds you well and that you are doing great",
+      "You mentioned duplicates from three sources and mixed phone formats; I have cleaned similar lists",
+      "I have years of experience in many different fields and tools"
+    ],
+    "answer": 2,
+    "explain": "A strong hook mirrors a specific detail from the brief, showing the client you actually read it."
+  },
+  {
+    "q": "You sent a respectful cold message to a café owner and got no reply. What should you do next?",
+    "options": [
+      "Message them daily until they respond",
+      "Follow up once or twice with added value, then stop gracefully",
+      "Ask a friend to message them from another number",
+      "Assume the answer is no and never follow up at all"
+    ],
+    "answer": 1,
+    "explain": "Many replies come after a follow-up, but you should follow up at most twice and then respect silence."
+  },
+  {
+    "q": "After a kickoff call with a boutique owner, what should you send before starting work?",
+    "options": [
+      "A written summary of deliverables, dates, revisions and approvers, asking her to confirm",
+      "The first finished batch of posts so she can see your style",
+      "An invoice for the full project amount",
+      "A general thank-you note with no specific details"
+    ],
+    "answer": 0,
+    "explain": "Confirming scope, timelines and approvers in writing protects both sides and prevents confusion later."
+  },
+  {
+    "q": "In a simple service agreement, when does ownership of the final deliverables commonly pass to the client?",
+    "options": [
+      "As soon as the first draft is shared",
+      "When the contract is signed, before any work begins",
+      "Once full payment is received",
+      "Never; the freelancer always keeps ownership"
+    ],
+    "answer": 2,
+    "explain": "A common approach is that the client owns the final deliverables on full payment, while you keep your general templates and know-how."
+  },
+  {
+    "q": "A new international client pays more than your invoice and asks you to refund the difference. What is this most likely to be?",
+    "options": [
+      "A generous tip for fast delivery",
+      "A normal currency conversion adjustment",
+      "An advance for the next project",
+      "An overpayment scam where the original payment is later reversed"
+    ],
+    "answer": 3,
+    "explain": "In overpayment scams the original payment often turns out to be fraudulent and gets reversed after you refund."
+  },
+  {
+    "q": "Ritu is comparing ways to receive payments from a US client. What should she compare first?",
+    "options": [
+      "Which service has the best-known brand name",
+      "The final rupee amount she receives after fees and conversion",
+      "Which service her friends use most often",
+      "Only the headline transfer fee shown on the website"
+    ],
+    "answer": 1,
+    "explain": "Fees, conversion margins and bank charges all reduce what you receive, so compare the final rupee amount."
+  },
+  {
+    "q": "A tiffin service uses AI to draft WhatsApp quick replies. Which instruction best prevents wrong answers?",
+    "options": [
+      "Use only the facts I give; write [CHECK] where something is missing",
+      "Make the replies sound as friendly as possible",
+      "Include typical delivery charges and refund rules",
+      "Keep every reply under ten words"
+    ],
+    "answer": 0,
+    "explain": "The [CHECK] instruction stops the AI inventing details like a delivery charge or refund policy you do not have."
+  },
+  {
+    "q": "For monthly bookkeeping, what is the safest way to get totals by category from your transactions sheet?",
+    "options": [
+      "Paste the full bank statement into AI and ask for the totals",
+      "Estimate totals by eye and adjust at year end",
+      "Ask AI to write spreadsheet formulas, then test them on rows you know",
+      "Let AI file the GST return directly from the statement"
+    ],
+    "answer": 2,
+    "explain": "Spreadsheet formulas are reliable and reusable, while AI arithmetic on pasted data can be wrong."
+  },
+  {
+    "q": "Anil keeps forgetting steps when delivering his social media package. What does the course suggest building?",
+    "options": [
+      "A longer contract with stricter penalty clauses",
+      "A bigger set of AI tools to automate every step",
+      "A higher price so he can afford more time per project",
+      "A delivery SOP with numbered steps, prompts, checklists and common problems"
+    ],
+    "answer": 3,
+    "explain": "An SOP turns experience into a repeatable process that catches mistakes and keeps quality consistent."
+  },
+  {
+    "q": "A bakery client asks what results your social media package will deliver. Which promise is appropriate?",
+    "options": [
+      "12 high-quality posts on schedule, with honest notes that results depend on many factors",
+      "Double your sales within 30 days or your money back",
+      "Guaranteed 10,000 new followers by the end of the month",
+      "Your bakery will rank first on Google for cakes in your city"
+    ],
+    "answer": 0,
+    "explain": "Promise what you control, such as quality, quantity and timeliness, and be honest that outcomes depend on many factors."
+  }
+]

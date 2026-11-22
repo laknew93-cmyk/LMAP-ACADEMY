@@ -1,0 +1,200 @@
+[
+  {
+    "q": "Arjun's chatbot forgets the user's name from two messages earlier. What is the most likely reason?",
+    "options": [
+      "The model's context window is too small for two messages",
+      "The temperature setting is too high for memory tasks",
+      "His code is not resending the conversation history, since the API is stateless",
+      "The system prompt is overriding the user's earlier messages"
+    ],
+    "answer": 2,
+    "explain": "The model has no memory between calls; your code must store the history and send it with every request."
+  },
+  {
+    "q": "A response comes back with stop_reason set to \"max_tokens\". What does this tell you?",
+    "options": [
+      "The answer was cut off at the output limit, so raise the limit or ask for a shorter answer",
+      "The model finished normally and the answer is complete",
+      "The model wants to call a tool before answering",
+      "The model declined the request for safety reasons"
+    ],
+    "answer": 0,
+    "explain": "max_tokens means the output hit the ceiling and is truncated; log it and adjust rather than showing a half answer."
+  },
+  {
+    "q": "Why does the course loop over response.content and check each block's type instead of using response.content[0].text?",
+    "options": [
+      "Looping is faster than indexing for large responses",
+      "The first block is always the system prompt, not the answer",
+      "Indexing does not work with streaming responses",
+      "Responses can contain tool_use or thinking blocks, so the first block may not be text"
+    ],
+    "answer": 3,
+    "explain": "Code that assumes the first block is text works in demos but breaks once tools or other block types appear."
+  },
+  {
+    "q": "An extraction schema has a required budget field, and the model fills in a number when the enquiry never mentions one. What is the best fix?",
+    "options": [
+      "Ask the model to return free-text JSON and parse it with regex",
+      "Make the field nullable and instruct the model to use null and not guess",
+      "Remove the budget field and estimate it later in code",
+      "Add a second model call to double-check every number"
+    ],
+    "answer": 1,
+    "explain": "Nullable fields plus a \"do not guess\" instruction are the main defence against invented values."
+  },
+  {
+    "q": "In the GST invoice project, how does the service check that CGST, SGST and the totals add up?",
+    "options": [
+      "It asks the model a second time whether the totals look right",
+      "Deterministic Python checks verify the model's extracted values",
+      "It trusts the schema, since constrained output guarantees correct values",
+      "It sends the invoice to a second model and compares answers"
+    ],
+    "answer": 1,
+    "explain": "The model reads and structures; deterministic code verifies, since a schema guarantees shape, not truth."
+  },
+  {
+    "q": "A customer asks about two orders and the model returns two tool_use blocks. How should your code respond?",
+    "options": [
+      "Run only the first tool and ignore the second request",
+      "Send each tool result in a separate user message, one after another",
+      "Combine both results into plain text without any IDs",
+      "Run both and return all tool_result blocks, each with its tool_use_id, in one user message"
+    ],
+    "answer": 3,
+    "explain": "Every tool_result must carry the matching tool_use_id, and all results go back together in a single message."
+  },
+  {
+    "q": "Meena embeds her documents with one model and user queries with a different embedding model. What will happen?",
+    "options": [
+      "Search results will be unreliable, because vectors from different models are not comparable",
+      "Search will be faster because each model is specialised",
+      "Results will be identical as long as both vectors are normalised",
+      "Chroma will automatically convert the vectors to the same space"
+    ],
+    "answer": 0,
+    "explain": "You must use the same embedding model for documents and queries, since vectors from different models do not share a space."
+  },
+  {
+    "q": "Users search a RAG app for an exact invoice number like \"INV-2026-0417\" and get a different invoice. What does the course suggest?",
+    "options": [
+      "Increase the embedding model's vector dimension",
+      "Remove all numbers from documents before embedding",
+      "Use hybrid search that combines keyword search with vector search",
+      "Lower the temperature of the answering model"
+    ],
+    "answer": 2,
+    "explain": "Embeddings are weak at exact codes and names, so hybrid keyword plus vector search is common in production."
+  },
+  {
+    "q": "Your RAG app retrieved 5 chunks, but the model cites source 7. What should the rendering code do?",
+    "options": [
+      "Check every source ID is within range before using it to index the chunk list",
+      "Show source 7 anyway, since the model knows best",
+      "Re-run retrieval with k=7 so the citation becomes valid",
+      "Crash the request so the error is noticed"
+    ],
+    "answer": 0,
+    "explain": "Never trust model output to index into your lists; validate each source ID before rendering citations."
+  },
+  {
+    "q": "You want to evaluate your invoice extractor on fields like GSTIN and invoice number. Which check does the course recommend?",
+    "options": [
+      "An LLM judge grading each invoice on a 1-10 scale",
+      "Reading a few outputs manually and noting whether they look fine",
+      "Exact or tolerance comparison against expected values in code",
+      "Asking the extraction model to rate its own confidence"
+    ],
+    "answer": 2,
+    "explain": "When the right answer is exact, deterministic code checks are cheaper and more trustworthy than LLM judges."
+  },
+  {
+    "q": "Why must every agent loop include a max_steps limit?",
+    "options": [
+      "The API rejects requests that contain more than a few tools",
+      "It makes the model choose better tools on the first try",
+      "It reduces the size of each tool's output",
+      "A confused agent could otherwise loop many times and burn budget"
+    ],
+    "answer": 3,
+    "explain": "max_steps is the circuit breaker that stops runaway loops; every shipped agent needs one."
+  },
+  {
+    "q": "In the CSV analyst agent, why does the calculator parse expressions with ast instead of using Python's eval()?",
+    "options": [
+      "ast is faster than eval() for large numbers",
+      "eval() would execute any code the model writes, which is unsafe",
+      "eval() cannot handle division or percentages",
+      "ast automatically formats results in Indian rupees"
+    ],
+    "answer": 1,
+    "explain": "The safe calculator evaluates only numbers and basic operators; eval() on model output could run arbitrary code."
+  },
+  {
+    "q": "A task always runs the same steps in order: extract fields, validate them, save to a database. What should you build?",
+    "options": [
+      "A multi-step agent with tools for each step",
+      "An agent with a planning step and human checkpoint",
+      "An agent with a higher step limit for reliability",
+      "A fixed workflow in code, since the steps are known in advance"
+    ],
+    "answer": 3,
+    "explain": "When steps are known in advance, a fixed workflow is cheaper, faster and easier to test than an agent."
+  },
+  {
+    "q": "After adding the current date and time to the start of his system prompt, Rohit sees cache_read_input_tokens drop to zero. Why?",
+    "options": [
+      "Caching is an exact prefix match, and the changing timestamp breaks it",
+      "Dates are not allowed inside cached content",
+      "The cache only works for prompts without any numbers",
+      "Caching is disabled whenever the system prompt changes length"
+    ],
+    "answer": 0,
+    "explain": "One changed character early in the prefix invalidates the cache; put volatile info after the cached part."
+  },
+  {
+    "q": "Which API error should your app generally NOT retry automatically?",
+    "options": [
+      "A 429 rate-limit error",
+      "A 400-type error such as a bad request or invalid key",
+      "A temporary 5xx server error",
+      "A network connection timeout"
+    ],
+    "answer": 1,
+    "explain": "Retry rate limits, server and network errors with backoff; 400-type errors need the cause fixed, not retries."
+  },
+  {
+    "q": "Your FastAPI app works locally but is unreachable inside its Docker container. What is a classic cause?",
+    "options": [
+      "The Dockerfile copies the code before installing requirements",
+      "The container runs as a non-root user",
+      "The server binds to 127.0.0.1 instead of 0.0.0.0",
+      "The .env file was listed in .dockerignore"
+    ],
+    "answer": 2,
+    "explain": "Binding to 127.0.0.1 makes the server unreachable from outside the container; use --host 0.0.0.0."
+  },
+  {
+    "q": "What makes the Results section of a portfolio README most persuasive to interviewers?",
+    "options": [
+      "Real numbers from your own evaluation set, such as 17/20 correct",
+      "A general claim that the app is highly accurate",
+      "A long list of every AI framework you have heard of",
+      "Screenshots of the code without any measurements"
+    ],
+    "answer": 0,
+    "explain": "Honest, specific evaluation numbers beat vague claims; never invent them."
+  },
+  {
+    "q": "An interviewer asks: for an HR policy bot whose policies change every quarter, would you use RAG or fine-tuning?",
+    "options": [
+      "Fine-tuning, because it teaches the model facts permanently",
+      "Fine-tuning, because it avoids sending documents with each query",
+      "RAG, because updating means re-ingesting documents, not retraining",
+      "Neither; put all policies in the system prompt with no retrieval"
+    ],
+    "answer": 2,
+    "explain": "RAG brings in fresh or private knowledge at query time, so changing policies only need re-ingestion."
+  }
+]

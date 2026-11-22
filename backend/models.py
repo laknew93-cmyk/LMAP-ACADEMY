@@ -121,6 +121,7 @@ class VideoProgress(Base):
     watched_seconds = Column(Integer, default=0)
     completed = Column(Boolean, default=False)
     last_watched = Column(DateTime, default=datetime.utcnow)
+    started_at = Column(DateTime)  # first time the learner opened the lesson (minimum study time)
 
     user = relationship("User", back_populates="progress")
     video = relationship("Video", back_populates="progress")
@@ -172,3 +173,17 @@ class Coupon(Base):
     expires_at = Column(DateTime)
     is_active = Column(Boolean, default=True)
     created_at = Column(DateTime, default=datetime.utcnow)
+
+
+class QuizAttempt(Base):
+    """Final certificate test. question_ids is the served set, so answers are graded against it."""
+    __tablename__ = "quiz_attempts"
+    id = Column(Integer, primary_key=True, index=True)
+    user_id = Column(Integer, ForeignKey("users.id"), nullable=False, index=True)
+    course_id = Column(Integer, ForeignKey("courses.id"), nullable=False)
+    question_ids = Column(String(200), nullable=False)
+    score = Column(Integer)
+    total = Column(Integer)
+    passed = Column(Boolean, default=False)
+    created_at = Column(DateTime, default=datetime.utcnow)
+    submitted_at = Column(DateTime)
