@@ -17,6 +17,8 @@ DEFAULTS = {
     "bundle_price": settings.BUNDLE_PRICE,
     "refund_days": 7,
     "announcement": "",  # optional banner text shown across the site
+    "lesson_timer": False,  # require minimum study time before a lesson can be marked complete
+    "certificate_test": False,  # require passing the final test before a certificate is issued
 }
 
 
@@ -32,7 +34,9 @@ def update_site_settings(db: Session, changes: dict) -> dict:
     for key, value in changes.items():
         if key not in DEFAULTS:
             continue
-        if isinstance(DEFAULTS[key], (int, float)) and value not in (None, ""):
+        if isinstance(DEFAULTS[key], bool):
+            value = value is True or str(value).lower() in ("true", "1", "yes", "on")
+        elif isinstance(DEFAULTS[key], (int, float)) and value not in (None, ""):
             value = type(DEFAULTS[key])(value)
         row = db.query(SiteSetting).filter(SiteSetting.key == key).first() or SiteSetting(key=key)
         row.value = json.dumps(value)

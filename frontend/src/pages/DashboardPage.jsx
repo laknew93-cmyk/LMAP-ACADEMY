@@ -6,6 +6,7 @@ import { useAuth } from '../App'
 import { CourseThumb } from '../components/CourseCard'
 import { findCourse } from '../lib/content'
 import { useSeo } from '../lib/seo'
+import { SITE } from '../site'
 
 export default function DashboardPage() {
   const { user } = useAuth()
@@ -43,7 +44,7 @@ export default function DashboardPage() {
                   </div>
                   <div className="row" style={{ padding: '14px 20px', borderTop: '1px solid var(--border)' }}>
                     <Link to={`/learn/${c.course_slug}`} className="btn btn-primary btn-sm"><Play size={14} /> {c.percent ? 'Continue' : 'Start'}</Link>
-                    {c.percent === 100 && <Link to={c.certificate_code ? `/certificate/${c.course_slug}` : `/quiz/${c.course_slug}`} className="btn btn-outline btn-sm"><Award size={14} /> {c.certificate_code ? 'Certificate' : 'Final test'}</Link>}
+                    {c.percent === 100 && <Link to={c.certificate_code || !SITE.certificateTest ? `/certificate/${c.course_slug}` : `/quiz/${c.course_slug}`} className="btn btn-outline btn-sm"><Award size={14} /> {c.certificate_code || !SITE.certificateTest ? 'Certificate' : 'Final test'}</Link>}
                   </div>
                 </div>
               )

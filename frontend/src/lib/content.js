@@ -46,5 +46,6 @@ export function applyLive(liveCourses, settings, SITE) {
     if (settings.refund_days) SITE.refundDays = settings.refund_days
     SITE.whatsapp = settings.whatsapp || ''
     SITE.announcement = settings.announcement || ''
+    SITE.certificateTest = !!settings.certificate_test
   }
 }

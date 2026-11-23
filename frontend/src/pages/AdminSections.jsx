@@ -327,6 +327,8 @@ const SETTING_FIELDS = [
   ['phone', 'Phone'], ['whatsapp', 'WhatsApp number'], ['address', 'Registered office address', 'textarea'],
   ['gstin', 'GSTIN'], ['bundle_price', 'All-Access Pass price (₹)', 'number'], ['refund_days', 'Refund window (days)', 'number'],
   ['announcement', 'Announcement bar (leave empty to hide), e.g. "Diwali offer: 30% off with code DIWALI30"', 'textarea'],
+  ['lesson_timer', 'Require minimum study time before a lesson can be marked complete', 'checkbox'],
+  ['certificate_test', 'Require passing a final test (70%) before issuing a certificate', 'checkbox'],
 ]
 export function Settings({ notify, reload }) {
   const [s, setS] = useState(null)
@@ -342,7 +344,9 @@ export function Settings({ notify, reload }) {
         {SETTING_FIELDS.map(([key, label, type]) => (
           <div key={key} className="form-group">
             <label className="form-label">{label}</label>
-            {type === 'textarea'
+            {type === 'checkbox'
+              ? <label className="row" style={{ gap: 8, fontSize: 14 }}><input type="checkbox" checked={!!s[key]} onChange={e => setS({ ...s, [key]: e.target.checked })} /> {s[key] ? 'On' : 'Off'}</label>
+              : type === 'textarea'
               ? <textarea className="form-input" rows={2} value={s[key] ?? ''} onChange={e => setS({ ...s, [key]: e.target.value })} />
               : <input className="form-input" type={type || 'text'} value={s[key] ?? ''} onChange={e => setS({ ...s, [key]: e.target.value })} />}
           </div>

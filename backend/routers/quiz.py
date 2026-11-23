@@ -13,6 +13,7 @@ from auth import get_current_user
 from content_sync import CONTENT_DIR
 from database import get_db
 from models import Course, QuizAttempt, User, VideoProgress
+from site_settings import get_site_settings
 
 router = APIRouter(prefix="/quiz", tags=["quiz"])
 
@@ -27,6 +28,10 @@ def load_bank(slug: str) -> list[dict]:
         return []
     with open(path, encoding="utf-8") as f:
         return json.load(f)
+
+
+def test_required(db: Session, course: Course) -> bool:
+    return bool(get_site_settings(db)["certificate_test"]) and bool(load_bank(course.slug))
 
 
 def has_passed(db: Session, user: User, course: Course) -> bool:
@@ -59,7 +64,7 @@ def _recent_fails(db: Session, user: User, course: Course) -> int:
 def start_test(slug: str, db: Session = Depends(get_db), user: User = Depends(get_current_user)):
     course = _course_for(db, user, slug)
     bank = load_bank(slug)
-    if not bank:
+    if not test_required(db, course):
         return {"required": False}
     if has_passed(db, user, course):
         return {"required": True, "passed": True}

@@ -6,6 +6,7 @@ import { useAuth } from '../App'
 import { findCourse, formatINR } from '../lib/content'
 import { renderMarkdown } from '../lib/markdown'
 import { useSeo } from '../lib/seo'
+import { SITE } from '../site'
 
 export default function LearnPage() {
   const { slug } = useParams()
@@ -158,7 +159,9 @@ export default function LearnPage() {
             <>
               <div className="progress"><span style={{ width: `${percent}%` }} /></div>
               <p className="muted" style={{ fontSize: 13, marginTop: 6 }}>{done.size} of {lessons.length} lessons complete · {percent}%</p>
-              {percent === 100 && <Link to={`/quiz/${slug}`} className="btn btn-accent btn-sm" style={{ marginTop: 12 }}><Award size={14} /> Take the final test</Link>}
+              {percent === 100 && (SITE.certificateTest
+                ? <Link to={`/quiz/${slug}`} className="btn btn-accent btn-sm" style={{ marginTop: 12 }}><Award size={14} /> Take the final test</Link>
+                : <Link to={`/certificate/${slug}`} className="btn btn-accent btn-sm" style={{ marginTop: 12 }}><Award size={14} /> Get your certificate</Link>)}
             </>
           ) : <p className="muted" style={{ fontSize: 13 }}>Previewing — free lessons are unlocked</p>}
         </div>

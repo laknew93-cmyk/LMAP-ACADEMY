@@ -8,6 +8,7 @@ from access import can_access_lesson, lesson_course, optional_user
 from auth import get_current_user
 from database import get_db
 from models import User, Video, VideoProgress
+from site_settings import get_site_settings
 
 router = APIRouter(prefix="/lessons", tags=["lessons"])
 
@@ -41,7 +42,7 @@ def get_lesson(lesson_id: int, request: Request, db: Session = Depends(get_db)):
     if not can_access_lesson(db, lesson, user):
         raise HTTPException(status_code=403, detail="Enroll in the course to read this lesson")
     unlock_in = 0
-    if user and user.role.value != "admin":
+    if user and user.role.value != "admin" and get_site_settings(db)["lesson_timer"]:
         # Start the study clock the first time a signed-in learner opens the lesson.
         prog = db.query(VideoProgress).filter(VideoProgress.user_id == user.id, VideoProgress.video_id == lesson.id).first()
         if not prog:
@@ -79,7 +80,7 @@ def mark_complete(
     prog = db.query(VideoProgress).filter(
         VideoProgress.user_id == current_user.id, VideoProgress.video_id == lesson_id
     ).first()
-    if data.completed and current_user.role.value != "admin":
+    if data.completed and current_user.role.value != "admin" and get_site_settings(db)["lesson_timer"]:
         wait = _unlock_in(prog, lesson)
         if wait > 0:
             raise HTTPException(status_code=400, detail=f"Spend a little more time on this lesson first ({wait // 60}:{wait % 60:02d} left).")
